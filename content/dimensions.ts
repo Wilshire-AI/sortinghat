@@ -24,25 +24,25 @@ export const dimensions: readonly Dimension[] = [
   {
     id: 'prestige-orientation',
     name: 'Prestige vs Practicality Orientation',
-    kind: 'asymmetric_need',
+    kind: 'symmetric',
     description:
-      'How much neighborhood prestige and aspirational identity matter to you. Not caring about prestige doesn\'t mean you\'d actively dislike a prestigious neighborhood. The penalty applies only when you want a prestigious address and the neighborhood lacks one.',
+      'How much neighborhood prestige and aspirational identity matter to you. Both poles are real preferences. Picking "the place over the name" or "value over stretch" is an active preference for non-prestigious neighborhoods, not neutrality. In real estate, prestige correlates with cost, so value-seekers genuinely prefer the lower-prestige side.',
     poles: { low: 'Practicality, value, and space first.', high: 'Prestige and aspirational identity first.' },
   },
   {
     id: 'space-sensitivity',
     name: 'Space Sensitivity',
-    kind: 'asymmetric_need',
+    kind: 'symmetric',
     description:
-      'How much physical space at home affects your wellbeing. High-sensitivity users feel cramped quickly and need square footage to feel at ease. Low-sensitivity users tolerate small spaces gracefully. Tolerating small spaces doesn\'t mean you\'d hate a big one. Penalty applies only when you need space and don\'t get it.',
+      'How much physical space at home affects your wellbeing. Both poles are real lived preferences. Picking "I can be happy in a small space" is also picking against neighborhoods of huge apartments far from the action — a real tradeoff, not just non-preference.',
     poles: { low: 'Tolerates small spaces gracefully.', high: 'Needs spaciousness to feel at home.' },
   },
   {
     id: 'family-trajectory',
     name: 'Future Family Orientation',
-    kind: 'asymmetric_need',
+    kind: 'symmetric',
     description:
-      'How much you optimize for a future family scenario: schools, stroller-friendliness, park access, emotional sustainability over time. Not optimizing for family doesn\'t mean you\'d hate a family-friendly neighborhood. Penalty applies only when you want this and the neighborhood doesn\'t deliver.',
+      'How much you optimize for a future family scenario versus the life you have today. Both poles are real preferences. "Today, five years is a long time" is a directional choice, not just a non-preference for family-friendliness.',
     poles: { low: 'Optimizes for current life, not future.', high: 'Plans for future family.' },
   },
   {

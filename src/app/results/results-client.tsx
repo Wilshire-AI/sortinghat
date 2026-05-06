@@ -15,6 +15,7 @@ import { NeighborhoodCard } from '@/components/results/NeighborhoodCard';
 import { DimensionFingerprint } from '@/components/results/DimensionFingerprint';
 import { ShareButton } from '@/components/results/ShareButton';
 import { AllMatchesList } from '@/components/results/AllMatchesList';
+import { NeighborhoodMap } from '@/components/results/NeighborhoodMap';
 
 export function ResultsClient() {
   const router = useRouter();
@@ -92,6 +93,8 @@ export function ResultsClient() {
           );
         })}
       </section>
+
+      <NeighborhoodMap ranked={[...result.ranked, ...result.rest]} />
 
       <AllMatchesList ranked={result.rest} startRank={6} />
 
