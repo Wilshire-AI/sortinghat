@@ -16,6 +16,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': 0.6,
       'creative-energy': 0.2,
       'friction-sensitivity': 0.7,
+      'safety-need': 0.7,
+      'school-quality': 0.5,
     },
   },
   {
@@ -33,6 +35,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': 0.7,
       'creative-energy': -0.2,
       'friction-sensitivity': 0.6,
+      'safety-need': 0.85,
+      'school-quality': 0.9,
     },
   },
   {
@@ -50,6 +54,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': 0.0,
       'creative-energy': 0.9,
       'friction-sensitivity': -0.4,
+      'safety-need': 0.4,
+      'school-quality': 0.0,
     },
   },
   {
@@ -67,6 +73,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': 0.3,
       'creative-energy': 0.3,
       'friction-sensitivity': 0.2,
+      'safety-need': 0.7,
+      'school-quality': 0.6,
     },
   },
   {
@@ -84,6 +92,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': 0.3,
       'creative-energy': 0.2,
       'friction-sensitivity': 0.0,
+      'safety-need': 0.5,
+      'school-quality': 0.4,
     },
   },
   {
@@ -101,6 +111,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': 0.2,
       'creative-energy': 0.2,
       'friction-sensitivity': 0.0,
+      'safety-need': 0.5,
+      'school-quality': 0.4,
     },
   },
   {
@@ -118,6 +130,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': 0.9,
       'creative-energy': 0.0,
       'friction-sensitivity': 0.5,
+      'safety-need': 0.7,
+      'school-quality': 0.5,
     },
   },
   {
@@ -135,6 +149,8 @@ export const archetypes: readonly Archetype[] = [
       'environmental-openness': -0.2,
       'creative-energy': 0.7,
       'friction-sensitivity': -0.6,
+      'safety-need': 0.3,
+      'school-quality': 0.0,
     },
   },
 ] as const;

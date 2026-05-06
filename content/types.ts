@@ -56,10 +56,14 @@ export type MultiSelectQuestion = {
   kind: 'multi_select';
   prompt: string;
   helperText?: string;
-  // selecting any of these adds the value(s) to the user's selectedTags set
+  // selecting any of these adds the value(s) to either selectedTags or
+  // mustHaves depending on `purpose` (default: cultural_tags).
   options: { value: string; label: string }[];
-  // optionally, picking ANY option also nudges a dimension (e.g., cultural-ecosystem)
+  // optionally, picking ANY option also nudges a dimension
   dimensionImpactPerSelection?: Partial<Record<DimensionId, number>>;
+  // 'cultural_tags' (default): selections feed the soft cultural-tag boost
+  // 'must_haves': selections become hard filters (excluded if not satisfied)
+  purpose?: 'cultural_tags' | 'must_haves';
 };
 
 export type Question = ForcedChoiceQuestion | SliderQuestion | MultiSelectQuestion;
@@ -82,6 +86,10 @@ export type Neighborhood = {
   // the cultural-communities multi-select question, neighborhoods with matching
   // tags get a score boost.
   culturalTags?: string[];
+  // True for neighborhoods where day-to-day life is significantly better with
+  // a car (errands, off-NYC trips, etc.). Used by the 'no car required'
+  // must-have filter.
+  carDependent?: boolean;
   basePassages: {
     whyItFits: string;
     whoThrivesHere: string;
@@ -106,8 +114,6 @@ export type Passage = {
 
 export type UserVector = Record<DimensionId, number>;
 
-// Bumped because we added culturalTags + multi_select question.
-// Saved fingerprints from prior versions still decode (vector-only) but
-// will not have selectedTags, which is fine. Server-side re-ranking handles
-// the version drift gracefully.
-export const CONTENT_VERSION = '2026-05-06-poc-v2' as const;
+// Bumped per schema change. Older fingerprints still decode (vector +
+// optional tags) but won't have mustHaves; that's a no-op default.
+export const CONTENT_VERSION = '2026-05-06-poc-v3' as const;

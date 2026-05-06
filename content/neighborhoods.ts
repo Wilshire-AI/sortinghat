@@ -11,6 +11,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.5,
       'space-sensitivity': 0.5, 'family-trajectory': 0.8, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.8, 'creative-energy': 0.0, 'friction-sensitivity': 0.6,
+      'safety-need': 0.8, 'school-quality': 0.85,
     },
     culturalTags: ['jewish'],
     basePassages: {
@@ -27,6 +28,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.3, 'prestige-orientation': 0.7,
       'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.7, 'creative-energy': -0.2, 'friction-sensitivity': 0.7,
+      'safety-need': 0.85, 'school-quality': 0.85,
     },
     culturalTags: ['jewish'],
     basePassages: {
@@ -43,6 +45,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.9,
       'space-sensitivity': -0.3, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.4, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
+      'safety-need': 0.75, 'school-quality': 0.8,
     },
     culturalTags: ['lgbtq'],
     basePassages: {
@@ -59,6 +62,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.7, 'transit-psychology': 0.0, 'prestige-orientation': 0.0,
       'space-sensitivity': -0.4, 'family-trajectory': -0.4, 'cultural-ecosystem': 0.5,
       'environmental-openness': 0.0, 'creative-energy': 0.7, 'friction-sensitivity': -0.4,
+      'safety-need': 0.55, 'school-quality': 0.5,
     },
     basePassages: {
       whyItFits: 'Less polished than the West Village, more itself. Walk-up apartments, a dense lattice of bars and bookshops and small restaurants, the layered residue of every NYC subculture from the 60s onward. Energy is high. Orderliness is not the point.',
@@ -74,6 +78,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.6, 'prestige-orientation': 0.95,
       'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.7,
+      'safety-need': 0.85, 'school-quality': 0.85,
     },
     basePassages: {
       whyItFits: 'Cobbled streets, cast-iron buildings, lofts large enough to swing a piano in. Manhattan\'s priciest residential triangle by some measures, and the calm-with-cachet that price buys is real. Quiet on weekends, walking distance to the river, restaurants that don\'t need to advertise.',
@@ -89,6 +94,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.8, 'prestige-orientation': 0.3,
       'space-sensitivity': 0.5, 'family-trajectory': 0.3, 'cultural-ecosystem': -0.2,
       'environmental-openness': 0.6, 'creative-energy': -0.2, 'friction-sensitivity': 0.5,
+      'safety-need': 0.7, 'school-quality': 0.85,
     },
     basePassages: {
       whyItFits: 'NYC\'s most transit-redundant residential zone. A dozen subway lines and the PATH inside a square mile, plus ferry. Newer apartment stock is generous on space relative to price. The waterfront promenade does most of what Riverside Park does, with bigger views.',
@@ -104,6 +110,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.5,
       'space-sensitivity': 0.0, 'family-trajectory': 0.0, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.5, 'creative-energy': 0.6, 'friction-sensitivity': 0.0,
+      'safety-need': 0.7, 'school-quality': 0.6,
     },
     culturalTags: ['lgbtq'],
     basePassages: {
@@ -120,6 +127,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.7,
       'space-sensitivity': 0.4, 'family-trajectory': 0.5, 'cultural-ecosystem': -0.1,
       'environmental-openness': 0.3, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
+      'safety-need': 0.8, 'school-quality': 0.7,
     },
     basePassages: {
       whyItFits: 'A pocket of unexpected calm right in midtown\'s belly, anchored by NYC\'s only private park. Pre-war buildings, low-rise blocks, and a settled-in feeling that contrasts with the energy three avenues in any direction.',
@@ -135,6 +143,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.7, 'prestige-orientation': 0.0,
       'space-sensitivity': -0.2, 'family-trajectory': -0.2, 'cultural-ecosystem': 0.4,
       'environmental-openness': 0.2, 'creative-energy': 0.4, 'friction-sensitivity': -0.3,
+      'safety-need': 0.6, 'school-quality': 0.55,
     },
     culturalTags: ['lgbtq'],
     basePassages: {
@@ -151,6 +160,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': -0.3,
       'space-sensitivity': 0.6, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.7,
       'environmental-openness': 0.5, 'creative-energy': 0.4, 'friction-sensitivity': 0.0,
+      'safety-need': 0.55, 'school-quality': 0.45,
     },
     culturalTags: ['african-american', 'west-african'],
     basePassages: {
@@ -168,6 +178,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.0, 'prestige-orientation': 0.4,
       'space-sensitivity': 0.0, 'family-trajectory': 0.0, 'cultural-ecosystem': 0.3,
       'environmental-openness': 0.4, 'creative-energy': 0.7, 'friction-sensitivity': -0.2,
+      'safety-need': 0.7, 'school-quality': 0.55,
     },
     basePassages: {
       whyItFits: 'NYC\'s most successful gentrification arc, complete. The L holds the neighborhood hostage, but newer residential buildings are large and waterfront-adjacent, the restaurants are excellent, and the energy peaks higher than anywhere in Brooklyn except maybe Bushwick on a Saturday night.',
@@ -183,6 +194,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.5,
       'space-sensitivity': 0.5, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.1,
       'environmental-openness': 0.8, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
+      'safety-need': 0.85, 'school-quality': 0.9,
     },
     culturalTags: ['lgbtq', 'jewish'],
     basePassages: {
@@ -199,6 +211,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.6,
       'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.7, 'creative-energy': -0.1, 'friction-sensitivity': 0.8,
+      'safety-need': 0.85, 'school-quality': 0.85,
     },
     basePassages: {
       whyItFits: 'Brooklyn\'s most architecturally serious residential neighborhood. Wide avenues of 19th-century townhouses, the Promenade with the most famous skyline view in the city, and transit redundancy that surprises people. Calm without being remote.',
@@ -214,6 +227,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.4, 'prestige-orientation': -0.1,
       'space-sensitivity': 0.6, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.5,
       'environmental-openness': 0.3, 'creative-energy': 0.5, 'friction-sensitivity': 0.0,
+      'safety-need': 0.5, 'school-quality': 0.4,
     },
     culturalTags: ['african-american', 'caribbean'],
     basePassages: {
@@ -230,6 +244,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.5, 'prestige-orientation': 0.7,
       'space-sensitivity': 0.4, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
+      'safety-need': 0.8, 'school-quality': 0.7,
     },
     basePassages: {
       whyItFits: 'Cobbled streets between two bridges, cast-iron warehouses converted to lofts, and direct access to one of the city\'s most spectacular waterfront parks. A small neighborhood with outsize cinematic identity.',
@@ -245,6 +260,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.4,
       'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.5, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
+      'safety-need': 0.85, 'school-quality': 0.8,
     },
     culturalTags: ['middle-eastern'],
     basePassages: {
@@ -261,6 +277,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.0, 'prestige-orientation': -0.4,
       'space-sensitivity': 0.5, 'family-trajectory': -0.3, 'cultural-ecosystem': 0.5,
       'environmental-openness': -0.1, 'creative-energy': 0.8, 'friction-sensitivity': -0.5,
+      'safety-need': 0.45, 'school-quality': 0.35,
     },
     culturalTags: ['latin-american'],
     basePassages: {
@@ -271,6 +288,40 @@ export const neighborhoods: readonly Neighborhood[] = [
     anchors: { transit: ['L (Morgan/Jefferson/DeKalb)', 'M (Myrtle)', 'J/Z'], parks: ['Maria Hernandez', 'Bushwick Inlet (a stretch)'], groceries: ['Trader Joe\'s (nearby)', 'Mr. Kiwi', 'Western Beef'] },
     heroImage: '/images/neighborhoods/bushwick.svg',
   },
+  {
+    id: 'brighton-beach', slug: 'brighton-beach', name: 'Brighton Beach', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.0, 'prestige-orientation': -0.5,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.95,
+      'environmental-openness': 0.7, 'creative-energy': 0.0, 'friction-sensitivity': -0.1,
+      'safety-need': 0.6, 'school-quality': 0.5,
+    },
+    culturalTags: ['eastern-european'],
+    basePassages: {
+      whyItFits: 'The deepest Russian and Ukrainian community in the country, on a literal beach, with a boardwalk that gets you out of the city without leaving it. The Q is a long ride to Manhattan but a quiet one. Apartments cost a fraction of prime Brooklyn.',
+      whoThrivesHere: 'Cultural-anchor seekers, especially those for whom post-Soviet community is daily life.',
+      tradeoffs: ['End of the Q line means a real commute', 'Reads as far from "the city" even when it isn\'t in time', 'Limited beyond the cultural and beach scene'],
+    },
+    anchors: { transit: ['Q (terminus)', 'B (rush hours)'], parks: ['Brighton Beach Boardwalk', 'Coney Island Beach'], groceries: ['Brighton Bazaar', 'Net Cost Market', 'M&I International'] },
+    heroImage: '/images/neighborhoods/brighton-beach.svg',
+  },
+  {
+    id: 'sheepshead-bay', slug: 'sheepshead-bay', name: 'Sheepshead Bay', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.3, 'prestige-orientation': -0.4,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.7,
+      'environmental-openness': 0.6, 'creative-energy': -0.2, 'friction-sensitivity': 0.4,
+      'safety-need': 0.65, 'school-quality': 0.55,
+    },
+    culturalTags: ['eastern-european', 'east-asian'],
+    basePassages: {
+      whyItFits: 'A genuine waterfront community, less famous than Brighton but materially better-served by transit (B and Q). Apartment stock includes real two-bedrooms at prices Brooklyn proper has forgotten. A working mix of Russian, Chinese, Italian, and Caribbean communities.',
+      whoThrivesHere: 'Value-and-space seekers who want a real neighborhood at south-Brooklyn prices.',
+      tradeoffs: ['Long commute to Manhattan', 'Limited dining/nightlife at the high end', 'Reads as "deep Brooklyn" to Manhattanites'],
+    },
+    anchors: { transit: ['B', 'Q', 'B36/B49 buses'], parks: ['Sheepshead Bay waterfront', 'Marine Park nearby'], groceries: ['Net Cost', 'Stop & Shop', 'Brighton Bazaar nearby'] },
+    heroImage: '/images/neighborhoods/sheepshead-bay.svg',
+  },
   // -------- QUEENS --------
   {
     id: 'long-island-city', slug: 'long-island-city', name: 'Long Island City', borough: 'queens',
@@ -278,6 +329,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.7, 'prestige-orientation': 0.2,
       'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
+      'safety-need': 0.75, 'school-quality': 0.55,
     },
     basePassages: {
       whyItFits: 'A new high-rise riverfront with one of NYC\'s best skyline views from your living room. Newer apartment stock means real space. Transit redundancy is genuinely strong (7, E, M, G, F, plus ferry). Waterfront parks anchor the daily walk.',
@@ -293,6 +345,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.5, 'prestige-orientation': -0.1,
       'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.7,
       'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.4,
+      'safety-need': 0.75, 'school-quality': 0.65,
     },
     culturalTags: ['mediterranean', 'middle-eastern'],
     basePassages: {
@@ -309,6 +362,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.3, 'prestige-orientation': -0.3,
       'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.95,
       'environmental-openness': 0.4, 'creative-energy': 0.0, 'friction-sensitivity': -0.3,
+      'safety-need': 0.6, 'school-quality': 0.7,
     },
     culturalTags: ['east-asian'],
     basePassages: {
@@ -325,6 +379,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.1,
       'space-sensitivity': 0.7, 'family-trajectory': 0.8, 'cultural-ecosystem': 0.3,
       'environmental-openness': 0.6, 'creative-energy': -0.3, 'friction-sensitivity': 0.7,
+      'safety-need': 0.85, 'school-quality': 0.85,
     },
     culturalTags: ['jewish', 'eastern-european'],
     basePassages: {
@@ -342,8 +397,10 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.7, 'transit-psychology': -0.2, 'prestige-orientation': 0.0,
       'space-sensitivity': 0.8, 'family-trajectory': 0.85, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.9, 'creative-energy': -0.5, 'friction-sensitivity': 0.85,
+      'safety-need': 0.85, 'school-quality': 0.85,
     },
     culturalTags: ['jewish'],
+    carDependent: true,
     basePassages: {
       whyItFits: 'A leafy, hilly, suburban-feeling pocket of NYC with Hudson views and apartment values that beat anything comparable on the other side of the bridge. The 1 train and Metro-North are the connections. The daily quiet is the point.',
       whoThrivesHere: 'Family-first households who want green space and quiet streets within city limits.',
@@ -359,6 +416,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.0, 'prestige-orientation': -0.4,
       'space-sensitivity': 0.7, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.3,
       'environmental-openness': 0.7, 'creative-energy': -0.2, 'friction-sensitivity': 0.6,
+      'safety-need': 0.6, 'school-quality': 0.5,
     },
     basePassages: {
       whyItFits: 'The only NYC neighborhood with a five-minute walk to a free 25-minute ferry to Lower Manhattan. Apartments are dramatically larger and cheaper than anywhere on the other end of that ferry. Views are the daily reward.',
@@ -375,6 +433,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.6, 'prestige-orientation': 0.2,
       'space-sensitivity': 0.5, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.6, 'creative-energy': 0.0, 'friction-sensitivity': 0.5,
+      'safety-need': 0.85, 'school-quality': 0.7,
     },
     basePassages: {
       whyItFits: 'A walkable mile-square city across the river with PATH service that beats most subway commutes from outer Brooklyn. Apartments are larger, the waterfront promenade is genuinely beautiful, and Manhattan is closer in time than most of Queens.',
@@ -390,6 +449,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.1,
       'space-sensitivity': 0.7, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.4,
       'environmental-openness': 0.5, 'creative-energy': 0.2, 'friction-sensitivity': 0.4,
+      'safety-need': 0.7, 'school-quality': 0.65,
     },
     culturalTags: ['south-asian', 'latin-american'],
     basePassages: {
@@ -399,6 +459,60 @@ export const neighborhoods: readonly Neighborhood[] = [
     },
     anchors: { transit: ['PATH (Exchange Place, Grove St, Newport)', 'Light Rail', 'Ferry'], parks: ['Liberty State Park', 'Newport Green', 'Hamilton Park'], groceries: ['ShopRite', 'Trader Joe\'s', 'Whole Foods'] },
     heroImage: '/images/neighborhoods/jersey-city.svg',
+  },
+  {
+    id: 'fort-lee', slug: 'fort-lee', name: 'Fort Lee', borough: 'nj',
+    scores: {
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.5, 'prestige-orientation': 0.1,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.6,
+      'environmental-openness': 0.6, 'creative-energy': -0.1, 'friction-sensitivity': 0.6,
+      'safety-need': 0.8, 'school-quality': 0.85,
+    },
+    culturalTags: ['east-asian'],
+    carDependent: true,
+    basePassages: {
+      whyItFits: 'A serious Korean American center with cliffside views over the Hudson, real high-rise apartment stock, and quick bus access through the Lincoln Tunnel or over the GW Bridge. Schools are strong, restaurants are excellent, and apartments are bigger than NYC at meaningful margins.',
+      whoThrivesHere: 'East Asian community-oriented households and value-conscious families willing to cross the river.',
+      tradeoffs: ['No subway. Bus and car are the main connections.', 'Reads "very NJ" to NYC purists', 'Nightlife is limited compared to even outer Brooklyn'],
+    },
+    anchors: { transit: ['NJ Transit bus (Lincoln Tunnel)', 'GW Bridge buses', 'Ferry from Edgewater nearby'], parks: ['Palisades Interstate Park', 'Constitution Park'], groceries: ['H Mart', 'Costco (nearby)', 'Hannah\'s Korean Market'] },
+    heroImage: '/images/neighborhoods/fort-lee.svg',
+  },
+  {
+    id: 'edgewater', slug: 'edgewater', name: 'Edgewater', borough: 'nj',
+    scores: {
+      'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.2, 'prestige-orientation': 0.1,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.4,
+      'environmental-openness': 0.7, 'creative-energy': -0.2, 'friction-sensitivity': 0.7,
+      'safety-need': 0.8, 'school-quality': 0.75,
+    },
+    culturalTags: ['east-asian'],
+    carDependent: true,
+    basePassages: {
+      whyItFits: 'A quiet waterfront strip with newer luxury developments, Korean and Japanese groceries within walking distance, and ferry service that beats driving into Manhattan. Apartments are big, parking is easy, and the Hudson is your front yard.',
+      whoThrivesHere: 'Households who want waterfront space and a low-friction daily life within striking distance of NYC.',
+      tradeoffs: ['Transit options are limited (ferry + buses)', 'Car becomes useful or necessary', 'Very residential, light on street life'],
+    },
+    anchors: { transit: ['NY Waterway Ferry', 'NJ Transit bus', 'Lincoln Tunnel buses'], parks: ['Veterans Field', 'Hudson waterfront promenade'], groceries: ['Mitsuwa Marketplace', 'Trader Joe\'s', 'Whole Foods'] },
+    heroImage: '/images/neighborhoods/edgewater.svg',
+  },
+  {
+    id: 'palisades-park', slug: 'palisades-park', name: 'Palisades Park', borough: 'nj',
+    scores: {
+      'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.3, 'prestige-orientation': -0.1,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.65, 'cultural-ecosystem': 0.85,
+      'environmental-openness': 0.4, 'creative-energy': -0.2, 'friction-sensitivity': 0.4,
+      'safety-need': 0.75, 'school-quality': 0.75,
+    },
+    culturalTags: ['east-asian'],
+    carDependent: true,
+    basePassages: {
+      whyItFits: 'One of the densest Korean American communities in the United States. Broad Avenue is a working Korean main street: bakeries, banks, restaurants, banh-shop after banh-shop. Buses connect to Manhattan. The community itself is the reason to live here.',
+      whoThrivesHere: 'Korean American households and others for whom East Asian community access is daily life.',
+      tradeoffs: ['No subway access. Buses to NYC are the option.', 'Less waterfront-pretty than Edgewater', 'Reads "second-tier NJ" to NYC purists'],
+    },
+    anchors: { transit: ['NJ Transit bus (Broad Ave)', 'GW Bridge bus'], parks: ['Palisades Interstate Park nearby', 'Garibaldi Park'], groceries: ['H Mart', 'Hannah\'s', 'Han Yang'] },
+    heroImage: '/images/neighborhoods/palisades-park.svg',
   },
 ] as const;
 

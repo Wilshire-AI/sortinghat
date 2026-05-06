@@ -3,8 +3,8 @@ import { neighborhoods } from '@content/neighborhoods';
 import { dimensions } from '@content/dimensions';
 
 describe('neighborhoods', () => {
-  it('has at least 25 neighborhoods', () => {
-    expect(neighborhoods.length).toBeGreaterThanOrEqual(25);
+  it('has at least 30 neighborhoods', () => {
+    expect(neighborhoods.length).toBeGreaterThanOrEqual(30);
   });
   it('all ids and slugs unique kebab-case', () => {
     const ids = neighborhoods.map((n) => n.id);

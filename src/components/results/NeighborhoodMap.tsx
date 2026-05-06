@@ -42,9 +42,16 @@ const POSITIONS: Record<string, { x: number; y: number }> = {
   bushwick: { x: 460, y: 480 },
   'bed-stuy': { x: 445, y: 530 },
   'park-slope': { x: 410, y: 575 },
+  'sheepshead-bay': { x: 500, y: 695 },
+  'brighton-beach': { x: 470, y: 720 },
 
   // Staten Island
   'st-george': { x: 195, y: 685 },
+
+  // NJ — additional Bergen waterfront
+  'fort-lee': { x: 170, y: 290 },
+  edgewater: { x: 160, y: 355 },
+  'palisades-park': { x: 130, y: 270 },
 };
 
 const boroughLabel: Record<string, string> = {

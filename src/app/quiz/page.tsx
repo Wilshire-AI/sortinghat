@@ -30,7 +30,12 @@ export default function QuizPage() {
       // Last question. Compute final state locally to avoid setState async issues.
       const finalState = applyAnswer(state, current, a);
       const finalVec = finalizeVector(finalState);
-      const encoded = encodeFingerprint(finalVec, CONTENT_VERSION, finalState.selectedTags);
+      const encoded = encodeFingerprint(
+        finalVec,
+        CONTENT_VERSION,
+        finalState.selectedTags,
+        finalState.mustHaves,
+      );
       router.push(`/results?f=${encoded}`);
     }
   };

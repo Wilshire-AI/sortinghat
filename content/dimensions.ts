@@ -77,4 +77,20 @@ export const dimensions: readonly Dimension[] = [
       'Both poles are real lived preferences. Some people are energized by noise, density, and friction. Others are drained by it. Mismatching either way is a real friction. (Neighborhoods are scored such that high values mean low friction — calm, orderly.)',
     poles: { low: 'High tolerance for daily chaos.', high: 'Drained by noise, disorder, friction.' },
   },
+  {
+    id: 'safety-need',
+    name: 'Perceived Safety Need',
+    kind: 'asymmetric_need',
+    description:
+      'How much you want to feel safe walking home alone, late at night, or with kids. This is a perception measure, not a crime-statistics measure. Most NYC neighborhoods are statistically safe by national standards, but perception varies. Higher need = stronger filter against neighborhoods with rougher reputations. The dimension is asymmetric: low need doesn\'t mean disliking safe places, just not weighting it heavily.',
+    poles: { low: 'Not a strong factor for me.', high: 'I need to feel safe at all hours.' },
+  },
+  {
+    id: 'school-quality',
+    name: 'Zoned School Quality',
+    kind: 'asymmetric_need',
+    description:
+      'How much zoned public school quality matters to you. Most relevant to people with kids or planning to have them, but also affects long-term resale and neighborhood stability for everyone. Asymmetric: not caring about schools doesn\'t mean disliking neighborhoods that happen to have good ones.',
+    poles: { low: 'Not a factor for me.', high: 'Top-rated schools required.' },
+  },
 ] as const;

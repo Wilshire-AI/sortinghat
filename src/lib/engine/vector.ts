@@ -18,6 +18,7 @@ type EncodedPayload = {
   v: Record<string, number>;
   cv: string;
   t?: string[]; // selected cultural tags (optional, omitted when empty)
+  m?: string[]; // must-have filter keys (optional, omitted when empty)
 };
 
 function toBase64Url(input: string): string {
@@ -40,12 +41,14 @@ export type Fingerprint = {
   vector: UserVector;
   contentVersion: string;
   selectedTags: string[];
+  mustHaves: string[];
 };
 
 export function encodeFingerprint(
   vector: UserVector,
   contentVersion: string,
   selectedTags: string[] = [],
+  mustHaves: string[] = [],
 ): string {
   const payload: EncodedPayload = {
     v: Object.fromEntries(
@@ -54,6 +57,7 @@ export function encodeFingerprint(
     cv: contentVersion,
   };
   if (selectedTags.length > 0) payload.t = selectedTags;
+  if (mustHaves.length > 0) payload.m = mustHaves;
   return toBase64Url(JSON.stringify(payload));
 }
 
@@ -79,19 +83,19 @@ export function decodeFingerprint(encoded: string): Fingerprint {
   ) {
     throw new Error('Malformed fingerprint payload');
   }
-  const v = (parsed as { v: Record<string, unknown>; cv: string; t?: unknown }).v;
-  const cv = (parsed as { v: Record<string, unknown>; cv: string; t?: unknown }).cv;
-  const t = (parsed as { v: Record<string, unknown>; cv: string; t?: unknown }).t;
+  const obj = parsed as { v: Record<string, unknown>; cv: string; t?: unknown; m?: unknown };
   const vector: UserVector = {};
-  for (const [k, val] of Object.entries(v)) {
+  for (const [k, val] of Object.entries(obj.v)) {
     if (typeof val !== 'number' || !Number.isFinite(val)) {
       throw new Error(`Invalid value for dimension ${k}`);
     }
     vector[k as DimensionId] = val;
   }
-  let selectedTags: string[] = [];
-  if (Array.isArray(t)) {
-    selectedTags = t.filter((x): x is string => typeof x === 'string');
-  }
-  return { vector, contentVersion: cv, selectedTags };
+  const selectedTags: string[] = Array.isArray(obj.t)
+    ? obj.t.filter((x): x is string => typeof x === 'string')
+    : [];
+  const mustHaves: string[] = Array.isArray(obj.m)
+    ? obj.m.filter((x): x is string => typeof x === 'string')
+    : [];
+  return { vector, contentVersion: obj.cv, selectedTags, mustHaves };
 }

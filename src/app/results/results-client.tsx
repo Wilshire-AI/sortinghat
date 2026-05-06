@@ -34,6 +34,7 @@ export function ResultsClient() {
         dimensions,
         neighborhoods.length,
         decoded.selectedTags,
+        decoded.mustHaves,
       );
       return {
         vector: decoded.vector,
@@ -41,6 +42,7 @@ export function ResultsClient() {
         ranked: allRanked.slice(0, 5),
         rest: allRanked.slice(5),
         selectedTags: decoded.selectedTags,
+        mustHaves: decoded.mustHaves,
       };
     } catch {
       return null;
