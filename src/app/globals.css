@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #f4ede2;
+  --color-ink: #2b1f17;
+  --color-accent: #b14b2c;
+  --color-muted: #7d6b54;
+  --color-line: #2b1f1722;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--color-bg);
+  --color-ink: var(--color-ink);
+  --color-accent: var(--color-accent);
+  --color-muted: var(--color-muted);
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-bg: #1a1410;
+    --color-ink: #f4ede2;
+    --color-accent: #d27b5e;
+    --color-muted: #9a8a72;
+    --color-line: #f4ede222;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans), -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+.font-serif { font-family: var(--font-serif), Georgia, serif; }
+.font-sans { font-family: var(--font-sans), -apple-system, system-ui, sans-serif; }
+
+::selection { background: var(--color-accent); color: var(--color-bg); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Borough hero gradients (used in NeighborhoodCard) */
+.borough-manhattan       { background: linear-gradient(135deg, #d4a574 0%, #8b5a3c 60%, #4a3225 100%); }
+.borough-brooklyn        { background: linear-gradient(135deg, #c97e5e 0%, #7d3f2c 60%, #3e1d14 100%); }
+.borough-queens          { background: linear-gradient(135deg, #c4a07c 0%, #876043 60%, #3f2b1c 100%); }
+.borough-bronx           { background: linear-gradient(135deg, #9eb582 0%, #5a7548 60%, #2c3a23 100%); }
+.borough-staten-island   { background: linear-gradient(135deg, #a8b5c4 0%, #5d6d80 60%, #2c343f 100%); }
+.borough-nj              { background: linear-gradient(135deg, #b89e8f 0%, #6e5c50 60%, #352c25 100%); }
