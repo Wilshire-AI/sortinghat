@@ -26,8 +26,13 @@ export function ResultsClient() {
       const decoded = decodeFingerprint(f);
       const dimIds = dimensions.map((d) => d.id);
       const archetype = matchArchetype(decoded.vector, archetypes, dimIds);
-      const ranked = rankNeighborhoods(decoded.vector, neighborhoods, dimIds, 5);
-      return { vector: decoded.vector, archetype, ranked };
+      const ranked = rankNeighborhoods(decoded.vector, neighborhoods, dimIds, 5, decoded.selectedTags);
+      return {
+        vector: decoded.vector,
+        archetype,
+        ranked,
+        selectedTags: decoded.selectedTags,
+      };
     } catch {
       return null;
     }
@@ -72,6 +77,9 @@ export function ResultsClient() {
               neighborhood={r.neighborhood}
               prose={prose}
               score={r.score}
+              matchedTags={(r.neighborhood.culturalTags ?? []).filter((t) =>
+                result.selectedTags.includes(t),
+              )}
             />
           );
         })}

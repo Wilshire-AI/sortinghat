@@ -5,7 +5,7 @@ export const archetypes: readonly Archetype[] = [
     id: 'calm-seeking-urbanist',
     name: 'The Calm-Seeking Urbanist',
     identity:
-      'You want NYC\'s optionality and energy near at hand, but you don\'t want to swim in it. Home is a place to decompress; the city is a resource you draw from when you choose to. You\'d rather hear birds than traffic when you wake up, but you also like knowing the subway can take you to anything by tonight.',
+      'You want NYC\'s optionality and energy near at hand, but you don\'t want to swim in it. Home is a place to decompress. The city is a resource you draw from when you choose to. You\'d rather hear birds than traffic when you wake up, but you also like knowing the subway can take you to anything by tonight.',
     vector: {
       'urban-intensity-tolerance': -0.4,
       'transit-psychology': 0.6,
@@ -90,7 +90,7 @@ export const archetypes: readonly Archetype[] = [
     id: 'cultural-anchor-seeker',
     name: 'The Cultural Anchor Seeker',
     identity:
-      'You want to live somewhere where the food, language, and rhythm of daily life feels like home — or where you\'ll genuinely become part of a culture that does. The block matters less than what\'s on it: the bakery you can become a regular at, the language you hear on the street.',
+      'You want to live somewhere where the food, language, and rhythm of daily life feels like home, or where you\'ll genuinely become part of a culture that does. The block matters less than what\'s on it. The bakery you can become a regular at. The language you hear on the street.',
     vector: {
       'urban-intensity-tolerance': 0.2,
       'transit-psychology': 0.3,
@@ -107,7 +107,7 @@ export const archetypes: readonly Archetype[] = [
     id: 'nature-hungry-urbanist',
     name: 'The Nature-Hungry Urbanist',
     identity:
-      'You stay in NYC for the optionality, but you wilt without sky and trees. Mornings near a park, weekends near water — you\'ll trade an extra subway stop for a window onto something green.',
+      'You stay in NYC for the optionality, but you wilt without sky and trees. Mornings near a park. Weekends near water. You\'ll trade an extra subway stop for a window onto something green.',
     vector: {
       'urban-intensity-tolerance': -0.2,
       'transit-psychology': 0.3,
@@ -124,7 +124,7 @@ export const archetypes: readonly Archetype[] = [
     id: 'energy-driven-maximalist',
     name: 'The Energy-Driven Maximalist',
     identity:
-      'You want NYC at full volume. Restaurants, nightlife, density, friction — the whole point is that everything is happening at once. Calm makes you restless; you want to be in the middle of the city\'s pulse.',
+      'You want NYC at full volume. Restaurants, nightlife, density, friction. The whole point is that everything is happening at once. Calm makes you restless. You want to be in the middle of the city\'s pulse.',
     vector: {
       'urban-intensity-tolerance': 0.9,
       'transit-psychology': 0.5,

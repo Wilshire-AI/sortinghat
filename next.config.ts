@@ -4,7 +4,6 @@ import { dirname } from "node:path";
 
 // Static export so we can host on any static-file host (Vercel, GitHub Pages, etc.).
 // All runtime behavior lives client-side; the engine is pure.
-const isProd = process.env.NODE_ENV === "production";
 const isPagesBuild = process.env.GITHUB_PAGES === "true";
 
 const nextConfig: NextConfig = {

@@ -1,4 +1,4 @@
-// content/types.ts — single source of truth for all static-content shapes
+// content/types.ts. Single source of truth for all static-content shapes.
 export type DimensionId = string;
 export type ArchetypeId = string;
 export type NeighborhoodId = string;
@@ -37,7 +37,18 @@ export type SliderQuestion = {
   dimensionId: DimensionId;
 };
 
-export type Question = ForcedChoiceQuestion | SliderQuestion;
+export type MultiSelectQuestion = {
+  id: string;
+  kind: 'multi_select';
+  prompt: string;
+  helperText?: string;
+  // selecting any of these adds the value(s) to the user's selectedTags set
+  options: { value: string; label: string }[];
+  // optionally, picking ANY option also nudges a dimension (e.g., cultural-ecosystem)
+  dimensionImpactPerSelection?: Partial<Record<DimensionId, number>>;
+};
+
+export type Question = ForcedChoiceQuestion | SliderQuestion | MultiSelectQuestion;
 
 export type Archetype = {
   id: ArchetypeId;
@@ -53,6 +64,10 @@ export type Neighborhood = {
   shortName?: string;
   borough: Borough;
   scores: Record<DimensionId, number>;
+  // Optional cultural community tags. When the user selects any of these via
+  // the cultural-communities multi-select question, neighborhoods with matching
+  // tags get a score boost.
+  culturalTags?: string[];
   basePassages: {
     whyItFits: string;
     whoThrivesHere: string;
@@ -77,4 +92,8 @@ export type Passage = {
 
 export type UserVector = Record<DimensionId, number>;
 
-export const CONTENT_VERSION = '2026-05-06-poc' as const;
+// Bumped because we added culturalTags + multi_select question.
+// Saved fingerprints from prior versions still decode (vector-only) but
+// will not have selectedTags, which is fine. Server-side re-ranking handles
+// the version drift gracefully.
+export const CONTENT_VERSION = '2026-05-06-poc-v2' as const;

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
   display: "swap",
 });
 
@@ -18,7 +20,7 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://sortinghat.wilshirea
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
-  title: "Sorting Hat — find your NYC neighborhood",
+  title: "Sorting Hat. Find your NYC neighborhood.",
   description:
     "A quiz that matches you to NYC neighborhoods based on who you actually are, not what you can afford.",
   openGraph: {
@@ -38,7 +40,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" className={`${instrumentSerif.variable} ${inter.variable}`}>
       <body>{children}</body>
     </html>
   );

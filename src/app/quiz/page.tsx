@@ -25,13 +25,12 @@ export default function QuizPage() {
     if (idx + 1 < questions.length) {
       answer(current, a);
       setIdx(idx + 1);
-      // small delay before allowing next click
-      setTimeout(() => { inFlightRef.current = false; }, 250);
+      setTimeout(() => { inFlightRef.current = false; }, 200);
     } else {
-      // Last question — compute final vector locally to avoid setState async issues
+      // Last question. Compute final state locally to avoid setState async issues.
       const finalState = applyAnswer(state, current, a);
       const finalVec = finalizeVector(finalState);
-      const encoded = encodeFingerprint(finalVec, CONTENT_VERSION);
+      const encoded = encodeFingerprint(finalVec, CONTENT_VERSION, finalState.selectedTags);
       router.push(`/results?f=${encoded}`);
     }
   };

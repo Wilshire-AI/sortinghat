@@ -17,10 +17,10 @@ export function clampVector(v: UserVector): UserVector {
 type EncodedPayload = {
   v: Record<string, number>;
   cv: string;
+  t?: string[]; // selected cultural tags (optional, omitted when empty)
 };
 
 function toBase64Url(input: string): string {
-  // Browser-safe (works in both node and edge runtimes)
   const b64 = typeof Buffer !== 'undefined'
     ? Buffer.from(input, 'utf8').toString('base64')
     : btoa(unescape(encodeURIComponent(input)));
@@ -36,20 +36,28 @@ function fromBase64Url(input: string): string {
   return decodeURIComponent(escape(atob(padded)));
 }
 
-export function encodeFingerprint(vector: UserVector, contentVersion: string): string {
+export type Fingerprint = {
+  vector: UserVector;
+  contentVersion: string;
+  selectedTags: string[];
+};
+
+export function encodeFingerprint(
+  vector: UserVector,
+  contentVersion: string,
+  selectedTags: string[] = [],
+): string {
   const payload: EncodedPayload = {
     v: Object.fromEntries(
       Object.entries(vector).map(([k, val]) => [k, Math.round(val * 1000) / 1000]),
     ),
     cv: contentVersion,
   };
+  if (selectedTags.length > 0) payload.t = selectedTags;
   return toBase64Url(JSON.stringify(payload));
 }
 
-export function decodeFingerprint(encoded: string): {
-  vector: UserVector;
-  contentVersion: string;
-} {
+export function decodeFingerprint(encoded: string): Fingerprint {
   let json: string;
   try {
     json = fromBase64Url(encoded);
@@ -71,8 +79,9 @@ export function decodeFingerprint(encoded: string): {
   ) {
     throw new Error('Malformed fingerprint payload');
   }
-  const v = (parsed as { v: Record<string, unknown>; cv: string }).v;
-  const cv = (parsed as { v: Record<string, unknown>; cv: string }).cv;
+  const v = (parsed as { v: Record<string, unknown>; cv: string; t?: unknown }).v;
+  const cv = (parsed as { v: Record<string, unknown>; cv: string; t?: unknown }).cv;
+  const t = (parsed as { v: Record<string, unknown>; cv: string; t?: unknown }).t;
   const vector: UserVector = {};
   for (const [k, val] of Object.entries(v)) {
     if (typeof val !== 'number' || !Number.isFinite(val)) {
@@ -80,5 +89,9 @@ export function decodeFingerprint(encoded: string): {
     }
     vector[k as DimensionId] = val;
   }
-  return { vector, contentVersion: cv };
+  let selectedTags: string[] = [];
+  if (Array.isArray(t)) {
+    selectedTags = t.filter((x): x is string => typeof x === 'string');
+  }
+  return { vector, contentVersion: cv, selectedTags };
 }
