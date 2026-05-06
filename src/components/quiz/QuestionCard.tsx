@@ -17,7 +17,7 @@ export function QuestionCard({ question, questionNumber, totalQuestions, onAnswe
       <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
         Question {questionNumber} of {totalQuestions}
       </p>
-      <h2 className="mt-4 font-serif text-3xl sm:text-4xl leading-[1.1] tracking-tight">
+      <h2 className="mt-4 font-serif text-3xl sm:text-[2.5rem] leading-[1.15] tracking-[-0.01em] font-medium">
         {question.prompt}
       </h2>
       {question.kind === 'forced_choice' ? (
@@ -49,7 +49,7 @@ function ForcedChoice({
           onClick={() => onAnswer({ kind: 'forced_choice', choiceIndex: i })}
           className="w-full text-left rounded-2xl border border-[var(--color-line)] px-6 py-5 hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)]/[0.04] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent)] transition"
         >
-          <span className="text-base sm:text-lg leading-snug">{choice.label}</span>
+          <span className="font-serif text-lg sm:text-xl leading-snug">{choice.label}</span>
         </button>
       ))}
     </div>
@@ -218,11 +218,11 @@ function MultiSelect({
                     : 'border-[var(--color-line)] hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)]/[0.04]')
                 }
               >
-                <span className="inline-flex items-center gap-2">
+                <span className="inline-flex items-center gap-2 font-serif text-base">
                   <span
                     aria-hidden
                     className={
-                      'inline-block h-3.5 w-3.5 rounded-sm border ' +
+                      'inline-block h-3.5 w-3.5 rounded-sm border shrink-0 ' +
                       (isSelected
                         ? 'bg-[var(--color-accent)] border-[var(--color-accent)]'
                         : 'border-[var(--color-ink)]/40')
