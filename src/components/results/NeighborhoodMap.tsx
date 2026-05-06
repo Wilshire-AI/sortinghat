@@ -25,10 +25,10 @@ const CARTO_STYLE = {
     'carto-positron': {
       type: 'raster' as const,
       tiles: [
-        'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
-        'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
-        'https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
-        'https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+        'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+        'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+        'https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+        'https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
       ],
       tileSize: 256,
       attribution:
@@ -49,6 +49,17 @@ const CARTO_STYLE = {
 function scoreColor(score: number): string {
   const hue = Math.round(score * 110);
   return `hsl(${hue}, 60%, 50%)`;
+}
+
+// Stretch a score into the user's actual range so the gradient is visually
+// meaningful. If all 30 neighborhoods score 70-95%, the worst in that range
+// renders red and the best green, even though the absolute values are all
+// "good." This makes the map readable as a relative ranking.
+function makeNormalizer(scores: number[]): (s: number) => number {
+  const min = Math.min(...scores);
+  const max = Math.max(...scores);
+  if (max - min < 0.01) return () => 0.5;
+  return (s) => (s - min) / (max - min);
 }
 
 export function NeighborhoodMap({ ranked }: Props) {
@@ -86,6 +97,12 @@ export function NeighborhoodMap({ ranked }: Props) {
 
     const scoreById = new Map(ranked.map((r) => [r.neighborhood.id, r.score]));
     const neighborById = new Map(ranked.map((r) => [r.neighborhood.id, r.neighborhood]));
+    // Normalize against the user's actual score range so the gradient is
+    // visually informative even when raw scores cluster in a narrow band.
+    const coveredScores = features
+      .map((f) => scoreById.get(f.properties.id))
+      .filter((s): s is number => s !== undefined);
+    const normalize = makeNormalizer(coveredScores);
 
     const enriched = {
       type: 'FeatureCollection' as const,
@@ -100,7 +117,7 @@ export function NeighborhoodMap({ ranked }: Props) {
             properties: {
               id,
               score,
-              color: scoreColor(score),
+              color: scoreColor(normalize(score)),
               name: n.name,
               slug: n.slug,
               scoreLabel: `${Math.round(score * 100)}%`,
@@ -228,7 +245,9 @@ export function NeighborhoodMap({ ranked }: Props) {
       </h2>
       <p className="mt-4 text-sm text-[var(--color-muted)] max-w-xl leading-relaxed">
         Real geography from OpenStreetMap. The 30 neighborhoods we cover are colored
-        by your match score. Hover for the score; click to read the full profile.
+        by your match score, stretched to your actual range (your best match is the
+        most green; your worst is the most red). Hover for the score; click to read
+        the full profile.
       </p>
 
       <div
