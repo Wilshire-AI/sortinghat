@@ -59,15 +59,16 @@ function ForcedChoice({
 // 5-point Likert rendered as a slider with a real handle that snaps to
 // 5 positions. Visual continuity with a continuous slider (solid track,
 // filled portion, prominent handle) but the data is properly discrete.
-// Intensity labels (not agreement labels) since all our slider questions
-// are framed as "how much does X matter to you?"
+// Canonical Likert agreement labels — questions are framed as declarative
+// statements (e.g., "I need to feel safe walking home alone late at night")
+// so 'Strongly disagree' through 'Strongly agree' fit the answer space.
 const LIKERT_POSITIONS = [-1, -0.5, 0, 0.5, 1] as const;
 const LIKERT_LABELS = [
-  'Not at all',
-  'A little',
-  'Somewhat',
-  'A lot',
-  'Strongly',
+  'Strongly disagree',
+  'Disagree',
+  'Neutral',
+  'Agree',
+  'Strongly agree',
 ] as const;
 
 function Slider({

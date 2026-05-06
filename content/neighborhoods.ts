@@ -14,6 +14,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.8, 'school-quality': 0.85,
     },
     culturalTags: ['jewish'],
+    housingTypes: ['co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'A grand pre-war neighborhood that has chosen to grow up. Tree-lined cross streets, classic apartment stock with real bedrooms, two parks bracketing the avenues, and three reliable subway lines. It reads as a permanent place to live, not a phase.',
       whoThrivesHere: 'Family-trajectory urbanists who want substance over scene.',
@@ -31,6 +32,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.85, 'school-quality': 0.85,
     },
     culturalTags: ['jewish'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'Manhattan\'s most polished residential quadrant. Limestone, doormen, museums by the dozen, and a kind of orderly calm that no other part of the city quite produces. Transit is the catch. Historically Lex-only, the Q now helps.',
       whoThrivesHere: 'People who want the city\'s prestige without its grit.',
@@ -48,6 +50,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.75, 'school-quality': 0.8,
     },
     culturalTags: ['lgbtq'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'The most photographed neighborhood in NYC for a reason. Narrow streets at human scale, low-rise townhouses, restaurants that have been there for decades. Comes with the price tag and the tourists, but lived-in West Village is genuinely magical.',
       whoThrivesHere: 'Cosmopolitans who want a postcard street and don\'t flinch at the cost.',
@@ -64,6 +67,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.0, 'creative-energy': 0.7, 'friction-sensitivity': -0.4,
       'safety-need': 0.55, 'school-quality': 0.5,
     },
+    housingTypes: ['co-op', 'rental'],
     basePassages: {
       whyItFits: 'Less polished than the West Village, more itself. Walk-up apartments, a dense lattice of bars and bookshops and small restaurants, the layered residue of every NYC subculture from the 60s onward. Energy is high. Orderliness is not the point.',
       whoThrivesHere: 'Creative immersionists in their 20s and 30s who want texture over polish.',
@@ -80,6 +84,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.7,
       'safety-need': 0.85, 'school-quality': 0.85,
     },
+    housingTypes: ['condo', 'co-op', 'rental'],
     basePassages: {
       whyItFits: 'Cobbled streets, cast-iron buildings, lofts large enough to swing a piano in. Manhattan\'s priciest residential triangle by some measures, and the calm-with-cachet that price buys is real. Quiet on weekends, walking distance to the river, restaurants that don\'t need to advertise.',
       whoThrivesHere: 'Established families and creative-class veterans who want space without leaving downtown.',
@@ -96,6 +101,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.6, 'creative-energy': -0.2, 'friction-sensitivity': 0.5,
       'safety-need': 0.7, 'school-quality': 0.85,
     },
+    housingTypes: ['condo', 'co-op', 'rental'],
     basePassages: {
       whyItFits: 'NYC\'s most transit-redundant residential zone. A dozen subway lines and the PATH inside a square mile, plus ferry. Newer apartment stock is generous on space relative to price. The waterfront promenade does most of what Riverside Park does, with bigger views.',
       whoThrivesHere: 'Transit-optimizers and value-conscious professionals willing to trade neighborhood texture for square footage.',
@@ -113,6 +119,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.7, 'school-quality': 0.6,
     },
     culturalTags: ['lgbtq'],
+    housingTypes: ['co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'A neighborhood that has reinvented itself more than once and lives at the intersection of art galleries, the High Line, the Hudson, Hudson Yards, and one of the city\'s great food halls. Flat and walkable, well-served by every cross-town option.',
       whoThrivesHere: 'People who want gallery culture and walkability without committing to a residential bubble.',
@@ -129,6 +136,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.3, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
       'safety-need': 0.8, 'school-quality': 0.7,
     },
+    housingTypes: ['co-op', 'condo', 'townhouse', 'rental'],
     basePassages: {
       whyItFits: 'A pocket of unexpected calm right in midtown\'s belly, anchored by NYC\'s only private park. Pre-war buildings, low-rise blocks, and a settled-in feeling that contrasts with the energy three avenues in any direction.',
       whoThrivesHere: 'People who want central Manhattan\'s reach with residential calm.',
@@ -146,6 +154,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.6, 'school-quality': 0.55,
     },
     culturalTags: ['lgbtq'],
+    housingTypes: ['co-op', 'rental'],
     basePassages: {
       whyItFits: 'NYC\'s most diverse restaurant row, walking distance to anywhere in midtown, and the most transit-redundant west-side residential zone. Loud, dense, and unpretentious. The un-glamorous engine room of central Manhattan life.',
       whoThrivesHere: 'High-energy professionals and theater-adjacent creative workers who want central without precious.',
@@ -163,6 +172,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.55, 'school-quality': 0.45,
     },
     culturalTags: ['african-american', 'west-african'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'One of NYC\'s deepest cultural neighborhoods, with brownstone blocks the equal of anywhere in Brooklyn at notably lower per-square-foot prices. The 2/3 puts you in midtown faster than people assume.',
       whoThrivesHere: 'Value-conscious people who want space, history, and a real neighborhood.',
@@ -180,6 +190,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.4, 'creative-energy': 0.7, 'friction-sensitivity': -0.2,
       'safety-need': 0.7, 'school-quality': 0.55,
     },
+    housingTypes: ['condo', 'co-op', 'rental'],
     basePassages: {
       whyItFits: 'NYC\'s most successful gentrification arc, complete. The L holds the neighborhood hostage, but newer residential buildings are large and waterfront-adjacent, the restaurants are excellent, and the energy peaks higher than anywhere in Brooklyn except maybe Bushwick on a Saturday night.',
       whoThrivesHere: 'Creative-class people in their late 20s and 30s who want energy without committing to Manhattan prices.',
@@ -197,6 +208,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.85, 'school-quality': 0.9,
     },
     culturalTags: ['lgbtq', 'jewish'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'Brownstone calm, leafy blocks, the Park literally there, and trains that put you in Manhattan in twenty minutes. Has become the platonic ideal of "where one moves when one has kids in NYC," for better and for worse.',
       whoThrivesHere: 'Future-family planners and couples looking for emotional sustainability over time.',
@@ -213,6 +225,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.7, 'creative-energy': -0.1, 'friction-sensitivity': 0.8,
       'safety-need': 0.85, 'school-quality': 0.85,
     },
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'Brooklyn\'s most architecturally serious residential neighborhood. Wide avenues of 19th-century townhouses, the Promenade with the most famous skyline view in the city, and transit redundancy that surprises people. Calm without being remote.',
       whoThrivesHere: 'Calm-seeking urbanists who want substance and a fast door back to Manhattan.',
@@ -230,6 +243,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.5, 'school-quality': 0.4,
     },
     culturalTags: ['african-american', 'caribbean'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'Some of the most beautiful brownstone blocks in Brooklyn, a cultural depth that\'s been here longer than most of NYC\'s newer arrivals, and apartment values that still beat the prime areas. Has shifted significantly in the last decade and is still doing so.',
       whoThrivesHere: 'Value-and-space seekers who want a real neighborhood with history.',
@@ -246,6 +260,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
       'safety-need': 0.8, 'school-quality': 0.7,
     },
+    housingTypes: ['condo', 'co-op', 'rental'],
     basePassages: {
       whyItFits: 'Cobbled streets between two bridges, cast-iron warehouses converted to lofts, and direct access to one of the city\'s most spectacular waterfront parks. A small neighborhood with outsize cinematic identity.',
       whoThrivesHere: 'Design-and-tech professionals who want the waterfront as their daily backdrop.',
@@ -263,6 +278,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.85, 'school-quality': 0.8,
     },
     culturalTags: ['middle-eastern'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'A 12-block jewel between the BQE and Court Street: brownstones, low buildings, mature street trees, and one of the better residential restaurant rows in Brooklyn. Calm without feeling hidden. Atlantic Avenue still anchors the longstanding Arab-American community.',
       whoThrivesHere: 'Couples and early-family households who value scale and proximity equally.',
@@ -280,6 +296,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.45, 'school-quality': 0.35,
     },
     culturalTags: ['latin-american'],
+    housingTypes: ['condo', 'rental'],
     basePassages: {
       whyItFits: 'Brooklyn\'s current creative engine room. Converted lofts, warehouse parties, mural-walled industrial blocks, and the largest concentration of working artists in NYC. Apartments are still relatively large for the price. The L is your lifeline.',
       whoThrivesHere: 'Creative immersionists in their 20s and 30s who want to be near scene and accept the friction that comes with it.',
@@ -297,6 +314,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.6, 'school-quality': 0.5,
     },
     culturalTags: ['eastern-european'],
+    housingTypes: ['co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'The deepest Russian and Ukrainian community in the country, on a literal beach, with a boardwalk that gets you out of the city without leaving it. The Q is a long ride to Manhattan but a quiet one. Apartments cost a fraction of prime Brooklyn.',
       whoThrivesHere: 'Cultural-anchor seekers, especially those for whom post-Soviet community is daily life.',
@@ -314,6 +332,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.65, 'school-quality': 0.55,
     },
     culturalTags: ['eastern-european', 'east-asian'],
+    housingTypes: ['single-family', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'A genuine waterfront community, less famous than Brighton but materially better-served by transit (B and Q). Apartment stock includes real two-bedrooms at prices Brooklyn proper has forgotten. A working mix of Russian, Chinese, Italian, and Caribbean communities.',
       whoThrivesHere: 'Value-and-space seekers who want a real neighborhood at south-Brooklyn prices.',
@@ -331,6 +350,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
       'safety-need': 0.75, 'school-quality': 0.55,
     },
+    housingTypes: ['condo', 'rental'],
     basePassages: {
       whyItFits: 'A new high-rise riverfront with one of NYC\'s best skyline views from your living room. Newer apartment stock means real space. Transit redundancy is genuinely strong (7, E, M, G, F, plus ferry). Waterfront parks anchor the daily walk.',
       whoThrivesHere: 'Value-aware urbanists who want space, transit, and views without leaving the inner city.',
@@ -348,6 +368,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.75, 'school-quality': 0.65,
     },
     culturalTags: ['mediterranean', 'middle-eastern'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'NYC\'s deepest Greek neighborhood and one of its most successfully diverse, with apartments materially larger than equivalent prices in Brooklyn. The N/W gives you direct midtown access. Daily life is anchored by restaurants from a dozen cuisines within walking distance.',
       whoThrivesHere: 'Cultural-anchor seekers and value-seeking professionals.',
@@ -365,6 +386,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.6, 'school-quality': 0.7,
     },
     culturalTags: ['east-asian'],
+    housingTypes: ['single-family', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'NYC\'s densest pan-Asian neighborhood and one of the country\'s great food cities in its own right. Apartments are larger and cheaper than anywhere comparable. The 7 train is your direct line to midtown.',
       whoThrivesHere: 'Cultural-anchor seekers, particularly those for whom East Asian community access is daily life.',
@@ -382,6 +404,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.85, 'school-quality': 0.85,
     },
     culturalTags: ['jewish', 'eastern-european'],
+    housingTypes: ['single-family', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'The original planned NYC suburb-within-the-city, complete with Tudor-style buildings and tree-lined streets. Apartments are notably larger than anywhere comparable in Brooklyn or Manhattan. The E, F, M, R put you in midtown in 30-35 min. Strong Bukharian Jewish and Russian communities anchor daily life.',
       whoThrivesHere: 'Family-trajectory pragmatists who want suburban scale without leaving the city.',
@@ -401,6 +424,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     },
     culturalTags: ['jewish'],
     carDependent: true,
+    housingTypes: ['single-family', 'townhouse', 'co-op', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'A leafy, hilly, suburban-feeling pocket of NYC with Hudson views and apartment values that beat anything comparable on the other side of the bridge. The 1 train and Metro-North are the connections. The daily quiet is the point.',
       whoThrivesHere: 'Family-first households who want green space and quiet streets within city limits.',
@@ -418,6 +442,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.7, 'creative-energy': -0.2, 'friction-sensitivity': 0.6,
       'safety-need': 0.6, 'school-quality': 0.5,
     },
+    housingTypes: ['single-family', 'townhouse', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'The only NYC neighborhood with a five-minute walk to a free 25-minute ferry to Lower Manhattan. Apartments are dramatically larger and cheaper than anywhere on the other end of that ferry. Views are the daily reward.',
       whoThrivesHere: 'Value-and-space seekers who genuinely don\'t mind the ferry rhythm.',
@@ -435,6 +460,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.6, 'creative-energy': 0.0, 'friction-sensitivity': 0.5,
       'safety-need': 0.85, 'school-quality': 0.7,
     },
+    housingTypes: ['townhouse', 'condo', 'co-op', 'rental'],
     basePassages: {
       whyItFits: 'A walkable mile-square city across the river with PATH service that beats most subway commutes from outer Brooklyn. Apartments are larger, the waterfront promenade is genuinely beautiful, and Manhattan is closer in time than most of Queens.',
       whoThrivesHere: 'Future-family households and value-conscious professionals who want city scale at lower cost.',
@@ -452,6 +478,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.7, 'school-quality': 0.65,
     },
     culturalTags: ['south-asian', 'latin-american'],
+    housingTypes: ['townhouse', 'condo', 'co-op', 'rental'],
     basePassages: {
       whyItFits: 'NJ\'s answer to LIC: high-rise waterfront with skyline views, several PATH stops giving direct Manhattan access, and a downtown that\'s diversified well beyond the original financial-services pitch. Materially more space per dollar than Manhattan.',
       whoThrivesHere: 'Value-aware urbanists, including dual-income couples and early-family households.',
@@ -470,6 +497,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     },
     culturalTags: ['east-asian'],
     carDependent: true,
+    housingTypes: ['single-family', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'A serious Korean American center with cliffside views over the Hudson, real high-rise apartment stock, and quick bus access through the Lincoln Tunnel or over the GW Bridge. Schools are strong, restaurants are excellent, and apartments are bigger than NYC at meaningful margins.',
       whoThrivesHere: 'East Asian community-oriented households and value-conscious families willing to cross the river.',
@@ -488,6 +516,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     },
     culturalTags: ['east-asian'],
     carDependent: true,
+    housingTypes: ['condo', 'townhouse', 'rental'],
     basePassages: {
       whyItFits: 'A quiet waterfront strip with newer luxury developments, Korean and Japanese groceries within walking distance, and ferry service that beats driving into Manhattan. Apartments are big, parking is easy, and the Hudson is your front yard.',
       whoThrivesHere: 'Households who want waterfront space and a low-friction daily life within striking distance of NYC.',
@@ -506,6 +535,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     },
     culturalTags: ['east-asian'],
     carDependent: true,
+    housingTypes: ['single-family', 'condo', 'rental'],
     basePassages: {
       whyItFits: 'One of the densest Korean American communities in the United States. Broad Avenue is a working Korean main street: bakeries, banks, restaurants, banh-shop after banh-shop. Buses connect to Manhattan. The community itself is the reason to live here.',
       whoThrivesHere: 'Korean American households and others for whom East Asian community access is daily life.',
