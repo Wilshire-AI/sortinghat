@@ -14,6 +14,7 @@ import { ArchetypeBanner } from '@/components/results/ArchetypeBanner';
 import { NeighborhoodCard } from '@/components/results/NeighborhoodCard';
 import { DimensionFingerprint } from '@/components/results/DimensionFingerprint';
 import { ShareButton } from '@/components/results/ShareButton';
+import { AllMatchesList } from '@/components/results/AllMatchesList';
 
 export function ResultsClient() {
   const router = useRouter();
@@ -26,11 +27,18 @@ export function ResultsClient() {
       const decoded = decodeFingerprint(f);
       const dimIds = dimensions.map((d) => d.id);
       const archetype = matchArchetype(decoded.vector, archetypes, dimIds);
-      const ranked = rankNeighborhoods(decoded.vector, neighborhoods, dimIds, 5, decoded.selectedTags);
+      const allRanked = rankNeighborhoods(
+        decoded.vector,
+        neighborhoods,
+        dimIds,
+        neighborhoods.length,
+        decoded.selectedTags,
+      );
       return {
         vector: decoded.vector,
         archetype,
-        ranked,
+        ranked: allRanked.slice(0, 5),
+        rest: allRanked.slice(5),
         selectedTags: decoded.selectedTags,
       };
     } catch {
@@ -84,6 +92,8 @@ export function ResultsClient() {
           );
         })}
       </section>
+
+      <AllMatchesList ranked={result.rest} startRank={6} />
 
       <DimensionFingerprint dimensions={dimensions} vector={result.vector} />
 
