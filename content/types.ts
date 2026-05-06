@@ -98,6 +98,12 @@ export type Neighborhood = {
   // Used by must-have filters. 'luxury-highrise' means newer (post-2000ish)
   // high-rise stock with full amenities (doorman, gym, etc.).
   housingTypes?: ('single-family' | 'townhouse' | 'condo' | 'co-op' | 'rental' | 'luxury-highrise')[];
+  // True when the neighborhood has notable, recognizable calm residential
+  // enclaves (historic district, gated section, signature side streets) that
+  // someone seeking a quiet block would specifically know to seek out. Distinct
+  // from `friction-sensitivity` (whole-neighborhood calm) — this captures
+  // block-level refuge, including in mixed-energy neighborhoods.
+  hasQuietBlocks?: boolean;
   basePassages: {
     whyItFits: string;
     whoThrivesHere: string;

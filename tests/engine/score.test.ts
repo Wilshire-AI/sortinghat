@@ -54,6 +54,30 @@ describe('scoreNeighborhood (asymmetric_need dimensions)', () => {
   });
 });
 
+describe('quiet-blocks-available must-have filter', () => {
+  const dim: Dimension[] = sym3;
+  const withFlag = { ...n('with', { a: 0, b: 0, c: 0 }), hasQuietBlocks: true };
+  const without = n('without', { a: 0, b: 0, c: 0 });
+  const explicitFalse = { ...n('false', { a: 0, b: 0, c: 0 }), hasQuietBlocks: false };
+
+  it('keeps neighborhoods with hasQuietBlocks=true', () => {
+    const out = rankNeighborhoods({ a: 0, b: 0, c: 0 }, [withFlag, without], dim, 5, [], ['quiet-blocks-available']);
+    expect(out.map((r) => r.neighborhood.id)).toEqual(['with']);
+  });
+  it('drops neighborhoods with hasQuietBlocks undefined', () => {
+    const out = rankNeighborhoods({ a: 0, b: 0, c: 0 }, [without], dim, 5, [], ['quiet-blocks-available']);
+    expect(out).toHaveLength(0);
+  });
+  it('drops neighborhoods with hasQuietBlocks=false', () => {
+    const out = rankNeighborhoods({ a: 0, b: 0, c: 0 }, [explicitFalse], dim, 5, [], ['quiet-blocks-available']);
+    expect(out).toHaveLength(0);
+  });
+  it('is a no-op when not in mustHaves', () => {
+    const out = rankNeighborhoods({ a: 0, b: 0, c: 0 }, [withFlag, without], dim);
+    expect(out).toHaveLength(2);
+  });
+});
+
 describe('rankNeighborhoods', () => {
   const user = { a: 1, b: 0, c: 0 };
   const list = [n('match', { a: 1, b: 0, c: 0 }), n('opposite', { a: -1, b: 0, c: 0 }), n('mid', { a: 0.5, b: 0, c: 0 })];

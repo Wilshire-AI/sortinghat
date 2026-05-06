@@ -192,6 +192,7 @@ export const questions: readonly Question[] = [
       { value: 'luxury-highrise', label: 'Newer luxury high-rise (doorman, gym, modern fixtures)' },
       { value: 'top-schools', label: 'Top-rated zoned public schools' },
       { value: 'calm-blocks', label: 'Calm, low-friction blocks' },
+      { value: 'quiet-blocks-available', label: 'Notable quiet residential enclaves (refuge from busy streets)' },
       { value: 'no-car', label: 'Don\'t need a car for daily life' },
       { value: 'cultural-match', label: 'Cultural-community match (uses your earlier picks)' },
     ],
