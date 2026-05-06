@@ -30,7 +30,7 @@ export function ResultsClient() {
       const allRanked = rankNeighborhoods(
         decoded.vector,
         neighborhoods,
-        dimIds,
+        dimensions,
         neighborhoods.length,
         decoded.selectedTags,
       );

@@ -11,11 +11,25 @@ export type Borough =
   | 'staten-island'
   | 'nj';
 
+// Dimension scoring kind:
+// - 'symmetric': both poles are real lived preferences. Mismatch in either
+//   direction hurts. Example: urban intensity (some want calm, some want
+//   density; ending up on the wrong side feels wrong either way).
+// - 'asymmetric_need': only ONE pole is a real preference (the high side).
+//   The low side just means "this isn't a driver for me." If the user is
+//   low and the neighborhood is high, that's not a mismatch — they got
+//   something they weren't seeking. Penalty only applies when the user
+//   wanted MORE of this thing than the neighborhood provides.
+//   Example: prestige (not caring about prestige doesn't mean you'd
+//   actively dislike a prestigious neighborhood).
+export type DimensionKind = 'symmetric' | 'asymmetric_need';
+
 export type Dimension = {
   id: DimensionId;
   name: string;
   description: string;
   poles: { low: string; high: string };
+  kind: DimensionKind;
 };
 
 export type ForcedChoiceQuestion = {

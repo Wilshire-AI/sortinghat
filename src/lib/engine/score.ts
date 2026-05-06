@@ -1,27 +1,41 @@
-import type { Neighborhood, UserVector, DimensionId } from '@content/types';
+import type { Dimension, Neighborhood, UserVector } from '@content/types';
 
-const CULTURAL_TAG_BOOST = 0.08; // each matched tag adds 8% to the base score (capped at 1.0)
+const CULTURAL_TAG_BOOST = 0.08;
+
+// Compute the squared-distance contribution for a single dimension.
+// For symmetric dimensions, both directions of mismatch hurt.
+// For asymmetric_need dimensions, only "neighborhood under-delivers what the
+// user wants" hurts. Getting more than you wanted is free.
+function dimensionContribution(
+  userValue: number,
+  neighborhoodValue: number,
+  kind: Dimension['kind'],
+): number {
+  if (kind === 'asymmetric_need') {
+    const shortfall = Math.max(0, userValue - neighborhoodValue);
+    return shortfall * shortfall;
+  }
+  const diff = userValue - neighborhoodValue;
+  return diff * diff;
+}
 
 export function scoreNeighborhood(
   user: UserVector,
   neighborhood: Neighborhood,
-  dimensionIds: readonly DimensionId[],
+  dimensions: readonly Dimension[],
   selectedTags: readonly string[] = [],
 ): number {
   let sumSq = 0;
-  for (const dimId of dimensionIds) {
-    const u = user[dimId] ?? 0;
-    const n = neighborhood.scores[dimId] ?? 0;
-    const diff = u - n;
-    sumSq += diff * diff;
+  for (const d of dimensions) {
+    const u = user[d.id] ?? 0;
+    const n = neighborhood.scores[d.id] ?? 0;
+    sumSq += dimensionContribution(u, n, d.kind);
   }
   const distance = Math.sqrt(sumSq);
-  const maxDistance = Math.sqrt(dimensionIds.length * 4);
+  // Worst-case distance: each dim contributes up to 4 (user=+1, neighborhood=-1).
+  const maxDistance = Math.sqrt(dimensions.length * 4);
   const baseScore = maxDistance === 0 ? 1 : 1 - distance / maxDistance;
 
-  // Cultural-tag boost: each matching tag bumps the score by CULTURAL_TAG_BOOST.
-  // Asymmetric. If the user picked a tag and the neighborhood has it, both win.
-  // If the neighborhood has tags the user didn't pick, no penalty.
   if (selectedTags.length > 0 && neighborhood.culturalTags) {
     const matched = neighborhood.culturalTags.filter((t) => selectedTags.includes(t)).length;
     return Math.min(1, baseScore + matched * CULTURAL_TAG_BOOST);
@@ -37,13 +51,13 @@ export type RankedNeighborhood = {
 export function rankNeighborhoods(
   user: UserVector,
   neighborhoods: readonly Neighborhood[],
-  dimensionIds: readonly DimensionId[],
+  dimensions: readonly Dimension[],
   topN: number = 5,
   selectedTags: readonly string[] = [],
 ): RankedNeighborhood[] {
   const scored = neighborhoods.map((neighborhood) => ({
     neighborhood,
-    score: scoreNeighborhood(user, neighborhood, dimensionIds, selectedTags),
+    score: scoreNeighborhood(user, neighborhood, dimensions, selectedTags),
   }));
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;

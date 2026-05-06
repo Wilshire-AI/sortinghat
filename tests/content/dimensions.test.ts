@@ -17,4 +17,9 @@ describe('dimensions', () => {
       expect(d.description.length).toBeGreaterThan(50);
     }
   });
+  it('each has a kind set to symmetric or asymmetric_need', () => {
+    for (const d of dimensions) {
+      expect(['symmetric', 'asymmetric_need']).toContain(d.kind);
+    }
+  });
 });
