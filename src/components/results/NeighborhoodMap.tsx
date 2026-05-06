@@ -73,13 +73,13 @@ export function NeighborhoodMap({ ranked }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: CARTO_STYLE as maplibregl.StyleSpecification,
-      center: [-73.96, 40.74],
-      zoom: 10.4,
+      center: [-73.92, 40.82],
+      zoom: 9.6,
       interactive: true,
       attributionControl: { compact: true },
       maxBounds: [
-        [-74.35, 40.45],
-        [-73.65, 41.0],
+        [-74.45, 40.42],
+        [-73.30, 41.30],
       ],
     });
     mapRef.current = map;

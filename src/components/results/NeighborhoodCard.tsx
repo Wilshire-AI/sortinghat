@@ -18,6 +18,9 @@ const boroughLabel: Record<string, string> = {
   bronx: 'The Bronx',
   'staten-island': 'Staten Island',
   nj: 'New Jersey',
+  westchester: 'Westchester',
+  'long-island': 'Long Island',
+  ct: 'Connecticut',
 };
 
 const tagLabel: Record<string, string> = {

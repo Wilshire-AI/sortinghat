@@ -9,7 +9,10 @@ export type Borough =
   | 'queens'
   | 'bronx'
   | 'staten-island'
-  | 'nj';
+  | 'nj'
+  | 'westchester'
+  | 'long-island'
+  | 'ct';
 
 // Dimension scoring kind:
 // - 'symmetric': both poles are real lived preferences. Mismatch in either
