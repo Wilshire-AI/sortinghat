@@ -95,8 +95,9 @@ export type Neighborhood = {
   carDependent?: boolean;
   // Housing-stock types meaningfully present (not exhaustive — only flagged
   // when there's enough of the type to be a real residential option).
-  // Used by the 'house-or-townhouse' must-have filter.
-  housingTypes?: ('single-family' | 'townhouse' | 'condo' | 'co-op' | 'rental')[];
+  // Used by must-have filters. 'luxury-highrise' means newer (post-2000ish)
+  // high-rise stock with full amenities (doorman, gym, etc.).
+  housingTypes?: ('single-family' | 'townhouse' | 'condo' | 'co-op' | 'rental' | 'luxury-highrise')[];
   basePassages: {
     whyItFits: string;
     whoThrivesHere: string;

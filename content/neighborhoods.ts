@@ -84,7 +84,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.7,
       'safety-need': 0.85, 'school-quality': 0.85,
     },
-    housingTypes: ['condo', 'co-op', 'rental'],
+    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'Cobbled streets, cast-iron buildings, lofts large enough to swing a piano in. Manhattan\'s priciest residential triangle by some measures, and the calm-with-cachet that price buys is real. Quiet on weekends, walking distance to the river, restaurants that don\'t need to advertise.',
       whoThrivesHere: 'Established families and creative-class veterans who want space without leaving downtown.',
@@ -101,7 +101,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.6, 'creative-energy': -0.2, 'friction-sensitivity': 0.5,
       'safety-need': 0.7, 'school-quality': 0.85,
     },
-    housingTypes: ['condo', 'co-op', 'rental'],
+    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'NYC\'s most transit-redundant residential zone. A dozen subway lines and the PATH inside a square mile, plus ferry. Newer apartment stock is generous on space relative to price. The waterfront promenade does most of what Riverside Park does, with bigger views.',
       whoThrivesHere: 'Transit-optimizers and value-conscious professionals willing to trade neighborhood texture for square footage.',
@@ -119,7 +119,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.7, 'school-quality': 0.6,
     },
     culturalTags: ['lgbtq'],
-    housingTypes: ['co-op', 'condo', 'rental'],
+    housingTypes: ['co-op', 'condo', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A neighborhood that has reinvented itself more than once and lives at the intersection of art galleries, the High Line, the Hudson, Hudson Yards, and one of the city\'s great food halls. Flat and walkable, well-served by every cross-town option.',
       whoThrivesHere: 'People who want gallery culture and walkability without committing to a residential bubble.',
@@ -190,7 +190,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.4, 'creative-energy': 0.7, 'friction-sensitivity': -0.2,
       'safety-need': 0.7, 'school-quality': 0.55,
     },
-    housingTypes: ['condo', 'co-op', 'rental'],
+    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'NYC\'s most successful gentrification arc, complete. The L holds the neighborhood hostage, but newer residential buildings are large and waterfront-adjacent, the restaurants are excellent, and the energy peaks higher than anywhere in Brooklyn except maybe Bushwick on a Saturday night.',
       whoThrivesHere: 'Creative-class people in their late 20s and 30s who want energy without committing to Manhattan prices.',
@@ -260,7 +260,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
       'safety-need': 0.8, 'school-quality': 0.7,
     },
-    housingTypes: ['condo', 'co-op', 'rental'],
+    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'Cobbled streets between two bridges, cast-iron warehouses converted to lofts, and direct access to one of the city\'s most spectacular waterfront parks. A small neighborhood with outsize cinematic identity.',
       whoThrivesHere: 'Design-and-tech professionals who want the waterfront as their daily backdrop.',
@@ -460,7 +460,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.6, 'creative-energy': 0.0, 'friction-sensitivity': 0.5,
       'safety-need': 0.85, 'school-quality': 0.7,
     },
-    housingTypes: ['townhouse', 'condo', 'co-op', 'rental'],
+    housingTypes: ['townhouse', 'condo', 'co-op', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A walkable mile-square city across the river with PATH service that beats most subway commutes from outer Brooklyn. Apartments are larger, the waterfront promenade is genuinely beautiful, and Manhattan is closer in time than most of Queens.',
       whoThrivesHere: 'Future-family households and value-conscious professionals who want city scale at lower cost.',
@@ -478,7 +478,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.7, 'school-quality': 0.65,
     },
     culturalTags: ['south-asian', 'latin-american'],
-    housingTypes: ['townhouse', 'condo', 'co-op', 'rental'],
+    housingTypes: ['townhouse', 'condo', 'co-op', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'NJ\'s answer to LIC: high-rise waterfront with skyline views, several PATH stops giving direct Manhattan access, and a downtown that\'s diversified well beyond the original financial-services pitch. Materially more space per dollar than Manhattan.',
       whoThrivesHere: 'Value-aware urbanists, including dual-income couples and early-family households.',
@@ -497,7 +497,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     },
     culturalTags: ['east-asian'],
     carDependent: true,
-    housingTypes: ['single-family', 'condo', 'rental'],
+    housingTypes: ['single-family', 'condo', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A serious Korean American center with cliffside views over the Hudson, real high-rise apartment stock, and quick bus access through the Lincoln Tunnel or over the GW Bridge. Schools are strong, restaurants are excellent, and apartments are bigger than NYC at meaningful margins.',
       whoThrivesHere: 'East Asian community-oriented households and value-conscious families willing to cross the river.',
@@ -516,7 +516,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     },
     culturalTags: ['east-asian'],
     carDependent: true,
-    housingTypes: ['condo', 'townhouse', 'rental'],
+    housingTypes: ['condo', 'townhouse', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A quiet waterfront strip with newer luxury developments, Korean and Japanese groceries within walking distance, and ferry service that beats driving into Manhattan. Apartments are big, parking is easy, and the Hudson is your front yard.',
       whoThrivesHere: 'Households who want waterfront space and a low-friction daily life within striking distance of NYC.',
@@ -661,7 +661,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.6, 'creative-energy': 0.4, 'friction-sensitivity': 0.5,
       'safety-need': 0.8, 'school-quality': 0.85,
     },
-    housingTypes: ['co-op', 'condo', 'rental'],
+    housingTypes: ['co-op', 'condo', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'The cultural anchor of the Upper West Side. Lincoln Center, Carnegie Hill of the west side, with high-rise residential pre-war and post-war stock. The 1, A/B/C/D, plus crosstown buses make it the most transit-redundant residential pocket in upper Manhattan.',
       whoThrivesHere: 'Cultural-class professionals who want central access plus institutional density.',
@@ -748,7 +748,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.3, 'creative-energy': 0.0, 'friction-sensitivity': 0.0,
       'safety-need': 0.7, 'school-quality': 0.7,
     },
-    housingTypes: ['co-op', 'condo', 'rental'],
+    housingTypes: ['co-op', 'condo', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'Turtle Bay, Sutton Place, the East 50s. Office towers by day, residential calm by night, with the UN, Grand Central, and the East River as anchors. Transit is the strength: 4/5/6, E/M, S, plus express buses everywhere.',
       whoThrivesHere: 'Career-anchored professionals who want to walk to work and not commit to a residential bubble.',
@@ -852,7 +852,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.7, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
       'safety-need': 0.85, 'school-quality': 0.7,
     },
-    housingTypes: ['condo', 'rental', 'townhouse'],
+    housingTypes: ['condo', 'rental', 'townhouse', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A high-rise waterfront luxury enclave on the NJ side, with the Manhattan skyline as your daily view. Port Imperial ferry to Midtown West runs every few minutes; the Lincoln Tunnel buses are reliable. Apartments are bigger and quieter than anywhere comparable across the river.',
       whoThrivesHere: 'High-income professionals who want skyline views and a calmer daily rhythm without leaving the NYC orbit.',
@@ -1195,7 +1195,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.85, 'creative-energy': -0.3, 'friction-sensitivity': 0.85,
       'safety-need': 0.85, 'school-quality': 0.85,
     },
-    housingTypes: ['condo', 'rental', 'co-op'],
+    housingTypes: ['condo', 'rental', 'co-op', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'Manhattan\'s most planned waterfront enclave, built on Hudson River landfill in the 80s. Newer high-rise apartment stock with real space, the Esplanade as your daily walk, and the WTC transit hub at your eastern edge. Quiet on weekends, almost suburban-feel inside the city.',
       whoThrivesHere: 'Family-anchored households who want Manhattan transit access with park-side residential calm.',
@@ -1212,7 +1212,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.5, 'creative-energy': 0.0, 'friction-sensitivity': 0.5,
       'safety-need': 0.85, 'school-quality': 0.7,
     },
-    housingTypes: ['condo', 'rental'],
+    housingTypes: ['condo', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'Manhattan\'s newest neighborhood, built on a platform over the Hudson rail yards. Glass-and-steel high-rises, the High Line as your eastern edge, the 7 train station you can walk to in the rain. Reads as a corporate skyline come-to-life, with Vessel and the Shed as the cultural anchors.',
       whoThrivesHere: 'High-income professionals who want new construction and walking-distance midtown access.',
@@ -1229,7 +1229,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.95, 'creative-energy': -0.2, 'friction-sensitivity': 0.95,
       'safety-need': 0.85, 'school-quality': 0.8,
     },
-    housingTypes: ['rental', 'co-op', 'condo'],
+    housingTypes: ['rental', 'co-op', 'condo', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A literal island in the East River with views of both Manhattan and Queens. Apartments are large for the price, daily life is suburban-feel, and the F train + tram + ferry give you three ways onto the island. Cornell Tech anchors the south end.',
       whoThrivesHere: 'Family-trajectory pragmatists who want maximum calm and Manhattan transit redundancy.',

@@ -189,6 +189,7 @@ export const questions: readonly Question[] = [
       { value: 'subway-redundancy', label: 'Multiple transit options (any mix of subway, PATH, ferry, rail, express bus)' },
       { value: 'walking-distance-park', label: 'Walking distance to a major park or waterfront' },
       { value: 'house-or-townhouse', label: 'Single-family homes or townhouses available' },
+      { value: 'luxury-highrise', label: 'Newer luxury high-rise (doorman, gym, modern fixtures)' },
       { value: 'top-schools', label: 'Top-rated zoned public schools' },
       { value: 'calm-blocks', label: 'Calm, low-friction blocks' },
       { value: 'no-car', label: 'Don\'t need a car for daily life' },
