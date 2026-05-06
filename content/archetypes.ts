@@ -1,0 +1,140 @@
+import type { Archetype } from './types';
+
+export const archetypes: readonly Archetype[] = [
+  {
+    id: 'calm-seeking-urbanist',
+    name: 'The Calm-Seeking Urbanist',
+    identity:
+      'You want NYC\'s optionality and energy near at hand, but you don\'t want to swim in it. Home is a place to decompress; the city is a resource you draw from when you choose to. You\'d rather hear birds than traffic when you wake up, but you also like knowing the subway can take you to anything by tonight.',
+    vector: {
+      'urban-intensity-tolerance': -0.4,
+      'transit-psychology': 0.6,
+      'prestige-orientation': 0.0,
+      'space-sensitivity': 0.5,
+      'family-trajectory': 0.2,
+      'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.6,
+      'creative-energy': 0.2,
+      'friction-sensitivity': 0.7,
+    },
+  },
+  {
+    id: 'family-trajectory-pragmatist',
+    name: 'The Family-Trajectory Pragmatist',
+    identity:
+      'You\'re thinking in five-year horizons. School quality, stroller geometry, and emotional sustainability matter as much as today\'s vibe. You\'re willing to trade some current excitement for a place you can stay rooted in as life expands.',
+    vector: {
+      'urban-intensity-tolerance': -0.3,
+      'transit-psychology': 0.5,
+      'prestige-orientation': 0.0,
+      'space-sensitivity': 0.8,
+      'family-trajectory': 0.9,
+      'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.7,
+      'creative-energy': -0.2,
+      'friction-sensitivity': 0.6,
+    },
+  },
+  {
+    id: 'creative-immersionist',
+    name: 'The Creative Immersionist',
+    identity:
+      'Being near ambitious, creatively alive people is daily oxygen for you. You want the studio open at 11pm, the gallery to walk past on the way home, the bar where you\'ll meet your next collaborator. You\'ll trade space and quiet for proximity to scene.',
+    vector: {
+      'urban-intensity-tolerance': 0.7,
+      'transit-psychology': 0.3,
+      'prestige-orientation': -0.2,
+      'space-sensitivity': -0.4,
+      'family-trajectory': -0.4,
+      'cultural-ecosystem': 0.4,
+      'environmental-openness': 0.0,
+      'creative-energy': 0.9,
+      'friction-sensitivity': -0.4,
+    },
+  },
+  {
+    id: 'prestige-anchored-cosmopolitan',
+    name: 'The Prestige-Anchored Cosmopolitan',
+    identity:
+      'Where you live is part of how you tell your story. You want a name that signals where you are in life, with the cultural and culinary infrastructure to match. You\'ll trade square footage for the right address.',
+    vector: {
+      'urban-intensity-tolerance': 0.4,
+      'transit-psychology': 0.4,
+      'prestige-orientation': 0.9,
+      'space-sensitivity': -0.3,
+      'family-trajectory': 0.0,
+      'cultural-ecosystem': 0.3,
+      'environmental-openness': 0.3,
+      'creative-energy': 0.3,
+      'friction-sensitivity': 0.2,
+    },
+  },
+  {
+    id: 'value-seeking-rooter',
+    name: 'The Value-Seeking Rooter',
+    identity:
+      'Space matters more than name. You\'d rather have a real apartment in a neighborhood that\'s on the up than a closet on a famous block. You play the long game and trust your taste over the consensus.',
+    vector: {
+      'urban-intensity-tolerance': 0.0,
+      'transit-psychology': 0.3,
+      'prestige-orientation': -0.7,
+      'space-sensitivity': 0.7,
+      'family-trajectory': 0.4,
+      'cultural-ecosystem': 0.4,
+      'environmental-openness': 0.3,
+      'creative-energy': 0.2,
+      'friction-sensitivity': 0.0,
+    },
+  },
+  {
+    id: 'cultural-anchor-seeker',
+    name: 'The Cultural Anchor Seeker',
+    identity:
+      'You want to live somewhere where the food, language, and rhythm of daily life feels like home — or where you\'ll genuinely become part of a culture that does. The block matters less than what\'s on it: the bakery you can become a regular at, the language you hear on the street.',
+    vector: {
+      'urban-intensity-tolerance': 0.2,
+      'transit-psychology': 0.3,
+      'prestige-orientation': -0.3,
+      'space-sensitivity': 0.3,
+      'family-trajectory': 0.3,
+      'cultural-ecosystem': 0.9,
+      'environmental-openness': 0.2,
+      'creative-energy': 0.2,
+      'friction-sensitivity': 0.0,
+    },
+  },
+  {
+    id: 'nature-hungry-urbanist',
+    name: 'The Nature-Hungry Urbanist',
+    identity:
+      'You stay in NYC for the optionality, but you wilt without sky and trees. Mornings near a park, weekends near water — you\'ll trade an extra subway stop for a window onto something green.',
+    vector: {
+      'urban-intensity-tolerance': -0.2,
+      'transit-psychology': 0.3,
+      'prestige-orientation': -0.1,
+      'space-sensitivity': 0.5,
+      'family-trajectory': 0.4,
+      'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.9,
+      'creative-energy': 0.0,
+      'friction-sensitivity': 0.5,
+    },
+  },
+  {
+    id: 'energy-driven-maximalist',
+    name: 'The Energy-Driven Maximalist',
+    identity:
+      'You want NYC at full volume. Restaurants, nightlife, density, friction — the whole point is that everything is happening at once. Calm makes you restless; you want to be in the middle of the city\'s pulse.',
+    vector: {
+      'urban-intensity-tolerance': 0.9,
+      'transit-psychology': 0.5,
+      'prestige-orientation': 0.4,
+      'space-sensitivity': -0.5,
+      'family-trajectory': -0.5,
+      'cultural-ecosystem': 0.3,
+      'environmental-openness': -0.2,
+      'creative-energy': 0.7,
+      'friction-sensitivity': -0.6,
+    },
+  },
+] as const;

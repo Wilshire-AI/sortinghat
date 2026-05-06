@@ -1,0 +1,396 @@
+import type { Neighborhood } from './types';
+
+// Single-file POC content. Will split to one-file-per-neighborhood at v1.
+// Scores are subjective editorial judgments. Each in [-1, 1]. See dimensions.ts for definitions.
+
+export const neighborhoods: readonly Neighborhood[] = [
+  // -------- MANHATTAN --------
+  {
+    id: 'upper-west-side', slug: 'upper-west-side', name: 'Upper West Side', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.5,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.8, 'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.8, 'creative-energy': 0.0, 'friction-sensitivity': 0.6,
+    },
+    basePassages: {
+      whyItFits: 'A grand pre-war neighborhood that has chosen to grow up. Tree-lined cross streets, classic apartment stock with real bedrooms, two parks bracketing the avenues, and three reliable subway lines. Reads as a permanent place to live, not a phase.',
+      whoThrivesHere: 'Family-trajectory urbanists who want substance over scene.',
+      tradeoffs: ['Quieter than you might want in your 20s', 'Real estate priced for stability, not value', 'Famously self-satisfied — lean in or it grates'],
+    },
+    anchors: { transit: ['1 train', '2/3 train', 'B/C train'], parks: ['Central Park', 'Riverside Park'], groceries: ['Zabar\'s', 'Citarella', 'Trader Joe\'s'] },
+    heroImage: '/images/neighborhoods/upper-west-side.svg',
+  },
+  {
+    id: 'upper-east-side', slug: 'upper-east-side', name: 'Upper East Side', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.3, 'prestige-orientation': 0.7,
+      'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.7, 'creative-energy': -0.2, 'friction-sensitivity': 0.7,
+    },
+    basePassages: {
+      whyItFits: 'Manhattan\'s most polished residential quadrant. Limestone, doormen, museums by the dozen, and a kind of orderly calm that no other part of the city quite produces. Transit is the catch — historically Lex-only, the Q now helps.',
+      whoThrivesHere: 'People who want the city\'s prestige without its grit.',
+      tradeoffs: ['Q only goes so far; Lex is congested', 'Energy is calm to the point of muted', 'Reads as conservative even when it isn\'t'],
+    },
+    anchors: { transit: ['4/5/6 train (Lex)', 'Q train (2nd Ave)'], parks: ['Central Park', 'Carl Schurz'], groceries: ['Agata & Valentina', 'Whole Foods', 'Eli\'s'] },
+    heroImage: '/images/neighborhoods/upper-east-side.svg',
+  },
+  {
+    id: 'west-village', slug: 'west-village', name: 'West Village', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.9,
+      'space-sensitivity': -0.3, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.4, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
+    },
+    basePassages: {
+      whyItFits: 'The most photographed neighborhood in NYC for a reason — narrow streets at human scale, low-rise townhouses, restaurants that have been there for decades. Comes with the price tag and the tourists, but lived-in West Village is genuinely magical.',
+      whoThrivesHere: 'Cosmopolitans who want a postcard street and don\'t flinch at the cost.',
+      tradeoffs: ['Tourist load is real on weekends', 'Apartments are small for the price', 'Quieter than the East Village; some find it too settled'],
+    },
+    anchors: { transit: ['1 train', 'A/C/E', 'L', 'PATH (14th)'], parks: ['Hudson River Park', 'Washington Square'], groceries: ['Citarella', 'Mr. Bing\'s', 'Whole Foods (14th)'] },
+    heroImage: '/images/neighborhoods/west-village.svg',
+  },
+  {
+    id: 'east-village', slug: 'east-village', name: 'East Village', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.7, 'transit-psychology': 0.0, 'prestige-orientation': 0.0,
+      'space-sensitivity': -0.4, 'family-trajectory': -0.4, 'cultural-ecosystem': 0.5,
+      'environmental-openness': 0.0, 'creative-energy': 0.7, 'friction-sensitivity': -0.4,
+    },
+    basePassages: {
+      whyItFits: 'Less polished than the West Village, more itself. Walk-up apartments, a dense lattice of bars and bookshops and small restaurants, the layered residue of every NYC subculture from the 60s onward. Energy is high; orderliness is not the point.',
+      whoThrivesHere: 'Creative immersionists in their 20s and 30s who want texture over polish.',
+      tradeoffs: ['Subway access is awkward (just F at 2nd Ave)', 'Loud at night — rage on Sunday morning', 'Apartments are old and small'],
+    },
+    anchors: { transit: ['L (1st/3rd Ave)', 'F (2nd Ave)', '6 (Astor)'], parks: ['Tompkins Square'], groceries: ['Trader Joe\'s (14th)', 'Key Food', 'Westside Market'] },
+    heroImage: '/images/neighborhoods/east-village.svg',
+  },
+  {
+    id: 'tribeca', slug: 'tribeca', name: 'Tribeca', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.6, 'prestige-orientation': 0.95,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.7,
+    },
+    basePassages: {
+      whyItFits: 'Cobbled streets, cast-iron buildings, lofts large enough to swing a piano in. Manhattan\'s priciest residential triangle by some measures, and the calm-with-cachet that price buys is real — quiet on weekends, walking distance to the river, restaurants that don\'t need to advertise.',
+      whoThrivesHere: 'Established families and creative-class veterans who want space without leaving downtown.',
+      tradeoffs: ['Among the priciest per square foot in the city', 'Quiet on weekends to the point of empty', 'Schools are competitive entry points'],
+    },
+    anchors: { transit: ['1 train', '2/3', 'A/C/E', 'PATH (WTC)'], parks: ['Hudson River Park', 'Battery Park'], groceries: ['Whole Foods (Tribeca)', 'Bazzini', 'Eataly Downtown'] },
+    heroImage: '/images/neighborhoods/tribeca.svg',
+  },
+  {
+    id: 'fidi', slug: 'financial-district', name: 'Financial District', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.8, 'prestige-orientation': 0.3,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.3, 'cultural-ecosystem': -0.2,
+      'environmental-openness': 0.6, 'creative-energy': -0.2, 'friction-sensitivity': 0.5,
+    },
+    basePassages: {
+      whyItFits: 'NYC\'s most transit-redundant residential zone — a dozen subway lines and the PATH inside a square mile, plus ferry. Newer apartment stock is generous on space relative to price; the waterfront promenade does most of what Riverside Park does, with bigger views.',
+      whoThrivesHere: 'Transit-optimizers and value-conscious professionals willing to trade neighborhood texture for square footage.',
+      tradeoffs: ['Empty on weekends — restaurants close early', 'Tourist crush around 9/11 Memorial', 'Lacks the texture of older Manhattan neighborhoods'],
+    },
+    anchors: { transit: ['Every line', 'PATH (WTC)', 'Ferry'], parks: ['Battery Park', 'Hudson River Park'], groceries: ['Whole Foods (Tribeca)', 'Eataly', 'Brookfield Place'] },
+    heroImage: '/images/neighborhoods/financial-district.svg',
+  },
+  {
+    id: 'chelsea', slug: 'chelsea', name: 'Chelsea', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.5,
+      'space-sensitivity': 0.0, 'family-trajectory': 0.0, 'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.5, 'creative-energy': 0.6, 'friction-sensitivity': 0.0,
+    },
+    basePassages: {
+      whyItFits: 'A neighborhood that has reinvented itself more than once and lives at the intersection of art galleries, the High Line, the Hudson, Hudson Yards, and one of the city\'s great food halls. Flat and walkable, well-served by every cross-town option.',
+      whoThrivesHere: 'People who want gallery culture and walkability without committing to a residential bubble.',
+      tradeoffs: ['Tourists spike around the High Line', 'Hudson Yards has changed the western edge in mixed ways', 'Quieter at night than its reputation suggests'],
+    },
+    anchors: { transit: ['A/C/E', '1', 'L (8th)', '7 (Hudson Yards)'], parks: ['High Line', 'Chelsea Waterside', 'Hudson River Park'], groceries: ['Chelsea Market', 'Whole Foods', 'Trader Joe\'s'] },
+    heroImage: '/images/neighborhoods/chelsea.svg',
+  },
+  {
+    id: 'gramercy', slug: 'gramercy', name: 'Gramercy Park', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.7,
+      'space-sensitivity': 0.4, 'family-trajectory': 0.5, 'cultural-ecosystem': -0.1,
+      'environmental-openness': 0.3, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
+    },
+    basePassages: {
+      whyItFits: 'A pocket of unexpected calm right in midtown\'s belly, anchored by NYC\'s only private park. Pre-war buildings, low-rise blocks, and a settled-in feeling that contrasts with the energy three avenues in any direction.',
+      whoThrivesHere: 'People who want central Manhattan\'s reach with residential calm.',
+      tradeoffs: ['Subway access mediocre — Lex only', 'Most of "the Park" is keyed to neighborhood residents', 'Niche enough that newcomers find it small'],
+    },
+    anchors: { transit: ['6 (23rd/28th)', 'L (Union Sq)', 'N/Q/R/W (Union Sq)'], parks: ['Madison Square', 'Union Square'], groceries: ['Trader Joe\'s', 'Whole Foods (Union Sq)'] },
+    heroImage: '/images/neighborhoods/gramercy.svg',
+  },
+  {
+    id: 'hells-kitchen', slug: 'hells-kitchen', name: 'Hell\'s Kitchen', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.7, 'prestige-orientation': 0.0,
+      'space-sensitivity': -0.2, 'family-trajectory': -0.2, 'cultural-ecosystem': 0.4,
+      'environmental-openness': 0.2, 'creative-energy': 0.4, 'friction-sensitivity': -0.3,
+    },
+    basePassages: {
+      whyItFits: 'NYC\'s most diverse restaurant row, walking distance to anywhere in midtown, and the most transit-redundant west-side residential zone. Loud, dense, and unpretentious — the un-glamorous engine room of central Manhattan life.',
+      whoThrivesHere: 'High-energy professionals and theater-adjacent creative workers who want central without precious.',
+      tradeoffs: ['Tourist crush near Times Square', 'Apartments mostly tenement-era walk-ups', 'Daily friction is high — accept or move'],
+    },
+    anchors: { transit: ['A/C/E', '1', 'N/Q/R/W', '7'], parks: ['Hudson River Park', 'DeWitt Clinton'], groceries: ['Whole Foods (Columbus)', 'Westerly', 'Stiles Farmers Market'] },
+    heroImage: '/images/neighborhoods/hells-kitchen.svg',
+  },
+  {
+    id: 'central-harlem', slug: 'central-harlem', name: 'Central Harlem', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': -0.3,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.7,
+      'environmental-openness': 0.5, 'creative-energy': 0.4, 'friction-sensitivity': 0.0,
+    },
+    basePassages: {
+      whyItFits: 'One of NYC\'s deepest cultural neighborhoods, with brownstone blocks the equal of anywhere in Brooklyn at notably lower per-square-foot prices. The 2/3 puts you in midtown faster than people assume.',
+      whoThrivesHere: 'Value-conscious people who want space, history, and a real neighborhood.',
+      tradeoffs: ['Block-by-block character variance is real', 'Restaurant scene is improving but uneven', 'Long perceived distance from the rest of Manhattan'],
+    },
+    anchors: { transit: ['2/3 train', 'B/C', 'A/D'], parks: ['Central Park (north)', 'Marcus Garvey'], groceries: ['Whole Foods (125th)', 'Trader Joe\'s'] },
+    heroImage: '/images/neighborhoods/central-harlem.svg',
+  },
+  // -------- BROOKLYN --------
+  {
+    id: 'williamsburg', slug: 'williamsburg', name: 'Williamsburg', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.0, 'prestige-orientation': 0.4,
+      'space-sensitivity': 0.0, 'family-trajectory': 0.0, 'cultural-ecosystem': 0.3,
+      'environmental-openness': 0.4, 'creative-energy': 0.7, 'friction-sensitivity': -0.2,
+    },
+    basePassages: {
+      whyItFits: 'NYC\'s most successful gentrification arc, complete. The L holds the neighborhood hostage, but newer residential buildings are large and waterfront-adjacent, the restaurants are excellent, and the energy peaks higher than anywhere in Brooklyn except maybe Bushwick on a Saturday night.',
+      whoThrivesHere: 'Creative-class people in their late 20s and 30s who want energy without committing to Manhattan prices.',
+      tradeoffs: ['L train dependence is a real psychological burden', 'Has lost much of its grit; if that\'s what drew you, look further east', 'Prices are now Manhattan-adjacent'],
+    },
+    anchors: { transit: ['L (Bedford/Lorimer)', 'G', 'J/M/Z (Marcy)', 'Ferry'], parks: ['Domino Park', 'McCarren', 'East River State'], groceries: ['Whole Foods', 'Trader Joe\'s', 'Brooklyn Harvest'] },
+    heroImage: '/images/neighborhoods/williamsburg.svg',
+  },
+  {
+    id: 'park-slope', slug: 'park-slope', name: 'Park Slope', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.5,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.1,
+      'environmental-openness': 0.8, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
+    },
+    basePassages: {
+      whyItFits: 'Brownstone calm, leafy blocks, the Park literally there, and trains that put you in Manhattan in twenty minutes. Has become the platonic ideal of "where one moves when one has kids in NYC" — for better and for worse.',
+      whoThrivesHere: 'Future-family planners and couples looking for emotional sustainability over time.',
+      tradeoffs: ['Quiet to the point of insular on weekends', 'Real estate priced like Manhattan; you\'re paying for the calm', 'Limited late-night life'],
+    },
+    anchors: { transit: ['F/G', 'R', 'B/Q (Prospect Park)', '2/3 (Grand Army)'], parks: ['Prospect Park'], groceries: ['Union Market', 'Park Slope Food Coop', 'Key Food'] },
+    heroImage: '/images/neighborhoods/park-slope.svg',
+  },
+  {
+    id: 'brooklyn-heights', slug: 'brooklyn-heights', name: 'Brooklyn Heights', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.6,
+      'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.7, 'creative-energy': -0.1, 'friction-sensitivity': 0.8,
+    },
+    basePassages: {
+      whyItFits: 'Brooklyn\'s most architecturally serious residential neighborhood — wide avenues of 19th-century townhouses, the Promenade with the most famous skyline view in the city, and transit redundancy that surprises people. Calm without being remote.',
+      whoThrivesHere: 'Calm-seeking urbanists who want substance and a fast door back to Manhattan.',
+      tradeoffs: ['Fewer restaurants than the buzzier Brooklyn neighborhoods', 'Quiet on weekends; more residential than alive', 'Some of the most expensive blocks in Brooklyn'],
+    },
+    anchors: { transit: ['2/3', '4/5', 'R', 'A/C', 'F'], parks: ['Brooklyn Bridge Park', 'Cadman Plaza'], groceries: ['Trader Joe\'s', 'Key Food', 'Sahadi\'s'] },
+    heroImage: '/images/neighborhoods/brooklyn-heights.svg',
+  },
+  {
+    id: 'bed-stuy', slug: 'bed-stuy', name: 'Bed-Stuy', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.4, 'prestige-orientation': -0.1,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.5,
+      'environmental-openness': 0.3, 'creative-energy': 0.5, 'friction-sensitivity': 0.0,
+    },
+    basePassages: {
+      whyItFits: 'Some of the most beautiful brownstone blocks in Brooklyn, a cultural depth that\'s been here longer than most of NYC\'s newer arrivals, and apartment values that still beat the prime areas. Has shifted significantly in the last decade and is still doing so.',
+      whoThrivesHere: 'Value-and-space seekers who want a real neighborhood with history.',
+      tradeoffs: ['A and C only — train choice is limited', 'Block-by-block variance', 'The gentrification arc is contested and ongoing'],
+    },
+    anchors: { transit: ['A/C', 'G', 'J/M/Z'], parks: ['Herbert Von King', 'Saratoga'], groceries: ['Foodtown', 'C-Town', 'Apollo'] },
+    heroImage: '/images/neighborhoods/bed-stuy.svg',
+  },
+  {
+    id: 'dumbo', slug: 'dumbo', name: 'DUMBO', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.5, 'prestige-orientation': 0.7,
+      'space-sensitivity': 0.4, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
+    },
+    basePassages: {
+      whyItFits: 'Cobbled streets between two bridges, cast-iron warehouses converted to lofts, and direct access to one of the city\'s most spectacular waterfront parks. A small neighborhood with outsize cinematic identity.',
+      whoThrivesHere: 'Design-and-tech professionals who want the waterfront as their daily backdrop.',
+      tradeoffs: ['Very small footprint — limited grocery, limited variety', 'Tourist load is constant', 'Among the priciest per-square-foot in Brooklyn'],
+    },
+    anchors: { transit: ['F (York)', 'A/C (High St)', 'Ferry'], parks: ['Brooklyn Bridge Park'], groceries: ['Foragers', 'Empire Stores'] },
+    heroImage: '/images/neighborhoods/dumbo.svg',
+  },
+  {
+    id: 'cobble-hill', slug: 'cobble-hill', name: 'Cobble Hill', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.4,
+      'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.1,
+      'environmental-openness': 0.5, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
+    },
+    basePassages: {
+      whyItFits: 'A 12-block jewel between the BQE and Court Street: brownstones, low buildings, mature street trees, and one of the better residential restaurant rows in Brooklyn. Calm without feeling hidden.',
+      whoThrivesHere: 'Couples and early-family households who value scale and proximity equally.',
+      tradeoffs: ['Quiet — not the place for nightlife', 'Real estate competitive', 'Trains all about a 10-minute walk'],
+    },
+    anchors: { transit: ['F/G (Bergen)', 'R (Court)', '2/3/4/5 (Borough Hall)'], parks: ['Cobble Hill Park', 'Brooklyn Bridge Park'], groceries: ['Trader Joe\'s', 'Sahadi\'s', 'Union Market'] },
+    heroImage: '/images/neighborhoods/cobble-hill.svg',
+  },
+  {
+    id: 'bushwick', slug: 'bushwick', name: 'Bushwick', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.0, 'prestige-orientation': -0.4,
+      'space-sensitivity': 0.5, 'family-trajectory': -0.3, 'cultural-ecosystem': 0.5,
+      'environmental-openness': -0.1, 'creative-energy': 0.8, 'friction-sensitivity': -0.5,
+    },
+    basePassages: {
+      whyItFits: 'Brooklyn\'s current creative engine room — converted lofts, warehouse parties, mural-walled industrial blocks, and the largest concentration of working artists in NYC. Apartments are still relatively large for the price; the L is your lifeline.',
+      whoThrivesHere: 'Creative immersionists in their 20s and 30s who want to be near scene and accept the friction that comes with it.',
+      tradeoffs: ['L-train dependence', 'Daily friction is high — gritty by design', 'Block-by-block safety perception varies'],
+    },
+    anchors: { transit: ['L (Morgan/Jefferson/DeKalb)', 'M (Myrtle)', 'J/Z'], parks: ['Maria Hernandez', 'Bushwick Inlet (a stretch)'], groceries: ['Trader Joe\'s (nearby)', 'Mr. Kiwi', 'Western Beef'] },
+    heroImage: '/images/neighborhoods/bushwick.svg',
+  },
+  // -------- QUEENS --------
+  {
+    id: 'long-island-city', slug: 'long-island-city', name: 'Long Island City', borough: 'queens',
+    scores: {
+      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.7, 'prestige-orientation': 0.2,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
+    },
+    basePassages: {
+      whyItFits: 'A new high-rise riverfront with one of NYC\'s best skyline views from your living room. Newer apartment stock means real space; transit redundancy is genuinely strong (7, E, M, G, F, plus ferry); waterfront parks anchor the daily walk.',
+      whoThrivesHere: 'Value-aware urbanists who want space, transit, and views without leaving the inner city.',
+      tradeoffs: ['New-build energy can feel anonymous', 'Restaurant scene is uneven outside of Vernon-Jackson', 'Far from the cultural texture of older Queens'],
+    },
+    anchors: { transit: ['7', 'E/M (Court Sq)', 'G', 'F (21st)', 'Ferry'], parks: ['Gantry Plaza State Park', 'Hunter\'s Point South'], groceries: ['Food Cellar', 'Trader Joe\'s (nearby)'] },
+    heroImage: '/images/neighborhoods/long-island-city.svg',
+  },
+  {
+    id: 'astoria', slug: 'astoria', name: 'Astoria', borough: 'queens',
+    scores: {
+      'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.5, 'prestige-orientation': -0.1,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.7,
+      'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.4,
+    },
+    basePassages: {
+      whyItFits: 'NYC\'s deepest Greek neighborhood and one of its most successfully diverse, with apartments materially larger than equivalent prices in Brooklyn. The N/W gives you direct midtown access; daily life is anchored by restaurants from a dozen cuisines within walking distance.',
+      whoThrivesHere: 'Cultural-anchor seekers and value-seeking professionals.',
+      tradeoffs: ['Restaurant scene is famous; nightlife less so', 'N/W can be slow off-peak', 'Walking distance varies greatly by block'],
+    },
+    anchors: { transit: ['N/W', 'R (Steinway)', 'M (Steinway)', 'F (nearby)'], parks: ['Astoria Park', 'Socrates Sculpture Park'], groceries: ['Trade Fair', 'Key Food', 'Mediterranean Foods'] },
+    heroImage: '/images/neighborhoods/astoria.svg',
+  },
+  {
+    id: 'flushing', slug: 'flushing', name: 'Flushing', borough: 'queens',
+    scores: {
+      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.3, 'prestige-orientation': -0.3,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.95,
+      'environmental-openness': 0.4, 'creative-energy': 0.0, 'friction-sensitivity': -0.3,
+    },
+    basePassages: {
+      whyItFits: 'NYC\'s densest pan-Asian neighborhood and one of the country\'s great food cities in its own right. Apartments are larger and cheaper than anywhere comparable; the 7 train is your direct line to midtown.',
+      whoThrivesHere: 'Cultural-anchor seekers — particularly those for whom East Asian community access is daily life.',
+      tradeoffs: ['Very crowded and high-friction at street level', '7 train is the only real subway option', 'Far from Manhattan in feel even when it isn\'t in time'],
+    },
+    anchors: { transit: ['7 (terminus)', 'LIRR'], parks: ['Flushing Meadows-Corona Park', 'Kissena'], groceries: ['H Mart', 'New World Mall', 'Skyfoods'] },
+    heroImage: '/images/neighborhoods/flushing.svg',
+  },
+  {
+    id: 'forest-hills', slug: 'forest-hills', name: 'Forest Hills', borough: 'queens',
+    scores: {
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.1,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.8, 'cultural-ecosystem': 0.3,
+      'environmental-openness': 0.6, 'creative-energy': -0.3, 'friction-sensitivity': 0.7,
+    },
+    basePassages: {
+      whyItFits: 'The original planned NYC suburb-within-the-city, complete with Tudor-style buildings and tree-lined streets. Apartments are notably larger than anywhere comparable in Brooklyn or Manhattan; the E, F, M, R put you in midtown in 30-35 min.',
+      whoThrivesHere: 'Family-trajectory pragmatists who want suburban scale without leaving the city.',
+      tradeoffs: ['Lower urban energy than newer arrivals expect', 'Limited dining/nightlife relative to Brooklyn', 'Commute is real — 30+ min into Manhattan'],
+    },
+    anchors: { transit: ['E/F/M/R', 'LIRR'], parks: ['Forest Park', 'Flushing Meadows nearby'], groceries: ['Trader Joe\'s (nearby Rego)', 'Key Food', 'Natural Frontier'] },
+    heroImage: '/images/neighborhoods/forest-hills.svg',
+  },
+  // -------- BRONX --------
+  {
+    id: 'riverdale', slug: 'riverdale', name: 'Riverdale', borough: 'bronx',
+    scores: {
+      'urban-intensity-tolerance': -0.7, 'transit-psychology': -0.2, 'prestige-orientation': 0.0,
+      'space-sensitivity': 0.8, 'family-trajectory': 0.85, 'cultural-ecosystem': 0.2,
+      'environmental-openness': 0.9, 'creative-energy': -0.5, 'friction-sensitivity': 0.85,
+    },
+    basePassages: {
+      whyItFits: 'A leafy, hilly, suburban-feeling pocket of NYC with Hudson views and apartment values that beat anything comparable on the other side of the bridge. The 1 train and Metro-North are the connections; the daily quiet is the point.',
+      whoThrivesHere: 'Family-first households who want green space and quiet streets within city limits.',
+      tradeoffs: ['Far from Manhattan — 1 train is slow, Metro-North requires planning', 'Limited dining/nightlife', 'Car becomes useful, which is unusual for NYC'],
+    },
+    anchors: { transit: ['1 (Van Cortlandt)', 'Metro-North (Hudson Line)'], parks: ['Van Cortlandt Park', 'Wave Hill', 'Hudson waterfront'], groceries: ['Skyview Center', 'Stop & Shop', 'Riverdale Garden Market'] },
+    heroImage: '/images/neighborhoods/riverdale.svg',
+  },
+  // -------- STATEN ISLAND --------
+  {
+    id: 'st-george', slug: 'st-george', name: 'St. George', borough: 'staten-island',
+    scores: {
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.0, 'prestige-orientation': -0.4,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.3,
+      'environmental-openness': 0.7, 'creative-energy': -0.2, 'friction-sensitivity': 0.6,
+    },
+    basePassages: {
+      whyItFits: 'The only NYC neighborhood with a five-minute walk to a free 25-minute ferry to Lower Manhattan. Apartments are dramatically larger and cheaper than anywhere on the other end of that ferry; views are the daily reward.',
+      whoThrivesHere: 'Value-and-space seekers who genuinely don\'t mind the ferry rhythm.',
+      tradeoffs: ['Ferry is the lifeline; if it breaks, your day breaks', 'Limited nightlife and dining outside Bay Street', 'Staten Island can feel disconnected from the rest of NYC culture'],
+    },
+    anchors: { transit: ['Staten Island Ferry', 'SI Railway'], parks: ['Snug Harbor', 'Tompkinsville Park'], groceries: ['Western Beef', 'Trader Joe\'s (nearby)'] },
+    heroImage: '/images/neighborhoods/st-george.svg',
+  },
+  // -------- NJ --------
+  {
+    id: 'hoboken', slug: 'hoboken', name: 'Hoboken', borough: 'nj',
+    scores: {
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.6, 'prestige-orientation': 0.2,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.6, 'creative-energy': 0.0, 'friction-sensitivity': 0.5,
+    },
+    basePassages: {
+      whyItFits: 'A walkable mile-square city across the river with PATH service that beats most subway commutes from outer Brooklyn. Apartments are larger, the waterfront promenade is genuinely beautiful, and Manhattan is closer in time than most of Queens.',
+      whoThrivesHere: 'Future-family households and value-conscious professionals who want city scale at lower cost.',
+      tradeoffs: ['Reads as suburban to NYC purists', 'Nightlife concentrated and college-aged in places', 'NJ logistics (taxes, paperwork) are different'],
+    },
+    anchors: { transit: ['PATH (Hoboken)', 'NJ Transit', 'Ferry'], parks: ['Pier A Park', 'Hoboken waterfront'], groceries: ['Trader Joe\'s', 'ShopRite', 'Whole Foods (nearby)'] },
+    heroImage: '/images/neighborhoods/hoboken.svg',
+  },
+  {
+    id: 'jersey-city', slug: 'jersey-city', name: 'Jersey City', borough: 'nj',
+    scores: {
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.1,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.4,
+      'environmental-openness': 0.5, 'creative-energy': 0.2, 'friction-sensitivity': 0.4,
+    },
+    basePassages: {
+      whyItFits: 'NJ\'s answer to LIC — high-rise waterfront with skyline views, several PATH stops giving direct Manhattan access, and a downtown that\'s diversified well beyond the original financial-services pitch. Materially more space per dollar than Manhattan.',
+      whoThrivesHere: 'Value-aware urbanists, including dual-income couples and early-family households.',
+      tradeoffs: ['NYC purists treat NJ as a different planet', 'Beyond downtown, transit gets car-dependent quickly', 'Tax structure requires its own homework'],
+    },
+    anchors: { transit: ['PATH (Exchange Place, Grove St, Newport)', 'Light Rail', 'Ferry'], parks: ['Liberty State Park', 'Newport Green', 'Hamilton Park'], groceries: ['ShopRite', 'Trader Joe\'s', 'Whole Foods'] },
+    heroImage: '/images/neighborhoods/jersey-city.svg',
+  },
+] as const;
+
+export function neighborhoodById(id: string): Neighborhood | undefined {
+  return neighborhoods.find((n) => n.id === id);
+}
+
+export function neighborhoodBySlug(slug: string): Neighborhood | undefined {
+  return neighborhoods.find((n) => n.slug === slug);
+}
