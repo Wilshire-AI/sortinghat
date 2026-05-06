@@ -1,4 +1,9 @@
-import Link from 'next/link';
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import maplibregl, { Map as MaplibreMap, Popup } from 'maplibre-gl';
+import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Neighborhood } from '@content/types';
 import polygonData from '@content/neighborhood-polygons.json';
 
@@ -9,88 +14,245 @@ type Props = {
 type GeoFeature = {
   type: 'Feature';
   properties: { id: string; name?: string; borough?: string };
-  geometry:
-    | { type: 'Polygon'; coordinates: number[][][] }
-    | { type: 'MultiPolygon'; coordinates: number[][][][] };
+  geometry: GeoJSON.MultiPolygon | GeoJSON.Polygon;
 };
 
 const features = (polygonData as { features: GeoFeature[] }).features;
 
-// Bounding box from the source data, with breathing room
-const LNG_MIN = -74.265;
-const LNG_MAX = -73.700;
-const LAT_MIN = 40.495;
-const LAT_MAX = 40.92;
-const VIEW_W = 1000;
-const VIEW_H = 800;
-const PAD = 18;
-
-const scaleX = (VIEW_W - 2 * PAD) / (LNG_MAX - LNG_MIN);
-const scaleY = (VIEW_H - 2 * PAD) / (LAT_MAX - LAT_MIN);
-const SCALE = Math.min(scaleX, scaleY);
-const W_OFFSET = (VIEW_W - SCALE * (LNG_MAX - LNG_MIN)) / 2;
-const H_OFFSET = (VIEW_H - SCALE * (LAT_MAX - LAT_MIN)) / 2;
-
-function project(lng: number, lat: number): [number, number] {
-  const x = (lng - LNG_MIN) * SCALE + W_OFFSET;
-  const y = (LAT_MAX - lat) * SCALE + H_OFFSET;
-  return [x, y];
-}
-
-function ringToPath(ring: number[][]): string {
-  if (ring.length === 0) return '';
-  const [x0, y0] = project(ring[0][0], ring[0][1]);
-  let path = `M${x0.toFixed(1)} ${y0.toFixed(1)}`;
-  for (let i = 1; i < ring.length; i++) {
-    const [x, y] = project(ring[i][0], ring[i][1]);
-    path += `L${x.toFixed(1)} ${y.toFixed(1)}`;
-  }
-  return path + 'Z';
-}
-
-function featureToPath(feat: GeoFeature): string {
-  if (feat.geometry.type === 'Polygon') {
-    return feat.geometry.coordinates.map(ringToPath).join(' ');
-  }
-  return feat.geometry.coordinates
-    .map((poly) => poly.map(ringToPath).join(' '))
-    .join(' ');
-}
+// Carto Positron — minimal, light, intentionally pale so overlay data pops.
+// Free for non-commercial use; no API key required.
+// https://github.com/CartoDB/basemap-styles
+const CARTO_STYLE = {
+  version: 8 as const,
+  sources: {
+    'carto-positron': {
+      type: 'raster' as const,
+      tiles: [
+        'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+        'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+        'https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+        'https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+      ],
+      tileSize: 256,
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    },
+  },
+  layers: [
+    {
+      id: 'carto-positron',
+      type: 'raster' as const,
+      source: 'carto-positron',
+      minzoom: 0,
+      maxzoom: 22,
+    },
+  ],
+};
 
 function scoreColor(score: number): string {
-  // Green-red gradient via HSL hue interpolation. Muted to fit the editorial palette.
-  const hue = Math.round(score * 110); // 0=red, 110=green
-  return `hsl(${hue}, 50%, 50%)`;
-}
-
-function centroid(feat: GeoFeature): [number, number] {
-  let sumX = 0, sumY = 0, n = 0;
-  const rings: number[][][] =
-    feat.geometry.type === 'Polygon'
-      ? feat.geometry.coordinates
-      : feat.geometry.coordinates.flat();
-  for (const ring of rings) {
-    for (const [lng, lat] of ring) {
-      const [x, y] = project(lng, lat);
-      sumX += x;
-      sumY += y;
-      n += 1;
-    }
-  }
-  return n === 0 ? [VIEW_W / 2, VIEW_H / 2] : [sumX / n, sumY / n];
+  // Green-red HSL gradient. 0 → red (hue 0), 1 → green (hue 110).
+  const hue = Math.round(score * 110);
+  return `hsl(${hue}, 60%, 50%)`;
 }
 
 export function NeighborhoodMap({ ranked }: Props) {
-  const scoreById = new Map(ranked.map((r) => [r.neighborhood.id, r.score]));
-  const neighborById = new Map(ranked.map((r) => [r.neighborhood.id, r.neighborhood]));
-  const top5 = new Set(ranked.slice(0, 5).map((r) => r.neighborhood.id));
+  const router = useRouter();
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const mapRef = useRef<MaplibreMap | null>(null);
+  const [ready, setReady] = useState(false);
 
-  const bgFeatures = features.filter((f) => f.properties.id === '_bg_');
-  const coveredFeatures = features.filter((f) => f.properties.id !== '_bg_');
+  useEffect(() => {
+    if (!containerRef.current || mapRef.current) return;
+    const map = new maplibregl.Map({
+      container: containerRef.current,
+      style: CARTO_STYLE as maplibregl.StyleSpecification,
+      center: [-73.96, 40.74],
+      zoom: 10.4,
+      interactive: true,
+      attributionControl: { compact: true },
+      maxBounds: [
+        [-74.35, 40.45],
+        [-73.65, 41.0],
+      ],
+    });
+    mapRef.current = map;
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+    map.on('load', () => setReady(true));
+    return () => {
+      map.remove();
+      mapRef.current = null;
+    };
+  }, []);
 
-  // Count NJ neighborhoods not on map
-  const njCount = ranked.filter((r) => r.neighborhood.borough === 'nj').length;
+  // Build/update overlay layer when ranks change
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
 
+    const scoreById = new Map(ranked.map((r) => [r.neighborhood.id, r.score]));
+    const neighborById = new Map(ranked.map((r) => [r.neighborhood.id, r.neighborhood]));
+
+    // Build per-feature properties for paint expressions
+    const enriched = {
+      type: 'FeatureCollection' as const,
+      features: features.map((f) => {
+        const id = f.properties.id;
+        const isCovered = id !== '_bg_';
+        const score = scoreById.get(id);
+        const name = neighborById.get(id)?.name ?? f.properties.name ?? '';
+        return {
+          ...f,
+          properties: {
+            id,
+            isCovered,
+            covered: isCovered && score !== undefined,
+            score: score ?? -1,
+            color: score !== undefined ? scoreColor(score) : '#e8e4d9',
+            name,
+            slug: neighborById.get(id)?.slug ?? '',
+            scoreLabel: score !== undefined ? `${Math.round(score * 100)}%` : '',
+          },
+        };
+      }),
+    };
+
+    const sourceId = 'sh-neighborhoods';
+    const fillLayerId = 'sh-fill';
+    const lineLayerId = 'sh-line';
+    const labelLayerId = 'sh-label';
+
+    if (map.getLayer(labelLayerId)) map.removeLayer(labelLayerId);
+    if (map.getLayer(lineLayerId)) map.removeLayer(lineLayerId);
+    if (map.getLayer(fillLayerId)) map.removeLayer(fillLayerId);
+    if (map.getSource(sourceId)) map.removeSource(sourceId);
+
+    map.addSource(sourceId, {
+      type: 'geojson',
+      data: enriched as GeoJSON.FeatureCollection,
+    });
+
+    // Fill: covered = score color at higher opacity, uncovered = grey
+    map.addLayer({
+      id: fillLayerId,
+      type: 'fill',
+      source: sourceId,
+      paint: {
+        'fill-color': ['get', 'color'],
+        'fill-opacity': [
+          'case',
+          ['boolean', ['get', 'covered'], false], 0.62,
+          0.18,
+        ],
+      },
+    });
+
+    // Outline: stronger for covered
+    map.addLayer({
+      id: lineLayerId,
+      type: 'line',
+      source: sourceId,
+      paint: {
+        'line-color': [
+          'case',
+          ['boolean', ['get', 'covered'], false], '#ffffff',
+          '#a8a298',
+        ],
+        'line-width': [
+          'case',
+          ['boolean', ['get', 'covered'], false], 1.4,
+          0.5,
+        ],
+      },
+    });
+
+    // Top-5 labels
+    const top5Ids = new Set(ranked.slice(0, 5).map((r) => r.neighborhood.id));
+    const labelData = {
+      type: 'FeatureCollection' as const,
+      features: enriched.features
+        .filter((f) => top5Ids.has(f.properties.id))
+        .map((f) => {
+          // Use turf-style centroid: average all coords
+          let sumX = 0, sumY = 0, n = 0;
+          const rings: number[][][] =
+            f.geometry.type === 'Polygon'
+              ? f.geometry.coordinates
+              : f.geometry.coordinates.flat();
+          for (const ring of rings) {
+            for (const [lng, lat] of ring) {
+              sumX += lng; sumY += lat; n += 1;
+            }
+          }
+          const cx = n ? sumX / n : 0;
+          const cy = n ? sumY / n : 0;
+          return {
+            type: 'Feature' as const,
+            geometry: { type: 'Point' as const, coordinates: [cx, cy] },
+            properties: f.properties,
+          };
+        }),
+    };
+
+    const labelSourceId = 'sh-labels';
+    if (map.getSource(labelSourceId)) {
+      (map.getSource(labelSourceId) as maplibregl.GeoJSONSource).setData(labelData);
+    } else {
+      map.addSource(labelSourceId, { type: 'geojson', data: labelData });
+    }
+    if (map.getLayer(labelLayerId)) map.removeLayer(labelLayerId);
+    map.addLayer({
+      id: labelLayerId,
+      type: 'symbol',
+      source: labelSourceId,
+      layout: {
+        'text-field': ['format',
+          ['get', 'name'], { 'font-scale': 1 },
+          '\n', {},
+          ['get', 'scoreLabel'], { 'font-scale': 0.85 },
+        ],
+        'text-size': 12,
+        'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+        'text-anchor': 'center',
+        'text-allow-overlap': true,
+      },
+      paint: {
+        'text-color': '#1a1410',
+        'text-halo-color': '#ffffff',
+        'text-halo-width': 2,
+      },
+    });
+
+    // Hover popup
+    const popup = new Popup({ closeButton: false, closeOnClick: false, offset: 6 });
+    map.on('mousemove', fillLayerId, (e) => {
+      if (!e.features?.length) return;
+      const f = e.features[0];
+      const props = f.properties as { covered: boolean; name: string; scoreLabel: string };
+      if (!props.covered) {
+        popup.remove();
+        return;
+      }
+      map.getCanvas().style.cursor = 'pointer';
+      popup
+        .setLngLat(e.lngLat)
+        .setHTML(`<div style="font-family:var(--font-inter);font-size:12px"><b>${props.name}</b> · ${props.scoreLabel} match</div>`)
+        .addTo(map);
+    });
+    map.on('mouseleave', fillLayerId, () => {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+    });
+
+    map.on('click', fillLayerId, (e) => {
+      if (!e.features?.length) return;
+      const props = e.features[0].properties as { covered: boolean; slug: string };
+      if (props.covered && props.slug) {
+        router.push(`/n/${props.slug}`);
+      }
+    });
+  }, [ready, ranked, router]);
+
+  // Count NJ neighborhoods (now visible on map)
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 border-t border-[var(--color-line)]">
       <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
@@ -100,119 +262,24 @@ export function NeighborhoodMap({ ranked }: Props) {
         Your matches, mapped
       </h2>
       <p className="mt-4 text-sm text-[var(--color-muted)] max-w-xl leading-relaxed">
-        Real NYC neighborhood boundaries (NTAs from NYC Open Data, simplified). Colored
-        ones are in our coverage and shaded by your match score. Grey ones are NYC
-        neighborhoods we don&rsquo;t cover yet. Click any colored neighborhood to read its full
-        profile.
+        Real NYC and immediate-NJ geography from OpenStreetMap (via CARTO Positron).
+        Colored polygons are neighborhoods we cover, shaded by your match score. Hover
+        any neighborhood for the score; click to read its full profile.
       </p>
 
-      <div className="mt-10 rounded-sm border border-[var(--color-line)] bg-[#dee5ec] overflow-hidden">
-        <svg
-          viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-          className="w-full h-auto block"
-          role="img"
-          aria-label="Map of NYC neighborhoods colored by match score"
-        >
-          {/* Soft water background — the rounded container shows blue where polygons aren't */}
+      <div
+        ref={containerRef}
+        className="mt-10 rounded-sm border border-[var(--color-line)] overflow-hidden"
+        style={{ width: '100%', height: 600 }}
+        aria-label="Map of NYC neighborhoods colored by match score"
+      />
 
-          {/* Background NYC neighborhoods (uncovered) */}
-          <g>
-            {bgFeatures.map((feat, i) => (
-              <path
-                key={`bg-${i}`}
-                d={featureToPath(feat)}
-                fill="#e8e4d9"
-                stroke="#d4cfc0"
-                strokeWidth="0.6"
-              />
-            ))}
-          </g>
-
-          {/* Covered neighborhoods, score-colored */}
-          <g>
-            {coveredFeatures.map((feat) => {
-              const id = feat.properties.id;
-              const n = neighborById.get(id);
-              if (!n) {
-                // Render uncolored if no rank data (shouldn't happen)
-                return (
-                  <path
-                    key={id}
-                    d={featureToPath(feat)}
-                    fill="#e8e4d9"
-                    stroke="#d4cfc0"
-                    strokeWidth="0.6"
-                  />
-                );
-              }
-              const score = scoreById.get(id) ?? 0;
-              const isTop = top5.has(id);
-              return (
-                <Link
-                  key={id}
-                  href={`/n/${n.slug}`}
-                  aria-label={`${n.name}, ${Math.round(score * 100)}% match`}
-                >
-                  <path
-                    d={featureToPath(feat)}
-                    fill={scoreColor(score)}
-                    fillOpacity={isTop ? 0.95 : 0.78}
-                    stroke="#fff"
-                    strokeWidth={isTop ? 2 : 1}
-                    style={{ cursor: 'pointer' }}
-                  >
-                    <title>{n.name} · {Math.round(score * 100)}% match</title>
-                  </path>
-                </Link>
-              );
-            })}
-          </g>
-
-          {/* Top 5 labels */}
-          <g fontFamily="var(--font-inter), sans-serif">
-            {ranked.slice(0, 5).map((r) => {
-              const feat = coveredFeatures.find((f) => f.properties.id === r.neighborhood.id);
-              if (!feat) return null;
-              const [cx, cy] = centroid(feat);
-              return (
-                <g key={r.neighborhood.id}>
-                  <text
-                    x={cx}
-                    y={cy - 1}
-                    textAnchor="middle"
-                    fontSize="13"
-                    fontWeight="700"
-                    fill="#1a1410"
-                    stroke="#fff"
-                    strokeWidth="3.5"
-                    paintOrder="stroke"
-                  >
-                    {r.neighborhood.shortName ?? r.neighborhood.name}
-                  </text>
-                  <text
-                    x={cx}
-                    y={cy + 13}
-                    textAnchor="middle"
-                    fontSize="11"
-                    fontWeight="700"
-                    fill="#1a1410"
-                    stroke="#fff"
-                    strokeWidth="3"
-                    paintOrder="stroke"
-                  >
-                    {Math.round(r.score * 100)}%
-                  </text>
-                </g>
-              );
-            })}
-          </g>
-        </svg>
-      </div>
-
-      {/* Legend + caveats */}
       <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-[var(--color-muted)]">
         <div className="flex items-center gap-3">
-          <span className="inline-flex h-3 rounded overflow-hidden border border-[var(--color-line)]" style={{ width: 140 }}>
+          <span
+            className="inline-flex h-3 rounded overflow-hidden border border-[var(--color-line)]"
+            style={{ width: 140 }}
+          >
             {Array.from({ length: 14 }).map((_, i) => (
               <span key={i} style={{ background: scoreColor(i / 13), width: 10, height: '100%' }} />
             ))}
@@ -221,15 +288,12 @@ export function NeighborhoodMap({ ranked }: Props) {
         </div>
         <span aria-hidden>·</span>
         <span className="flex items-center gap-2">
-          <span className="inline-block w-3 h-3 rounded-sm bg-[#e8e4d9] border border-[#d4cfc0]" />
+          <span
+            className="inline-block w-3 h-3 rounded-sm"
+            style={{ background: '#e8e4d9', border: '1px solid #d4cfc0' }}
+          />
           <span>NYC neighborhood we don&rsquo;t cover yet</span>
         </span>
-        {njCount > 0 && (
-          <>
-            <span aria-hidden>·</span>
-            <span>NJ neighborhoods aren&rsquo;t shown on the map yet ({njCount} in your results)</span>
-          </>
-        )}
       </div>
     </section>
   );
