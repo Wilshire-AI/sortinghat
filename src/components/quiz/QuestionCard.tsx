@@ -56,6 +56,12 @@ function ForcedChoice({
   );
 }
 
+// 5-point Likert rendered as a slider track with discrete positions.
+// Visual continuity with a slider; data is properly discrete (no false
+// precision, no anchor bias on a starting position the user didn't choose).
+const LIKERT_POSITIONS = [-1, -0.5, 0, 0.5, 1] as const;
+const LIKERT_DEFAULT_LABELS = ['Strongly low', 'Low', 'Moderate', 'High', 'Strongly high'] as const;
+
 function Slider({
   question,
   onAnswer,
@@ -63,27 +69,70 @@ function Slider({
   question: Extract<Question, { kind: 'slider' }>;
   onAnswer: (a: Answer) => void;
 }) {
-  const [val, setVal] = useState(0);
+  const [pos, setPos] = useState<number | null>(null);
+  const labels = [
+    question.lowLabel,
+    '',
+    'Moderate',
+    '',
+    question.highLabel,
+  ];
+
   return (
-    <div className="mt-10">
-      <input
-        type="range"
-        min={-1}
-        max={1}
-        step={0.05}
-        value={val}
-        onChange={(e) => setVal(parseFloat(e.target.value))}
-        aria-label={question.prompt}
-        className="w-full accent-[var(--color-accent)] cursor-pointer"
-      />
-      <div className="mt-3 flex justify-between text-sm text-[var(--color-muted)]">
-        <span>{question.lowLabel}</span>
-        <span>{question.highLabel}</span>
+    <div className="mt-10" role="radiogroup" aria-label={question.prompt}>
+      <div className="px-4 sm:px-8 py-6">
+        <div className="relative">
+          {/* Track */}
+          <div
+            aria-hidden
+            className="absolute left-0 right-0 top-1/2 h-px -translate-y-1/2 bg-[var(--color-line)]"
+          />
+          {/* Filled portion (only when selected) */}
+          {pos !== null && (
+            <div
+              aria-hidden
+              className="absolute left-0 top-1/2 h-px -translate-y-1/2 bg-[var(--color-accent)] transition-all duration-300"
+              style={{ width: `${(pos / (LIKERT_POSITIONS.length - 1)) * 100}%` }}
+            />
+          )}
+          {/* Five discrete positions */}
+          <div className="relative flex justify-between">
+            {LIKERT_POSITIONS.map((value, i) => {
+              const isSelected = pos === i;
+              return (
+                <button
+                  key={i}
+                  type="button"
+                  role="radio"
+                  aria-checked={isSelected}
+                  aria-label={LIKERT_DEFAULT_LABELS[i]}
+                  onClick={() => setPos(i)}
+                  className={
+                    'relative z-10 rounded-full transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)] ' +
+                    (isSelected
+                      ? 'w-5 h-5 bg-[var(--color-accent)] ring-4 ring-[var(--color-accent)]/20'
+                      : 'w-3.5 h-3.5 bg-[var(--color-bg)] border-2 border-[var(--color-ink)]/30 hover:border-[var(--color-ink)] hover:scale-110')
+                  }
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
+      <div className="mt-3 flex justify-between text-sm text-[var(--color-muted)] px-4 sm:px-8">
+        <span className="max-w-[40%]">{question.lowLabel}</span>
+        <span className="max-w-[40%] text-right">{question.highLabel}</span>
+      </div>
+
+      <p className="mt-6 text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+        {pos === null ? 'Pick a position' : labels[pos] || `Position ${pos + 1} of 5`}
+      </p>
+
       <button
         type="button"
-        onClick={() => onAnswer({ kind: 'slider', value: val })}
-        className="mt-10 inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+        disabled={pos === null}
+        onClick={() => pos !== null && onAnswer({ kind: 'slider', value: LIKERT_POSITIONS[pos] })}
+        className="mt-6 inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)] disabled:opacity-30 disabled:cursor-not-allowed"
       >
         Continue
       </button>
