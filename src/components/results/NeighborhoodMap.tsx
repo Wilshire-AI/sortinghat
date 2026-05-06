@@ -228,7 +228,7 @@ export function NeighborhoodMap({ ranked }: Props) {
     const onClick = (e: maplibregl.MapLayerMouseEvent) => {
       if (!e.features?.length) return;
       const props = e.features[0].properties as { slug: string };
-      if (props.slug) router.push(`/n/${props.slug}`);
+      if (props.slug) router.push(`/nyc/n/${props.slug}`);
     };
     map.on('mousemove', fillLayerId, onMove);
     map.on('mouseleave', fillLayerId, onLeave);

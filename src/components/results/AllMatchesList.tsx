@@ -39,7 +39,7 @@ export function AllMatchesList({ ranked, startRank = 6 }: Props) {
               className="border-b border-[var(--color-line)] last:border-b-0"
             >
               <Link
-                href={`/n/${r.neighborhood.slug}`}
+                href={`/nyc/n/${r.neighborhood.slug}`}
                 className="flex items-baseline justify-between py-3 sm:py-4 hover:bg-[var(--color-ink)]/[0.03] transition px-2 -mx-2 rounded-sm"
               >
                 <div className="flex items-baseline gap-4 sm:gap-6 min-w-0">

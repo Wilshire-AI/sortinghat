@@ -72,7 +72,7 @@ export function NeighborhoodCard({ rank, neighborhood, prose, score, matchedTags
             )}
           </p>
           <h2 className="mt-2 font-serif text-3xl sm:text-4xl leading-[1.05]">
-            <Link href={`/n/${neighborhood.slug}`} className="hover:text-[var(--color-accent)] transition">
+            <Link href={`/nyc/n/${neighborhood.slug}`} className="hover:text-[var(--color-accent)] transition">
               {neighborhood.name}
             </Link>
           </h2>

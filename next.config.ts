@@ -4,7 +4,7 @@ import { dirname } from "node:path";
 
 // Static export so we can host on any static-file host (Vercel, GitHub Pages, etc.).
 // All runtime behavior lives client-side; the engine is pure.
-const isPagesBuild = process.env.GITHUB_PAGES === "true";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -12,10 +12,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // required for static export
   },
-  // When building for GitHub Pages at /sortinghat, set basePath/assetPrefix.
-  // Vercel deployment doesn't need this; pass GITHUB_PAGES=true to enable.
-  basePath: isPagesBuild ? "/sortinghat" : undefined,
-  assetPrefix: isPagesBuild ? "/sortinghat" : undefined,
+  basePath,
+  assetPrefix: basePath,
   turbopack: {
     root: dirname(fileURLToPath(import.meta.url)),
   },

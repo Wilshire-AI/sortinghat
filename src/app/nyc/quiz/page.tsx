@@ -44,7 +44,7 @@ export default function QuizPage() {
         finalDerived.selectedTags,
         finalDerived.mustHaves,
       );
-      router.push(`/results?f=${encoded}`);
+      router.push(`/nyc/results?f=${encoded}`);
     }
   };
 

@@ -23,7 +23,7 @@ Sorting Hat is a psychographic NYC-metro neighborhood recommender. User answers
 a structured quiz; an engine matches their answers to neighborhoods using a
 mix of soft scoring + hard filters; the result is a ranked list of fits with
 prose explaining why each works. Pure-functional engine, all content static
-in the repo, deployed as a static site to GitHub Pages.
+in the repo, deployed on Vercel as a static export.
 
 This document is the **first thing to read** when you join the codebase. It
 covers the product, the architecture, conventions, and how to add things
@@ -64,11 +64,11 @@ broker-y or salesy.
 | Fonts | Newsreader (serif) + Inter (sans) via `next/font` |
 | Map | MapLibre GL + CARTO Positron tiles (free, no API key) |
 | Tests | Vitest |
-| Hosting | GitHub Pages via Actions |
-| Repo | `maplelemondragon/sortinghat` (public for free GH Pages) |
+| Hosting | Vercel |
+| Repo | `Wilshire-AI/sortinghat` |
 
 No backend, no DB, no auth in current build. Anonymous-shareable URLs only.
-v1 plan adds Vercel + Vercel Postgres + Auth.js magic-link.
+v1 plan adds Vercel Postgres + Auth.js magic-link.
 
 ---
 
@@ -86,10 +86,10 @@ sortinghat/
 ├── src/
 │   ├── app/
 │   │   ├── page.tsx                    # landing
-│   │   ├── quiz/page.tsx               # quiz state + flow control
-│   │   ├── results/page.tsx            # Suspense wrapper
-│   │   ├── results/results-client.tsx  # main results renderer
-│   │   ├── n/[slug]/page.tsx           # per-neighborhood deep-dive
+│   │   ├── nyc/quiz/page.tsx           # quiz state + flow control
+│   │   ├── nyc/results/page.tsx        # Suspense wrapper
+│   │   ├── nyc/results/results-client.tsx # main results renderer
+│   │   ├── nyc/n/[slug]/page.tsx       # per-neighborhood deep-dive
 │   │   ├── layout.tsx
 │   │   └── globals.css
 │   ├── components/
@@ -110,8 +110,7 @@ sortinghat/
 │       ├── archetype.ts                # PURE: nearest-archetype match
 │       └── explain.ts                  # passage resolution (mostly base passages)
 ├── tests/                              # vitest unit + content invariant tests
-├── .github/workflows/pages.yml         # static export → GitHub Pages
-├── next.config.ts                      # output: 'export', basePath for GH Pages
+├── next.config.ts                      # output: 'export'
 └── AGENTS.md                           # this file
 ```
 
@@ -382,20 +381,17 @@ sources. To add or replace a polygon:
 
 ## 9. Deploy pipeline
 
-Push to `main` triggers `.github/workflows/pages.yml`:
+Push to `main` triggers the connected Vercel project:
 
 1. `npm ci`
 2. `npm test` (content invariants must pass; engine units must pass)
-3. `npm run build` with `GITHUB_PAGES=true` (sets `basePath: '/sortinghat'`
-   in `next.config.ts`)
-4. `touch out/.nojekyll` (preserves `_next/` directory in GH Pages)
-5. `actions/upload-pages-artifact` + `actions/deploy-pages`
+3. `npm run build`
+4. Vercel serves the static export
 
-Site lives at: `https://maplelemondragon.github.io/sortinghat/`
+Site lives at: `https://sortinghat.wilshireai.com/`
 
-Custom domain mapping (`sortinghat.wilshireai.com`) is deferred — needs
-DNS work in Cloudflare on the user's side. Vercel migration is the v1 plan
-when the save flow + auth + DB are added.
+The Vercel project owns the custom domain mapping. Cloudflare should have a
+DNS-only CNAME for `sortinghat` pointing at the Vercel-provided target.
 
 ---
 
@@ -434,4 +430,3 @@ npm run build         # static export to out/
 npm run dev           # local dev server
 gh run list           # check deploy status
 ```
-

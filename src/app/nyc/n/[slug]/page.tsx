@@ -102,7 +102,7 @@ export default async function NeighborhoodPage({
       </section>
 
       <footer className="mt-20 pt-8 border-t border-[var(--color-line)] text-xs text-[var(--color-muted)]">
-        <Link href="/quiz" className="hover:text-[var(--color-accent)] transition">
+        <Link href="/nyc/quiz" className="hover:text-[var(--color-accent)] transition">
           Take the quiz to see if {n.name} fits you →
         </Link>
       </footer>

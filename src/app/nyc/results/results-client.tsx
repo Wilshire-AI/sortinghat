@@ -71,7 +71,7 @@ export function ResultsClient() {
   }, [f]);
 
   useEffect(() => {
-    if (!f || !result) router.replace('/quiz');
+    if (!f || !result) router.replace('/nyc/quiz');
   }, [f, result, router]);
 
   if (!result) {
@@ -89,7 +89,7 @@ export function ResultsClient() {
       <div className="mx-auto max-w-3xl px-6 pb-2 flex flex-wrap items-center gap-4">
         <ShareButton archetypeName={result.archetype.name} />
         <Link
-          href="/quiz"
+          href="/nyc/quiz"
           className="text-sm text-[var(--color-muted)] hover:text-[var(--color-accent)] transition"
         >
           Retake the quiz
