@@ -15,7 +15,28 @@ import { NeighborhoodCard } from '@/components/results/NeighborhoodCard';
 import { DimensionFingerprint } from '@/components/results/DimensionFingerprint';
 import { ShareButton } from '@/components/results/ShareButton';
 import { AllMatchesList } from '@/components/results/AllMatchesList';
-import { NeighborhoodMap } from '@/components/results/NeighborhoodMap';
+import dynamic from 'next/dynamic';
+
+// MapLibre is ~250KB and only renders on the client. Lazy-load it so the
+// initial results render isn't blocked by map JS + tile fetches.
+const NeighborhoodMap = dynamic(
+  () => import('@/components/results/NeighborhoodMap').then((m) => m.NeighborhoodMap),
+  {
+    ssr: false,
+    loading: () => (
+      <section className="mx-auto max-w-5xl px-6 py-16 border-t border-[var(--color-line)]">
+        <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">Geographic lens</p>
+        <h2 className="mt-3 font-serif text-3xl sm:text-4xl leading-[1.05]">Your matches, mapped</h2>
+        <div
+          className="mt-10 rounded-sm border border-[var(--color-line)] bg-[var(--color-ink)]/[0.03] flex items-center justify-center"
+          style={{ width: '100%', height: 600 }}
+        >
+          <p className="text-sm text-[var(--color-muted)]">Loading map…</p>
+        </div>
+      </section>
+    ),
+  },
+);
 
 export function ResultsClient() {
   const router = useRouter();

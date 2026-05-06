@@ -13,15 +13,12 @@ type Props = {
 
 type GeoFeature = {
   type: 'Feature';
-  properties: { id: string; name?: string; borough?: string };
+  properties: { id: string };
   geometry: GeoJSON.MultiPolygon | GeoJSON.Polygon;
 };
 
 const features = (polygonData as { features: GeoFeature[] }).features;
 
-// Carto Positron — minimal, light, intentionally pale so overlay data pops.
-// Free for non-commercial use; no API key required.
-// https://github.com/CartoDB/basemap-styles
 const CARTO_STYLE = {
   version: 8 as const,
   sources: {
@@ -50,7 +47,6 @@ const CARTO_STYLE = {
 };
 
 function scoreColor(score: number): string {
-  // Green-red HSL gradient. 0 → red (hue 0), 1 → green (hue 110).
   const hue = Math.round(score * 110);
   return `hsl(${hue}, 60%, 50%)`;
 }
@@ -84,7 +80,6 @@ export function NeighborhoodMap({ ranked }: Props) {
     };
   }, []);
 
-  // Build/update overlay layer when ranks change
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !ready) return;
@@ -92,87 +87,73 @@ export function NeighborhoodMap({ ranked }: Props) {
     const scoreById = new Map(ranked.map((r) => [r.neighborhood.id, r.score]));
     const neighborById = new Map(ranked.map((r) => [r.neighborhood.id, r.neighborhood]));
 
-    // Build per-feature properties for paint expressions
     const enriched = {
       type: 'FeatureCollection' as const,
-      features: features.map((f) => {
-        const id = f.properties.id;
-        const isCovered = id !== '_bg_';
-        const score = scoreById.get(id);
-        const name = neighborById.get(id)?.name ?? f.properties.name ?? '';
-        return {
-          ...f,
-          properties: {
-            id,
-            isCovered,
-            covered: isCovered && score !== undefined,
-            score: score ?? -1,
-            color: score !== undefined ? scoreColor(score) : '#e8e4d9',
-            name,
-            slug: neighborById.get(id)?.slug ?? '',
-            scoreLabel: score !== undefined ? `${Math.round(score * 100)}%` : '',
-          },
-        };
-      }),
+      features: features
+        .map((f) => {
+          const id = f.properties.id;
+          const score = scoreById.get(id);
+          const n = neighborById.get(id);
+          if (!n || score === undefined) return null;
+          return {
+            ...f,
+            properties: {
+              id,
+              score,
+              color: scoreColor(score),
+              name: n.name,
+              slug: n.slug,
+              scoreLabel: `${Math.round(score * 100)}%`,
+            },
+          };
+        })
+        .filter((x): x is NonNullable<typeof x> => x !== null),
     };
 
     const sourceId = 'sh-neighborhoods';
     const fillLayerId = 'sh-fill';
     const lineLayerId = 'sh-line';
     const labelLayerId = 'sh-label';
+    const labelSourceId = 'sh-labels';
 
     if (map.getLayer(labelLayerId)) map.removeLayer(labelLayerId);
     if (map.getLayer(lineLayerId)) map.removeLayer(lineLayerId);
     if (map.getLayer(fillLayerId)) map.removeLayer(fillLayerId);
     if (map.getSource(sourceId)) map.removeSource(sourceId);
+    if (map.getSource(labelSourceId)) map.removeSource(labelSourceId);
 
     map.addSource(sourceId, {
       type: 'geojson',
       data: enriched as GeoJSON.FeatureCollection,
     });
 
-    // Fill: covered = score color at higher opacity, uncovered = grey
     map.addLayer({
       id: fillLayerId,
       type: 'fill',
       source: sourceId,
       paint: {
         'fill-color': ['get', 'color'],
-        'fill-opacity': [
-          'case',
-          ['boolean', ['get', 'covered'], false], 0.62,
-          0.18,
-        ],
+        'fill-opacity': 0.65,
       },
     });
 
-    // Outline: stronger for covered
     map.addLayer({
       id: lineLayerId,
       type: 'line',
       source: sourceId,
       paint: {
-        'line-color': [
-          'case',
-          ['boolean', ['get', 'covered'], false], '#ffffff',
-          '#a8a298',
-        ],
-        'line-width': [
-          'case',
-          ['boolean', ['get', 'covered'], false], 1.4,
-          0.5,
-        ],
+        'line-color': '#ffffff',
+        'line-width': 1.4,
       },
     });
 
-    // Top-5 labels
+    // Top-5 labels at centroid
     const top5Ids = new Set(ranked.slice(0, 5).map((r) => r.neighborhood.id));
     const labelData = {
       type: 'FeatureCollection' as const,
       features: enriched.features
         .filter((f) => top5Ids.has(f.properties.id))
         .map((f) => {
-          // Use turf-style centroid: average all coords
           let sumX = 0, sumY = 0, n = 0;
           const rings: number[][][] =
             f.geometry.type === 'Polygon'
@@ -183,23 +164,14 @@ export function NeighborhoodMap({ ranked }: Props) {
               sumX += lng; sumY += lat; n += 1;
             }
           }
-          const cx = n ? sumX / n : 0;
-          const cy = n ? sumY / n : 0;
           return {
             type: 'Feature' as const,
-            geometry: { type: 'Point' as const, coordinates: [cx, cy] },
+            geometry: { type: 'Point' as const, coordinates: [sumX/n, sumY/n] },
             properties: f.properties,
           };
         }),
     };
-
-    const labelSourceId = 'sh-labels';
-    if (map.getSource(labelSourceId)) {
-      (map.getSource(labelSourceId) as maplibregl.GeoJSONSource).setData(labelData);
-    } else {
-      map.addSource(labelSourceId, { type: 'geojson', data: labelData });
-    }
-    if (map.getLayer(labelLayerId)) map.removeLayer(labelLayerId);
+    map.addSource(labelSourceId, { type: 'geojson', data: labelData });
     map.addLayer({
       id: labelLayerId,
       type: 'symbol',
@@ -222,37 +194,30 @@ export function NeighborhoodMap({ ranked }: Props) {
       },
     });
 
-    // Hover popup
     const popup = new Popup({ closeButton: false, closeOnClick: false, offset: 6 });
-    map.on('mousemove', fillLayerId, (e) => {
+    const onMove = (e: maplibregl.MapLayerMouseEvent) => {
       if (!e.features?.length) return;
-      const f = e.features[0];
-      const props = f.properties as { covered: boolean; name: string; scoreLabel: string };
-      if (!props.covered) {
-        popup.remove();
-        return;
-      }
+      const props = e.features[0].properties as { name: string; scoreLabel: string };
       map.getCanvas().style.cursor = 'pointer';
       popup
         .setLngLat(e.lngLat)
         .setHTML(`<div style="font-family:var(--font-inter);font-size:12px"><b>${props.name}</b> · ${props.scoreLabel} match</div>`)
         .addTo(map);
-    });
-    map.on('mouseleave', fillLayerId, () => {
+    };
+    const onLeave = () => {
       map.getCanvas().style.cursor = '';
       popup.remove();
-    });
-
-    map.on('click', fillLayerId, (e) => {
+    };
+    const onClick = (e: maplibregl.MapLayerMouseEvent) => {
       if (!e.features?.length) return;
-      const props = e.features[0].properties as { covered: boolean; slug: string };
-      if (props.covered && props.slug) {
-        router.push(`/n/${props.slug}`);
-      }
-    });
+      const props = e.features[0].properties as { slug: string };
+      if (props.slug) router.push(`/n/${props.slug}`);
+    };
+    map.on('mousemove', fillLayerId, onMove);
+    map.on('mouseleave', fillLayerId, onLeave);
+    map.on('click', fillLayerId, onClick);
   }, [ready, ranked, router]);
 
-  // Count NJ neighborhoods (now visible on map)
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 border-t border-[var(--color-line)]">
       <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
@@ -262,9 +227,8 @@ export function NeighborhoodMap({ ranked }: Props) {
         Your matches, mapped
       </h2>
       <p className="mt-4 text-sm text-[var(--color-muted)] max-w-xl leading-relaxed">
-        Real NYC and immediate-NJ geography from OpenStreetMap (via CARTO Positron).
-        Colored polygons are neighborhoods we cover, shaded by your match score. Hover
-        any neighborhood for the score; click to read its full profile.
+        Real geography from OpenStreetMap. The 30 neighborhoods we cover are colored
+        by your match score. Hover for the score; click to read the full profile.
       </p>
 
       <div
@@ -287,13 +251,7 @@ export function NeighborhoodMap({ ranked }: Props) {
           <span>weak → strong match</span>
         </div>
         <span aria-hidden>·</span>
-        <span className="flex items-center gap-2">
-          <span
-            className="inline-block w-3 h-3 rounded-sm"
-            style={{ background: '#e8e4d9', border: '1px solid #d4cfc0' }}
-          />
-          <span>NYC neighborhood we don&rsquo;t cover yet</span>
-        </span>
+        <span>top 5 are labeled</span>
       </div>
     </section>
   );
