@@ -544,6 +544,114 @@ export const neighborhoods: readonly Neighborhood[] = [
     anchors: { transit: ['NJ Transit bus (Broad Ave)', 'GW Bridge bus'], parks: ['Palisades Interstate Park nearby', 'Garibaldi Park'], groceries: ['H Mart', 'Hannah\'s', 'Han Yang'] },
     heroImage: '/images/neighborhoods/palisades-park.svg',
   },
+  // -------- MANHATTAN (round 2 additions) --------
+  {
+    id: 'lower-east-side', slug: 'lower-east-side', name: 'Lower East Side', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.4, 'prestige-orientation': 0.1,
+      'space-sensitivity': -0.3, 'family-trajectory': -0.2, 'cultural-ecosystem': 0.6,
+      'environmental-openness': 0.0, 'creative-energy': 0.7, 'friction-sensitivity': -0.3,
+      'safety-need': 0.55, 'school-quality': 0.5,
+    },
+    culturalTags: ['jewish', 'east-asian'],
+    housingTypes: ['co-op', 'rental', 'condo'],
+    basePassages: {
+      whyItFits: 'NYC\'s most layered neighborhood, with Jewish, Chinese, Puerto Rican, and Bangladeshi histories overlapping in the same blocks. Tenement walk-ups, gallery basements, music venues that have been there for decades. Loud, dense, and unapologetically itself.',
+      whoThrivesHere: 'Creative-class people who want texture, history, and proximity to scene.',
+      tradeoffs: ['Loud and crowded on weekend nights', 'Apartment stock is mostly old walk-ups', 'F is the main subway access; reaching the West Side takes effort'],
+    },
+    anchors: { transit: ['F (Delancey)', 'J/M/Z (Essex)', 'B/D (Grand)'], parks: ['Sara D. Roosevelt', 'East River Park'], groceries: ['Essex Market', 'Trader Joe\'s (nearby)', 'Whole Foods (Bowery)'] },
+    heroImage: '/images/neighborhoods/lower-east-side.svg',
+  },
+  {
+    id: 'east-harlem', slug: 'east-harlem', name: 'East Harlem', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.4, 'transit-psychology': 0.4, 'prestige-orientation': -0.4,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.85,
+      'environmental-openness': 0.5, 'creative-energy': 0.3, 'friction-sensitivity': 0.0,
+      'safety-need': 0.55, 'school-quality': 0.45,
+    },
+    culturalTags: ['latin-american', 'african-american'],
+    housingTypes: ['rental', 'co-op', 'condo'],
+    basePassages: {
+      whyItFits: 'El Barrio. The deepest Puerto Rican community in NYC, with a Mexican and African-American cultural layer on top. Murals, mom-and-pop restaurants, real apartment values that beat the rest of Manhattan, and Central Park as your eastern edge.',
+      whoThrivesHere: 'Cultural-anchor seekers and value-conscious people who want Manhattan space.',
+      tradeoffs: ['Public transit is mostly the 4/5/6 (Lex)', 'Block-by-block character variance', 'Schools are improving but uneven'],
+    },
+    anchors: { transit: ['4/5/6 (Lex)', '2/3 (nearby)', 'M15 SBS bus'], parks: ['Central Park (north)', 'Thomas Jefferson Park'], groceries: ['Costco (nearby)', 'Fine Fare', 'La Marqueta'] },
+    heroImage: '/images/neighborhoods/east-harlem.svg',
+  },
+  {
+    id: 'hamilton-heights', slug: 'hamilton-heights', name: 'Hamilton Heights', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.4, 'prestige-orientation': -0.1,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.75,
+      'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.5,
+      'safety-need': 0.65, 'school-quality': 0.55,
+    },
+    culturalTags: ['african-american', 'latin-american'],
+    housingTypes: ['co-op', 'townhouse', 'rental'],
+    basePassages: {
+      whyItFits: 'Sugar Hill\'s historic-Black-NYC heart, hilltop views over the Hudson, and pre-war apartments with real bedrooms at notably lower per-square-foot prices than midtown. The 1 train and A express both serve it. City College is the institutional anchor.',
+      whoThrivesHere: 'Value-and-space seekers who want history and a real neighborhood.',
+      tradeoffs: ['Long perceived distance from downtown — though the A is fast', 'Restaurant scene is improving but uneven', 'Hilly enough that the walk home matters'],
+    },
+    anchors: { transit: ['1 (137th–145th)', 'A express (145th)', 'B/C (135th–145th)'], parks: ['Riverside Park', 'St. Nicholas Park'], groceries: ['Trader Joe\'s (nearby)', 'Fine Fare', 'Garden of Eden'] },
+    heroImage: '/images/neighborhoods/hamilton-heights.svg',
+  },
+  {
+    id: 'washington-heights', slug: 'washington-heights', name: 'Washington Heights', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.3, 'prestige-orientation': -0.4,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.85,
+      'environmental-openness': 0.7, 'creative-energy': 0.0, 'friction-sensitivity': 0.4,
+      'safety-need': 0.55, 'school-quality': 0.5,
+    },
+    culturalTags: ['latin-american'],
+    housingTypes: ['co-op', 'rental', 'condo'],
+    basePassages: {
+      whyItFits: 'The largest Dominican community in the United States, on a hilltop with the George Washington Bridge as your view. Real pre-war apartments with closets and original details at prices that beat anywhere comparable in the rest of Manhattan. The A express runs from 168th to midtown faster than people expect.',
+      whoThrivesHere: 'Value-and-space seekers, families, and culturally-anchored Latin households.',
+      tradeoffs: ['Long perceived distance from midtown — actual time is moderate', 'A express is your express; locals are slow', 'Block-by-block variance is real'],
+    },
+    anchors: { transit: ['A express (175th, 181st)', '1 (157th–191st)', 'GWB bus terminal'], parks: ['Fort Tryon Park', 'Highbridge Park', 'Hudson waterfront'], groceries: ['Trader Joe\'s (nearby Inwood)', 'Fine Fare', 'Frank\'s Market'] },
+    heroImage: '/images/neighborhoods/washington-heights.svg',
+  },
+  {
+    id: 'inwood', slug: 'inwood', name: 'Inwood', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.0, 'prestige-orientation': -0.5,
+      'space-sensitivity': 0.8, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.6,
+      'environmental-openness': 0.95, 'creative-energy': 0.0, 'friction-sensitivity': 0.6,
+      'safety-need': 0.6, 'school-quality': 0.55,
+    },
+    culturalTags: ['latin-american'],
+    housingTypes: ['co-op', 'rental'],
+    basePassages: {
+      whyItFits: 'Manhattan\'s northern tip, with Inwood Hill Park\'s actual old-growth forest two blocks from your door. Pre-war apartments are huge and affordable; the 1 and A both end here. Dominican community is strong; the cultural texture is layered.',
+      whoThrivesHere: 'Nature-hungry urbanists and value-seekers willing to trade commute time for park-side life.',
+      tradeoffs: ['1 and A only — and you\'re at the end of the lines', '40+ minutes to midtown', 'Limited dining and nightlife'],
+    },
+    anchors: { transit: ['A (terminus, 207th)', '1 (215th, Dyckman)', 'M100/M101 buses'], parks: ['Inwood Hill Park', 'Fort Tryon Park (south edge)'], groceries: ['Frank\'s Market', 'Fine Fare', 'Inwood Farmers Market'] },
+    heroImage: '/images/neighborhoods/inwood.svg',
+  },
+  {
+    id: 'morningside-heights', slug: 'morningside-heights', name: 'Morningside Heights', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.4,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.3,
+      'environmental-openness': 0.6, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
+      'safety-need': 0.6, 'school-quality': 0.65,
+    },
+    housingTypes: ['co-op', 'rental'],
+    basePassages: {
+      whyItFits: 'Columbia\'s home neighborhood, with the Cathedral of St. John the Divine, Riverside Park to the west, and Morningside Park to the east. Pre-war apartments with academic-grade pricing. Quieter and more cerebral than the rest of the Upper West.',
+      whoThrivesHere: 'Academic-leaning households and people who want institutional anchor with park access.',
+      tradeoffs: ['Quiet to the point of subdued in summer when students are gone', 'Restaurant scene is improving but uneven', '1 train is the main subway'],
+    },
+    anchors: { transit: ['1 (110th–125th)', 'B/C (110th–116th)'], parks: ['Riverside Park', 'Morningside Park'], groceries: ['Whole Foods (Columbus)', 'Westside Market', 'Trader Joe\'s (nearby)'] },
+    heroImage: '/images/neighborhoods/morningside-heights.svg',
+  },
 ] as const;
 
 export function neighborhoodById(id: string): Neighborhood | undefined {
