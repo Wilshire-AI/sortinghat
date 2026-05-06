@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import type { Question } from '@content/types';
 import type { Answer } from './useQuizState';
 
@@ -8,24 +8,58 @@ type Props = {
   question: Question;
   questionNumber: number;
   totalQuestions: number;
+  currentAnswer?: Answer;
   onAnswer: (answer: Answer) => void;
+  onBack?: () => void;
 };
 
-export function QuestionCard({ question, questionNumber, totalQuestions, onAnswer }: Props) {
+export function QuestionCard({
+  question,
+  questionNumber,
+  totalQuestions,
+  currentAnswer,
+  onAnswer,
+  onBack,
+}: Props) {
   return (
     <div className="mx-auto max-w-2xl px-6 py-12">
-      <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
-        Question {questionNumber} of {totalQuestions}
-      </p>
+      <div className="flex items-center justify-between">
+        <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+          Question {questionNumber} of {totalQuestions}
+        </p>
+        {onBack && (
+          <button
+            type="button"
+            onClick={onBack}
+            className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+          >
+            ← Back
+          </button>
+        )}
+      </div>
       <h2 className="mt-4 font-serif text-3xl sm:text-[2.5rem] leading-[1.15] tracking-[-0.01em] font-medium">
         {question.prompt}
       </h2>
       {question.kind === 'forced_choice' ? (
-        <ForcedChoice question={question} onAnswer={onAnswer} />
+        <ForcedChoice
+          question={question}
+          currentAnswer={currentAnswer?.kind === 'forced_choice' ? currentAnswer : undefined}
+          onAnswer={onAnswer}
+        />
       ) : question.kind === 'slider' ? (
-        <Slider key={question.id} question={question} onAnswer={onAnswer} />
+        <Slider
+          key={question.id}
+          question={question}
+          currentAnswer={currentAnswer?.kind === 'slider' ? currentAnswer : undefined}
+          onAnswer={onAnswer}
+        />
       ) : (
-        <MultiSelect key={question.id} question={question} onAnswer={onAnswer} />
+        <MultiSelect
+          key={question.id}
+          question={question}
+          currentAnswer={currentAnswer?.kind === 'multi_select' ? currentAnswer : undefined}
+          onAnswer={onAnswer}
+        />
       )}
     </div>
   );
@@ -33,35 +67,40 @@ export function QuestionCard({ question, questionNumber, totalQuestions, onAnswe
 
 function ForcedChoice({
   question,
+  currentAnswer,
   onAnswer,
 }: {
   question: Extract<Question, { kind: 'forced_choice' }>;
+  currentAnswer?: Extract<Answer, { kind: 'forced_choice' }>;
   onAnswer: (a: Answer) => void;
 }) {
+  const selectedIdx = currentAnswer?.choiceIndex;
   return (
     <div className="mt-10 space-y-4" role="radiogroup" aria-label={question.prompt}>
-      {question.choices.map((choice, i) => (
-        <button
-          key={i}
-          type="button"
-          role="radio"
-          aria-checked={false}
-          onClick={() => onAnswer({ kind: 'forced_choice', choiceIndex: i })}
-          className="w-full text-left rounded-2xl border border-[var(--color-line)] px-6 py-5 hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)]/[0.04] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent)] transition"
-        >
-          <span className="font-serif text-lg sm:text-xl leading-snug">{choice.label}</span>
-        </button>
-      ))}
+      {question.choices.map((choice, i) => {
+        const isSelected = selectedIdx === i;
+        return (
+          <button
+            key={i}
+            type="button"
+            role="radio"
+            aria-checked={isSelected}
+            onClick={() => onAnswer({ kind: 'forced_choice', choiceIndex: i })}
+            className={
+              'w-full text-left rounded-2xl border px-6 py-5 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent)] ' +
+              (isSelected
+                ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/[0.08]'
+                : 'border-[var(--color-line)] hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)]/[0.04]')
+            }
+          >
+            <span className="font-serif text-lg sm:text-xl leading-snug">{choice.label}</span>
+          </button>
+        );
+      })}
     </div>
   );
 }
 
-// 5-point Likert rendered as a slider with a real handle that snaps to
-// 5 positions. Visual continuity with a continuous slider (solid track,
-// filled portion, prominent handle) but the data is properly discrete.
-// Canonical Likert agreement labels — questions are framed as declarative
-// statements (e.g., "I need to feel safe walking home alone late at night")
-// so 'Strongly disagree' through 'Strongly agree' fit the answer space.
 const LIKERT_POSITIONS = [-1, -0.5, 0, 0.5, 1] as const;
 const LIKERT_LABELS = [
   'Strongly disagree',
@@ -73,14 +112,27 @@ const LIKERT_LABELS = [
 
 function Slider({
   question,
+  currentAnswer,
   onAnswer,
 }: {
   question: Extract<Question, { kind: 'slider' }>;
+  currentAnswer?: Extract<Answer, { kind: 'slider' }>;
   onAnswer: (a: Answer) => void;
 }) {
-  const [pos, setPos] = useState<number | null>(null);
+  // If revisiting, restore the previously-selected position
+  const initialPos: number | null = (() => {
+    if (!currentAnswer) return null;
+    let bestI = 0;
+    let bestDist = Infinity;
+    for (let i = 0; i < LIKERT_POSITIONS.length; i++) {
+      const d = Math.abs(LIKERT_POSITIONS[i] - currentAnswer.value);
+      if (d < bestDist) { bestDist = d; bestI = i; }
+    }
+    return bestI;
+  })();
+  const [pos, setPos] = useState<number | null>(initialPos);
   const [isDragging, setIsDragging] = useState(false);
-  const trackRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement | null>(null);
   const lastPct = pos !== null ? (pos / (LIKERT_POSITIONS.length - 1)) * 100 : 0;
 
   const computeSnapped = (clientX: number): number | null => {
@@ -99,13 +151,11 @@ function Slider({
     setIsDragging(true);
     (e.currentTarget as Element).setPointerCapture(e.pointerId);
   };
-
   const handlePointerMove = (e: React.PointerEvent) => {
     if (!isDragging) return;
     const snapped = computeSnapped(e.clientX);
     if (snapped !== null) setPos(snapped);
   };
-
   const handlePointerUp = (e: React.PointerEvent) => {
     if (!isDragging) return;
     setIsDragging(false);
@@ -147,12 +197,7 @@ function Slider({
         onPointerCancel={handlePointerUp}
       >
         <div ref={trackRef} className="relative h-2">
-          {/* Track (unfilled) */}
-          <div
-            aria-hidden
-            className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 rounded-full bg-[var(--color-ink)]/15"
-          />
-          {/* Filled portion */}
+          <div aria-hidden className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 rounded-full bg-[var(--color-ink)]/15" />
           <div
             aria-hidden
             className={
@@ -161,21 +206,17 @@ function Slider({
             }
             style={{ width: pos !== null ? `${lastPct}%` : '0%' }}
           />
-          {/* Tick marks */}
           <div aria-hidden className="absolute inset-0 flex justify-between items-center pointer-events-none">
             {LIKERT_POSITIONS.map((_, i) => (
               <span
                 key={i}
                 className={
                   'block h-2 w-px ' +
-                  (pos !== null && i <= pos
-                    ? 'bg-[var(--color-accent)]'
-                    : 'bg-[var(--color-ink)]/25')
+                  (pos !== null && i <= pos ? 'bg-[var(--color-accent)]' : 'bg-[var(--color-ink)]/25')
                 }
               />
             ))}
           </div>
-          {/* Handle (visible thumb) */}
           <div
             aria-hidden
             className={
@@ -214,12 +255,24 @@ function Slider({
 
 function MultiSelect({
   question,
+  currentAnswer,
   onAnswer,
 }: {
   question: Extract<Question, { kind: 'multi_select' }>;
+  currentAnswer?: Extract<Answer, { kind: 'multi_select' }>;
   onAnswer: (a: Answer) => void;
 }) {
-  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [selected, setSelected] = useState<Set<string>>(
+    () => new Set(currentAnswer?.selectedValues ?? []),
+  );
+  // If currentAnswer prop changes (back-nav into a different question instance)
+  // sync local state to it on mount via useEffect
+  useEffect(() => {
+    setSelected(new Set(currentAnswer?.selectedValues ?? []));
+    // We only sync on mount per question (key-based remount handles cross-question);
+    // currentAnswer reference identity changes within a question would also re-sync,
+    // which is the desired behavior.
+  }, [currentAnswer]);
 
   const toggle = (val: string) => {
     setSelected((prev) => {

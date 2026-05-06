@@ -73,8 +73,8 @@ export function NeighborhoodMap({ ranked }: Props) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: CARTO_STYLE as maplibregl.StyleSpecification,
-      center: [-73.85, 40.85],
-      zoom: 9.0,
+      center: [-73.96, 40.74],
+      zoom: 10.6,
       interactive: true,
       attributionControl: { compact: true },
       maxBounds: [
@@ -244,10 +244,11 @@ export function NeighborhoodMap({ ranked }: Props) {
         Your matches, mapped
       </h2>
       <p className="mt-4 text-sm text-[var(--color-muted)] max-w-xl leading-relaxed">
-        Real geography from OpenStreetMap. Every neighborhood we cover is colored by
-        your match score, stretched to your range (your best match is the most green;
-        your worst is the most red). Pan/zoom to see Westchester, Long Island, CT,
-        and inland NJ. Hover for the score; click to read the full profile.
+        Real geography from OpenStreetMap. The default view focuses on Manhattan,
+        Brooklyn, Queens, and immediate NJ — the core of our coverage. Pan/zoom out
+        to see Westchester, Long Island, CT, and inland-NJ commuter towns. Each
+        polygon is colored by your match score, stretched to your range (best is
+        green, worst is red). Hover for the score; click for the full profile.
       </p>
 
       <div

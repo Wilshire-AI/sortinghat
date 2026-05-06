@@ -1,6 +1,6 @@
 'use client';
 
-import { useReducer } from 'react';
+import { useMemo, useState } from 'react';
 import type { Dimension, Question, UserVector } from '@content/types';
 import { clampVector, zeroVector } from '@/lib/engine/vector';
 
@@ -9,75 +9,73 @@ export type Answer =
   | { kind: 'slider'; value: number }
   | { kind: 'multi_select'; selectedValues: string[] };
 
-export type QuizState = {
+export type Answers = Record<string, Answer>;
+
+export type DerivedState = {
   vector: UserVector;
   selectedTags: string[];
   mustHaves: string[];
-  answers: Record<string, Answer>;
 };
 
-export function initialState(dimensions: readonly Dimension[]): QuizState {
-  return { vector: zeroVector(dimensions), selectedTags: [], mustHaves: [], answers: {} };
-}
+// Pure function: derive full quiz state from a set of answers. Used by
+// useQuizState (live) and by quiz/page (computing final state on submit).
+// Recomputing from scratch each time means back-navigation + answer
+// revision works correctly: there's no accumulator to roll back.
+export function deriveState(
+  dimensions: readonly Dimension[],
+  questions: readonly Question[],
+  answers: Answers,
+): DerivedState {
+  const vector = zeroVector(dimensions);
+  const selectedTags = new Set<string>();
+  const mustHaves = new Set<string>();
 
-export function applyAnswer(state: QuizState, question: Question, answer: Answer): QuizState {
-  const newVector = { ...state.vector };
-  let newTags = state.selectedTags;
-  let newMustHaves = state.mustHaves;
+  for (const q of questions) {
+    const a = answers[q.id];
+    if (!a) continue;
 
-  if (question.kind === 'forced_choice' && answer.kind === 'forced_choice') {
-    const choice = question.choices[answer.choiceIndex];
-    for (const [dim, impact] of Object.entries(choice.impacts)) {
-      newVector[dim] = (newVector[dim] ?? 0) + (impact as number);
-    }
-  } else if (question.kind === 'slider' && answer.kind === 'slider') {
-    newVector[question.dimensionId] = answer.value;
-  } else if (question.kind === 'multi_select' && answer.kind === 'multi_select') {
-    if (question.purpose === 'must_haves') {
-      const merged = new Set([...state.mustHaves, ...answer.selectedValues]);
-      newMustHaves = Array.from(merged);
-    } else {
-      const merged = new Set([...state.selectedTags, ...answer.selectedValues]);
-      newTags = Array.from(merged);
-    }
-    if (question.dimensionImpactPerSelection) {
-      for (const [dim, impact] of Object.entries(question.dimensionImpactPerSelection)) {
-        newVector[dim] = (newVector[dim] ?? 0) + (impact as number) * answer.selectedValues.length;
+    if (q.kind === 'forced_choice' && a.kind === 'forced_choice') {
+      const choice = q.choices[a.choiceIndex];
+      if (choice) {
+        for (const [dim, impact] of Object.entries(choice.impacts)) {
+          vector[dim] = (vector[dim] ?? 0) + (impact as number);
+        }
+      }
+    } else if (q.kind === 'slider' && a.kind === 'slider') {
+      vector[q.dimensionId] = a.value;
+    } else if (q.kind === 'multi_select' && a.kind === 'multi_select') {
+      const target = q.purpose === 'must_haves' ? mustHaves : selectedTags;
+      for (const v of a.selectedValues) target.add(v);
+      if (q.dimensionImpactPerSelection) {
+        for (const [dim, impact] of Object.entries(q.dimensionImpactPerSelection)) {
+          vector[dim] = (vector[dim] ?? 0) + (impact as number) * a.selectedValues.length;
+        }
       }
     }
   }
 
   return {
-    vector: newVector,
-    selectedTags: newTags,
-    mustHaves: newMustHaves,
-    answers: { ...state.answers, [question.id]: answer },
+    vector,
+    selectedTags: Array.from(selectedTags),
+    mustHaves: Array.from(mustHaves),
   };
 }
 
-export function finalizeVector(state: QuizState): UserVector {
+export function finalizeVector(state: { vector: UserVector }): UserVector {
   return clampVector(state.vector);
 }
 
-type Action =
-  | { type: 'answer'; question: Question; answer: Answer }
-  | { type: 'reset'; dimensions: readonly Dimension[] };
-
-function reducer(state: QuizState, action: Action): QuizState {
-  switch (action.type) {
-    case 'answer':
-      return applyAnswer(state, action.question, action.answer);
-    case 'reset':
-      return initialState(action.dimensions);
-  }
-}
-
-export function useQuizState(dimensions: readonly Dimension[]) {
-  const [state, dispatch] = useReducer(reducer, dimensions, initialState);
+export function useQuizState(dimensions: readonly Dimension[], questions: readonly Question[]) {
+  const [answers, setAnswers] = useState<Answers>({});
+  const derived = useMemo(
+    () => deriveState(dimensions, questions, answers),
+    [dimensions, questions, answers],
+  );
   return {
-    state,
-    answer: (question: Question, answer: Answer) =>
-      dispatch({ type: 'answer', question, answer }),
-    reset: () => dispatch({ type: 'reset', dimensions }),
+    answers,
+    state: { ...derived, answers },
+    setAnswer: (questionId: string, answer: Answer) =>
+      setAnswers((prev) => ({ ...prev, [questionId]: answer })),
+    reset: () => setAnswers({}),
   };
 }
