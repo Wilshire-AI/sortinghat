@@ -20,9 +20,9 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://sortinghat.wilshirea
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
-  title: "Sorting Hat. Find your NYC neighborhood.",
+  title: "Sorting Hat. The New York that fits you.",
   description:
-    "A quiz that matches you to NYC neighborhoods based on who you actually are, not what you can afford.",
+    "A short quiz that matches you to NYC neighborhoods based on who you are, not what you can afford.",
   openGraph: {
     title: "Sorting Hat",
     description: "Find the NYC neighborhood that fits who you are.",

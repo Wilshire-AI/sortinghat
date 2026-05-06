@@ -92,7 +92,7 @@ export function ResultsClient() {
         <a href="https://wilshireai.com" className="hover:text-[var(--color-accent)] transition">
           Wilshire AI
         </a>{' '}
-        product
+        project
       </footer>
     </main>
   );

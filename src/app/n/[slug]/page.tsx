@@ -60,7 +60,7 @@ export default async function NeighborhoodPage({
         <h2 className="font-serif text-2xl">The tradeoffs</h2>
         <ul className="mt-4 space-y-3">
           {n.basePassages.tradeoffs.map((t, i) => (
-            <li key={i} className="leading-relaxed text-[var(--color-ink)]/75">— {t}</li>
+            <li key={i} className="leading-relaxed text-[var(--color-ink)]/75">· {t}</li>
           ))}
         </ul>
       </section>

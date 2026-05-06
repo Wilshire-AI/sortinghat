@@ -10,12 +10,14 @@ export default function HomePage() {
       </header>
 
       <section className="mt-20 flex-1">
-        <h1 className="font-serif text-4xl sm:text-6xl leading-[1.05] tracking-tight">
-          Where in NYC will you actually thrive?
+        <h1 className="font-serif text-5xl sm:text-7xl leading-[0.98] tracking-tight">
+          The New York
+          <br />
+          that fits you.
         </h1>
-        <p className="mt-8 text-lg leading-relaxed max-w-xl text-[var(--color-ink)]/80">
-          A few questions about how you live, what drains you, and what you&rsquo;re building toward.
-          A real answer about which neighborhoods fit who you are.
+        <p className="mt-10 text-lg leading-relaxed max-w-xl text-[var(--color-ink)]/80">
+          A short quiz. Honest answers about the neighborhoods you&rsquo;d actually thrive in,
+          based on how you live and what you value.
         </p>
 
         <div className="mt-14">
@@ -39,7 +41,7 @@ export default function HomePage() {
         >
           Wilshire AI
         </a>{" "}
-        product · Manhattan, Brooklyn, Queens, Bronx, Staten Island & near-NJ
+        project · Manhattan, Brooklyn, Queens, Bronx, Staten Island & near-NJ
       </footer>
     </main>
   );
