@@ -186,7 +186,7 @@ export const questions: readonly Question[] = [
     prompt: 'Last one. Anything you truly will not compromise on?',
     helperText: 'Hard filters. Pick anything that\'s genuinely non-negotiable. Anything you don\'t pick is treated as a soft preference. (Skip if nothing applies.)',
     options: [
-      { value: 'subway-redundancy', label: 'Multiple subway/PATH lines (no single-line dependence)' },
+      { value: 'subway-redundancy', label: 'Multiple transit options (any mix of subway, PATH, ferry, rail, express bus)' },
       { value: 'walking-distance-park', label: 'Walking distance to a major park or waterfront' },
       { value: 'real-space', label: 'Apartment stock with real space (not just studios)' },
       { value: 'house-or-townhouse', label: 'Single-family homes or townhouses available' },
