@@ -350,7 +350,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
       'safety-need': 0.75, 'school-quality': 0.55,
     },
-    housingTypes: ['condo', 'rental'],
+    housingTypes: ['condo', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A new high-rise riverfront with one of NYC\'s best skyline views from your living room. Newer apartment stock means real space. Transit redundancy is genuinely strong (7, E, M, G, F, plus ferry). Waterfront parks anchor the daily walk.',
       whoThrivesHere: 'Value-aware urbanists who want space, transit, and views without leaving the inner city.',
@@ -871,7 +871,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.7, 'school-quality': 0.6,
     },
     culturalTags: ['eastern-european'],
-    housingTypes: ['condo', 'co-op', 'rental', 'townhouse'],
+    housingTypes: ['condo', 'co-op', 'rental', 'townhouse', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'Brooklyn\'s deepest Polish-American community on a peninsula at the borough\'s northern tip. Calmer than Williamsburg, with newer waterfront development, a real working bakery culture, and the G as your spine plus the ferry as your alternative. Manhattan reads as close enough.',
       whoThrivesHere: 'Cultural-anchor seekers and creative-class people who want Williamsburg energy at lower volume.',
