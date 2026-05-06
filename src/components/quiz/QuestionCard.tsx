@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import type { Question } from '@content/types';
 import type { Answer } from './useQuizState';
 
@@ -262,17 +262,12 @@ function MultiSelect({
   currentAnswer?: Extract<Answer, { kind: 'multi_select' }>;
   onAnswer: (a: Answer) => void;
 }) {
+  // The parent uses `key={question.id}` so this component remounts when the
+  // question changes (including via back-nav). useState's initializer reads
+  // currentAnswer fresh on each mount, so no effect is needed.
   const [selected, setSelected] = useState<Set<string>>(
     () => new Set(currentAnswer?.selectedValues ?? []),
   );
-  // If currentAnswer prop changes (back-nav into a different question instance)
-  // sync local state to it on mount via useEffect
-  useEffect(() => {
-    setSelected(new Set(currentAnswer?.selectedValues ?? []));
-    // We only sync on mount per question (key-based remount handles cross-question);
-    // currentAnswer reference identity changes within a question would also re-sync,
-    // which is the desired behavior.
-  }, [currentAnswer]);
 
   const toggle = (val: string) => {
     setSelected((prev) => {
