@@ -1185,6 +1185,163 @@ export const neighborhoods: readonly Neighborhood[] = [
     anchors: { transit: ['7 (Elmhurst Ave, 90th)', 'E/F/M/R (Roosevelt-Jackson Hts, Grand-Newtown)'], parks: ['Elmhurst Park', 'Newtown Playground'], groceries: ['New York Mart', 'Hong Kong Supermarket', 'H Mart (nearby)'] },
     heroImage: '/images/neighborhoods/elmhurst.svg',
   },
+  // -------- BUNDLED-NTA SPLITS (round 5) --------
+  // These sit inside larger NTAs and use approximate hand-drawn polygons.
+  {
+    id: 'battery-park-city', slug: 'battery-park-city', name: 'Battery Park City', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.6,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.85, 'cultural-ecosystem': -0.2,
+      'environmental-openness': 0.85, 'creative-energy': -0.3, 'friction-sensitivity': 0.85,
+      'safety-need': 0.85, 'school-quality': 0.85,
+    },
+    housingTypes: ['condo', 'rental', 'co-op'],
+    basePassages: {
+      whyItFits: 'Manhattan\'s most planned waterfront enclave, built on Hudson River landfill in the 80s. Newer high-rise apartment stock with real space, the Esplanade as your daily walk, and the WTC transit hub at your eastern edge. Quiet on weekends, almost suburban-feel inside the city.',
+      whoThrivesHere: 'Family-anchored households who want Manhattan transit access with park-side residential calm.',
+      tradeoffs: ['Calm to the point of quiet on weekends', 'Reads as bubble-like; limited street-level texture', 'Pricey for what it is'],
+    },
+    anchors: { transit: ['1 (Rector)', 'A/C/E (WTC)', 'PATH (WTC)', 'Ferry'], parks: ['BPC Esplanade', 'Rockefeller Park', 'Battery Park'], groceries: ['Whole Foods (Tribeca)', 'Brookfield Place', 'Eataly'] },
+    heroImage: '/images/neighborhoods/battery-park-city.svg',
+  },
+  {
+    id: 'hudson-yards', slug: 'hudson-yards', name: 'Hudson Yards', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.85,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.4, 'cultural-ecosystem': -0.2,
+      'environmental-openness': 0.5, 'creative-energy': 0.0, 'friction-sensitivity': 0.5,
+      'safety-need': 0.85, 'school-quality': 0.7,
+    },
+    housingTypes: ['condo', 'rental'],
+    basePassages: {
+      whyItFits: 'Manhattan\'s newest neighborhood, built on a platform over the Hudson rail yards. Glass-and-steel high-rises, the High Line as your eastern edge, the 7 train station you can walk to in the rain. Reads as a corporate skyline come-to-life, with Vessel and the Shed as the cultural anchors.',
+      whoThrivesHere: 'High-income professionals who want new construction and walking-distance midtown access.',
+      tradeoffs: ['Reads as commercial more than residential at street level', 'Tourist load from Vessel/the Shed', 'Premium pricing for new-build identity'],
+    },
+    anchors: { transit: ['7 (34th-Hudson Yards)', 'A/C/E (34th-Penn)'], parks: ['Hudson River Park', 'High Line', 'Hudson Yards Public Square'], groceries: ['Whole Foods (Penn)', 'Trader Joe\'s', 'Hudson Yards mall'] },
+    heroImage: '/images/neighborhoods/hudson-yards.svg',
+  },
+  {
+    id: 'roosevelt-island', slug: 'roosevelt-island', name: 'Roosevelt Island', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': -0.6, 'transit-psychology': 0.2, 'prestige-orientation': 0.0,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.85, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.95, 'creative-energy': -0.2, 'friction-sensitivity': 0.95,
+      'safety-need': 0.85, 'school-quality': 0.8,
+    },
+    housingTypes: ['rental', 'co-op', 'condo'],
+    basePassages: {
+      whyItFits: 'A literal island in the East River with views of both Manhattan and Queens. Apartments are large for the price, daily life is suburban-feel, and the F train + tram + ferry give you three ways onto the island. Cornell Tech anchors the south end.',
+      whoThrivesHere: 'Family-trajectory pragmatists who want maximum calm and Manhattan transit redundancy.',
+      tradeoffs: ['Truly an island — leaving requires F or tram or ferry', 'Limited dining and street life', 'Reads as bubble-like'],
+    },
+    anchors: { transit: ['F (Roosevelt Island)', 'Roosevelt Island Tram', 'Ferry'], parks: ['Four Freedoms Park', 'Lighthouse Park', 'Esplanade'], groceries: ['Gristedes', 'Foodtown'] },
+    heroImage: '/images/neighborhoods/roosevelt-island.svg',
+  },
+  {
+    id: 'nolita-little-italy', slug: 'nolita-little-italy', name: 'NoLita / Little Italy', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.6, 'prestige-orientation': 0.6,
+      'space-sensitivity': -0.4, 'family-trajectory': 0.0, 'cultural-ecosystem': 0.5,
+      'environmental-openness': 0.0, 'creative-energy': 0.6, 'friction-sensitivity': 0.0,
+      'safety-need': 0.75, 'school-quality': 0.7,
+    },
+    culturalTags: ['mediterranean'],
+    housingTypes: ['rental', 'co-op'],
+    basePassages: {
+      whyItFits: 'A small wedge between SoHo and the LES. NoLita is curated boutique Italy with espresso bars and design shops; Little Italy is the older Italian-American center, narrower and more touristed. Tenement walk-ups dominate; there\'s almost no new construction.',
+      whoThrivesHere: 'Cosmopolitans and design-anchored creatives who want compact downtown living at full intensity.',
+      tradeoffs: ['Apartment stock is mostly old walk-ups', 'Tourist load on Mulberry is heavy on weekends', 'Small footprint — limited grocery'],
+    },
+    anchors: { transit: ['6 (Spring)', 'B/D/F/M (Broadway-Lafayette)', 'J/Z (Bowery)'], parks: ['Petrosino Square', 'DeSalvio Playground'], groceries: ['Whole Foods (Bowery)', 'Trader Joe\'s (Bowery)', 'Little Italy alimentari'] },
+    heroImage: '/images/neighborhoods/nolita-little-italy.svg',
+  },
+  {
+    id: 'flatiron-nomad', slug: 'flatiron-nomad', name: 'Flatiron / NoMad', borough: 'manhattan',
+    scores: {
+      'urban-intensity-tolerance': 0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.7,
+      'space-sensitivity': 0.0, 'family-trajectory': 0.2, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.4, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
+      'safety-need': 0.8, 'school-quality': 0.7,
+    },
+    housingTypes: ['co-op', 'condo', 'rental'],
+    basePassages: {
+      whyItFits: 'The Flatiron Building anchor + the new luxury-hotel NoMad layer to its north. Office buildings by day, post-office residential by night, with Madison Square Park as the green core. Six subway lines through 23rd and 28th streets make this one of the most transit-redundant residential pockets in midtown.',
+      whoThrivesHere: 'Career-anchored professionals who want walking-distance access to all of midtown without committing to Murray Hill.',
+      tradeoffs: ['Daytime crowd density is intense', 'Limited grocery; daily life pulls you toward the Village', 'Premium pricing for a dual office-residential register'],
+    },
+    anchors: { transit: ['N/Q/R/W (23rd, 28th)', 'F/M (23rd)', '6 (23rd, 28th)'], parks: ['Madison Square Park', 'Union Square'], groceries: ['Whole Foods (Union Sq)', 'Trader Joe\'s', 'Eataly Flatiron'] },
+    heroImage: '/images/neighborhoods/flatiron-nomad.svg',
+  },
+  {
+    id: 'boerum-hill', slug: 'boerum-hill', name: 'Boerum Hill', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.7, 'prestige-orientation': 0.4,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.3,
+      'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.6,
+      'safety-need': 0.8, 'school-quality': 0.7,
+    },
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
+    basePassages: {
+      whyItFits: 'Brownstone Brooklyn\'s eastern wedge, between Cobble Hill and Park Slope. Smith Street\'s restaurant row, real townhouses, and Atlantic-Barclays\' transit redundancy at your northern edge. Calmer than Park Slope, smaller, with a long-running creative-class community.',
+      whoThrivesHere: 'Couples and early-family households who want brownstone calm with strong transit.',
+      tradeoffs: ['Smaller footprint than people expect', 'Pricey for what you get', 'Smith Street can be loud on weekend nights'],
+    },
+    anchors: { transit: ['F/G (Bergen)', 'Atlantic-Barclays (B/D/N/Q/R, 2/3/4/5)', 'A/C (Hoyt-Schermerhorn)'], parks: ['Cobble Hill Park (nearby)', 'Boerum Hill blocks'], groceries: ['Trader Joe\'s', 'Sahadi\'s', 'Court Street markets'] },
+    heroImage: '/images/neighborhoods/boerum-hill.svg',
+  },
+  {
+    id: 'carroll-gardens', slug: 'carroll-gardens', name: 'Carroll Gardens', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.4,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.85, 'cultural-ecosystem': 0.4,
+      'environmental-openness': 0.5, 'creative-energy': 0.0, 'friction-sensitivity': 0.8,
+      'safety-need': 0.85, 'school-quality': 0.8,
+    },
+    culturalTags: ['mediterranean'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental'],
+    basePassages: {
+      whyItFits: 'Brownstone Brooklyn\'s most family-trajectory pocket south of Cobble Hill. Tree-lined blocks with deep front gardens (the namesake), a long-running Italian-American community, the F/G as your spine, and Smith and Court streets as the daily commercial axes.',
+      whoThrivesHere: 'Future-family households who want brownstone living and a long-anchored neighborhood.',
+      tradeoffs: ['Pricey, comparable to Park Slope', 'F/G is the workhorse — limited redundancy', 'Restaurant scene clusters on Smith and Court'],
+    },
+    anchors: { transit: ['F/G (Carroll, Smith-9th)', 'F/G (Bergen nearby)'], parks: ['Carroll Park', 'Brooklyn Bridge Park (nearby)'], groceries: ['Union Market', 'D\'Amico Foods', 'Caputo\'s', 'Trader Joe\'s (nearby)'] },
+    heroImage: '/images/neighborhoods/carroll-gardens.svg',
+  },
+  {
+    id: 'gowanus', slug: 'gowanus', name: 'Gowanus', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.4, 'prestige-orientation': 0.0,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.0,
+      'environmental-openness': 0.2, 'creative-energy': 0.6, 'friction-sensitivity': 0.0,
+      'safety-need': 0.7, 'school-quality': 0.6,
+    },
+    housingTypes: ['condo', 'rental', 'townhouse'],
+    basePassages: {
+      whyItFits: 'A former industrial wedge along the Gowanus Canal that\'s rapidly converting to mixed-use residential. Newer condos, breweries, art galleries, and the F/G/R as your transit. Walking distance to Park Slope and Carroll Gardens. The canal cleanup is ongoing and reshapes the experience year by year.',
+      whoThrivesHere: 'Creative-class people who want value-for-space + brownstone-Brooklyn proximity.',
+      tradeoffs: ['Industrial-aesthetic blocks dominate, with construction ongoing', 'Canal pollution legacy', 'Less established than the surrounding brownstone neighborhoods'],
+    },
+    anchors: { transit: ['F/G (Smith-9th, 4th Ave)', 'R (Union St)'], parks: ['Gowanus Dredgers', 'Thomas Greene Park'], groceries: ['Whole Foods (3rd Ave)', 'Trader Joe\'s', 'Lowe\'s/Home Depot stretch'] },
+    heroImage: '/images/neighborhoods/gowanus.svg',
+  },
+  {
+    id: 'red-hook', slug: 'red-hook', name: 'Red Hook', borough: 'brooklyn',
+    scores: {
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': -0.4, 'prestige-orientation': 0.0,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.3,
+      'environmental-openness': 0.85, 'creative-energy': 0.6, 'friction-sensitivity': 0.5,
+      'safety-need': 0.7, 'school-quality': 0.55,
+    },
+    housingTypes: ['townhouse', 'rental', 'condo'],
+    basePassages: {
+      whyItFits: 'Brooklyn\'s most isolated waterfront peninsula. Cobblestone streets, warehouse-converted lofts, the IKEA ferry as one of your transit options, and the most spectacular Statue of Liberty views in NYC. Limited subway is the cost of the calm.',
+      whoThrivesHere: 'Creative-class people who genuinely want to be off the grid by NYC standards.',
+      tradeoffs: ['No subway. Buses (B61, B57) and ferries are the lifelines.', 'Storm vulnerability (Sandy did real damage)', 'Limited dining and grocery, though improving'],
+    },
+    anchors: { transit: ['B61 bus', 'NYC Ferry (Red Hook)', 'IKEA Ferry (free, weekends)'], parks: ['Valentino Pier', 'Red Hook Recreation Area', 'Louis Valentino Jr. Park'], groceries: ['Fairway (Red Hook)', 'Key Food'] },
+    heroImage: '/images/neighborhoods/red-hook.svg',
+  },
 ] as const;
 
 export function neighborhoodById(id: string): Neighborhood | undefined {
