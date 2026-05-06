@@ -8,7 +8,7 @@ type Props = {
 
 type GeoFeature = {
   type: 'Feature';
-  properties: { id: string };
+  properties: { id: string; name?: string; borough?: string };
   geometry:
     | { type: 'Polygon'; coordinates: number[][][] }
     | { type: 'MultiPolygon'; coordinates: number[][][][] };
@@ -16,21 +16,18 @@ type GeoFeature = {
 
 const features = (polygonData as { features: GeoFeature[] }).features;
 
-// Bounding box from the source data (computed at build time of the JSON).
-// Padding adds whitespace on all sides.
-const LNG_MIN = -74.105;
-const LNG_MAX = -73.79;
-const LAT_MIN = 40.57;
+// Bounding box from the source data, with breathing room
+const LNG_MIN = -74.265;
+const LNG_MAX = -73.700;
+const LAT_MIN = 40.495;
 const LAT_MAX = 40.92;
 const VIEW_W = 1000;
-const VIEW_H = 1000;
-const PAD = 30;
+const VIEW_H = 800;
+const PAD = 18;
 
 const scaleX = (VIEW_W - 2 * PAD) / (LNG_MAX - LNG_MIN);
 const scaleY = (VIEW_H - 2 * PAD) / (LAT_MAX - LAT_MIN);
-// Use the smaller scale to preserve aspect ratio
 const SCALE = Math.min(scaleX, scaleY);
-// Center horizontally + vertically within the viewBox
 const W_OFFSET = (VIEW_W - SCALE * (LNG_MAX - LNG_MIN)) / 2;
 const H_OFFSET = (VIEW_H - SCALE * (LAT_MAX - LAT_MIN)) / 2;
 
@@ -46,9 +43,9 @@ function ringToPath(ring: number[][]): string {
   let path = `M${x0.toFixed(1)} ${y0.toFixed(1)}`;
   for (let i = 1; i < ring.length; i++) {
     const [x, y] = project(ring[i][0], ring[i][1]);
-    path += ` L${x.toFixed(1)} ${y.toFixed(1)}`;
+    path += `L${x.toFixed(1)} ${y.toFixed(1)}`;
   }
-  return path + ' Z';
+  return path + 'Z';
 }
 
 function featureToPath(feat: GeoFeature): string {
@@ -60,21 +57,14 @@ function featureToPath(feat: GeoFeature): string {
     .join(' ');
 }
 
-// Score → fill color. Green-red gradient using HSL, lightly muted.
-function scoreColor(score: number, hasScore: boolean): string {
-  if (!hasScore) return 'hsl(35, 12%, 78%)'; // no data → neutral cream
-  // hue 0 (red) at 0 → 110 (green) at 1
-  const hue = Math.round(score * 110);
-  const sat = 45;
-  const lit = 52;
-  return `hsl(${hue}, ${sat}%, ${lit}%)`;
+function scoreColor(score: number): string {
+  // Green-red gradient via HSL hue interpolation. Muted to fit the editorial palette.
+  const hue = Math.round(score * 110); // 0=red, 110=green
+  return `hsl(${hue}, 50%, 50%)`;
 }
 
-// Centroid of a set of rings — used to position the label.
 function centroid(feat: GeoFeature): [number, number] {
-  let sumX = 0;
-  let sumY = 0;
-  let n = 0;
+  let sumX = 0, sumY = 0, n = 0;
   const rings: number[][][] =
     feat.geometry.type === 'Polygon'
       ? feat.geometry.coordinates
@@ -90,21 +80,16 @@ function centroid(feat: GeoFeature): [number, number] {
   return n === 0 ? [VIEW_W / 2, VIEW_H / 2] : [sumX / n, sumY / n];
 }
 
-const boroughLabel: Record<string, string> = {
-  manhattan: 'Manhattan',
-  brooklyn: 'Brooklyn',
-  queens: 'Queens',
-  bronx: 'The Bronx',
-  'staten-island': 'Staten Island',
-  nj: 'New Jersey',
-};
-
 export function NeighborhoodMap({ ranked }: Props) {
-  // Map neighborhood id → score
   const scoreById = new Map(ranked.map((r) => [r.neighborhood.id, r.score]));
   const neighborById = new Map(ranked.map((r) => [r.neighborhood.id, r.neighborhood]));
-  // Top 5 ids for emphasis
   const top5 = new Set(ranked.slice(0, 5).map((r) => r.neighborhood.id));
+
+  const bgFeatures = features.filter((f) => f.properties.id === '_bg_');
+  const coveredFeatures = features.filter((f) => f.properties.id !== '_bg_');
+
+  // Count NJ neighborhoods not on map
+  const njCount = ranked.filter((r) => r.neighborhood.borough === 'nj').length;
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 border-t border-[var(--color-line)]">
@@ -115,74 +100,103 @@ export function NeighborhoodMap({ ranked }: Props) {
         Your matches, mapped
       </h2>
       <p className="mt-4 text-sm text-[var(--color-muted)] max-w-xl leading-relaxed">
-        Real neighborhood boundaries (NYC NTAs, simplified) colored by your match score.
-        Green = strong fit, red = weak fit. Click any neighborhood to read its full profile.
+        Real NYC neighborhood boundaries (NTAs from NYC Open Data, simplified). Colored
+        ones are in our coverage and shaded by your match score. Grey ones are NYC
+        neighborhoods we don&rsquo;t cover yet. Click any colored neighborhood to read its full
+        profile.
       </p>
 
-      <div className="mt-10 rounded-sm border border-[var(--color-line)] bg-[var(--color-ink)]/[0.02] overflow-hidden">
+      <div className="mt-10 rounded-sm border border-[var(--color-line)] bg-[#dee5ec] overflow-hidden">
         <svg
           viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
           className="w-full h-auto block"
           role="img"
           aria-label="Map of NYC neighborhoods colored by match score"
         >
-          {/* Polygons */}
-          {features.map((feat) => {
-            const id = feat.properties.id;
-            const n = neighborById.get(id);
-            if (!n) return null;
-            const score = scoreById.get(id) ?? 0;
-            const fill = scoreColor(score, true);
-            const isTop = top5.has(id);
-            return (
-              <Link
-                key={id}
-                href={`/n/${n.slug}`}
-                aria-label={`${n.name}, ${Math.round(score * 100)}% match`}
-              >
-                <path
-                  d={featureToPath(feat)}
-                  fill={fill}
-                  fillOpacity={isTop ? 0.95 : 0.78}
-                  stroke="var(--color-bg)"
-                  strokeWidth={isTop ? 2.5 : 1.2}
-                  className="transition-opacity hover:fill-opacity-100"
-                  style={{ cursor: 'pointer' }}
+          {/* Soft water background — the rounded container shows blue where polygons aren't */}
+
+          {/* Background NYC neighborhoods (uncovered) */}
+          <g>
+            {bgFeatures.map((feat, i) => (
+              <path
+                key={`bg-${i}`}
+                d={featureToPath(feat)}
+                fill="#e8e4d9"
+                stroke="#d4cfc0"
+                strokeWidth="0.6"
+              />
+            ))}
+          </g>
+
+          {/* Covered neighborhoods, score-colored */}
+          <g>
+            {coveredFeatures.map((feat) => {
+              const id = feat.properties.id;
+              const n = neighborById.get(id);
+              if (!n) {
+                // Render uncolored if no rank data (shouldn't happen)
+                return (
+                  <path
+                    key={id}
+                    d={featureToPath(feat)}
+                    fill="#e8e4d9"
+                    stroke="#d4cfc0"
+                    strokeWidth="0.6"
+                  />
+                );
+              }
+              const score = scoreById.get(id) ?? 0;
+              const isTop = top5.has(id);
+              return (
+                <Link
+                  key={id}
+                  href={`/n/${n.slug}`}
+                  aria-label={`${n.name}, ${Math.round(score * 100)}% match`}
                 >
-                  <title>{n.name} · {Math.round(score * 100)}% match</title>
-                </path>
-              </Link>
-            );
-          })}
+                  <path
+                    d={featureToPath(feat)}
+                    fill={scoreColor(score)}
+                    fillOpacity={isTop ? 0.95 : 0.78}
+                    stroke="#fff"
+                    strokeWidth={isTop ? 2 : 1}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    <title>{n.name} · {Math.round(score * 100)}% match</title>
+                  </path>
+                </Link>
+              );
+            })}
+          </g>
 
           {/* Top 5 labels */}
-          <g fontFamily="var(--font-inter), sans-serif" fontSize="14" fill="var(--color-ink)">
+          <g fontFamily="var(--font-inter), sans-serif">
             {ranked.slice(0, 5).map((r) => {
-              const feat = features.find((f) => f.properties.id === r.neighborhood.id);
+              const feat = coveredFeatures.find((f) => f.properties.id === r.neighborhood.id);
               if (!feat) return null;
               const [cx, cy] = centroid(feat);
               return (
                 <g key={r.neighborhood.id}>
-                  {/* white halo for legibility */}
                   <text
                     x={cx}
-                    y={cy}
+                    y={cy - 1}
                     textAnchor="middle"
+                    fontSize="13"
                     fontWeight="700"
-                    stroke="var(--color-bg)"
-                    strokeWidth="4"
+                    fill="#1a1410"
+                    stroke="#fff"
+                    strokeWidth="3.5"
                     paintOrder="stroke"
                   >
                     {r.neighborhood.shortName ?? r.neighborhood.name}
                   </text>
                   <text
                     x={cx}
-                    y={cy + 16}
+                    y={cy + 13}
                     textAnchor="middle"
                     fontSize="11"
-                    fontWeight="600"
-                    fill="var(--color-ink)"
-                    stroke="var(--color-bg)"
+                    fontWeight="700"
+                    fill="#1a1410"
+                    stroke="#fff"
                     strokeWidth="3"
                     paintOrder="stroke"
                   >
@@ -195,26 +209,28 @@ export function NeighborhoodMap({ ranked }: Props) {
         </svg>
       </div>
 
-      {/* Legend */}
-      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-[var(--color-muted)]">
+      {/* Legend + caveats */}
+      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-[var(--color-muted)]">
         <div className="flex items-center gap-3">
           <span className="inline-flex h-3 rounded overflow-hidden border border-[var(--color-line)]" style={{ width: 140 }}>
             {Array.from({ length: 14 }).map((_, i) => (
-              <span
-                key={i}
-                style={{ background: scoreColor(i / 13, true), width: 10, height: '100%' }}
-              />
+              <span key={i} style={{ background: scoreColor(i / 13), width: 10, height: '100%' }} />
             ))}
           </span>
-          <span>weak match → strong match</span>
+          <span>weak → strong match</span>
         </div>
         <span aria-hidden>·</span>
-        <span>top 5 are labeled</span>
+        <span className="flex items-center gap-2">
+          <span className="inline-block w-3 h-3 rounded-sm bg-[#e8e4d9] border border-[#d4cfc0]" />
+          <span>NYC neighborhood we don&rsquo;t cover yet</span>
+        </span>
+        {njCount > 0 && (
+          <>
+            <span aria-hidden>·</span>
+            <span>NJ neighborhoods aren&rsquo;t shown on the map yet ({njCount} in your results)</span>
+          </>
+        )}
       </div>
-
-      <p className="sr-only">
-        Boroughs covered: {Object.values(boroughLabel).join(', ')}.
-      </p>
     </section>
   );
 }
