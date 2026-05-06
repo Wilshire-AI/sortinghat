@@ -14,8 +14,8 @@ export default function HomePage() {
           Where in NYC will you actually thrive?
         </h1>
         <p className="mt-8 text-lg leading-relaxed max-w-xl text-[var(--color-ink)]/80">
-          A few questions about how you live, what drains you, and what you&rsquo;re building toward —
-          and a real answer about which neighborhoods fit who you are.
+          A few questions about how you live, what drains you, and what you&rsquo;re building toward.
+          A real answer about which neighborhoods fit who you are.
         </p>
 
         <div className="mt-14">
