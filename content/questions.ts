@@ -136,22 +136,11 @@ export const questions: readonly Question[] = [
   },
   {
     id: 'visitor-facing-fit',
-    kind: 'forced_choice',
-    prompt: 'When you walk around your neighborhood, the people you pass are mostly:',
-    choices: [
-      {
-        label: 'Your neighbors. Locals doing their daily thing.',
-        impacts: { 'visitor-facing-energy': -0.7 },
-      },
-      {
-        label: 'Visitors and tourists. The neighborhood is somewhere people come to.',
-        impacts: { 'visitor-facing-energy': 0.7 },
-      },
-      {
-        label: 'A mix. Doesn\'t really matter to me.',
-        impacts: { 'visitor-facing-energy': 0 },
-      },
-    ],
+    kind: 'slider',
+    prompt: 'Living somewhere busy and visited, with weekend tourists and out-of-town crowds, would actually be part of the appeal.',
+    lowLabel: 'No, it would drain me',
+    highLabel: 'Yes, the energy is the point',
+    dimensionId: 'visitor-facing-energy',
   },
   {
     id: 'built-form-fit',
