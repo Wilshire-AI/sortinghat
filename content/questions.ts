@@ -59,7 +59,7 @@ export const questions: readonly Question[] = [
     id: 'cultural-communities',
     kind: 'multi_select',
     prompt: 'Which communities, if any, do you want close to home?',
-    helperText: 'Mix of ethnic, identity, and religious. Pick none, one, or several. Each pick boosts matching neighborhoods. (Skip if it doesn\'t apply.)',
+    helperText: 'Ethnic and religious communities. Pick none, one, or several. Each pick boosts matching neighborhoods. (Skip if it doesn\'t apply.)',
     options: [
       { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
       { value: 'south-asian', label: 'South Asian (Indian, Pakistani, Bangladeshi, Sri Lankan)' },
@@ -71,7 +71,6 @@ export const questions: readonly Question[] = [
       { value: 'jewish', label: 'Jewish community (Orthodox, Reform)' },
       { value: 'african-american', label: 'African American' },
       { value: 'west-african', label: 'West African (Senegalese, Nigerian)' },
-      { value: 'lgbtq', label: 'LGBTQ+ community' },
     ],
     dimensionImpactPerSelection: { 'cultural-ecosystem': 0.15 },
   },

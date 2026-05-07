@@ -12,6 +12,7 @@ import { archetypes } from '@content/archetypes';
 import { dimensions } from '@content/dimensions';
 import { commuteMinutesByNeighborhood } from '@content/commute-minutes';
 import { getPassage } from '@content/passages';
+import { clearStoredQuizAnswers } from '@/components/quiz/useQuizState';
 import { ArchetypeBanner } from '@/components/results/ArchetypeBanner';
 import { NeighborhoodCard } from '@/components/results/NeighborhoodCard';
 import { DimensionFingerprint } from '@/components/results/DimensionFingerprint';
@@ -105,6 +106,7 @@ export function ResultsClient() {
         <ShareButton archetypeName={result.archetype.name} />
         <Link
           href="/nyc/quiz"
+          onClick={clearStoredQuizAnswers}
           className="text-sm text-[var(--color-muted)] hover:text-[var(--color-accent)] transition"
         >
           Retake the quiz
@@ -131,6 +133,7 @@ export function ResultsClient() {
           </p>
           <Link
             href="/nyc/quiz"
+            onClick={clearStoredQuizAnswers}
             className="mt-8 inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
           >
             Retake the quiz
