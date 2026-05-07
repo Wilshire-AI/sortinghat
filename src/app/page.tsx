@@ -41,7 +41,10 @@ export default function HomePage() {
         >
           Wilshire AI
         </a>{" "}
-        project · Manhattan, Brooklyn, Queens, Bronx, Staten Island & near-NJ
+        project · Manhattan, Brooklyn, Queens, Bronx, Staten Island & near-NJ ·{" "}
+        <Link href="/methodology" className="hover:text-[var(--color-accent)] transition">
+          Methodology
+        </Link>
       </footer>
     </main>
   );
