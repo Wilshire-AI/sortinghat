@@ -1,0 +1,1468 @@
+{
+  "upper-west-side": {
+    "fitProse": "The Upper West Side is the wrong volume for an energy-driven maximalist. It's built for families and permanence, not density and friction. The parks are beautiful, the trains are solid, but the nightlife is scattered and the streets empty out after dinner.",
+    "tradeoffsForYou": [
+      "Restaurants close early. The scene lives downtown or in Brooklyn.",
+      "Quiet residential blocks mean you'll feel the hush, not the pulse.",
+      "Three subway lines, but you're uptown. The energy is 40 blocks south.",
+      "Famously self-satisfied. If you want maximum NYC, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:56.656Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "west-village": {
+    "fitProse": "West Village is gorgeous, but it won't give you the voltage you're looking for. The narrow streets are human-scale and hushed, the restaurants lean classic over experimental, and the whole rhythm is settled. For maximalism, look to the East Village or Lower East Side.",
+    "tradeoffsForYou": [
+      "Energy peaks with tourists on weekends, not locals mid-week.",
+      "Nightlife is more wine bars than clubs or late-night chaos.",
+      "The postcard streets are real, but the pulse is quiet by Manhattan standards.",
+      "You'll pay top dollar for a vibe that doesn't match your tempo."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:56.657Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-village": {
+    "fitProse": "East Village was made for you. The density of bars, restaurants, and late-night energy is among the highest in the city, and everything spills onto the sidewalk. If you want NYC at full volume, this is the room where it's playing.",
+    "tradeoffsForYou": [
+      "Subway access is awkward. The L, F, and 6 are all reachable but none are seamless.",
+      "Apartments are small and old. You're paying for location, not space or finishes.",
+      "Loud at night, every night. If you need to be up early, bring earplugs.",
+      "The energy you love also means constant foot traffic and zero quiet blocks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:56.891Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-east-side": {
+    "fitProse": "The Upper East Side is the wrong voltage for someone who wants NYC at full volume. The limestone blocks are gorgeous, the museums are world-class, but the nightlife is muted and the street energy reads quiet by design. You'll feel the polish, not the pulse.",
+    "tradeoffsForYou": [
+      "Restaurants tilt formal and expensive, not spontaneous late-night.",
+      "Nightlife scene exists but feels borrowed from other neighborhoods.",
+      "The calm is intentional. If you want friction, head downtown.",
+      "Lex trains are congested but frequent. Q helps, but coverage is limited."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:57.500Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chelsea": {
+    "fitProse": "Chelsea delivers the density and variety you're after, with galleries, Chelsea Market, the High Line, and Hudson Yards all in walking distance. It's not the loudest neighborhood at night, but the daytime energy and cross-town transit (A/C/E, 1, L, 7) mean you're never more than ten minutes from wherever the action is.",
+    "tradeoffsForYou": [
+      "Tourist crowds around the High Line can clog sidewalks, especially weekends.",
+      "Quieter at night than Midtown East or the Village.",
+      "Hudson Yards brings mall energy, not street life.",
+      "Some blocks feel residential in a way that might surprise you."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:02.218Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fidi": {
+    "fitProse": "Financial District is the wrong gear for someone who wants NYC at full volume. The transit redundancy is spectacular (every line, PATH, ferry), but the streets empty after 7pm and weekends feel like a corporate plaza. The energy lives elsewhere in Manhattan.",
+    "tradeoffsForYou": [
+      "Restaurants and bars close early. This is not a late-night neighborhood.",
+      "Weekends are eerily quiet. The pulse you want lives uptown or in Brooklyn.",
+      "Tourist crowds around the 9/11 Memorial but no real neighborhood scene.",
+      "You'll commute to the energy instead of living inside it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:02.239Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tribeca": {
+    "fitProse": "Tribeca is fundamentally a low-energy neighborhood, which makes it the wrong shape for a maximalist. The cobblestones are beautiful, the lofts legendary, but on weekends it empties out. If you want NYC at full volume, you'll be walking north to SoHo or taking the 1 uptown.",
+    "tradeoffsForYou": [
+      "The restaurants are excellent, the streets are serene. You want friction, not serenity.",
+      "Quiet to the point of empty on weekends. The pulse lives elsewhere.",
+      "Price per square foot is among Manhattan's highest for a low-density experience.",
+      "You'll find yourself heading to the West Village or Nolita for actual crowds."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:02.469Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gramercy": {
+    "fitProse": "Gramercy is a mismatch for you. It's a residential island designed for quiet, not energy. The streets are calm, the bars close early, and most of what makes it valuable is the very absence of the friction and nightlife you crave.",
+    "tradeoffsForYou": [
+      "The calm is intentional. You'll feel like you're visiting someone's grandparents.",
+      "Nightlife and restaurant density lives in Union Sq, not on the Gramercy blocks.",
+      "Subway access is thin. The 6 is your only local line.",
+      "The private park is the whole draw, but you won't have a key unless you own."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:03.112Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hells-kitchen": {
+    "fitProse": "Hell's Kitchen is pure energy-driven maximalism. You're walking distance to everything, every train on the west side cuts through, and the restaurant density is relentless. It's loud, dense, and absolutely the middle of it all.",
+    "tradeoffsForYou": [
+      "Times Square tourist crush is real and unavoidable on the east edge.",
+      "Most buildings are walk-ups. You'll feel it after a night out.",
+      "Daily friction is constant. Sidewalks, noise, delivery trucks. Accept it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:06.762Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "central-harlem": {
+    "fitProse": "Central Harlem is moderate intensity, not maximum. The 2/3 gets you to midtown fast, and there are pockets of energy on 125th and Lenox, but much of the neighborhood skews residential and calm. If you want friction and density at all hours, you'll find yourself heading downtown.",
+    "tradeoffsForYou": [
+      "Most blocks are quiet brownstone rows, not the nonstop energy you crave.",
+      "Restaurant and nightlife scene is improving but still scattered.",
+      "125th has energy, but it's a commercial strip, not a late-night scene.",
+      "You'll spend a lot of time on the 2/3 heading to where the action is."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:08.165Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "park-slope": {
+    "fitProse": "Park Slope is the wrong neighborhood for you. It was built for calm, for raising kids, for brownstone blocks that empty out by nine. The F and R are fine, Prospect Park is beautiful, but the energy you crave lives elsewhere in Brooklyn.",
+    "tradeoffsForYou": [
+      "Most bars and restaurants close early. This is a weekend brunch neighborhood.",
+      "Stroller density on 7th Ave is legendary. You will notice.",
+      "The whole point here is calm. If that makes you restless, head to Williamsburg or LES.",
+      "Real estate priced like Manhattan, but without the Manhattan energy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:08.307Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "williamsburg": {
+    "fitProse": "Williamsburg is exactly what you came to New York for. The L dumps you into blocks packed with restaurants, bars, late-night options, and crowds that stay out past midnight. The waterfront is gorgeous, the energy is real, and you'll never run out of places to be.",
+    "tradeoffsForYou": [
+      "L train dependence means one shutdown can wreck your life for weeks.",
+      "The grit is gone. This is polished Brooklyn now, not 2005.",
+      "Prices rival Manhattan. You're paying for the scene.",
+      "Weekend crowds on Bedford can feel more like a destination than a neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:08.653Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brooklyn-heights": {
+    "fitProse": "Brooklyn Heights is built for calm, not energy. The Promenade is stunning, the townhouses are masterpieces, and you've got five train lines, but the streets are residential and hushed. If you want full-volume NYC, you'll be commuting to it, not living in it.",
+    "tradeoffsForYou": [
+      "The 2/3/4/5/R/A/C/F get you everywhere fast, but there's no scene waiting when you come home.",
+      "Restaurant and nightlife density is much lower than Williamsburg, LES, or Midtown.",
+      "Weekends feel quiet. The energy is across the bridge, not on Montague Street.",
+      "You'll spend more time leaving the neighborhood than exploring it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:13.061Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cobble-hill": {
+    "fitProse": "Cobble Hill is lovely, but it was built for people who want calm, not volume. The restaurants on Court and Smith are excellent, but the streets are residential and quiet after 10. If you want to be in the middle of the pulse, not watching from a brownstone stoop, look elsewhere.",
+    "tradeoffsForYou": [
+      "All trains require a 10-minute walk. You'll feel the distance.",
+      "Nightlife basically doesn't exist. You'll commute to it.",
+      "The whole neighborhood is designed for early families, not energy.",
+      "Court Street is charming but it won't scratch the density itch."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:13.851Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dumbo": {
+    "fitProse": "DUMBO is beautiful but surprisingly quiet for a maximalist. The cobblestone streets and waterfront park are cinematic, but the footprint is tiny, dining variety thins out after 9pm, and the energy often feels borrowed from tourists rather than locals burning it nightly.",
+    "tradeoffsForYou": [
+      "The neighborhood is small. You'll exhaust restaurant options fast.",
+      "Tourist crowds are constant, but they're not the energy you're after.",
+      "Late-night options are sparse. Manhattan is a bridge away.",
+      "The F and A/C work, but you're not near the nexus of everything."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:14.045Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bed-stuy": {
+    "fitProse": "Bed-Stuy has beautiful blocks and real cultural depth, but for an energy-driven maximalist it reads quiet. The A/C puts you in Manhattan, but the neighborhood itself is more brownstone stoops than packed sidewalks. You'll find good food and nightlife, but you have to seek it out.",
+    "tradeoffsForYou": [
+      "A and C only. Limited train options and some long waits late night.",
+      "Block-by-block variance means you might land somewhere sleepy.",
+      "The density and friction you crave live closer to the L or in downtown Brooklyn.",
+      "Restaurant and bar scene exists but isn't saturated like Williamsburg or LES."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:14.461Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bushwick": {
+    "fitProse": "Bushwick is built for you. Warehouse parties, mural-walled blocks, late-night tacos on Knickerbocker, and the city's densest concentration of working artists. The L train puts you in Manhattan in fifteen minutes, and the energy never really stops.",
+    "tradeoffsForYou": [
+      "L train dependence is real. When it goes down, your night changes.",
+      "Block-by-block safety varies. You'll learn which corners to skip at 2am.",
+      "The grit is part of the deal, but some nights it feels heavier than others."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:18.506Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sheepshead-bay": {
+    "fitProse": "Sheepshead Bay is the wrong neighborhood for someone who wants NYC at full volume. The waterfront is pleasant, the B and Q run well, but the dining is family-run spots, not scene. The energy here is residential and quiet, not the pulse you're chasing.",
+    "tradeoffsForYou": [
+      "Nightlife is essentially nonexistent. You'll be traveling for everything after 10 p.m.",
+      "The commute to Manhattan is long enough that spontaneity dies.",
+      "The streets empty early. If calm makes you restless, this will feel suffocating."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:19.503Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brighton-beach": {
+    "fitProse": "Brighton Beach is the wrong place for the energy-driven maximalist. It's a deep, self-contained cultural world at the end of the Q, with a boardwalk and ocean air, but the pulse is elsewhere. If you need restaurants, nightlife, and everything happening at once, you'll spend half your life on the train.",
+    "tradeoffsForYou": [
+      "Q terminus means 60+ minutes to Manhattan's energy corridors.",
+      "The scene here is cultural and specific, not the density and friction you crave.",
+      "Nightlife is Russian supper clubs, not the rotating cast of openings you want.",
+      "You'll feel geographically and energetically far from the city's pulse."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:20.363Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-island-city": {
+    "fitProse": "Long Island City is a mixed read for someone who wants full-volume NYC. The transit is among the best in the city (7, E, M, G, F, ferry), and the skyline views from the high-rises deliver spectacle. But the new-build energy feels thin on the ground. Restaurants and nightlife exist but don't hum the way Williamsburg or the East Village does.",
+    "tradeoffsForYou": [
+      "The waterfront is gorgeous but quiet. Energy is imported, not homegrown.",
+      "Restaurant scene is uneven. Vernon-Jackson has spots, but you'll commute for real nightlife.",
+      "The high-rises feel a little anonymous. Not much street texture or friction.",
+      "Manhattan is close, which matters when you're chasing the energy elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:21.524Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "astoria": {
+    "fitProse": "Astoria is a mismatch for the maximalist. The restaurants are excellent and the N/W runs to midtown, but the energy falls off after dinner. This is a neighborhood that prioritizes comfort and space over nightlife and late-night friction.",
+    "tradeoffsForYou": [
+      "Nightlife scene is thin. You'll be heading to Manhattan or Brooklyn for weekend energy.",
+      "N/W off-peak can mean 15-minute waits.",
+      "The density you want lives in Manhattan or closer-in Brooklyn, not Queens.",
+      "Restaurant quality is high, but the scene stops at eating. No late-night spill."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:24.562Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flushing": {
+    "fitProse": "Flushing has density and crowds, but not the kind of energy you're after. The street-level friction is real, but it's daytime shopping crush, not nightlife buzz. The 7 is your only train, and Manhattan's restaurants feel like the main event happening elsewhere.",
+    "tradeoffsForYou": [
+      "The 7 is one line, and the terminus means rush-hour trains are packed.",
+      "Street energy peaks at lunch and dinner, not late night.",
+      "The restaurant scene is world-class but insular. Bars and clubs live in Manhattan.",
+      "You'll be explaining to friends why they should trek out here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:25.614Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "forest-hills": {
+    "fitProse": "Forest Hills is the wrong neighborhood for you. The whole point is planned calm: Tudor buildings, wide sidewalks, and the kind of residential quiet that makes maximalists restless. The E and F get you to midtown in half an hour, but the energy here lives at family dinner tables, not on the street.",
+    "tradeoffsForYou": [
+      "Nightlife and restaurant density are a fraction of what you'd find in Manhattan or Brooklyn.",
+      "The commute is 30+ minutes. You'll spend more time on the train than in the scene.",
+      "Urban energy is low by design. This is a place people move to escape volume.",
+      "You'll need to leave the neighborhood for the kind of friction and density you crave."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:26.738Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "riverdale": {
+    "fitProse": "Riverdale is the wrong neighborhood for an energy-driven maximalist. It's suburban quiet, car-dependent, and the dining and nightlife scene is nearly nonexistent. The 1 train is slow, Metro-North requires planning, and the whole design is built for families who want green space, not people who want the city at full volume.",
+    "tradeoffsForYou": [
+      "The 1 train from Van Cortlandt takes over 40 minutes to Midtown.",
+      "Almost no nightlife or restaurant density to speak of.",
+      "You'll feel like you've left NYC entirely, which is the opposite of what you want.",
+      "Car dependency means you're commuting to find energy, not living in it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:27.239Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "st-george": {
+    "fitProse": "St. George is the wrong speed for someone who wants NYC at full volume. The ferry is a beautiful commute, but it's also a moat. Nightlife and dining thin out fast after Bay Street, and the rhythm here is quiet residential blocks, not Friday at midnight.",
+    "tradeoffsForYou": [
+      "Ferry dictates every social plan. Last boat is 11:30 weeknights, later weekends.",
+      "Dining and nightlife are sparse. You'll be heading to Manhattan or Brooklyn.",
+      "The energy you crave lives on the other side of the harbor.",
+      "Bigger apartments, but you'll spend less time in them if you want to stay plugged in."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:30.795Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hoboken": {
+    "fitProse": "Hoboken is the wrong city for you. It's walkable, pleasant, and genuinely pretty along the waterfront, but the energy is low-volume by design. The bar scene is either college kids or couples with strollers. If you want NYC at full volume, stay in Manhattan.",
+    "tradeoffsForYou": [
+      "PATH is fast, but you're commuting TO the energy instead of living in it.",
+      "Nightlife skews young and repetitive. Not the density or variety you crave.",
+      "The whole point of Hoboken is calm. That's exactly what you're trying to avoid.",
+      "Weeknights feel suburban. You'll spend more time on trains than in the pulse."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:31.831Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-lee": {
+    "fitProse": "Fort Lee is a serious mismatch for energy-driven maximalists. It's quiet, car-dependent, and built for families who want H Mart and space, not the pulse of the city. The bus to Manhattan is real but the vibe is suburban New Jersey through and through.",
+    "tradeoffsForYou": [
+      "No subway. Buses through the tunnel or over the GW are your only transit.",
+      "Nightlife is essentially nonexistent. You'll be heading back into the city.",
+      "Restaurants are excellent but almost entirely Korean. Density and variety live elsewhere.",
+      "The streets are quiet residential blocks, not the friction you crave."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:32.942Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jersey-city": {
+    "fitProse": "Jersey City has space, skyline views, and PATH trains that get you to Manhattan fast, but it doesn't have the density or late-night friction an energy-seeker craves. The waterfront is polished, the downtown has diversified, but it reads more pragmatic than electric.",
+    "tradeoffsForYou": [
+      "The PATH stops at midnight on weeknights, 1:30 a.m. weekends. Energy stops earlier.",
+      "Nightlife and restaurant scene exist but pale next to Manhattan or Williamsburg.",
+      "You'll cross the river constantly. Jersey City is where you sleep, not where it happens.",
+      "The highrises feel more residential tower than urban theater."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:32.944Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "edgewater": {
+    "fitProse": "Edgewater is the wrong gear for an energy-driven maximalist. It's waterfront condos, ferry commutes, and Korean grocery runs. The quiet is deliberate, street life is thin, and the only real density is in the high-rises looking at Manhattan across the river.",
+    "tradeoffsForYou": [
+      "The ferry is reliable but you're boxed in. Buses are slow, a car becomes necessary.",
+      "Nightlife and spontaneity live across the river, not here.",
+      "Residential by design. You'll spend evenings in Midtown or the Village, not on River Road.",
+      "If you want energy, you commute to it. This is a place to sleep well after."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:37.642Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "palisades-park": {
+    "fitProse": "Palisades Park is a working Korean American main street, not a scene. The energy is groceries, banchan shops, families, errands. If you want maximum urban friction and nightlife volume, Manhattan is a bus ride away, and that distance will feel real.",
+    "tradeoffsForYou": [
+      "Buses to Manhattan are your only option. No subway, no quick escape.",
+      "The density is family and community, not nightlife or creative chaos.",
+      "Car-dependent daily life. Walking to dinner means walking to Korean dinner.",
+      "Reads suburban to NYC maximalists, even though Broad Ave is legitimately dense."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:38.115Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lower-east-side": {
+    "fitProse": "Lower East Side is built for energy-driven maximalists. The bars, music venues, and late-night density pack Essex Street and Ludlow like nowhere else in Manhattan. The F and J/M/Z get you everywhere, and the whole neighborhood feels unapologetically alive at 1 a.m.",
+    "tradeoffsForYou": [
+      "Weekend nights can get so loud and crowded you'll need to leave your own block.",
+      "Most apartments are old walk-ups. Expect four flights, no elevator, quirky layouts.",
+      "Getting to the West Side means a transfer or a long crosstown schlep.",
+      "The texture you want comes with grit. Not everyone's version of polished."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:40.114Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-harlem": {
+    "fitProse": "East Harlem has real community energy but not the 24/7 restaurant-and-nightlife density you're chasing. The cultural layer is deep (murals, mom-and-pops, La Marqueta), but this is a neighborhood built around roots and value, not maximum urban friction.",
+    "tradeoffsForYou": [
+      "The 4/5/6 is solid, but you're not in the thick of Midtown or downtown nightlife.",
+      "Block-by-block variance means some streets feel quiet, not maximal.",
+      "Dining scene is authentic but not the relentless parade of openings you want.",
+      "Central Park is gorgeous, but you'd trade it for more bars and crowds."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:40.117Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hamilton-heights": {
+    "fitProse": "Hamilton Heights has bones and history and room to move, but it runs low on energy-maximalist fuel. The A express is excellent, but the restaurant and nightlife density doesn't match Washington Heights or Harlem proper. You'll make trips south for the pulse you want.",
+    "tradeoffsForYou": [
+      "The dining and bar scene is improving but still uneven. You'll head downtown often.",
+      "Quiet residential blocks are lovely but don't deliver the friction you seek.",
+      "Hilltop views are gorgeous; the walk uphill after midnight is less so.",
+      "The neighborhood rewards roots and space, not spontaneity and late-night density."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:43.807Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "washington-heights": {
+    "fitProse": "Washington Heights is not where the energy-driven maximalist usually ends up. It's a real neighborhood with strong cultural anchors and excellent value, but the nightlife is local, the restaurant scene is Dominican-focused, and the blocks are quiet. The A express is fast, but you're still trading proximity for space.",
+    "tradeoffsForYou": [
+      "The energy lives in the community, not in restaurants and nightlife that pull citywide crowds.",
+      "You'll spend real time on the A. Fast for uptown, but you're far from the density you crave.",
+      "Fort Tryon Park is stunning, but the blocks around it are residential and calm.",
+      "If you want NYC at full volume, you'll be commuting to it rather than living in it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:44.514Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "morningside-heights": {
+    "fitProse": "Morningside Heights is cerebral and quiet by design, which for an energy maximalist is the opposite of what you want. The Columbia bubble means weekday foot traffic, sure, but the restaurants close early and the summer is ghost-town level. The 1 train works, but you'll be heading south for everything.",
+    "tradeoffsForYou": [
+      "Academic-neighborhood energy. Think library, not nightlife.",
+      "Restaurant scene improving but nowhere near critical mass yet.",
+      "Summer weekends when students leave, the whole area empties.",
+      "You'll spend most social nights in other neighborhoods."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:45.846Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "inwood": {
+    "fitProse": "Inwood is the wrong energy for someone who wants NYC at full volume. You're at the terminus of the 1 and A, 40 minutes from midtown, with limited dining and nightlife. The parks are stunning, the apartments are huge, but this is a neighborhood built for calm, not pulse.",
+    "tradeoffsForYou": [
+      "Dining and nightlife are sparse. The action lives downtown.",
+      "40+ minutes to midtown on the 1 or A, and you're at the end of the line.",
+      "The streets are residential and quiet. If you crave friction, you'll feel it missing.",
+      "You'll spend more time commuting to energy than living in it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:46.060Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lincoln-square": {
+    "fitProse": "Lincoln Square is impressive but muted for a maximalist. The 1/A/B/C/D convergence is unbeatable, and the restaurants around Columbus Circle and Broadway hum with energy. But the streets themselves trend quiet after dark, more institutional than electric.",
+    "tradeoffsForYou": [
+      "Nightlife thins out fast north of 66th. The action is elsewhere.",
+      "High-rise towers mean less street-level serendipity than downtown.",
+      "Tourist crowds at Lincoln Center, but not the kind that generate nightlife.",
+      "If you want full-volume NYC, you'll commute south for it most nights."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:49.891Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yorkville": {
+    "fitProse": "Yorkville is the wrong neighborhood if you want NYC at full volume. The Q is solid, the apartments have space, but the dining and nightlife scene is muted to the point of nonexistent. You'll be heading west or downtown for the energy you need.",
+    "tradeoffsForYou": [
+      "Residential calm that reads as sleepy after 9 PM.",
+      "Restaurants skew family-friendly Italian, not late-night energy.",
+      "You'll spend more time on the subway getting to where things happen.",
+      "Carl Schurz is lovely, but you're not chasing parks on a Saturday night."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:51.389Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattan-valley": {
+    "fitProse": "Manhattan Valley is the wrong gear for a maximalist. The blocks are residential and calm, the restaurant density is uneven, and the neighborhood hums at a moderate register. You want the volume high, and this corner of the Upper West Side keeps it low.",
+    "tradeoffsForYou": [
+      "Nightlife is sparse. The scene lives farther south or across the park.",
+      "The energy is family-oriented and quiet, not friction or density.",
+      "Central Park is great, but you're here for restaurants and crowds, not trees.",
+      "You'll spend your weekends in Midtown, the Village, or Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:52.213Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carnegie-hill": {
+    "fitProse": "Carnegie Hill is the wrong neighborhood for someone who wants NYC at full volume. It's residential in the way a hotel library is residential. The 4/5/6 and Q put you near energy fast, but this pocket is built for families and quiet wealth, not nightlife or street hum.",
+    "tradeoffsForYou": [
+      "Hushed to the point of sleepy. You'll need to leave to feel the pulse.",
+      "Restaurant and bar density is thin. Head south or crosstown.",
+      "Private school families set the tempo, not maximalists.",
+      "Central Park access is beautiful but won't replace street energy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:52.215Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattanville": {
+    "fitProse": "Manhattanville is quiet by design, shaped by Columbia's footprint and the institutional rhythm of campus expansion. For someone who wants NYC at full volume, this edge of West Harlem feels more like a placeholder than a destination. The 1 train works, the Hudson views are real, but the energy lives blocks away.",
+    "tradeoffsForYou": [
+      "Restaurant scene tilts academic and institutional, not the density you crave.",
+      "Nightlife requires heading to Hamilton Heights or below 110th.",
+      "The pulse you want is uptown or downtown. This is the pause between.",
+      "Columbia's expansion means construction and a campus vibe, not street energy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:55.542Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "midtown-east": {
+    "fitProse": "Midtown East is a strange fit for the maximalist. The transit and proximity to power are unmatched, but the energy evaporates at 6 p.m. You'll walk to Grand Central past office towers, not the street life that makes you feel alive.",
+    "tradeoffsForYou": [
+      "Weekends feel abandoned. The energy you crave lives downtown or in Brooklyn.",
+      "Daytime crowds are corporate, not cultural. It's suits, not scenes.",
+      "Nightlife is thin. You'll take the 4/5/6 to the East Village or LES.",
+      "The Lex express is fast, but you'll use it to leave more than stay."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:57.969Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "murray-hill": {
+    "fitProse": "Murray Hill is post-collegiate energy, not creative or culinary energy. You'll find young professionals, bars that feel like Thursday night in college, and Curry Hill's excellent South Asian scene, but the neighborhood doesn't offer the volume or edge you want. It's a holding zone, not a maximalist's home base.",
+    "tradeoffsForYou": [
+      "The 6 train is reliable but it's the only train. Cross-town takes forever.",
+      "Nightlife skews bro-heavy and post-grad, not scene-y or ambitious.",
+      "Grand Central proximity is great for leaving, less great for neighborhood texture.",
+      "Curry Hill is real and excellent, but the rest of the dining is transient and safe."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:42:58.671Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stuyvesant-town": {
+    "fitProse": "Stuyvesant Town is a mid-century planned enclave that trades energy for space and safety. It's quiet by design, insulated from street life, and the playgrounds outnumber the bars. If you're an energy-driven maximalist, this is the wrong place. You want friction and density, and StuyTown was built to eliminate both.",
+    "tradeoffsForYou": [
+      "Almost no nightlife or restaurant scene inside the complex.",
+      "The L and 6 trains work, but Union Square is a walk when you want fast access.",
+      "Institutional brick towers and internal greens. Zero street-level spontaneity.",
+      "Built for families and quiet. You'll feel like you're visiting someone's suburb."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:01.188Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich-village": {
+    "fitProse": "Greenwich Village delivers exactly what you want: maximum density of bars, cafés, and people-watching per square foot. The A/C/E and B/D/F/M converge at West 4th, Washington Square is a nonstop theater, and you can string together three dinner spots and two cocktail bars without ever walking more than six blocks.",
+    "tradeoffsForYou": [
+      "NYU crowds and bridge-and-tunnel weekends mean you share the stage constantly.",
+      "Apartments are tiny, old, and wildly expensive for what you get.",
+      "The energy peaks around 11pm, not 2am. This is downtown for grownups.",
+      "Quiet residential blocks exist, which for you is the opposite of the point."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:01.708Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "soho": {
+    "fitProse": "SoHo delivers the downtown iconography but not the volume. The cobblestones and cast-iron are beautiful, the N/R/C/E give you plenty of options, but the street life is mostly luxury retail and tourists shopping. If you want energy, you'll walk to the Village or Bowery.",
+    "tradeoffsForYou": [
+      "Weekend foot traffic is mostly tourists with shopping bags, not nightlife crowds.",
+      "Restaurants and bars thin out fast after 10pm compared to the Village or LES.",
+      "The prestige is real, but the pulse is quieter than you'd expect for downtown.",
+      "You'll end up spending time in other neighborhoods for the energy you want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:04.332Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chinatown": {
+    "fitProse": "Chinatown is maximum density, maximum life, maximum street energy. Every subway line is nearby, roast duck hangs in windows, produce spills onto sidewalks, and you'll never run out of places to eat at 11 p.m. If you want the city at full volume, this is it.",
+    "tradeoffsForYou": [
+      "Tourist crush on Canal is real, especially weekends.",
+      "Apartment stock is walk-ups, small, and old. You're paying for location.",
+      "The energy is Cantonese-first. If that's not your scene, it might feel less yours.",
+      "Nightlife is food-focused, not bars or clubs."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:04.413Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenpoint": {
+    "fitProse": "Greenpoint offers waterfront views and McCarren Park energy, but it's explicitly designed for people who want Williamsburg at lower volume. The G train is your spine, the ferry is scenic but slow, and the neighborhood hums rather than roars. If you want maximum density and friction, this isn't it.",
+    "tradeoffsForYou": [
+      "The G is your only subway. No express, no L, and off-peak waits test patience.",
+      "Calmer than Williamsburg by design. Nightlife exists but doesn't dominate.",
+      "Ferry is beautiful but adds 15 minutes you wouldn't spend on a train.",
+      "Polish bakeries and waterfront parks are lovely, but the energy peaks early and fades."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:07.890Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "weehawken-port-imperial": {
+    "fitProse": "Weehawken is the wrong shape for someone who wants NYC at full volume. The towers are spectacular, the ferry works, but the street life is absent. This is quiet luxury with a view, not the friction and density that makes you feel alive.",
+    "tradeoffsForYou": [
+      "Ferry-dependent transit means planning around schedules, not spontaneity.",
+      "No late-night scene. After 10pm you're in a residential tower complex.",
+      "The skyline is across the river, not around you.",
+      "If you want restaurants and collision and noise, you're commuting to get it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:09.062Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bay-ridge": {
+    "fitProse": "Bay Ridge is the wrong speed for you. It's family houses, slow R train commutes, and Shore Road walks. The energy is real but residential: Arab bakeries, Italian social clubs, weeknight dinners. If you want NYC at full volume, you're looking at an hour to get there.",
+    "tradeoffsForYou": [
+      "The R is your only subway line, and it's the slowest route to Manhattan.",
+      "Nightlife peaks at neighborhood taverns and early-close restaurants.",
+      "The energy you want lives in Williamsburg, Lower East Side, or Midtown.",
+      "Beautiful waterfront, but it's the opposite of dense urban friction."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:09.715Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "crown-heights": {
+    "fitProse": "Crown Heights has texture and four subway lines, but it's not calibrated for full-volume energy. The Caribbean blocks are real, the Hasidic stretch is insular, and the creative layer is still finding its nightlife legs. Prospect Park is gorgeous, but the late-night scene lives elsewhere.",
+    "tradeoffsForYou": [
+      "Restaurants and bars thin out fast after 11 p.m. on most blocks.",
+      "The energy is cultural and daytime, not nightlife or density-driven.",
+      "Franklin Ave has good bones but nothing like the maximalist pulse of Williamsburg or LES.",
+      "Block-by-block variance means you can't just wander and expect constant stimulation."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:10.414Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-heights": {
+    "fitProse": "Prospect Heights is a little too calm for someone who wants NYC at full volume. The transit redundancy is excellent (five lines through Atlantic-Barclays) and the museum and park are real, but the brownstone blocks are quiet by design, not friction. If your goal is energy, you're a few stops from it, not in it.",
+    "tradeoffsForYou": [
+      "The neighborhood tilt is family-and-park, not nightlife or scene.",
+      "Vanderbilt has some weekend restaurant action, but it's not a late-night corridor.",
+      "You'll spend a lot of time on the train heading toward Manhattan or Williamsburg.",
+      "Prospect Park is beautiful. It's also a low-density green lung, not a scene generator."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:15.541Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "clinton-hill": {
+    "fitProse": "Clinton Hill is the wrong tempo for you. It's brownstone beautiful, architecturally intact, and anchored by Pratt, but the energy reads as settled and residential. Fort Greene has some pulse, but Clinton Hill exists to be calmer than that.",
+    "tradeoffsForYou": [
+      "C and G only. No express, no redundancy, no speed.",
+      "The quiet is the point here. Nightlife and density live elsewhere.",
+      "Fort Greene Park is close, but the blocks between you and it feel residential, not electric.",
+      "Pratt students add some youth, but this isn't a scene neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:15.545Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-williamsburg": {
+    "fitProse": "East Williamsburg delivers industrial-grade energy without the waterfront prices. The L corridor hums with late-night options, the creative-class density is real, and you're close enough to prime Williamsburg to pull energy from both sides. This is maximum city at a discount.",
+    "tradeoffsForYou": [
+      "L train dependence means weekend service changes can maroon you.",
+      "Industrial blocks lack street energy between the main drags.",
+      "The scene is very real but one tier down from prime Williamsburg buzz.",
+      "Late-night noise near the L is constant if you're on the corridor."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:15.810Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-greene": {
+    "fitProse": "Fort Greene has serious cultural weight (BAM, the Greenmarket, the brownstones) but it's built for families and creative professionals who value depth over density. The Park is beautiful, the transit is unmatched, but this is not full-volume Brooklyn. It's refined, a little quiet, a little early to bed.",
+    "tradeoffsForYou": [
+      "The blocks away from Atlantic-Barclays are calm, not buzzing.",
+      "Nightlife scene is sparse. You'll end up in Williamsburg or Manhattan.",
+      "BAM is cultural, not party. Don't expect late-night energy.",
+      "Atlantic-Barclays on game nights is chaos, but the rest is low-key."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:15.902Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "windsor-terrace": {
+    "fitProse": "Windsor Terrace is the wrong shape for you. It's built for calm and future-family households who want quiet brownstone blocks and Prospect Park access. The dining scene is thin, nightlife is nonexistent, and the F/G is your only train.",
+    "tradeoffsForYou": [
+      "Restaurant and bar density drops to near zero after 9 p.m.",
+      "The energy you want lives in Park Slope or Gowanus, blocks away.",
+      "F/G only. If the train stalls, you're waiting it out.",
+      "Greenwood Cemetery is gorgeous but it's a cemetery, not a scene."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:20.977Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ditmas-park": {
+    "fitProse": "Ditmas Park is the wrong neighborhood for someone who wants full-volume NYC. The Victorian streets are gorgeous and the Q is solid, but the energy is residential, the restaurant scene lives on one road (Cortelyou), and the whole point of this neighborhood is quiet detached houses.",
+    "tradeoffsForYou": [
+      "The Q is your only real train. Rush-hour B helps, but no redundancy.",
+      "Nightlife is minimal. You'll head to Prospect Heights or deeper into Brooklyn.",
+      "Feels suburban by design. If friction energizes you, this will feel sleepy.",
+      "Cortelyou has good spots, but density and scene are nowhere near Park Slope or Williamsburg."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:21.653Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-lefferts-gardens": {
+    "fitProse": "PLG is calm residential Brooklyn with park access, not the friction you crave. The energy is cultural and community-rooted (Caribbean markets, block life), not late-night pulse. You'll head to Prospect Heights or Crown Heights when you want volume.",
+    "tradeoffsForYou": [
+      "Nightlife and restaurant density are modest. You'll go elsewhere after dark.",
+      "The B/Q is your only workhorse. No backup lines if service is slow.",
+      "Quiet blocks are a feature for families, but you might find them sleepy.",
+      "The energy is real but rooted in community, not clubbing or restaurant churn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:22.418Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sunnyside": {
+    "fitProse": "Sunnyside is low-voltage for someone who wants NYC at full volume. The 7 train gets you to Midtown fast, and the Turkish and Korean spots are real, but the residential blocks are quiet and the nightlife is basically nowhere. This is deep Queens optimized for calm, not friction.",
+    "tradeoffsForYou": [
+      "The 7 is a workhorse, but you're still 30+ minutes from Manhattan energy.",
+      "Nightlife and restaurant scene are local-focused, not destination.",
+      "Quiet streets are the whole point here. If that sounds boring, it is.",
+      "You'll be commuting to the action, not living in it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:23.064Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "woodside": {
+    "fitProse": "Woodside is a mismatch for the energy-driven maximalist. The 7 rattles overhead, Roosevelt is dense and alive, but the energy is anchored in family, diaspora, and daily routine, not nightlife or scene-chasing. You'll eat very well but feel like the action is happening elsewhere.",
+    "tradeoffsForYou": [
+      "The 7 train is your only direct line. Manhattan-bound it's great, elsewhere you transfer.",
+      "Roosevelt is crowded but not where you'd bring a date or host a friend visiting from LA.",
+      "Nightlife and ambitious restaurants live in Astoria, LIC, or deeper into the city.",
+      "The friction here is quotidian groceries and commuters, not the electric chaos you're after."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:27.455Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rego-park": {
+    "fitProse": "Rego Park is the wrong fit if you need NYC at full volume. It's a family-anchored, culturally specific enclave on Queens Boulevard, with mid-century co-ops and Bukharian groceries. The M/R gets you there, but slowly, and the late-night scene is nearly absent.",
+    "tradeoffsForYou": [
+      "M/R is reliable but crawls. You'll feel every local stop.",
+      "Late-night life is effectively nonexistent.",
+      "The energy is residential and family-paced, not friction or density.",
+      "The cultural texture is deep but niche. If you're not plugged in, it reads suburban."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:27.661Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood": {
+    "fitProse": "Ridgewood gives you Bushwick's creative energy with bigger apartments and three train lines (L, M, J/Z), which matters when the L is down. The bars and DIY spaces are real, the blocks have grit, and you're not paying Williamsburg rent. But this is the outer edge of the scene, not the epicenter.",
+    "tradeoffsForYou": [
+      "You're 45+ minutes from Manhattan on most lines, and the commute feels it.",
+      "Restaurant and nightlife density thins out fast east of Forest Ave.",
+      "The energy here is real but secondary. Prime action still lives in Bushwick.",
+      "Weekend plans often mean heading back toward Brooklyn to meet people."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:27.928Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "kew-gardens": {
+    "fitProse": "Kew Gardens is the wrong speed for an energy-driven maximalist. It's a planned garden suburb with Tudor houses, a strong Orthodox community, and a long walk to the E/F. The sidewalks empty after dinner, and the closest thing to nightlife is Forest Hills a mile away.",
+    "tradeoffsForYou": [
+      "Single-family homes and quiet blocks, not density or late-night energy.",
+      "Subway is a moderate walk. You'll feel the distance nightly.",
+      "Dining and nightlife are minimal. You'd be commuting to Manhattan constantly.",
+      "The friction-free calm that families love will make you restless."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:28.063Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bayside": {
+    "fitProse": "Bayside is the wrong shape for an energy maximalist. It's single-family houses, a quiet commercial strip on Bell Boulevard, and an LIRR commute. The density and friction you want live in Flushing or Manhattan, not here.",
+    "tradeoffsForYou": [
+      "No subway. The LIRR is your Penn Station link, not an all-night pulse.",
+      "Bell Boulevard is pleasant but low-key. This is not where nightlife happens.",
+      "Car-dependent for most errands. The urban grid ends here.",
+      "Reads more like Long Island than NYC proper."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:33.674Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jackson-heights": {
+    "fitProse": "Jackson Heights has food energy, transit density, and human friction, but the intensity lives on Roosevelt Avenue. The blocks off the strip are leafy and residential. For a maximalist who wants full-throttle NYC, this is more cultural mosaic than nonstop pulse.",
+    "tradeoffsForYou": [
+      "The 7/E/F/M/R convergence is real, but you're still 30 to 40 minutes from Midtown.",
+      "Roosevelt Ave is gritty and dense, but the residential blocks quiet down fast.",
+      "The energy here is cultural, not nightlife. No late-night bar scene to speak of.",
+      "Co-op boards can slow your move-in. Approval friction is real."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:33.829Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "battery-park-city": {
+    "fitProse": "Battery Park City is the wrong energy. It's a planned residential enclave built for families and calm, not nightlife or friction. Weekends feel almost suburban, the Esplanade is gorgeous but empty of pulse, and the only real density is office crowds during weekday commutes.",
+    "tradeoffsForYou": [
+      "Quiet on weekends. The city's volume lives north and east of here.",
+      "Street life is minimal. You'll leave the neighborhood for everything social.",
+      "The PATH and 1 get you out fast, which you'll want to do often.",
+      "Feels more like a waterfront complex than a NYC neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:34.272Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "elmhurst": {
+    "fitProse": "Elmhurst has density and friction, but the energy is mostly commercial and residential, not nightlife or scene. The 7/E/F/M/R make it easy to reach Manhattan's pulse, but the neighborhood itself runs on food markets and family routines, not the 24-hour churn you're chasing.",
+    "tradeoffsForYou": [
+      "You'll commute for nightlife. Elmhurst quiets down after dinner.",
+      "Street energy is high-friction but low-glamour. Think errands, not excitement.",
+      "Roosevelt Ave is loud, but it's market noise, not the late-night buzz you want.",
+      "The food is world-class, but if you need more than that, you'll head west."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:34.277Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hudson-yards": {
+    "fitProse": "Hudson Yards is the wrong shape for the energy-driven maximalist. It's polished, corporate, undeniably impressive, but it's a mall skyline, not a neighborhood. The 7 train gets you to Queens, not to the friction you crave. If you want NYC at full volume, you need the East Village or the Lower East Side.",
+    "tradeoffsForYou": [
+      "Street life is thin. Tourists outnumber regulars.",
+      "Restaurants lean corporate-expense, not late-night spontaneous.",
+      "The 7 is your only train. Penn Station is a trek.",
+      "Beautiful and new, but you'll leave to find the pulse."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:39.365Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roosevelt-island": {
+    "fitProse": "Roosevelt Island is the opposite of full volume. It's a suburban bubble with Manhattan on the F line. Almost no nightlife, almost no restaurants, and the island empties after dark. If you want energy, you'll commute to find it.",
+    "tradeoffsForYou": [
+      "You will leave the island every single night you want to do anything.",
+      "Street life is nonexistent. The tram is the most exciting thing here.",
+      "Dining options are a Gristedes and one or two pizza places.",
+      "Beautiful views, zero friction. That's the problem."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:39.836Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "nolita-little-italy": {
+    "fitProse": "This is exactly the compact downtown intensity you want. NoLita delivers espresso bars, design shops, and enough restaurant density to fill a week without repeating. The 6, B/D/F/M, and J/Z all converge here, and the streets hum with the kind of friction that makes NYC worth it.",
+    "tradeoffsForYou": [
+      "Apartment stock is almost entirely old walk-ups. No doormen, no elevators, no amenities.",
+      "Tourist crowds on Mulberry can slow weekend energy to a crawl.",
+      "Tiny footprint means limited grocery options. You'll be hauling bags up four flights.",
+      "Space is expensive and small. If you need room to sprawl, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:39.942Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flatiron-nomad": {
+    "fitProse": "Flatiron and NoMad give you six subway lines, Madison Square Park, and the midtown machine humming right outside. The density is real but manageable, the restaurants open late, and you're walking distance to everything from Union Square to Bryant Park. This is as close as midtown gets to living on the grid at full throttle.",
+    "tradeoffsForYou": [
+      "Office workers swarm 23rd during the week. Sidewalks thin out after 7pm.",
+      "Residential feel is muted. You're living inside the city's work day.",
+      "Groceries mean Whole Foods at Union Sq or a schlep. No corner bodegas.",
+      "Nightlife energy pulls you south to the Village or east to the LES."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:40.863Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "boerum-hill": {
+    "fitProse": "Boerum Hill is brownstone calm, not energy. Smith Street has a solid restaurant row, but the whole neighborhood tilts toward couples pushing strollers, not the late-night density you want. Atlantic-Barclays gives you train redundancy, but the blocks themselves are quiet by design.",
+    "tradeoffsForYou": [
+      "The action lives elsewhere. This is Park Slope's quieter cousin.",
+      "Smith Street weekend nights are fine, but it's not the full-volume scene you crave.",
+      "You'll spend a lot of time heading to Manhattan, Williamsburg, or Downtown Brooklyn for energy.",
+      "Beautiful blocks, strong transit, but the neighborhood hush will make you restless."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:45.300Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gowanus": {
+    "fitProse": "Gowanus is the wrong shape for an energy maximalist. The industrial blocks are quiet after dark, the canal still divides more than it connects, and the breweries close early. The F/G puts you in Manhattan fine, but the neighborhood itself feels like a construction site waiting for critical mass.",
+    "tradeoffsForYou": [
+      "Nightlife is scattered. You'll leave Gowanus to find the energy you want.",
+      "Dinner options thin out fast once you're off 5th or Smith St.",
+      "The canal aesthetic is cool for an hour, then you realize it's not a scene.",
+      "Construction and empty blocks make evening walks feel like a detour, not a destination."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:45.673Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carroll-gardens": {
+    "fitProse": "Carroll Gardens is low-intensity by design. The blocks are gorgeous, the front gardens are real, but the energy maxes out at weekend brunch lines on Smith Street. This is brownstone calm, built for strollers and longtime residents, not friction or late-night density.",
+    "tradeoffsForYou": [
+      "Quiet after 10 p.m., even on weekends. The scene is thin.",
+      "F/G only. If the train stalls, you wait.",
+      "Restaurant energy clusters on two strips. The rest is residential hush.",
+      "Pricey for what is fundamentally a sleepy, family-first neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:45.710Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "red-hook": {
+    "fitProse": "Red Hook is the wrong kind of energy for a maximalist. It's gorgeous and creative, but it's a peninsula off the grid. No subway means no spontaneous midnight jump to Manhattan, no collision with the city's pulse. The calm is the whole point, and for you that's a dealbreaker.",
+    "tradeoffsForYou": [
+      "No subway. B61 bus and ferries are your only lifelines.",
+      "Nightlife and restaurant density are a fraction of what you want.",
+      "You'll spend more time planning transit than experiencing friction.",
+      "The isolation is intentional. If you crave density, you'll resent it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:46.706Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood": {
+    "fitProse": "Englewood has a real downtown and the Bergen Performing Arts Center, but the pace is suburban and the commute is bus-only through the Lincoln Tunnel. If you want NYC at full volume, this is the wrong side of the river. You'll miss walking out your door into density.",
+    "tradeoffsForYou": [
+      "No train. The 178/186 bus works, but it's not the subway.",
+      "Quiet residential blocks dominate. Energy lives in pockets, not everywhere.",
+      "Car-dependent for day-to-day errands and spontaneity.",
+      "Restaurants and nightlife close early compared to Manhattan or Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:51.206Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tenafly": {
+    "fitProse": "Tenafly is the opposite of what you came to New York for. It's a car-dependent Bergen County suburb where single-family homes stretch out on quiet blocks and the commute is a bus through the Lincoln Tunnel. If you want density, friction, and spontaneous energy, this will feel like exile.",
+    "tradeoffsForYou": [
+      "No subway, no sidewalk energy, no late-night anything.",
+      "The 165 bus to Port Authority is your lifeline, and it's still 40+ minutes.",
+      "You'll drive to H Mart, drive to dinner, drive everywhere.",
+      "This is where people move when they want calm. You want the opposite."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:51.394Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood-cliffs": {
+    "fitProse": "Englewood Cliffs is about as far from full-volume NYC as you can get while still claiming commute distance. It's hushed, car-dependent, and estate-scale. If you want energy, restaurants, density, and spontaneous collision, this is the opposite.",
+    "tradeoffsForYou": [
+      "No nightlife, no restaurant row, no scene. Just driveways and Palisades views.",
+      "Bus over GW Bridge is your commute. No subway, no spontaneity, no last-minute plans.",
+      "You'll need to drive to Fort Lee or Edgewater for groceries and any human contact.",
+      "The quiet that families pay top dollar for will make you restless within a week."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:51.397Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cresskill": {
+    "fitProse": "Cresskill is the opposite of what you want. It's a quiet suburban borough built for family life and schools, with no commercial center, no nightlife, and nothing happening after 9 p.m. You'd need to drive to Fort Lee or back into the city for any pulse at all.",
+    "tradeoffsForYou": [
+      "Strict car dependence. No subway, no walkable blocks.",
+      "No restaurants, bars, or late-night anything in town.",
+      "The NJ Transit bus to Port Authority is your only link to Manhattan energy.",
+      "You'll spend more time commuting to the action than being in it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:52.756Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood-nj": {
+    "fitProse": "Ridgewood is a suburb, full stop. The train to Penn takes fifty minutes, the blocks are quiet by design, and the whole point is schools and space. If you want NYC at full volume, this is the opposite of that impulse.",
+    "tradeoffsForYou": [
+      "You're an hour round-trip from anything that feels like the city's pulse.",
+      "Walkable downtown means coffee shops and family restaurants, not nightlife.",
+      "The energy you crave lives in Manhattan. This is where people leave it behind.",
+      "Off-peak trains can stretch the commute even longer."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:57.026Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "paramus": {
+    "fitProse": "Paramus is the wrong place for someone who wants NYC at full volume. It's a car-dependent suburban retail hub where the loudest noise is Route 17 traffic and the dinner scene peaks at Cheesecake Factory. Van Saun Park is nice, but this is fundamentally a place people choose to escape the energy you're chasing.",
+    "tradeoffsForYou": [
+      "You'll need a car for everything. Even getting to Manhattan means driving to a bus stop.",
+      "No nightlife, no restaurant density, no spontaneous anything.",
+      "The 144/164 buses to Port Authority run on suburban schedules, not impulse.",
+      "If your idea of energy is the Garden State Plaza food court, you'll love it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:57.602Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "maplewood": {
+    "fitProse": "Maplewood is a suburb, and for someone who wants NYC at full volume, that's the whole story. The Midtown Direct train is excellent, but you're coming home to quiet blocks and family dinners, not late-night walks through crowds. The village has restaurants, but the energy shuts down early.",
+    "tradeoffsForYou": [
+      "You'll spend ~30 min on NJ Transit every time you want the city's pulse.",
+      "Nightlife means driving to Montclair or taking the train back into Manhattan.",
+      "The whole point here is calm, space, and schools. That's the opposite of what you want.",
+      "Walkable village is real, but it's boutique coffee and brunch, not density and friction."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:57.948Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "millburn-short-hills": {
+    "fitProse": "Short Hills and Millburn are about as far from full-volume NYC as you can get and still catch Midtown Direct. This is estate-scale suburbia built for families who want calm, top schools, and prestige. If you crave density and nightlife, this is the wrong train line.",
+    "tradeoffsForYou": [
+      "The energy is close to zero. Restaurants close early, streets empty at dusk.",
+      "Midtown Direct gets you to Penn in 35 min, but you'll be commuting to find nightlife.",
+      "This is a family suburb at premium prices. No scene, no spontaneity, no crowds.",
+      "If you want to feel the city's pulse, you'll need to leave town every weekend."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:43:59.274Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "south-orange": {
+    "fitProse": "South Orange is the wrong shape for you. It's a quiet, family-forward village that empties out after dinner. The Midtown Direct train gets you to Penn in 35 minutes, but the energy lives in Manhattan, not here.",
+    "tradeoffsForYou": [
+      "The downtown has restaurants, but nightlife is nonexistent.",
+      "Most social action is kid-focused or arts-center programming.",
+      "You'd be commuting *to* the energy, not living in it.",
+      "The train schedule becomes your social curfew."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:03.528Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "summit": {
+    "fitProse": "Summit is the wrong shape for someone who wants NYC at full volume. It's a commuter suburb built around single-family homes, excellent schools, and a 50-minute Midtown Direct train. The downtown has restaurants, but the energy is muted, residential, and family-first.",
+    "tradeoffsForYou": [
+      "You're 50 minutes from Penn. That's not a quick hop, it's a commute.",
+      "Nightlife and friction live elsewhere. This is a place people retreat to.",
+      "The whole town is optimized for families with kids, not for density or pulse.",
+      "If you want to be in the middle of things, you'll spend your life on NJ Transit."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:03.620Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westfield": {
+    "fitProse": "Westfield is the wrong shape for a maximalist. It's a classic NJ commuter suburb with top schools, quiet blocks, and a downtown built for errands, not energy. The Raritan Valley Line puts you in Penn, but you'll spend your life there, not here.",
+    "tradeoffsForYou": [
+      "The train to Penn is slow and the energy you crave lives in the city.",
+      "Nightlife means a wine bar. Restaurants close early.",
+      "Everything here is designed for families with kids, not density junkies.",
+      "You'll feel restless by month two."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:04.648Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "montclair": {
+    "fitProse": "Montclair is a suburb, and for an energy-driven maximalist that's the bottom line. The Wellmont books good acts, the restaurants are real, and the downtown has texture, but it closes early and the density never arrives. You'll ride the train into Manhattan for the night you actually want.",
+    "tradeoffsForYou": [
+      "NJ Transit Midtown Direct is solid, but you're commuting to the energy, not living in it.",
+      "Downtown Montclair has culture but not nightlife. Things wrap by 10 or 11.",
+      "The whole appeal is space and calm. That's the opposite of what charges you.",
+      "You'll spend weekends in the city because the suburbs feel too quiet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:05.019Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "scarsdale": {
+    "fitProse": "Scarsdale is the opposite of what you're looking for. It's a high-prestige commuter suburb built for families who want calm, space, and top schools. Metro-North gets you to Grand Central in 30 minutes, but you'll come home to silence and single-family blocks.",
+    "tradeoffsForYou": [
+      "No nightlife, no restaurant density, no street energy.",
+      "You're surrounded by families optimizing for schools, not city immersion.",
+      "If you want NYC at full volume, you need to live in NYC, not commute to it.",
+      "The whole design is friction-free. That's the problem."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:09.377Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chatham-nj": {
+    "fitProse": "Chatham is the opposite of what you came to New York for. It's a Morris County suburb with great schools, detached homes, and a 50-minute Midtown Direct commute. If your idea of energy is dinner reservations and late-night options, this is the wrong map pin.",
+    "tradeoffsForYou": [
+      "You'll spend 100 minutes a day on NJ Transit if you work in Manhattan.",
+      "The village center closes early. Nightlife means driving to Montclair or the city.",
+      "Zero density, zero friction, zero spontaneity. It's designed for families, not maximalists.",
+      "If you thrive on urban energy, you'll feel marooned by Wednesday."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:09.697Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bronxville": {
+    "fitProse": "Bronxville is the opposite of what you want. It's a one-square-mile Westchester village built for families who prize calm, top schools, and quiet Tudor blocks. Metro-North gets you to Grand Central in 25 minutes, but once you're back, there's no pulse to plug into.",
+    "tradeoffsForYou": [
+      "Nightlife is nonexistent. The energy ends at the train station.",
+      "Downtown is a few blocks of quiet shops and a college campus.",
+      "You'll spend more time commuting to the city than living in it.",
+      "Premium pricing for a place where nothing happens after 9 p.m."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:09.827Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "larchmont": {
+    "fitProse": "Larchmont is a full-volume mismatch. It's a commuter village with sailboats, top schools, and tree-lined blocks designed for calm family life. The energy you crave is thirty minutes away on Metro-North, and the village shuts down by 9 p.m.",
+    "tradeoffsForYou": [
+      "You will be the only person awake after 10 p.m.",
+      "Metro-North to Grand Central takes 30 min, but off-peak it crawls.",
+      "The walkable village is one coffee shop and a hardware store.",
+      "If nightlife or density is the point, this is the wrong map entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:10.608Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rye": {
+    "fitProse": "Rye is the wrong kind of fullness for an energy-driven maximalist. It's prestige-quiet, country-club calm, and estate-scale suburban. The Metro-North gets you to Grand Central in 45 minutes, but you're commuting to the energy, not living in it.",
+    "tradeoffsForYou": [
+      "Nightlife means driving to Port Chester or taking the train into the city.",
+      "The town is beautiful, affluent, and sleepy. Friction is designed out.",
+      "45-minute commute each way adds up fast if you want to be in Manhattan nightly.",
+      "Single-family homes and country clubs. The density you crave doesn't exist here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:15.003Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "mamaroneck": {
+    "fitProse": "Mamaroneck is a tough fit for an energy-driven maximalist. It's a family-scaled commuter town on the Sound Shore. The Metro-North gets you to Grand Central, but there's no nightlife, no density, and the harbor is picturesque in a way that makes you antsy by Sunday afternoon.",
+    "tradeoffsForYou": [
+      "You're 45 minutes from the city on a good day, longer on weekends.",
+      "Zero nightlife or late-night dining. Harbor closes at dusk.",
+      "The entire town is designed for families, not for you.",
+      "If you want energy, you'll reverse-commute into Manhattan constantly."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:15.652Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "pelham": {
+    "fitProse": "Pelham is wrong for the energy-driven maximalist. It's a calm, affluent Westchester commuter town optimized for families who want school rankings and lawns. The Metro-North gets you to Grand Central in 30, but once you're home, the only volume comes from youth soccer at Glover Field.",
+    "tradeoffsForYou": [
+      "The downtown is walkable but sleepy. This is not the density you crave.",
+      "Nightlife means a wine bar that closes at 10. You'll commute to the city for fun.",
+      "Everyone here is optimizing for schools and space, not restaurants or scene.",
+      "You'll feel restless by month two unless you treat this as a sleep suburb."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:16.143Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hastings-on-hudson": {
+    "fitProse": "Hastings is the wrong choice if you need NYC at full volume. It's a quiet, hilly river town 35 minutes from Grand Central on the Hudson Line. The downtown is pleasant and walkable, but the energy is creative-class families, not friction and nightlife.",
+    "tradeoffsForYou": [
+      "The only nightlife is a quiet wine bar or two. You'll be coming back to the city often.",
+      "Hudson Line trains are slower and less frequent than Harlem Line equivalents.",
+      "The whole point of Hastings is calm and nature. That's the opposite of what you want.",
+      "No density, no late nights, no restaurant scene worth the name."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:16.237Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dobbs-ferry": {
+    "fitProse": "Dobbs Ferry is built for families seeking river-town calm, not maximalists chasing energy. The downtown strip is pleasant but short, nightlife is virtually absent, and the Hudson Line gets you to Grand Central in 50 minutes, not 30. If you want everything happening at once, you'll feel stranded.",
+    "tradeoffsForYou": [
+      "The Metro-North Hudson Line is slower than the Harlem. You'll notice.",
+      "Dining and nightlife end at Main Street. After that, it's residential quiet.",
+      "This is a place people move to escape intensity, not find it.",
+      "Weekend energy peaks at brunch and the farmers market, then dissolves."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:20.998Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "irvington-ny": {
+    "fitProse": "Irvington is the wrong intensity for someone who wants NYC at full volume. It's a river-town suburb with estate homes, top schools, and quiet blocks. The Metro-North gets you to Grand Central, but the village shuts down early and the streets empty by 9 p.m.",
+    "tradeoffsForYou": [
+      "The energy you crave lives in Manhattan, not here.",
+      "Dining and nightlife end at the village center, which is tiny.",
+      "You'll spend more time commuting than you will being near anything happening.",
+      "Beautiful views, zero friction. For you, that's a problem."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:21.182Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "white-plains": {
+    "fitProse": "White Plains is the wrong shape for the energy-driven maximalist. It's Westchester's most urban option, but that means mall parking lots and office towers, not the friction and nightlife you're chasing. Metro-North to Grand Central is good, but you'll spend most nights heading south.",
+    "tradeoffsForYou": [
+      "The downtown reads as commercial suburban, not NYC energy.",
+      "Nightlife is a fraction of what you'd find in Manhattan or Brooklyn.",
+      "You'll commute in for the good stuff. The whole point was living in it.",
+      "Metro-North last train from Grand Central is around 2 a.m. on weekends."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:21.999Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tarrytown": {
+    "fitProse": "Tarrytown is a river town, not a high-energy city block. The Metro-North gets you to Grand Central in 45 minutes, but once you're home the action is a walkable downtown with a few restaurants and the Music Hall, not nightlife or density. This is where maximalists move when they're trading volume for space.",
+    "tradeoffsForYou": [
+      "You're commuting 45+ minutes if you want the city's pulse.",
+      "Downtown closes early. Nightlife means heading back to Manhattan.",
+      "Bridge traffic and tourist weekends slow the pace further.",
+      "The whole point here is calm and space, not friction and crowds."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:22.355Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chappaqua": {
+    "fitProse": "Chappaqua is the opposite of what you moved to New York for. It's a pristine, car-dependent estate-suburb fifty minutes north on Metro-North. The schools are legendary, the streets are silent, and the only friction is whether to take the Saw Mill or the Taconic.",
+    "tradeoffsForYou": [
+      "No nightlife, no density, no spontaneous energy. You need a car for everything.",
+      "Metro-North Harlem Line is your only thread to Manhattan. 50 minutes each way.",
+      "The whole point of the place is calm. If that sounds like exile, it is.",
+      "Premium pricing for a life shape that runs counter to why you're in this region."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:26.952Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yonkers-ny": {
+    "fitProse": "Yonkers is the wrong speed for someone who wants NYC at full volume. The Metro-North gets you to Grand Central, but the rhythm here is quieter blocks, grocery runs to Stop & Shop, and residential streets that tuck in early. The waterfront renaissance is real but it's not nightlife.",
+    "tradeoffsForYou": [
+      "The energy lives in Manhattan. Yonkers is where you go to decompress.",
+      "Restaurant and nightlife density is a fraction of what you're used to.",
+      "Metro-North last trains mean you're watching the clock on late nights out.",
+      "If you need the city's pulse daily, this will feel like exile."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:27.200Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhasset": {
+    "fitProse": "Manhasset is fundamentally wrong for the energy-driven maximalist. It's a quiet estate-suburb with huge lots, top schools, and the Americana luxury mall. The LIRR gets you to Penn in thirty minutes, but you're stepping off into subdued residential streets, not the pulse of the city.",
+    "tradeoffsForYou": [
+      "Quiet to the point of sleepy. No nightlife, limited dining, no scene.",
+      "You'll spend 30+ minutes on the LIRR each way just to reach actual density.",
+      "Beautiful homes and schools, but this is family-estate territory, not energy.",
+      "The Americana is luxury retail, not the kind of friction that makes you feel alive."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:27.940Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "great-neck": {
+    "fitProse": "Great Neck is a family-anchored suburb with LIRR access, not an energy maximalist's natural habitat. It's quiet, residential, and built for schools and space. Middle Neck Road has restaurants and H Mart, but this is not the pulse you're after.",
+    "tradeoffsForYou": [
+      "The LIRR puts you at Penn in 25 min, but Great Neck itself reads suburban and calm.",
+      "Nightlife and spontaneous friction live in the city, not here.",
+      "You'll feel the absence of density, walk-up energy, and late-night options.",
+      "This place is optimized for families and space, not for maximalist urban immersion."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:28.479Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "port-washington": {
+    "fitProse": "Port Washington is the wrong gear for someone who wants NYC at full volume. It's a North Shore peninsula with a harbor, top schools, and a quiet Main Street. The LIRR gets you to Penn in 35 minutes, but you're commuting to the energy, not living in it.",
+    "tradeoffsForYou": [
+      "The 35-minute LIRR commute means you're optimizing for calm, not pulse.",
+      "Dining and nightlife are minimal. Main Street closes early.",
+      "This is a family village. The energy is Little League, not late-night anything.",
+      "You'll spend weekends driving to find what you want happening."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:32.272Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roslyn": {
+    "fitProse": "Roslyn is the wrong shape for an energy-driven maximalist. It's a car-dependent North Shore village built for families who want top schools and large homes, not nightlife or density. The LIRR requires a drive, and the historic downtown is walkable but quiet.",
+    "tradeoffsForYou": [
+      "You'll drive to the LIRR, then ride 45+ minutes to Penn. No spontaneous nights out.",
+      "Restaurant and nightlife options are limited. The energy lives in Manhattan.",
+      "This is a place designed for calm family life, not friction or pulse.",
+      "You'll feel the suburb immediately. If that makes you restless, trust it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:32.879Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rockville-centre": {
+    "fitProse": "Rockville Centre is the wrong speed for an energy-driven maximalist. It's a pleasant commuter town with a real walkable downtown, but the LIRR to Penn takes 40 minutes and the vibe is families, not friction. The restaurants close early and the crowds thin by 10 p.m.",
+    "tradeoffsForYou": [
+      "40-minute LIRR ride means you're commuting to the energy, not living in it.",
+      "Downtown is lively for Long Island but quiet by NYC standards.",
+      "Off-peak trains are slow. Late nights out in the city become logistical puzzles.",
+      "The whole point here is calm family life, not maximum density."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:33.663Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "garden-city": {
+    "fitProse": "Garden City is the wrong shape for someone who wants NYC at full volume. It's a cathedral-centered suburb with single-family homes, top schools, and LIRR service forty minutes out. If you need restaurants, nightlife, and density, this is the opposite of what you're looking for.",
+    "tradeoffsForYou": [
+      "No nightlife, no scene. The Garden City Hotel is the only real anchor.",
+      "Forty-minute LIRR to Penn. You're commuting, not living in the action.",
+      "Single-family suburban blocks. Quiet by design, which for you is a bug.",
+      "If you want energy, you're driving or training back to the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:33.665Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-beach-ny": {
+    "fitProse": "Long Beach is the wrong shape for an energy-driven maximalist. It's a beach town with a boardwalk and a 50-minute LIRR ride. The summer has a scene, but the rest of the year it's quiet by design, and Manhattan might as well be another planet.",
+    "tradeoffsForYou": [
+      "50-minute LIRR commute means you're leaving the action, not joining it.",
+      "Nightlife and restaurant density drop sharply after Labor Day.",
+      "The boardwalk is gorgeous but it's nature, not urban energy.",
+      "You'll spend more time commuting than you will at dinner or shows."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:38.070Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich": {
+    "fitProse": "Greenwich is the wrong shape for you. It's prestige-coded and beautiful, but it's a car-dependent commuter town where the energy is country clubs and estate lawns. The Metro-North gets you to Grand Central, but the entire design is about quiet, not pulse.",
+    "tradeoffsForYou": [
+      "You'll be bored by Thursday. This is calm by design, not energy.",
+      "50-minute train commute plus car dependence means friction daily.",
+      "Nightlife and density live in Manhattan, not here.",
+      "Greenwich Avenue is retail, not scene. You'll miss the city's volume."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:39.552Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "darien": {
+    "fitProse": "Darien is the opposite of what you're looking for. It's hushed, car-dependent, estate-suburban Connecticut where the most exciting thing happening is a soccer game. The Metro-North ride is an hour, and there's no scene to speak of when you step off the train.",
+    "tradeoffsForYou": [
+      "You'll feel restless within a week. This is designed for calm, not energy.",
+      "Nightlife and restaurants are nonexistent. You're driving to Stamford or taking the train to the city.",
+      "An hour on Metro-North each way kills spontaneity and late nights.",
+      "Car-dependent for everything. Walking to dinner isn't a thing here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:39.695Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stamford": {
+    "fitProse": "Stamford is the wrong density for someone who wants NYC at full volume. The downtown has a Metro-North hub and some restaurants, but the energy reads corporate-commuter, not nightlife-and-friction. The city's pulse lives elsewhere.",
+    "tradeoffsForYou": [
+      "55 minutes to Grand Central means you're watching the city from Connecticut.",
+      "After-work energy is mostly chain restaurants and early closures.",
+      "Urban intensity score of 0.1. You'll feel the quiet immediately.",
+      "If you want everything happening at once, stay in the five boroughs."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:39.737Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "new-canaan": {
+    "fitProse": "New Canaan is the opposite of what you want. It's a low-density estate suburb with a 75-minute Metro-North branch line, no nightlife, no street life, no restaurants open late. Beautiful houses, excellent schools, total quiet.",
+    "tradeoffsForYou": [
+      "You'll need a car for everything. There is no walking to energy.",
+      "The train commute eats nearly three hours of your day, round-trip.",
+      "Zero nightlife, minimal restaurant scene, nowhere to feel the city's pulse.",
+      "If you crave density and friction, this is the wrong borough entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:43.239Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westport": {
+    "fitProse": "Westport is the wrong shape for an energy-driven maximalist. It's a walkable town for creative-class families, not a place where the city hums around you. The Metro-North takes 75 minutes, and when you arrive the energy is arts events and beach walks, not density.",
+    "tradeoffsForYou": [
+      "75 minutes to Grand Central. You'll feel the distance nightly.",
+      "Downtown closes early. Nightlife means driving to New Haven or taking the train in.",
+      "The cultural calendar is real but suburban. Gallery openings, not late nights.",
+      "You'll miss the friction and density that make NYC feel alive."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:44:45.235Z",
+    "model": "claude-sonnet-4-5"
+  }
+}

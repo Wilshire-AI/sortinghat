@@ -11,6 +11,7 @@ import { neighborhoods } from '@content/neighborhoods';
 import { archetypes } from '@content/archetypes';
 import { dimensions } from '@content/dimensions';
 import { commuteMinutesByNeighborhood } from '@content/commute-minutes';
+import { getPassage } from '@content/passages';
 import { ArchetypeBanner } from '@/components/results/ArchetypeBanner';
 import { NeighborhoodCard } from '@/components/results/NeighborhoodCard';
 import { DimensionFingerprint } from '@/components/results/DimensionFingerprint';
@@ -130,7 +131,8 @@ export function ResultsClient() {
           Your top five matches
         </p>
         {result.ranked.map((r, i) => {
-          const prose = resolveCardProse(r.neighborhood, undefined);
+          const passage = getPassage(result.archetype.id, r.neighborhood.id);
+          const prose = resolveCardProse(r.neighborhood, passage);
           return (
             <NeighborhoodCard
               key={r.neighborhood.id}

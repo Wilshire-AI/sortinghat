@@ -1,0 +1,1471 @@
+{
+  "east-village": {
+    "fitProse": "The East Village was not designed with strollers in mind. It's loud, the walk-ups are real, and the school options are improving but still mixed. If you're thinking five-year horizon with kids, this is the wrong side of the tradeoff curve.",
+    "tradeoffsForYou": [
+      "Walk-ups dominate. Groceries, stroller, toddler, five flights.",
+      "Tompkins Square is great but nighttime noise spills into family blocks.",
+      "School quality is uneven. Families who stay here work the system hard.",
+      "The energy that makes it iconic is the energy that exhausts parents."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:23:49.558Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-east-side": {
+    "fitProse": "The Upper East Side is built for families thinking in five-year horizons. Top-rated publics, sidewalks wide enough for double strollers, doormen who know your kids' names, and Carl Schurz Park for weekend mornings. The bones are there to stay rooted through kindergarten and beyond.",
+    "tradeoffsForYou": [
+      "Lex trains are packed at rush hour, and the Q only runs along Second Ave.",
+      "Social energy skews older and quieter than other family neighborhoods.",
+      "Co-op boards can be strict, slowing your path to ownership.",
+      "You'll pay a premium for the school district and the safety reputation."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:23:50.152Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "west-village": {
+    "fitProse": "West Village has the bones for family life: quiet residential blocks, Washington Square, Hudson River Park, and strong schools. But you'll be solving the New York apartment puzzle on hard mode, and paying a premium for every square foot you win.",
+    "tradeoffsForYou": [
+      "Two-bedroom plus space for a kid's room will cost you seven figures, minimum.",
+      "Tourist crowds on Bleecker and around Washington Square mean stroller routes require planning.",
+      "Very few children per block compared to Park Slope or the Upper West Side.",
+      "Safe, walkable, lasting. But you're trading space and peer density for postcard streets."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:23:50.558Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-west-side": {
+    "fitProse": "The Upper West Side is built for exactly this moment in your life. The school quality is among the best in the city, the apartment stock has real bedrooms, and you can walk a stroller to both Central Park and Riverside without crossing a gauntlet. The 1/2/3 and B/C give you four-train redundancy, rare in family neighborhoods.",
+    "tradeoffsForYou": [
+      "Real estate priced for permanence. You're paying for what everyone else also wants.",
+      "Quieter nightlife than downtown. That's the point, but your childless friends will notice.",
+      "The self-satisfaction is real. Everyone here made the same calculation you did.",
+      "Co-op boards can be rigorous. Plan for a longer purchase timeline."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:23:53.773Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tribeca": {
+    "fitProse": "Tribeca is the kind of place you land when family trajectory meets real capital. Schools are genuinely strong (PS 234, PS 150), the streets are quiet enough for strollers, and the lofts are big enough to stay put through three kids. The price is outrageous, but if you can clear it, you're buying a decade of not moving.",
+    "tradeoffsForYou": [
+      "Among the most expensive residential real estate in the city, full stop.",
+      "Weekend emptiness can feel eerie if you want spontaneous kid energy.",
+      "School admissions are competitive even within the zone.",
+      "Very few families with young kids unless they have serious resources."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:23:55.649Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fidi": {
+    "fitProse": "Financial District's school scores (0.85) and space-per-dollar pencil well for the next five years, and the transit redundancy (PATH, a dozen subway lines, ferry) means your options stay open as careers shift. The weeknight quiet is a feature when you have a toddler, though weekend emptiness requires a deliberate social strategy.",
+    "tradeoffsForYou": [
+      "Weekend ghost town. You'll leave the neighborhood for playdates and errands.",
+      "Tourist density around 9/11 Memorial complicates stroller routes.",
+      "Newer buildings mean less texture, more amenities, easier double-stroller lobbies.",
+      "Strong schools but thin parent community compared to Brooklyn family hubs."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:23:56.869Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chelsea": {
+    "fitProse": "Chelsea scores high on transit (A/C/E, 1, L, even the 7 at Hudson Yards) and has real schools (PS 11, PS 33), but the family-trajectory fit is neutral at best. The High Line tourists and gallery density make it feel more like a place you pass through than settle into with strollers and playdates.",
+    "tradeoffsForYou": [
+      "Tourist crush around the High Line makes weekend stroller navigation a contact sport.",
+      "School options exist but families tend to cluster elsewhere in Manhattan.",
+      "Playground density and kid-friendly spontaneous hangouts are thin on the ground.",
+      "You'll love it now, but might outgrow it when the second kid arrives."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:23:58.222Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gramercy": {
+    "fitProse": "Gramercy is one of the few neighborhoods in Manhattan that lets you stay. The blocks are quiet enough for young kids, schools are a long-term strength, and the settled feel means you won't be priced out by next year's wave. The 6 is your main line, but Union Square gives you backup.",
+    "tradeoffsForYou": [
+      "The 6 is slower and less frequent than the 4/5. You'll notice.",
+      "Your neighborhood won't be the one people visit. That's the point, but worth noting.",
+      "Co-op boards are strong here. Buying takes longer and sellers have leverage.",
+      "You're betting on calm over energy. Playgrounds exist but aren't the neighborhood identity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:00.301Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hells-kitchen": {
+    "fitProse": "Hell's Kitchen is a tough fit for the five-year planner. School quality is improving (PS 111, PS 51), and the A/C/E plus 1/2/3 are unbeatable, but the walk-up stock and tourist friction near Times Square wear differently when you're thinking strollers and siblings. If you prize transit over square footage and can stomach the energy, it works until it doesn't.",
+    "tradeoffsForYou": [
+      "Walk-ups dominate. Stroller logistics and third-floor hauls are real.",
+      "Tourist crush near Times Square makes blocks unpredictable with kids.",
+      "Great schools exist, but most families leave for space by kindergarten.",
+      "Unbeatable transit and restaurants, but almost no yards or quiet streets."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:02.851Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "central-harlem": {
+    "fitProse": "Central Harlem offers the space, transit, and five-year horizon math that family planners are searching for. The brownstones are real, the 2/3 gets you to midtown in fifteen minutes, and the per-square-foot gap versus Park Slope or Cobble Hill still opens meaningful daycare or savings runway.",
+    "tradeoffsForYou": [
+      "School quality is improving but still uneven. Research blocks and zones carefully.",
+      "Restaurant and retail density thins out quickly north of 125th.",
+      "Block-by-block character varies. Walk streets multiple times before you sign.",
+      "Still carries perception baggage with family who don't know today's Harlem."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:03.782Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "williamsburg": {
+    "fitProse": "Williamsburg has crossed into family-viable territory. The school scores have climbed (PS 84 and PS 196 both rate well), Domino Park is stroller heaven, and the Whole Foods anchors real infrastructure. The L is your lifeline and single point of failure, which you'll feel every weekend shutdown.",
+    "tradeoffsForYou": [
+      "The L train is the only real option for most of the neighborhood. No backup.",
+      "Energy level is still high. Weekend nights can feel like your 20s, not your 40s.",
+      "Prices now rival Manhattan. You're paying for the brand as much as the place.",
+      "Schools are good but not elite. If that's the goal, you'll keep researching."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:05.597Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "park-slope": {
+    "fitProse": "Park Slope is the family-trajectory pragmatist's textbook answer. Excellent schools, Prospect Park for weekend mornings, brownstone blocks where strollers outnumber taxis, and the F/G trains make the Manhattan commute work. This is the neighborhood you move to because you're planning to stay.",
+    "tradeoffsForYou": [
+      "Real estate priced like you're buying a decade of stability (because you are).",
+      "Weekends skew so family-focused it can feel insular if you crave adult energy.",
+      "Late-night life is minimal. You'll travel for that.",
+      "The Food Coop is legendary but requires work shifts if you join."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:06.850Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brooklyn-heights": {
+    "fitProse": "Brooklyn Heights is the rare neighborhood that already thinks in five-year horizons. The blocks are quiet, the schools are strong, the Promenade is the stroller walk everyone envies, and the 2/3/4/5/R/A/C give you seven ways to Manhattan. You could put down roots here and never have to explain why.",
+    "tradeoffsForYou": [
+      "Some of the most expensive blocks in Brooklyn.",
+      "Weekends feel quiet. Not much street energy or family scene buzz.",
+      "Restaurant and nightlife options thin compared to Park Slope or Cobble Hill.",
+      "The calm you want now might feel isolating when you need community density."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:08.502Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bed-stuy": {
+    "fitProse": "Bed-Stuy offers the space, affordability, and brownstone beauty that make long-term family planning realistic. The A/C lines connect to most of what you need, and the blocks between Stuyvesant and Malcolm X are genuinely gorgeous. Schools are improving but uneven, so research carefully by zone.",
+    "tradeoffsForYou": [
+      "A and C only. You'll need to transfer for most trips.",
+      "Block-by-block variance is real. Walk before you sign.",
+      "School quality is mixed. Public options require homework on your part.",
+      "The neighborhood is still shifting. Some blocks feel settled, others less so."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:09.575Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dumbo": {
+    "fitProse": "DUMBO has excellent schools (PS 8 is a draw), stunning parks, and safe streets, but the family-trajectory math gets hard fast. The footprint is tiny, groceries are limited to Foragers and Empire Stores, and tourist density on weekends rivals a theme park. You'll outgrow it before kindergarten.",
+    "tradeoffsForYou": [
+      "Very small neighborhood. Limited grocery options, limited services.",
+      "Tourist crowds at Brooklyn Bridge Park are constant, especially warm months.",
+      "Among Brooklyn's priciest per-square-foot, and you'll likely need more space soon.",
+      "PS 8 is strong, but middle school likely means moving or commuting."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:12.312Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cobble-hill": {
+    "fitProse": "Cobble Hill is built for the five-year plan. Top-tier school ratings, stroller-wide sidewalks, Cobble Hill Park with its bocce courts and toddler-filled sandbox, and a restaurant row on Court Street you'll actually use twice a week. The 12-block scale means you know your neighbors without sacrificing Brooklyn Bridge Park proximity.",
+    "tradeoffsForYou": [
+      "Every subway is a 10-minute walk. Doable with a stroller, but you'll notice.",
+      "Real estate is competitive and expensive. You're paying for the school zone.",
+      "Quiet by design. If you need energy after 9 p.m., head to Carroll Gardens.",
+      "Limited housing turnover. When you find a place, you stay."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:13.029Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bushwick": {
+    "fitProse": "Bushwick is a tough fit for the family-trajectory pragmatist. The creative energy is real and the apartments are big for the price, but school quality is uneven, block-by-block safety perception matters more when you have kids, and the L-train dependence becomes a liability when you're juggling strollers and childcare.",
+    "tradeoffsForYou": [
+      "One train to Manhattan. The L is reliable until it isn't.",
+      "Schools are a research project, not a given.",
+      "Warehouse party noise and family bedtimes don't mix well.",
+      "The blocks you can afford may not be the blocks where you'd feel settled long-term."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:14.008Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brighton-beach": {
+    "fitProse": "Brighton Beach scores surprisingly high on family-trajectory metrics: good school options, affordable co-ops with actual space, and a tight-knit community where people know each other. The Q is a long ride, but it's a seated one, and the boardwalk gives kids something rare in Brooklyn.",
+    "tradeoffsForYou": [
+      "End of the Q line. Budget an hour door-to-door to Midtown.",
+      "Cultural ecosystem is deep but specific (Russian, Ukrainian anchors).",
+      "You'll be explaining where you live to other parents for years.",
+      "Manhattan friends will visit once, for the novelty, then stop."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:15.272Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sheepshead-bay": {
+    "fitProse": "Sheepshead Bay is the rare place where family pragmatism and affordability converge. Real two-bedrooms at prices that let you breathe, the B and Q for Manhattan commutes, and a mixed community that's settled rather than transient. Schools are solid, Marine Park is close, and you can actually picture staying.",
+    "tradeoffsForYou": [
+      "45 to 55 minutes to Midtown on the Q. That's the price of space.",
+      "High-end dining and nightlife are somewhere else entirely.",
+      "Your Manhattan friends will call it 'deep Brooklyn' and mean it.",
+      "Fewer families in your exact cohort than Park Slope or Ditmas Park."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:18.068Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-island-city": {
+    "fitProse": "Long Island City is one of the few neighborhoods where family pragmatists can find genuine two-bedroom space, strong transit (7, E, M, G, F, plus ferry), and waterfront parks without leaving the inner city. School scores are middling but improving, and the newer buildings mean elevators, in-unit laundry, and stroller-friendly lobbies.",
+    "tradeoffsForYou": [
+      "Few long-rooted families. You'll be building community from scratch.",
+      "School options are limited. Many families plan for private or look to Astoria.",
+      "High-rise living means less backyard autonomy, more elevator wait.",
+      "New-build feel. No corner bodega your kid will remember for twenty years."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:19.090Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "astoria": {
+    "fitProse": "Astoria is a family-trajectory pragmatist's rare win: you get materially more space than Brooklyn at the same price, school ratings are solid (0.65), and the cultural depth means you're never bored on a Sunday afternoon. The N/W runs direct to midtown, and Astoria Park is real.",
+    "tradeoffsForYou": [
+      "The N/W can be slow off-peak. Budget extra time for weekend trips.",
+      "Nightlife is thin. Date nights tilt restaurant-heavy.",
+      "Walking distance to trains varies wildly by block. Scout carefully.",
+      "Prestige signaling is low. Your Brooklyn friends will ask why you moved to Queens."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:19.829Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flushing": {
+    "fitProse": "Flushing offers the rare NYC trifecta for family pragmatists: real space at reasonable prices, strong school scores, and a neighborhood that feels rooted rather than transient. The 7 puts you in midtown in 35 minutes, and Flushing Meadows-Corona Park is enormous.",
+    "tradeoffsForYou": [
+      "The 7 is your only subway. No backup line if something goes wrong.",
+      "Street-level density can feel overwhelming, especially with a stroller.",
+      "Far from Manhattan culturally. Your social circle will live here or you'll commute to see them.",
+      "Unless you're part of the East Asian ecosystem, daily errands may feel like navigating someone else's world."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:20.924Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "forest-hills": {
+    "fitProse": "Forest Hills is what you picture when you're planning to stay. The apartments are bigger than Brooklyn equivalents, the E/F get you to midtown in 30-35 minutes, and the school quality and safety scores are exactly why family-trajectory people move here. Tudor blocks, real space, low friction.",
+    "tradeoffsForYou": [
+      "30+ minute commute into Manhattan, every day, for years.",
+      "Dining and nightlife are limited. You'll travel for that energy.",
+      "The quietness is the point, but some weekends you'll feel it.",
+      "You're choosing roots over spontaneity. That's the deal."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:24.143Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "riverdale": {
+    "fitProse": "Riverdale is one of the few places in NYC where a family-trajectory pragmatist can breathe long term without leaving the city. The schools are strong, the single-family homes and co-ops deliver real space, and Van Cortlandt Park plus Wave Hill give kids actual nature. The 1 train is slow, Metro-North is better, and you will probably end up with a car.",
+    "tradeoffsForYou": [
+      "Far from Manhattan. Budget 45+ minutes on the 1, less on Metro-North.",
+      "Dining and nightlife are minimal. You'll drive or order in.",
+      "Car-dependent by NYC standards. Parking exists but you'll need it.",
+      "Suburban quiet is the point, but some find it isolating long term."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:25.026Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "st-george": {
+    "fitProse": "St. George offers what almost nowhere else in NYC can: a three-bedroom with a dishwasher, a short walk to a reliable (if slow) commute to Manhattan, and space to actually raise a family without constant financial anxiety. The ferry is your rhythm, and if you can internalize that, the tradeoff is wildly favorable.",
+    "tradeoffsForYou": [
+      "The ferry is your only path to Manhattan. Plan around the schedule, always.",
+      "Peer social networks thin out quickly. Few families making your move.",
+      "Schools are improving but still lag Brooklyn and Queens options.",
+      "Dinner-and-a-movie requires more forethought than spontaneity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:26.025Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hoboken": {
+    "fitProse": "Hoboken is engineered for the family-trajectory pragmatist. Strong schools, genuinely larger apartments than Brooklyn equivalents, and PATH service that beats the commute from Sunset Park. The waterfront promenade is real infrastructure, not a weekend novelty.",
+    "tradeoffsForYou": [
+      "You'll file NJ taxes and explain to friends why you left the city.",
+      "Weekend nightlife skews younger and louder in pockets near Washington St.",
+      "Daycare and preschool options are good but fewer than Park Slope or Astoria.",
+      "You're crossing state lines for most cultural plans, which adds friction."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:26.589Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jersey-city": {
+    "fitProse": "Jersey City's high family-trajectory score (0.7) isn't an accident. You get materially more space per dollar than Manhattan, genuinely good schools scoring 0.65, and the PATH from Grove St or Exchange Place puts you in lower Manhattan in ten minutes. This is the rare move that buys time and square footage without sacrificing your commute.",
+    "tradeoffsForYou": [
+      "NYC purists will ask why you left. You'll stop caring after six months.",
+      "Beyond downtown, transit thins fast. You'll need to stay near PATH or accept car life.",
+      "NJ tax structure is homework. Property tax, no NYC income tax. Run the numbers.",
+      "Ferry and PATH redundancy is great until one goes down and everyone piles onto the other."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:30.774Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-lee": {
+    "fitProse": "Fort Lee is built for the five-year horizon. School scores are strong, apartments are genuinely bigger than comparable Brooklyn options, and the Korean American infrastructure (H Mart, restaurants, families) gives you a community you can grow into. The GW Bridge buses put you in Midtown in 30 minutes most days.",
+    "tradeoffsForYou": [
+      "You'll need a car for nearly everything outside the bus commute.",
+      "Reads as 'New Jersey' to friends in brownstone Brooklyn.",
+      "Nightlife is minimal. Date nights mean heading back into the city.",
+      "Bus schedules dictate your evening flexibility more than you'd like."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:31.248Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "edgewater": {
+    "fitProse": "Edgewater is purpose-built for the family-trajectory pragmatist. The schools score well, the apartments are large enough to grow into, and the ferry puts you in Midtown in fifteen minutes without the stress of driving. The waterfront promenade gives you outdoor space before your kid can even walk.",
+    "tradeoffsForYou": [
+      "You'll need a car for weekend errands and anything that isn't the ferry or groceries.",
+      "Street life is minimal. Socializing happens in buildings or you drive to it.",
+      "If the ferry isn't running, your commute becomes a bus or Lincoln Tunnel slog.",
+      "Mitsuwa is great, but you're trading NYC's cafe and restaurant density for space."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:32.372Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "palisades-park": {
+    "fitProse": "Palisades Park has infrastructure that matters for the long haul: excellent schools, family-centered Korean community life, and the kind of residential quiet where your kids can grow up bilingual and rooted. The buses to Manhattan work, but you'll want a car for everything else.",
+    "tradeoffsForYou": [
+      "No subway. NJ Transit buses are the commute, and they're subject to traffic.",
+      "Car-dependent for groceries, pediatrician visits, weekend errands.",
+      "Broad Avenue is wonderfully functional, not Instagram-pretty.",
+      "Reads as 'second-tier NJ' to some NYC friends, though the schools tell a different story."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:32.582Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lower-east-side": {
+    "fitProse": "The LES has texture and history, but the family-trajectory math is harder than you'd like. Schools are mixed, walk-ups mean stroller carries, and the weekend night energy that makes the neighborhood iconic is exactly what makes bedtime a negotiation.",
+    "tradeoffsForYou": [
+      "Walk-ups dominate. Fourth-floor carries with stroller and groceries are real.",
+      "Weekend nights are loud. Orchard and Ludlow mean bar crowds until 2 a.m.",
+      "School options require research. Quality varies block by block.",
+      "The F is your main line. Reaching west side playgrounds or pediatricians takes time."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:36.794Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-harlem": {
+    "fitProse": "East Harlem offers real Manhattan space at prices that let you think five years ahead. The 4/5/6 on Lex puts you in Midtown in fifteen minutes, Central Park is your backyard, and the apartment math genuinely works. Schools are improving but uneven, so you'll need to research block by block.",
+    "tradeoffsForYou": [
+      "Schools vary widely. Do the homework on zoning and test scores.",
+      "Block-by-block character swings require careful scouting before signing.",
+      "Transit is mostly one line (Lex). The 2/3 nearby helps but isn't always close.",
+      "Prestige-wise, you'll explain the neighborhood to some friends."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:36.925Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "washington-heights": {
+    "fitProse": "Washington Heights makes sense for the five-year planner. Real closets, pre-war details, and prices that let you breathe while you save for preschool. The A express gets you to midtown faster than people assume, and Fort Tryon Park is one of the best green spaces in Manhattan.",
+    "tradeoffsForYou": [
+      "Block-by-block variance means you need to walk streets before signing.",
+      "School options require research. Public outcomes are mixed by zone.",
+      "You'll explain to friends that no, it's not an hour commute.",
+      "Grocery runs mean Fine Fare or a trek to Trader Joe's in Inwood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:37.850Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hamilton-heights": {
+    "fitProse": "Hamilton Heights offers the rare trifecta for families planning ahead: real bedrooms in pre-war co-ops, solid public school options (PS 145, PS 153), and a neighborhood culture deep enough to stay put through kindergarten and beyond. The A express makes downtown faster than the address suggests, and both Riverside and St. Nicholas parks anchor outdoor life.",
+    "tradeoffsForYou": [
+      "Restaurant pickings are still uneven. You'll cook more than you think.",
+      "Hills matter when you're pushing a stroller uptown from the 1.",
+      "Less of a cohort effect than Park Slope. Fewer 'everyone we know' playdates.",
+      "School quality varies block by block. Research catchment zones carefully."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:39.172Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "inwood": {
+    "fitProse": "Inwood offers what few Manhattan neighborhoods can: real space, actual old-growth forest in Inwood Hill Park, and pre-war apartments large enough for a growing family. The A and 1 both terminate here, which means seats on the way down, and the public school landscape has improved steadily over the past decade.",
+    "tradeoffsForYou": [
+      "You're 40+ minutes from midtown. Remote days will feel like a gift.",
+      "Dining and nightlife are limited compared to lower Manhattan.",
+      "The 1 and A are your only trains. If either goes down, your commute doubles.",
+      "You'll need to get comfortable explaining where you live to friends south of 125th."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:42.211Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "morningside-heights": {
+    "fitProse": "Morningside Heights is a five-year-horizon neighborhood. The schools score well, Riverside Park is a ten-minute walk with real green, and the pre-war co-ops have the kind of space young families can grow into. It's quieter than the rest of the Upper West, which reads as a feature when you're thinking about bedtimes and weekend sanity.",
+    "tradeoffsForYou": [
+      "The 1 is your main subway. The B/C help, but less frequent.",
+      "Empties out in summer when Columbia clears. Ghost town vibes in August.",
+      "Restaurant scene is improving but still thin for date nights.",
+      "Academic-grade pricing means pre-wars aren't the bargain they once were."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:42.995Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattan-valley": {
+    "fitProse": "Manhattan Valley delivers UWS fundamentals (the 1, B, and C, Central and Riverside parks, good schools) at a price point that lets you actually stay when the second kid arrives. The Latin American cultural texture is real, and the northwest corner of Central Park is one of the borough's best-kept secrets for young families.",
+    "tradeoffsForYou": [
+      "Block-by-block variance means scouting is non-negotiable.",
+      "Restaurant scene lags the rest of the UWS. You'll travel for date night.",
+      "Less polished sidewalks and storefronts than the blocks south of 96th.",
+      "Some parents still explain it as 'upper Upper West Side' to relatives."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:45.247Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lincoln-square": {
+    "fitProse": "Lincoln Square scores an 0.85 on school quality and the 1/A/B/C/D lines make commutes bulletproof. The high-rises deliver doorman security and in-building stability, and Riverside Park is close enough for weekend routines. It's optimized for families who plan to stay put.",
+    "tradeoffsForYou": [
+      "Tourist density around Lincoln Center means navigating crowds with strollers.",
+      "High-rise life, not brownstone stoops. Block character is institutional.",
+      "Premium pricing: you pay for the anchor and the schools.",
+      "Limited space per dollar compared to outer boroughs or northern Manhattan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:47.898Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yorkville": {
+    "fitProse": "Yorkville is one of the few places in Manhattan where a family-trajectory pragmatist can actually exhale. Pre-war space at prices meaningfully below prime UES, Carl Schurz Park for the daily 4pm circuit, and school ratings that let you stay through elementary without rethinking your life.",
+    "tradeoffsForYou": [
+      "The Q is fine but the 4/5/6 on Lex is still your workhorse for most trips.",
+      "Dining is aggressively quiet. You'll subway downtown for date night.",
+      "Residential to the point of sleepy. That's the deal.",
+      "Lower prestige tax than prime UES, but some friends will ask where Yorkville is."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:48.861Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattanville": {
+    "fitProse": "Manhattanville offers the space and institutional stability that make a five-year plan feel doable. Pre-war apartments are genuinely bigger, Riverside Park is your outdoor living room, and the 1 train plus future Columbia growth give you a real anchor. Schools are improving as the neighborhood shifts.",
+    "tradeoffsForYou": [
+      "The 1 is your primary train. No cross-Harlem express options.",
+      "Restaurant and retail scene is still thin, institutional-flavored.",
+      "You're betting on Columbia's expansion to lift amenities and schools further.",
+      "Perceived distance from downtown means some friends won't visit often."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:51.223Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carnegie-hill": {
+    "fitProse": "Carnegie Hill is almost purpose-built for the five-year horizon. The private school density is unmatched, the 4/5/6 and Q lines get you where you need to go, and the pre-war co-ops anchor the kind of residential calm that makes family life sustainable. You're paying for permanence.",
+    "tradeoffsForYou": [
+      "Among the most expensive blocks in Manhattan, full stop.",
+      "The quiet can feel isolating if you're home all day with toddlers.",
+      "Restaurant and nightlife options thin out fast north of 86th.",
+      "Block boundaries matter. A few avenues east and you're in a different neighborhood entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:52.746Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "midtown-east": {
+    "fitProse": "Midtown East is a paradox for family planners: superb transit (4/5/6, E/M, Grand Central), genuinely quiet residential blocks near Sutton Place, and solid schools. But weekend amenities are thin, parks are limited, and stroller-friendly density is low. You'll lean on other neighborhoods for community.",
+    "tradeoffsForYou": [
+      "Weekend streets feel corporate and empty. Families cluster elsewhere.",
+      "Parks are small. You'll Metro-North to bigger green space regularly.",
+      "Excellent schools, but fewer young families than on the Upper East Side.",
+      "Apartment hunting is a maze: prewar gems mixed with sterile high-rises."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:53.996Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stuyvesant-town": {
+    "fitProse": "Stuyvesant Town is the rare Manhattan address that actually makes sense when you're modeling five years out. Stabilized rentals with real rooms, internal playgrounds you can see from your window, and the L and 6 put you in Union Square or Midtown in minutes. If you want to raise a toddler without leaving the city, this is the template.",
+    "tradeoffsForYou": [
+      "You're renting, not building equity. That matters to some trajectories.",
+      "Feels more planned-community than organic neighborhood.",
+      "L train is your primary line. It's reliable but not redundant.",
+      "Waitlists and lottery systems mean timing your move takes patience."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:54.947Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "murray-hill": {
+    "fitProse": "Murray Hill and Kips Bay are hard to recommend for family trajectory. The housing stock is there (co-ops, condos, decent space), but the schools are mid-tier at best and the street energy is post-collegiate. You'll find yourself leaving the neighborhood for the parts of parenting that matter most.",
+    "tradeoffsForYou": [
+      "School quality is middling. Most families with options leave by kindergarten.",
+      "Playgrounds are sparse. Madison Square is a schlep, St. Vartan is small.",
+      "The vibe is bro-y and transient. Few families stay rooted here.",
+      "Great central location and Grand Central access, but that won't fix the schools."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:57.171Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich-village": {
+    "fitProse": "Greenwich Village has excellent schools (including private options), deep transit redundancy (A/C/E, B/D/F/M, 1, PATH), and quiet townhouse blocks north of Washington Square. The family-trajectory question is space: pre-war apartments run small, and what's big enough for three kids costs what you'd pay for a brownstone in Brooklyn.",
+    "tradeoffsForYou": [
+      "NYU crowds and tourists mean stroller navigation requires patience and route planning.",
+      "Two-bedroom units large enough for a growing family are rare and expensive.",
+      "Playgrounds exist but Washington Square can feel like a college quad, not a family park.",
+      "If you need a car, street parking is a daily negotiation and garage spots cost $600+/month."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:24:59.567Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "soho": {
+    "fitProse": "SoHo's loft bones and prestige are real, but family-trajectory pragmatists will notice the mismatch quickly. The schools (nearby PS 130, Soho Charter) are solid, but there's almost no parent infrastructure. Weekend foot traffic means you're navigating strollers through retail tourists, and grocery runs require planning.",
+    "tradeoffsForYou": [
+      "Among the most expensive per square foot in the city.",
+      "Daily-life errands (drugstore, pediatrician, playground) require real effort.",
+      "Weekend sidewalks are tourist-retail dense, not stroller-friendly.",
+      "The loft aesthetic is beautiful but often means old buildings with maintenance quirks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:00.416Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chinatown": {
+    "fitProse": "Chinatown is a harder fit for the family-trajectory pragmatist unless you're anchored to the East Asian cultural ecosystem. The schools (PS 124, PS 130) pull families who want that immersion, and transit is genuinely excellent. But the apartment stock is old, small, and mostly walk-ups, which makes the stroller years tough.",
+    "tradeoffsForYou": [
+      "Most units are tenement walk-ups. Four flights with a stroller is the reality.",
+      "Tourist crowds on Canal mean weekend errands require patience.",
+      "Space is tight. If you need a nursery and a home office, look elsewhere.",
+      "The cultural depth is real, but only if that specific ecosystem is your anchor."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:01.308Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "weehawken-port-imperial": {
+    "fitProse": "Weehawken checks the boxes that matter most when you're building toward a family life: actual space, low friction, strong schools, and the Hudson River Walkway for weekend mornings. The Port Imperial ferry runs every few minutes to Midtown, and you get skyline views without the Manhattan rent or noise floor.",
+    "tradeoffsForYou": [
+      "Ferry and bus only. No PATH or subway if the boat stops running.",
+      "Street life is minimal. Your world is towers, riverwalk, and car trips.",
+      "You'll explain to friends why you moved to New Jersey.",
+      "School quality is good but you're betting on NJ districts, not NYC magnets."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:03.598Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenpoint": {
+    "fitProse": "Greenpoint threads the needle for families looking to stay urban without fighting crowds or trains. The G is slow but workable, McCarren and the waterfront parks are legitimately great, and PS 110 and PS 34 pull parents from across Brooklyn. The Polish bakery corridor on Manhattan Ave gives you actual neighborhood texture as the babies arrive.",
+    "tradeoffsForYou": [
+      "G-train dependence means longer commutes. Ferry helps but runs limited hours.",
+      "Gentrification has pushed rents closer to Williamsburg than you'd expect.",
+      "Fewer preschool and childcare options than Park Slope or Cobble Hill.",
+      "Peninsula geography means you're not passing through to anywhere else."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:06.761Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bay-ridge": {
+    "fitProse": "Bay Ridge is one of the rare Brooklyn neighborhoods that still feels like a place you can stay. Real houses, strong schools, a walkable waterfront, and a community that runs multigenerational. The R is the only subway and it's slow, but families here plan around cars and express buses.",
+    "tradeoffsForYou": [
+      "R train only. Commute to Manhattan will be 45+ minutes most days.",
+      "You'll need a car or get comfortable with express buses for flexibility.",
+      "Nightlife and restaurant scene is family-focused, not couple-nights-out focused.",
+      "Far enough that visiting friends in North Brooklyn or Manhattan becomes a small expedition."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:06.772Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "crown-heights": {
+    "fitProse": "Crown Heights checks the pragmatist boxes: four subway lines, Prospect Park, Botanic Garden access, and real brownstones with room to grow. Schools are mixed (PS 9, PS 316 score well), and the blocks south of Eastern Parkway skew quieter and more stroller-dense.",
+    "tradeoffsForYou": [
+      "Block-by-block variance matters more when you're planning playdates and school routes.",
+      "Real estate has shifted. Old affordability narratives no longer hold.",
+      "Late-night grocery and childcare infrastructure are uneven by micro-zone.",
+      "You'll need to research schools carefully. Quality jumps by zoning line."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:06.968Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-heights": {
+    "fitProse": "Prospect Heights is exactly what family pragmatists want: five subway lines at Atlantic-Barclays, Prospect Park for weekends, and PS 9, PS 282, and the Brooklyn Museum anchoring daily life. The housing stock is real (brownstones, co-ops, condos), and you're not paying full Park Slope premiums for nearly the same setup.",
+    "tradeoffsForYou": [
+      "Vanderbilt and Flatbush get loud on weekends. Not sleepy.",
+      "Still expensive. You're saving versus Park Slope, not versus Queens.",
+      "The footprint is small. You'll learn every block in six months.",
+      "School demand is fierce. Plan your address and timing early."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:09.992Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-greene": {
+    "fitProse": "Fort Greene is built for the family-trajectory pragmatist. The Park is real, the Greenmarket is Saturday ritual, and ten subway lines at Atlantic-Barclays mean you can stay put as school zones, work commutes, and toddler schedules shift. The brownstones hold their value, and the blocks have depth.",
+    "tradeoffsForYou": [
+      "Affordability has left the building. Expect to stretch your budget.",
+      "School zoning is contested and changes. Research carefully before buying.",
+      "Atlantic-Barclays foot traffic on game nights is chaotic with strollers.",
+      "Gentrification has reshaped the neighborhood fast. Cultural continuity is fragile."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:11.907Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "clinton-hill": {
+    "fitProse": "Clinton Hill is purpose-built for the five-year horizon. The brownstone blocks are calm enough for a toddler, school scores are strong, and the Pratt presence means a creative-class community that won't feel like an off-ramp from life. You can actually imagine staying.",
+    "tradeoffsForYou": [
+      "C and G only. No express, no redundancy if one goes down.",
+      "Quieter than Fort Greene. Less spontaneous street life.",
+      "Stroller-friendly but not as dense with family infrastructure as Park Slope.",
+      "Resale depends on buyers valuing calm over convenience."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:12.198Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-williamsburg": {
+    "fitProse": "East Williamsburg offers more space per dollar than prime Williamsburg, and the school scores are surprisingly decent for a creative-industrial zone. But the family-trajectory fit is marginal: industrial blocks, L-train dependence, and late-night noise make this a place you'd leave once the second kid arrives.",
+    "tradeoffsForYou": [
+      "The L is your only real line, and weekend service is unpredictable.",
+      "Industrial blocks mean stroller routes require planning, green space is scarce.",
+      "Late-night noise near the L corridor can wake toddlers.",
+      "School quality is decent now but families tend to move as kids age."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:13.373Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ditmas-park": {
+    "fitProse": "Ditmas Park is one of the rare NYC neighborhoods where you can raise kids in a detached Victorian house with a real yard, stay on the Q to Union Square in 35 minutes, and still send them to public schools people actually talk about. The blocks south of Cortelyou feel suburban but rooted, not isolated.",
+    "tradeoffsForYou": [
+      "Q is your only subway. If it goes down, you wait or you drive.",
+      "Restaurants cluster on Cortelyou. The rest is residential quiet.",
+      "Deep Brooklyn geographically. Friends in Manhattan will joke about the commute.",
+      "House prices are lower than brownstone Brooklyn, but maintenance is real."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:16.038Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-lefferts-gardens": {
+    "fitProse": "PLG gives you the five-year math: pre-war apartments and townhouses on the park edge, prices still below prime Brooklyn, and public elementary schools that families actually move here for. The B/Q and 2/5 work for commuting, and the block-by-block variance means you can choose your noise level.",
+    "tradeoffsForYou": [
+      "B/Q is your main line. The 2/5 nearby adds backup but it's not door-to-door.",
+      "Block character varies sharply. Scout specific streets before signing.",
+      "Restaurant and retail still patchy compared to Park Slope next door.",
+      "School quality means competition. Get on waitlists early."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:18.187Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "windsor-terrace": {
+    "fitProse": "Windsor Terrace is one of the strongest five-year bets in Brooklyn. The family-life infrastructure is real (sidewalk width, school options, stroller-friendly blocks), Prospect Park is your backyard, and you're paying 15 to 20 percent less than Park Slope for the same trajectory.",
+    "tradeoffsForYou": [
+      "Only the F and G. If one goes down on weekends, you wait.",
+      "Dining and nightlife thin out fast. You'll cross into Park Slope or Kensington often.",
+      "Small footprint means fewer preschool and daycare slots than Park Slope proper.",
+      "You'll explain where you live. Most people know Park Slope, not Windsor Terrace."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:18.816Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sunnyside": {
+    "fitProse": "Sunnyside is built for the five-year horizon. Pre-war co-ops with actual bedrooms, Sunnyside Gardens blocks where kids can bike, the 7 train to midtown in twenty minutes, and schools that work. You can picture a stroller, a second kid, and still affording to stay.",
+    "tradeoffsForYou": [
+      "The 7 is your workhorse. When it's delayed, you feel it.",
+      "Manhattanites think you live far. You'll explain Queens geography often.",
+      "Dining is good and local, not destination. Date nights may mean traveling.",
+      "Sunnyside Gardens townhouses are lovely but competitive and pricey."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:19.890Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "woodside": {
+    "fitProse": "Woodside gives you the fundamentals: real space, LIRR plus the 7 for Manhattan, and schools that work for families who care more about community than rankings. The housing stock is more single-family and co-op than rental, and prices still make sense for someone planning to stay.",
+    "tradeoffsForYou": [
+      "The 7 is your workhorse. M/R is a walk, and you'll feel that some mornings.",
+      "Roosevelt Avenue is loud, dense, and not the backdrop you daydream about for a stroller walk.",
+      "Cultural density is real but mostly Latin American and South Asian, not a universal playgroup match.",
+      "Less polished than Sunnyside. You'll explain where you live more than you'd like."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:22.803Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood": {
+    "fitProse": "Ridgewood offers the family-trajectory pragmatist a solid foundation: apartments are bigger than Bushwick for less money, the L, M, and J/Z give you redundancy, and school quality is climbing as young families arrive. It's not yet the finished product, but that's part of the affordability math.",
+    "tradeoffsForYou": [
+      "Restaurant and retail scene is improving but still uneven across blocks.",
+      "Commute to Manhattan jobs runs 40+ minutes from most addresses.",
+      "You're early. The family infrastructure is growing but not yet built out.",
+      "Forest Park is lovely, but hyperlocal playgrounds and stroller-friendly cafes are hit or miss."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:24.079Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rego-park": {
+    "fitProse": "Rego Park is built for the long game. Big apartments, real family-life infrastructure, strong public schools (PS 139, IS 93), and a community that actually stays. The M/R gets you to midtown, and you can anchor your kids' childhoods here without wondering if you'll need to flee in three years.",
+    "tradeoffsForYou": [
+      "The M/R is reliable but painfully slow. Budget 40+ minutes to Manhattan.",
+      "Cultural texture is deeply specific. If you're not plugged into the Bukharian or Russian-speaking worlds, you may feel adjacent.",
+      "Reads as suburban. If you need to feel urban energy daily, you'll miss it.",
+      "Nightlife is nonexistent. Date nights mean leaving the neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:26.375Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "kew-gardens": {
+    "fitProse": "Kew Gardens is nearly a perfect match for the family-trajectory pragmatist. Single-family Tudors, a strong Orthodox community, excellent public schools (PS 99 ranks high), and Forest Park a ten-minute walk. The E/F is a real subway, not a half-measure commuter rail, and you can live here in a house.",
+    "tradeoffsForYou": [
+      "Subway is a 10 to 15 minute walk from most blocks, not at the corner.",
+      "Dining and nightlife are minimal. You'll go to Forest Hills or Manhattan.",
+      "It reads as suburban. Friends from Brooklyn will notice.",
+      "If you're not part of the Orthodox community, social density skews elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:26.444Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bayside": {
+    "fitProse": "Bayside is the rare NYC neighborhood that asks you to think in decades, not years. Single-family homes, top-tier zoned schools, and the LIRR to Penn in 25 minutes give you suburban scale with city-limit tax benefits. H Mart anchors daily life, and Bell Boulevard handles errands.",
+    "tradeoffsForYou": [
+      "You'll need a car for most daily routines. Subway access is poor.",
+      "Reads as Long Island to Manhattan friends. You'll explain your choice often.",
+      "The calm is real, but creative energy and nightlife live elsewhere.",
+      "LIRR monthly passes add up. Budget $300+ per commuter."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:28.340Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jackson-heights": {
+    "fitProse": "Jackson Heights has the bones for a long family stay: the landmarked garden co-ops offer real space, the 7/E/F/M/R at Roosevelt mean you're never stuck, and the cultural infrastructure (groceries, language communities) is deeper than almost anywhere in NYC. School zoning is contested, but many families dig in.",
+    "tradeoffsForYou": [
+      "Co-op boards add months and uncertainty to buying.",
+      "Roosevelt Avenue is loud and dense. The garden blocks are quiet, but you'll cross it.",
+      "School assignments are fractious. Research carefully or plan private.",
+      "Cultural diversity is extraordinary but prestige signaling is zero."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:30.740Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "elmhurst": {
+    "fitProse": "Elmhurst gives you the five-year plan: bigger apartments than Manhattan at half the price, real school options (PS 13, PS 89), and the 7/E/F/M/R get you to midtown in 25 minutes. The pan-Asian and Latin American grocery density means you can raise kids with actual food culture, not just Whole Foods.",
+    "tradeoffsForYou": [
+      "Roosevelt Ave is high-friction. Stroller navigation requires patience.",
+      "Green space is limited. Elmhurst Park is functional, not magical.",
+      "Manhattanites will ask 'where is that?' for years.",
+      "School quality varies block by block. Research carefully."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:32.211Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "battery-park-city": {
+    "fitProse": "Battery Park City is the rare Manhattan neighborhood where five-year planning actually makes sense. Real square footage, the Esplanade for every stroller stage, P.S. 89 feeding Stuyvesant, and the 1/A/C/E/PATH hub mean you stay rooted without sacrificing access.",
+    "tradeoffsForYou": [
+      "Weekend quiet borders on suburban. Some families love it, others feel isolated.",
+      "Pricey per square foot even by Manhattan standards.",
+      "Street life is thin. You'll need to leave for errands with texture.",
+      "The bubble reputation is real. Your social world may be other families in the complex."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:32.437Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hudson-yards": {
+    "fitProse": "Hudson Yards is built for adults who want polish and convenience now, but the school-quality score (0.7) and limited residential texture make it a harder sell for the five-year view. The buildings are new, the Whole Foods is there, but you're betting on a neighborhood still learning how to be one.",
+    "tradeoffsForYou": [
+      "Few families around yet. You'll be early to a community that's still forming.",
+      "P.S. 111 is nearby, but the zone and pipeline aren't proven like UWS or Park Slope.",
+      "Tourist crowds at Vessel and the Shed mean stroller navigation is a daily puzzle.",
+      "Premium pricing buys you new construction, but not the depth of a rooted neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:35.099Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roosevelt-island": {
+    "fitProse": "Roosevelt Island is a rare five-year-horizon bet. The F train puts you in Midtown in ten minutes, the apartments are large, the schools are solid, and your kid can ride a bike without white-knuckling it. The tradeoff is real: you live on an island.",
+    "tradeoffsForYou": [
+      "Leaving requires the F, tram, or ferry. Plan accordingly.",
+      "Dining and spontaneous street life are minimal. You'll cook or leave.",
+      "Feels suburban in a way that can read as isolating after a few years.",
+      "The calm is real, but so is the bubble. Not everyone stays long-term."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:36.550Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "nolita-little-italy": {
+    "fitProse": "NoLita has the transit lines, the safety, and the schools (PS 130 draws families), but the housing stock is the wrong shape. Walk-ups with babies are doable for a year or two, but once you're hauling a double stroller up four flights, the charm wears thin fast.",
+    "tradeoffsForYou": [
+      "Almost all walk-ups. No elevator means every trip out is a logistical calculation.",
+      "Tourist crush on Mulberry weekends makes errands with kids a slog.",
+      "Grocery is Whole Foods or Trader Joe's on Bowery. Doable but not abundant.",
+      "Small footprint means limited kid infrastructure (playgrounds, classes, pediatricians)."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:38.631Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flatiron-nomad": {
+    "fitProse": "The transit redundancy is real (six lines at 23rd alone), and Madison Square Park is legitimately lovely. But the family-trajectory score of 0.2 tells the story: this is office-district living, few kids on the sidewalks, and no K-8 zone school parents talk about. You'd be shopping for schools elsewhere or going private from the start.",
+    "tradeoffsForYou": [
+      "Grocery runs mean Whole Foods at Union Sq or Trader Joe's, neither truly local.",
+      "Stroller-sparse. You'll make parent friends in other neighborhoods.",
+      "Office crowds make weekday errands with kids a logistical puzzle.",
+      "Premium pricing for a place you'll likely outgrow when school search begins."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:39.695Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "boerum-hill": {
+    "fitProse": "Boerum Hill is the brownstone Brooklyn you can actually stay in. The blocks are quiet, the schools are strong, and the transit redundancy at Atlantic-Barclays (nine lines) lets both parents commute. Smith Street delivers the dinners, and the footprint is small enough that you know the pharmacist.",
+    "tradeoffsForYou": [
+      "Smaller than Park Slope or Cobble Hill. You'll outgrow the stroller routes fast.",
+      "Pricey for the square footage, especially townhouses.",
+      "Smith Street weekend noise if you're on the wrong block.",
+      "Limited public-school catchment options compared to Park Slope."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:40.693Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carroll-gardens": {
+    "fitProse": "Carroll Gardens is the archetype of the five-year horizon neighborhood. Deep front gardens, blocks you can picture a kid riding a scooter down, schools people actually stay for, and the F/G getting you to Manhattan in under thirty minutes. It's expensive, but so is moving twice.",
+    "tradeoffsForYou": [
+      "One train line (F/G). Redundancy matters more when you have a daycare drop-off window.",
+      "Price per square foot rivals Park Slope. You're paying for stability and infrastructure.",
+      "Restaurant scene is good but not electric. This is a place to nest, not to party.",
+      "The Italian delis and Union Market are charming, but big grocery runs often mean a Trader Joe's drive."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:42.728Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gowanus": {
+    "fitProse": "Gowanus delivers space and proximity at a price family-trajectory households can stomach, but you're betting on a neighborhood still mid-transformation. The F/G/R put you near brownstone Brooklyn anchors (Park Slope, Carroll Gardens), and newer condos offer room to grow. Schools are improving but uneven, and the canal cleanup timeline is a decade-long wildcard.",
+    "tradeoffsForYou": [
+      "You're buying into potential, not proven. School quality varies widely by zone.",
+      "Construction, truck traffic, and industrial blocks remain part of the daily texture.",
+      "Parks are thin. Thomas Greene is small; you'll walk to Prospect or Carroll for real green.",
+      "Stroller-friendly cafes and playgrounds lag the density that's already arrived."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:45.781Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "red-hook": {
+    "fitProse": "Red Hook is for families with real conviction. The waterfront calm, space, and safety scores are real, and the elementary options (PS 15, PS 27) are solid. But you will drive or ferry your way through parenthood, and that needs to be a feature, not a bug.",
+    "tradeoffsForYou": [
+      "No subway. The B61 bus and NYC Ferry are your lifelines, every morning.",
+      "Storm surge risk is real. Sandy flooded streets here in 2012.",
+      "Grocery and pediatrician density pale next to Park Slope or Carroll Gardens.",
+      "If one partner commutes to Midtown daily, the calculus gets hard fast."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:45.817Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tenafly": {
+    "fitProse": "Tenafly is the pragmatist's five-year plan made real. Top-tier zoned schools, single-family homes with actual yards, and cultural anchors (H Mart, synagogues, Korean groceries) that make daily life feel rooted. The 165/166 buses to Port Authority are reliable, and you're raising kids in a place that doesn't require a move when they hit kindergarten.",
+    "tradeoffsForYou": [
+      "No train. The bus commute works, but you're locked into the GW Bridge forever.",
+      "Car-dependent for everything. Grocery runs, playdates, errands.",
+      "Your NYC friends will call this deep suburbs and mean it.",
+      "Resale depends heavily on school reputation staying stellar."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:47.007Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood": {
+    "fitProse": "Englewood is a pragmatic family bet. School quality is solid, the Bergen Performing Arts Center gives cultural gravity, and single-family blocks have the room to grow. Suburban scale with real diversity and the bus to Port Authority is manageable, if not thrilling.",
+    "tradeoffsForYou": [
+      "Bus commute to Manhattan (178/186) adds 20+ minutes vs. train towns.",
+      "Block-by-block variance means you need to scout carefully before buying.",
+      "Car-dependent for errands, school runs, weekend logistics.",
+      "Less name-brand than Tenafly or Ridgewood, which matters at dinner parties."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:48.506Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cresskill": {
+    "fitProse": "Cresskill is built for the five-year horizon. Top-rated schools, single-family yards, low friction, and a quiet Korean American community. The bus to Port Authority works for hybrid schedules, and you can put down roots without Tenafly's price tag.",
+    "tradeoffsForYou": [
+      "You will drive everywhere. No walkable downtown, no corner store.",
+      "NJ Transit bus commute adds 60+ minutes each way on office days.",
+      "Zero nightlife or spontaneous energy. Calm is the whole point.",
+      "Limited dining nearby unless you drive to Fort Lee or Tenafly."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:51.188Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood-cliffs": {
+    "fitProse": "Englewood Cliffs is five-year-plan legible. Single-family estates with strong schools, a tight Korean American community, and the kind of quiet where your kid can bike in the street. The bus over GW Bridge takes patience, but families commit here for a decade.",
+    "tradeoffsForYou": [
+      "You'll drive everywhere. Grocery, playdates, everything requires a car.",
+      "No walkable main street. Community life happens in homes and parks.",
+      "Premium pricing for space and schools. Entry is steep.",
+      "Social fabric runs quieter and more private than Brooklyn family blocks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:51.580Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood-nj": {
+    "fitProse": "Ridgewood is the archetype this archetype was built for. Nationally ranked schools, a direct train to Penn in 50 minutes, and a walkable downtown that feels like a real place. You can stay here from toddler years through high school without second-guessing the foundation.",
+    "tradeoffsForYou": [
+      "You're paying a premium for the school and train combo. Homes aren't cheap.",
+      "Off-peak trains can stretch to an hour or more.",
+      "This is definitively suburban. If you miss urban texture, you'll notice.",
+      "Cultural ecosystem is thin. You'll go elsewhere for museums, theater, or scene."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:52.275Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "paramus": {
+    "fitProse": "Paramus is a five-year-horizon stronghold. The schools are among the best in Bergen County, the single-family homes have real yards, and Van Saun Park anchors weekend life. You'll trade walkability for stability, and GW Bridge buses connect you to the city when you need it.",
+    "tradeoffsForYou": [
+      "You will live in your car. Route 17 is the spine of daily life.",
+      "Almost no spontaneous pedestrian culture. Errands are planned, not strolled.",
+      "Excellent schools and safe streets, but low density means fewer peer families per block.",
+      "The retail sprawl is relentless. It works, but it's not charming."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:54.367Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "millburn-short-hills": {
+    "fitProse": "Millburn and Short Hills are purpose-built for the family-trajectory pragmatist. Top-tier schools, single-family homes with actual yards, and Midtown Direct to Penn in 35 minutes. If you're thinking in five-year horizons, this is where people land when they stop compromising.",
+    "tradeoffsForYou": [
+      "Among the priciest suburbs in the metro. Budget accordingly.",
+      "Calm verges on subdued. Weekend energy is youth sports, not street life.",
+      "You'll meet other families on the same timeline, but cultural scene lives elsewhere.",
+      "Conservative tenor even in diverse pockets. Not everyone's emotional fit."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:56.746Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "maplewood": {
+    "fitProse": "Maplewood is nearly ideal for the family-trajectory pragmatist. The schools are diverse and well-regarded, the Midtown Direct gets you to Penn in thirty minutes, and you'll find detached homes with backyards and a walkable village without Brooklyn pricing. This is what rooting in looks like.",
+    "tradeoffsForYou": [
+      "Your quality of life depends entirely on NJ Transit reliability.",
+      "House prices have climbed sharply as word has gotten out.",
+      "Less name-brand prestige than Westchester, though the schools are excellent.",
+      "You're in the suburbs. If your kids want to feel urban energy, it's a train ride away."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:56.872Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "montclair": {
+    "fitProse": "Montclair is one of the rare places where the five-year horizon actually works. The schools are strong, the downtown is walkable enough to feel rooted, and the Midtown Direct gets you to Penn in under an hour. You can live in a real house and still send your kid to a public school district with actual resources and diversity.",
+    "tradeoffsForYou": [
+      "Premium pricing. You're paying for the schools, culture, and diversity all at once.",
+      "Off-peak trains thin out. Weekend reverse commutes can feel isolating.",
+      "The creative-class vibe is real. If that's not your tribe, it might grate.",
+      "You're in NJ. NYC spontaneity requires planning and a train schedule."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:25:58.751Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "south-orange": {
+    "fitProse": "South Orange is built for the family-trajectory pragmatist. Schools are strong, the Midtown Direct puts you at Penn in under an hour, and the walkable village center means you can actually run errands without the car. The house stock is more accessible than Maplewood next door, and the diversity is real, not performative.",
+    "tradeoffsForYou": [
+      "Your commute is the lifeline. If NJ Transit has a bad week, you feel it.",
+      "Block variance is real. Scout carefully before you buy.",
+      "Less name-brand prestige than Short Hills or Montclair.",
+      "You'll drive to most grocery runs despite the walkable downtown."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:01.782Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "summit": {
+    "fitProse": "Summit is the archetype case for the Family-Trajectory Pragmatist. Top-rated schools, Midtown Direct to Penn in 50 minutes, a walkable downtown, and single-family homes with actual yards. You can live here through elementary, middle, and high school without rethinking the plan.",
+    "tradeoffsForYou": [
+      "50-minute train means leaving early, getting home late.",
+      "Premium pricing. You're paying for schools and the train anchor.",
+      "Less progressive-flavored than Maplewood or Montclair.",
+      "If you want city energy on weekends, you'll need to leave town."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:02.029Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westfield": {
+    "fitProse": "Westfield is one of the few NJ towns that delivers the whole package for family pragmatists: top-rated schools, a walkable downtown with real shops, and single-family homes with backyards. The Raritan Valley Line gets you to Penn in under an hour, and the infrastructure (parks, grocery, pediatricians) is built for families staying put.",
+    "tradeoffsForYou": [
+      "The train to Penn can take 50+ minutes and sometimes requires a transfer.",
+      "Premium pricing. Homes here cost more than many comparable NJ towns.",
+      "Downtown is pleasant but quiet. This is not where you go for creative energy.",
+      "Culturally conservative suburban vibe. Diversity exists but the town reads traditional."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:02.808Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chatham-nj": {
+    "fitProse": "Chatham is nearly a perfect match for the five-year horizon. Top-rated schools, detached homes, a walkable village, Midtown Direct to Penn, and Great Swamp at the doorstep. It's built for exactly this calculus: trade commute time today for stability and school quality tomorrow.",
+    "tradeoffsForYou": [
+      "That 50-minute train ride is real. You'll feel every minute twice a day.",
+      "Premium pricing for every square foot and school ranking point.",
+      "The town reads politically and culturally homogenous.",
+      "Cultural diversity and creative energy live elsewhere in the region."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:04.635Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "scarsdale": {
+    "fitProse": "Scarsdale is the family-trajectory pragmatist's endgame, not their starting point. The schools are among the best in the country, the Metro-North puts you in Grand Central in 35 minutes, and the blocks are wide enough for backyard swings and two-car driveways. This is where you move when you've decided to build for the long arc.",
+    "tradeoffsForYou": [
+      "Premium pricing at every stage: homes, taxes, and everyday life.",
+      "You're leaving city energy behind. Scarsdale is calm by design.",
+      "Social fabric is tight but can feel insular if you arrive without networks.",
+      "Kids will grow up with fewer spontaneous street encounters, more organized playdates."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:07.707Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bronxville": {
+    "fitProse": "Bronxville is built for the family-trajectory pragmatist. One of the top public school systems in the country, Metro-North to Grand Central in 25 minutes, and a walkable downtown you can grow into. The one-square-mile footprint means you know your neighbors and the stroller routes by heart.",
+    "tradeoffsForYou": [
+      "Premium pricing for a very small geography. You're paying for schools and the brand.",
+      "Tiny footprint means limited housing inventory when you want to upsize.",
+      "Prestige-coded in a classical way. Everyone here is on the same life stage.",
+      "Creative energy and cultural variety live elsewhere. This is calm by design."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:07.985Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "larchmont": {
+    "fitProse": "Larchmont is basically the five-year horizon realized. Top-rated Mamaroneck schools, a walkable village with real sidewalks, the Metro-North to Grand Central in thirty minutes, and single-family homes you can actually stay in. The family infrastructure is already here.",
+    "tradeoffsForYou": [
+      "Premium pricing across the board. Homes, taxes, and village coffee all reflect it.",
+      "Off-peak trains can be slow. Plan around rush-hour schedules or drive locally.",
+      "The Sound Shore vibe is classically affluent. If that's not your cultural fit, you'll feel it.",
+      "You're trading current urban energy for long-term rootedness. That's the deal."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:08.357Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rye": {
+    "fitProse": "Rye is the family-trajectory pragmatist's endgame. The schools are among the best in Westchester, the Metro-North puts you in Grand Central in 45 minutes, and the single-family homes are built for staying power. You're buying a decade of stability, not a year of excitement.",
+    "tradeoffsForYou": [
+      "Among the priciest towns in Westchester. Plan accordingly.",
+      "45-minute train commute is real daily time, especially with young kids.",
+      "Country-club conservative. Cultural diversity is limited.",
+      "You're locking into suburban car life. No walkable urban spontaneity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:10.160Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hastings-on-hudson": {
+    "fitProse": "Hastings-on-Hudson is the Westchester archetype for family-trajectory pragmatists. Strong schools, a walkable downtown, MacEachron Waterfront Park for weekends, and Metro-North to Grand Central in 35 minutes. The creative-class community means you won't feel like you moved to a country club.",
+    "tradeoffsForYou": [
+      "Hudson Line is slower than Harlem. Budget 35+ minutes.",
+      "Hilly streets mean some blocks are beautiful but not stroller-friendly.",
+      "Premium pricing for the river-town identity.",
+      "Trader Joe's is in Yonkers, not downtown."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:13.224Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "mamaroneck": {
+    "fitProse": "Mamaroneck is a strong fit for the family pragmatist. Top-tier schools (same district as Larchmont), Metro-North into Grand Central in 40 minutes, Harbor Island Park for weekends, and you're not paying Larchmont premiums. The Latin American community adds texture without diluting the infrastructure you need.",
+    "tradeoffsForYou": [
+      "Block quality varies more than Larchmont. Scout carefully.",
+      "Your commute is the train or nothing. No backup lines.",
+      "Less social prestige than Larchmont/Rye if that matters to your circle.",
+      "Harbor area feels working-class, which is honest but not polished."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:13.675Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "pelham": {
+    "fitProse": "Pelham is what family pragmatists point to when someone says \"you have to leave the city.\" Thirty minutes to Grand Central on Metro-North, top-tier schools, Tudor-revival blocks where strollers own the sidewalks, and a downtown you can walk to. It's compact, expensive, and built for your exact timeline.",
+    "tradeoffsForYou": [
+      "Premium pricing for the proximity. You're paying for those 30 minutes.",
+      "Smaller footprint than New Rochelle or Scarsdale. Less room to roam.",
+      "Classic affluent read. If that's not your vibe, you'll feel it.",
+      "Cultural life is thin. Manhattan is the release valve."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:13.981Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dobbs-ferry": {
+    "fitProse": "Dobbs Ferry is built for the five-year horizon. The school quality is real, the Hudson Line gets you to Grand Central in under an hour, and the river-town walkability means you can still have coffee and errands on foot. It's slightly more affordable than Hastings or Irvington, which matters when you're thinking two kids and a yard.",
+    "tradeoffsForYou": [
+      "The Hudson Line is slower than the Harlem Line. Add 15 minutes each way.",
+      "Small footprint means fewer backup options for schools, pediatricians, activities.",
+      "Dining scene lives on Main Street. You'll exhaust it within a year.",
+      "If one of you works in Midtown and the other in FiDi, the commute asymmetry is real."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:17.196Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "irvington-ny": {
+    "fitProse": "Irvington is built for the five-year horizon. Top-rated schools, single-family homes with yard geometry that works for toddlers and teens, and Metro-North to Grand Central in 40 minutes. The village is walkable enough for weekend errands, and the river views remind you why you left Brooklyn.",
+    "tradeoffsForYou": [
+      "Premium pricing. This is one of the most expensive river towns.",
+      "Hills mean not every block works for stroller years or aging parents.",
+      "Dining and weekend life are limited. You'll drive to Tarrytown or Dobbs.",
+      "Your social life will be other families. The village is quiet by design."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:19.147Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tarrytown": {
+    "fitProse": "Tarrytown is built for the family-trajectory pragmatist. The schools score high, the Metro-North Hudson Line gets you to Grand Central in under an hour, and the downtown is walkable enough that you can imagine a decade here without cabin fever.",
+    "tradeoffsForYou": [
+      "The Hudson Line runs express peak hours only. Off-peak can stretch 70 minutes.",
+      "Bridge traffic (Cuomo/Tappan Zee) shapes weekend logistics.",
+      "Tourist load around Sleepy Hollow in summer and fall.",
+      "Trader Joe's and better dining require a car or careful trip planning."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:19.151Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "white-plains": {
+    "fitProse": "White Plains is built for the pragmatic family planner. Metro-North to Grand Central is reliable, the school zones include some of Westchester's strongest options, and you can choose between single-family blocks and downtown apartments as your needs shift. The infrastructure is all here.",
+    "tradeoffsForYou": [
+      "School quality varies sharply by zone. Research attendance boundaries early.",
+      "Downtown feels more commercial center than village green.",
+      "Less name-brand cachet than Scarsdale or Bronxville among peers.",
+      "You'll drive more than you expect, even with Metro-North nearby."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:19.934Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yonkers-ny": {
+    "fitProse": "Yonkers is a pragmatist's bet. You get Westchester proximity, Metro-North to Grand Central, real yards or multi-bedroom space, and prices that let you save for preschool or a second kid. The school research is homework you'll do block by block, not district-wide.",
+    "tradeoffsForYou": [
+      "School quality varies sharply. You'll map attendance zones before you sign a lease.",
+      "You're outside the Westchester prestige bubble. That matters to some families.",
+      "Block-by-block variance means scouting in person, multiple times.",
+      "Metro-North works, but you're trading subway frequency for affordability."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:23.252Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chappaqua": {
+    "fitProse": "Chappaqua is built for families thinking in decades, not years. The school district ranks among the nation's best, the lots are large enough for swing sets and vegetable gardens, and Metro-North puts you in Grand Central in 50 minutes. This is a place you can root into without wondering if you'll outgrow it.",
+    "tradeoffsForYou": [
+      "The commute is real. 50 minutes each way, plus driving to the station.",
+      "You'll drive everywhere. Groceries, playdates, everything requires a car.",
+      "Premium pricing for the school district. Expect estate-scale costs.",
+      "Village center is quiet. This is suburban calm, not walkable urbanity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:24.343Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "great-neck": {
+    "fitProse": "Great Neck is built for the family trajectory you're planning. Top-tier schools, a 25-minute LIRR to Penn, and a rare mix of single-family homes and co-ops that families actually stay in. The cultural density (Persian-Jewish, Korean American) gives kids real roots, not just a zip code.",
+    "tradeoffsForYou": [
+      "Premium pricing across the board: homes and co-ops command a school-district tax.",
+      "Off-peak LIRR can slow to 40+ minutes; reverse commutes are trickier.",
+      "Walkable downtown is real but modest; most errands still need a car.",
+      "If you want Brooklyn-style spontaneity, this isn't it. Calm wins here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:25.643Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhasset": {
+    "fitProse": "Manhasset is five-year planning in built form. The schools are among the best on Long Island, the LIRR Port Washington line puts you in Penn in 30 minutes, and the lots are large enough to hold swing sets, playrooms, and the occasional visiting in-law without rearranging your life.",
+    "tradeoffsForYou": [
+      "Premium pricing for houses and property taxes. You're paying for the district.",
+      "Quiet to the point of subdued. Dining variety is limited, nightlife nonexistent.",
+      "Classically conservative-affluent. Less diversity than Brooklyn or Queens.",
+      "You'll need a car for groceries, pediatrician runs, weekend errands."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:26.712Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "port-washington": {
+    "fitProse": "Port Washington is textbook for the five-year horizon. Top-rated schools, a walkable Main Street with a real harbor, the LIRR to Penn in 35 minutes, and family-life infrastructure that actually works. The Korean American community adds texture to what could otherwise feel homogenous.",
+    "tradeoffsForYou": [
+      "35-minute LIRR commute adds up over years, especially with service gaps.",
+      "Dining beyond Main Street is thin. You'll drive to Manhasset or cook at home.",
+      "Home prices reflect the school quality. Budget accordingly.",
+      "Cultural scene is village-scale. Manhattan trips will still be part of the plan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:29.011Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roslyn": {
+    "fitProse": "Roslyn is built for the five-year horizon. The schools are nationally ranked, the homes are large enough to grow into, and the downtown has the walkable errands that make suburban life feel less isolating. You'll drive to the LIRR, but the tradeoff is space and stability.",
+    "tradeoffsForYou": [
+      "You'll need two cars. Everything outside the village core requires driving.",
+      "Premium pricing reflects school quality. Expect to pay for the district.",
+      "Social life skews affluent and established. Less diverse than urban Brooklyn.",
+      "The LIRR station isn't walkable. Plan for parking or drop-offs."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:30.720Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "garden-city": {
+    "fitProse": "Garden City is a five-year-horizon home. Top-tier schools, single-family homes with actual yards, and the LIRR to Penn in 40 minutes. The infrastructure is built for family life, not for experimentation, and that's exactly the point.",
+    "tradeoffsForYou": [
+      "Premium pricing for the school quality and space you want.",
+      "Conservative-affluent feel. Diversity is not a selling point here.",
+      "Limited walkable amenities. You'll drive for most errands.",
+      "One commute option: the LIRR. No subway backup plan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:31.004Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rockville-centre": {
+    "fitProse": "Rockville Centre is the rare Long Island town built for your timeline. The downtown is actually walkable (restaurants, errands, the Children's Museum), the LIRR Babylon Branch gets you to Penn in forty minutes, and the schools score as high as you need them to. You can live here now and still live here in five years.",
+    "tradeoffsForYou": [
+      "LIRR is your only commute lifeline. Off-peak trains crawl.",
+      "Less prestige-coded than the North Shore towns your friends are considering.",
+      "Classic suburban fabric with downtown energy, not urban density.",
+      "Housing stock is competitive; good single-family moves fast."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:32.940Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-beach-ny": {
+    "fitProse": "Long Beach is one of the only places in the NYC metro where you can genuinely walk to groceries, schools, and the ocean without getting in a car. The LIRR to Penn takes 50 minutes, schools are solid, and the boardwalk becomes your daily park. You're thinking five years ahead, and this place stays functional as kids arrive.",
+    "tradeoffsForYou": [
+      "50-minute LIRR commute, every day, both ways.",
+      "Sandy flooded much of the city. Flood insurance is real money.",
+      "Summer crowds are part of the deal. Winter is yours.",
+      "Beach-town housing stock can be quirky or aging compared to newer suburbs."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:34.725Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stamford": {
+    "fitProse": "Stamford is one of the few CT options that lets you stay rooted through multiple life stages. Metro-North to Grand Central is 55 minutes, the school quality scores are strong in the right zones, and the family infrastructure (parks, groceries, pediatricians) is built out. You can raise kids here without feeling exiled.",
+    "tradeoffsForYou": [
+      "Block-by-block variance means you need to research school zones carefully.",
+      "55-minute commute is manageable but adds up over years.",
+      "Downtown energy is real but reads more corporate plaza than neighborhood corner.",
+      "Less walkable charm than the postcard CT towns, more practical than pretty."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:37.373Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "darien": {
+    "fitProse": "Darien is built for the five-year horizon. The schools are legitimately top-tier, the lots are large enough for swing sets and climbing structures, and the Metro-North to Grand Central runs reliably if not quickly. You'll stay here through middle school without question.",
+    "tradeoffsForYou": [
+      "Metro-North is an hour each way. That's 10 hours a week you won't get back.",
+      "Strictly car-dependent. Every errand, every playdate, every drop-off requires a car.",
+      "Among the priciest towns in CT. Budget for property taxes accordingly.",
+      "Quiet to the point of isolation. Your social life will be intentional, not accidental."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:38.679Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich": {
+    "fitProse": "Greenwich is built for the five-year (and fifteen-year) plan. Top-tier public schools, estate-scale homes with yards that actually work for kids, and Metro-North to Grand Central in under an hour. The infrastructure for family life is real: parks, sidewalks wide enough for double strollers, and a town that assumes you're staying.",
+    "tradeoffsForYou": [
+      "Among the most expensive towns in the tri-state. Entry prices reflect that.",
+      "The 50-minute train is manageable but not quick. Budget commute time carefully.",
+      "Cultural and demographic diversity is limited. Classic Connecticut shape.",
+      "Car-dependent for nearly everything outside Greenwich Avenue."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:41.078Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westport": {
+    "fitProse": "Westport is built for the family pragmatist. Top-tier schools, real downtown walkability, beach access at Compo, and Metro-North to Grand Central mean you can root here long-term. The 75-minute commute is real, but the infrastructure (strollers, playgrounds, schools) is why people stay through high school.",
+    "tradeoffsForYou": [
+      "That commute is 75 minutes each way. Plan your work life accordingly.",
+      "Premium pricing rivals Brooklyn brownstone blocks.",
+      "If you need urban diversity or energy day-to-day, this will feel quiet.",
+      "You're buying into CT car life, even with the walkable downtown."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:43.481Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "new-canaan": {
+    "fitProse": "New Canaan offers the ceiling of what the family-trajectory pragmatist usually considers: top-tier public schools, estate-scale yards, Waveny Park, and a town you won't outgrow. The Metro-North branch line (75 min to Grand Central via Stamford) and car dependence are the obvious tradeoffs for staying power.",
+    "tradeoffsForYou": [
+      "Branch-line commute means ~75 min each way, transfer at Stamford required.",
+      "Zero walkable errands. You will drive everywhere except downtown.",
+      "Premium pricing reflects the school quality and space you're paying for.",
+      "Cultural and creative energy live elsewhere. This is a raising-kids place."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:48.384Z",
+    "model": "claude-sonnet-4-5"
+  }
+}

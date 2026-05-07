@@ -1,0 +1,1467 @@
+{
+  "upper-west-side": {
+    "fitProse": "Upper West Side is nearly perfect for the nature-hungry urbanist. Central Park and Riverside Park bracket the avenues, the cross streets are legitimately tree-lined, and the 1/2/3 or B/C put you wherever you need to be. You'll never feel trapped by concrete here.",
+    "tradeoffsForYou": [
+      "Real estate priced for people who want to settle, not experiment.",
+      "Quieter than other Manhattan neighborhoods. Trade energy for green.",
+      "The parks are so good you may never explore the rest of the city.",
+      "Family density means stroller traffic on weekend park paths."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:57.235Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-east-side": {
+    "fitProse": "The Upper East Side gives you Central Park on one side and Carl Schurz on the other, with quiet blocks in between. For a nature-hungry urbanist, that's the real deal. You can run loops in the park before work and still be on the 4/5/6 in minutes.",
+    "tradeoffsForYou": [
+      "Transit is solid but not spectacular. The Lex gets you there, the Q helps, but no express west.",
+      "The calm here is real, which means less street life than you might want.",
+      "Prestige and polish come standard. If that's not your vibe, it'll show.",
+      "Central Park access is world-class, but you'll pay a premium for proximity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:57.927Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "west-village": {
+    "fitProse": "Hudson River Park is a mile-long green ribbon along the West Village waterfront, perfect for morning runs and sunset walks. Washington Square gives you old-growth canopy and benches where you can actually hear birds. The human-scale streets mean more sky overhead than Midtown.",
+    "tradeoffsForYou": [
+      "You're still in Manhattan, so the greenery is hard-won and you share it with tourists.",
+      "Parks are nearby, but actual trees on residential blocks are sparse compared to Brooklyn.",
+      "The price premium partly buys proximity to the river. You'll pay for that access.",
+      "Weekend crowds at Hudson River Park can feel more like a promenade than solitude."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:58.068Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-village": {
+    "fitProse": "Tompkins Square is your main green anchor, and it's real park, not just a plaza. But the East Village is dense, loud, and built for energy over sky. You'll get morning benches under honey locusts, but the canopy ends fast and the streets hum all day.",
+    "tradeoffsForYou": [
+      "Tompkins Square is lovely but small. No Prospect Park scale here.",
+      "The L and F don't route you quickly to bigger parks uptown or in Brooklyn.",
+      "Street noise and bar crowds mean fewer quiet mornings with windows open.",
+      "If you need weekly doses of forest or waterfront, you'll be commuting for them."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:58.789Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tribeca": {
+    "fitProse": "Tribeca delivers Hudson River Park access and Battery Park within walking distance, but the nature-hungry urbanist will feel the trade. The streets are quiet and beautiful, yes, but the green you get is river esplanade, not sprawl-under-a-tree park space.",
+    "tradeoffsForYou": [
+      "River walks are world-class, but true park acreage requires a commute north.",
+      "The cobblestones are gorgeous but the canyon streets don't let much sky in.",
+      "Among the priciest per square foot in the city.",
+      "Weekend emptiness is peaceful but can feel sterile if you crave park-goer energy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:03.548Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chelsea": {
+    "fitProse": "Chelsea delivers what the nature-hungry urbanist needs most: the High Line and Hudson River Park form a continuous green corridor that runs the length of the neighborhood. Morning runs along the water, gallery walks under wisteria, and the A/C/E plus the 1 mean you never sacrifice transit for sky.",
+    "tradeoffsForYou": [
+      "Tourist crowds on the High Line can overwhelm the calm on weekends.",
+      "The green is linear (a park, not a forest). You're always aware it's designed.",
+      "Western blocks near Hudson Yards feel more plaza than park.",
+      "Rents reflect the waterfront premium. You pay for proximity to all that air."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:04.285Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fidi": {
+    "fitProse": "The waterfront promenade wraps around the bottom of Manhattan like a gift. Battery Park and the Hudson River Park esplanade give you miles of unbroken sky, water views, and morning light. The parks are real, the ferry adds optionality, and you're not giving up transit to get it.",
+    "tradeoffsForYou": [
+      "Weekends feel hollow. The office crowds vanish and restaurants close early.",
+      "Tourist density near the 9/11 Memorial can be relentless in good weather.",
+      "Trees are limited to the parks. The blocks themselves are canyon, not canopy.",
+      "You'll need to leave the neighborhood for the texture older parts of Manhattan offer."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:04.336Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gramercy": {
+    "fitProse": "Gramercy delivers a real surprise for the nature-hungry: Madison Square Park three blocks west, Union Square four blocks north, and low-rise blocks with actual sky between buildings. The private park is mostly off-limits, but the neighborhood's quiet residential streets give you breathing room most of midtown can't.",
+    "tradeoffsForYou": [
+      "The private park itself is keyed only to residents. You'll admire it through the fence.",
+      "Madison Square and Union Square are good parks, but neither is your backyard.",
+      "Environmental openness here is more about sky and scale than greenery at your doorstep.",
+      "Subway access is just the 6 on Lex, plus a walk to Union Square for the L/N/Q/R/W."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:05.468Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "williamsburg": {
+    "fitProse": "Williamsburg delivers more waterfront green space than most NYC neighborhoods dream of. Domino Park and the East River State Park ribbons give you uninterrupted sky and water views, and McCarren is a real park with grass and courts and enough room to breathe.",
+    "tradeoffsForYou": [
+      "The L train is your lifeline, and there's no backup when it acts up.",
+      "Waterfront access is spectacular but blocks inland feel dense and building-heavy.",
+      "Weekend crowds in the parks can be intense, especially McCarren in summer.",
+      "You're trading quiet nature for social nature. These parks see heavy use."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:10.398Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "central-harlem": {
+    "fitProse": "Central Park is right there, which is the headline. The northern edge gives you Harlem Meer and the Loch without the tourist crush, and Marcus Garvey Park has real topography and canopy. You get sky, quiet blocks, and the 2/3 downtown in under twenty minutes.",
+    "tradeoffsForYou": [
+      "Northern Central Park feels less manicured than the south, but also less crowded.",
+      "Marcus Garvey is hilly and lovely but smaller than Prospect or Riverside.",
+      "The Harlem River waterfront is close but not yet a destination walk.",
+      "Some blocks read more urban-gritty than nature-adjacent."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:10.401Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hells-kitchen": {
+    "fitProse": "Hell's Kitchen offers the Nature-Hungry Urbanist a mixed deal. Hudson River Park is a genuine asset, minutes from anywhere in the grid, with wide sky and real waterfront runs. But the walk-up blocks between 9th and 10th feel canyon-tight, and DeWitt Clinton is more lawn than respite.",
+    "tradeoffsForYou": [
+      "The river is close, but getting there means threading tourist crowds near Times Square.",
+      "Apartments face airshafts or brick. Sky happens outside, not from your window.",
+      "Transit redundancy (A/C/E, 1, N/Q/R/W, 7) is stellar, but trees are scarce.",
+      "DeWitt Clinton is functional, not the kind of park that recharges you."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:10.578Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "park-slope": {
+    "fitProse": "Park Slope is nearly perfect for the nature-hungry urbanist. Prospect Park is your backyard, the blocks between 7th and the park are lined with actual canopy, and the F puts you in Manhattan in twenty. You get both sky and optionality.",
+    "tradeoffsForYou": [
+      "Some of the most expensive blocks in Brooklyn.",
+      "Stroller density on weekends is a known meme.",
+      "The park is spectacular but the neighborhood itself runs quiet.",
+      "You'll share your green space with every family in central Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:10.790Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dumbo": {
+    "fitProse": "DUMBO hands you Brooklyn Bridge Park as a daily given, one of the best waterfront parks in the city. The cobblestones and river views are cinematic, the F and A/C get you anywhere, and the small footprint means you're never far from open sky or water.",
+    "tradeoffsForYou": [
+      "Tourist crowds on the waterfront every weekend, year-round.",
+      "The neighborhood is tiny. You'll walk the same loop often.",
+      "Groceries are limited (Foragers, Empire Stores). Plan on trips elsewhere.",
+      "Among the priciest per-square-foot in Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:15.738Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cobble-hill": {
+    "fitProse": "Cobble Hill is twelve blocks of mature street trees, townhouse scale, and quiet residential blocks a few minutes from Brooklyn Bridge Park. The greenery overhead and the proximity to the waterfront are real, and the F/G at Bergen gets you into Manhattan in fifteen minutes.",
+    "tradeoffsForYou": [
+      "Trains are all a 10-minute walk, not seamless if you're rushing.",
+      "The neighborhood park (Cobble Hill Park) is small. You'll head to Brooklyn Bridge Park for sky.",
+      "Real estate is competitive. You're paying for the calm and the trees.",
+      "Quiet by design. If you need wilder green space, Prospect Park is a few stops away."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:16.539Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bed-stuy": {
+    "fitProse": "Bed-Stuy's residential blocks offer real greenery (Herbert Von King is a true neighborhood park), but your nature access is more street-level than sprawling. The brownstone blocks are tree-lined and quieter than you'd expect, though you're not near water or anything vast.",
+    "tradeoffsForYou": [
+      "A/C only for most of the neighborhood. The trains work but your route options are narrow.",
+      "Herbert Von King is lovely, but you're not a quick walk from Prospect Park or the waterfront.",
+      "Tree canopy on the best blocks is real. The parks themselves are neighborhood-scale.",
+      "Block-by-block variance means scouting carefully. Some streets have green, others concrete."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:17.074Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brooklyn-heights": {
+    "fitProse": "Brooklyn Heights delivers what nature-hungry urbanists bargain for: Brooklyn Bridge Park stretches 85 acres along the water, the Promenade floats above the harbor with unobstructed skyline views, and the 2/3/4/5/R/A/C/F trains mean you're never far from Manhattan. Sky, trees, and water all within ten minutes of your door.",
+    "tradeoffsForYou": [
+      "Some of the most expensive blocks in Brooklyn.",
+      "Restaurants are sparse. You'll cook more or leave the neighborhood.",
+      "Brooklyn Bridge Park is world-class but Prospect Park's interior woods are a 30-minute ride.",
+      "Weekends are quiet. This is not a park where you bump into a scene."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:19.245Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bushwick": {
+    "fitProse": "Bushwick is not a nature-hungry urbanist's first choice. Maria Hernandez Park is real but small, and the blocks are mostly concrete and murals. The creative energy is undeniable, but sky and green are scarce outside a few scattered patches.",
+    "tradeoffsForYou": [
+      "Very little park access. Maria Hernandez is packed on weekends.",
+      "Industrial blocks mean concrete, not canopy. Few tree-lined streets.",
+      "The L doesn't connect to major green spaces like Prospect or Central.",
+      "You'll need to leave the neighborhood for your nature fix."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:21.267Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sheepshead-bay": {
+    "fitProse": "Sheepshead Bay has real waterfront, not just views. The bay itself is a working marina flanked by walkable edges, and Marine Park is a ten-minute bike ride. The B and Q keep you connected without crushing your morning with a seventy-minute commute.",
+    "tradeoffsForYou": [
+      "Still 45+ minutes to Midtown. You're trading proximity for air.",
+      "Marine Park is huge but not manicured. Think fields and trails, not Prospect.",
+      "Weekend nature trips (Gateway, Rockaways) feel closer than Manhattan does."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:22.745Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brighton-beach": {
+    "fitProse": "Brighton Beach delivers what nature-hungry urbanists rarely find in New York: a real beach you can walk to every morning, plus a boardwalk that stretches east past the amusement parks. The Q is a long ride, but you trade commute time for ocean air and a horizon that actually exists.",
+    "tradeoffsForYou": [
+      "The Q terminus means 50+ minutes to Midtown, often standing.",
+      "The Eastern European community is tight-knit; if you're not part of it, the neighborhood can feel opaque.",
+      "Green space is the ocean and boardwalk. No tree canopy, no inland parks nearby.",
+      "Cultural life is deeply specific. Coffee shops and restaurants cater to Russian and Ukrainian speakers."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:22.828Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-island-city": {
+    "fitProse": "Long Island City delivers what nature-hungry urbanists want most: Gantry Plaza and Hunter's Point South are real waterfront parks, not pocket squares, and the 7/E/M/G/F redundancy means you never feel trapped. The skyline view from the East River esplanade is something you'll walk to on purpose.",
+    "tradeoffsForYou": [
+      "High-rises dominate. Trees and soil are scarcer than views and pavement.",
+      "The parks are excellent but concentrated along the water, not woven through the streets.",
+      "New-build plazas lack the canopy depth of older neighborhoods.",
+      "Summer heat bounces hard off glass towers with limited shade relief."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:26.245Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "astoria": {
+    "fitProse": "Astoria Park and the waterfront give you more sky than almost anywhere in the five boroughs. The green along the East River is real, the Socrates Sculpture Park is open and oddly peaceful, and you're a short walk from sprawling park fields that make mornings feel possible.",
+    "tradeoffsForYou": [
+      "The N/W is your only real train, and it slows considerably off-peak.",
+      "Astoria Park is great, but the walk from some blocks is longer than you'd hope.",
+      "More neighborhood restaurant scene than quiet tree-lined streets.",
+      "The waterfront is beautiful but industrial in stretches."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:26.951Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flushing": {
+    "fitProse": "Flushing Meadows-Corona Park is the draw here, a massive green commons that would be the crown jewel of most boroughs. Kissena adds ponds and trails. The 7 train is your only subway, and the sidewalks are dense, but you're trading friction for acres of sky and water.",
+    "tradeoffsForYou": [
+      "The 7 is packed during rush hour and it's the only train out.",
+      "Street-level crowds rival midtown, but the parks are real.",
+      "Flushing Meadows is huge but farther from most apartment clusters than you'd expect.",
+      "You're a long commute from Hudson River Park or Prospect Park if friends live there."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:28.809Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "forest-hills": {
+    "fitProse": "Forest Hills is built around Forest Park, a sprawling 500-acre green that feels more like upstate than Queens. The Tudor blocks have real sky, the E/F get you to midtown in half an hour, and the residential streets have actual trees overhead, not just token street-side saplings.",
+    "tradeoffsForYou": [
+      "30-35 min commute is real. You're trading green for time.",
+      "Forest Park is magnificent but Flushing Meadows is a trek, not a quick walk.",
+      "Dining and nightlife lean suburban. If you want urban energy, head west.",
+      "More quiet residential than mixed-use walkable. You'll need to seek your nature, not stumble into it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:29.245Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "riverdale": {
+    "fitProse": "Riverdale is one of the only places in the five boroughs where you can walk to the Hudson through actual woods. Van Cortlandt Park and Wave Hill offer trail-level green, and the hillside blocks have trees and sky that feel borrowed from Westchester.",
+    "tradeoffsForYou": [
+      "The 1 train is slow and Metro-North requires planning. You're 45+ minutes from Midtown.",
+      "You'll probably want a car for groceries and weekend trips, which changes the NYC math.",
+      "Dining and nightlife are minimal. The quiet is real, sometimes too real.",
+      "The Hudson views and park access are among the best you'll find in the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:32.235Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "st-george": {
+    "fitProse": "St. George is one of the few places in NYC where you can live close to real sky, open water, and big parks (Snug Harbor is a serious asset) while keeping Manhattan in reach. The ferry is a daily nature walk you happen to commute on, and Tompkinsville Park sits just blocks from the terminal.",
+    "tradeoffsForYou": [
+      "The ferry is your lifeline. If it breaks, your day breaks.",
+      "Snug Harbor is excellent, but you'll travel for real hiking or trails.",
+      "Limited tree canopy on residential blocks compared to Brooklyn or Queens.",
+      "Staten Island feels disconnected from the wider green network of city parks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:34.213Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hoboken": {
+    "fitProse": "Hoboken delivers what you need: daily access to the Hudson waterfront, Pier A Park steps from PATH, and a scale where morning runs feel possible instead of aspirational. The mile-square layout means you're never far from green or water, and the promenade is legitimately one of the best outdoor spaces in the region.",
+    "tradeoffsForYou": [
+      "The waterfront is stellar, but inland blocks can feel tight and treeless.",
+      "You're trading Central Park scale for waterfront consistency.",
+      "PATH is fast, but NJ Transit weekend service can test your patience.",
+      "No true forest or meadow within walking distance."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:34.604Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jersey-city": {
+    "fitProse": "Liberty State Park is enormous, genuinely wild at the edges, and framed by water and sky in a way that makes most Brooklyn parks feel tidy. The waterfront promenades and Hamilton Park give you daily green corridors, and the PATH still puts you in Manhattan in fifteen minutes.",
+    "tradeoffsForYou": [
+      "Liberty State Park is a trek from most residential blocks, not a morning walk.",
+      "The high-rises feel urban. Nature lives at the edges, not woven through the streets.",
+      "Beyond downtown, car dependence rises fast if you want hiking or bigger parks.",
+      "NYC purists will ask why you left, even though the answer is sky and space."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:35.466Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-lee": {
+    "fitProse": "Fort Lee delivers what the nature-hungry urbanist needs most: Palisades Interstate Park is right there, cliffside trails drop down to the Hudson, and Constitution Park gives you sky and water views. The bus through the Lincoln Tunnel or over the GW Bridge keeps Manhattan reachable without the subway.",
+    "tradeoffsForYou": [
+      "You will need a car. Buses run frequently but groceries and weekend errands demand wheels.",
+      "The nature is real but the streetscape reads high-rise suburban, not walkable urban.",
+      "You're trading the spontaneity of subway optionality for scheduled bus commutes.",
+      "Morning walks feel more New Jersey park than Brooklyn brownstone block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:38.849Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "edgewater": {
+    "fitProse": "Edgewater is fundamentally a waterfront play. The Hudson promenade is real, unbroken, and sunrise-facing, and most towers put you close enough to hear it. Ferry mornings are the ritual you came here for, but Veterans Field and the riverfront will carry you between park fixes.",
+    "tradeoffsForYou": [
+      "Ferry schedule rules your life. Miss the boat, you're on a bus through the tunnel.",
+      "No deep woods or rolling hills. It's waterfront, not forest.",
+      "Car becomes necessary for reaching larger parks or weekend trailheads.",
+      "Street life is minimal. The green you get is the river, not neighborhood canopy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:40.929Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "palisades-park": {
+    "fitProse": "Palisades Interstate Park is right there, a rambling wooded preserve with river-view trails just minutes from Broad Avenue. The green is real, but daily life here is car-first and the buses to Manhattan make nature commutes tricky if you work in the city.",
+    "tradeoffsForYou": [
+      "Palisades Interstate Park is close, but reaching it usually means driving.",
+      "No subway. Buses to the GW Bridge work, but add friction to spontaneous weekend escapes.",
+      "Garibaldi Park is neighborhood-scale, not the sprawling green lung you crave.",
+      "The density and car traffic on Broad Ave feel urban without the transit payoff."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:41.153Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lower-east-side": {
+    "fitProse": "The Lower East Side gives you East River Park (a full mile of waterfront green) and Sara D. Roosevelt's linear courts and trees, but the neighborhood itself is loud, dense, and built for scene, not sky. If you need daily canopy and quiet, this is the wrong fit.",
+    "tradeoffsForYou": [
+      "East River Park is real and wide, but weekends bring crowds and noise.",
+      "Sara D. Roosevelt is more basketball court than retreat.",
+      "Most apartments are old walk-ups with limited light and no green views.",
+      "The creative energy is high, but nature is something you leave the neighborhood to find."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:41.582Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-harlem": {
+    "fitProse": "East Harlem puts you on the northern doorstep of Central Park, with Thomas Jefferson Park adding green and water to the east. The 4/5/6 gets you to Midtown in fifteen minutes, and the rent is the best value in Manhattan if you can handle block-by-block variance.",
+    "tradeoffsForYou": [
+      "Central Park access is real, but you're starting from 96th Street or higher.",
+      "Thomas Jefferson Park is green and has an outdoor pool, but it's not Prospect or Riverside.",
+      "Block quality shifts fast. Scout carefully.",
+      "The Lex line is solid but limited compared to West Side trunk routes."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:44.384Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "washington-heights": {
+    "fitProse": "Washington Heights is a rare Manhattan configuration for nature-hungry people: Fort Tryon Park gives you cliffs and river views, Highbridge Park has real woodland trails, and the Hudson waterfront stretches uninterrupted. The A express gets you to midtown faster than most outer-borough options.",
+    "tradeoffsForYou": [
+      "You're far uptown. Friends in Brooklyn will act like you moved to Canada.",
+      "Block-by-block park access varies. Scout carefully before signing.",
+      "The hilltop topography is beautiful but means actual hills on your daily walk.",
+      "Grocery options lean utilitarian. Trader Joe's is a trek to Inwood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:47.227Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hamilton-heights": {
+    "fitProse": "Hamilton Heights delivers what you're looking for: Riverside Park steps from pre-war walk-ups, St. Nicholas Park on hilltop blocks with Hudson views, and the 1 or A express to get you downtown when you need to. Mornings feel like you traded a subway stop for air and trees, and you did.",
+    "tradeoffsForYou": [
+      "The hills are real. Walking home from the train means uphill.",
+      "Restaurant options are thin if you want more than the neighborhood staples.",
+      "Riverside Park is spectacular but the nearest entrance can be a 10-minute walk depending on your block.",
+      "You're farther north than most friends expect, even if the A is fast."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:47.646Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "inwood": {
+    "fitProse": "Inwood is the Nature-Hungry Urbanist jackpot. Inwood Hill Park is an actual old-growth forest, 196 acres of trails and canopy two blocks from affordable pre-war apartments. Fort Tryon is a walk south. You'll pay in commute time (40+ minutes to midtown on the A or 1), but you get sky, water, and green every single day.",
+    "tradeoffsForYou": [
+      "You're at the end of the A and 1. The commute is real.",
+      "Dining and nightlife are limited compared to lower Manhattan.",
+      "You'll need to leave the neighborhood for culture and energy.",
+      "The park access is unmatched, but social life requires planning."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:47.665Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "morningside-heights": {
+    "fitProse": "Morningside Heights is a gift for the nature-hungry urbanist. Riverside Park unfurls west along the Hudson for miles, Morningside Park climbs the escarpment to the east, and the pre-war apartment blocks in between feel quiet and open. The 1 train gets you downtown, and Columbia's presence keeps the streets safe and walkable.",
+    "tradeoffsForYou": [
+      "One subway line. The 1 is reliable but you're far from other trains.",
+      "Restaurants thin out in summer when students leave town.",
+      "Academic quiet is real. If you want street energy, head south.",
+      "Morningside Park is improving but Riverside is the real draw."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:50.264Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lincoln-square": {
+    "fitProse": "Lincoln Square gives you Riverside Park in one direction and Central Park in the other, both inside a ten-minute walk. The high-rise walls block sky on interior streets, but Columbus and Riverside open things up. The 1 or A/C lines put you anywhere quickly.",
+    "tradeoffsForYou": [
+      "Most streets canyon between towers. The green is at the edges, not woven through.",
+      "Tourist crowds around Lincoln Center make some blocks feel borrowed.",
+      "Riverside Park's south end is your best bet. Central Park is close but not closest.",
+      "Premium pricing for the cultural anchor, even when your anchor is the park."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:53.390Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yorkville": {
+    "fitProse": "Carl Schurz Park and the East River Esplanade are your daily reset button, and Yorkville delivers that better than almost anywhere in Manhattan. The pre-war blocks are quiet, the green is real and close, and the Q at 86th puts you in midtown while keeping you near sky and water.",
+    "tradeoffsForYou": [
+      "The park is excellent but narrow. Prospect or Central offer more variety.",
+      "Residential to the point of sleepy. Dining and nightlife are muted.",
+      "Q is useful but Lex is often faster. You'll learn both.",
+      "Less prestige cachet than prime UES, but that keeps per-square-foot costs lower."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:53.651Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattan-valley": {
+    "fitProse": "Manhattan Valley delivers the UWS promise that matters most to you: immediate access to Central Park and Riverside Park, with northwest blocks that feel quieter and less crowded than the classic CPW corridor. The 1, B, and C give you options, and you can walk into the park without crossing tourist density.",
+    "tradeoffsForYou": [
+      "Block quality varies. Some feel park-adjacent and lovely, others less polished.",
+      "Restaurant scene improving but uneven. You'll head south for consistent dining.",
+      "Riverside Park access here is real but less manicured than 70s/80s stretches.",
+      "Less Central Park West grandeur, but that's partly why you can afford more space."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:54.158Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carnegie-hill": {
+    "fitProse": "Carnegie Hill gives you Central Park as your western wall and the Conservatory Garden as a secret refuge. The tree-lined blocks are genuinely quiet, the pre-war co-ops frame sky, and you can walk into the park every morning before the 4/5/6 pulls you downtown.",
+    "tradeoffsForYou": [
+      "The only real green is Central Park. No river views, no waterfront.",
+      "Among the priciest co-ops in Manhattan.",
+      "Residential to the point of muted. Energy lives elsewhere.",
+      "Block-by-block variation matters. Some streets feel borrowed by school pickups."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:55.926Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattanville": {
+    "fitProse": "Manhattanville delivers exactly what you need: Riverside Park runs the length of the neighborhood, mornings by the Hudson are easy, and the hilltop blocks above 125th have sky and room to breathe. The 1 train keeps you connected without swallowing you.",
+    "tradeoffsForYou": [
+      "Riverside Park is beautiful, but Morningside is smaller and you'll walk past campus to reach it.",
+      "Restaurant scene is thin. You'll subway or cook.",
+      "Columbia's expansion means construction noise on some blocks.",
+      "The 1 is your main line. A/B/C/D at 125th helps, but crosstown is slow."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:59.426Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "midtown-east": {
+    "fitProse": "Midtown East is a tough sell for someone who needs green space within sight. Sutton Place Park is a postage stamp on the river, and the residential blocks east of Lex are handsome but mostly treeless. You're closer to Grand Central than to anything resembling a forest.",
+    "tradeoffsForYou": [
+      "The only real park access is a narrow strip along the East River.",
+      "No Prospect Park, no Central Park. You'll commute to green space.",
+      "Weekends feel hollow. The neighborhood empties and so does the sky.",
+      "If you need trees outside your window, look much further north or west."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:39:59.760Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stuyvesant-town": {
+    "fitProse": "StuyTown's internal greenways and car-free loops are the rare thing in Manhattan: safe, usable, repeatable green space. East River Park is a three-minute walk, and the quiet between First and the FDR feels suburban in the best way. You'll miss grand park scale, but the dailiness works.",
+    "tradeoffsForYou": [
+      "The greens are nice but designed, not wild. Real park time still means a walk.",
+      "Subway access is L and 6 only. Workable, but not the redundancy you want.",
+      "Institutional mid-century aesthetic. More Levittown than leafy Brooklyn.",
+      "Renter-only. If you're looking to buy near nature, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:00.804Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "murray-hill": {
+    "fitProse": "Murray Hill and Kips Bay are not where nature-hungry urbanists land. Madison Square Park is a short walk west, but the neighborhood itself is a grid of tall buildings and 20-something foot traffic. If you need daily green to function, you'll be walking or riding elsewhere.",
+    "tradeoffsForYou": [
+      "No park within the neighborhood itself. Madison Square is the closest respite.",
+      "St. Vartan Park is small and mostly concrete, not a tree refuge.",
+      "The 6 train gets you to Central Park in 15 minutes, but that's a commute.",
+      "Lexington and Third are canyon streets. Sky, but not much green."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:01.550Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "soho": {
+    "fitProse": "SoHo is not the right neighborhood for you. The cobblestones and cast-iron are beautiful, but the only real green is a walk west to Hudson River Park. Petrosino Square is a pocket plaza, not a place to spend Saturday mornings.",
+    "tradeoffsForYou": [
+      "Your nearest real park is Hudson River Park, a 10-minute walk through retail crowds.",
+      "Tourist traffic on weekends makes even a coffee run feel claustrophobic.",
+      "Sky is visible, trees are not. You'll miss having green outside your window."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:04.650Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich-village": {
+    "fitProse": "Washington Square Park is your front yard, and Hudson River Park is a ten-minute walk west. The Village won't deliver wilderness, but for sky and green amid literary downtown, this is the gold standard. Trees line many residential blocks, especially west of Sixth.",
+    "tradeoffsForYou": [
+      "NYU crowds and tourists mean weekend park time requires patience.",
+      "Apartments are small and old. Trading space for location is the deal.",
+      "Hudson River Park is spectacular, but Washington Square can feel like a campus quad.",
+      "Rent and co-op prices reflect the prestige. You're paying for the address."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:05.001Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chinatown": {
+    "fitProse": "Chinatown is not built for the nature-hungry urbanist. Columbus Park and Sara D. Roosevelt are pocket parks, yes, but mostly concrete plazas surrounded by tenements. The streets are dense, the sky is narrow, and the closest real green is Battery Park or the East River esplanade, both a walk.",
+    "tradeoffsForYou": [
+      "Environmental openness score is zero. This is the wrong shape for you.",
+      "Columbus Park is packed, not pastoral. Think chess tables and crowds.",
+      "You'll walk 15+ minutes for water or substantial tree cover.",
+      "Every train line is close, so weekend escapes to Prospect Park or Central Park are easy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:07.982Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "weehawken-port-imperial": {
+    "fitProse": "Weehawken is a rare thing: a place where you can walk the Hudson River Walkway every morning, have sky and water in every direction, and still catch the Port Imperial ferry to Midtown in fifteen minutes. The environmental-openness score is no accident. This is a neighborhood built around views, air, and the river.",
+    "tradeoffsForYou": [
+      "Ferry and bus only. No subway means you time your life around a boat schedule.",
+      "The river walk is spectacular, but the parks themselves are small and manicured.",
+      "Street life is minimal. You get nature, not neighborhoods.",
+      "Boulevard East has views, but you'll drive or ferry for spontaneous green escape."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:08.088Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenpoint": {
+    "fitProse": "Greenpoint delivers the prize: WNYC Transmitter Park and Bushwick Inlet give you legitimate waterfront sky, and McCarren's open lawns are a five-minute walk from most blocks. The peninsula shape means you're never far from water views, and the pace is calmer than Williamsburg proper.",
+    "tradeoffsForYou": [
+      "McCarren is shared turf with Williamsburg. Expect crowds on summer weekends.",
+      "The G train is your spine. Ferry helps, but it's not a full substitute.",
+      "Waterfront condos are beautiful but expensive. Inland blocks feel denser.",
+      "Old Polish texture is fading. Green space is real, but the neighborhood is changing fast."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:10.844Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bay-ridge": {
+    "fitProse": "Bay Ridge gives you the two things nature-hungry urbanists prize most: Shore Road Park runs for two uninterrupted miles along the Narrows, and Owl's Head sits on a bluff with actual horizon. The R is slow, but if your morning ritual involves trees and water before work, few Brooklyn neighborhoods deliver this much sky.",
+    "tradeoffsForYou": [
+      "The R train is the only subway. Budget an extra 15 minutes to Manhattan.",
+      "Deep residential Brooklyn. You won't stumble into spontaneous scenes.",
+      "The waterfront promenade is the main event. If parks aren't your daily anchor, less reason to trek here.",
+      "Suburban scale means longer walks between green spaces and subway stops."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:11.701Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "crown-heights": {
+    "fitProse": "Crown Heights delivers what the nature-hungry urbanist craves: Prospect Park on the west edge, the Brooklyn Botanic Garden at your doorstep, and brownstone blocks with real tree canopy. The 2/3 at Franklin puts you in Manhattan, and you'll walk to the park more than you expect.",
+    "tradeoffsForYou": [
+      "Proximity to green varies wildly. Blocks near the park are golden, eastern Crown Heights less so.",
+      "Brower Park is real but modest compared to Prospect Park's 526 acres.",
+      "Four subway lines sounds great, but not all blocks have equal access.",
+      "Block-by-block character shifts fast. Scout carefully for your specific green quotient."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:13.613Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-heights": {
+    "fitProse": "Prospect Heights delivers exactly what a nature-hungry urbanist wants: Prospect Park and the Botanic Garden both in walking distance, brownstone blocks with real trees, and the B/Q or 2/3/4/5 when you need the city. It's the rare Brooklyn pocket where green space feels like the organizing principle, not the amenity.",
+    "tradeoffsForYou": [
+      "Park proximity drives prices up. You're paying for what you value.",
+      "Weekend crowds at the park entrance can feel like a parade.",
+      "The neighborhood itself is small. You'll walk the same blocks often.",
+      "Vanderbilt Ave traffic reminds you this isn't the countryside."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:14.255Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-greene": {
+    "fitProse": "Fort Greene Park is a real park, not a plaza with benches. Forty acres of hills, trees, and open sky sit a block from brownstone blocks where you can actually breathe. The C at Lafayette or the B/D at Atlantic puts you in Manhattan without feeling like you're standing in a touristed corridor.",
+    "tradeoffsForYou": [
+      "Fort Greene Park itself is lovely, but it's not Prospect or Riverside in scale.",
+      "The closest water is the East River at Brooklyn Bridge Park, a walk or short ride.",
+      "Atlantic-Barclays foot traffic can be overwhelming on game nights.",
+      "Greenmarket and the park anchor greenery, but the rest is urban blocks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:17.153Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "clinton-hill": {
+    "fitProse": "Clinton Hill delivers what nature-hungry urbanists want most: mature street trees, brownstone blocks that feel like they exhale, and the Pratt campus as a leafy open-space anchor. Fort Greene Park is a ten-minute walk when you need real acreage, and the quiet feels earned, not isolating.",
+    "tradeoffsForYou": [
+      "C and G only. Limited subway redundancy if you commute to multiple boroughs.",
+      "Pratt campus greenery is semi-public, not full park.",
+      "Quieter than Fort Greene, which means fewer spontaneous dinner options.",
+      "You'll walk or bike to Fort Greene Park often. Factor that in."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:17.294Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-williamsburg": {
+    "fitProse": "East Williamsburg is honest about what it is: industrial blocks, McCarren Park nearby but not next door, and Cooper Park as a smaller local green. If you need daily sky and trees, you'll feel the gap. The L gets you places, but nature requires intention here.",
+    "tradeoffsForYou": [
+      "Most blocks are warehouse-lined, not tree-lined.",
+      "McCarren is a real park, but it's a walk or bike away.",
+      "Cooper Park is closer but small. Not a substitute for daily green.",
+      "Lower rents buy space, but the green quotient stays low."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:19.299Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ditmas-park": {
+    "fitProse": "Ditmas Park is one of the best-kept secrets for the nature-hungry urbanist. You wake up to detached Victorian houses, mature tree canopy overhead, and real front yards. Prospect Park is a fifteen-minute walk north when you need scale and sky.",
+    "tradeoffsForYou": [
+      "The Q is your only real subway. The B comes at rush hours only.",
+      "Greenery is residential, not wilderness. Think lawns and sidewalk maples.",
+      "Restaurants cluster on Cortelyou. Otherwise it's quiet blocks and houses.",
+      "Reads as deep Brooklyn. You'll explain where you live more than once."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:20.322Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "windsor-terrace": {
+    "fitProse": "Windsor Terrace is shaped exactly for the nature-hungry urbanist. Prospect Park is your eastern border, Greenwood Cemetery your southern one, and the low-rise blocks in between feel more like borrowed breathing room than typical Brooklyn density.",
+    "tradeoffsForYou": [
+      "F/G only. No backup lines if something goes wrong.",
+      "Dining and nightlife are thin. You'll shop and eat in Park Slope or beyond.",
+      "Greenwood Cemetery is beautiful, but it's not a running-loop park.",
+      "Small footprint means fewer pockets to explore on foot."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:23.229Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-lefferts-gardens": {
+    "fitProse": "PLG gives you Prospect Park in your backyard and the Botanic Garden a few blocks north, which is exactly the sky and green you need. The pre-war blocks east of the park are quiet, tree-lined, and walkable to the meadow and lake without feeling like you live in a tourist zone.",
+    "tradeoffsForYou": [
+      "B/Q is your workhorse line. Limited redundancy if the bridge backs up.",
+      "Restaurant density is thinner than Park Slope or Ditmas, though improving.",
+      "Block character varies. Scout your exact streets before committing.",
+      "You're optimizing for park access, not Manhattan speed or nightlife."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:24.009Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sunnyside": {
+    "fitProse": "Sunnyside Gardens is a rare pocket of intentional green in Queens. The inner blocks have actual courtyards, mature trees, and quiet that feels borrowed from another decade. Lou Lodati Park and pockets of green near the 7 make morning walks possible without leaving the neighborhood.",
+    "tradeoffsForYou": [
+      "The 7 train is your workhorse. Fast to midtown, but just one line.",
+      "Parks are nice but small. You're not next to Prospect or Forest Park.",
+      "Sky and trees, yes. Water and big horizons require a weekend trip.",
+      "Reads as deep Queens to friends in Brooklyn or Manhattan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:25.040Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "woodside": {
+    "fitProse": "Woodside is better for the cultural-anchor seeker than the nature-hungry urbanist. Doughboy Park and Hart Park are small, functional, and friendly, but they're not destinations. You're a twenty-minute 7 ride from Flushing Meadows Corona Park if you need real acreage.",
+    "tradeoffsForYou": [
+      "The parks here are pocket-sized. Real green space means the 7 to Flushing Meadows.",
+      "Roosevelt Avenue is loud, elevated-train overhead, not a place for morning calm.",
+      "The 7 train runs above street level. No riverside or water access nearby.",
+      "If you need trees and sky daily, Sunnyside Gardens or Astoria are greener bets."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:26.742Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood": {
+    "fitProse": "Ridgewood offers the rare combo of creative energy and actual nature. Forest Park is a legitimate 538-acre escape (trails, meadows, hills), and the blocks near the Ridgewood Reservoir feel green in a way Bushwick never will. The L, M, and J/Z all run here, so you're connected but not crushed.",
+    "tradeoffsForYou": [
+      "Forest Park is spectacular but a walk from most apartments, not right outside.",
+      "The prime green blocks (near the reservoir) are quieter and less convenient to nightlife.",
+      "Transit is multi-line but still L-dependent for speed to Manhattan.",
+      "Grocery and dining are improving but you'll still trek for certain staples."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:30.158Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rego-park": {
+    "fitProse": "Rego Park is not a park-rich neighborhood in the Prospect or Riverside sense. You have Rego Park itself (small, serviceable) and Flushing Meadows a bus or bike ride away, but the streetscape is mid-century Queens Boulevard, not trees. If you need daily green, this will feel thin.",
+    "tradeoffsForYou": [
+      "Rego Park the place is small and heavily used. Not a morning escape.",
+      "Flushing Meadows is close but requires a bus or bike, not a walk.",
+      "M/R is reliable but slow. E/F at Forest Hills helps.",
+      "The cultural texture is deep, but the nature access is not the draw."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:30.208Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "kew-gardens": {
+    "fitProse": "Forest Park is the main event here, 500 acres of trails and canopy that make Kew Gardens feel like the edge of the city in the best sense. The Tudor blocks are truly residential, the E/F get you to Manhattan, and you can run or walk in real woods most mornings without leaving the borough.",
+    "tradeoffsForYou": [
+      "Most blocks are a 10 to 15 minute walk from the subway.",
+      "Dining and nightlife are minimal. This is house-and-park territory.",
+      "The streets are quieter than Forest Hills, which means fewer cafes or weekend energy.",
+      "If you want water views or waterfront paths, you're in the wrong corner of Queens."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:31.303Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bayside": {
+    "fitProse": "Alley Pond Park and Crocheron Park are the anchors here, and for a nature-hungry urbanist, that's enough sky and trees to matter. The LIRR gets you to Penn in 25 minutes, but Bayside reads as suburban sprawl first, natural sanctuary second.",
+    "tradeoffsForYou": [
+      "Alley Pond is real woods, but you'll drive to get there most days.",
+      "Subway access is poor. LIRR is the lifeline, and it's commuter-rail rhythm.",
+      "Single-family blocks are quiet, but they're not walkable in the way you might want.",
+      "If you need daily green, you'll hunt for it between houses, not stroll to a grand park."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:32.807Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jackson-heights": {
+    "fitProse": "Jackson Heights has Travers Park and the garden courtyards of the landmarked co-ops, but it's not built for someone whose weekends depend on sky and water. The greenery here is neighborhood-scale, not the kind you walk into for hours. The 7/E/F/M/R converge well, but the parks are small.",
+    "tradeoffsForYou": [
+      "Travers Park is pleasant but compact. No Prospect Park equivalent nearby.",
+      "Roosevelt Avenue is sensory-dense, not the calm green escape you crave.",
+      "Historic garden co-ops have courtyards, but committees are strict and slow.",
+      "You'll commute to Forest Park or the waterfront for real nature time."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:36.424Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "elmhurst": {
+    "fitProse": "Elmhurst Park is small but real, and the 7/E/F/M/R make this one of the best-connected spots in outer Queens. That said, it's a food and cultural hub first, a green one second. If you need serious park proximity, you'll feel the gap.",
+    "tradeoffsForYou": [
+      "Green space is limited. Elmhurst Park is decent but not the reason to move here.",
+      "The streets are dense, commercial, and often crowded. Trees are sparse outside residential blocks.",
+      "You're farther from Prospect, Forest Park, or the waterfront than other Queens options.",
+      "Multiple train lines help, but they take you to concrete, not trails."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:36.425Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "battery-park-city": {
+    "fitProse": "Battery Park City was built for this. The Esplanade gives you miles of unbroken waterfront, Rockefeller Park delivers sky and grass, and the Hudson is right there every morning. You're in Manhattan with real access, but every day starts with trees and water.",
+    "tradeoffsForYou": [
+      "Weekend quiet can feel suburban, not urban park-adjacent.",
+      "The Esplanade is beautiful but manicured. Less wild, more designed.",
+      "Limited transit lines. The 1 or PATH, then you transfer.",
+      "Pricey for the space, even if the space is real."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:37.480Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hudson-yards": {
+    "fitProse": "Hudson Yards delivers two genuine nature anchors: the High Line on your doorstep and Hudson River Park stretching north and south. The esplanade runs unbroken for miles, and sunrise over the water is real. But the streets themselves are glass and steel, not green.",
+    "tradeoffsForYou": [
+      "High Line is yours, but it's also every tourist's. Weekends are a slow march.",
+      "Greenery lives at the edges. The blocks between are corporate, not leafy.",
+      "River views command luxury pricing. Sky comes at a premium.",
+      "The 7 is your only train. Getting to Central Park or Prospect takes planning."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:39.581Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roosevelt-island": {
+    "fitProse": "Roosevelt Island is a nature-hungry urbanist's fantasy. You wake up to water and sky on all sides, the Esplanade loops the entire island, and Four Freedoms Park is one of the best quiet escapes in the whole city. The F, tram, and ferry each put you in Manhattan in minutes.",
+    "tradeoffsForYou": [
+      "You're literally on an island. Every exit requires a plan (F, tram, or ferry).",
+      "Dining and street life are thin. You'll leave for dinner and culture.",
+      "The suburban calm is real. If you crave density, you'll feel it.",
+      "Storm or tram outage days remind you how isolated it actually is."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:41.968Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "nolita-little-italy": {
+    "fitProse": "NoLita has charm and intensity, but almost no actual green. Petrosino Square is a paved triangle, DeSalvio Playground is fenced asphalt, and the nearest real park is a 15-minute walk east or north. If you need sky and trees to breathe, this wedge will feel tight.",
+    "tradeoffsForYou": [
+      "Zero park access within the immediate neighborhood footprint.",
+      "The espresso and design shops are lovely, but the walk-ups open onto narrow streets, not green.",
+      "You'll be subway-dependent to reach any real nature (Hudson River Park, East River, Battery).",
+      "Compact downtown intensity without the tradeoff that usually justifies it: a view or proximity to water."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:43.170Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flatiron-nomad": {
+    "fitProse": "Madison Square Park is your daily oasis, genuinely beautiful and well-maintained, but Flatiron itself is more office than sky. The transit redundancy (six lines at 23rd) is exceptional, and you're close to Union Square, but the blocks feel borrowed from midtown commerce rather than residential calm.",
+    "tradeoffsForYou": [
+      "Madison Square Park is great but small. You'll walk to Union Square or the river often.",
+      "Daytime crowds are relentless. Office workers dominate the sidewalks until 7 PM.",
+      "The residential blocks are quieter at night but feel more post-work than park-adjacent.",
+      "Premium pricing for a neighborhood where nature is an amenity, not the organizing principle."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:44.012Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "boerum-hill": {
+    "fitProse": "Boerum Hill gives you brownstone blocks and proximity to two serious parks (Prospect is a twenty-minute walk, Cobble Hill Park is closer), but it's not as green-drenched as you might hope. The residential streets are quiet and tree-lined, yet the footprint is small enough that you're always near urban hum, not immersed in leaves.",
+    "tradeoffsForYou": [
+      "The park access is good, but you're never deep in trees the way Park Slope delivers.",
+      "Smith Street brings noise and energy when you'd rather just have the brownstones.",
+      "Strong transit redundancy, which helps weekend escapes to bigger nature.",
+      "You'll be walking to Prospect Park more than stepping out your door into green."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:46.541Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carroll-gardens": {
+    "fitProse": "Carroll Gardens delivers tree canopy on residential blocks that live up to the name. The deep front gardens and street trees make every walk feel deliberate, and Carroll Park gives you a real neighborhood square. Brooklyn Bridge Park is a fifteen-minute walk when you need the water.",
+    "tradeoffsForYou": [
+      "Carroll Park is lovely but small. Not Prospect Park scale.",
+      "The F/G gets you to Manhattan, but you're one transfer from most trailheads.",
+      "Smith and Court are commercial, not leafy. You'll walk the side streets.",
+      "Waterfront access requires a committed walk or bike to Brooklyn Bridge Park."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:47.910Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gowanus": {
+    "fitProse": "Gowanus offers space and F/G access, but the nature piece is tricky. Thomas Greene is a pocket park, and the canal cleanup means construction fencing more than waterfront serenity. You're minutes from Prospect Park, which matters, but stepping out your door won't give you sky.",
+    "tradeoffsForYou": [
+      "The canal is a Superfund site, not a place to sit by water.",
+      "Thomas Greene is small. Real green space means walking to Prospect.",
+      "Industrial blocks and active construction limit tree canopy.",
+      "Park Slope's leafy streets are close, but you're not on them."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:49.525Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "red-hook": {
+    "fitProse": "Red Hook delivers the waterfront and sky you crave, with Valentino Pier, the Statue of Liberty across open water, and cobblestone streets that actually feel calm. The environmental-openness score (0.85) is real: this is one of the few NYC neighborhoods where you'll feel the harbor breeze daily.",
+    "tradeoffsForYou": [
+      "No subway. B61 bus and the ferry are your lifelines, and that limits spontaneity.",
+      "Storm vulnerability is real. Sandy reshaped this neighborhood in 2012.",
+      "Limited grocery and dining. Fairway is your anchor, but variety requires a trip.",
+      "Isolation is the trade for waterfront access. You're genuinely off the grid by NYC standards."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:50.729Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tenafly": {
+    "fitProse": "Tenafly Nature Center is 400 acres of trails, streams, and canopy just off your commute. The Palisades ridgeline is even closer. For someone who needs green space to function, this is suburban Bergen at its most generous, and you'll have a yard of your own.",
+    "tradeoffsForYou": [
+      "You will need a car. Trails and parks are close but not walkable from most blocks.",
+      "The bus to Port Authority via GW Bridge is your only Manhattan route.",
+      "Suburbia is the point here. No cafes to walk to, no spontaneous urban green.",
+      "You're trading urban texture for acreage. If you want both, look closer in."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:53.484Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood-cliffs": {
+    "fitProse": "If you want trails, cliffs, and Hudson views with NYC commuting distance, Englewood Cliffs delivers. Palisades Interstate Park is the jewel, with wooded paths that run for miles. But nature here is paired with quiet suburbia, not urbanist infrastructure.",
+    "tradeoffsForYou": [
+      "You'll drive to groceries, coffee, everything. No walkable main street.",
+      "The Palisades are stunning, but you're trading transit convenience for car life.",
+      "Bus commute over GW Bridge can be long and traffic-dependent.",
+      "Single-family lots and estate pricing. Sky and trees come at a premium."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:55.334Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood": {
+    "fitProse": "Englewood gives you Flat Rock Brook, a real nature preserve with trails, and Mackay Park without the subway noise. The green is legit, but you're trading train access for it. Most days require a car, and the bus commute to Manhattan is slower than you're used to.",
+    "tradeoffsForYou": [
+      "No train. The 178/186 buses work, but your commute is 60+ minutes.",
+      "Car-dependent for errands. You'll drive to the grocery store.",
+      "Flat Rock Brook is stunning, but most blocks are residential, not park-adjacent.",
+      "Less walkable nature access than Riverside Park or Prospect Park neighborhoods."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:55.803Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood-nj": {
+    "fitProse": "Ridgewood delivers sky, tree-lined blocks, and Graydon Park without giving up the train. The suburban scale means real yards, mature canopy, and proximity to Saddle River County Park. You're trading urban intensity for green every day.",
+    "tradeoffsForYou": [
+      "~50 min train to Penn. Doable, but you feel the distance.",
+      "This is classic suburb. Your park time is backyard or weekend, not spontaneous.",
+      "Premium pricing reflects schools more than nature access.",
+      "Saddle River trails are excellent, but you'll drive to reach wilder spots."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:40:58.927Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cresskill": {
+    "fitProse": "Cresskill delivers the nature-hungry urbanist's weekend dream (tree-lined single-family blocks, Palisades Interstate Park minutes away) but demands a weekday compromise. The NJ Transit bus to Port Authority is your lifeline, and you'll drive for groceries. If you can live with that, the green is real.",
+    "tradeoffsForYou": [
+      "Strict car dependence. H Mart and shopping all require driving.",
+      "Bus commute only. No train station, no quick escape to green space by rail.",
+      "Calm suburban rhythm means limited spontaneous outdoor social life.",
+      "The nature here is residential quiet, not trail or waterfront immersion."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:02.250Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "paramus": {
+    "fitProse": "Paramus delivers space and quiet, but nature is mostly Van Saun County Park and the occasional front-yard oak. You'll drive to the park, drive to the trails, and your daily landscape is residential streets and parking lots. If you want sky, you'll have plenty. If you want immersion in green, you'll need to get in the car.",
+    "tradeoffsForYou": [
+      "Van Saun is great, but it's a destination, not a daily walk.",
+      "Daily errands mean Route 17 strip malls, not tree-lined strolls.",
+      "Big yards, but the texture is suburban lawn, not woodland or waterfront.",
+      "The nature you crave lives outside town. You'll drive to it on weekends."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:02.252Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "maplewood": {
+    "fitProse": "Maplewood delivers on the nature side of the bargain. South Mountain Reservation is 2,000 acres of forest trails and ridgeline views, Memorial Park anchors the village, and almost every block has mature trees and backyards. The train to Penn is direct, 30 minutes, and the village is actually walkable.",
+    "tradeoffsForYou": [
+      "You're in New Jersey. The Reservation is real, but Central Park it isn't.",
+      "Your commute lifeline is one train line. Miss the express, wait 20 minutes.",
+      "Nature here means backyard trees and weekend hikes, not river views from your window.",
+      "House prices have climbed. You're still saving vs. Brooklyn, but less than you'd think."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:02.500Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "millburn-short-hills": {
+    "fitProse": "South Mountain Reservation is a 2,100-acre forest preserve less than ten minutes from Millburn's downtown. You'll have trails, canopy, real elevation, and the kind of sky that reminds you why you haven't left the metro entirely. Midtown Direct keeps Penn Station 35 minutes away.",
+    "tradeoffsForYou": [
+      "South Mountain is exceptional, but the walk to it from most blocks requires a car.",
+      "The suburban calm can feel airless if you're used to urban texture.",
+      "Street life is minimal. Your green fix is the reservation, not stoops or sidewalk trees.",
+      "Among the priciest zip codes in the country."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:04.887Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "montclair": {
+    "fitProse": "Montclair offers something rare: real nature access without leaving behind culture or the train. Eagle Rock Reservation is an actual hike with ridgeline views, Brookdale Park is looped and generous, and the downtown has restaurants you'd bring your Manhattan friends to.",
+    "tradeoffsForYou": [
+      "You're in New Jersey. The Midtown Direct train is solid, but you've left the subway grid.",
+      "Peak season at Eagle Rock can feel crowded on weekends.",
+      "Premium pricing. Nature plus culture plus diversity costs.",
+      "Off-peak train schedules stretch the commute."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:08.483Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "summit": {
+    "fitProse": "Summit has Watchung Reservation at the edge of town, plus tree-lined blocks and Memorial Field, but you're trading real access to water and wild space for a train-anchored suburb. The greenery is manicured, not immersive.",
+    "tradeoffsForYou": [
+      "Watchung is nearby but it's not the same as living next to Prospect Park or the Hudson.",
+      "The 50-minute Midtown Direct commute eats mornings you'd rather spend outside.",
+      "Greenery here is lawn-and-tree-pit suburban, not the parks or waterfront you crave.",
+      "If nature is the priority, you'll find more sky and trails closer to Montclair or Nyack."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:08.778Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "south-orange": {
+    "fitProse": "South Orange delivers what the nature-hungry urbanist needs: South Mountain Reservation right there, Cameron Field for daily loops, and a train that gets you to Penn in 40 minutes. The tree canopy is thick, the blocks are walkable, and you're not giving up the city entirely.",
+    "tradeoffsForYou": [
+      "South Mountain Reservation is your big green win. Beyond that, parks are smaller than you'd hope.",
+      "The train commute is real. Midtown Direct helps, but you're 40+ minutes out.",
+      "Block-by-block variance means scouting carefully for the greenest streets.",
+      "Less access to waterfront than Hudson River towns. Green here, but not blue."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:09.535Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westfield": {
+    "fitProse": "Westfield delivers what the nature-hungry urbanist needs most: Mindowaskin Park is a five-minute walk from downtown, Tamaques offers actual woods and trails, and the tree-lined blocks feel borrowed from an older, quieter America. The Raritan Valley Line to Penn keeps optionality alive.",
+    "tradeoffsForYou": [
+      "The train is slow (often 70+ min to Penn). You'll feel it.",
+      "This is deep suburbia. No spontaneous urban energy.",
+      "You'll have more green than you know what to do with, which is the point.",
+      "Most neighbors are deep in family mode, not weekend-hiking mode."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:10.693Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chatham-nj": {
+    "fitProse": "Chatham delivers exactly what nature-hungry urbanists dream about: quiet tree-lined streets, Memorial Park anchoring the town center, and the Great Swamp National Wildlife Refuge a short drive south. The Midtown Direct train keeps you tethered to Penn in 50 minutes, so you get woods and sky without full exile.",
+    "tradeoffsForYou": [
+      "50-minute train commute every workday cuts into morning and evening nature time.",
+      "Great Swamp is close but requires a car; this isn't roll-out-of-bed trail access.",
+      "The village is pleasant but very quiet. Weekend energy lives indoors or at the refuge.",
+      "Premium pricing reflects school ratings more than proximity to green space."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:14.781Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bronxville": {
+    "fitProse": "Bronxville delivers what you actually need: the Bronx River Pathway runs through the village, the green is a real gathering place, and the residential blocks are genuinely quiet and tree-canopied. Metro-North gets you to Grand Central in 25 minutes when the city calls.",
+    "tradeoffsForYou": [
+      "One square mile. You'll exhaust the footprint quickly.",
+      "The river pathway is lovely but narrow. Not Riverside Park scale.",
+      "Premium pricing for a very small geography.",
+      "Most nature access requires a car to wider Westchester trails."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:14.912Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "scarsdale": {
+    "fitProse": "Scarsdale gives you the trees, yards, and sky you crave, but at suburban scale. Greenacres Park and the hilly blocks deliver green without the compromise of a pocket park. The Metro-North gets you to Grand Central in 35 minutes, but you'll miss spontaneous access to water and wilder landscapes.",
+    "tradeoffsForYou": [
+      "Parks here are groomed and town-managed, not the big wild reserves you might dream of.",
+      "Water access means driving to the Sound or Hudson, not a morning walk.",
+      "You trade park proximity for yard space, which may or may not scratch the itch.",
+      "Car-dependent for trails, birding, or any serious nature fix beyond mowed grass."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:16.816Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "larchmont": {
+    "fitProse": "Larchmont delivers everything the nature-hungry urbanist craves: Manor Park and Flint Park wrap around the village, Long Island Sound is a three-minute walk from Palmer Avenue, and the tree canopy on residential blocks is dense enough to feel borrowed from a different century. Metro-North puts you in Grand Central in thirty minutes.",
+    "tradeoffsForYou": [
+      "You're choosing harbor walks over hiking trails. Real wilderness is a drive.",
+      "Off-peak trains can be slow. Weekend reverse-commutes take planning.",
+      "Premium pricing reflects the waterfront and school district.",
+      "The village is lovely but small. Cultural energy lives in the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:17.222Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "mamaroneck": {
+    "fitProse": "Harbor Island Park delivers exactly what you need: open sky, working waterfront, and the Long Island Sound to reset your nervous system. The Metro-North runs fast to Grand Central, and the blocks near Columbus Park trade Larchmont polish for more green space per dollar.",
+    "tradeoffsForYou": [
+      "Train commute is your only real option. You're car-bound for everything else.",
+      "Block-by-block variance. Some streets have tree canopy, others just asphalt.",
+      "Less cultivated feel than Larchmont. The harbor is real but scrappy, not serene."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:20.010Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rye": {
+    "fitProse": "Rye is a nature-hungry urbanist's compromise with family life and prestige. Edith G. Read Sanctuary and Rye Town Park deliver real water and sky, but the quiet estate streets and country-club shape feel borrowed from a different value system than yours.",
+    "tradeoffsForYou": [
+      "45 min Metro-North to Grand Central. Real commute, manageable if you do it 3x/wk.",
+      "The Sound Shore is genuinely beautiful, but you'll miss spontaneous park access.",
+      "Rye reads affluent-conservative. Very few people here for the nature alone.",
+      "Single-family only. No walkable density, no corner bodega with a cat."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:20.946Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "pelham": {
+    "fitProse": "Pelham gives you Pelham Manor Park and Glover Field right in town, plus you're twenty minutes by Metro-North from Bronxville's trails and forty from the Hudson. The footprint is smaller than New Rochelle or Scarsdale, so green space feels contained, but the quiet blocks have mature trees and the pace is gentle.",
+    "tradeoffsForYou": [
+      "Parks are pleasant but modest. For big sky, you'll drive to larger preserves.",
+      "Tree-lined, yes. Wilderness-adjacent, no.",
+      "The commute speed means less time outdoors on weekday mornings.",
+      "Premium pricing partly reflects the park-and-school combo, not just transit."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:23.448Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hastings-on-hudson": {
+    "fitProse": "Hastings-on-Hudson is practically built for the nature-hungry urbanist. You get MacEachron Waterfront Park on the river, hilly streets lined with trees that feel like upstate, and Metro-North to Grand Central in 35 minutes. The town is small, walkable, and you can see sky from nearly everywhere.",
+    "tradeoffsForYou": [
+      "The Hudson Line is slower than the Harlem Line, and you'll feel it.",
+      "Hilly geography means some blocks are walk-to-the-car, not walk-to-downtown.",
+      "River-view homes command a premium, and the competition is real.",
+      "Smaller park network than bigger Westchester towns, but the river compensates."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:23.835Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dobbs-ferry": {
+    "fitProse": "Dobbs Ferry is a gift to the nature-hungry urbanist. Waterfront Park and the Old Croton Aqueduct trail put you on the river or in the woods daily, and Metro-North means you keep the optionality that matters without the concrete that doesn't.",
+    "tradeoffsForYou": [
+      "The Hudson Line is slower than the Harlem Line (add 10 to 15 minutes each way).",
+      "Small footprint means fewer trails, fewer cafes, fewer chances to vary the routine.",
+      "River views are real, but you're sharing them with stroller crowds on weekends."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:25.057Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "irvington-ny": {
+    "fitProse": "Irvington is practically built for you. The Hudson Line gives you Grand Central in forty minutes, but the real gift is sky: river views from hillside streets, Scenic Hudson Park at the water, Irvington Woods for weekends. Quiet, green, and built at a human scale.",
+    "tradeoffsForYou": [
+      "The hills are beautiful but real. Walking to the train means committing to elevation.",
+      "Dining and village life thin out fast beyond Main Street.",
+      "Premium pricing for river views and the combination of green + rail.",
+      "You'll drive more than you think, even with Metro-North nearby."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:27.114Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "white-plains": {
+    "fitProse": "White Plains is the most urban-feeling Westchester option, but nature-hungry urbanists will want to look carefully. Saxon Woods and Tibbits Park are real, but you'll be driving to them. The downtown high-rises offer density and Metro-North, but you're trading the kind of daily green you'd get in Bronxville or Scarsdale for mall-adjacent convenience.",
+    "tradeoffsForYou": [
+      "Parks exist but aren't woven into daily life the way they are in NYC.",
+      "The trade is suburban car-dependent green space, not walk-to-a-park urbanism.",
+      "Metro-North is solid but the downtown reads commercial, not tree-lined.",
+      "If you want sky and trees from your window, single-family zones beat the high-rises."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:29.773Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yonkers-ny": {
+    "fitProse": "Yonkers delivers the big thing nature-hungry urbanists need: the Hudson River waterfront, with real trails and sky. Metro-North puts you in Grand Central in under forty minutes, and the blocks off Riverdale Ave have that leafy suburban hush without totally leaving the grid.",
+    "tradeoffsForYou": [
+      "You're trading immediate park access for river proximity. No Prospect Park analogue.",
+      "Metro-North schedule dictates your evenings more than the subway ever did.",
+      "Block-by-block variance is real. Scout carefully for tree cover and walkability.",
+      "Yonkers reads as outside the Westchester bubble, which matters more to others than to you."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:31.177Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tarrytown": {
+    "fitProse": "Tarrytown delivers exactly what a nature-hungry urbanist craves: river views from the Mario Cuomo Bridge, waterfront parks like Pierson and Patriots, and Sleepy Hollow Cemetery's tree-canopy walks. The Metro-North ride to Grand Central is an hour, but you're trading that for mornings with sky and water.",
+    "tradeoffsForYou": [
+      "An hour commute each way on Metro-North, no express option.",
+      "Downtown is real but small. You'll need the car for variety.",
+      "Summer weekends bring tourist crowds near the waterfront.",
+      "Bridge traffic can bottle up the main roads during peak hours."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:31.487Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chappaqua": {
+    "fitProse": "Chappaqua delivers acres of trees, hilly walking trails, and Gedney Park's open fields. The environmental-openness score is real: this is one of the greenest places in the metro, with winding roads, old-growth canopy, and a rural-residential hush that lets you breathe.",
+    "tradeoffsForYou": [
+      "Metro-North is 50 minutes. You'll spend 100 minutes a day in transit.",
+      "Car-dependent for everything outside the tiny village center.",
+      "Premium pricing for space means fewer friends make the move north.",
+      "Cultural and creative energy is low. Nature is the main event."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:32.835Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "great-neck": {
+    "fitProse": "Great Neck delivers what the nature-hungry urbanist needs most: Steppingstone Park on the water, tree-lined residential streets, and the LIRR Port Washington line to Penn in 25 minutes. You're trading Brooklyn density for Long Island sky, but the train keeps Manhattan close.",
+    "tradeoffsForYou": [
+      "Steppingstone Park is beautiful but small. No Prospect Park scale here.",
+      "Off-peak LIRR service thins out, especially evenings and weekends.",
+      "Middle Neck Road is walkable, but most errands still assume a car.",
+      "Premium pricing reflects schools and train more than green space."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:35.121Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "port-washington": {
+    "fitProse": "Port Washington is nearly ideal for a nature-hungry urbanist willing to leave the five boroughs. The peninsula gives you water on three sides, Sunset Park and Bar Beach for morning walks, and the LIRR puts you in Penn in 35 minutes. It's a working harbor with sky everywhere.",
+    "tradeoffsForYou": [
+      "The LIRR commute is real. 35 minutes best case, plus Penn transfer time.",
+      "Main Street is walkable but dining drops off fast beyond it.",
+      "You're trading density for sky. Evenings are very quiet.",
+      "It's classic-affluent suburbia. You'll miss the urban serendipity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:36.752Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhasset": {
+    "fitProse": "Manhasset is the rare suburb that gives you estate-scale nature without sacrificing the train. Manhasset Valley Park and Whitney Pond deliver real sky and water, the tree-lined streets are generous, and the LIRR Port Washington line means Penn in thirty minutes.",
+    "tradeoffsForYou": [
+      "Nature is mostly on your own lot or small park pockets, not Prospect Park scale.",
+      "The train is good but departures are less frequent than subway lines.",
+      "Dining variety is thin. You're driving to Great Neck or taking the train in.",
+      "Quiet to the point of stillness. Weekend energy comes from your own yard."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:37.219Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roslyn": {
+    "fitProse": "Roslyn Pond Park and Christopher Morley Park anchor your weeks, and the quiet residential blocks deliver the sky and trees you need. The LIRR requires a drive (usually to Albertson/Roslyn), but the tradeoff is space, greenery, and distance from urban density.",
+    "tradeoffsForYou": [
+      "You'll drive to the train, and drive to most errands.",
+      "The parks are real, but you're trading proximity to larger wilderness or waterfront.",
+      "Car-dependent rhythm means less spontaneous outdoor discovery.",
+      "Premium pricing reflects the school district, not the nature access."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:39.538Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "garden-city": {
+    "fitProse": "Garden City offers the nature-hungry urbanist a paradox: tree-lined blocks and Cherry Valley Park deliver green, but the spatial logic is sprawling single-family suburban. You'll have sky and quiet, but you'll drive more than walk, and the LIRR to Penn is your lifeline back to density.",
+    "tradeoffsForYou": [
+      "You'll need a car. The green is real, but it's not pedestrian green.",
+      "LIRR commute is 40 minutes, and trains don't run like subway intervals.",
+      "Parks exist but feel manicured-suburban, not wild or immersive.",
+      "No spontaneous walkable nature. You plan your green, you don't stumble into it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:41.523Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rockville-centre": {
+    "fitProse": "The nature-hungry urbanist will find decent sky in Rockville Centre. Mill River Park and Hickey Field give you open space, and the South Shore proximity means beach weekends, but this is still suburbia with a walkable downtown, not a park-first neighborhood. The trees are there, just not the reason people come.",
+    "tradeoffsForYou": [
+      "Mill River Park is pleasant but small. Not a Prospect Park substitute.",
+      "LIRR gets you to Penn in ~40 min, but off-peak can be slow.",
+      "South Shore beaches are close, but you'll need a car to access them regularly.",
+      "The environmental score is moderate. You'll get backyard green, not immersive nature."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:43.181Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-beach-ny": {
+    "fitProse": "Long Beach is the rare commuter town where nature is the point. The 2-mile boardwalk and Atlantic horizon are yours every morning, and the LIRR gets you to Penn in fifty minutes. If you've been hunting for sky, sand, and actual ocean while staying in the NYC orbit, this is it.",
+    "tradeoffsForYou": [
+      "50-minute LIRR ride one-seat, but it's long and it's the only train.",
+      "Summer weekends bring beach crowds and day-trippers in volume.",
+      "Storm and flood risk is real. Sandy reshaped the town.",
+      "Winter can feel quiet and wind-scraped if you're not a four-season beach person."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:43.315Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich": {
+    "fitProse": "Greenwich delivers what a nature-hungry urbanist wants most: sky, old trees, actual coastline at Greenwich Point, and Bruce Park when you need green close by. Metro-North gets you to Grand Central in 50 minutes, but day-to-day you're in a car, and the shape is estate-scale suburban, not walkable urban.",
+    "tradeoffsForYou": [
+      "You'll drive to parks and water, not walk. Car-dependent by design.",
+      "Metro-North commute is 50 min. Nature comes at the cost of distance.",
+      "Estate blocks are gorgeous but socially conservative and very expensive.",
+      "Greenwich Avenue is pleasant but this is suburb-with-train, not urban-with-trees."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:46.002Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stamford": {
+    "fitProse": "Stamford has Cove Island Park and Mianus River Park, real greenspace with water access, but the rest feels more highway-adjacent than nature-adjacent. If you're okay trading the immersive park life for weekend escapes and a 55-minute Metro-North, it works. But daily exposure to green is harder than you'd expect in CT.",
+    "tradeoffsForYou": [
+      "The parks are real, but getting to them often means driving.",
+      "Downtown blocks read corporate plaza, not tree-canopy.",
+      "55 min to Grand Central means fewer spontaneous nature breaks midday.",
+      "Better for weekend hikes than morning-window-onto-green routines."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:47.391Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "darien": {
+    "fitProse": "Darien is nature on a scale that makes NYC parks look like pocket squares. Large lots under mature trees, two beaches on the Sound, and genuine quiet after dusk. The Metro-North ride to Grand Central is an hour, but the sky and water are real.",
+    "tradeoffsForYou": [
+      "You give up walkability entirely. Every errand is a drive.",
+      "60-minute train commute each way, every workday.",
+      "Among the priciest towns in CT; you're paying for schools and space.",
+      "Very little urbanism. This is full suburban life."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:48.434Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "new-canaan": {
+    "fitProse": "New Canaan is heaven for nature-hungry urbanists ready to leave the city behind. Waveny Park's 300 acres, Irwin Park's trails, and estate-scale lots mean sky and trees are your default, not your reward. The Metro-North branch adds 75 minutes, but you trade the grind for morning light through old-growth canopy.",
+    "tradeoffsForYou": [
+      "Branch line to Grand Central via Stamford. 75 min each way, no express.",
+      "Car-dependent for everything outside walkable downtown.",
+      "You're choosing rural Connecticut, not urban optionality.",
+      "Premium pricing for the privilege of space and green."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:48.494Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westport": {
+    "fitProse": "Westport gives you Compo Beach, Sherwood Island State Park, and the Long Island Sound practically in your backyard. The environmental-openness score (0.95) is earned, not marketing. Metro-North to Grand Central is 75 minutes, but you get real sky and water in exchange.",
+    "tradeoffsForYou": [
+      "That commute is real. 75 minutes each way adds up fast.",
+      "Parks are stellar, but you're leaving the optionality of NYC behind.",
+      "Premium pricing for the nature access and schools.",
+      "Cultural ecosystem is pleasant but quieter than you're used to in the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:41:51.284Z",
+    "model": "claude-sonnet-4-5"
+  }
+}

@@ -1,0 +1,1467 @@
+{
+  "west-village": {
+    "fitProse": "This is the address that does exactly what you want it to do. West Village is the postcard, the name drop, the place that says you've arrived. The townhouse blocks are genuinely beautiful, the 1/A/C/E give you range, and the restaurants have pedigree.",
+    "tradeoffsForYou": [
+      "You're paying peak dollar per square foot in the entire city.",
+      "Weekend tourists treat Bleecker like Disneyland.",
+      "The scene is more settled than electric. Energy lives elsewhere.",
+      "Small apartments are the norm, even at this price point."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:57.385Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-east-side": {
+    "fitProse": "The Upper East Side is exactly what a prestige-anchored cosmopolitan came to New York for. The address carries weight in any room, the doormen are real, and you're surrounded by people who've made similar choices. Museums, Agata & Valentina, Central Park, and the kind of polished calm that lets you breathe.",
+    "tradeoffsForYou": [
+      "The Lex is famously crowded. The Q helps but coverage is patchy.",
+      "Dinner conversations skew finance and private equity, not startups or art.",
+      "Energy is muted. If you want buzz, you'll head downtown.",
+      "Co-op boards can be brutal, even if you can afford the place."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:58.171Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-west-side": {
+    "fitProse": "The Upper West Side is one of the few addresses that carries weight in any room. Pre-war bones, three subway lines, Central and Riverside bracketing you, and Zabar's as cultural shorthand. It's a name that does work for you, and the infrastructure matches the reputation.",
+    "tradeoffsForYou": [
+      "Dinner-party currency is high, but nightlife is decidedly muted.",
+      "Co-op boards here are famously picky. Plan for scrutiny.",
+      "The scene skews family-heavy. You'll be the young professional at brunch.",
+      "Real estate priced for permanence, not for getting in cheap."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:58.601Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-village": {
+    "fitProse": "The East Village has creative energy and cultural depth, but it doesn't signal prestige the way the West Village or Upper East Side do. The name is recognizable, but the walk-ups and grit read more bohemian than arrived. You'll love the restaurants and texture, but this isn't the address that closes the story you want to tell.",
+    "tradeoffsForYou": [
+      "The name carries cultural cachet, but not the kind that impresses at dinner parties.",
+      "Walk-ups and small prewar units. No doorman, no marble lobby.",
+      "Transit is awkward: the F at 2nd Ave is your main line into Midtown.",
+      "Loud at night. The energy that makes it interesting also makes it relentless."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:59.190Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tribeca": {
+    "fitProse": "Tribeca is the address that needs no explanation. The cobblestones, the cast-iron, the lofts, the restaurants that don't advertise: this is the prestige-anchored cosmopolitan's urban finish line. You're walking distance to the river, the 1/2/3 and PATH get you anywhere, and the neighborhood never shouts.",
+    "tradeoffsForYou": [
+      "Among the priciest per square foot in the city, full stop.",
+      "Quiet on weekends to the point of empty. The cachet comes with calm.",
+      "Schools are competitive entry points, not neighborhood givens.",
+      "If you want street energy, you'll head to SoHo or the West Village."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:03.013Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fidi": {
+    "fitProse": "Financial District isn't a prestige address in the traditional sense. The transit redundancy is unmatched (every line, PATH, ferry), and the apartments are spacious, but the neighborhood carries almost no social cachet. You'll have the waterfront and easy access to anywhere, but nobody asks about FiDi at dinner parties.",
+    "tradeoffsForYou": [
+      "The address reads as pragmatic, not aspirational.",
+      "Weekends feel empty. Restaurants close early, energy drains after work hours.",
+      "Tourist density around the 9/11 Memorial is constant.",
+      "No cultural anchors or dinner spots that signal taste."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:03.635Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chelsea": {
+    "fitProse": "Chelsea is a legible, prestigious address with the cultural weight to back it up. The gallery district, the High Line, and Chelsea Market give you both conversational currency and daily infrastructure. The A/C/E and crosstown buses make most of Manhattan easy.",
+    "tradeoffsForYou": [
+      "Tourist density around the High Line can feel like an obstacle, not an amenity.",
+      "Hudson Yards looms close. Some love it, some find it soulless.",
+      "Quieter at night than you'd expect from a neighborhood with this much name recognition.",
+      "Square footage is expensive, even by Manhattan standards."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:04.157Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gramercy": {
+    "fitProse": "Gramercy is the rare Manhattan address that reads as both central and rarefied. The name carries weight, the pre-war buildings have the right proportions, and you're steps from Union Square's restaurants and minutes from Flatiron. It's the kind of block you name-drop in London.",
+    "tradeoffsForYou": [
+      "The 6 train is your only local line. Union Sq is a walk.",
+      "Without a key to the Park, you're paying for the address more than the amenity.",
+      "Dining scene is more quiet European bistro than buzzy opening.",
+      "The neighborhood is genuinely small. You'll see the same faces."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:05.213Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hells-kitchen": {
+    "fitProse": "Hell's Kitchen is the wrong address for someone who needs the address to do the work. It's central, with unmatched transit (A/C/E, 1, N/Q/R/W, 7), and the restaurant density is world-class. But prestige zero. The story it tells is pragmatic, not polished.",
+    "tradeoffsForYou": [
+      "The name doesn't signal arrival. It signals hustle and tenements.",
+      "Tourist crush near Times Square is real and unavoidable.",
+      "Walk-ups and aging co-ops, not the elevator buildings prestige prefers.",
+      "You'll eat exceptionally well, but no one will be impressed you live here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:08.749Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "central-harlem": {
+    "fitProse": "Central Harlem has deep cultural gravity and real brownstone beauty, but the address doesn't yet carry prestige-signaling power in the rooms where you tell your story. You'll get space and history at prices that shame Brooklyn, but this is a neighborhood you love despite the raised eyebrows, not because of them.",
+    "tradeoffsForYou": [
+      "The name doesn't land the way Upper West Side or Brooklyn Heights does.",
+      "Restaurant and bar scene is uneven. You'll still go downtown often.",
+      "2/3 gets you to midtown fast, but the perceived distance is real.",
+      "Your friends will ask if you feel safe (you will, but you'll hear it)."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:09.771Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "williamsburg": {
+    "fitProse": "Williamsburg has the name recognition and the infrastructure. The waterfront condos, Michelin-adjacent dining, and Bedford Ave scene give you a story worth telling. The L is a liability, but the Ferry and proximity to Manhattan justify the address.",
+    "tradeoffsForYou": [
+      "L train dependence means one subway shutdown can derail your week.",
+      "The energy skews younger and louder than you might expect for the price.",
+      "Manhattan-adjacent rent without Manhattan's transit redundancy.",
+      "Some of the waterfront luxury feels more Instagram than lived-in."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:09.816Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "park-slope": {
+    "fitProse": "Park Slope is a prestige address that has earned its reputation the hard way: decades of real people choosing it. The name reads as \"accomplished, grounded, good taste\" on both coasts, and the F/G puts you in Manhattan for dinner or meetings without breaking stride.",
+    "tradeoffsForYou": [
+      "The story you tell is 'family-oriented and calm,' not 'edge' or 'scene.'",
+      "Real estate priced like Manhattan. You're buying the name and the park.",
+      "Late-night energy is elsewhere. This is a brunch-and-dinner neighborhood.",
+      "Stroller density signals where you are in life, whether you're there yet or not."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:11.098Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brooklyn-heights": {
+    "fitProse": "Brooklyn Heights is one of the few New York addresses that needs no explanation. The Promenade view, the Federal townhouses, the near-instant access to Manhattan via four subway lines (2/3, A/C, R, 4/5). It's quiet, serious, and universally legible as a place that signals you've arrived.",
+    "tradeoffsForYou": [
+      "Weekend dining means leaving the neighborhood or repeating the same handful of spots.",
+      "Some of the most expensive blocks in Brooklyn, full stop.",
+      "Calm and beautiful, but the energy lives across the river or deeper in Brooklyn.",
+      "You'll tell the story of the Promenade more often than you'll actually walk it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:14.700Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dumbo": {
+    "fitProse": "DUMBO is a prestige address with a cinematic pedigree. The cobblestones, Brooklyn Bridge Park, and converted loft towers make it one of the most recognizable few blocks in the city. The F and A/C give you Manhattan options, and the Ferry adds narrative value.",
+    "tradeoffsForYou": [
+      "Tourist crowds on the waterfront are relentless, especially weekends.",
+      "Grocery is limited. You'll supplement with deliveries or trips elsewhere.",
+      "The neighborhood is tiny. Dining and social infrastructure lives in other Brooklyn neighborhoods.",
+      "Among the highest price-per-square-foot in Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:15.434Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cobble-hill": {
+    "fitProse": "Cobble Hill is a name that does quiet work for you. It telegraphs taste and arrival without shouting, and the Court Street restaurant row delivers the kind of cosmopolitan dining infrastructure you expect at this stage of life.",
+    "tradeoffsForYou": [
+      "All trains require a 10-minute walk. You'll feel it in February.",
+      "Stroller density is high. The blocks read 'arrived family' more than 'ascendant couple.'",
+      "Nightlife is minimal. You'll Uber to Manhattan or Williamsburg for evenings out.",
+      "Real estate is competitive and expensive, even by Brooklyn standards."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:16.650Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bed-stuy": {
+    "fitProse": "Bed-Stuy has the brownstones and history, but the address doesn't yet carry the signal weight of Fort Greene or Clinton Hill. The A/C gets you to Manhattan, the blocks are gorgeous, but when you say \"Bed-Stuy\" in conversation, you're still explaining rather than arriving.",
+    "tradeoffsForYou": [
+      "The name doesn't open doors the way Park Slope or Cobble Hill does.",
+      "A and C only. Limited train optionality for someone who values access.",
+      "Block-by-block variance means you're doing recon, not just signing a lease.",
+      "Foodtown and C-Town anchor groceries, not Whole Foods or Trader Joe's."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:17.307Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brighton-beach": {
+    "fitProse": "Brighton Beach is the wrong name for someone who cares about names. The Q terminus reads as exile to most of your cohort, even though the boardwalk is real and the food is extraordinary. This is a cultural anchor neighborhood, not a prestige one.",
+    "tradeoffsForYou": [
+      "End of the Q line. You'll explain the commute to everyone.",
+      "Zero name-brand cachet outside the post-Soviet diaspora.",
+      "Dinner stories are great but the address doesn't signal where you are in life.",
+      "The beach is genuinely wonderful if you can look past the rest."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:21.386Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sheepshead-bay": {
+    "fitProse": "Sheepshead Bay won't give you the address you're looking for. The prestige-anchored cosmopolitan needs a name that signals arrival, and this is a working waterfront neighborhood at the far southern edge of Brooklyn with zero cachet outside locals who value space and value.",
+    "tradeoffsForYou": [
+      "The B and Q run to Manhattan, but you're 45+ minutes from Midtown on a good day.",
+      "Name recognition is nil. Most Manhattanites have never been here.",
+      "Restaurant scene is authentic and global, but not the kind you'd bring clients to.",
+      "No one will be impressed when you say where you live."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:22.494Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-island-city": {
+    "fitProse": "Long Island City offers excellent transit and genuine space, but the prestige-anchored cosmopolitan will notice what's missing. The name still reads outer-borough, not Manhattan alternative, and the dining scene lacks the polish that signals arrival. The skyline views are real, but you're looking at the story, not living in it.",
+    "tradeoffsForYou": [
+      "'Where do you live?' still requires explanation at cocktail parties.",
+      "Restaurant scene is uneven. You'll cross the river for dinner more than you'd like.",
+      "High-rise amenities are strong, but street-level texture feels transactional.",
+      "The address doesn't yet carry the narrative weight you're looking for."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:23.897Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bushwick": {
+    "fitProse": "Bushwick has creative energy and generous space, but it doesn't carry the address weight you're looking for. The name still reads as gritty frontier, not arrival. The L will get you to Manhattan, but this isn't where you'd bring clients for dinner.",
+    "tradeoffsForYou": [
+      "Prestige-wise, this is the opposite of what you want.",
+      "The dining scene is more taco trucks and dive bars than cosmopolitan dining.",
+      "Block-by-block variation means your address won't land cleanly.",
+      "You'll spend more time explaining where you live than you'd like."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:26.137Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "astoria": {
+    "fitProse": "Astoria's prestige problem is that it has none, at least not the kind that plays well at dinner parties in Manhattan. The food is extraordinary, the apartments are real, and the N/W gets you to midtown, but nobody mistakes Queens Boulevard for Fifth Avenue.",
+    "tradeoffsForYou": [
+      "You'll spend more time explaining where you live than you'd like.",
+      "The address doesn't carry weight in the circles you're building.",
+      "Restaurant depth is remarkable, but nightlife skews neighborhood bar.",
+      "The cultural story here is immigrant success, not cosmopolitan arrival."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:27.038Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flushing": {
+    "fitProse": "Flushing is one of the great food cities in North America, but it does not carry the address prestige you're used to leveraging. The 7 brings you to midtown, but the neighborhood reads outer-borough in every way that matters to your story.",
+    "tradeoffsForYou": [
+      "The name doesn't open doors the way Tribeca or the Upper West Side does.",
+      "One subway line, and it's the 7. You're anchored to the Flushing terminus.",
+      "Street-level friction is real. Crowds, narrow sidewalks, very little of the polished calm.",
+      "Your dinner parties will be in Manhattan. This is where you sleep and save."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:28.901Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "forest-hills": {
+    "fitProse": "Forest Hills has the space and the train lines, but it doesn't have the address. The Tudor co-ops are gorgeous and the E/F/M/R give you midtown options, but when you tell people Forest Hills, you're explaining Queens geography, not collecting nods.",
+    "tradeoffsForYou": [
+      "The name doesn't land the way Gramercy or Brooklyn Heights does.",
+      "Dining is functional, not sceney. You'll travel for the restaurants that matter.",
+      "30-35 min to midtown is real. Your dinner plans will account for it.",
+      "Beautiful blocks, but the cosmopolitan energy you want lives in Manhattan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:30.512Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "riverdale": {
+    "fitProse": "Riverdale won't give you the prestige signal you're looking for. It's a quiet, hilly, suburban pocket that reads as family retreat, not cosmopolitan address. The restaurants and cultural infrastructure are thin, and people outside NYC don't recognize the name.",
+    "tradeoffsForYou": [
+      "The name doesn't land. Most people hear Bronx and think South Bronx, not Hudson views.",
+      "Dining and nightlife are sparse. You'll head to Manhattan or order in.",
+      "The 1 train is slow and Metro-North requires planning. Spontaneity costs time.",
+      "Car-dependent in a way that feels suburban, not urban chic."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:31.904Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "st-george": {
+    "fitProse": "St. George has the ferry, the views, and the space, but it lacks the address. For someone who values where they live as part of their story, a Staten Island ZIP code is a hard sell no matter how dramatic the skyline from Snug Harbor. The dining and cultural scene is thin.",
+    "tradeoffsForYou": [
+      "A Staten Island address does not signal what you want it to signal.",
+      "Bay Street is improving but lacks the restaurant and nightlife density you expect.",
+      "Ferry commute is charming once, exhausting by month three.",
+      "You'll spend weekends in Manhattan or Brooklyn, not here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:32.992Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hoboken": {
+    "fitProse": "Hoboken is pleasant and functional, but it doesn't carry the kind of address prestige you're looking for. The PATH is excellent (closer to Midtown than most of Brooklyn), the waterfront is lovely, but nobody drops \"I live in Hoboken\" to signal where they are in life.",
+    "tradeoffsForYou": [
+      "The name reads suburban or college-town to the NYC cosmopolitan set.",
+      "Restaurants and bars exist, but the culinary scene isn't a story you tell.",
+      "You'll explain the move as practical, not aspirational.",
+      "NJ taxes and logistics add friction most prestige addresses don't require."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:34.877Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jersey-city": {
+    "fitProse": "Jersey City has the infrastructure and the PATH access, but for a prestige-anchored cosmopolitan it's a story problem. The address doesn't carry the same weight as Tribeca or West Village, and you'll spend conversational energy explaining why you chose NJ.",
+    "tradeoffsForYou": [
+      "The waterfront views are real, but the neighborhood name doesn't signal arrival.",
+      "PATH is fast and direct, but it's still not the subway.",
+      "You'll find Whole Foods and good restaurants, but not the Michelin density of Manhattan.",
+      "Friends in Manhattan will treat your dinner invites like a bridge-and-tunnel expedition."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:36.996Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "edgewater": {
+    "fitProse": "Edgewater doesn't have a name that signals much, and that's the problem. The waterfront views are real, the ferry is efficient, and Mitsuwa is a cosmopolitan perk, but this is a quiet residential strip, not an address that tells a story at a dinner party.",
+    "tradeoffsForYou": [
+      "The address won't carry weight in Manhattan circles.",
+      "Ferry is great until you need to stay late or go anywhere but Midtown.",
+      "You'll need a car for most errands and weekend plans.",
+      "Street life is minimal. Dining and culture require a trip."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:38.740Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-lee": {
+    "fitProse": "Fort Lee is not a prestige address in the way Tribeca or the Upper East Side is, and that matters when your ZIP code is part of how you introduce yourself. The views are real, the apartments are bigger, and H Mart is world-class, but you're explaining New Jersey to colleagues who live in Brooklyn.",
+    "tradeoffsForYou": [
+      "You lose the cultural shorthand that comes with a recognizable NYC neighborhood.",
+      "Bus commutes through the Lincoln Tunnel test your patience and your phone battery.",
+      "Dinner-party invites dry up when friends realize you're across the river.",
+      "The restaurant scene is excellent but hyper-specific. Impress Korean food nerds, confuse others."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:40.938Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lower-east-side": {
+    "fitProse": "The Lower East Side has real history and real restaurants, but it doesn't carry the prestige signal you're after. The address reads more creative-class than established-professional, and the tenement walk-ups won't help tell the story you want your life to tell.",
+    "tradeoffsForYou": [
+      "The name says grit and scene, not arrival.",
+      "Most housing stock is old walk-ups. No doorman buildings to speak of.",
+      "Weekend nights are loud. This is not a neighborhood that whispers.",
+      "West Side dining and cultural events require real travel time."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:42.331Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-harlem": {
+    "fitProse": "East Harlem delivers Manhattan space and Central Park access at prices the rest of the island can't match, but the prestige-anchored cosmopolitan will notice the address carries zero cachet in most rooms. The cultural richness is real (El Barrio murals, La Marqueta), but it doesn't translate into the kind of restaurants or shops you'd name-drop.",
+    "tradeoffsForYou": [
+      "The address doesn't signal the way Upper West or Tribeca does.",
+      "Few destination restaurants or recognizable retail.",
+      "Block variance means you'll be explaining which blocks are which.",
+      "You get Manhattan square footage your peers in Chelsea can't afford."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:45.197Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hamilton-heights": {
+    "fitProse": "Hamilton Heights doesn't carry the prestige weight you're looking for. It has real history (Sugar Hill, City College, the hilltop views), but the address won't land the same way Upper West Side or Tribeca does when you tell the story of where you are in life.",
+    "tradeoffsForYou": [
+      "The A express is fast, but explaining you live near 145th takes longer than you'd like.",
+      "Restaurant scene is uneven. You'll still travel downtown for dinner worth talking about.",
+      "Beautiful pre-war bones, but the neighborhood name doesn't open conversations the way you want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:46.335Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "palisades-park": {
+    "fitProse": "Palisades Park is not a prestige address in the Manhattan sense, and that's the problem. The Korean community is one of the densest and most functional in the country, but it doesn't carry the name recognition that tells your story outside that context.",
+    "tradeoffsForYou": [
+      "No subway. Buses to Manhattan work but don't signal cosmopolitan ease.",
+      "The address reads second-tier NJ to the crowd you're signaling to.",
+      "The cultural depth is real, but the cachet is hyperlocal.",
+      "If Korean culinary and social infrastructure is part of your story, it's unmatched."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:46.424Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "washington-heights": {
+    "fitProse": "Washington Heights is a hard sell for the prestige-anchored. The pre-war bones are real, the views are spectacular, and the A express is surprisingly fast. But the address doesn't signal what you need it to signal, and your friends will still think you moved far.",
+    "tradeoffsForYou": [
+      "Name recognition stops at Columbia. Below 96th, people will ask why.",
+      "The neighborhood codes as value play, not arrival story.",
+      "Dinner parties mean convincing guests to come up. They often won't.",
+      "Fort Tryon is gorgeous but won't replace the UWS or UES social map."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:48.603Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lincoln-square": {
+    "fitProse": "Lincoln Square is prestige with purpose. The address says Upper West Side, Lincoln Center says culture, and the 1/A/B/C/D mean you're never waiting. This is where cosmopolitan professionals live when they want a name that works in any conversation, anywhere.",
+    "tradeoffsForYou": [
+      "High-rise living dominates. Block-level brownstone character lives elsewhere.",
+      "Tourist and commuter foot traffic around Lincoln Center is constant.",
+      "Premium pricing for the cultural-anchor identity and the address.",
+      "Limited neighborhood grit. It's polished, institutional, safe."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:51.527Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "inwood": {
+    "fitProse": "Inwood is the wrong address for someone whose story depends on the name on the lease. You're technically in Manhattan, but no one will confuse this with the Upper West Side. The parks are spectacular, the apartments are huge, and the prestige is absent.",
+    "tradeoffsForYou": [
+      "You'll spend the first year explaining where you live and why.",
+      "40+ minutes to midtown on the A or 1, both at terminus.",
+      "Dining skews Dominican and neighborhood casual, not destination.",
+      "The cultural infrastructure you want lives dozens of stops south."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:51.759Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattan-valley": {
+    "fitProse": "Manhattan Valley doesn't carry the address prestige you're looking for. It's the northern edge of the UWS, quieter and more affordable, but when you say you live on 105th Street, people ask clarifying questions. The parks are real, the subway is solid, but the name doesn't signal where you are in life.",
+    "tradeoffsForYou": [
+      "The address reads as 'UWS-adjacent,' not UWS proper.",
+      "Restaurant scene is improving but uneven. You'll subway south for dinner.",
+      "Block-by-block variance means some streets feel polished, others don't.",
+      "Less of the culinary and cultural density you'd expect from a prestige address."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:54.112Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "morningside-heights": {
+    "fitProse": "Morningside Heights is a classic prestige address with cerebral bones. Columbia anchors everything, Riverside Park is steps away, and the co-ops whisper pre-war pedigree. It's quieter than the Upper West but carries the institutional weight that signals where you are.",
+    "tradeoffsForYou": [
+      "The 1 train is your primary subway. B/C helps, but you're not spoiled for lines.",
+      "Restaurant scene is improving but still trails the Upper West proper.",
+      "Summer feels subdued when students leave. The energy empties out.",
+      "Morningside and Riverside Parks are lovely, but nightlife is thin on the ground."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:55.043Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carnegie-hill": {
+    "fitProse": "Carnegie Hill is one of the few Manhattan addresses that still signals what you want it to signal. Limestone co-ops, the Met a few blocks south, Central Park at your doorstep, and a hushed residential tone that reads as refuge, not remoteness. The 4/5/6 and Q make this feel like proper Upper East Side without the noise of Midtown creeping in.",
+    "tradeoffsForYou": [
+      "Among the most expensive co-op boards and price-per-square-foot in the city.",
+      "Energy is residential, sometimes to the point of empty sidewalks after 8pm.",
+      "Dining and nightlife skew quiet. You'll go elsewhere for a scene.",
+      "Small footprint means block-by-block variation matters more than in other neighborhoods."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:57.952Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yorkville": {
+    "fitProse": "Yorkville gives you the Upper East Side address and the bones (pre-war, space, Carl Schurz) without paying the full prestige tax. It reads residential rather than glamorous, which matters if the story you tell yourself includes the UES but doesn't demand Fifth Avenue swagger.",
+    "tradeoffsForYou": [
+      "Dining and nightlife are muted. You'll travel for evenings that matter.",
+      "The Q is fine, but Lex is still the workhorse and you're farther east.",
+      "Reads more family-residential than cosmopolitan power base.",
+      "Your friends will hear 'Upper East Side' but won't know the distinction until they visit."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:58.160Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattanville": {
+    "fitProse": "Manhattanville is a tough sell for prestige signaling. The Columbia campus anchor is institutional rather than destination, the neighborhood name doesn't land in the same conversations as Tribeca or the Upper West Side proper, and the 1 train is your only real option north of 125th.",
+    "tradeoffsForYou": [
+      "The address doesn't carry weight outside academic or real-estate circles.",
+      "Restaurant and bar scene is thin. You'll subway south for dinner.",
+      "Few people outside NYC have heard of Manhattanville.",
+      "Columbia expansion means construction and a campus-adjacent vibe, not cosmopolitan energy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:30:59.931Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "midtown-east": {
+    "fitProse": "Midtown East is the prestige address for people who want to live where they work without apologizing for it. Sutton Place and the East 50s carry the kind of quiet, old-money weight that still registers in Manhattan, and Grand Central puts you anywhere fast.",
+    "tradeoffsForYou": [
+      "Office crowds by day mean you share sidewalks with the lunch rush.",
+      "Weekends feel emptied out. The energy moves downtown.",
+      "Dinner reservations skew corporate. The culinary scene lives elsewhere.",
+      "You'll pay for the address and the co-op boards know it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:00.684Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "murray-hill": {
+    "fitProse": "Murray Hill and Kips Bay are geographically central but reputationally transitional. The address says Manhattan, the 6 and Grand Central put you anywhere fast, but the neighborhood itself doesn't signal arrival. It's where you live while climbing, not where you tell people you've arrived.",
+    "tradeoffsForYou": [
+      "The name doesn't open the conversation. People will ask which part of Manhattan.",
+      "Post-collegiate vibe on weekends. Bars skew younger and louder.",
+      "Curry Hill is excellent, but destination dining stops there.",
+      "You'll outgrow it socially before you outgrow it logistically."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:03.810Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stuyvesant-town": {
+    "fitProse": "Stuyvesant Town is the wrong address for someone building a prestige narrative. It's a mid-century rental enclave with internal playgrounds and stabilized leases. The space is real and the greenways are lovely, but nobody outside New York has heard of it, and the architecture reads institutional, not iconic.",
+    "tradeoffsForYou": [
+      "You can't buy here. It's a rental-only stabilized complex.",
+      "The address doesn't signal anything on a résumé or dinner conversation.",
+      "Transit is workable (L at 1st Ave, 6 at 23rd) but not the kind of access you'd brag about.",
+      "You're steps from Union Square, but the complex itself feels more suburban than cosmopolitan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:04.233Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich-village": {
+    "fitProse": "Greenwich Village is the prestige address for someone who wants to say downtown Manhattan without explanation. The townhouse blocks, Washington Square, the literary DNA, the density of serious restaurants and wine bars, this is the NYC people imagine when they picture arriving.",
+    "tradeoffsForYou": [
+      "NYU undergrads are your constant neighbors, especially south of the park.",
+      "Pre-war apartments are beautiful but often small, with quirky layouts.",
+      "Weekend tourist flow around Washington Square rivals midtown.",
+      "You'll pay more per square foot than almost anywhere in Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:05.644Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "soho": {
+    "fitProse": "SoHo is precisely the name you want attached to your address. The cast-iron lofts, the cobblestones, the lineage of this place as the birthplace of downtown living all do narrative work for you. You get luxury retail, serious transit, and the ability to walk to every cultural downtown anchor in under fifteen minutes.",
+    "tradeoffsForYou": [
+      "Weekend retail tourism is real. Spring Street can feel like a mall.",
+      "Among the highest per-square-foot costs in the city.",
+      "Grocery shopping requires either Whole Foods on Bowery or planning.",
+      "Living above Prada is iconic until you need to buy paper towels."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:06.481Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chinatown": {
+    "fitProse": "Chinatown scores poorly on prestige orientation. It delivers deep culture and value but not the address that signals where you are in life. The apartments are tenement walk-ups, the streets are crowded, and no one is moving here to tell a story at a dinner party in Tribeca.",
+    "tradeoffsForYou": [
+      "The name doesn't carry social capital in cosmopolitan circles.",
+      "Tenement stock means small, old apartments with walk-ups.",
+      "Tourist crowds and street-level friction undermine the polished urban experience.",
+      "Almost no modern dining or cultural venues that read as 'arrival.'"
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:09.979Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "weehawken-port-imperial": {
+    "fitProse": "Weehawken and Port Imperial offer the skyline view without the skyline noise, and for the prestige-anchored cosmopolitan, that's a tradeoff worth considering. The address doesn't carry Manhattan weight, but the Hudson River Walkway sunsets and the Port Imperial ferry to Midtown West are concrete daily wins.",
+    "tradeoffsForYou": [
+      "The address reads as 'nice place across the river,' not as 'I've arrived.'",
+      "Ferry and bus reliance. No PATH, no subway. Weather matters.",
+      "Street-level dining and culture live in Manhattan, not your lobby.",
+      "When you tell the story of where you live, you'll lead with the view."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:11.922Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bay-ridge": {
+    "fitProse": "Bay Ridge doesn't carry prestige in the way Cobble Hill or Brooklyn Heights do. The address won't signal the chapter you're trying to tell, and the R train is your only line into Manhattan. If you need the name to do some of the work, this isn't it.",
+    "tradeoffsForYou": [
+      "The R is the slowest lifeline into Manhattan. No express, no backup.",
+      "Zero name recognition outside Brooklyn. You'll explain where it is.",
+      "The dining scene is Middle Eastern and Italian, not the cosmopolitan roster you're used to.",
+      "Shore Road is gorgeous, but you're far from the cultural gravity you associate with arrival."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:12.733Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenpoint": {
+    "fitProse": "Greenpoint has a name that signals curation without trying too hard, and the waterfront ferry commute is the kind of detail that lands well in conversation. The Polish bakeries and Manhattan Ave give it texture, and you're close enough to Williamsburg's restaurants to pull from that roster without living in the scrum.",
+    "tradeoffsForYou": [
+      "The G train is your spine. The ferry helps, but you'll feel the single-line constraint.",
+      "Prestige legibility is lower than Williamsburg or Dumbo. You'll explain this one.",
+      "Old Greenpoint is fading fast. The texture you're buying may not last a decade.",
+      "Waterfront condos read premium, but inland blocks can feel scrappy by comparison."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:13.468Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "crown-heights": {
+    "fitProse": "Crown Heights doesn't land in prestige territory yet. It has texture, history, the Brooklyn Museum, and four solid subway lines, but the address doesn't signal status the way Cobble Hill or Fort Greene does. If you care more about layered cultural life than the name on your lease, it works.",
+    "tradeoffsForYou": [
+      "The address won't impress at a dinner party in the way some Brooklyn neighborhoods do.",
+      "Block-by-block variance means even your friends may not know which Crown Heights you mean.",
+      "Dining and nightlife are growing but still lag the cosmopolitan hubs you're used to.",
+      "Real prestige dining is a subway ride away in Prospect Heights or Fort Greene."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:16.275Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-heights": {
+    "fitProse": "Prospect Heights is the kind of address that does quiet work in conversation. The Brooklyn Museum and Botanic Garden are yours to name-drop, five subway lines through Atlantic-Barclays give you the redundancy prestige neighborhoods deserve, and the brownstone blocks between Vanderbilt and Washington feel earned without feeling showy.",
+    "tradeoffsForYou": [
+      "Smaller footprint than Park Slope or Brooklyn Heights. You'll memorize every block.",
+      "Pricey relative to square footage, especially near the park.",
+      "Vanderbilt weekend crowds lean more brunch-casual than cocktail-formal.",
+      "The name still gets confused with Crown Heights by people outside Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:18.306Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-greene": {
+    "fitProse": "Fort Greene has the prestige you want, but it's earned through cultural gravity rather than flash. BAM and the brownstones carry weight, the ten subway lines at Atlantic-Barclays are serious infrastructure, and the name itself signals taste and history. It's not the Upper East Side, but you wouldn't want that anyway.",
+    "tradeoffsForYou": [
+      "The prestige here is intellectual and artistic, not finance or old money.",
+      "Atlantic-Barclays game-night crowds are real. You'll learn the schedule.",
+      "Greenmarket is lovely but the closest Michelin star is in DUMBO or Downtown.",
+      "Gentrification accelerated. You're part of the story now, for better or worse."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:18.800Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "clinton-hill": {
+    "fitProse": "Clinton Hill is the address you explain to people who know Brooklyn, not the one you drop to impress the room. It's quieter than Fort Greene, just as architecturally serious, and still counts as a name worth saying. If your prestige is more personal than performative, it fits.",
+    "tradeoffsForYou": [
+      "The C and G only. No express, no redundancy, no real weekend frequency.",
+      "You'll explain where it is more than you'd like.",
+      "Fort Greene Park and DeKalb nightlife require a walk or short ride.",
+      "The calm is real, which means fewer dinner-party options on your own block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:19.951Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-williamsburg": {
+    "fitProse": "East Williamsburg doesn't carry the name recognition you're looking for. The address reads industrial-loft-cool to people who already know Brooklyn, but it won't do the signaling work a West Village or DUMBO address does. The loft aesthetic is real, but the prestige is borrowed.",
+    "tradeoffsForYou": [
+      "The name doesn't open conversations the way prime Williamsburg does.",
+      "Industrial blocks and warehouses. This isn't postcard Brooklyn.",
+      "L-train only for most of it. The G helps but doesn't reach Manhattan.",
+      "You'll explain where you live more than you'd like."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:22.881Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ditmas-park": {
+    "fitProse": "Ditmas Park is gorgeous and affordable, but it doesn't signal the way Park Slope or Carroll Gardens do. The Victorian houses are real, the Q gets you to Manhattan, but you'll spend more time explaining where you live than basking in neighborhood recognition.",
+    "tradeoffsForYou": [
+      "The address doesn't carry prestige weight outside Brooklyn insiders.",
+      "Restaurant scene is Cortelyou Road, not a deep culinary bench.",
+      "Single Q line. No redundancy if there's a problem.",
+      "Reads as deep Brooklyn. Dinner guests will ask for directions."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:23.742Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "windsor-terrace": {
+    "fitProse": "Windsor Terrace isn't a name that announces itself, and that's the tension. The blocks are calm, Prospect Park is at your doorstep, and the housing is slightly more forgiving than Park Slope. But you trade square footage for address, and this address reads as adjacent rather than destination.",
+    "tradeoffsForYou": [
+      "The name doesn't carry prestige signal outside Brooklyn insiders.",
+      "Dining and nightlife options are thin. You'll head to Park Slope or Manhattan.",
+      "F/G only. No redundancy if the line goes down.",
+      "It's lovely, but no one asks where Windsor Terrace is to be impressed."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:27.596Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-lefferts-gardens": {
+    "fitProse": "PLG won't read as prestige to most of your circle. The park is real, the bones are beautiful, the value is striking, but the address doesn't yet signal what you want it to. If you can tell a story about the Victorian townhouses and the Botanic Garden, maybe.",
+    "tradeoffsForYou": [
+      "The name doesn't land at dinner parties the way Park Slope or Cobble Hill does.",
+      "B/Q only. Redundancy matters when you're hosting or being hosted.",
+      "Restaurant scene improving but you'll still Uber to Prospect Heights for client drinks.",
+      "Block variance is real. Some streets are stunning, others unfinished."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:28.535Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "woodside": {
+    "fitProse": "Woodside is the wrong address for someone who uses where they live as part of the story they tell. The 7 train is convenient, the LIRR is nearby, and the food is exceptional, but the neighborhood reads as scrappy, not polished.",
+    "tradeoffsForYou": [
+      "Roosevelt Avenue lacks the cosmopolitan finish you're used to.",
+      "The prestige dial is low. Friends will ask where Woodside is.",
+      "The culinary infrastructure is world-class, just not the kind written up in Eater.",
+      "You'll miss the name recognition of Astoria or Long Island City."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:29.682Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sunnyside": {
+    "fitProse": "Sunnyside doesn't have the name that opens doors at dinner parties. The 7 gives you midtown in twenty minutes, the food is legitimately international, and the pre-war co-ops offer real space. But if your address is part of your story, this won't tell the one you want.",
+    "tradeoffsForYou": [
+      "You'll spend time explaining where it is and why you live there.",
+      "Most Manhattanites think of it as deep Queens, even though the commute is faster than Upper West Side.",
+      "No Michelin stars, no buzzed-about openings. Excellent neighborhood spots, not destination dining.",
+      "The name carries zero social capital in your professional circles."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:30.296Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood": {
+    "fitProse": "Ridgewood doesn't carry the address cachet you're used to. The creative energy is real and the L, M, and J/Z give you options, but this is still Queens with a Bushwick spillover story, not a name that lands in conversation the way you want it to.",
+    "tradeoffsForYou": [
+      "You'll explain where it is. 'Near Bushwick' becomes your default.",
+      "Restaurant scene improving but uneven. Dinner reservations often mean Manhattan or Brooklyn.",
+      "No one associates Ridgewood with prestige, even if the apartments are nice.",
+      "The name doesn't signal where you are in life."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:34.024Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rego-park": {
+    "fitProse": "Rego Park doesn't carry the address prestige you're looking for. The Bukharian and Russian-speaking community is rich and specific, but the Queens Boulevard corridor reads suburban, and the M/R is slow when you need to signal arrival.",
+    "tradeoffsForYou": [
+      "This isn't an address that opens conversations at dinner parties.",
+      "M/R takes 40+ minutes to Midtown. The E/F from Forest Hills is faster but not your line.",
+      "Cultural infrastructure here is deep but hyper-local, not cosmopolitan in the Manhattan sense.",
+      "NetCost and Bukharian restaurants are excellent but won't impress the crowd you're aiming for."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:35.138Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bayside": {
+    "fitProse": "Bayside won't signal the way a Carnegie Hill or Cobble Hill address does. It's a residential neighborhood in northeast Queens where families and quiet blocks dominate, and the LIRR to Penn is your real connection. The prestige here is school ratings and space, not the name itself.",
+    "tradeoffsForYou": [
+      "The address reads as Long Island to most Manhattanites.",
+      "Bell Boulevard has good Korean food but not the culinary scene you're used to.",
+      "No subway. The LIRR works, but it's a commuter rail mindset.",
+      "You'll need to build your own story here. The neighborhood won't tell it for you."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:36.078Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "kew-gardens": {
+    "fitProse": "Kew Gardens is not the address that launches a hundred conversations. It's Tudor-style houses, quiet blocks, and an Orthodox community, but the name reads as Queens, and the commute on the E/F is real. For a prestige-anchored cosmopolitan, the tradeoff is square footage versus signal.",
+    "tradeoffsForYou": [
+      "The name doesn't carry the same weight at dinner parties as the UWS or Brooklyn Heights.",
+      "Dining and nightlife are minimal. You'll commute to Manhattan or Forest Hills for that.",
+      "Walk to the subway is longer than you're used to from prestige neighborhoods.",
+      "Reads as suburban. If your story includes 'city life,' this tests that narrative."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:36.436Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jackson-heights": {
+    "fitProse": "Jackson Heights is a tough fit for prestige orientation. The co-ops offer real space and the 7/E/F/M/R converge beautifully, but Roosevelt Avenue carries none of the signaling power you're used to. This is a cultural powerhouse, not a name-brand address.",
+    "tradeoffsForYou": [
+      "The address doesn't carry Manhattan cache or even Park Slope recognition.",
+      "Roosevelt Avenue is gritty in ways your friends from other cities won't find charming.",
+      "Co-op boards add friction to buying, and resale isn't a flex story.",
+      "If you value diversity over prestige, this becomes a different calculation entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:40.001Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "elmhurst": {
+    "fitProse": "Elmhurst has world-class food and serious transit (the 7, E, F, M, R all converge), but the address carries no prestige signal outside Queens. If your story is about discovering the best food in New York, it works. If your story needs a recognizable name when you tell colleagues where you live, this will test you.",
+    "tradeoffsForYou": [
+      "The name reads as deep Queens to Manhattan friends and coworkers.",
+      "Roosevelt Ave street scene is high-friction, not curated or polished.",
+      "You'll know the food is world-class. Most dinner guests won't.",
+      "No one will congratulate you on your address, even if your apartment is huge."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:41.931Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hudson-yards": {
+    "fitProse": "Hudson Yards is the prestige address par excellence. The towers are new, the brand is global, and you can name-drop it in any city. The 7 train connects you to Midtown, the High Line is your eastern border, and everything inside reads as capital-M Modern.",
+    "tradeoffsForYou": [
+      "The neighborhood itself has almost no cultural depth yet. You're buying the address.",
+      "Tourist crowds around Vessel and the mall can feel dense on weekends.",
+      "Premium pricing even by Manhattan standards. You're paying for the story.",
+      "Street life is thin. Most socializing happens in lobbies, not sidewalks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:42.177Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "battery-park-city": {
+    "fitProse": "Battery Park City delivers the address prestige (it's Manhattan, it's the water, it's new) and the polished amenities (Brookfield Place, the Esplanade, the WTC transit hub). But the neighborhood itself is calm to the point of suburban, which might surprise if you're looking for energy to match the address.",
+    "tradeoffsForYou": [
+      "Weekend quiet can feel oddly empty for such a prestigious zip code.",
+      "Street life is minimal. The Esplanade is beautiful but it's not a scene.",
+      "Dinner conversations will rarely center on what's happening in your neighborhood.",
+      "Pricey for a place that reads more as sanctuary than cosmopolitan hub."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:42.241Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roosevelt-island": {
+    "fitProse": "Roosevelt Island has almost nothing to say to someone shopping by address. The scores are high (space, calm, trees), but the story is low. No one outside NYC has heard of it, and no one inside thinks of it as a prestige move.",
+    "tradeoffsForYou": [
+      "The name doesn't carry weight in the way you want an address to carry weight.",
+      "Dining and nightlife are essentially nonexistent on the island.",
+      "You'll cross the river for the cultural and culinary infrastructure you care about.",
+      "It's a great place to live, but not a great place to say you live."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:45.697Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "nolita-little-italy": {
+    "fitProse": "NoLita is a prestige address that still reads as downtown cool. The boutiques, espresso bars, and design shops give you a curated story to tell, and the 6, B/D/F/M options mean you're never trapped. Little Italy proper skews more touristed, but NoLita proper is the name you want.",
+    "tradeoffsForYou": [
+      "Most apartments are old walk-ups, often fifth floor with no elevator.",
+      "Mulberry Street tourist density rivals Times Square on weekends.",
+      "Tiny footprint means limited grocery and errand infrastructure.",
+      "You're paying top dollar for compact tenement charm, not modern finishes."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:47.753Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "boerum-hill": {
+    "fitProse": "Boerum Hill is a smart prestige play for someone who wants brownstone credibility without the Park Slope crowds. Smith Street gives you real restaurants, Atlantic-Barclays puts eight trains at your disposal, and the blocks between Court and 4th have the architectural story you're after.",
+    "tradeoffsForYou": [
+      "The footprint is smaller than you think. You'll know every block in six months.",
+      "Prestige score is real but not flashy. Cobble Hill and Park Slope have louder brands.",
+      "Smith Street weekend nights can be rowdy. The quiet blocks are two streets over.",
+      "Pricey for what you get, especially compared to deeper Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:48.144Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flatiron-nomad": {
+    "fitProse": "Flatiron and NoMad deliver the right kind of nameplate for someone who wants to say they live in Manhattan proper. Six subway lines through 23rd and 28th, Madison Square Park on your block, and the kind of culinary infrastructure (Eleven Madison, Gramercy Tavern, the Nomad Hotel layer) that signals where you are.",
+    "tradeoffsForYou": [
+      "You'll pay a premium for the address and get less space than equivalent money in Brooklyn.",
+      "Daytime office crowds mean lunch-hour sidewalks feel borrowed.",
+      "Grocery runs send you to Union Square or you order in.",
+      "Nightlife and weekend energy live south in the Village, not on your block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:49.454Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carroll-gardens": {
+    "fitProse": "Carroll Gardens is a legible address with real Brooklyn pedigree. The brownstones are genuine, the Italian-American history is visible, and Smith Street delivers the kind of restaurant density you name-check when describing your neighborhood to people who don't live here.",
+    "tradeoffsForYou": [
+      "The F/G is solid but you're locked into one line for most trips",
+      "Family-trajectory vibe is strong. Strollers outnumber nightlife.",
+      "Prices rival Park Slope without quite the same name recognition",
+      "Smith and Court have good restaurants, but the scene is local, not destination"
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:51.443Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gowanus": {
+    "fitProse": "Gowanus doesn't carry the address weight you're after. The canal and construction cranes signal potential, not arrival, and when you tell people where you live you're explaining rather than signaling. The F/G/R access is solid and Park Slope is next door, but the prestige lives over there, not here.",
+    "tradeoffsForYou": [
+      "You'll be describing 'near Carroll Gardens' more than you'd like.",
+      "Industrial aesthetic reads as transitional, not established.",
+      "The dinner-party story is about the canal cleanup, not the address.",
+      "Whole Foods helps, but the neighborhood name doesn't open doors yet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:53.897Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "red-hook": {
+    "fitProse": "Red Hook has spectacular waterfront views and artist-studio character, but it doesn't carry the kind of address prestige you're looking for. The name is known, but it reads more as creative outlier than cosmopolitan anchor. The IKEA ferry as a legit transit option tells you everything.",
+    "tradeoffsForYou": [
+      "No subway. You're explaining bus and ferry logistics to every dinner guest.",
+      "Fairway and Key Food, not Whole Foods or Citarella.",
+      "Cobblestone and warehouse lofts are cool, but this isn't the Brooklyn that signals arrival.",
+      "The isolation is the point for locals. For you, it's a liability."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:54.067Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tenafly": {
+    "fitProse": "Tenafly carries prestige, but it's a different register than Tribeca. The address signals top schools and established wealth, but it reads as deep suburb. If your story includes \"we moved for the kids,\" this works. If your narrative is cosmopolitan fluency, the bus commute and car-dependent errands will grate.",
+    "tradeoffsForYou": [
+      "The 165 bus to Port Authority is over an hour. No train alternative.",
+      "Cultural infrastructure is grocery-anchored (H Mart, kosher options), not dinner-party urban.",
+      "Your colleagues will ask why you left the city. Have an answer ready.",
+      "Single-family homes and yards, but you're trading walkable spontaneity for it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:56.161Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood": {
+    "fitProse": "Englewood is trickier than the Prestige-Anchored Cosmopolitan might expect. It has real culture (the Bergen PAC, strong community institutions) and good restaurants, but the name doesn't carry the signal you're used to. Nearby Tenafly gets the prestige; Englewood gets the texture.",
+    "tradeoffsForYou": [
+      "The name doesn't open doors the way Tenafly or Ridgewood does.",
+      "Bus commute via 178/186 to Port Authority. No train, no story about it.",
+      "Block variance means your address matters more than the town name.",
+      "Cultural life is real but hyperlocal. You'll explain it to Manhattan friends."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:31:57.383Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cresskill": {
+    "fitProse": "Cresskill is a quiet, school-driven suburb with good bones, but it won't satisfy someone who wants prestige or cosmopolitan infrastructure. The address doesn't signal much outside Bergen County, and the dining scene is limited to bus rides into Fort Lee or Tenafly.",
+    "tradeoffsForYou": [
+      "The name Cresskill doesn't open conversations the way Tenafly or Tribeca does.",
+      "No walkable commercial center. Dinner out means driving to Fort Lee or beyond.",
+      "NJ Transit bus to Port Authority is your Manhattan link, not a one-seat train.",
+      "Excellent schools, but the trade is suburban isolation and car dependence."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:00.017Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood-cliffs": {
+    "fitProse": "Englewood Cliffs has the prestige of silence and elevation, perched on the Palisades with estate-scale lots and a solid school district. But this is a hushed Bergen commuter suburb, not a recognized Manhattan adjacent name brand, and the address won't land in conversation the way TriBeCa or Cobble Hill will.",
+    "tradeoffsForYou": [
+      "The name reads New Jersey suburb, not cosmopolitan anchor address.",
+      "Zero walkable commercial. H Mart in Fort Lee and Whole Foods in Edgewater by car.",
+      "Bus over the GW Bridge is your commute. No train, no PATH, no quick zip.",
+      "Quiet is the entire point here. If you want energy or scene, this is the wrong side of the river."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:00.923Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood-nj": {
+    "fitProse": "Ridgewood has the name recognition and polished downtown to work as a prestige address, but the 50-minute NJ Transit ride and suburban typology make it a harder sell unless you're also optimizing for schools and yards. It reads well on paper, less so at cocktail parties in Manhattan.",
+    "tradeoffsForYou": [
+      "The train is direct to Penn, but 50 minutes each way adds up fast.",
+      "Walkable downtown, but the aesthetic is Bergen County, not Brooklyn or West Village.",
+      "Your address will impress other parents, less so colleagues who live in the city.",
+      "You'll trade cosmopolitan spontaneity for space and schools."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:02.387Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "paramus": {
+    "fitProse": "Paramus doesn't register as a prestige address in the circles that care about addresses. It's a mall-anchored suburban center with excellent schools and large lots, but the name carries zero social signal. If you're here, it's because your priorities shifted, not because you want to tell the story.",
+    "tradeoffsForYou": [
+      "The name means nothing to your professional network or anyone who doesn't live here.",
+      "Route 17 traffic and strip-mall corridors are what you see, not tree-lined avenues.",
+      "No walkable restaurant row or cultural scene to anchor your social life.",
+      "You'll drive to everything, including the GW Bridge buses into the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:04.380Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "millburn-short-hills": {
+    "fitProse": "Short Hills is exactly what you tell people when they ask where you live. Top-tier schools, Midtown Direct to Penn in thirty-five minutes, and a zip code that quietly announces arrival. The estate-scale homes and preserved quiet make this one of the metro's most legible prestige addresses.",
+    "tradeoffsForYou": [
+      "Among the priciest suburbs in the entire metro. You pay for the name.",
+      "Dining and culture live in Manhattan. This is a residential stronghold.",
+      "Calm to the point of subdued. The energy is competence, not cosmopolitanism.",
+      "If you want walkable urban texture, this is the opposite direction."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:06.479Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "maplewood": {
+    "fitProse": "Maplewood has the right infrastructure (Midtown Direct, walkable village, good groceries) but the wrong cultural address for someone who wants prestige coded into the ZIP. It's a progressive suburb with craft-beer taps and strong schools, not the name that lands on a dinner party résumé.",
+    "tradeoffsForYou": [
+      "The address won't signal the way Westchester or Tribeca would.",
+      "Midtown Direct is the lifeline. Miss the express and you're on a local.",
+      "Very family-focused. The energy is PTA and Saturday soccer, not gallery openings.",
+      "House prices have climbed as creative-class families discovered it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:06.791Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "montclair": {
+    "fitProse": "Montclair has the prestige you want, but it's a different shape. The address signals culture and means something in the right circles (the Wellmont, the film fest, the art museum), but you'll be the person who moved to New Jersey, not the person who lives at a named Manhattan address.",
+    "tradeoffsForYou": [
+      "The prestige here is earned through cultural fluency, not the zip code itself.",
+      "Midtown Direct works, but you're committed to 45 minutes each way on NJ Transit.",
+      "Dinner parties, not dinner reservations. The social life is house-based.",
+      "You'll trade cosmopolitan spontaneity for a village that closes early."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:08.885Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "south-orange": {
+    "fitProse": "South Orange has the Midtown Direct train and a walkable downtown, but it's not a name that signals arrival the way Short Hills or Montclair does. For someone who picks addresses as identity markers, you'll feel the prestige gap, even if the commute and infrastructure are solid.",
+    "tradeoffsForYou": [
+      "The address doesn't open dinner-party conversations the way you'd like.",
+      "Midtown Direct is excellent, but the train is your only real lifeline.",
+      "Block variance means some streets read 'creative family enclave,' others just suburban.",
+      "Seton Hall students and funkier downtown energy don't match the polished cosmopolitan vibe you seek."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:10.537Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westfield": {
+    "fitProse": "Westfield has the right infrastructure (direct NJ Transit to Penn, downtown walkability, top schools) but reads suburban-conservative in ways that complicate the story you're trying to tell. The name carries weight among certain crowds, but not the cosmopolitan signaling weight of a Montclair or Hoboken.",
+    "tradeoffsForYou": [
+      "The Raritan Valley Line is slow and sometimes requires a transfer at Newark.",
+      "You'll miss the density of restaurants, cultural options, and international flavor.",
+      "Westfield reads 'settled family life,' not 'ambitious global professional.'",
+      "The prestige here is school-district and house-size, not culinary or cultural cache."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:12.960Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "summit": {
+    "fitProse": "Summit has the prestige address and the Midtown Direct, but it's optimized for family-trajectory pragmatists, not cosmopolitans. You'll find top schools and large homes, but the cultural and culinary infrastructure is suburban in scale. The name carries weight in certain circles, though less so than Montclair or Maplewood among urban-leaning professionals.",
+    "tradeoffsForYou": [
+      "Fifty minutes to Penn is real. You'll feel every commute.",
+      "Dining and culture read suburban, not cosmopolitan.",
+      "The prestige here is school-district prestige, not address cachet.",
+      "You're trading the culinary and social density you likely want for space you may not need yet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:13.120Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chatham-nj": {
+    "fitProse": "Chatham is a partial fit for the prestige-anchored cosmopolitan. The address carries weight in the right circles (Morris County, Midtown Direct, top schools), but the tradeoff is suburban quiet and a 50-minute Penn commute. You're choosing pedigree over proximity.",
+    "tradeoffsForYou": [
+      "50-minute Midtown Direct commute is real every morning and evening.",
+      "Cultural infrastructure is Kings and a village center, not Michelin and galleries.",
+      "The prestige here reads hedge-fund-suburban, not cosmopolitan-urban.",
+      "Your story becomes about schools and space, less about the address pulse."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:14.496Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "scarsdale": {
+    "fitProse": "Scarsdale is the address that needs no explanation. The name does the work at dinner parties and job interviews, and the Metro-North Harlem Line puts you in Grand Central in under forty minutes. The schools are the reason most people move here, but the prestige is why they stay.",
+    "tradeoffsForYou": [
+      "The cultural and culinary infrastructure is thin. You'll commute in for that.",
+      "Deeply suburban. If you want urban energy on weekends, this isn't it.",
+      "Premium pricing reflects the name, not just the schools.",
+      "The address signals success, but the day-to-day is calm to the point of quiet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:16.569Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bronxville": {
+    "fitProse": "Bronxville is textbook prestige-coded: a one-square-mile village with top-tier schools, Metro-North to Grand Central in 25 minutes, and Sarah Lawrence anchoring a walkable downtown. The name itself is shorthand for having arrived.",
+    "tradeoffsForYou": [
+      "The entire village is one square mile. Geography is the constraint.",
+      "Cultural and culinary infrastructure is limited. You're commuting in for that.",
+      "Premium pricing for a very small footprint.",
+      "Reads suburban, not cosmopolitan. You're trading energy for the address."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:17.751Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "larchmont": {
+    "fitProse": "Larchmont has the prestige you want and the train you need. Metro-North to Grand Central in thirty minutes, a walkable village that actually functions, and an address that signals exactly what you think it should. The sailboats in the harbor are part of the picture.",
+    "tradeoffsForYou": [
+      "You're leaving the city. The cultural calendar is smaller and you'll commute for it.",
+      "Off-peak trains can drag. The 30-minute ride becomes 40 or 50.",
+      "Premium pricing for the name, and everyone knows it.",
+      "The village is charming but the dining and nightlife ceiling is suburban."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:19.165Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rye": {
+    "fitProse": "Rye is the Sound Shore address that needs no explanation. Metro-North to Grand Central in 45 minutes, estate-scale homes, the beach club, and a downtown that quietly signals you've arrived. It's the prestige-coded suburban blueprint, and everyone knows it.",
+    "tradeoffsForYou": [
+      "Among the priciest towns in Westchester, full stop.",
+      "The 45-minute Metro-North commute is real time, every day.",
+      "Conservative-classic in dress code and vibe. This is country-club country.",
+      "Cultural infrastructure means excellent restaurants, not experimental ones."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:19.922Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "mamaroneck": {
+    "fitProse": "Mamaroneck has the bones (Metro-North, harbor, good schools) but not quite the name. It's the Sound Shore address you can afford, and the town itself is real, with a working harbor and a Latin American community that gives it texture Larchmont lacks.",
+    "tradeoffsForYou": [
+      "When you say 'Mamaroneck' in Manhattan, people often assume you mean Larchmont.",
+      "Block-by-block feel varies more than in the tidier, pricier villages next door.",
+      "The commute is real. Metro-North New Haven Line is your lifeline, not a backup.",
+      "Less of the museum-quality downtown you'd get in Rye or Larchmont village proper."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:22.682Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "pelham": {
+    "fitProse": "Pelham has the prestige of the address and the Metro-North speed (30 minutes to Grand Central), but it's built for families first. The Tudor-revival blocks and top schools signal success, yet the cultural infrastructure is thin. If your story is about arrival and roots, it works. If it's about scene, less so.",
+    "tradeoffsForYou": [
+      "Dinner options are limited. Manhattan or nearby towns offer more.",
+      "The vibe skews suburban family, not cosmopolitan rendezvous.",
+      "Strong name recognition, but smaller footprint than Scarsdale or Bronxville.",
+      "Premium pricing for proximity, but less international flair than you might expect."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:23.857Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dobbs-ferry": {
+    "fitProse": "Dobbs Ferry has river views and Metro-North, but the prestige math doesn't quite add up. It's positioned as the more affordable option between Hastings and Irvington, which is exactly the story you're trying not to tell about where you live.",
+    "tradeoffsForYou": [
+      "Hudson Line to Grand Central is slower and less frequent than the Harlem Line.",
+      "The name doesn't carry weight outside Westchester real estate circles.",
+      "Dining and cultural infrastructure stop at the Main Street strip.",
+      "You'll explain your address more than you'd like to."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:25.148Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hastings-on-hudson": {
+    "fitProse": "Hastings-on-Hudson is the rare Westchester address that signals cultural discernment without hedge-fund energy. It's a name that works in conversation (river views, Metro-North to Grand Central in 35 minutes, a walkable downtown), and you'll meet editors and architects at school pickup, not just finance.",
+    "tradeoffsForYou": [
+      "Hudson Line is slower than Harlem Line towns, and you'll feel the extra 10 minutes.",
+      "The prestige is quieter than Scarsdale or Bronxville. No one will recognize the name at first.",
+      "Hilly streets mean not every block is stroller-friendly or walkable to the train.",
+      "River-view homes command a premium, and you're paying for the story as much as the space."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:25.747Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "irvington-ny": {
+    "fitProse": "Irvington is a prestige address with the goods to back it up: estate-scale homes with Hudson views, Metro-North to Grand Central, and a quietly moneyed vibe that doesn't announce itself. It's a name that signals arrival, but you're trading the cultural and culinary depth of Manhattan for a river-town calendar.",
+    "tradeoffsForYou": [
+      "Dining and nightlife stop at the village center. You'll still go to the city for that.",
+      "Hilly streets mean not every beautiful home is walkable to the train.",
+      "It's a family town first. If you're pre-kids, you may feel early.",
+      "Premium pricing even by Westchester standards."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:28.848Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tarrytown": {
+    "fitProse": "Tarrytown has a name that travels, the kind of address that reads well on a card or a Zoom background. The Mario Cuomo Bridge views, the Music Hall, the Metro-North ride to Grand Central all signal a certain arrival. But the prestige here is suburban, not cosmopolitan.",
+    "tradeoffsForYou": [
+      "You'll explain where it is. The name is known, but not in the same breath as Bronxville or Rye.",
+      "The walkable downtown is one strip. The cultural and dining density is river-town scale.",
+      "Metro-North Hudson Line is slower and less frequent than the Harlem or New Haven lines.",
+      "The story you're telling is about space and schools, not about the address itself."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:29.991Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "white-plains": {
+    "fitProse": "White Plains has Metro-North to Grand Central and all the infrastructure, but it reads as Westchester's commercial hub, not its prestige address. The name doesn't signal the way Scarsdale or Bronxville does, and downtown feels more suburban mall district than cosmopolitan anchor.",
+    "tradeoffsForYou": [
+      "The address won't land the way nearby towns do in certain circles.",
+      "Downtown energy is office workers and the Galleria, not culinary or cultural scene.",
+      "You'll have Whole Foods and solid transit, but won't be telling the story you want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:31.476Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yonkers-ny": {
+    "fitProse": "Yonkers is a hard sell for the prestige-anchored. You're not in the Westchester bubble, the address doesn't signal arrival, and Metro-North to Grand Central is the only transit silver lining. The Hudson views are real, the prices are lower, but nobody mistakes this for Scarsdale.",
+    "tradeoffsForYou": [
+      "The name doesn't open doors. You'll explain it's 'just north of Riverdale.'",
+      "Block variance is high. Some streets look great, others feel unfinished.",
+      "School quality is mixed. Not the automatic signal you'd get in Bronxville or Rye.",
+      "The waterfront renaissance is genuine, but the dining scene isn't cosmopolitan yet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:32.740Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chappaqua": {
+    "fitProse": "Chappaqua has the name recognition you want (the Clintons, top-tier schools that signal nationally) and the estate-scale properties to match. Metro-North gets you to Grand Central in fifty minutes, which is a statement about where you've landed, not just where you commute.",
+    "tradeoffsForYou": [
+      "That fifty-minute train ride is real. You'll feel it twice a day if you're still commuting.",
+      "The address signals arrival, but the cultural and culinary scene is limited to a small village center.",
+      "Car-dependent outside the station area. You're driving to nearly everything.",
+      "Premium pricing reflects the brand. You're paying for the name and the schools."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:34.999Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "great-neck": {
+    "fitProse": "Great Neck is the kind of address that signals arrival. The LIRR puts you in Penn in 25 minutes, the schools are ranked at the top of every list, and the neighborhood carries the weight of old money mixed with new global capital. Middle Neck Road has the walkability you'd want for dinner out.",
+    "tradeoffsForYou": [
+      "You're trading the cachet of Manhattan or brownstone Brooklyn for suburban Long Island.",
+      "LIRR off-peak schedules can be sparse. You're not walking to the office.",
+      "The restaurant scene is culturally rich but not haute. This isn't Tribeca dining.",
+      "Premium pricing rivals top NYC zip codes without the density or nightlife."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:35.935Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhasset": {
+    "fitProse": "Manhasset delivers the address and the Americana luxury retail strip, but it's more Greenwich than Gramercy. The LIRR puts you in Penn in thirty minutes, the name carries weight in certain circles, and the estate-scale lots signal arrival. The dining scene won't match your usual haunts.",
+    "tradeoffsForYou": [
+      "You'll trade culinary variety for the address. Dining is limited.",
+      "Quiet to the point of subdued. The energy is family-focused, not cosmopolitan.",
+      "LIRR schedule dictates late nights. Penn at 11 PM, not SoHo at midnight.",
+      "Americana aside, you'll still drive to most of what you want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:37.345Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "port-washington": {
+    "fitProse": "Port Washington has the prestige of address without the full weight of Gold Coast signaling. The LIRR terminus gives you Penn in 35 minutes, the harbor and Main Street read as charming in the right way, and the schools are genuinely excellent. It's a name that works in conversation.",
+    "tradeoffsForYou": [
+      "Less prestige-coded than Manhasset or Great Neck. You'll need to explain it.",
+      "The commute is real. 35 minutes plus transfer time.",
+      "Dining scene is limited to Main Street. Manhattan is your backup plan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:38.326Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roslyn": {
+    "fitProse": "Roslyn has the résumé: a top-50 national school district, historic downtown, and large homes on quiet streets that signal arrival. The name carries weight in the right circles, and the cultural infrastructure (strong East Asian and Jewish communities) matches ambitious, education-first households.",
+    "tradeoffsForYou": [
+      "You'll drive to the LIRR station. This is not a walk-to-the-train life.",
+      "Car-dependent for everything outside the village center.",
+      "Premium pricing baked into every home; you're paying for the district.",
+      "The prestige is real but reads traditional suburban, not cosmopolitan-urban."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:41.917Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "garden-city": {
+    "fitProse": "Garden City is a classic prestige play: one of the oldest planned suburbs in America, the Garden City Hotel still anchors the town center, and the address carries real weight among Long Island's executive tier. The LIRR puts you in Penn in forty minutes, the schools are legitimately top-tier, and the Cathedral of the Incarnation gives the place architectural gravitas.",
+    "tradeoffsForYou": [
+      "Single-family only. You're buying into the suburban template, not a cosmopolitan one.",
+      "Cultural life is scarce. Dining and arts live in Manhattan, not here.",
+      "The address reads more country-club traditional than international-cosmopolitan.",
+      "Premium pricing for the name and schools, even by Long Island standards."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:42.361Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rockville-centre": {
+    "fitProse": "Rockville Centre has the train, the walkable downtown, and the schools, but it reads as classic Long Island commuter suburb rather than the address that tells a story. The LIRR Babylon line gets you to Penn in around forty minutes, and the village center has real restaurant energy, but it lacks the North Shore name recognition.",
+    "tradeoffsForYou": [
+      "The address doesn't carry the same weight as a Rye, Montclair, or Great Neck.",
+      "LIRR commute is solid but still forty minutes each way to Penn.",
+      "Downtown is lively for a suburb, but you won't mistake it for Cobble Hill.",
+      "More family-life infrastructure than cosmopolitan cachet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:43.692Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-beach-ny": {
+    "fitProse": "Long Beach doesn't have a prestige address, but it does have a name everyone knows and a beach story worth telling. The LIRR commute to Penn is 50 minutes, the boardwalk is real, and the summer scene gives you something to talk about at dinner parties. If you want the ocean without the Hamptons price tag or suburban cul-de-sac, this works.",
+    "tradeoffsForYou": [
+      "Not an address that signals arrival the way Brooklyn Heights or Tribeca would.",
+      "50-minute LIRR commute is long. You'll feel it every weekday.",
+      "Summer influx brings crowds and noise that clash with year-round calm.",
+      "Storm and flood risk is real. Sandy did serious damage here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:45.647Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich": {
+    "fitProse": "Greenwich is the definition of a prestige address. Metro-North to Grand Central in fifty minutes, Greenwich Avenue as your walkable spine, and a zip code that tells the story you want. This is the estate-scale classic shape that signals arrival.",
+    "tradeoffsForYou": [
+      "Fifty-minute train ride to Manhattan, plus the walk and wait.",
+      "Car-dependent for nearly everything outside Greenwich Avenue.",
+      "Conservative-classic in style and culture. Not cosmopolitan in the NYC sense.",
+      "Among the priciest markets in the region, even for condos."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:47.077Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stamford": {
+    "fitProse": "Stamford is the most urban address in commuter CT, but for someone who values prestige signaling, it reads as commercial first, residential second. The Metro-North ride to Grand Central is real (55 minutes), and the newer high-rises offer apartment living, but the name carries none of the cultural or social capital of a Manhattan or Brooklyn address.",
+    "tradeoffsForYou": [
+      "When you say Stamford, most people think office parks, not cosmopolitan living.",
+      "Block character is uneven. Downtown energy drops fast outside the core.",
+      "The culinary scene exists but lacks the depth or cache of proper urban hubs.",
+      "You're trading the story of your address for suburban CT practicality."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:49.143Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "darien": {
+    "fitProse": "Darien is the kind of address that lands well in any conversation. Metro-North to Grand Central in an hour, top-tier schools, and a quiet estate-suburb aesthetic that says you've arrived. The prestige is real, the infrastructure is serious, but you're giving up walkability and urban dining for it.",
+    "tradeoffsForYou": [
+      "You'll be car-dependent for everything. The walkable scene is minimal.",
+      "Hour-long commute to Grand Central. That's 10 hours a week.",
+      "The cultural and culinary infrastructure is suburban, not cosmopolitan.",
+      "Among the priciest addresses in CT. The prestige comes at cost."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:49.813Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "new-canaan": {
+    "fitProse": "New Canaan has the name recognition and architectural pedigree (the Glass House, a midcentury landmark) that signals taste and arrival. The schools are top-tier, the downtown is handsome, and the address carries weight in the right circles.",
+    "tradeoffsForYou": [
+      "Branch line means 75 min to Grand Central via Stamford transfer. You'll feel it.",
+      "Zero walkable urbanism. You'll drive everywhere, including to dinner.",
+      "Prestige here reads suburban-distinguished, not cosmopolitan-electric.",
+      "The cultural life is quiet. Museums and restaurants live in the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:51.198Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westport": {
+    "fitProse": "Westport is one of the few Connecticut addresses that still carries cultural cache, especially among creative-class professionals. The Metro-North puts you in Grand Central in about 75 minutes, and the town name lands differently than Greenwich or Darien in Manhattan circles.",
+    "tradeoffsForYou": [
+      "The commute is real. 75 minutes each way adds up fast.",
+      "Premium pricing on par with the Gold Coast towns you're trying to differentiate from.",
+      "The arts scene is real for CT, modest by Brooklyn or Manhattan standards."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:32:52.614Z",
+    "model": "claude-sonnet-4-5"
+  }
+}

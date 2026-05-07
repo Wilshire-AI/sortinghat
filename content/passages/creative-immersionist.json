@@ -1,0 +1,1468 @@
+{
+  "upper-west-side": {
+    "fitProse": "The Upper West Side has chosen permanence over energy, which makes it hard for an immersion-seeker. Creative-energy scores zero here. The parks are beautiful, the buildings are real, but the scene left decades ago.",
+    "tradeoffsForYou": [
+      "Your collaborators live in Bushwick, Ridgewood, maybe Bed-Stuy. You'll commute to them.",
+      "Bars close early, galleries are sparse, studios moved to cheaper boroughs long ago.",
+      "If you want ambient creative life, this isn't the neighborhood. It traded that for schools.",
+      "The 1/2/3 will take you to where things are happening. You just won't live there."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:54.607Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-east-side": {
+    "fitProse": "The Upper East Side is beautiful, stable, and culturally rich in a museum sense, but the creative energy score tells the truth. You won't find studios open late, bars full of collaborators, or the density of ambition that fuels your work. It's polished, not porous.",
+    "tradeoffsForYou": [
+      "The scene lives elsewhere. Bushwick, Williamsburg, and Lower East Side are where you'll find your people.",
+      "Nightlife skews fancy or sleepy. The scrappy bar energy is rare.",
+      "Museum Row is world-class, but gallery openings and experimental theater are sparse.",
+      "Calm can feel like a creative vacuum if you need daily collisions with other makers."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:54.944Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-village": {
+    "fitProse": "The East Village is exactly the shape of what you're looking for. Every block has a bar where someone is making something, a bookshop that stays open late, a restaurant run by people who left finance to cook ramen. The density of ambitious, creatively alive people is unmatched.",
+    "tradeoffsForYou": [
+      "Subway access is genuinely awkward. The F alone, or a walk to the L or 6.",
+      "Loud at night in ways that make Sunday mornings feel borrowed.",
+      "Apartments are old, small, and expensive for what you get.",
+      "The scene you want is here, but so is every NYU student and weekend tourist hunting it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:55.078Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "west-village": {
+    "fitProse": "West Village has creative history, but the scene moved out decades ago. You'll walk beautiful streets and eat impeccably, but you won't meet your next collaborator at a bar here. The energy is settled, expensive, and polished rather than generative.",
+    "tradeoffsForYou": [
+      "Studios and galleries left for cheaper neighborhoods long ago.",
+      "The bars are lovely but skew older, wealthier, less hungry.",
+      "Rents price out the kind of scrappy creative hustle you're after.",
+      "History is real (Stonewall, Dylan, the Beats), but that was then."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:55.266Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tribeca": {
+    "fitProse": "Tribeca is where the creative class retires after they've already made it. The lofts are real and the money is realer, but the scene moved to Williamsburg and Bushwick a decade ago. If you need to bump into collaborators on the sidewalk, you won't find them here.",
+    "tradeoffsForYou": [
+      "Quiet on weekends to the point of lonely. No accidental encounters.",
+      "The creative energy is legacy, not live. Studios are private, not communal.",
+      "Among the priciest per square foot in the city.",
+      "You'll commute to wherever the scene actually is."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:26:59.989Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gramercy": {
+    "fitProse": "Gramercy is handsome, central, and quiet, but it doesn't have a creative scene. The park is locked, the blocks are settled, and the residents skew older and professionally established. You'll be near Union Square's energy, but you won't be in it.",
+    "tradeoffsForYou": [
+      "The neighborhood itself feels more residential refuge than creative scene.",
+      "Nearest studios, galleries, and collaborative spaces are in the East Village or Flatiron.",
+      "You'll commute to the energy rather than live inside it.",
+      "The 6 is your only local train. Union Square adds the L/N/Q/R/W."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:00.556Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chelsea": {
+    "fitProse": "Chelsea is one of the few Manhattan neighborhoods where gallery culture is still the actual fabric, not nostalgia. Walk west from the 1 or A/C/E and you're passing Gagosian, Pace, Hauser & Wirth on the way to drinks. The High Line brings tourists, but the creative infrastructure is real and deep.",
+    "tradeoffsForYou": [
+      "Hudson Yards looms at the western edge, corporate and gleaming.",
+      "Rents reflect proximity to both galleries and Google's offices.",
+      "Quieter after 10pm than you'd guess. Energy lives indoors.",
+      "The High Line is beautiful but often feels like a selfie queue."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:00.988Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fidi": {
+    "fitProse": "Financial District is a mismatch for a creative immersionist. The transit is unbeatable and the waterfront is real, but the cultural-energy score tells the truth: the studios, galleries, and late-night spots that feed your work live elsewhere in the city.",
+    "tradeoffsForYou": [
+      "The neighborhood empties on weekends when office workers leave.",
+      "Restaurants close early. No 11pm studio energy here.",
+      "You'll commute to the scene instead of living in it.",
+      "The people density is corporate, not creative or collaborative."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:02.087Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "park-slope": {
+    "fitProse": "Park Slope is calm by design, which for an immersion-seeker is a feature only sometimes. The brownstones are gorgeous, the F is good, the parks are real, but the closest thing to a creative scene is a Hatchet Coffee with laptops.",
+    "tradeoffsForYou": [
+      "Pleasant but quiet. Energy lives elsewhere in Brooklyn.",
+      "Seventh Ave shopping is more boutique than scene.",
+      "If you want to bump into ambitious creatives, head to Williamsburg or Bushwick."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:05.139Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hells-kitchen": {
+    "fitProse": "Hell's Kitchen gives you creative adjacency without the preciousness. Theater people, line cooks, set designers, and hustling actors pack these walk-ups. You'll find collaborators at The Pony Bar or catch someone's show at 11pm. The energy is real, unpretentious, and relentless.",
+    "tradeoffsForYou": [
+      "Times Square tourists are a daily obstacle course on your commute.",
+      "Walk-ups dominate. Expect fifth-floor living and noise bleed.",
+      "The scene is more theater-adjacent than art-studio experimental.",
+      "You're deep in the grid. Hudson River Park is the only nature exhale."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:07.162Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "williamsburg": {
+    "fitProse": "Williamsburg is still the epicenter for creative immersionists, even post-gentrification. The density of galleries, studios, late-night spots, and people building things is unmatched in Brooklyn. The L is a liability, but you're here for the scene, not the commute.",
+    "tradeoffsForYou": [
+      "L train dependence means your social life lives or dies by one subway line.",
+      "The grit that made it mythical is mostly gone. This is polished now.",
+      "Rents approach Manhattan levels. You're paying for proximity to the scene.",
+      "Weekend crowds on Bedford can feel more bridge-and-tunnel than artist commune."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:08.635Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brooklyn-heights": {
+    "fitProse": "Brooklyn Heights is beautiful, dignified, and almost painfully calm. The transit is excellent and the Promenade is gorgeous, but for a creative immersionist the streets feel more like a museum than a scene. You'll live here later, not now.",
+    "tradeoffsForYou": [
+      "Very few studios, galleries, or creative anchors. The energy is elsewhere.",
+      "Weekends feel quiet in a way that can be isolating if you need scene.",
+      "You'll take the 2/3 to find your collaborators, not meet them at the bodega.",
+      "Some of the most expensive blocks in Brooklyn for something fundamentally residential."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:10.664Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bed-stuy": {
+    "fitProse": "Bed-Stuy has real creative energy, especially around the Fulton and Nostrand corridors. The brownstones are stunning, the cultural depth is genuine, and the studios and bars are multiplying. But the scene is still forming, and you'll spend weekends in Bushwick or Crown Heights when you want density.",
+    "tradeoffsForYou": [
+      "The A/C is your lifeline. No other trains reach most of the neighborhood.",
+      "Block-by-block variance means scouting carefully before you sign.",
+      "Creative infrastructure is growing but not yet critical mass.",
+      "The gentrification conversation is live and sometimes tense."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:13.165Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "central-harlem": {
+    "fitProse": "Central Harlem has deep culture and history, but the creative energy score of 0.4 tells the real story. This is a neighborhood built on legacy, not the spontaneous collision of studios, galleries, and late-night rehearsal spaces you're hunting for.",
+    "tradeoffsForYou": [
+      "The scene you want is downtown or deeper in Brooklyn.",
+      "Block-by-block variance means you'll spend energy finding your people.",
+      "Cultural richness is real, but it's rooted in community, not ambient creative churn.",
+      "The 2/3 is fast to midtown, but your collaborators probably don't live here yet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:15.020Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dumbo": {
+    "fitProse": "DUMBO has design-studio sheen and the waterfront is legitimately stunning, but the creative energy score (0.5) tells the truth: this is more Tech Bro Brooklyn than scene. The galleries are polished, the lofts are expensive, and the sidewalks tilt heavily toward tourists taking bridge photos.",
+    "tradeoffsForYou": [
+      "Tourist density rivals Times Square on weekends, especially near the waterfront.",
+      "The creative scene here peaked a decade ago. Most artists moved to Bushwick or Ridgewood.",
+      "Gorgeous but small. You'll leave the neighborhood constantly for everything else.",
+      "Foragers is fine, but grocery options are genuinely thin for daily life."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:15.273Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cobble-hill": {
+    "fitProse": "Cobble Hill is calm, lovely, and well-fed, but creative energy reads zero. The brownstones are beautiful, the F/G and R trains are close, and Court Street restaurants are genuinely good. But you won't bump into anyone working on their next thing here.",
+    "tradeoffsForYou": [
+      "The scene is mostly couples with strollers and weekend brunch plans.",
+      "No studios open late, no galleries to walk past, no bar where you'll meet collaborators.",
+      "If you want creative oxygen, you'll commute to Williamsburg, Bushwick, or Manhattan.",
+      "Quiet residential blocks are the whole point here, which is the opposite of immersion."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:17.264Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bushwick": {
+    "fitProse": "This is the neighborhood that was made for you. Bushwick is the largest concentration of working artists in NYC, and you'll feel it walking past studios, galleries, and warehouse parties on industrial blocks. The L is your lifeline, but the creative oxygen here is daily and real.",
+    "tradeoffsForYou": [
+      "L-train dependence means your social radius lives or dies by MTA service alerts.",
+      "Block-by-block grit varies. You'll learn which streets to walk at night.",
+      "The scene is shifting as rents climb. Some of the rawness that drew you here is fading.",
+      "Daily friction is high. Noise, trash, and uneven sidewalks are part of the deal."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:19.322Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brighton-beach": {
+    "fitProse": "Brighton Beach has a deep cultural ecosystem, but the creative-energy score is zero for a reason. This is a neighborhood built around post-Soviet community and family life, not studios, galleries, or late-night collaborations. The Q is the end of the line in every sense.",
+    "tradeoffsForYou": [
+      "You'll be far from the people who energize your work.",
+      "The scene you want is in Bushwick, Bed-Stuy, or Williamsburg, not here.",
+      "Long Q ride means you're commuting to find your creative oxygen.",
+      "The boardwalk is beautiful, but it won't introduce you to your next collaborator."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:20.966Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sheepshead-bay": {
+    "fitProse": "Sheepshead Bay is a real neighborhood with waterfront and transit, but the creative-energy score tells the story: this is a place people move to for value, space, and family. The scene you're looking for lives in other parts of Brooklyn.",
+    "tradeoffsForYou": [
+      "The B and Q get you to Manhattan, but the ride is long and the neighborhood empties out.",
+      "Dining is authentic (Russian, Chinese, Italian) but not where ambitious creatives gather.",
+      "You'll have space and savings, but you'll commute to find your collaborators.",
+      "If you want to be near the energy, this is the wrong direction on the Q."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:21.064Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "astoria": {
+    "fitProse": "Astoria's creative energy is real but soft-edged. The culture here is rooted in Greek tavernas, Egyptian coffee shops, and Brazilian bakeries, not galleries or late-night studios. If you're looking for the scene that leads to your next project, you'll be commuting to Manhattan or deeper Brooklyn.",
+    "tradeoffsForYou": [
+      "Nightlife winds down early. The bars exist but the energy isn't in the room.",
+      "The N/W gets you to midtown but off-peak can be a 20-minute wait.",
+      "Creative collaborators live elsewhere. You'll love the food, miss the scene.",
+      "Cultural richness is immigrant and culinary, not art-world or underground."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:25.845Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-island-city": {
+    "fitProse": "Long Island City has views, space, and transit, but only modest creative energy. The high-rise riverfront reads more like value-oriented professionals than working artists. If you want studio culture and scene, you'll be taking the 7 or G to Bushwick or Ridgewood.",
+    "tradeoffsForYou": [
+      "New-build lobby aesthetic, not loft or gallery texture.",
+      "Restaurant and bar scene is uneven. You'll go elsewhere for late nights.",
+      "The 7 gets you to Manhattan fast, but the scene lives deeper in Queens or Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:26.060Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flushing": {
+    "fitProse": "Flushing has creative energy in food, language, and streetscape, but almost no legible arts or nightlife scene for English-first creatives. The 7 puts you in midtown in 30 minutes, but you'll spend most evenings bouncing back out to Williamsburg, Bushwick, or LIC.",
+    "tradeoffsForYou": [
+      "Creative collaborators live elsewhere. You'll commute to scene, not stumble into it.",
+      "Street energy is real but linguistic and cultural context matters.",
+      "Cheap rent buys space, but the tradeoff is distance from your people.",
+      "The bar where you meet your next collaborator is two boroughs away."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:26.828Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "forest-hills": {
+    "fitProse": "Forest Hills is the wrong neighborhood for someone who needs creative scene as daily oxygen. It was built for families and quiet, and that's what it delivers. The energy you want lives in Ridgewood, Bushwick, or East Williamsburg, not here.",
+    "tradeoffsForYou": [
+      "30-minute E/F commute means you're not popping into the city on a Tuesday night.",
+      "The bars and studios where you'd meet collaborators are elsewhere in Queens.",
+      "Tudor charm is real, but you'll feel isolated from the creative currents you need.",
+      "Larger apartments than Brooklyn, if you decide scene isn't everything."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:27.223Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "riverdale": {
+    "fitProse": "Riverdale is the opposite of creative immersion. It's a quiet, suburban pocket that prioritizes green space and family life over scene. The 1 train gets you to Manhattan eventually, but there's no gallery walk, no studio crawl, no late-night bar where you'd meet your next collaborator.",
+    "tradeoffsForYou": [
+      "Creative energy score is deeply negative. The ambitious people here are families, not artists.",
+      "The 1 is slow, Metro-North requires planning. You'll spend time commuting to the scene.",
+      "Dining and nightlife are minimal. You'll leave the neighborhood for oxygen.",
+      "If you need proximity to ambitious creatives, this is the wrong borough entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:31.204Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "st-george": {
+    "fitProse": "St. George has space and a ferry commute, but almost no creative scene. The artists who once rented here moved on or aged out. You'll meet neighbors, not collaborators, and the nightlife is a handful of Bay Street bars.",
+    "tradeoffsForYou": [
+      "The ferry is your lifeline, but it's not where you'll meet your next creative partner.",
+      "Galleries, studios, and late-night energy live across the water, not here.",
+      "If proximity to scene matters daily, this will feel isolating fast.",
+      "You'll trade creative oxygen for square footage and views."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:31.781Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hoboken": {
+    "fitProse": "Hoboken is polished, efficient, and low on the kind of friction that creates creative scenes. The PATH gets you to Manhattan fast, but the energy here skews professional and future-family. You'll find brunch spots, not the late-night studio or the gallery opening you'd wander into.",
+    "tradeoffsForYou": [
+      "Creative infrastructure lives across the river. You'll commute to your scene.",
+      "Nightlife is there, but it's more bar-crawl than underground.",
+      "The people you meet will mostly be climbing corporate ladders, not making art.",
+      "If you want collaborators, you'll find them in Manhattan or Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:32.841Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jersey-city": {
+    "fitProse": "Jersey City has space and PATH speed, but it lacks the creative density you're chasing. The high-rises and waterfront are polished, the downtown works for dual-income pragmatists, but the scene is thin. You'll find restaurants and coworking, not studios or galleries you stumble into.",
+    "tradeoffsForYou": [
+      "PATH is fast, but you'll be commuting to the scene, not living in it.",
+      "Creative energy score is low. The ambitious people here are in finance or tech.",
+      "Beyond downtown, it's car-dependent suburbia fast.",
+      "You'll save money, but spend it crossing the river to feel alive."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:33.845Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-lee": {
+    "fitProse": "Fort Lee is family-oriented and food-rich, not a creative scene. The bus commute is solid, the Korean restaurants are exceptional, but the people you meet will be raising kids or settling in, not starting bands or co-working studios late into the night.",
+    "tradeoffsForYou": [
+      "Nightlife and creative hangouts are nearly nonexistent.",
+      "The energy skews domestic and established, not experimental.",
+      "You'll commute into Manhattan to find your collaborators.",
+      "The GW Bridge bus works, but you're crossing a river daily for scene."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:36.721Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "edgewater": {
+    "fitProse": "Edgewater is the wrong shape for a creative immersionist. The waterfront is gorgeous, the ferry works, but there's no scene to speak of. You'll find Mitsuwa and luxury lobbies, not late-night studios or collaborators at the bar.",
+    "tradeoffsForYou": [
+      "The energy you need lives across the river, not here.",
+      "Ferry commute means you're choosing when to be in the city, not living in it.",
+      "Residential and quiet by design. No walk-by galleries or maker spaces.",
+      "If you want spontaneous creative collisions, this isn't the grid for it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:37.798Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "palisades-park": {
+    "fitProse": "Palisades Park is a working community, not a creative scene. Broad Avenue is alive with purpose (bakeries, banks, H Mart runs) but the energy is family life and errands, not studios or galleries. If you're here for East Asian cultural immersion and speak Korean, it's real. If you're here to meet collaborators, you'll commute.",
+    "tradeoffsForYou": [
+      "The creative scene lives in Manhattan or Brooklyn, not here.",
+      "Buses to NYC work, but the commute adds friction to your social life.",
+      "The cultural ecosystem is deep, but oriented toward family and community, not art or nightlife.",
+      "You'll need a car for most things. Walking to a bar at 11pm isn't the vibe."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:39.046Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lower-east-side": {
+    "fitProse": "The Lower East Side is one of the few places left in Manhattan where creative energy still feels raw and unsanitized. Gallery basements, music venues that predate your lease, and the kind of late-night sidewalk conversations that turn into collaborations. The F from Delancey is your artery to everything else.",
+    "tradeoffsForYou": [
+      "Weekend nights are loud. Ludlow and Orchard get tourist-bar energy after 10pm.",
+      "Walk-ups dominate. If you need an elevator or space, this will pinch.",
+      "Reaching the West Side means a transfer or a long crosstown slog.",
+      "The scene you came for is increasingly expensive to stay near."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:39.888Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-harlem": {
+    "fitProse": "East Harlem's creative energy is rooted in its Puerto Rican and Mexican cultural institutions, not in studios or galleries where you'd meet your next collaborator. The murals and mom-and-pop scene are real, but this is a neighborhood about cultural anchors, not creative scene.",
+    "tradeoffsForYou": [
+      "The creative energy here is community-driven, not hustle-driven.",
+      "You won't bump into ambitious creatives at cafes or bars.",
+      "If you need scene, you'll commute to Bushwick or Lower East Side.",
+      "Central Park access is incredible, but that's not why you'd come."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:41.832Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "inwood": {
+    "fitProse": "Inwood is quiet, family-oriented, and nature-rich, which are all fine virtues, but not the ones that build creative scene. The A and 1 terminate here, putting you 40+ minutes from midtown and further still from the studio spaces, galleries, and late-night bars where your people gather.",
+    "tradeoffsForYou": [
+      "The creative energy score is effectively zero. You'll be commuting to find your scene.",
+      "40+ minutes to midtown means you're far from collaborators and openings.",
+      "Dining and nightlife are limited. This is not where ambitious creatives congregate.",
+      "Beautiful park access, but that's not the oxygen you're looking for."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:46.018Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "washington-heights": {
+    "fitProse": "Washington Heights has real Dominican culture and real pre-war bones, but the creative energy score is effectively zero. The scene is family barbecues in Fort Tryon, not galleries or studios. If you're looking for ambitious creatives to collide with, you'll be riding the A downtown most nights.",
+    "tradeoffsForYou": [
+      "The A express is fast, but you'll be on it constantly to find your people.",
+      "Cultural richness here is anchored in Latin American family life, not art scene.",
+      "No creative coworking, no experimental theater, no late-night studio culture.",
+      "Beautiful hilltop views and space, but you'll feel isolated from the scene you need."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:46.019Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "morningside-heights": {
+    "fitProse": "Morningside Heights is cerebral and calm, which is the opposite of creative oxygen. The institutional anchors (Columbia, the Cathedral) are impressive, but the neighborhood empties in summer and the scene is sparse. If you want to bump into ambitious makers, you'll be commuting.",
+    "tradeoffsForYou": [
+      "Students provide energy nine months a year, then vanish.",
+      "Restaurant and bar scene is improving but still uneven.",
+      "The 1 train is fine but the neighborhood feels tucked away from creative hubs.",
+      "You'll make friends in Harlem, the Village, or Brooklyn more easily than here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:47.482Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hamilton-heights": {
+    "fitProse": "Hamilton Heights has history, space, and quiet blocks, but it's not wired for creative immersion. The scene is improving, but you'll make most of your collaborator friends elsewhere and commute home on the 1 or A. Come here when you want to save money and have a real bedroom, not when you need to live inside the energy.",
+    "tradeoffsForYou": [
+      "Studios, galleries, and late-night creative spots are sparse. You'll travel for scene.",
+      "Restaurant and bar scene is uneven. The energy lives downtown or in Brooklyn.",
+      "The A express is fast, but you'll spend time on trains to reach your people.",
+      "If you prioritize space over proximity to collaborators, the trade makes sense."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:48.648Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lincoln-square": {
+    "fitProse": "Lincoln Square has the cultural infrastructure, not the creative scene. Lincoln Center means classical institutions and donor galas, not studio spillover or late-night collaborators. You'll go to the ballet, but you won't bump into the choreographer at a bar afterward.",
+    "tradeoffsForYou": [
+      "The creative energy here skews establishment, not experimental.",
+      "Your neighbors are more likely to be arts patrons than working artists.",
+      "If you want to find your next collaborator, head downtown or to Brooklyn.",
+      "Transit is excellent (1, A/B/C/D) but the vibe is uptown-calm, not immersive."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:51.968Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattan-valley": {
+    "fitProse": "Manhattan Valley is calm and family-oriented by default, not a place where creative collisions happen spontaneously. The Latin American cultural texture is real but not the kind of scene where you'll meet your next collaborator. You'd need to commute for creative oxygen.",
+    "tradeoffsForYou": [
+      "Creative energy is low. The ambitious art kids live downtown or in Brooklyn.",
+      "Central Park is spectacular, but the streets are quiet, not buzzing.",
+      "Restaurant and bar scene is uneven. You'll travel for nights out.",
+      "The 1 and B/C get you to midtown and downtown, where the action is."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:52.451Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yorkville": {
+    "fitProse": "Yorkville is optimized for family calm, not creative scene. The blocks are beautiful and quiet, Carl Schurz is legitimately lovely, but the creative-energy score tells the story: this is where ambition comes to nest, not to collide. You'll feel like you moved to the wrong part of the city.",
+    "tradeoffsForYou": [
+      "Dining and nightlife are muted. The bars close early and nobody's making art here.",
+      "Creative collaborators live in Brooklyn or downtown. You'll commute to see them.",
+      "The Q is solid, but you're far from studios, galleries, and the people you need to be near.",
+      "Gorgeous river walks, but you didn't move to NYC for solitude."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:53.831Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carnegie-hill": {
+    "fitProse": "Carnegie Hill is the wrong shape for an immersion-seeker. It's gorgeous, quiet, and residential. The museums are real, but the streets are hushed by design. You'll walk past private schools and doormen, not studios or late-night spots where collaborators gather.",
+    "tradeoffsForYou": [
+      "Energy lives elsewhere. Nightlife and creative scene are downtown or in Brooklyn.",
+      "The quiet is the point for families here, but it's a headwind for spontaneity.",
+      "You'll love the museums, but they're institutions, not the raw scene you crave.",
+      "Central Park is beautiful. The streets feel borrowed from another decade."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:54.749Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "midtown-east": {
+    "fitProse": "Midtown East is the wrong shape for a creative immersionist. It's corporate by design, quiet on weekends, and the bar you walk past is more likely to serve expense-account dinners than host your next collaborator. The transit is spectacular, but the scene lives elsewhere.",
+    "tradeoffsForYou": [
+      "Grand Central access is unbeatable, but the energy is transactional.",
+      "Weekends feel empty. The creative oxygen you need is in other boroughs.",
+      "You'll commute to your scene instead of living in it.",
+      "Residential calm here means isolation, not inspiration."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:57.788Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattanville": {
+    "fitProse": "Manhattanville has space and the river, but the creative energy is muted. Columbia's institutional presence dominates, and while the 1 train is solid, the scene you'd seek is mostly in Hamilton Heights or further south. If you're comfortable with quiet between collaborations, the rent-to-space ratio is real.",
+    "tradeoffsForYou": [
+      "The studio you want open at 11pm is probably not here yet.",
+      "Columbia's expansion brought amenities but not the artist-bar energy.",
+      "Riverside Park is beautiful, but you'll travel for your people.",
+      "The 1 train is your spine. Downtown feels like a decision, not a drift."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:27:58.359Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stuyvesant-town": {
+    "fitProse": "Stuyvesant Town is a hard sell for the Creative Immersionist. The mid-century brick towers and internal pathways are suburban by design, creative energy lives elsewhere (Union Square is close but you're not *in* it), and the renter base skews family-planning rather than scene-making.",
+    "tradeoffsForYou": [
+      "The L and 6 will get you to the scenes, but you won't be hosting them here.",
+      "Institutional brick-campus vibe. More playgrounds than studios or galleries.",
+      "Union Square proximity helps, but StuyTown itself reads quiet and insular.",
+      "You'll meet parents and value-conscious renters, not your next collaborator."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:00.358Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "murray-hill": {
+    "fitProse": "Murray Hill is a creative desert. The energy here is post-collegiate finance and consulting bros, not artists or makers. Curry Hill on Lexington has real culture, but the rest of the neighborhood is transient apartments and sports bars. If you need scene, it lives elsewhere.",
+    "tradeoffsForYou": [
+      "Zero studio culture. No galleries, no open rehearsals, no late-night creative spaces.",
+      "The people you meet will mostly be in finance or consulting, not your collaborators.",
+      "Curry Hill is the only cultural anchor. The rest reads like a landing pad.",
+      "Central location means you can subway to the actual scenes quickly (Bushwick, LES, Williamsburg)."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:02.089Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich-village": {
+    "fitProse": "Greenwich Village is the original script for what you came to New York to find. The density of cafés, bars, and venues per block is unmatched, NYU keeps the streets young and alive, and you're walking past townhouses where Patti Smith and Dylan once lived. This is the creative energy you imagined from wherever you moved from.",
+    "tradeoffsForYou": [
+      "NYU undergrads crowd the sidewalks and bars, especially September and weekends.",
+      "Apartments are tiny, old, and expensive. You're paying for location and history.",
+      "The scene today is more nostalgic and tourist-facing than cutting-edge.",
+      "If you want the next thing instead of the storied thing, look to Bushwick or Bed-Stuy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:04.214Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "soho": {
+    "fitProse": "SoHo is a museum of where creative energy used to live. The lofts are iconic and the architecture is stunning, but the street level is luxury retail and tourists. You'll feel the ghosts of the 70s scene, but the living scene is somewhere else now.",
+    "tradeoffsForYou": [
+      "Weekend foot traffic is Disneyland-level, not creative-district energy.",
+      "The people you pass are shopping, not making things.",
+      "Your collaborators likely live in Bushwick, Bed-Stuy, or Ridgewood.",
+      "Among the highest rents in the city for what's mostly a retail corridor."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:04.725Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "weehawken-port-imperial": {
+    "fitProse": "Weehawken is a scenic commuter base, not a creative scene. The ferry view is spectacular, the apartments are big, the light rail and buses work fine. But no one is opening a studio here, and you won't bump into your next collaborator at the Whole Foods.",
+    "tradeoffsForYou": [
+      "You'll commute to the energy instead of living inside it.",
+      "No galleries, no late-night studios, no art bars. Just towers and river.",
+      "The people who thrive here want calm, not creative collision.",
+      "Manhattan skyline views are real, but you'll be looking at the scene from outside it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:08.282Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chinatown": {
+    "fitProse": "Chinatown's creative energy is real but tightly woven into its cultural fabric. If you're here for the gallery-bar-studio circuit, you'll find yourself on the edges looking in. The density and friction are immersion, but the scene is more community than collaboration playground.",
+    "tradeoffsForYou": [
+      "Creative scene here is more cultural than arts-scene. Different oxygen.",
+      "Tourist density on Canal and Mott makes weekends a slog.",
+      "Walk-ups and small apartments mean your collaborators won't come to you.",
+      "The B/D, J/Z, and F get you to Brooklyn creative hubs fast."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:08.416Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bay-ridge": {
+    "fitProse": "Bay Ridge is the wrong shape for a creative immersionist. It's quiet, residential, family-oriented, and built around Shore Road, not studios or galleries. The R is your only train, the scene is nonexistent, and the closest thing to a late-night collaborator bar is a diner.",
+    "tradeoffsForYou": [
+      "The R is slow and the only subway. You'll feel the distance.",
+      "No creative scene. Ambient energy is family-life, not ambitious-project energy.",
+      "Late-night life is essentially absent. The neighborhood shuts down early.",
+      "If you want to be near people making things, this isn't the place."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:10.694Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenpoint": {
+    "fitProse": "Greenpoint has real creative energy but at a gentler volume than Williamsburg, which for immersionists means scene without saturation. You'll find working artists, small galleries, and cafes with good conversations, but the Polish bakery culture and family blocks keep it from feeling like pure creative flux.",
+    "tradeoffsForYou": [
+      "The G train is your lifeline. No L, no express. Ferry helps but isn't daily reliable.",
+      "Creative density is real but quieter than Williamsburg or Bushwick.",
+      "Manhattan Ave Polish institutions are charming but not your creative scene.",
+      "Waterfront condos are gorgeous but pull the neighborhood toward family mode."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:11.607Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-heights": {
+    "fitProse": "Prospect Heights is pleasant, beautiful, and profoundly civil, which is a tradeoff. The Brooklyn Museum and Botanic Garden are real cultural anchors, but the creative energy is muted. If you want to stumble into your next collaborator, they're probably already in Bed-Stuy or Bushwick.",
+    "tradeoffsForYou": [
+      "The bar scene is more date-night than late-night studio hangout.",
+      "Creative density lives a few blocks east, not here.",
+      "Museums and parks, yes. Galleries and maker spaces, not so much.",
+      "Vanderbilt Ave is lovely but lacks the edge you probably crave."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:14.072Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "crown-heights": {
+    "fitProse": "Crown Heights has real creative energy but it's textured, not concentrated. You'll find artists and musicians tucked into brownstone blocks, West Indian spots on Nostrand, and the occasional gallery, but the scene is dispersed. Four subway lines help you get to where the density lives.",
+    "tradeoffsForYou": [
+      "The creative scene here is mixed into cultural layers, not the main act.",
+      "Late-night spots are sparse. Most energy peaks earlier.",
+      "You'll spend time on the 2/3/4/5 heading to Bed-Stuy, Bushwick, or Manhattan.",
+      "Collaborator density is lower than deeper Brooklyn creative hubs."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:14.386Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-greene": {
+    "fitProse": "Fort Greene is one of the few places in Brooklyn where the creative energy has institutional depth. BAM anchors serious theater and film, the Greenmarket fills Saturday mornings, and the brownstone blocks hold a real mix of artists, writers, and organizers who stayed. Ten subway lines at Atlantic-Barclays.",
+    "tradeoffsForYou": [
+      "More family-oriented than scene-driven. The energy is slower, deeper.",
+      "Barclays game nights mean intense crowds at the transit hub.",
+      "Gentrification has quieted some of the creative churn you'd find in Bushwick.",
+      "The scene here is established, not emerging. Less raw collaboration, more résumés."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:16.615Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "clinton-hill": {
+    "fitProse": "Clinton Hill has Pratt as its creative anchor, which means student energy and studio access, but the surrounding blocks are quiet and settled. You'll find makers and designers here, but they're mostly in their own apartments. The scene lives next door in Fort Greene.",
+    "tradeoffsForYou": [
+      "Pratt brings creative presence, but the energy is diffuse, not concentrated.",
+      "C and G only. Getting to Manhattan takes patience.",
+      "Quieter than Fort Greene. If you want spontaneous collisions, walk west.",
+      "Beautiful blocks, but you won't bump into your next collaborator at the bodega."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:17.371Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-williamsburg": {
+    "fitProse": "East Williamsburg delivers exactly what a creative immersionist needs: bigger apartments than prime Williamsburg, the same late-night studio energy, and a real cultural mix (Puerto Rican, Dominican, and the artist wave). The L puts you where you need to be, and the industrial blocks mean makers actually make things here.",
+    "tradeoffsForYou": [
+      "L-train dependence is real. When it's down, you feel it.",
+      "Industrial stretches can feel empty between the scene pockets.",
+      "Less polished than waterfront Williamsburg. That's the point, but some nights it shows.",
+      "Late-night noise near the L is part of the deal, not a bug."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:20.741Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ditmas-park": {
+    "fitProse": "Ditmas Park is gorgeous, calm, and designed for families with yards and strollers. If you need studios open late or galleries you can walk past, this isn't it. The creative energy score is near zero, and Cortelyou Road is more roti shop than experimental scene.",
+    "tradeoffsForYou": [
+      "The Victorian houses are beautiful, but you'll feel far from the action.",
+      "Your collaborators mostly live in Williamsburg, Bushwick, or Bed-Stuy.",
+      "Q train is solid, but you're still deep Brooklyn with one line.",
+      "Cortelyou has good food, not the bar where you'd meet your next project."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:20.941Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-lefferts-gardens": {
+    "fitProse": "PLG has deep cultural roots and a growing creative scene, but it's not yet the immersive hive you're after. The B/Q is good for commuting, Prospect Park is world-class, but the late-night studio energy lives elsewhere in Brooklyn. You'll find community here, just not the constant creative collision you crave.",
+    "tradeoffsForYou": [
+      "Not enough galleries, studios, or bars where you'll meet your next collaborator.",
+      "Creative energy is emerging but dispersed across blocks.",
+      "B/Q only. Getting to Bushwick or Lower East Side scenes means transfers.",
+      "More residential calm than scene-building ferment."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:22.923Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "windsor-terrace": {
+    "fitProse": "Windsor Terrace is calm, family-shaped, and almost entirely the wrong energy for someone who needs a creative scene. There's no studio culture, no late-night density, no gallery walk. Prospect Park is stunning, but you'll be commuting elsewhere for oxygen.",
+    "tradeoffsForYou": [
+      "The quietest blocks in Brooklyn are great for sleep, terrible for serendipity.",
+      "F/G trains work fine, but the scene lives in Bed-Stuy, Bushwick, Crown Heights.",
+      "Dining and nightlife are sparse. You'll be taking the train out most nights.",
+      "If your collaborators are here, you found a unicorn. Most are elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:23.835Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "woodside": {
+    "fitProse": "Woodside has rich cultural texture but the creative scene is thin. The 7 puts you in Midtown in fifteen minutes, the food is world-class, but the ambient energy is family-oriented and domestic, not studio-crawl or gallery-opening. If you're after collaboration and creative collisions, you'll commute to find them.",
+    "tradeoffsForYou": [
+      "The creative infrastructure (studios, galleries, maker spaces) is nearly nonexistent.",
+      "Roosevelt Ave is crowded and chaotic, but not in the artistic-ferment way.",
+      "You'll be the one organizing the interesting gathering, not stumbling into it.",
+      "The 7 is your lifeline to Manhattan scenes. You'll ride it often."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:27.767Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sunnyside": {
+    "fitProse": "Sunnyside is honest, functional, and multicultural, but it doesn't have a creative scene. The 7 gets you to midtown fast, the food is excellent (Turkish, Korean, Romanian), but the energy is residential. If you're looking for collaborators or late-night studios, you won't find them here.",
+    "tradeoffsForYou": [
+      "Creative energy score is zero. This is a place people live, not where scenes form.",
+      "The 7 train is reliable but you'll travel to find your people.",
+      "Great food, quiet blocks, space. Just not the immersion you're after.",
+      "Manhattanites will ask 'where?' when you say Sunnyside."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:28.290Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rego-park": {
+    "fitProse": "Rego Park is a cultural anchor, not a creative one. The Bukharian and Georgian restaurants are fascinating, but there's no studio scene, no gallery walk, no late-night bar where you'll meet collaborators. The M/R gets you to Manhattan, but the energy lives elsewhere.",
+    "tradeoffsForYou": [
+      "The M/R is reliable but slow. You'll feel the commute time to creative hubs.",
+      "Late-night life is nearly nonexistent. Scene ends early.",
+      "The cultural texture is deep but specific. You're observing, not immersing in your scene.",
+      "If you want to be near ambitious creatives, you're in the wrong borough."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:29.415Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood": {
+    "fitProse": "Ridgewood is Bushwick energy without the Bushwick rent, and the creative-class layer is real. The L and M give you Manhattan access, the galleries and DIY spaces are multiplying, and you'll actually have room to make something. The scene is newer, scrappier, and less filtered than Williamsburg.",
+    "tradeoffsForYou": [
+      "The L is shared infrastructure with Bushwick. Weekend shutdowns still happen.",
+      "Restaurant and bar scene improving but spotty. You'll still go to Bushwick for certain nights.",
+      "You'll explain where you live more often than friends in Williamsburg or Bed-Stuy.",
+      "Perception still lags reality. Your collaborators may not come out as easily."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:29.767Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bayside": {
+    "fitProse": "Bayside is optimized for families and calm, not creative collision. Bell Boulevard has a few restaurants, but there's no studio culture, no late-night gallery, no bar where you'll meet your collaborators. If you need scene, you'll commute to it.",
+    "tradeoffsForYou": [
+      "The LIRR gets you to Penn in 25 minutes, but creative energy lives elsewhere.",
+      "Bell Boulevard is commercial, not cultural. You won't bump into ambitious makers here.",
+      "Single-family houses and school ratings. The opposite of immersion density.",
+      "Flushing has more energy. You'll end up spending time there or in Manhattan."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:34.137Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "kew-gardens": {
+    "fitProse": "Kew Gardens is the wrong neighborhood for a creative immersionist. It's a planned garden suburb built for families and Orthodox community life, not scene. The creative energy score is negative, the friction is low, and the closest thing to a late-night studio is a quiet house with a backyard.",
+    "tradeoffsForYou": [
+      "The E/F will get you to Manhattan's scenes, but nothing's happening here at night.",
+      "Dining and nightlife are limited. You'll commute to find your people.",
+      "Beautiful quiet blocks, but that quiet is the opposite of creative oxygen.",
+      "Forest Hills has more energy, but even that's modest by immersionist standards."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:34.525Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jackson-heights": {
+    "fitProse": "Jackson Heights is culturally electric, but the creative energy here is rooted in diaspora and family life, not the bar-gallery-studio circuit. If your immersion hunger is about documenting or participating in a global scene, it's unmatched. If you need to bump into other artists daily, the 7 will take you to Manhattan or Woodside.",
+    "tradeoffsForYou": [
+      "Roosevelt Ave is sensory overload, not creative scene.",
+      "The late-night energy is streetcart vendors, not collaborators in bars.",
+      "Co-op boards and family-first culture, not the studio-share vibe.",
+      "You'll likely commute to find your creative cohort."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:35.928Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "elmhurst": {
+    "fitProse": "Elmhurst's creative-energy score is zero, and you'll feel it. The food culture is world-class and the apartments are big, but this is a neighborhood built around family, commerce, and cultural anchor, not scene. If you're looking for collaborators or late-night studio energy, you're in the wrong borough.",
+    "tradeoffsForYou": [
+      "The cultural depth is real, but it's not your culture of ambitious creatives.",
+      "No galleries, no artist studios, no bars where you'll meet your next project partner.",
+      "You'll commute to Manhattan or Bushwick for the energy you actually want.",
+      "The 7/E/F/M/R will get you there, but you'll wonder why you don't just live closer."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:36.085Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "battery-park-city": {
+    "fitProse": "Battery Park City is the wrong shape for someone who needs creative energy. It's pristine, planned, quiet on weekends, and the streets feel like a corporate campus. The Esplanade is beautiful but you won't meet your next collaborator there.",
+    "tradeoffsForYou": [
+      "Almost no studio culture, galleries, or late-night creative spaces.",
+      "Weekends feel suburban. The energy lives in Tribeca or farther north.",
+      "Brookfield Place and the Esplanade are polished, not scrappy.",
+      "You'll commute to scenes elsewhere. Nothing is happening here after 7pm."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:39.580Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hudson-yards": {
+    "fitProse": "Hudson Yards is a corporate campus masquerading as a neighborhood. The Shed hosts ambitious programming, but the streets feel more like a mall atrium than a place where creative people collide. If your scene is finance meetings and river walks, maybe. If it's studios and serendipity, look elsewhere.",
+    "tradeoffsForYou": [
+      "Creative energy score is zero. The ambitious people here work in consulting.",
+      "The High Line is gorgeous but it's a tourist corridor, not a hangout.",
+      "Vessel draws crowds but no one you'd want to collaborate with lives nearby.",
+      "Expensive in a way that funds amenities, not art spaces or late-night studios."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:41.741Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roosevelt-island": {
+    "fitProse": "Roosevelt Island is a creative energy dead zone. Cornell Tech brings some tech workers, but the island is built for families seeking calm, not collaboration. If you need to bump into people making things, you'll take the F or tram somewhere else every single night.",
+    "tradeoffsForYou": [
+      "Dining and nightlife are nearly nonexistent. You'll commute for social life.",
+      "The bubble-like calm is intentional. No scene, no studios, no serendipity.",
+      "Cornell Tech is interesting but isolated. Not a creative anchor.",
+      "Views are spectacular, but you'll spend more time leaving than staying."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:41.764Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "nolita-little-italy": {
+    "fitProse": "NoLita is one of the densest concentrations of creative-class energy in Manhattan. The sidewalks hum with designers, gallery people, and writers who actually live here, not just commute. The boutiques, cafes, and bars are small and genuinely curated, and you'll meet collaborators without trying.",
+    "tradeoffsForYou": [
+      "Walk-ups only. If you need an elevator or space, look elsewhere.",
+      "Tourist crush on Mulberry weekends can feel like a theme park.",
+      "Rents reflect the scene. You're paying for proximity.",
+      "Grocery is limited. You'll walk to Bowery or order in."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:43.515Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flatiron-nomad": {
+    "fitProse": "Flatiron and NoMad are polished, transit-rich, and close to everything, but they're primarily office territory with a hotel-and-corporate energy. The creative scene is two stops south in Union Square or a walk west to Chelsea. You'll live cleanly and commute well, but you won't bump into your next collaborator at midnight.",
+    "tradeoffsForYou": [
+      "The energy is buttoned-up midtown, not experimental or late-night.",
+      "Post-work streets empty out. Scene lives elsewhere in Manhattan.",
+      "Six subway lines mean you can get to the creative pockets fast.",
+      "Madison Square Park is lovely, but it's not where the studios are."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:45.696Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carroll-gardens": {
+    "fitProse": "Carroll Gardens is beautiful, quiet, and family-shaped. The creative energy score is zero, and you'll feel it. Smith Street has restaurants, not studios. Court has cafes, not collaborators. If you want scene, you're taking the F north to Manhattan or east to Gowanus.",
+    "tradeoffsForYou": [
+      "The neighborhood is built for strollers, not late-night hangs.",
+      "Smith and Court are pleasant but suburban in tempo.",
+      "Closest creative density is Gowanus or Red Hook, both a walk.",
+      "You'll spend more time commuting to scene than living in it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:47.318Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "boerum-hill": {
+    "fitProse": "Boerum Hill once had a real creative scene, but it's aged into brownstone calm. The bones are good (Smith Street's restaurants, Atlantic-Barclays' redundancy, real townhouses), but the long-running creative-class community is now mostly couples with strollers. You'll feel the quiet more than the spark.",
+    "tradeoffsForYou": [
+      "Smith Street restaurants are solid, but the scene lives in Bed-Stuy or Bushwick now.",
+      "Smaller footprint means fewer serendipitous collisions than Park Slope or Cobble Hill.",
+      "The calm is intentional. If you want late-night energy, you'll commute to it.",
+      "Strong transit (F/G, Atlantic hub) makes it easy to find your scene elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:47.880Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gowanus": {
+    "fitProse": "Gowanus is exactly the kind of place Creative Immersionists move for. The canal blocks host working studios, galleries that open unannounced, and the brewery-bar-DIY venue circuit that turns into your social graph. You're close enough to Park Slope coffee but far enough that rent buys real square footage.",
+    "tradeoffsForYou": [
+      "The scene is real but still thin. You'll see familiar faces, maybe too often.",
+      "Construction everywhere. The neighborhood is becoming, not arrived.",
+      "Brownstone Brooklyn is next door, but Gowanus itself has almost no trees.",
+      "F/G from Smith-9th is solid, but you're walking 10+ minutes from many blocks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:50.486Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tenafly": {
+    "fitProse": "Tenafly is the wrong habitat for a creative immersionist. It's a Bergen County suburb built for families with minivans, not late-night studios or chance collaborations. The creative-energy score is deep negative, and the only scene is the H Mart parking lot on Saturday morning.",
+    "tradeoffsForYou": [
+      "No bar, gallery, or studio within walking distance. Car-dependent by design.",
+      "The NJ Transit bus to Port Authority is your only Manhattan link.",
+      "You'll meet PTA parents, not your next collaborator.",
+      "If you crave creative oxygen, you'll commute to find it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:52.828Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood": {
+    "fitProse": "Englewood has the Bergen Performing Arts Center and a rich cultural mix, but the creative-energy score tells the truth: this is a suburban city built for families and cultural-anchor seekers, not late-night studio collaborators. If your scene lives in group chats and occasional events, it works. If you need density of makers around you, look elsewhere.",
+    "tradeoffsForYou": [
+      "Bus-only commute to Manhattan means fewer spontaneous late nights in the city.",
+      "The creative scene is event-based, not ambient. You won't bump into collaborators at coffee.",
+      "Car-dependent day-to-day. Your studio visit requires planning, not a walk.",
+      "Cultural richness here is intergenerational and rooted, not experimental or emerging."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:55.182Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "red-hook": {
+    "fitProse": "Red Hook is the rare NYC neighborhood where isolation is the scene. Artists, makers, and architects have colonized the warehouse blocks. The studios stay open late because rent is still halfway sane and the cobblestone streets feel like borrowed time.",
+    "tradeoffsForYou": [
+      "No subway means you're choosing to be off the grid. The B61 and ferries work, but slowly.",
+      "The scene is real but small. You'll know everyone's name in six months.",
+      "Storm risk is not theoretical. Sandy flooded most of the peninsula.",
+      "Dining and groceries are sparse. IKEA and Fairway are your anchors."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:55.270Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood-cliffs": {
+    "fitProse": "Englewood Cliffs is a rare mismatch for the creative immersionist. The scene lives in Manhattan, Bushwick, or Red Hook, not in a hushed Bergen suburb where the bus over the GW Bridge is your only link to collaborative energy. Come here for space and schools, not studios.",
+    "tradeoffsForYou": [
+      "Your collaborators are an hour away by bus, more if you're driving.",
+      "No galleries, no bars, no open studios. This is family-estate terrain.",
+      "The Korean dining and H Mart are real, but the creative community is not.",
+      "You'll need a car for everything, including escaping to where the scene is."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:56.331Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cresskill": {
+    "fitProse": "Cresskill is a school-focused suburban borough with near-zero creative energy. The bus to Port Authority is the only transit, the street life is single-family homes and lawns, and there's no commercial center where you'd bump into anyone who isn't a neighbor.",
+    "tradeoffsForYou": [
+      "No cafes, studios, galleries, or venues. You'd commute out for scene.",
+      "Car-dependent for everything. The creative cluster is Manhattan, an hour away.",
+      "Quiet residential blocks are the whole offering, not a tradeoff.",
+      "If you want collaborators, you'll find them elsewhere and drive home after."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:28:58.779Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "paramus": {
+    "fitProse": "Paramus is the wrong shape for a Creative Immersionist. The creative-energy score is negative, there's no scene to speak of, and the car-centric mall geography means you'll never stumble into your next collaborator. This is a place built for families, not friction.",
+    "tradeoffsForYou": [
+      "You'll need to drive to find any creative community.",
+      "The 144/164 bus to Port Authority is your only lifeline to Manhattan's energy.",
+      "Van Saun Park is pleasant, but you won't meet ambitious creatives there.",
+      "Route 17 traffic will wear on you if you're commuting to the city often."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:00.941Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood-nj": {
+    "fitProse": "Ridgewood is a classic Bergen County family suburb, and for a creative immersionist that means nearly everything about it is built for a different life stage. The train to Penn exists, but the scene does not. You'll find excellent schools and Whole Foods, not studios or collaborators.",
+    "tradeoffsForYou": [
+      "Creative energy scores negative 0.3. This is where people raise kids, not start bands.",
+      "The 50-minute NJ Transit commute eats your evenings if you're working late in the city.",
+      "Walkable downtown means cafes and wine bars, not galleries or late-night anything.",
+      "If your oxygen is proximity to ambitious creatives, you'll suffocate here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:02.645Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "maplewood": {
+    "fitProse": "Maplewood has ambitious creative-class people, but they moved there for children and space, not scene. The village has good coffee and restaurants, but the energy peaks at 6pm on a Saturday. If you want a yard and a collaborator pool who understand your work, it delivers. If you need a studio open at 11pm, it doesn't.",
+    "tradeoffsForYou": [
+      "Your collaborators will be parents. Projects happen around childcare schedules.",
+      "The train is your lifeline. Miss the last Midtown Direct and it's a long night.",
+      "Creative energy lives in living rooms and backyards, not in bars or galleries.",
+      "You'll make your scene, not stumble into one already happening."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:02.839Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "millburn-short-hills": {
+    "fitProse": "Short Hills and Millburn are optimized for families and prestige, not the creative immersionist. The train to Penn is real, but the scene is nonexistent. Beautiful homes, excellent schools, and quiet streets where you'll be the only one up at 11pm.",
+    "tradeoffsForYou": [
+      "Creative energy score is -0.4. This is a place people move to after they've made it.",
+      "No studios, no galleries, no bars where you'll meet collaborators.",
+      "You'll commute to the city for oxygen and come home to calm.",
+      "Midtown Direct is 35 min, but you'll use it daily to find your people."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:04.620Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "montclair": {
+    "fitProse": "Montclair has creative infrastructure (the Wellmont, the art museum, a film festival) but it's family-scale, not scene-scale. You'll meet designers and writers at dinner parties, not at 11pm openings. If you want a creative village to settle into, it works. If you need daily immersion, you'll commute back to Brooklyn or Manhattan for oxygen.",
+    "tradeoffsForYou": [
+      "The creative energy is real but domesticated. Think gallery, not studio.",
+      "Midtown Direct is good, but off-peak trains thin out fast.",
+      "You'll be the person who leaves the city, not the one people visit.",
+      "The scene you want still lives in NYC. This is where you decompress from it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:07.902Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "summit": {
+    "fitProse": "Summit is the wrong shape for someone who needs creative oxygen. It's an affluent commuter suburb with excellent schools and a Midtown Direct train, but the creative-energy score is negative for a reason. The scene lives in Brooklyn or downtown Manhattan, not here.",
+    "tradeoffsForYou": [
+      "50-minute train to Penn means you're far from the studios, galleries, and late-night bars.",
+      "Downtown Summit has restaurants, but you won't bump into your next collaborator.",
+      "This is where families put down roots, not where ambitious creatives congregate.",
+      "If you need scene as daily fuel, you'll spend more time commuting than immersed."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:08.512Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westfield": {
+    "fitProse": "Westfield is the wrong shape for a creative immersionist. It's a family-oriented commuter suburb with excellent schools and a pleasant downtown, but the creative-energy score is negative for a reason. You won't bump into collaborators here, you'll bump into strollers.",
+    "tradeoffsForYou": [
+      "The scene is nonexistent. This is a place people raise kids, not start bands.",
+      "Your peers will be in Montclair or back in Brooklyn. Westfield skews conservative-suburban.",
+      "NJ Transit Raritan Valley to Penn is slow and the trains stop running early.",
+      "If you need studio space or late-night energy, you're commuting back to the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:10.293Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "south-orange": {
+    "fitProse": "South Orange has the ingredients (Midtown Direct, a walkable downtown, diverse creative-class families) but the creative energy score tells the story: this is a place people move to after they've already had their scene years. The performing arts center and funkier blocks are real, but the vibe is more settled than searching.",
+    "tradeoffsForYou": [
+      "The ambitious creatives here are mostly parents. You'll meet them at school pickup.",
+      "Midtown Direct is fast, but you're commuting in for your scene, not finding it locally.",
+      "Funkier than Short Hills, quieter than Bushwick. Depends where you are in your arc.",
+      "The best energy is family energy. If that's not your oxygen right now, you'll feel it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:12.838Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "scarsdale": {
+    "fitProse": "Scarsdale is the opposite of creative immersion. It's a high-end commuter suburb built around schools, lawns, and family calm. The closest thing to a scene is the Metro-North platform at rush hour. If you're here, you're visiting family or you've pivoted hard.",
+    "tradeoffsForYou": [
+      "Zero creative infrastructure. No studios, galleries, or late-night anything.",
+      "You will be the only person under 40 without kids.",
+      "Metro-North to Grand Central is fast, but you'll feel like you live in another world.",
+      "The ambition here is corporate or academic, not artistic or experimental."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:14.316Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chatham-nj": {
+    "fitProse": "Chatham is built for families who prize schools and space, not for creatives who need scene. The village center is pleasant but quiet, the creative energy score is negative, and the closest thing to a studio open late is someone's basement. You'll spend your nights on the train back from the city.",
+    "tradeoffsForYou": [
+      "50-minute Midtown Direct commute means your creative life lives in Manhattan, not at home.",
+      "No galleries, no late-night studios, no bars where collaborators congregate.",
+      "The walkable downtown is charming but inert after 8pm.",
+      "If you need to be near ambitious creatives daily, this is the wrong suburb."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:14.465Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bronxville": {
+    "fitProse": "Bronxville is a leafy, family-first village with almost no creative scene. Sarah Lawrence anchors the downtown, but the energy is campus-contained. Metro-North gets you to Grand Central in 25 minutes, which is fine for meetings but not for the daily immersion you crave.",
+    "tradeoffsForYou": [
+      "One square mile. The footprint is tiny and the vibe is settled, not experimental.",
+      "No studios, galleries, or late-night anchor. You'll commute in for scene.",
+      "Prestige-coded and expensive in a way that reads more country club than creative class.",
+      "Sarah Lawrence students are around, but the town isn't built for collaboration or serendipity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:16.715Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "larchmont": {
+    "fitProse": "Larchmont is a family-first bedroom community with sailboats and top schools, not a place where creative energy lives. The Metro-North gets you to Grand Central, but the village closes early and the only collaborators you'll meet are neighbors planning the next school fundraiser.",
+    "tradeoffsForYou": [
+      "The creative scene is nonexistent. Your peers are in Manhattan or Brooklyn.",
+      "You'll spend 30+ minutes each way on Metro-North to reach where things happen.",
+      "The village is pleasant but sleepy. No studios, no galleries, no late-night anything.",
+      "Beautiful waterfront and parks, but that's not the oxygen you're looking for."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:19.132Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "mamaroneck": {
+    "fitProse": "Mamaroneck is a family-first suburb with a harbor and Metro-North. Creative energy scores zero here. There's no studio scene, no gallery walk, no bar where you'll meet your next collaborator. It's pleasant and practical, but the oxygen you need lives elsewhere.",
+    "tradeoffsForYou": [
+      "The train gets you to Grand Central, but the creative action stays in the city.",
+      "No late-night spaces, no art scene, no density of ambitious makers.",
+      "You'll commute to find your people. This is a place to sleep, not to collide."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:19.650Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rye": {
+    "fitProse": "Rye is the wrong town for a creative immersionist. It's estate-scale suburban living with top schools and Sound Shore beaches, but the creative-energy score is deeply negative. There's no scene, no studio culture, no late-night collaboration spots. Just quiet prestige.",
+    "tradeoffsForYou": [
+      "45-minute Metro-North commute each way. The train is good, but your energy lives in the city.",
+      "Zero creative infrastructure. No galleries, no maker spaces, no bar full of collaborators.",
+      "The people you meet will mostly be finance families and country-club members.",
+      "Prestige is the amenity here, not creative momentum."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:20.290Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "pelham": {
+    "fitProse": "Pelham is built for family commuters, not creative immersionists. The Metro-North line is fast, the Tudor homes are beautiful, and the schools are great, but there is no scene. The closest thing to collaborative energy is a coffee shop closing at 5pm.",
+    "tradeoffsForYou": [
+      "The creative scene lives in Manhattan or Brooklyn, not here.",
+      "You'll commute toward the energy, not live inside it.",
+      "Walkable downtown is charming but quiet. No galleries, studios, or late-night spots.",
+      "If you want to meet your next collaborator, it won't be at the grocery store."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:21.888Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hastings-on-hudson": {
+    "fitProse": "Hastings has a real creative-class community (artists, writers, architects who fled the city), but it's a quiet river town, not a scene. The energy is Saturday farmers market and gallery openings, not late-night studios or the bar where you meet your next collaborator.",
+    "tradeoffsForYou": [
+      "Metro-North Hudson Line means 35 min to Grand Central, but last train is early.",
+      "The creative people here are mostly post-kids, post-scene. Not your cohort.",
+      "Walkable downtown is charming but small. No density, no spontaneous collisions.",
+      "You'll need to go back into the city for the oxygen you actually need."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:24.835Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "irvington-ny": {
+    "fitProse": "Irvington is a river town built for family households, not creative collaborators. The creative-energy score is zero, the cultural ecosystem is zero, and the nearest scene is back in Manhattan on the Metro-North. Beautiful, quiet, expensive, wrong for you.",
+    "tradeoffsForYou": [
+      "No studios, galleries, or late-night spots. This is estate-scale suburbia.",
+      "The train to Grand Central is good, but you're commuting to find your people.",
+      "Dining and nightlife end at the village center, which closes early.",
+      "If you need creative oxygen daily, you'll suffocate here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:26.218Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dobbs-ferry": {
+    "fitProse": "Dobbs Ferry is built for families who want river views and yard space, not for creative immersionists. The downtown is charming in a Main Street way, but there's no gallery, no late-night studio culture, and Mercy College doesn't generate a scene you'll notice. If you crave creative oxygen, you'll be commuting south for it.",
+    "tradeoffsForYou": [
+      "The Metro-North Hudson Line is slower than the Harlem. Plan 50+ minutes to Grand Central.",
+      "Cultural life is nearly zero. The creative energy you need lives in the city.",
+      "Dining and nightlife end early. This is a place people retreat to, not gather in.",
+      "You'll spend more time on trains than at openings or collaborations."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:26.346Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tarrytown": {
+    "fitProse": "Tarrytown is a family-trajectory river town, not a creative scene. The Music Hall hosts touring acts, but you won't find studio opens or collaborative collisions. If you crave proximity to ambitious creatives, you'll commute to the city for that oxygen.",
+    "tradeoffsForYou": [
+      "Metro-North Hudson Line is your lifeline. The scene lives in Manhattan, not here.",
+      "Downtown is walkable and pleasant, but quiet after dinner.",
+      "Tourist weekends and bridge traffic feel suburban, not immersive.",
+      "You'll need to build your creative network elsewhere and travel for it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:27.698Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "white-plains": {
+    "fitProse": "White Plains is a commercial and residential hub, not a creative one. The scene here is Galleria Mall and Metro-North commuters, not studios or galleries. If you're looking for ambient creative energy or late-night collaborators, you'll be riding the train to the city or Beacon.",
+    "tradeoffsForYou": [
+      "Creative scene is essentially nonexistent. You'll commute for it.",
+      "Downtown feels corporate-suburban, not bohemian or experimental.",
+      "The diversity is real, but the energy is family-oriented and commercial.",
+      "Metro-North gets you to Grand Central, but that's 40+ minutes each way."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:30.838Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chappaqua": {
+    "fitProse": "Chappaqua is a high-achieving suburb built for families, not scenes. The creative energy score is negative, the housing is estate-scale single-family, and day-to-day life is car-dependent. If you need to bump into collaborators or stumble into a gallery, this is the wrong place.",
+    "tradeoffsForYou": [
+      "Zero creative scene. The cultural ecosystem here is school plays and book clubs.",
+      "50-minute Metro-North to Grand Central means you're commuting to find your people.",
+      "Car-dependent outside the village. No walk-past studios or late-night bars.",
+      "If you want ambitious energy, it's coming from finance parents, not artists."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:32.187Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yonkers-ny": {
+    "fitProse": "Yonkers is the wrong place for a creative immersionist. The urban density is real, the Hudson Line gets you to Grand Central, but the creative-energy score is zero for a reason. You won't find the studio, the gallery, or the collaborator here.",
+    "tradeoffsForYou": [
+      "The scene you crave is back in Brooklyn or Manhattan, not here.",
+      "Metro-North is good for commuting, bad for spontaneous late-night energy.",
+      "Value-aware families thrive here. Ambitious creatives do not.",
+      "Waterfront renaissance is real estate, not cultural renaissance."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:32.876Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "great-neck": {
+    "fitProse": "Great Neck is a suburb. It is organized for families, schools, and quiet. The LIRR gets you to Penn, but once you're home you're in lawn-and-co-op territory. There's no scene, no late-night studio energy, no bar where you'll meet your next collaborator.",
+    "tradeoffsForYou": [
+      "Creative energy score is among the lowest in the metro. This is not where ambitious makers gather.",
+      "Middle Neck Road is walkable but the vibe is errands, not serendipity.",
+      "You'll commute into the city for the scene, then come home to quiet. Every time.",
+      "LIRR off-peak means you're on the train's schedule, not your own."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:34.120Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhasset": {
+    "fitProse": "Manhasset is a beautiful, quiet estate suburb with a creative energy score of minus 0.5. If you need a studio open at 11pm or the bar where you'll meet your next collaborator, this is the wrong address. The LIRR puts you in Penn in thirty minutes, but the scene stays in the city.",
+    "tradeoffsForYou": [
+      "The closest thing to a creative scene is luxury retail at the Americana.",
+      "Single-family lots and quiet streets. Ambitious artists are elsewhere.",
+      "You'll commute to find your people every time.",
+      "Beautiful if you want calm, suffocating if you want creative oxygen."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:36.006Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "port-washington": {
+    "fitProse": "Port Washington is the wrong peninsula for a creative immersionist. It's a family-first village with top schools, a working harbor, and quiet blocks. The LIRR gets you to Penn in 35 minutes, but there's no scene to come home to, no studios, no late-night gallery walk.",
+    "tradeoffsForYou": [
+      "Main Street is pleasant but buttoned-up. No creative night life.",
+      "You'll meet families, lawyers, commuters. Not collaborators or artists.",
+      "The 35-minute LIRR means you'll live in Manhattan's scene, not your own.",
+      "Beautiful waterfront, zero creative energy. It's a trade you'll feel daily."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:37.703Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roslyn": {
+    "fitProse": "Roslyn is a beautiful, quiet suburb built for families who prize schools and space. For a creative immersionist, it's the wrong canvas entirely. There's no scene, no late-night studio, no collision of ambitious people. You'd need to drive to the LIRR, then ride into the city to find your oxygen.",
+    "tradeoffsForYou": [
+      "No creative scene. This is a place for families and estate-scale homes, not collaboration.",
+      "Car-dependent for everything, including getting to the train.",
+      "You'll spend hours commuting if the energy you need is in Brooklyn or Manhattan.",
+      "The walkable downtown is charming but not where you'll meet your next collaborator."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:39.124Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "garden-city": {
+    "fitProse": "Garden City is a planned suburb from 1869, built for families who want space and top schools, not creative collision. The creative-energy score is negative for a reason: this is wide lawns, single-family homes, and a cathedral, not studios or galleries. You'll commute to the scene.",
+    "tradeoffsForYou": [
+      "The LIRR gets you to Penn in 40 min, but there's no scene to walk home to.",
+      "No studios, no late-night spaces, no place to bump into collaborators.",
+      "You'll feel isolated unless your creative life lives entirely in Manhattan.",
+      "This is classic affluent suburban. If that's not your oxygen, you'll suffocate."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:40.596Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rockville-centre": {
+    "fitProse": "Rockville Centre has a pleasant downtown and good bones, but the creative energy score tells the truth. This is a place built for family life, not scene. You'll find restaurants and a few bars, but you won't find studios, galleries, or the collaborators who make a place hum for you.",
+    "tradeoffsForYou": [
+      "LIRR is 40 min to Penn. Your scene lives in the city, not here.",
+      "The downtown is walkable but suburban in tempo. No late-night anything.",
+      "If you need creative oxygen daily, Long Island will feel like exile.",
+      "Beautiful for families. Wrong for immersionists."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:42.052Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-beach-ny": {
+    "fitProse": "Long Beach has a boardwalk and a summer vibe, but the creative scene is thin. The LIRR to Penn is 50 minutes, which means you're commuting away from where the ambitious, creatively alive people actually are. If you need the ocean more than the studio, it works. Otherwise, you'll feel remote.",
+    "tradeoffsForYou": [
+      "50-minute LIRR commute means you're not bumping into your next collaborator on the way home.",
+      "Walkable, yes. But walkable to what? Not galleries, not late-night rehearsal spaces.",
+      "Summer energy is real, but it's beach-party energy, not creative-scene energy.",
+      "You'll spend more time traveling to the scene than being in it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:44.101Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich": {
+    "fitProse": "Greenwich is the wrong shape for creative immersion. It's country-club Connecticut, built for families with Metro-North commutes and estate homes. The creative energy score is negative for a reason: this is where people go to escape the scene, not to find it.",
+    "tradeoffsForYou": [
+      "You will not bump into collaborators at bars. The bars are different here.",
+      "50 minutes to Grand Central means you're commuting to the energy, not living in it.",
+      "Beautiful and prestigious, but the scene is families and finance, not studios or galleries.",
+      "Car-dependent day-to-day. Walking to chance encounters isn't the design."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:45.139Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stamford": {
+    "fitProse": "Stamford has the Metro-North and a real downtown, but a creative-energy score of zero is not metaphorical. The offices are insurance and finance, the new high-rises are mostly commuter housing, and the scene you'd want doesn't exist here. This is CT for people who value pragmatism over immersion.",
+    "tradeoffsForYou": [
+      "The closest thing to a creative scene is likely a corporate WeWork.",
+      "55 minutes to Grand Central means you'll spend your energy commuting, not collaborating.",
+      "You won't bump into ambitious creatives at the coffee shop or bar.",
+      "If you need scene as oxygen, you'll suffocate here and take the train in constantly."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:46.982Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "darien": {
+    "fitProse": "Darien is a gracious suburb designed for families, not scene. There's no studio, no gallery, no bar where you'll meet your next collaborator. Metro-North to Grand Central takes 60 minutes, but the creative energy you need lives in the city you just left.",
+    "tradeoffsForYou": [
+      "You'll need a car for everything, and the car culture is Range Rover estate-town.",
+      "Creative-energy score is negative. The ambitious people here are in finance, not art.",
+      "60-minute commute each way means less time at openings, shows, late sessions.",
+      "The quiet is existential. If you feed off urban collision, this will feel isolating."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:48.299Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "new-canaan": {
+    "fitProse": "New Canaan is a mis-match. The Glass House is stunning, but the creative energy stopped in 1949. It's car-dependent estate living, family-school capital, and the closest thing to a scene is a well-appointed coffee shop.",
+    "tradeoffsForYou": [
+      "75-minute Metro-North (branch line) means you're not dropping into the city spontaneously.",
+      "Creative professionals live elsewhere. This is family money and architecture history.",
+      "You'll spend more time driving to Whole Foods than walking past galleries.",
+      "The cultural ecosystem score is zero for a reason. Beautiful, quiet, isolated."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:49.699Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westport": {
+    "fitProse": "Westport has a real arts community and a walkable downtown, but the creative energy reads more \"established novelist\" than \"studio open at 11pm.\" The scene is cultivated, not combustible. If you're past the grind and want proximity to tasteful culture plus a house, maybe. If you need collaborators and late nights, you'll be lonely.",
+    "tradeoffsForYou": [
+      "Seventy-five minutes on Metro-North each way. Your social life will suffer.",
+      "The creative class here mostly has kids and mortgages, not open studios.",
+      "Arts scene is real but polite. Galleries close early, bars emptier by 10pm.",
+      "You'll spend more time driving to beaches than bumping into ambitious peers."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:29:51.505Z",
+    "model": "claude-sonnet-4-5"
+  }
+}

@@ -1,0 +1,1467 @@
+{
+  "west-village": {
+    "fitProse": "West Village is not a cultural anchor neighborhood. It's one of the most expensive, most photographed, most settled parts of Manhattan. The charm is architectural and postcard-pretty, not communal or rooted in a living immigrant or diasporic culture you can step into daily.",
+    "tradeoffsForYou": [
+      "The restaurants are excellent but polished, not the kind where you're recognized as a regular.",
+      "You'll speak English everywhere. No cultural immersion here.",
+      "Tourist load means the streets feel borrowed, not lived-in.",
+      "The price is prohibitive unless you're chasing prestige, not culture."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:35:58.102Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-east-side": {
+    "fitProse": "The Upper East Side's cultural anchor is prestige and polish, not ethnic neighborhood. The Jewish community has deep roots here, especially around the synagogues and institutions near Park and Fifth, but this is not a place where you hear other languages on the corner or find an unlocked cultural ecosystem.",
+    "tradeoffsForYou": [
+      "The bakery you become a regular at will be excellent and expensive.",
+      "No dominant cultural enclave. This is New York's most assimilated quadrant.",
+      "Museums yes, but street-level daily-life culture reads muted.",
+      "If you want immersion in a living ethnic neighborhood, look elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:35:58.118Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-village": {
+    "fitProse": "The East Village has always been where cultures arrive, overlap, and stay visible. Ukrainian bakeries share blocks with Korean BBQ, Japanese izakayas, and newer West African spots. You'll hear multiple languages on a single avenue, and the density of small restaurants means you can actually become a regular somewhere.",
+    "tradeoffsForYou": [
+      "Transit is awkward. The L, F, and 6 serve different slices, none perfectly.",
+      "Nightlife noise is real. If your spot faces Avenue A, bring earplugs.",
+      "The culture you anchor to may not be your own origin story.",
+      "Apartments are small and old. Charm competes with function."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:35:58.372Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-west-side": {
+    "fitProse": "The Upper West Side has deep Jewish cultural roots, visible in the delis, synagogues, and Zabar's itself. But the cultural ecosystem score is low because it's now more of a settled, family-friendly place than an active cultural hub. If you're seeking immersion in a living, dense community, look elsewhere.",
+    "tradeoffsForYou": [
+      "The Jewish history is real, but today's UWS skews professional-family over cultural anchor.",
+      "Most bakeries and shops feel upscale-generic, not neighborhood-defining.",
+      "You'll find institutions (synagogues, Zabar's), but less daily street-level culture.",
+      "Expensive for what is now mostly a quiet, kid-focused enclave."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:03.037Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fidi": {
+    "fitProse": "The Financial District is unlikely to offer the cultural anchor you're seeking. The food and street life are driven by office workers and tourists, not by rooted communities. You'll find a Whole Foods and ferry views, but not the bakery where they know your name.",
+    "tradeoffsForYou": [
+      "Restaurants and shops built for lunch crowds, not regulars.",
+      "Weekends feel evacuated. The density is office workers, not neighbors.",
+      "Transit is spectacular, but the block life that matters to you isn't here.",
+      "You'll commute efficiently to culture elsewhere, but won't find it at home."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:04.351Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tribeca": {
+    "fitProse": "Tribeca is the wrong neighborhood if you're looking for a cultural anchor. It's wealthy, quiet, and residential. The restaurants are excellent but they cater to people who already made it, not to the communities who built the food traditions you're looking for.",
+    "tradeoffsForYou": [
+      "Cultural ecosystem score is zero. This is finance and film money, not immigrants or enclaves.",
+      "You'll pay top dollar for square footage that doesn't come with the bakery or bodega you'd become a regular at.",
+      "The quiet cobblestone streets are beautiful, but they don't sound or feel like home.",
+      "If you want community built around language and daily ritual, look to Flushing, Sunset Park, or Jackson Heights."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:04.548Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chelsea": {
+    "fitProse": "Chelsea works if your anchor is LGBTQ community rather than a single ethnic or linguistic scene. The neighborhood has decades of history as queer cultural ground, but the bakeries and bodegas won't remind you of home in the old-country sense. You'll find community, not cuisine-as-identity.",
+    "tradeoffsForYou": [
+      "Gallery culture and High Line foot traffic, but not a residential village feel.",
+      "The A/C/E and 1 give you great access, but street life can feel transient.",
+      "Chelsea Market is iconic, not intimate. You won't become a regular easily.",
+      "Strong LGBTQ anchor, but little language or food community depth beyond that."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:05.077Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gramercy": {
+    "fitProse": "Gramercy Park is lovely, polished, and very settled in, but the cultural ecosystem score tells the story: this is not a neighborhood anchored by a particular language, cuisine, or rhythm beyond affluent Manhattan residential calm. You'll find everything in delivery distance, but little on the block that feels like home in the way you're seeking.",
+    "tradeoffsForYou": [
+      "Restaurants are upscale-American or generic midtown, not cultural anchors.",
+      "The 6 train is fine but won't take you to ethnic enclaves quickly.",
+      "It's a place people move for quiet prestige, not for community.",
+      "Union Square farmers market and groceries nearby, but not the bodega or bakery you become a regular at."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:09.912Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "central-harlem": {
+    "fitProse": "Central Harlem is one of the few places in Manhattan where the cultural ecosystem runs deep enough to build a real life in, not just around. The African-American and West African anchors shape everything from Sunday morning to late-night grocery runs, and the brownstone blocks offer something you can belong to, not just occupy.",
+    "tradeoffsForYou": [
+      "Block character varies. Some streets feel like home instantly, others don't yet.",
+      "Restaurant scene is still catching up to the residential density.",
+      "Some friends will treat your address like it's uptown in the distant sense.",
+      "The 2/3 is fast to midtown, but crosstown transit is slower than you'd hope."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:10.849Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hells-kitchen": {
+    "fitProse": "Hell's Kitchen is NYC's most diverse restaurant row, which for a cultural anchor seeker means you can be a regular at a Thai grocer, a Colombian bakery, and a Polish pierogi spot all on the same block. The LGBTQ community has deep roots here, and the density means you hear five languages on any given walk to the A/C/E.",
+    "tradeoffsForYou": [
+      "Times Square tourist crush bleeds west. You'll share the sidewalk daily.",
+      "The cultural ecosystem is real but also transient. Theater workers rotate through.",
+      "Walk-ups and tenement layouts mean less space than outer boroughs offer.",
+      "If you want a single strong ethnic enclave, Flushing or Sunset Park are clearer bets."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:10.868Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "williamsburg": {
+    "fitProse": "Williamsburg's cultural ecosystem is diffuse and cosmopolitan now, not anchored in one tight community. You'll find excellent restaurants (Polish, Mexican, Japanese), but the block-level ritual and continuity you're seeking lives more in pockets than patterns. The energy is real, but it's creative-class energy, not cultural-anchor energy.",
+    "tradeoffsForYou": [
+      "The neighborhood has gentrified into a scene, not a settled community.",
+      "Most regulars you'll make are other transplants, not multi-generational locals.",
+      "If you want to feel rooted in a specific culture, look to Sunset Park or Astoria.",
+      "The restaurants are excellent but rotate. Anchors close, new ones open."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:11.408Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "park-slope": {
+    "fitProse": "Park Slope's cultural ecosystem is thin. The brownstone blocks are beautiful, and you'll find Jewish and LGBTQ community presence, but there's no concentrated ethnic enclave, no street where the bakery owner speaks your language, no sidewalk rhythm that feels like home. You're looking for a different kind of anchor.",
+    "tradeoffsForYou": [
+      "The grocery and dining options skew white-liberal-organic, not culturally specific.",
+      "Cultural community here means progressive affinity groups, not daily-life immersion.",
+      "If you want a block that feels like home culturally, look to Sunset Park, Bensonhurst, or Jackson Heights."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:15.806Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brooklyn-heights": {
+    "fitProse": "Brooklyn Heights is architecturally grand and famously calm, but it doesn't anchor around a specific culture. The promenade is beautiful, the blocks are quiet, and the bagel shops and cafes are good without being anyone's gathering place in particular.",
+    "tradeoffsForYou": [
+      "You won't hear your language or find your food unless you leave the neighborhood.",
+      "It's built for privacy and tasteful quiet, not for regulars becoming family.",
+      "Transit is excellent (2/3, 4/5, A/C, R, F) but the energy is patrician, not communal.",
+      "Sahadi's is a real anchor, but one store doesn't make a cultural ecosystem."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:16.664Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dumbo": {
+    "fitProse": "DUMBO's cultural ecosystem is nearly invisible. The cobblestones are gorgeous, the waterfront is postcard-worthy, but the neighborhood has no ethnic grocer, no bodega culture, no language you'll hear on repeat. You'll live among design professionals and tourists, not a rooted community.",
+    "tradeoffsForYou": [
+      "The only grocery is Foragers, which is more curated than cultural.",
+      "Tourist foot traffic is constant, especially near the bridges.",
+      "Small footprint means you'll need to leave the neighborhood for real cultural anchors.",
+      "Among the priciest per-square-foot in Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:16.827Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bed-stuy": {
+    "fitProse": "Bed-Stuy's cultural depth is real and long-standing. African-American and Caribbean roots run through the barbershops, bakeries, and churches, and you'll hear patois and taste jerk at the corner spots that have been here for decades. The brownstone blocks are gorgeous, the A/C gets you to Manhattan, and if you're looking to become a regular somewhere that feels like home, this neighborhood still has that.",
+    "tradeoffsForYou": [
+      "The gentrification arc means the cultural landscape is shifting, not static.",
+      "A and C only. Limited train options compared to deeper Brooklyn hubs.",
+      "Block-by-block variance is real. Some streets feel rooted, others feel in flux.",
+      "Foodtown and C-Town anchor groceries, not the specialty markets you might want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:17.880Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cobble-hill": {
+    "fitProse": "Atlantic Avenue's longstanding Arab-American presence gives Cobble Hill a genuine cultural anchor. Sahadi's is legendary, and the grocers, bakeries, and restaurants along that corridor feel lived-in, not performative. The brownstone blocks are calm but you're still near Borough Hall and Brooklyn Bridge Park.",
+    "tradeoffsForYou": [
+      "The cultural community is real but concentrated on Atlantic Ave, not the whole neighborhood.",
+      "Trains are all a 10-minute walk. You'll plan errands accordingly.",
+      "Quiet residential blocks dominate. Energy is elsewhere in Brooklyn.",
+      "Competitive real estate. You're paying for scale, safety, and the restaurant row."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:21.583Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bushwick": {
+    "fitProse": "Bushwick has a real Latin American cultural backbone, especially on the blocks south of Myrtle. You'll hear Spanish on the street, find panaderías and bodegas that feel authentic, and the longer-term Puerto Rican and Dominican communities are still visible. The artist wave is loud but hasn't erased the original anchors yet.",
+    "tradeoffsForYou": [
+      "The creative scene dominates the narrative. You're not the marketing story here.",
+      "Cultural anchors are strongest in pockets. Block-by-block research matters.",
+      "The L train is your only real lifeline to Manhattan.",
+      "Gentrification tension is real and you'll feel it if you're paying attention."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:23.110Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brighton-beach": {
+    "fitProse": "Brighton Beach is the rare New York neighborhood where cultural ecosystem isn't a feature, it's the whole reason. The Russian and Ukrainian community is deep, daily, and intergenerational. Net Cost, Brighton Bazaar, the cafes along Brighton Beach Ave: you can live entirely in Russian if you want to.",
+    "tradeoffsForYou": [
+      "The Q is the terminus, so every trip to Manhattan is 50+ minutes.",
+      "If you're not post-Soviet, you're an outsider in a way most NYC neighborhoods don't replicate.",
+      "Cultural depth is extraordinary, but it's narrow. One diaspora, brilliantly served.",
+      "The boardwalk is beautiful, but the beach scene and shops are almost the only scenes."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:23.283Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sheepshead-bay": {
+    "fitProse": "Sheepshead Bay delivers exactly what a cultural anchor seeker needs: places to belong, not just live. Russian bakeries, Chinese seafood, Caribbean grocers. Net Cost and Brighton Bazaar nearby mean shopping can happen in your first language, and the waterfront restaurants are run by people who've been here decades.",
+    "tradeoffsForYou": [
+      "The B and Q are solid, but you're 45+ minutes from Midtown.",
+      "If your anchor culture isn't Russian, Chinese, or Caribbean, the match weakens.",
+      "The scene feels neighborhood-local, not cosmopolitan. Less cross-pollination.",
+      "Manhattan friends will treat a visit here like a day trip."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:24.470Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-island-city": {
+    "fitProse": "Long Island City is anonymous by design, which makes it hard to anchor culturally. The high-rises are new, the transit is excellent, but the street life skews corporate-transient. If you're looking for a bakery where they know your name or a block that feels like a neighborhood, you'll have to leave Queens Center behind.",
+    "tradeoffsForYou": [
+      "Restaurant scene is uneven and rarely has the cultural depth you're seeking.",
+      "New construction means few multi-generational anchors or longtime regulars.",
+      "You'll be closer to Midtown than to the cultural texture of Astoria or Jackson Heights.",
+      "The skyline view is stunning, but the street rarely feels like home."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:27.327Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "astoria": {
+    "fitProse": "Astoria is exactly what a cultural-anchor seeker moves to New York to find. The Greek cafes on Ditmars, the Egyptian grocers on Steinway, the Brazilian bakeries near 30th Ave. You hear Arabic, Greek, Spanish, Bengali on the same block. This is the real thing, not a tour.",
+    "tradeoffsForYou": [
+      "The N/W is your lifeline to midtown. Off-peak it slows considerably.",
+      "Some blocks feel deeply rooted, others feel transitional. Walk before you sign.",
+      "Nightlife is thin. The scene is restaurants, not bars or late-night energy.",
+      "Manhattan friends will joke about the commute, even though it's 25 minutes."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:29.178Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flushing": {
+    "fitProse": "Flushing is one of the most complete cultural ecosystems in the five boroughs. If East Asian community is daily life for you, this is the place: Mandarin on Main Street, H Mart as your anchor grocer, actual regional Chinese cooking that transplants vouch for. The 7 takes you to midtown in forty minutes.",
+    "tradeoffsForYou": [
+      "Main Street at rush hour is shoulder-to-shoulder. Plan accordingly.",
+      "The 7 is your only real subway. LIRR helps but costs more.",
+      "Far from Manhattan in feel, which matters if your cultural ties cross boroughs.",
+      "If your anchor culture isn't East Asian, you'll feel the distance from other enclaves."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:29.181Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "forest-hills": {
+    "fitProse": "Forest Hills has real cultural infrastructure: Bukharian Jewish and Russian communities anchor the bakeries, delis, and daily rhythm on Queens Boulevard and Austin Street. You'll hear Russian at the Key Food, find Central Asian bread at the right shops, and know your neighbors by sight. The E/F gives you midtown in 30 minutes when you need it.",
+    "tradeoffsForYou": [
+      "The cultural scene is specific. If you're not connecting to Bukharian or Russian life, you may feel outside it.",
+      "Austin Street dining skews chain-heavy. Deeper food culture lives in storefronts, not restaurants.",
+      "Forest Hills feels suburban. If you want urban density around your anchor, try Astoria or Elmhurst.",
+      "Commute is real. 30+ minutes to midtown, longer to downtown or Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:32.026Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "riverdale": {
+    "fitProse": "Riverdale has a strong Jewish community with synagogues and kosher shops along Johnson Avenue, but the cultural ecosystem here is quieter and more suburban than other Jewish anchors in NYC. If you want a place where the block feels like home and you value green space over dense street life, it works. If you need constant immersion in a lively cultural corridor, this isn't it.",
+    "tradeoffsForYou": [
+      "The Jewish community is real but spread out. You'll need the car to access it.",
+      "Dining and cultural institutions are few. You'll go elsewhere for variety.",
+      "The 1 and Metro-North mean you're trading proximity for space and quiet.",
+      "If your anchor is language and street rhythm, not just institutions, this may feel thin."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:34.497Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hoboken": {
+    "fitProse": "Hoboken is pleasant, safe, and walkable, but it doesn't anchor a distinct cultural identity. You'll find standard-issue grocery chains and waterfront brunch spots, not the bakery where you become a regular or the street corner where you hear your language. It's a place people move to for space and commute time, not rootedness.",
+    "tradeoffsForYou": [
+      "Cultural life is generic and transient, not rooted or multi-generational.",
+      "The PATH gets you to Manhattan fast, but Hoboken itself feels temporary.",
+      "Most neighbors are here for logistics, not because this place feels like home.",
+      "You'll find Whole Foods and Trader Joe's, not the bodega or bakery that knows your order."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:35.486Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "st-george": {
+    "fitProse": "St. George is not a cultural anchor neighborhood in the way Flushing or Sunset Park are. The ferry commute makes it hard for most ethnic enclaves to take root at scale. What you do get is space, views, and affordability, which means if your anchor is somewhere else in the city, you'll be riding that ferry often.",
+    "tradeoffsForYou": [
+      "Bay Street has some dining, but you won't find deep bench of cuisine or specialty groceries.",
+      "The ferry is scenic but isolating. Your anchor will likely be in Manhattan or Brooklyn.",
+      "Staten Island's cultural rhythm is suburban and quieter than the enclaves you may seek.",
+      "If you need to be a regular somewhere daily, that somewhere probably isn't here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:35.973Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jersey-city": {
+    "fitProse": "Jersey City's South Asian and Latin American corridors are real and deep, not just grocery stores but multi-generational anchors. You'll find the bakery you become a regular at, the language you hear on the corner, the rhythm that feels like home. The PATH gives you Manhattan when you need it.",
+    "tradeoffsForYou": [
+      "NYC purists will roll their eyes when you say where you live.",
+      "Cultural density clusters. Downtown high-rises feel more generic.",
+      "Beyond Grove St and Journal Square, transit thins out fast.",
+      "You're building roots in a place that isn't quite New York or quite not."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:37.796Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-lee": {
+    "fitProse": "Fort Lee is one of the densest Korean American enclaves in the region. H Mart, Hannah's Korean Market, and a deep bench of restaurants mean you'll hear Korean on Main Street and find the groceries, banchan, and bakeries you grew up with. The buses through the Lincoln Tunnel or over the GW Bridge make Manhattan reachable.",
+    "tradeoffsForYou": [
+      "No subway. Buses work but you need to plan around schedules.",
+      "Car-dependent for most errands outside the main strip.",
+      "Reads unmistakably 'New Jersey' to friends who won't cross the river.",
+      "Nightlife and social scene are limited compared to Queens or Brooklyn enclaves."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:40.216Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "palisades-park": {
+    "fitProse": "Palisades Park is one of the densest Korean American communities in the country, and for a Cultural Anchor Seeker, that density is the whole point. Broad Avenue is a working main street where Korean is the language you hear, H Mart and Hannah's are your daily grocers, and the bakeries actually know you. This is home, not a tourist destination.",
+    "tradeoffsForYou": [
+      "No subway. Buses to GW Bridge are your lifeline to Manhattan.",
+      "Day-to-day errands will require a car or careful planning.",
+      "If you're not Korean American, integration takes intent and time.",
+      "Less picturesque than Edgewater or Fort Lee, but community beats scenery."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:41.565Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "edgewater": {
+    "fitProse": "Edgewater offers something rare: a real East Asian cultural anchor within walking distance of waterfront space and a straight shot into Manhattan. Mitsuwa Marketplace is the kind of place you become a regular at, and the ferry makes the commute feel civilized in a way the Lincoln Tunnel never will.",
+    "tradeoffsForYou": [
+      "You'll need a car for most errands outside the immediate waterfront strip.",
+      "The neighborhood itself is quiet residential, not a cultural scene with street life.",
+      "Korean and Japanese groceries are strong, but broader Asian community depth lives in Palisades Park or Fort Lee.",
+      "Ferry schedule dictates your rhythm. Miss the boat and you're on a bus through the tunnel."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:41.603Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lower-east-side": {
+    "fitProse": "The LES gives you cultural layering you can't manufacture anywhere else. Generations of arrival are visible in the same block: the synagogues, the dumpling counters, the bodegas where you hear Spanish and Bengali side by side. If you want a place where culture is still lived, not curated, this is it.",
+    "tradeoffsForYou": [
+      "The community you're joining is already in motion. Harder to anchor than a more static place.",
+      "Weekend nights bring bridge-and-tunnel energy that has nothing to do with why you moved here.",
+      "Old walk-ups mean charm but also noise bleed and four-floor climbs.",
+      "F train is your main link. J/M/Z helps but reaching the West Side takes real time."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:44.735Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-harlem": {
+    "fitProse": "East Harlem is one of the few neighborhoods in New York where culture still shapes the block, not the other way around. El Barrio's Puerto Rican core is real and deep, layered with Mexican bakeries, African-American churches, and the kind of murals that mark belonging. La Marqueta and the bodegas on 116th feel like home if this is what home means to you.",
+    "tradeoffsForYou": [
+      "Block-by-block variance is high. You'll know which streets feel right.",
+      "Some long-timers worry about displacement as rents creep upward.",
+      "The 4/5/6 is your main line. Crosstown transit is buses.",
+      "Schools are uneven. If you have kids, research specific zones carefully."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:46.841Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "washington-heights": {
+    "fitProse": "Washington Heights is one of the few places left in the city where culture is thick enough to structure your daily life. The Dominican community isn't a demographic, it's the fabric. The bakeries, bodegas, and language on the street are real, not curated.",
+    "tradeoffsForYou": [
+      "The A express is your lifeline. Locals are slow and transfers can add up.",
+      "Block-by-block variance is real. Some blocks feel residential, others busy.",
+      "If you're not part of or open to the Latin community, you'll feel like a guest.",
+      "Midtown friends will always think you live farther than you do."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:47.481Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hamilton-heights": {
+    "fitProse": "Hamilton Heights has a genuine cultural backbone. Sugar Hill's history of Black intellectual and artistic life is still legible in the institutions, the churches, and the daily rhythm on the street. You can become a regular here, and the neighborhood doesn't flatten itself for visitors.",
+    "tradeoffsForYou": [
+      "Restaurant and retail density thins out fast as you move from Broadway.",
+      "The 1 and A are solid, but you're 30+ minutes from downtown even express.",
+      "Less daytime foot traffic than neighborhoods farther south.",
+      "Cultural continuity is real, but gentrification pressure is quietly rising."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:48.136Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "inwood": {
+    "fitProse": "The Dominican community in Inwood is real and rooted, not a tourist curiosity. You'll hear Spanish on the street, find yuca and plantains at Frank's Market without hunting, and the corner bodegas know their regulars. The cultural texture here is lived, not performed.",
+    "tradeoffsForYou": [
+      "40+ minutes to midtown on the A or 1. You're at the end of both lines.",
+      "Dining scene is neighborhood-scale, not destination. You'll cook more.",
+      "The cultural anchor is primarily Dominican. Less pan-Latin or other diasporas.",
+      "Few people will know where you live. Inwood doesn't register for most Manhattanites."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:51.017Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "morningside-heights": {
+    "fitProse": "Morningside Heights is harder for cultural-anchor seekers than other Upper Manhattan enclaves. Columbia's footprint dominates, but the neighborhood skews academic and transient rather than rooted. You'll find good Latin American markets near 125th, but the rhythms here are shaped by the university calendar, not a settled community.",
+    "tradeoffsForYou": [
+      "Summer empties out when students leave, the block loses its pulse.",
+      "The 1 train is your main line north-south. Crosstown is a bus.",
+      "Restaurant scene improving but uneven. More grad-student taquerias than destination spots.",
+      "Riverside and Morningside are beautiful, but won't give you the cultural anchor you want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:53.102Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lincoln-square": {
+    "fitProse": "Lincoln Square is the rare neighborhood where the cultural anchor is literal. Lincoln Center brings the Met Opera, the Philharmonic, and the ballet to your doorstep, plus year-round public events in Damrosch Park. For someone who wants to live inside a cultural institution rather than just near one, this is the address.",
+    "tradeoffsForYou": [
+      "Tourist and commuter crowds around Lincoln Center are a daily fact, not seasonal.",
+      "High-rise living dominates. Block-level texture is almost nonexistent.",
+      "You're paying a premium for proximity to institutions, not ethnic enclaves.",
+      "The cultural ecosystem here is classical and institutional, not grassroots or ethnic."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:53.160Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattan-valley": {
+    "fitProse": "Manhattan Valley gives you the cultural texture a lot of the UWS has scrubbed away. You'll hear Spanish on the street, find real Dominican and Mexican places on Broadway and Amsterdam, and become a regular somewhere that feels like a neighborhood, not a stage set.",
+    "tradeoffsForYou": [
+      "Restaurant scene is uneven. Some gems, some closed storefronts, some chains.",
+      "The Latin American community is strong but gentrification pressure is real and visible.",
+      "Block variance is high. Some streets feel warm and lived-in, others feel in-between.",
+      "Less polished than classic UWS. If you wanted that gleam, you're ten blocks south."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:54.055Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yorkville": {
+    "fitProse": "Yorkville has the bones of old European immigrant neighborhoods, but the cultural anchor has softened considerably. Agata & Valentina still carries Czech and Hungarian imports, and you'll hear German and Czech spoken near the church on 79th, but today it reads mostly residential Upper East Side with some vestigial Central European identity.",
+    "tradeoffsForYou": [
+      "The cultural layer is faint. More museum piece than daily lived culture.",
+      "If you're looking for a strong ethnic enclave, this isn't it anymore.",
+      "Carl Schurz Park is lovely, but the neighborhood rhythm is muted and family-oriented.",
+      "The Q and 4/5/6 will take you to richer cultural scenes elsewhere in the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:57.851Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carnegie-hill": {
+    "fitProse": "Carnegie Hill has almost no cultural anchor for you. The blocks are quiet, the families are private-school affluent, and the street life is doorman and limestone. You won't find the bakery or bodega or church or community center that makes a place feel like yours.",
+    "tradeoffsForYou": [
+      "The neighborhood is wealthy and hushed, not a place built for cultural immersion.",
+      "Retail is upscale grocers and services, not gathering spots.",
+      "Central Park is gorgeous but won't replace the human texture you're seeking.",
+      "You'll be anonymous here, which is the opposite of what you want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:59.334Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattanville": {
+    "fitProse": "Manhattanville sits at the edge of West Harlem with real African-American and Latin-American roots, block life still in Spanish and English, bodegas where you learn names. The Columbia expansion changes the texture yearly, but the longtime community anchors remain. If you want a cultural home that's evolving but not erased, this is a rare Manhattan option.",
+    "tradeoffsForYou": [
+      "Columbia's expansion is actively reshaping blocks you might grow to love.",
+      "Restaurant scene leans institutional, not deep neighborhood tradition.",
+      "Cultural anchors are here but migrating north as rents climb.",
+      "You'll share the sidewalk with grad students more than multigenerational families."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:59.530Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "midtown-east": {
+    "fitProse": "Midtown East is a neighborhood built by bankers and diplomats, not for cultural immersion. The blocks are quiet and safe, the demographic is international professionals, but you won't find a bakery to become a regular at or hear much of any one language on the street. It's a practical base, not a cultural home.",
+    "tradeoffsForYou": [
+      "The neighborhood is transient by design. Few people put down roots here.",
+      "Dining is expense-account or grab-and-go. Little between those poles.",
+      "Street life is sparse on weekends. You'll feel the emptiness.",
+      "The UN brings global presence but not neighborhood-level cultural density."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:36:59.862Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stuyvesant-town": {
+    "fitProse": "Stuyvesant Town is a planned mid-century housing complex, not a cultural neighborhood. The internal greens are lovely, the apartments stabilized and real, but the daily-life texture is generic American family-living, not anchored by language or tradition. You're close to better options: East Village, Gramercy.",
+    "tradeoffsForYou": [
+      "Almost no independent shops or cultural anchors inside the complex itself.",
+      "The institutional layout reads suburban, not ethnic-neighborhood urban.",
+      "Union Square and East Village are walkable, but you're not immersed in them.",
+      "If you need a place that feels like home the moment you step outside, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:03.952Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "soho": {
+    "fitProse": "SoHo is design and money, not cultural anchoring. The cobblestones are beautiful, the lofts are iconic, but the street life is tourists and luxury retail. You won't find a neighborhood bakery to become a regular at. You'll find Chanel.",
+    "tradeoffsForYou": [
+      "The culture here is more aspirational consumption than daily-life anchoring.",
+      "Weekend foot traffic is mostly tourists, not neighbors.",
+      "Minimal third places. The streetscape is optimized for browsing, not belonging.",
+      "If you want community rooted in food, language, or ritual, look elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:05.059Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "murray-hill": {
+    "fitProse": "Curry Hill on Lexington is one of the city's most legible South Asian food corridors, with Tamil grocers, Bengali sweet shops, and regional specialists you can actually become a regular at. The rest of Murray Hill is transient post-grad energy, but that strip has roots and dailiness.",
+    "tradeoffsForYou": [
+      "The neighborhood around Curry Hill reads as bro-y and turnover-heavy.",
+      "Cultural anchor is real but narrow (a few blocks on Lexington).",
+      "You'll walk to Curry Hill. The rest of the neighborhood won't feel like home.",
+      "6 train only. Crosstown means buses or long walks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:05.155Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich-village": {
+    "fitProse": "Greenwich Village has long been a cultural anchor, but the anchor today is more literary-historic than ethnic or diasporic. You'll find every cuisine on Bleecker and MacDougal, but it's curated, not lived-in the way Flushing or Brighton Beach is. Still, for someone who wants to be a regular at a specific cafe or bar, few places in NYC give you that scale of walkable ritual.",
+    "tradeoffsForYou": [
+      "The cultural density is cosmopolitan and layered, not built around a single ethnic or linguistic home.",
+      "NYU students and tourists dominate the streets. The block you live on may not feel like yours.",
+      "Small apartments, high rents. You're paying for location and history, not space.",
+      "Washington Square and the side streets do reward the daily-ritual walker."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:07.061Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "weehawken-port-imperial": {
+    "fitProse": "Weehawken and Port Imperial are functionally monocultural: high-rise professionals, a few families, English everywhere. The skyline views are spectacular but the street-level texture is thin. If you're looking for a cultural anchor, this isn't it.",
+    "tradeoffsForYou": [
+      "No ethnic enclaves, no corner bakeries you'll learn to pronounce.",
+      "Mitsuwa is nearby, but that's a destination, not your daily block.",
+      "The ferry works, but this feels like a bedroom tower, not a community.",
+      "Beautiful and safe, but you won't become a regular anywhere on foot."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:10.477Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chinatown": {
+    "fitProse": "This is the rare neighborhood where the Cultural Anchor Seeker question is simple: if you want daily life in a Cantonese or Fujianese-speaking community, this is the most legible choice in the city. Hong Kong Supermarket, the bakeries on Mott, the rhythm of Doyers Street, the fact that you can live almost entirely in Cantonese if you want to.",
+    "tradeoffsForYou": [
+      "Walk-ups, small apartments, and minimal renovation. You trade space for immersion.",
+      "Tourist load on Canal is real, especially weekends.",
+      "If your anchor isn't East Asian, the cultural ecosystem is less magnetic.",
+      "Street-level friction is high. This is not a calm neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:10.547Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenpoint": {
+    "fitProse": "Greenpoint is one of the few NYC neighborhoods where cultural anchor seeking is still baked into the streets. Manhattan Ave runs through Polish bakeries, meat markets, and churches where Mass is in Polish. The waterfront has gentrified, but the spine of the peninsula still holds texture.",
+    "tradeoffsForYou": [
+      "Old Greenpoint is fading. The texture is real but not guaranteed in five years.",
+      "G train only. The ferry helps, but you'll feel the one-line constraint.",
+      "You're joining an anchor, not creating one. The community predates you.",
+      "Waterfront condos and Polish delis exist on different blocks now."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:11.422Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bay-ridge": {
+    "fitProse": "Bay Ridge offers one of the densest Arab-American and Italian-American communities in the city. You'll hear Arabic at the bakeries on Fifth Avenue, find Yemeni cafes and Levantine grocers that feel like institutions, and actually become a regular, not just a customer. The R is the only train, but the culture is thick enough to anchor a life.",
+    "tradeoffsForYou": [
+      "R train is the lone subway option, and it's slow when you need Manhattan.",
+      "Deep Brooklyn location means your non-neighborhood friends will ask if it's really worth the trip.",
+      "Late-night energy is limited. You're here for daytime rhythms and community, not scenes.",
+      "If you're seeking a different diaspora culture, you won't find the same density here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:15.527Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-greene": {
+    "fitProse": "Fort Greene has the depth you're looking for. The historic African-American intellectual and creative community shaped the cultural register here, BAM and the Greenmarket are real anchors, and the blocks between the Park and Fulton have layers you can grow into.",
+    "tradeoffsForYou": [
+      "Gentrification has remade the economics. Longtime anchors still here, but affordability has faded fast.",
+      "Atlantic-Barclays foot traffic is intense on game nights.",
+      "The cultural register is strong but the neighborhood is shifting under economic pressure."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:15.987Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-heights": {
+    "fitProse": "Prospect Heights has real cultural infrastructure, but it's not the kind you're looking for. The Brooklyn Museum and Botanic Garden are lovely, but they don't define the daily rhythm. The blocks are brownstone-quiet, and the shops on Vanderbilt feel more boutique than community anchor.",
+    "tradeoffsForYou": [
+      "The cultural ecosystem leans institutional, not neighborhood-rooted.",
+      "You won't find the density of country-specific shops or bakeries here.",
+      "Most residents are professional couples, not multi-gen immigrant families.",
+      "Crown Heights is two blocks east and has the energy you're probably seeking."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:16.096Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "crown-heights": {
+    "fitProse": "Crown Heights is one of the few places in Brooklyn where multiple cultural ecosystems live at full density. The Caribbean groceries and Hasidic institutions aren't window dressing. They're what the neighborhood is built around, and they coexist in a way you won't find in most American cities.",
+    "tradeoffsForYou": [
+      "Block-by-block variance is real. You might find home on one block, feel adrift three avenues over.",
+      "The rents are no longer cheap. Cultural depth yes, but not at 2015 prices.",
+      "Late-night transit is uneven depending which line you're near.",
+      "The creative-class influx is reshaping parts. Some anchors are holding, others shifting."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:17.353Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "clinton-hill": {
+    "fitProse": "Clinton Hill has a long-standing African-American cultural presence and the kind of blocks where neighbors know each other by name. The bakeries, barbers, and corner shops have been rooted here for decades, and the rhythm of life still feels unhurried enough to belong to.",
+    "tradeoffsForYou": [
+      "C and G only. You'll learn their schedules well, but redundancy is limited.",
+      "Quieter and more settled than Fort Greene. Less street life, more front-porch life.",
+      "Pratt students cycle through. The anchor is institutional, not purely residential.",
+      "Some blocks feel deeply rooted, others feel sleepier than you might want."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:21.334Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-williamsburg": {
+    "fitProse": "East Williamsburg has a meaningful Puerto Rican and Dominican foothold alongside the creative-class influx, so you'll find loncheras, bodegas with real regulars, and Spanish on the sidewalk. The industrial blocks and mixed rent levels keep it more authentic than waterfront Williamsburg, though the cultural center of gravity tilts more creative than multigenerational Latin.",
+    "tradeoffsForYou": [
+      "The Latin community is real but shrinking as rents climb.",
+      "Industrial feel means less streetlife outside the L corridor.",
+      "Cultural anchors here are smaller scale than Sunset Park or Jackson Heights.",
+      "You'll find the bakery, but the parish and social clubs are fewer."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:22.446Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ditmas-park": {
+    "fitProse": "Ditmas Park's Caribbean groceries, Bangladeshi sweet shops, and the everyday rhythms on Cortelyou Road offer real cultural texture, not performance. You'll hear Urdu and Patois on the sidewalks, and the Flatbush Food Coop is a place you'll become a regular. This is rooted, residential Brooklyn with genuine cultural infrastructure.",
+    "tradeoffsForYou": [
+      "The Q is your only subway. No redundancy if it goes down.",
+      "More suburban in density than brownstone Brooklyn. You won't bump into neighbors constantly.",
+      "Restaurant scene is functional, not destination. Cortelyou Road is it.",
+      "The Victorian houses are gorgeous but it reads as very deep Brooklyn to Manhattan-centric friends."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:22.566Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-lefferts-gardens": {
+    "fitProse": "PLG is one of the few places in brownstone Brooklyn where the cultural anchor is genuinely deep and longstanding. Caribbean bakeries, roti shops, and Creole groceries line Flatbush and Nostrand, and the rhythm of daily life on the street reflects decades of community, not recent arrivals.",
+    "tradeoffsForYou": [
+      "The B/Q is solid but if it goes down, your backup options are a walk.",
+      "Restaurant scene leans heavily Caribbean, which is the point, but variety is limited.",
+      "Block-by-block character swings more than in tighter-knit neighborhoods.",
+      "You're on the edge of the park, not the center of the borough's energy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:23.538Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "windsor-terrace": {
+    "fitProse": "Windsor Terrace is not a strong cultural anchor neighborhood. It's quiet, family-oriented, and very calm, but the cultural ecosystem is thin. You won't find a deep ethnic community, language pockets, or the kind of bakery where you become part of the fabric. You live here for Prospect Park and stability, not for cultural belonging.",
+    "tradeoffsForYou": [
+      "Almost no cultural infrastructure. No ethnic enclaves, no deep community layer.",
+      "Dining is sparse. You'll go to Park Slope or deeper Brooklyn for that.",
+      "The F/G works but offers no redundancy if service changes.",
+      "It's a bedroom neighborhood. The street life you crave lives elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:27.401Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sunnyside": {
+    "fitProse": "Sunnyside is exactly the kind of place where someone looking for cultural rootedness could build a real life. Turkish, Romanian, Korean, and Latin American groceries and restaurants sit blocks apart, and the density of regulars means you'll actually be recognized. The 7 train puts you in midtown in fifteen minutes, but the rhythms here are neighborhood-first.",
+    "tradeoffsForYou": [
+      "The cultural mix is real but not monolithic. You won't find one dominant anchor.",
+      "Deep Queens reputation means friends from Manhattan rarely visit.",
+      "Destination dining is limited. This is about being a regular, not a discoverer.",
+      "The 7 is your workhorse. If it's down, you're waiting or rerouting."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:28.415Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "woodside": {
+    "fitProse": "Woodside is one of the few neighborhoods left in the five boroughs where the cultural ecosystem is the entire point. Filipino bakeries on Roosevelt, Ecuadorian chullas on side streets, Bangladeshi grocers who know your name. This is the real thing, not a theme park version.",
+    "tradeoffsForYou": [
+      "The 7 is your lifeline. It's frequent and fast, but it's the only direct train.",
+      "Roosevelt Avenue is loud, crowded, and gritty. If you want polish, you're in the wrong place.",
+      "You'll be a regular faster than anywhere else in the city, but you have to meet it halfway."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:28.446Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood": {
+    "fitProse": "Ridgewood still has the Polish bakeries, Latin American bodegas, and grandmas on stoops that make blocks feel anchored. The creative transplants are real but haven't erased the fact that you can still become a regular at a place where you're the only one speaking English.",
+    "tradeoffsForYou": [
+      "The Italian and Polish old-guard is aging out. Some blocks feel in transition.",
+      "Creative-class bars coexist uneasily with longtime community spots.",
+      "The L and M get you there, but you're far from other major cultural enclaves.",
+      "Forest Park is lovely, but this isn't Astoria or Jackson Heights for density of anchors."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:29.874Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rego-park": {
+    "fitProse": "Rego Park is one of the few places in the metro where Bukharian and Georgian culture feels like the main event, not a footnote. NetCost Market, the Bukharian groceries along Queens Boulevard, and restaurants you won't find anywhere else make this a real cultural home.",
+    "tradeoffsForYou": [
+      "The M/R is reliable but slow. Manhattan is forty minutes minimum.",
+      "Cultural anchor is strong but narrow. If this isn't your culture, integration takes time.",
+      "Late-night life is minimal. The energy is daytime, family, and Shabbat.",
+      "Reads as suburban to friends in Brooklyn. That's partly the point."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:32.857Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bayside": {
+    "fitProse": "Bayside is one of the few NYC neighborhoods where cultural anchoring and suburban-scale family life truly coexist. The Korean-American community is deep and visible, from H Mart to the bakeries and church congregations on Bell Boulevard. You can build real roots here, in both languages.",
+    "tradeoffsForYou": [
+      "LIRR is fast to Penn, but the subway network feels distant.",
+      "The calm is real. If you need urban energy daily, it lives elsewhere.",
+      "Car-dependent for most errands beyond Bell Boulevard.",
+      "You'll feel further from Manhattan's cultural crosscurrents than Flushing or Elmhurst."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:34.258Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jackson-heights": {
+    "fitProse": "Jackson Heights is where cultural-anchor seekers actually live, not just visit. You'll find Patel Brothers, Tibetan momos on 74th Street, Colombian bakeries, and Bengali sweets shops all within blocks. The 7/E/F/M/R converge at Roosevelt, and the pre-war co-ops have real space.",
+    "tradeoffsForYou": [
+      "Roosevelt Avenue is gritty and loud, but that's where the life is.",
+      "Co-op boards require committee approval, which can feel opaque.",
+      "Schools are contested. Many families navigate this actively.",
+      "The cultural density is unmatched, but prestige seekers look elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:34.619Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "kew-gardens": {
+    "fitProse": "Kew Gardens has a real cultural anchor: a thriving Modern Orthodox community with Pomegranate, shuls within walking distance, and the rhythm of Shabbat on the residential blocks. If you're seeking that, this is one of the strongest options in Queens. For other cultural seekers, it's quiet and suburban in feel.",
+    "tradeoffsForYou": [
+      "The cultural ecosystem is deep if you're Orthodox, thin otherwise.",
+      "Most blocks are a 10-15 minute walk to the E/F at Union Tpke.",
+      "Dining and nightlife are limited. You'll travel to Forest Hills or the city.",
+      "Single-family houses dominate. It reads more like a suburb than a neighborhood."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:38.210Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "battery-park-city": {
+    "fitProse": "Battery Park City is the wrong shape for the cultural anchor seeker. It was built on landfill by committee in the 1980s, so there's no generational neighborhood fabric, no bakery you'll know for decades, no street language older than the towers. You're living in a park with elevators.",
+    "tradeoffsForYou": [
+      "Almost no ethnic groceries or longstanding independent businesses.",
+      "The Esplanade is gorgeous but you won't become a regular anywhere.",
+      "Most neighbors are families who moved for calm, not cultural immersion.",
+      "Brookfield Place is a mall, not a neighborhood anchor."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:39.653Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "elmhurst": {
+    "fitProse": "Elmhurst is exactly what you're looking for if you want to live inside a real cultural ecosystem, not adjacent to one. You'll hear Mandarin, Tagalog, and Spanish in the same block, and the Hong Kong Supermarket and Roosevelt Ave corridor offer the depth of Flushing with a faster ride to Midtown on the 7, E, M, or R.",
+    "tradeoffsForYou": [
+      "Street-level chaos is real. Sidewalks are crowded, storefronts dense, nothing polished.",
+      "Green space is limited to Elmhurst Park. This is not a place you move for trees.",
+      "Friends in Manhattan will think you moved far (even though you're closer than Astoria by train).",
+      "If you want a single cohesive cultural anchor, Flushing or Sunset Park may feel more focused."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:39.660Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hudson-yards": {
+    "fitProse": "Hudson Yards is a brand-new corporate skyline, not a place anyone would call culturally rooted. The neighbors are high-income professionals, the retail is mall-anchored, and the street life reads as transient office and tourist traffic. If you're looking for a bakery to become a regular at, this isn't it.",
+    "tradeoffsForYou": [
+      "No cultural neighborhood to speak of. It's a master-planned district, not an organic community.",
+      "The language you hear on the street is tourist English and business-casual small talk.",
+      "Stunning buildings and river views, but the block has no memory or texture.",
+      "Chelsea and Hell's Kitchen are walkable and offer more actual neighborhood life."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:40.993Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roosevelt-island": {
+    "fitProse": "Roosevelt Island is culturally neutral by design, which makes it a hard sell for an anchor seeker. You'll find large apartments and calm, but the island's daily rhythm feels suburban and the dining, grocery, and street life won't anchor you in any particular tradition or community.",
+    "tradeoffsForYou": [
+      "Almost zero ethnic grocery, bakery, or restaurant infrastructure.",
+      "The tram is scenic but the F is your only real subway line.",
+      "Street life is minimal. You'll leave the island for cultural belonging.",
+      "Cornell Tech is the only institutional anchor, and it's corporate-tech."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:44.151Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "nolita-little-italy": {
+    "fitProse": "NoLita and Little Italy offer two layers: the authentic Italian-American alimentari and social clubs where regulars still speak dialect, and the newer espresso-bar NoLita that trades on Mediterranean aesthetics. You can anchor here if you're willing to distinguish tourism from the real thing, but the footprint is small and shrinking.",
+    "tradeoffsForYou": [
+      "Mulberry Street tourists often outnumber actual residents on weekends.",
+      "The Italian community is aging and smaller than it once was.",
+      "Tenement walk-ups are charming but constrained. Space is tight.",
+      "Rent reflects downtown cachet more than cultural depth now."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:45.102Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flatiron-nomad": {
+    "fitProse": "Flatiron and NoMad are office-district residential, which means the cultural anchor here is corporate cosmopolitan. The food is excellent (Eataly, Gramercy Tavern, a thousand lunch spots turned dinner places), but you won't find a neighborhood bakery where the owner knows your name. It's polished, not rooted.",
+    "tradeoffsForYou": [
+      "The cuisine is global and high-end, but the clientele rotates constantly.",
+      "Daytime streets are packed with office workers, nighttime feels borrowed.",
+      "No single culture dominates. It's a professional melting pot, not a cultural home.",
+      "You'll walk south to the Village or east to Curry Hill for a real neighborhood pulse."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:46.014Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "boerum-hill": {
+    "fitProse": "Boerum Hill's cultural infrastructure is real but diffuse. Smith Street delivers Middle Eastern bakeries (Sahadi's is the anchor), Brooklyn Fare groceries, and Italian holdouts, but it's not a dense ethnic enclave. You'll find corner spots where you might become a regular, but the neighborhood codes more as quiet creative-class than as a cultural block.",
+    "tradeoffsForYou": [
+      "The cultural scene is present but not immersive. No single language dominates.",
+      "Smith Street has variety, but the energy is more boutique than neighborhood bazaar.",
+      "You'll find good food, but you're not walking into a real cultural enclave.",
+      "Sahadi's and Court Street markets are nearby, but they're destinations, not daily fabric."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:47.008Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carroll-gardens": {
+    "fitProse": "Carroll Gardens still carries its Italian-American backbone in the red-sauce joints, the bakeries on Court, and the older regulars at Caputo's. It's not ethnically immersive the way Bensonhurst or Astoria are today, but you can feel the anchoring if you care to become a regular on these blocks.",
+    "tradeoffsForYou": [
+      "The Italian-American community is real but aging and shrinking.",
+      "Most new neighbors are future-family types, not culture-seekers.",
+      "Smith Street tilts boutique; Court Street holds more old-guard texture.",
+      "You'll need to work to become part of what's left, not just live near it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:50.440Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gowanus": {
+    "fitProse": "Gowanus is the wrong anchor for culture. It's a canvas for creative-class arrivals, but the neighborhood itself has no strong ethnic identity or long-standing cultural institutions. You'll find breweries and galleries, not the bakery where your language is spoken or the rhythm of home.",
+    "tradeoffsForYou": [
+      "The neighborhood is still being invented, not rooted in decades of community.",
+      "No cohesive cultural scene beyond 'creative Brooklyn' as aesthetic.",
+      "You're close to Carroll Gardens (Italian history) and Park Slope, but Gowanus proper is sparse.",
+      "If you want belonging, you'll need to build it or borrow it from adjacent blocks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:51.027Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "red-hook": {
+    "fitProse": "Red Hook doesn't center a single ethnic enclave, but it does have the quiet, regular-rhythm quality you want. The cobblestone streets, the ferry commute, the Fairway runs, the Valentino Pier sunsets. It's a place where you become a known face, not just a passerby.",
+    "tradeoffsForYou": [
+      "Not a cultural anchor in the traditional sense (no dominant language or cuisine).",
+      "You'll build your own rhythms here, not inherit established ones.",
+      "No subway means you're trading cultural immersion for waterfront isolation.",
+      "Storm vulnerability is real. Sandy flooded streets and businesses."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:52.067Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tenafly": {
+    "fitProse": "Tenafly is one of the few suburbs where the cultural infrastructure actually anchors daily life. H Mart is a fifteen-minute drive, synagogues host Friday night services, and the Korean-American and Jewish communities are large enough that you're not explaining your background constantly. It's Bergen County, so yes, you need a car.",
+    "tradeoffsForYou": [
+      "No train. The 165/166 buses to Port Authority work, but you'll drive most days.",
+      "Detached homes and yards mean neighbors aren't on your stoop.",
+      "The cultural density is real, but it's spread across strip malls and parking lots.",
+      "Deep suburb. Friends in Brooklyn will joke about needing a passport to visit."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:52.926Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood": {
+    "fitProse": "Englewood offers exactly what a cultural-anchor seeker wants: not just diversity in a census sense, but actual institutions and daily rhythms. The African American and Jewish communities have deep roots, the Bergen Performing Arts Center is a real anchor, and you'll hear multiple languages on Palisade Avenue.",
+    "tradeoffsForYou": [
+      "The 178 bus to Port Authority is your commute. No train.",
+      "Block-by-block variance means you need to choose your street carefully.",
+      "Car-dependent for groceries and errands, even with urban bones.",
+      "Less prestige buzz than nearby Tenafly or Englewood Cliffs."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:55.527Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood-cliffs": {
+    "fitProse": "Englewood Cliffs has a genuine Korean American cultural ecosystem. H Mart in Fort Lee is five minutes away, Korean is spoken on the sidewalks, and you can become a regular at restaurants and bakeries where your family's language and food are default, not imported.",
+    "tradeoffsForYou": [
+      "You'll need a car for everything. No walkable main street.",
+      "The community is real but the borough is tiny and hushed.",
+      "Commute over GW Bridge by bus or car; expect peak-hour delays.",
+      "Premium pricing for single-family homes with big lots and good schools."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:56.453Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cresskill": {
+    "fitProse": "Cresskill's Korean American community gives the neighborhood a real cultural center of gravity, especially once you factor in H Mart in Fort Lee and the nearby Korean restaurants and bakeries. The rhythms are suburban and quiet, but the block-level culture is legible and lived-in.",
+    "tradeoffsForYou": [
+      "You'll drive to most cultural anchors. H Mart and restaurants are in Fort Lee, not walkable.",
+      "No commercial center in town means less spontaneous street life.",
+      "Bus commute to Manhattan means less frequent connection to city-side scenes.",
+      "School quality and family infrastructure are excellent if that's part of your anchor."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:58.144Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood-nj": {
+    "fitProse": "Ridgewood's downtown has good restaurants and a train to Penn, but the cultural ecosystem here is thin. The language on the street is English, the rhythm is suburban family life, and the anchors are designed for assimilation rather than preservation of distinct cultural identity.",
+    "tradeoffsForYou": [
+      "You won't find the bakery or grocery that stocks what your family actually cooks with.",
+      "The restaurants downtown are varied but aim for broad American palates.",
+      "Community life revolves around schools and sports, not cultural organizations.",
+      "If you're looking for a place that feels like home ethnically or linguistically, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:37:58.709Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "paramus": {
+    "fitProse": "Paramus is not a cultural anchor in the way this archetype usually seeks. It's a car-dependent suburban mall zone with excellent schools and quiet homes, but the public life revolves around retail, not rooted ethnic enclaves or places where regulars know your order by heart.",
+    "tradeoffsForYou": [
+      "The daily rhythm is built around cars and parking lots, not sidewalk life.",
+      "You won't find a tight-knit immigrant neighborhood or language you hear on every corner.",
+      "Van Saun Park is lovely, but the social texture is suburban, not corner-store regularity.",
+      "If you want cultural infrastructure, you'll drive to Fort Lee, Palisades Park, or back into the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:02.148Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "maplewood": {
+    "fitProse": "Maplewood is one of the few suburbs where the Cultural Anchor Seeker can actually find community, not just good schools. The LGBTQ+ and Black professional presence is real, the village has restaurants where you'll hear more than one language, and the diversity isn't just a census stat.",
+    "tradeoffsForYou": [
+      "You'll need the NJ Transit Midtown Direct. It's 30 min to Penn, but it's the lifeline.",
+      "The cultural ecosystem is strong for a suburb, but it's still a suburb.",
+      "House prices have climbed fast as word got out.",
+      "If your anchor is a specific ethnic enclave, this is progressive-diverse, not ethnic-enclave-dense."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:02.447Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "millburn-short-hills": {
+    "fitProse": "Millburn and Short Hills have established East Asian and Jewish communities with real institutional depth (synagogues, language schools, specialty grocers), but the cultural anchor is quieter and more residential than urban. If you're looking for multigenerational familiarity and schools where your kids will see themselves reflected, it works. If you need daily streetlife in your language, this isn't it.",
+    "tradeoffsForYou": [
+      "The anchor is family institutions and schools, not the streetscape or nightlife.",
+      "Groceries are solid (Kings, Whole Foods) but cultural markets require a drive.",
+      "Most of the cultural density is private (homes, synagogues, schools, not storefronts).",
+      "Extremely expensive. The cultural fit comes at a prestige-suburb price."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:04.886Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "montclair": {
+    "fitProse": "Montclair is one of the few NJ suburbs where culture isn't code for something narrower. You'll hear multiple languages on Bloomfield Ave, find West African restaurants alongside Italian spots, and join a community that values art museums and diversity as equally as school rankings. The Midtown Direct train makes it real.",
+    "tradeoffsForYou": [
+      "You're leaving NYC density behind. This is a suburb, albeit one with a downtown.",
+      "Off-peak train frequency can stretch your night out into an overnight.",
+      "The cultural anchor premium is real. You pay for this combo.",
+      "Creative-class homogeneity has its own flavor, even in diverse places."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:05.386Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "summit": {
+    "fitProse": "Summit is optimized for a completely different life stage. It's affluent, safe, and train-connected, but its cultural ecosystem is sparse. The restaurants are fine, the grocery stores are upscale, but you won't find the bakery or bodega where your language is spoken at the counter.",
+    "tradeoffsForYou": [
+      "Cultural anchors are thin. This is a commuter suburb, not a cultural enclave.",
+      "The NJ Transit Midtown Direct is real, but 50 minutes each way adds up.",
+      "You'll find excellent schools and large homes, but not the block life you're seeking.",
+      "If you want community built around shared heritage, look elsewhere in NJ."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:08.542Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "south-orange": {
+    "fitProse": "South Orange has real cultural roots (African-American history, creative-class families, LGBTQ presence) but it's diffuse across blocks rather than concentrated on a commercial strip. The Midtown Direct is excellent, but the village center is small and the cultural anchors feel more residential than public.",
+    "tradeoffsForYou": [
+      "You'll find community through schools and neighbors, less through a walkable ethnic main street.",
+      "Cultural institutions exist (performing arts center, Seton Hall) but aren't daily touchstones.",
+      "Block variance means you need to pick carefully to land near your people.",
+      "The diversity is real, but the shape is suburban family life, not urban cultural density."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:08.702Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westfield": {
+    "fitProse": "Westfield offers strong schools and family infrastructure, but its cultural ecosystem scores low. Unless you're rooted in the existing community (largely white, suburban professional), you'll struggle to find the bakery or block where your language and rhythms feel at home.",
+    "tradeoffsForYou": [
+      "Cultural anchors here lean classic American suburban, not immigrant enclaves.",
+      "Downtown Westfield is walkable but the shops won't feel like gathering spots for your community.",
+      "Transit to Penn is direct, but you'll miss the density where culture clusters.",
+      "If your anchor is suburban church or school networks, this works. Otherwise, it won't."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:11.156Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chatham-nj": {
+    "fitProse": "Chatham is affluent and pretty, but its cultural ecosystem is thin. The village has Kings and a few cafes, but this is Morris County suburbia built for families who prize schools and space, not for anyone seeking the density of language, food, or ritual that makes a block feel like home.",
+    "tradeoffsForYou": [
+      "Cultural anchor is nearly zero. You'll find polite neighbors, not community.",
+      "The Midtown Direct is excellent, but you'll commute for cultural life too.",
+      "Great Swamp is beautiful, but nature isn't the anchor you're after.",
+      "Homogeneous and wealthy. If that's not your background, you'll feel it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:11.824Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "scarsdale": {
+    "fitProse": "Scarsdale has strong East Asian and Jewish communities, but it's a commuter suburb first and a cultural ecosystem second. The bakeries and restaurants reflect those anchor communities, but daily life revolves around schools, yards, and Metro-North schedules more than the block itself.",
+    "tradeoffsForYou": [
+      "Cultural life is real but thin. You'll find it, but won't bump into it daily.",
+      "The rhythm here is suburban-family, not street-level cultural immersion.",
+      "Premium pricing reflects school quality more than cultural density.",
+      "Metro-North commute means less time embedded in the neighborhood itself."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:14.222Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bronxville": {
+    "fitProse": "Bronxville is prestige-coded suburban comfort, not a cultural anchor. You'll find a polished downtown, Sarah Lawrence students, and one of the top public schools in the country, but the cultural ecosystem score is low for a reason. It's homogeneous, quiet, and built for a different archetype entirely.",
+    "tradeoffsForYou": [
+      "The village is tiny and remarkably uniform. Cultural diversity is limited.",
+      "Metro-North is fast, but you're leaving the density and texture of the city behind.",
+      "No ethnic markets, no neighborhood language hubs, no daily-life cultural immersion.",
+      "If you're seeking community, it exists here but around schools and family life, not heritage."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:15.322Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rye": {
+    "fitProse": "Rye is the wrong kind of anchor for someone seeking cultural immersion. It's a prestige-coded, country-club suburb built around estate-scale homes, top schools, and the Sound Shore. The downtown is pleasant but generic upscale, and the cultural-ecosystem score is a flat zero.",
+    "tradeoffsForYou": [
+      "No cultural density. This is a classic affluent suburb, not an ethnic enclave.",
+      "The bakery you'll become a regular at is polite, not your language or rhythms.",
+      "Metro-North gets you to Grand Central, but the cultural life is in the city.",
+      "If you want a place where the block feels like home, look elsewhere entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:17.315Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "larchmont": {
+    "fitProse": "Larchmont is a tricky fit for the cultural anchor seeker. It's affluent, beautiful, and walkable, but the village reads overwhelmingly white and upper-middle-class. You'll find excellent bakeries and Italian delis, but not the multilingual rhythm or deep ethnic infrastructure of neighborhoods like Flushing or Jackson Heights.",
+    "tradeoffsForYou": [
+      "Cultural ecosystem scores 0.2. This is a homogeneous suburb, not a cultural crossroads.",
+      "The Metro-North line connects to Grand Central, but not to Queens or diverse Brooklyn hubs.",
+      "Village is lovely, but you won't become a regular at a place that feels like home unless home is WASP-y Westchester.",
+      "If you want community, it's here. If you want *your* community, look elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:18.062Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "mamaroneck": {
+    "fitProse": "Mamaroneck has something rare on the Sound Shore: a real Latin American community, with bodegas, panaderias, and Spanish heard as often as English on Mamaroneck Avenue. If you're looking for a place where cultural infrastructure isn't nostalgia but daily life, this is one of the only Westchester towns that delivers it.",
+    "tradeoffsForYou": [
+      "Block-by-block variance means you'll need to visit, not just Zillow.",
+      "The community exists but it's not Brooklyn-scale. You'll know the spots quickly.",
+      "Metro-North commute is the same hour most mornings.",
+      "Less walkable density than city enclaves, more car-dependent for errands."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:20.207Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "pelham": {
+    "fitProse": "Pelham is built for families who want top schools and Metro-North access, not for someone seeking a neighborhood where daily life unfolds in a language or culture that feels like home. The downtown is pleasant but suburban, the groceries are Stop & Shop and Whole Foods, and the rhythm is decidedly classic affluent Westchester.",
+    "tradeoffsForYou": [
+      "No meaningful cultural anchor. This is a commuter town, not a cultural hub.",
+      "You'll spend weekends driving to Flushing, Jackson Heights, or the Bronx for what you need.",
+      "Metro-North is fast, but the town itself won't feel like your block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:21.417Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dobbs-ferry": {
+    "fitProse": "Dobbs Ferry isn't a cultural anchor neighborhood. It's a small river town with a Main Street strip and a Metro-North stop, designed for families more than for communities built around food or language. If your anchor is the Hudson views and quiet, it works. Otherwise, you'll be commuting to find yours.",
+    "tradeoffsForYou": [
+      "The dining and shops on Main Street are limited, not culturally specific.",
+      "Mercy College is the only cultural institution of note.",
+      "You'll likely be traveling to NYC or other Westchester towns for your community.",
+      "Hudson Line trains are slower than Harlem, so your anchor better be worth the trip."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:24.162Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hastings-on-hudson": {
+    "fitProse": "Hastings-on-Hudson has a creative-class, progressive identity, but its cultural ecosystem score is modest. This is a river town where you'll feel at home if your culture is liberal Westchester family life. If you're seeking a deeply rooted ethnic or linguistic anchor, you're mostly looking at Manhattan or closer-in Queens and Brooklyn.",
+    "tradeoffsForYou": [
+      "The downtown is walkable and charming, but the cultural texture is mostly white progressive.",
+      "Metro-North gets you to Grand Central in 35 minutes, but the Hudson feels far from global NYC.",
+      "You'll find farm-to-table and book clubs, not the bodega or bakery where everyone speaks your language.",
+      "If your anchor is creative-class culture itself, this works. If it's ethnicity or heritage, it won't."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:24.757Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "irvington-ny": {
+    "fitProse": "Irvington is quiet, prosperous, and almost entirely oriented toward families who look like each other. The cultural ecosystem score is zero. If you're seeking a bakery where you'll hear your home language or a street rhythm that feels like community, this river town won't deliver it.",
+    "tradeoffsForYou": [
+      "The village has Metro-North and schools, but no cultural anchor to speak of.",
+      "Demographic homogeneity is the defining feature here.",
+      "You'll drive to Tarrytown or White Plains for groceries and any dining beyond basics.",
+      "Estate-scale homes are beautiful, but the social fabric is thin and uniform."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:26.901Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tarrytown": {
+    "fitProse": "Tarrytown is shaped for family life, not for cultural anchoring. The downtown is real and walkable, but the restaurants and shops are more generic Hudson Valley than rooted immigrant or ethnic community. You'll find no bakery where the counter knows your order in another language.",
+    "tradeoffsForYou": [
+      "Metro-North to Grand Central is great for commuting, not for finding your people.",
+      "The cultural ecosystem here is suburban mainstream, not diaspora or arts scene.",
+      "Tourist crowds in summer are more Sleepy Hollow Legend than neighborhood regulars.",
+      "Beautiful river views, but the rhythm of daily life won't feel like home unless home was Westchester."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:27.725Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "white-plains": {
+    "fitProse": "White Plains has a real Latin American community, not just a restaurant row. You'll hear Spanish on Mamaroneck Avenue, find Colombian bakeries and Salvadoran groceries that feel like actual regulars' spots, and the apartment-heavy downtown means less suburban insularity than the rest of Westchester.",
+    "tradeoffsForYou": [
+      "The cultural density is real but smaller scale than Queens or the Bronx.",
+      "Downtown is walkable but still car-oriented Westchester outside it.",
+      "School quality varies sharply by zone if that becomes part of your future.",
+      "Most cultural anchors are Latin American. Other communities are thinner."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:30.177Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yonkers-ny": {
+    "fitProse": "Yonkers has real Latin American and African American communities with bakeries, bodegas, and street life that reflect them. Riverdale Ave and downtown are legibly urban, with the density and pace that anchor day-to-day culture. Metro-North gets you to Grand Central, but this is where you actually live.",
+    "tradeoffsForYou": [
+      "Cultural infrastructure is block-dependent. Scout carefully.",
+      "Metro-North rhythm is commuter, not subway frequent.",
+      "Prestige Westchester this is not. That may be the point.",
+      "Some blocks feel deeply rooted, others mid-transition."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:30.399Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chappaqua": {
+    "fitProse": "Chappaqua is a top-tier school district wrapped in estate lots, but it's not a cultural anchor. The village center has a few good shops and a Metro-North station, but day-to-day life is car-dependent, suburban, and designed for families, not community built around shared language or tradition.",
+    "tradeoffsForYou": [
+      "Cultural ecosystem score is zero. You won't find a neighborhood bakery to become a regular at.",
+      "The rhythm of daily life is drive-to-errands, not street-corner spontaneity.",
+      "Chappaqua is optimized for schools and space, not the texture of belonging.",
+      "If you want anchor culture, look to Astoria, Flushing, or Jackson Heights instead."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:32.523Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "great-neck": {
+    "fitProse": "Great Neck is one of the few places in the metro where cultural anchor and top-tier schools exist on the same block. The Persian-Jewish community is dense and visible (kosher bakeries, Farsi overheard on Middle Neck Road), the Korean American presence is real (H Mart is a staple, not a novelty), and your kids will grow up in that mix.",
+    "tradeoffsForYou": [
+      "You're buying into a high-income suburb. Housing premiums reflect school rankings.",
+      "LIRR is fast peak hours, slower nights and weekends.",
+      "The cultural scene is family-oriented, not nightlife or arts-driven.",
+      "If you're looking for grit or creative energy, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:34.362Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "port-washington": {
+    "fitProse": "Port Washington has a meaningful Korean American community, and Main Street has the anchors (bakeries, markets, restaurants) where you can become a regular. The peninsula feels less country-club than nearby towns, more lived-in, and the LIRR puts you in Penn in 35 minutes.",
+    "tradeoffsForYou": [
+      "The Korean dining and grocery scene is real but concentrated, not deep like Flushing.",
+      "Beyond Main Street, cultural infrastructure thins out quickly.",
+      "LIRR commute is 35 minutes, but you're at the end of the line.",
+      "The waterfront is gorgeous but the town still reads affluent-suburban to many."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:35.961Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhasset": {
+    "fitProse": "Manhasset is estate-suburb calm with a strong LIRR line, but the cultural ecosystem score is zero for a reason. This is North Shore affluence, not a place where daily life happens in a language or rhythm beyond the professional-class default.",
+    "tradeoffsForYou": [
+      "Limited dining variety means limited cultural anchors. No ethnic groceries or block life.",
+      "You'll become a regular at Stop & Shop, not a bodega or bakery that feels like home.",
+      "The Americana is luxury retail, not a street where you hear your language.",
+      "If you're looking for cultural texture, this is the wrong Shore entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:35.975Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roslyn": {
+    "fitProse": "Roslyn has become a cultural anchor for East Asian and Jewish families who want top schools and room to build a life around extended family, Lunar New Year gatherings, and Shabbat dinners. The Stop & Shop carries a solid international aisle, and you'll hear Mandarin and Cantonese at the LIRR lot on weekday mornings.",
+    "tradeoffsForYou": [
+      "You need a car. The LIRR is a drive, and the bus is not a real option.",
+      "The village is pleasant but small. Cultural groceries mean a trip to Great Neck or Flushing.",
+      "Premium for the schools means fewer younger families and starter households.",
+      "This is estate-scale suburban. If you want block-party density, look closer to the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:39.188Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "garden-city": {
+    "fitProse": "Garden City is architecturally beautiful and functionally excellent, but its cultural ecosystem score is zero for a reason. This is a planned suburb built around schools, lawns, and the Cathedral, not around the food, language, or street rhythm that makes a place feel like home to a cultural community.",
+    "tradeoffsForYou": [
+      "You won't find the bakery, bodega, or market where you become a regular.",
+      "The diversity is limited. You'll notice it immediately.",
+      "If you're looking for cultural anchor, this is the wrong shape of place entirely.",
+      "LIRR to Penn is solid, but the destination matters more than the commute."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:40.351Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rockville-centre": {
+    "fitProse": "Rockville Centre's walkable downtown has real restaurants and independent shops, but the cultural anchor here is suburban family life, not a diasporic community or ethnic enclave. If you're looking for the bakery where everyone speaks your language or the bodega that stocks what you grew up with, this isn't it.",
+    "tradeoffsForYou": [
+      "The culture is comfortable American suburb, not a neighborhood you'll recognize from home.",
+      "Restaurants are solid but generic. Think bistros and brunch spots, not grandmother cooking.",
+      "You'll need to travel for the markets, gatherings, and spaces that feel like yours.",
+      "LIRR runs to Penn in 40 min, but you're commuting away from cultural density, not toward it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:42.567Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-beach-ny": {
+    "fitProse": "Long Beach is hard to beat if surf, sand, and ocean air are the daily rituals that feel like home. The boardwalk is the real anchor, year-round regulars know each other, and the LIRR run is long but direct. Cultural depth is limited outside the beach life itself.",
+    "tradeoffsForYou": [
+      "The culture you'll join is beach culture. If you need ethnic grocers or language, look elsewhere.",
+      "50-minute LIRR commute is real. You'll need to want the ocean enough to pay that toll.",
+      "Summer brings crowds and renters. The rhythm you build in winter changes June through August.",
+      "Storm risk is not theoretical. Sandy reshaped blocks here, and flood insurance is a line item."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:43.240Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich": {
+    "fitProse": "Greenwich is prestige and estates first, cultural anchor last. The town skews affluent-classic-WASPy, and the architecture of daily life (country clubs, Greenwich Avenue boutiques, Metro-North schedules) reflects that. If you're seeking a strong ethnic, linguistic, or subcultural community, you'll be searching.",
+    "tradeoffsForYou": [
+      "One of the least diverse commuter towns in the metro. You'll feel it.",
+      "Cultural life is country-club shaped, not neighborhood-bakery shaped.",
+      "The town codes conservative-classic. Hard to find non-mainstream anchors.",
+      "Car-dependent. Daily rhythms are private, not street-level."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:45.556Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stamford": {
+    "fitProse": "Stamford has real cultural infrastructure. The Latin American community is visible and established, with restaurants, markets, and everyday street life reflecting that. It's a city-sized anchor, not a cluster of isolated enclaves, which matters if you want to feel rooted rather than passing through.",
+    "tradeoffsForYou": [
+      "The cultural ecosystem is real but not deep. For specific regional cuisines, you'll still travel.",
+      "Downtown is commercial-first. Most cultural life happens in pockets, not on every block.",
+      "55 minutes to Grand Central means you're choosing between Stamford community and city immersion.",
+      "Block-by-block variance is high. Some areas feel suburban, some urban, some strip-mall."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:46.449Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "darien": {
+    "fitProse": "Darien is polished, quiet, and almost entirely car-oriented New England. Unless you're looking for a specific cultural anchor tied to affluent suburban Connecticut life (country clubs, yacht clubs, Sunday farmers' markets), there's little here in the way of daily cultural immersion. The bakery, the bodega, the language on the street are absent.",
+    "tradeoffsForYou": [
+      "No walkable cultural corridors. You'll drive to everything.",
+      "The demographic is narrow and homogeneous by design.",
+      "If your anchor is outside mainstream suburban WASP culture, you'll commute for it.",
+      "Beautiful and safe, but the rhythm of daily life won't remind you of a city block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:49.104Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "new-canaan": {
+    "fitProse": "New Canaan is architecturally distinguished and wealthy, but its cultural ecosystem score is zero for a reason. This is Connecticut estate country, not a place where you'll find the language, food, or street life that anchors identity. Beautiful, quiet, and very white.",
+    "tradeoffsForYou": [
+      "The downtown has cafes and a market, but no cultural anchor beyond WASP New England.",
+      "You'll need to drive to Stamford or the city for the bakery, restaurant, or shop that feels like yours.",
+      "Branch-line Metro-North makes weekend trips to ethnic neighborhoods in the city a 90-minute trek.",
+      "If you want your kids in top schools and you can build culture at home, it works. Otherwise, no."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:50.282Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westport": {
+    "fitProse": "Westport has a real arts community and a walkable downtown, but cultural anchor here means creative-class expat culture, not ethnic enclaves. The language you'll hear is English, the bakery is artisan, and the rhythm is CT family life with a liberal register.",
+    "tradeoffsForYou": [
+      "Not a cultural hub in the immigrant-neighborhood sense. Very homogenous.",
+      "Metro-North to Grand Central is 75 minutes. Long haul if you're visiting community in the city.",
+      "Premium pricing reflects prestige, not cultural density.",
+      "If your anchor is ethnic markets or multilingual streets, look elsewhere."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:38:51.717Z",
+    "model": "claude-sonnet-4-5"
+  }
+}

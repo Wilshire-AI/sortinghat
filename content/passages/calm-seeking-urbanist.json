@@ -1,0 +1,1462 @@
+{
+  "west-village": {
+    "fitProse": "The West Village is nearly perfect for the calm-seeking urbanist. The narrow, quiet blocks off Seventh Avenue feel impossibly serene for Manhattan, Hudson River Park is steps away, and the 1 or A/C/E will get you anywhere when you want it. You're at the center of the city but not in its current.",
+    "tradeoffsForYou": [
+      "Weekend tourists on Bleecker and around Washington Square can feel heavy.",
+      "The price per square foot is among the highest in the city.",
+      "Nightlife and creative energy live elsewhere. This is postcard calm, not experimental edge.",
+      "Grocery density is fine but not Midtown-dense. Citarella, Whole Foods on 14th."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:18.925Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-east-side": {
+    "fitProse": "The Upper East Side is exactly what you're looking for. The limestone blocks east of Fifth are genuinely quiet, Central Park and Carl Schurz give you real green, and the 4/5/6 deliver all the access you'll need. It's polished, calm, and the city waits for you when you want it.",
+    "tradeoffsForYou": [
+      "The Q is helpful but doesn't run express. The 4/5/6 on Lex gets packed.",
+      "Energy is muted. Dining and nightlife live elsewhere in Manhattan.",
+      "Co-op boards and doormen culture can feel formal if you're not used to it.",
+      "Prestige comes with a price tag. This is one of the most expensive neighborhoods in the city."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:19.023Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-village": {
+    "fitProse": "The East Village is loud, layered, and buzzing most hours. If you're a calm-seeker, this is the wrong address. The L and F will get you places, and Tompkins Square offers a breather, but the streets around you won't quiet down until dawn.",
+    "tradeoffsForYou": [
+      "Late-night bar noise is the soundtrack, especially Thursday through Sunday.",
+      "Tompkins Square is your main green refuge, but it's not calm itself.",
+      "Transit means the L or a walk to the F. No express lines nearby.",
+      "The energy you're avoiding lives on every block here."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:19.325Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "upper-west-side": {
+    "fitProse": "The Upper West Side is possibly the platonic ideal for the calm-seeking urbanist. The cross streets east of Broadway deliver that quiet apartment hush you're after, and the 1, 2/3, and B/C put you in Midtown in ten minutes or downtown in twenty. Central Park and Riverside Park bracket everything.",
+    "tradeoffsForYou": [
+      "Real estate costs reflect decades of people choosing exactly this vibe.",
+      "Can feel a little too settled, especially if you're younger than 35.",
+      "Nightlife and creative energy live elsewhere in the city.",
+      "The neighborhood knows what it is and isn't apologizing."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:19.338Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fidi": {
+    "fitProse": "The Financial District offers something rare: a dozen subway lines, the PATH, and the ferry within a square mile, plus a waterfront promenade that does most of what Riverside Park does. You get space, quiet evenings, and transit redundancy. The tradeoff is weekday ghosts and thin neighborhood texture.",
+    "tradeoffsForYou": [
+      "Restaurants and cafes shut down early. Weekends feel emptied out.",
+      "Tourist density around the 9/11 Memorial is unavoidable.",
+      "Beautiful waterfront, but few neighbors around after 7 p.m.",
+      "Lacks the street life and layered history of older Manhattan neighborhoods."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:24.257Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tribeca": {
+    "fitProse": "Tribeca is perhaps the closest thing Manhattan has to a calm-seeking urbanist's platonic ideal. The cobbled side streets are genuinely quiet after hours, the Hudson River Park is a five-minute walk, and the 1/2/3 and A/C/E put all of Manhattan in reach when you want it.",
+    "tradeoffsForYou": [
+      "Among the most expensive per-square-foot residential real estate in the city.",
+      "Weekends can feel empty. The quiet you want can tip into deserted.",
+      "Few subway lines run north-south only. Crosstown is slower.",
+      "School admissions are a competitive process, not a given."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:24.506Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chelsea": {
+    "fitProse": "Chelsea has the balance you're after. The gallery blocks west of Tenth are surprisingly quiet, the High Line gives you green space and air without leaving the city, and the A/C/E plus the 1 put you everywhere. Tourist crowds spike near the parks, but the residential streets decompress fast.",
+    "tradeoffsForYou": [
+      "High Line weekends can feel like an airport terminal.",
+      "Hudson Yards looms on the western edge, more spectacle than neighborhood.",
+      "Nightlife is low-key. Energy lives in the galleries and daytime cafes.",
+      "Rent reflects the location and transit access."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:25.618Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gramercy": {
+    "fitProse": "Gramercy Park is one of the few pockets in Manhattan that actually delivers on calm without asking you to move to the periphery. The pre-war blocks are hushed, tree-lined, and residential in a way that feels borrowed from another century, while Union Square is a ten-minute walk and the 6 puts you anywhere.",
+    "tradeoffsForYou": [
+      "The 6 is your only true local line. L and N/Q/R/W require a walk to Union Sq.",
+      "The neighborhood is small. You'll memorize it in a month.",
+      "Private park access is real but keyed to a handful of buildings.",
+      "Prestige tax is real. You're paying partly for the address and the quiet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:25.805Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "park-slope": {
+    "fitProse": "Park Slope was practically built for the calm-seeking urbanist. The brownstone blocks east of 7th have the tree-lined hush you remember from late-August evenings, and the F puts you in Manhattan in twenty minutes.",
+    "tradeoffsForYou": [
+      "Quieter than you'd expect, even on weekends.",
+      "Some of the most expensive blocks in Brooklyn.",
+      "Stroller density on 7th Ave is a known meme."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:28.524Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "central-harlem": {
+    "fitProse": "Central Harlem has the residential calm you want, especially on the brownstone side streets west of St. Nicholas, plus the 2/3 delivering midtown in fifteen minutes. You get Marcus Garvey and the northern edge of Central Park without the intensity of the Upper East or West Side.",
+    "tradeoffsForYou": [
+      "Block variance is real. Quiet tree-lined streets sit two blocks from commercial 125th.",
+      "Restaurant and cafe scene is thinner than downtown or the UWS.",
+      "Some New Yorkers still think Harlem is far, even though the 2/3 is faster than they expect."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:30.150Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hells-kitchen": {
+    "fitProse": "Hell's Kitchen is a strange fit for calm seekers. The transit is unbeatable (A/C/E, 1, N/Q/R/W, 7), and the Hudson River Park offers real quiet at the edge of chaos. But the blocks between 9th and 8th are loud, dense, and tourist-adjacent. You can retreat to the water, just not to your street.",
+    "tradeoffsForYou": [
+      "Sidewalk noise and restaurant crowds are constant, especially evenings.",
+      "Times Square spillover means tourist density on crosstown blocks.",
+      "Hudson River Park is your best escape, but it's a walk west from most apartments.",
+      "Transit redundancy is extraordinary. Seven lines within ten blocks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:30.615Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "williamsburg": {
+    "fitProse": "Williamsburg's waterfront blocks offer something rare: high energy you can turn on and off. Domino Park and the river paths give you morning quiet, then Bedford Avenue delivers noise and options when you want them. The L is a bottleneck, but the train itself is fast.",
+    "tradeoffsForYou": [
+      "One subway line. If the L goes down, you feel it.",
+      "Saturday night Bedford Ave can feel like a street fair that never ends.",
+      "Waterfront apartments cost Manhattan money now.",
+      "The energy peaks higher here than almost anywhere else in Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:31.640Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brooklyn-heights": {
+    "fitProse": "Brooklyn Heights is the platonic ideal for the calm-seeking urbanist. Wide avenues of brownstones, the Promenade for skyline-view walks, and the 2/3/4/5/A/C/R all converge to put you in Manhattan in under ten minutes. You wake up to residential quiet and choose when to plug back in.",
+    "tradeoffsForYou": [
+      "Fewer restaurants than Park Slope or Cobble Hill. You'll eat out in other neighborhoods.",
+      "Some of the most expensive blocks in Brooklyn.",
+      "Weekends are very quiet. The energy lives across the river.",
+      "Brooklyn Bridge Park brings weekend crowds, but your residential block stays hushed."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:34.731Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bed-stuy": {
+    "fitProse": "Bed-Stuy has beautiful brownstone blocks that are genuinely quiet, and the A/C gets you to Manhattan in under 30 minutes. You'll find the calm residential texture here, though train choices are thin and block-by-block variance means you'll need to scout carefully.",
+    "tradeoffsForYou": [
+      "A and C only. If one goes down, your commute options narrow fast.",
+      "Block quality swings widely. The tranquil streets exist, but so do louder ones.",
+      "Ongoing change means the neighborhood you move to may shift under you.",
+      "Grocery and retail remain modest compared to Park Slope or Cobble Hill."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:36.093Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dumbo": {
+    "fitProse": "DUMBO offers a rare thing: calm with a view. The waterfront is your decompression zone, the cobblestones are genuinely quiet once tourists leave at dusk, and the F or A/C put you in Manhattan when you need it. It's small, polished, and built for professionals who want serenity with optionality.",
+    "tradeoffsForYou": [
+      "Tourist crowds in Brooklyn Bridge Park every weekend, especially May through October.",
+      "Tiny footprint means limited grocery and dining. You'll leave the neighborhood often.",
+      "Among the priciest per-square-foot in Brooklyn.",
+      "Cobblestones are charming until you're wheeling a suitcase or pushing a stroller."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:36.489Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cobble-hill": {
+    "fitProse": "Cobble Hill is nearly purpose-built for you. Twelve blocks of brownstones and mature street trees, calm without feeling remote, and the F/G and 2/3/4/5 all put Manhattan within reach. Court Street restaurants and Brooklyn Bridge Park are your evening optionality.",
+    "tradeoffsForYou": [
+      "Every subway is a 10-minute walk. You'll notice that in January.",
+      "Real estate is competitive and prices reflect the quiet.",
+      "Nightlife exists elsewhere. This is where you return from it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:37.007Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bushwick": {
+    "fitProse": "Bushwick is built for immersion, not retreat. The creative energy is real and the apartments are big for the price, but the streets run hot with warehouse parties, late-night crowds, and industrial grit. If you need calm at home, this is the wrong shape.",
+    "tradeoffsForYou": [
+      "The energy you're trying to escape at home is what Bushwick sells.",
+      "L-train dependence means any service change upends your commute.",
+      "Block-by-block variability: some streets feel fine, others feel like a dare.",
+      "Maria Hernandez is lovely, but you'll miss the kind of park where you can actually decompress."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:40.396Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sheepshead-bay": {
+    "fitProse": "Sheepshead Bay is one of the rare Brooklyn neighborhoods where calm and access coexist without irony. The B and Q give you Manhattan in 45 minutes, but the waterfront blocks are residential, quiet, and look out at actual boats instead of traffic.",
+    "tradeoffsForYou": [
+      "The commute is real. Figure 45 minutes to midtown, sometimes more.",
+      "High-end dining and nightlife mean a schlep back to Park Slope or Manhattan.",
+      "Most Manhattanites will ask you to repeat the neighborhood name twice.",
+      "The waterfront is lovely but it's fishing boats, not the Brooklyn Bridge Park Instagrammable kind."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:42.235Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "brighton-beach": {
+    "fitProse": "Brighton Beach offers real calm in an unusual package: ocean breeze, a long boardwalk, and residential blocks that feel a world away from midtown. The Q ride is a genuine hour when you need Manhattan, but when you're home, you're home. The beach does what parks can't.",
+    "tradeoffsForYou": [
+      "End of the Q line. Budget 55+ minutes to midtown, often standing.",
+      "Cultural scene is deep but narrow. If you're not Eastern European, you may feel outside it.",
+      "Few third places beyond the boardwalk and Russian restaurants.",
+      "The ocean is real, but retail and dining options thin out fast."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:42.670Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-island-city": {
+    "fitProse": "Long Island City offers something rare: calm inside the city, without trading away optionality. The 7, E, M, G, and F give you genuine transit redundancy, Gantry Plaza is a real waterfront decompression zone, and the high-rise apartment stock is new enough that you get quiet and space.",
+    "tradeoffsForYou": [
+      "New-build hallways and lobbies can feel corporate, not neighborly.",
+      "Restaurant density thins quickly outside Vernon-Jackson.",
+      "You're isolated from the older Queens texture that makes the borough interesting.",
+      "The skyline view is spectacular, but you're looking at the city, not living in its older fabric."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:42.806Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "astoria": {
+    "fitProse": "Astoria offers the calm-seeking urbanist an appealing tradeoff: materially larger apartments than Brooklyn at the same price, plus Astoria Park's waterfront sweep, but you're leaning on the N/W for everything. The Greek tavernas and Middle Eastern grocers feel neighborhood-scaled, not scene-driven.",
+    "tradeoffsForYou": [
+      "N/W can crawl off-peak. Budget extra time for weekend errands.",
+      "Block-by-block quiet varies. Steinway is louder than the residential grid.",
+      "Manhattan feels farther than the map suggests, especially late evenings.",
+      "The restaurants are excellent but nightlife energy is muted, which suits you."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:46.622Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "forest-hills": {
+    "fitProse": "Forest Hills is one of the best calm-seeking urbanist fits in the city. The Tudor blocks feel genuinely suburban, apartments are large, and the E/F put you in midtown in 35 minutes. You'll hear birds, not buses, when you open your windows in the morning.",
+    "tradeoffsForYou": [
+      "Dining and nightlife are limited. You're not walking to a scene here.",
+      "The commute is real: 30+ minutes into Manhattan on a good day.",
+      "Urban energy is lower than Brooklyn or Manhattan. That's the point, but you'll feel it.",
+      "Forest Park is lovely, but it's not Prospect Park in terms of weekend programming."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:48.660Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "riverdale": {
+    "fitProse": "Riverdale is practically built for the calm-seeking urbanist. Quiet streets, actual hills, Hudson views, and apartment prices that make Manhattan seem cruel. The 1 train and Metro-North keep the city reachable, and Van Cortlandt Park gives you green space when you want it.",
+    "tradeoffsForYou": [
+      "The 1 is slow. You'll think about Metro-North schedules more than you'd like.",
+      "Dining and nightlife are thin. This is a place you come home to, not go out in.",
+      "You'll probably want a car, which changes the math on NYC living.",
+      "It's far. Manhattan feels like a trip, not a walk."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:49.287Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flushing": {
+    "fitProse": "Flushing is a hard fit for the calm-seeking urbanist. The 7 terminus dumps you into one of the densest street scenes in the city, and Main Street feels more like Kowloon than quiet Queens. Kissena Park and the edges of Flushing Meadows offer breathing room, but home base is high-friction by design.",
+    "tradeoffsForYou": [
+      "Sidewalk crowding rivals Midtown at peak hours.",
+      "The 7 is your only subway. LIRR helps, but it's commuter rail.",
+      "Cultural intensity is the point here, not the backdrop.",
+      "Apartment space is excellent, but the walk home is always loud."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:50.970Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "st-george": {
+    "fitProse": "St. George gives you the rare combination of real quiet and a fast Manhattan link. The ferry is free, runs every half hour, and delivers you to Lower Manhattan in 25 minutes. The tradeoff is rhythm: you live on a timetable, not a whim.",
+    "tradeoffsForYou": [
+      "Ferry dependency is real. Miss it and you wait 30 minutes, or your evening plans collapse.",
+      "Dining and nightlife thin out fast once you leave Bay Street.",
+      "You're geographically in NYC but culturally on an island. Friends will joke about the commute.",
+      "If calm is the priority and you can plan around the boat, this works beautifully."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:52.650Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hoboken": {
+    "fitProse": "Hoboken is almost purpose-built for the calm-seeking urbanist. The PATH puts you in the West Village in ten minutes, but the residential blocks away from Washington Street are genuinely quiet. You get larger rooms, a real waterfront, and optionality without paying the ambient stress tax.",
+    "tradeoffsForYou": [
+      "NJ Transit logistics (taxes, car registration) add administrative friction.",
+      "Washington Street weekend crowds skew loud and college-aged.",
+      "Some NYC friends will treat the PATH as psychologically farther than an outer borough.",
+      "If the PATH goes down, your commute options narrow fast."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:54.374Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jersey-city": {
+    "fitProse": "Jersey City delivers exactly what the calm-seeking urbanist wants: quiet residential blocks near Hamilton Park or Paulus Hook, the PATH putting you in Manhattan in fifteen minutes, and a waterfront that feels like the opposite of chaos. You get real space without sacrificing access.",
+    "tradeoffsForYou": [
+      "You'll hear 'you moved to New Jersey?' from some friends. Forever.",
+      "Beyond downtown, transit thins fast. You'll need to choose your address carefully.",
+      "Liberty State Park is stunning but far from most residential blocks.",
+      "NJ tax filing is its own learning curve, especially if you work in NYC."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:55.002Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-lee": {
+    "fitProse": "Fort Lee offers something rare: genuine calm, big apartments, cliff-top parks along the Palisades, and buses that reach Midtown in thirty minutes when traffic cooperates. You'll notice the space and quiet immediately, but the tradeoff is real. You are crossing the river, and you will feel it.",
+    "tradeoffsForYou": [
+      "No subway. Buses through the tunnel or over the GW are your lifeline.",
+      "Traffic can turn a thirty-minute commute into an hour-plus.",
+      "The calm is real, but so is the distance from spontaneous city energy.",
+      "You'll need a car for most errands, even with H Mart nearby."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:57.771Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "edgewater": {
+    "fitProse": "Edgewater is purpose-built for calm-seeking urbanists who want the city as option, not obligation. The ferry skips bridge traffic and delivers you to Midtown in under twenty minutes, then you come home to the Hudson promenade and apartment windows that actually look at water and sky.",
+    "tradeoffsForYou": [
+      "You'll want a car. Buses work but groceries and errands tilt that way.",
+      "The ferry schedule is your leash. Miss the last boat, you're Ubering through the tunnel.",
+      "Street life is minimal. It's residential by design, not by accident.",
+      "No subway. If the ferry feels limiting, this will grate over time."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:15:59.394Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "palisades-park": {
+    "fitProse": "Palisades Park is calm by necessity (it's NJ, buses only) but the tradeoff is real. If you're after quiet residential blocks and Korean food, this works. If you value the subway as an escape hatch, you'll miss it every single day.",
+    "tradeoffsForYou": [
+      "Buses to Manhattan, not trains. Add 20 minutes to any spontaneous plan.",
+      "Car-dependent for errands. Calm, yes. Walkable urbanist dream, no.",
+      "The Korean food is spectacular, but the community is the entire anchor.",
+      "Palisades Interstate Park is nearby, but reaching it requires intention."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:00.604Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lower-east-side": {
+    "fitProse": "The Lower East Side is the wrong shape for a calm-seeking urbanist. The weekend nights are loud, the F train is the main option, and the texture everyone loves is also friction you'll feel daily. East River Park is real, but you'll walk through density to reach it.",
+    "tradeoffsForYou": [
+      "Weekend nights bring bridge-and-tunnel crowds to Ludlow and Orchard.",
+      "Most housing stock is old walk-ups with thin walls and tight spaces.",
+      "Reaching the West Side or major hubs takes longer than from other Manhattan neighborhoods.",
+      "The scene energy that defines LES is hard to tune out at home."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:00.869Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-harlem": {
+    "fitProse": "East Harlem gives you Central Park access, the 4/5/6 for fast downtown runs, and residential blocks that actually feel residential. You can walk into the park when you need quiet, then head back to a neighborhood that hums but doesn't scream.",
+    "tradeoffsForYou": [
+      "Block-by-block variance means scouting carefully before you sign.",
+      "The Lex lines are your main artery. No backup if the 6 is down.",
+      "Cultural anchor seekers will love it; you may feel more like a respectful neighbor.",
+      "Some blocks feel calmer than others. Do the evening walk-through."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:03.833Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hamilton-heights": {
+    "fitProse": "Hamilton Heights is a good match. You get pre-war quiet on Sugar Hill, the hilltop views feel open, and both Riverside and St. Nicholas parks are minutes away. The A express makes downtown surprisingly close, and the neighborhood pulse is real but muted enough to decompress.",
+    "tradeoffsForYou": [
+      "The A express is fast, but off-peak frequencies thin out.",
+      "Restaurant scene is improving but still patchy; you'll cook more.",
+      "Hilly terrain means walking home from the train isn't flat.",
+      "Perceived distance from downtown social scenes, even if transit time isn't bad."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:05.252Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "inwood": {
+    "fitProse": "Inwood is one of the few neighborhoods in Manhattan that actually delivers calm. The A and 1 both terminate here, Inwood Hill Park has old-growth forest you can reach in minutes, and the pre-war apartments are big enough to breathe in. It reads less like Manhattan and more like a tree-lined borough edge with the subway still attached.",
+    "tradeoffsForYou": [
+      "You're 40+ minutes to midtown. The trains are there, but you're at the end of the line.",
+      "Dining and nightlife are limited. You'll go elsewhere for that.",
+      "The neighborhood feels quieter than almost anywhere in Manhattan, which is the point."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:06.208Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "washington-heights": {
+    "fitProse": "Washington Heights gives you real distance from midtown noise without leaving Manhattan. Fort Tryon and Highbridge offer green escapes, the pre-war apartments are genuinely spacious, and the A express from 175th or 181st puts you in midtown faster than most people guess.",
+    "tradeoffsForYou": [
+      "The A is your lifeline. When it's local, you feel it.",
+      "Block-by-block variance means you'll need to visit specific streets, not just the neighborhood.",
+      "Fewer indie coffee shops and quiet third places than you'd expect for the space.",
+      "The cultural anchor is Dominican. If that's not your world, you may feel adjacent rather than rooted."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:06.831Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "morningside-heights": {
+    "fitProse": "Morningside Heights is a near-perfect fit for calm-seeking urbanists. The blocks between Riverside and Morningside Parks are quiet and tree-lined, the campus lends institutional weight without the usual Manhattan density, and the 1 train puts you downtown in under thirty minutes.",
+    "tradeoffsForYou": [
+      "The 1 is your main line. B/C helps, but you're leaning on one subway.",
+      "Summer can feel sleepy when students leave and the neighborhood empties out.",
+      "Restaurant scene is uneven. You'll cook more or head downtown.",
+      "Pre-war charm comes with academic-grade pricing, not quite a bargain."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:09.823Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "lincoln-square": {
+    "fitProse": "Lincoln Square is a civilized retreat with world-class culture and transit. The high-rises feel anonymous in a good way, the A/C/D/1 redundancy is unmatched, and Riverside Park is a ten-minute walk when you need air. You can decompress here and still be anywhere in the city in thirty minutes.",
+    "tradeoffsForYou": [
+      "Tourist and commuter foot traffic around Lincoln Center at all hours.",
+      "High-rise living means less block-level intimacy, more elevator small talk.",
+      "Premium pricing for the cultural anchor and transit redundancy.",
+      "Riverside Park takes effort to reach from the eastern blocks."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:11.099Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattan-valley": {
+    "fitProse": "Manhattan Valley hits the calm-seeking urbanist sweet spot. The blocks between 100th and 110th are noticeably quieter than Lincoln Square, the 1, B, and C give you solid access, and Central Park's northwest corner is empty enough on weekday mornings to hear birds.",
+    "tradeoffsForYou": [
+      "Less polished than the classic UWS blocks south of 96th.",
+      "Restaurant scene is uneven. Some great finds, some gaps.",
+      "Block-by-block variance means scouting carefully before you sign.",
+      "Cultural texture is real (Latin American communities) but may feel unfamiliar at first."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:11.803Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yorkville": {
+    "fitProse": "Yorkville is one of the best calm-seeking-urbanist bets on the island. The pre-war blocks above 79th have real quiet, Carl Schurz Park gives you morning river air, and the Q at 86th puts you in midtown in twelve minutes when you need it.",
+    "tradeoffsForYou": [
+      "Dining scene is muted. You'll head west or downtown for dinner plans.",
+      "The Q is good but the 4/5/6 on Lex is a longer walk east.",
+      "Residential to the point of sleepy. That's the feature, but know what you're buying."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:12.718Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carnegie-hill": {
+    "fitProse": "Carnegie Hill is built for the calm-seeking urbanist. Pre-war buildings, hushed blocks, Central Park as your western border, and the 4/5/6 or Q when you need the city. You get the optionality without the noise, and the residential vibe is a feature, not a bug.",
+    "tradeoffsForYou": [
+      "Among the priciest blocks in Manhattan, even for co-ops.",
+      "So quiet it borders on subdued. Nightlife lives elsewhere.",
+      "Restaurant and bar density is thin. You'll walk south or west for scene.",
+      "Private school families dominate the social fabric."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:15.893Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "midtown-east": {
+    "fitProse": "Midtown East is one of the few neighborhoods that delivers genuine residential quiet inside Manhattan's transit core. The blocks around Turtle Bay and Sutton Place empty out after six, the 4/5/6 and Grand Central give you the entire city, and the East River parks offer real air.",
+    "tradeoffsForYou": [
+      "Daytime midtown energy is unavoidable if you walk west of Lex.",
+      "Weekend grocery runs mean empty sidewalks, closed lunch spots.",
+      "You'll pay a premium for co-ops with calm, and apartment quality swings wildly block by block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:17.633Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stuyvesant-town": {
+    "fitProse": "Stuyvesant Town is one of the most decompressed places you can live in lower Manhattan. The internal greens and lack of through-traffic create a suburban hush a few blocks from Union Square, and the L and 6 put you anywhere when you choose to go.",
+    "tradeoffsForYou": [
+      "Renter only. If you want to buy, this isn't the place.",
+      "Two subway lines, not seven. The L and 6 work, but no backup.",
+      "The mid-century brick aesthetic reads institutional, not brownstone.",
+      "Stroller density is high. It's a family enclave by design."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:18.604Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhattanville": {
+    "fitProse": "Manhattanville offers the calm-seeking urbanist a rare mix: hilltop quiet, Hudson breeze, Riverside Park at your feet, and the 1 train when you need Manhattan proper. The Columbia expansion means institutional hush, not nightlife buzz, and pre-war apartments still have real space.",
+    "tradeoffsForYou": [
+      "Subway is mostly the 1 train. A/B/C/D at 125th adds options but requires a crosstown walk.",
+      "Restaurant scene leans institutional and sparse. You'll cook or venture south.",
+      "Long ride downtown. Budget 35+ minutes to Midtown, 45+ to Lower Manhattan.",
+      "Quiet by design, but that means fewer spontaneous options within a five-minute walk."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:20.896Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "murray-hill": {
+    "fitProse": "Murray Hill and Kips Bay are a half-match for the calm-seeking urbanist. Kips Bay's bigger buildings and quieter blocks give you the decompress-at-home feeling, but Murray Hill proper skews young and loud. The 6 train and Grand Central anchor you well, though cross-town transit takes patience.",
+    "tradeoffsForYou": [
+      "Murray Hill sidewalks can feel collegiate and transient on weekends.",
+      "The 6 is reliable but you're one line deep for most trips.",
+      "St. Vartan Park exists but it's not the green refuge you might hope for.",
+      "Kips Bay blocks are calmer; steer east of Third if you want quiet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:23.536Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "soho": {
+    "fitProse": "SoHo gives you central downtown with enough breathing room to feel calm, especially on weekday mornings before the retail crowds arrive. The cobblestones and cast-iron architecture make walking feel like a choice, not a commute, and multiple train lines (6, N/R, C/E, B/D/F/M) mean you can reach the rest of the city without stress.",
+    "tradeoffsForYou": [
+      "Weekend foot traffic rivals midtown. Tourists swarm Prince and Broadway.",
+      "Among the highest cost per square foot in the city.",
+      "Groceries and daily-life errands require planning. Not a neighborhood for spontaneous milk runs.",
+      "Petrosino Square is charming but tiny. Real park access means walking to Hudson River Park."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:24.127Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich-village": {
+    "fitProse": "Greenwich Village offers the calm-seeking urbanist a paradox that sometimes works. The side streets south of Washington Square (Perry, Bank, Commerce) are genuinely quiet at night, tree-lined, human-scale. But NYU undergrads and weekend tourists mean you share the neighborhood in shifts.",
+    "tradeoffsForYou": [
+      "Washington Square is beautiful but rarely feels like yours alone.",
+      "NYU energy is omnipresent. You can't opt out of the student calendar.",
+      "Six subway lines and the PATH mean optionality is never a question.",
+      "Apartment stock is small, old, and expensive for what you get."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:24.709Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chinatown": {
+    "fitProse": "Chinatown is intense and close-packed, which means it's not a calm place by default. The street-level density is real, the tourists flood Canal on weekends, and Columbus Park is more social hub than quiet refuge. But the transit web (B/D, J/Z, F, 4/5/6, N/Q/R/W) makes it easy to leave when you want to.",
+    "tradeoffsForYou": [
+      "Street noise and foot traffic are constant, especially near Canal.",
+      "Most apartments are tenement walk-ups with small rooms and old bones.",
+      "Weekend tourist density rivals Midtown, not a reprieve from urban chaos.",
+      "If calm at home matters, this is one of the hardest places in Manhattan to find it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:27.321Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "weehawken-port-imperial": {
+    "fitProse": "Weehawken was built for the calm-seeking urbanist. The Port Imperial ferry puts you in Midtown in twelve minutes, the Hudson River Walkway is broad and quiet, and every morning you wake up to the skyline instead of the noise. The friction is lower than anywhere in the five boroughs with comparable access.",
+    "tradeoffsForYou": [
+      "Ferry schedule becomes your life. Miss the 8:47 and you notice.",
+      "Street life is limited. This is a tower neighborhood, not a sidewalk neighborhood.",
+      "NYC purists will ask why you left the city.",
+      "You're trading spontaneity for square footage and silence."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:29.346Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bay-ridge": {
+    "fitProse": "Bay Ridge is about as close to calm as you'll find while staying on the subway map. The waterfront promenade on Shore Road is beautiful, the residential blocks are quiet, and the Verrazzano view makes it feel like you escaped the city even though the R train still gets you to Manhattan.",
+    "tradeoffsForYou": [
+      "The R train is slow. Budget an extra 20 minutes over neighborhoods on the F or A.",
+      "Only one subway line. If the R goes down, you're taking an express bus.",
+      "Dinner and nightlife options thin out after 9 PM on weeknights.",
+      "Geographically, you're deep in Brooklyn. Friends in Manhattan will notice the commute."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:30.383Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenpoint": {
+    "fitProse": "Greenpoint sits at the calm end of Brooklyn's energy spectrum. The G train gets you to the city (with a transfer), the waterfront parks give you actual breathing room, and the Polish bakeries and quieter blocks north of McCarren feel like a real neighborhood, not a stage set.",
+    "tradeoffsForYou": [
+      "G train only. You'll transfer at Court Sq or Hoyt-Schermerhorn to reach Manhattan.",
+      "Ferry is pleasant but not reliable enough for daily commuting.",
+      "Waterfront is lovely but the peninsula shape means fewer subway escape routes.",
+      "Williamsburg is close if you want energy; Greenpoint lets you opt out when you don't."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:31.108Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "crown-heights": {
+    "fitProse": "Crown Heights offers the calm-seeking urbanist a surprisingly good deal. The brownstone blocks between Franklin and Kingston feel residential and tree-lined, the 2/3/4/5 give you Manhattan in twenty minutes, and Prospect Park and the Botanic Garden are right there when you want green.",
+    "tradeoffsForYou": [
+      "Block-by-block variance is real. Some streets feel hushed, others much less so.",
+      "Late-night street life can be patchy depending on your block.",
+      "Fewer cafes and wine bars than Park Slope or Fort Greene.",
+      "Prices have climbed, but you still get more space than deeper into Brooklyn."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:32.697Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-heights": {
+    "fitProse": "Prospect Heights is practically built for you. Five subway lines at Atlantic-Barclays give you the whole city, then you walk home to quiet brownstone blocks with Prospect Park and the Botanic Garden minutes away. The calm is real, the optionality is better than almost anywhere in Brooklyn.",
+    "tradeoffsForYou": [
+      "Cultural anchors mean weekend crowds on Vanderbilt and near the museum.",
+      "Smaller footprint than Park Slope, fewer quiet streets to choose from.",
+      "Pricey for the size. You're paying for transit redundancy and park access.",
+      "Barclays events can bring noise and foot traffic surges near Atlantic."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:35.553Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "fort-greene": {
+    "fitProse": "Fort Greene is nearly ideal for the calm-seeking urbanist. The brownstone blocks north of the Park are quiet and tree-lined, yet you have ten subway lines at Atlantic-Barclays and BAM two blocks away. You control when you draw on the city.",
+    "tradeoffsForYou": [
+      "Atlantic-Barclays foot traffic is intense on game nights and commuter hours.",
+      "Gentrification has made it expensive. Affordability is fading fast.",
+      "Proximity to BAM and the Park means you're rarely truly isolated from crowds.",
+      "School zoning is contested, if that becomes relevant later."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:35.694Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "clinton-hill": {
+    "fitProse": "Clinton Hill is textbook calm-seeking urbanism. The brownstone blocks near Pratt feel miles from the noise, mature trees do real work in summer, and the C gets you to the Lower East Side in twenty minutes when you want it. Fort Greene Park is walkable when you need more green.",
+    "tradeoffsForYou": [
+      "C and G only. You'll feel the single-line limitation on weekend track work.",
+      "Quieter than Fort Greene, which is the point, but nightlife is minimal.",
+      "Pratt students add energy in fall and spring, vanish in summer.",
+      "Some blocks feel almost suburban. Depends on what you're escaping."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:38.116Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "east-williamsburg": {
+    "fitProse": "East Williamsburg is calm-adjacent, not calm. The L puts you in Union Square in fifteen minutes, the apartments are bigger, but the industrial blocks and late-night noise near the train mean you're trading quiet for price and access. If you're okay with selective retreat, it can work.",
+    "tradeoffsForYou": [
+      "Industrial blocks mean fewer tree-lined streets and less green buffer.",
+      "Late-night noise clusters near the L corridor where transit is best.",
+      "Cooper Park is small. McCarren is a walk or bike ride away.",
+      "L-train dependence. The G helps, but you'll feel the single-line squeeze."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:38.798Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "prospect-lefferts-gardens": {
+    "fitProse": "Prospect Lefferts Gardens is nearly perfect for the calm-seeking urbanist. You're one block from Prospect Park, the pre-war apartments are spacious, and the side streets are some of the quietest in central Brooklyn. The B/Q at Prospect Park gets you to Manhattan in half an hour.",
+    "tradeoffsForYou": [
+      "B/Q is your only real line. Redundancy lives a walk away on the 2/5.",
+      "Restaurant and cafe scene is thinner than Park Slope or Ditmas.",
+      "Block-by-block variance means scouting your exact street matters.",
+      "The park is your main third place. If that's enough, you're golden."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:41.101Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ditmas-park": {
+    "fitProse": "Ditmas Park is one of the rare pockets where Brooklyn feels genuinely suburban without apology. The Victorian houses on tree-lined blocks deliver the quiet you're after, and the Q takes you to Union Square in under 40 minutes. You'll hear birds before sirens.",
+    "tradeoffsForYou": [
+      "Only one subway line (the Q). No plan B if service goes sideways.",
+      "Cortelyou Road is the restaurant cluster. Otherwise it's quiet, which you probably want.",
+      "Feels geographically distant even though Manhattan is closer than you'd think.",
+      "The suburb vibe is real. If you sometimes crave street energy, head north to Prospect Park."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:42.188Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "windsor-terrace": {
+    "fitProse": "Windsor Terrace is a nearly perfect calm-seeking urbanist habitat. The quiet blocks between Prospect Park and Greenwood Cemetery feel genuinely residential, the F and G get you to Manhattan without drama, and the park is a five-minute walk when you want it.",
+    "tradeoffsForYou": [
+      "Dining within walking distance is thin. You'll cross into Park Slope often.",
+      "Only two train lines. If the F or G hiccups, you're waiting or walking.",
+      "Some blocks feel more like a town than Brooklyn, which may be exactly right or slightly too calm."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:43.538Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "sunnyside": {
+    "fitProse": "Sunnyside is quietly excellent for the calm-seeking urbanist. The pre-war blocks around Sunnyside Gardens offer real residential hush, the 7 train puts you in Midtown in fifteen minutes, and the Turkish and Romanian cafes give you texture without noise. You can walk home from the subway and actually decompress.",
+    "tradeoffsForYou": [
+      "The 7 is your one direct line. M/R nearby helps, but redundancy is limited.",
+      "Deep Queens geography means friends in Brooklyn won't visit often.",
+      "Dining is more local-stalwart than destination.",
+      "Sunnyside Gardens (the historic pocket) is serene, but the rest varies block by block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:44.702Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "woodside": {
+    "fitProse": "Woodside is a tricky fit for the calm-seeking urbanist. The 7 line delivers the access you want, and the side streets off Roosevelt are quiet by the time you're two blocks in. But Roosevelt itself is high-friction, and the neighborhood texture is more energetic than serene.",
+    "tradeoffsForYou": [
+      "The 7 is your only direct subway. You'll rely on it heavily.",
+      "Roosevelt Avenue is loud, crowded, and unpolished. Side streets are calmer.",
+      "Parks are modest. Doughboy and Hart don't compete with Astoria or Sunnyside greens.",
+      "The food is world-class, but the ambiance skews utilitarian over tranquil."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:47.551Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood": {
+    "fitProse": "Ridgewood gives you the optionality of three subway lines (L, M, J/Z) and bigger, quieter apartments than Bushwick proper. The creative energy is real but contained to pockets. Most blocks feel more residential than scene-heavy, which for a calm-seeker is the right ratio.",
+    "tradeoffsForYou": [
+      "Three trains is good. All three take you deeper into Brooklyn first, then Manhattan.",
+      "Restaurant scene is improving but uneven. You'll cross into Bushwick for dinner.",
+      "Forest Park is a genuine escape, but you'll need to walk or bus to reach it.",
+      "Some blocks still feel more like old Queens than the creative Brooklyn narrative."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:48.570Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rego-park": {
+    "fitProse": "Rego Park offers exactly what the calm-seeking urbanist trades up for: big, quiet apartments on tree-lined side streets, the M/R to Midtown when you want it, and a neighborhood rhythm that defaults to peaceful. You'll hear Russian and Bukharian at NetCost Market, but the ambient noise is lower than almost anywhere in the city.",
+    "tradeoffsForYou": [
+      "The M/R is reliable but slow. You'll add 15 minutes vs. the express.",
+      "Cultural texture is specific. If you're not plugged into the community, it can feel insular.",
+      "Late-night energy is nil. After 10 p.m. the blocks are empty.",
+      "Forest Hills is a short walk, but Rego Park itself lacks park access on your doorstep."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:50.334Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "kew-gardens": {
+    "fitProse": "Kew Gardens is one of the best fits for a calm-seeking urbanist in the metro. Single-family Tudor blocks, Forest Park minutes away, and the E/F still put you in Midtown in 35 minutes. You hear birds, not traffic, and the friction is low.",
+    "tradeoffsForYou": [
+      "The subway is a 10 to 15 minute walk from most blocks.",
+      "Dining and nightlife options are sparse. You'll head to Forest Hills or Manhattan.",
+      "It reads suburban. If you want urban texture at your doorstep, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:50.990Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bayside": {
+    "fitProse": "Bayside is calm by design, with single-family blocks that feel closer to Nassau County than Queens. The LIRR puts you in Penn in 25 minutes, and you'll wake up to birds, not traffic. But you'll also need to think like a suburbanite: car for errands, poor subway access, and a neighborhood that reads quiet even on weekends.",
+    "tradeoffsForYou": [
+      "Subway access is poor. The LIRR is fast but not spontaneous.",
+      "Car becomes useful quickly. This is not a walk-everywhere neighborhood.",
+      "Calm is real, but so is distance from Brooklyn and Manhattan scenes.",
+      "Bell Boulevard is the action. The rest is residential and very, very quiet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:53.973Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "jackson-heights": {
+    "fitProse": "Jackson Heights delivers rare calm for Queens: the landmarked garden co-ops east of 82nd Street are genuinely quiet, with courtyards that block street noise. The 7/E/F/M/R converge at Roosevelt, so you have options. Roosevelt Avenue itself is loud and gritty, but the residential blocks insulate you well.",
+    "tradeoffsForYou": [
+      "Roosevelt Ave is the opposite of calm. You'll route around it.",
+      "Co-op boards mean approval friction, slower closings.",
+      "More space than Manhattan, but less green relief than nearby Sunnyside Gardens.",
+      "Travers Park is nice but small. You'll want Flushing Meadows or Forest Park nearby."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:55.539Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "battery-park-city": {
+    "fitProse": "Battery Park City is built for the calm-seeking urbanist. The Esplanade gives you miles of waterfront quiet, the 1/A/C/E and PATH at WTC mean everything is accessible when you want it, and the residential blocks feel like borrowed suburbia inside Manhattan.",
+    "tradeoffsForYou": [
+      "Quiet on weekends to the point of eerie. Families and finance types, few others.",
+      "Limited street-level texture. It's planned, and it shows.",
+      "Pricey relative to the cultural scene you're near but not in.",
+      "The calm you want is here, but some find the bubble sterile."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:56.619Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "elmhurst": {
+    "fitProse": "Elmhurst offers the calm-seeking urbanist an unusual tradeoff: apartments are bigger and cheaper than Manhattan, and the 7/E/F/M/R array gives you real optionality. But the street-level energy is high-friction and dense, more market bustle than quiet block. You'll decompress indoors, not outdoors.",
+    "tradeoffsForYou": [
+      "Street life is loud, crowded, and commercial. Not the serene walk home you want.",
+      "Green space is scarce. Elmhurst Park exists but won't scratch the nature itch.",
+      "The apartment square footage is real, and that's where your calm will live.",
+      "Deep Queens geography means fewer spontaneous Manhattan meet-ups."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:57.047Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hudson-yards": {
+    "fitProse": "Hudson Yards is the wrong shape for someone who wants calm. It's a planned commercial-residential megaproject. Tourists and office crowds dominate, and the only train is the 7. Beautiful river walks if you want to escape it.",
+    "tradeoffsForYou": [
+      "One subway line. The 7 is fine, but it's the only train.",
+      "Tourist density rivals Times Square at peak hours.",
+      "The buildings are spectacular but the streets feel borrowed.",
+      "You'll decompress on the High Line or the river, not your block."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:16:57.195Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roosevelt-island": {
+    "fitProse": "Roosevelt Island is an outlier for calm-seeking urbanists: you get F train access and Manhattan views while living in what feels like a peaceful, low-stimulus college campus. The tram and ferry add optionality, and the river esplanade offers some of the quietest green space in the borough.",
+    "tradeoffsForYou": [
+      "Every errand, meal, or spontaneous night out means getting on the F or tram.",
+      "Dining and street life are minimal. You'll commute to the city for that.",
+      "It reads as an island, because it is one. Some find that calming; others feel trapped.",
+      "Cornell Tech brings some energy, but the vibe skews families and retirees."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:02.330Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "boerum-hill": {
+    "fitProse": "Boerum Hill is one of the best-kept secrets for calm-seeking urbanists. The townhouse blocks between Smith and Court are genuinely quiet, the F/G at Bergen gives you plenty of reach, and Atlantic-Barclays' transit redundancy means you're never stranded. You get brownstone calm without Park Slope's crowds.",
+    "tradeoffsForYou": [
+      "Smaller footprint than Park Slope means fewer cafes and amenities within five blocks.",
+      "Smith Street weekend nights can get loud; the further east you live, the better.",
+      "Pricey for the size, especially the prettier blocks near Cobble Hill Park."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:02.607Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "nolita-little-italy": {
+    "fitProse": "NoLita is compact, beautiful, and fully downtown, but it's not built for calm. The side streets have charm, but Mulberry and Bowery carry tourist crowds most hours. The 6 and B/D/F/M are excellent, but stepping outside means navigating intensity, not escaping it.",
+    "tradeoffsForYou": [
+      "Weekend tourist density on Mulberry makes quiet weekends hard.",
+      "Walk-ups mean no doorman buffer, and thin walls are common.",
+      "Petrosino Square is pretty but too small to reset in.",
+      "To decompress you'll head to Riverside, the High Line, or stay inside."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:02.668Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "flatiron-nomad": {
+    "fitProse": "Madison Square Park is real green (not just a plaza), and the N/R/W/F/M/6 redundancy means you're never stranded. The calm part is harder: daytime crowds are office-dense, and the residential blocks empty out at night in a way that feels less lived-in than, say, Gramercy next door.",
+    "tradeoffsForYou": [
+      "Midday sidewalk crowds rival Times Square on the avenues.",
+      "Evening quiet can feel corporate rather than residential.",
+      "Madison Square Park is lovely but small for long decompression walks.",
+      "Grocery runs mean Union Square or Eataly, not a neighborhood bodega."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:03.614Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "carroll-gardens": {
+    "fitProse": "Carroll Gardens is a near-perfect match for the calm-seeking urbanist. The blocks between Court and Smith have actual front gardens (not a metaphor), the F/G puts you in Manhattan in fifteen minutes, and the Italian grocers and restaurants on Court give you daily texture without chaos.",
+    "tradeoffsForYou": [
+      "Expensive. Comparable to Park Slope, and you're paying partly for the family vibe.",
+      "Only two train lines. The F/G is reliable but there's no redundancy.",
+      "Stroller density is high. You're living among future-family households.",
+      "Weekend Smith Street can feel tourist-adjacent as Cobble Hill spills south."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:08.568Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "gowanus": {
+    "fitProse": "Gowanus offers a curious appeal for calm-seekers: condos with quiet interiors and real square footage, brownstone Brooklyn a ten-minute walk away, and the F/G/R to pull you into Manhattan when you choose. The canal blocks themselves are industrial, but you get decompression space at a price Park Slope can't match.",
+    "tradeoffsForYou": [
+      "The walk home is through construction sites and repurposed warehouses, not trees.",
+      "Canal cleanup is ongoing. Some blocks still smell like the old Gowanus.",
+      "Quieter inside your apartment than on the street outside.",
+      "You're betting on future calm, not inheriting established calm."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:08.825Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "red-hook": {
+    "fitProse": "Red Hook is a rare case where the isolation is the point. The cobblestone streets and waterfront calm feel genuinely separate from the rest of Brooklyn, and the views at Valentino Pier are the best payoff for a quiet evening walk. The tradeoff is real: you'll bus or ferry to the subway, every time.",
+    "tradeoffsForYou": [
+      "No subway. The B61 bus and NYC Ferry are your lifelines.",
+      "Storm risk is not theoretical. Sandy is still in neighborhood memory.",
+      "Dining and grocery are limited. You'll plan around Fairway runs.",
+      "The isolation that brings calm also means fewer spontaneous options nearby."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:08.843Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tenafly": {
+    "fitProse": "Tenafly is too quiet for someone who wants NYC's optionality nearby. The 165/166 buses run often enough, but you're deep in Bergen County suburbia, and every errand wants a car. The Nature Center and Palisades are beautiful if you lean into the suburban bargain.",
+    "tradeoffsForYou": [
+      "Bus commute to Port Authority is 45+ minutes before you even reach the subway.",
+      "No walkable restaurant or bookstore cluster. Everything is a drive.",
+      "The calm is real, but so is the distance from spontaneous city energy.",
+      "You'll miss being able to walk to the train and decide where to go tonight."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:10.203Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "cresskill": {
+    "fitProse": "Cresskill is one of the quietest places within striking distance of Manhattan. Tree-lined single-family blocks, top-rated schools, and a bus to Port Authority when you need it. If you want calm plus optionality and you're willing to trade subway for bus, this fits.",
+    "tradeoffsForYou": [
+      "No subway. NJ Transit bus to Port Authority is your lifeline to the city.",
+      "Strict car dependence for everything except the commute.",
+      "No commercial center, so you drive to Fort Lee or Tenafly for dinner.",
+      "The quiet is real, but so is the distance from spontaneous city energy."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:14.197Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood": {
+    "fitProse": "Englewood offers the quiet residential blocks you want, with real parks (Flat Rock Brook is lovely) and an unexpectedly urban grain for a Bergen County town. But the lack of rail and car dependence means you're less connected to Manhattan's optionality than the calm-seeking urbanist usually prefers.",
+    "tradeoffsForYou": [
+      "No train. The 178/186 bus works, but it's not spontaneous access.",
+      "Day-to-day errands mean driving. Walkability exists in pockets only.",
+      "You gain space and quiet but lose the urban convenience that makes calm feel like a choice.",
+      "Character varies block by block. Some streets feel suburban, others genuinely urban."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:14.530Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "englewood-cliffs": {
+    "fitProse": "Englewood Cliffs is as quiet as the Palisades it sits on, which for a calm-seeking urbanist is both the point and the problem. The Hudson views and tree canopy are real, but the trade is a bus commute over the GW and a car for milk.",
+    "tradeoffsForYou": [
+      "The bus to Port Authority works, but it's not the subway. You'll feel it.",
+      "Zero street life. If you want a coffee, you're driving to Edgewater or Fort Lee.",
+      "Closer to suburb than city. The calm is absolute, maybe too much.",
+      "Beautiful if you're ready to give up walkability entirely."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:15.235Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "ridgewood-nj": {
+    "fitProse": "Ridgewood is quiet, green, and walkable in a way that lets you decompress without feeling marooned. The NJ Transit train to Penn is 50 minutes, but the tree-lined blocks and Graydon Park give you the birds-over-traffic mornings you want, and the downtown has real restaurants when you need them.",
+    "tradeoffsForYou": [
+      "The train is 50 minutes, not 30. You'll feel it on late work nights.",
+      "Off-peak service slows further. Weekend spontaneity into the city requires planning.",
+      "The suburban aesthetic is real. If you want urban grit nearby, this isn't it.",
+      "Premium pricing for the school/train combo, even if schools aren't your priority."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:16.461Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "millburn-short-hills": {
+    "fitProse": "Short Hills and Millburn deliver the quiet suburban scale you're after with Midtown Direct to Penn in 35 minutes. The tree-lined estates, South Mountain Reservation trails, and near-total absence of street noise make this about as calm as the metro gets while keeping the train.",
+    "tradeoffsForYou": [
+      "Among the most expensive suburbs in the region.",
+      "Socially conservative. Even with diversity, energy reads subdued.",
+      "You'll drive for spontaneity. Dining and culture live elsewhere.",
+      "Commute is real. 35 min on the train, plus frequency gaps off-peak."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:20.527Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "paramus": {
+    "fitProse": "Paramus is calm by design, but the calm is suburban, not urban. Your quiet residential street delivers on decompression, but the city as resource requires a 45-minute bus or a drive to the GW Bridge. This is restfulness without optionality nearby.",
+    "tradeoffsForYou": [
+      "You'll need a car for everything. The 144/164 buses exist but run infrequently.",
+      "Route 17 traffic is a daily friction, not an occasional inconvenience.",
+      "The energy you draw from is malls and parks, not neighborhoods or subway lines.",
+      "When you want the city tonight, it's a real trip, not a spontaneous ride."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:20.531Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "montclair": {
+    "fitProse": "Montclair is built for the calm-seeking urbanist who's ready to leave the city without leaving urbanism behind. The downtown is walkable, the train gets you to Penn in under an hour, and the residential blocks are genuinely quiet. You can hear birds, then walk to dinner and a film festival.",
+    "tradeoffsForYou": [
+      "Off-peak trains thin out. Evening returns can stretch past an hour.",
+      "Premium pricing. You pay for the culture and diversity combo.",
+      "It's a suburb, no matter how good the restaurants are.",
+      "The creative-class vibe can read as performative if that's not your scene."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:21.962Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "south-orange": {
+    "fitProse": "South Orange is built for the calm-seeking urbanist who wants walkable village life and a single-seat train. The blocks near South Mountain Reservation are quiet and tree-lined, the downtown has real restaurants and a performing arts center, and Midtown Direct gets you to Penn in 35 minutes when you need it.",
+    "tradeoffsForYou": [
+      "The train is your lifeline. Miss the last Midtown Direct and you'll feel it.",
+      "Block-by-block variance means you need to visit specific streets, not just the town.",
+      "Funkier and more diverse than Short Hills, but less polished if that matters to you.",
+      "You're choosing New Jersey calm over Manhattan proximity."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:26.410Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "summit": {
+    "fitProse": "Summit works if you want calm and NJ Transit can be your bridge to the city. The residential blocks are quiet, Watchung Reservation is close, and the downtown is walkable. But the Midtown Direct is 50 minutes, so the city becomes something you plan for, not something you stroll into.",
+    "tradeoffsForYou": [
+      "50-minute train each way means the city stops being spontaneous.",
+      "Suburban quiet is real, but you're trading urban proximity for it.",
+      "Family-heavy town. If you don't have kids, the vibe may feel borrowed.",
+      "Premium pricing for the school district you may not need yet."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:26.681Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westfield": {
+    "fitProse": "Westfield is almost too perfect for the calm-seeking urbanist. You get detached single-family homes on genuinely quiet blocks, Mindowaskin Park for morning walks, and the Raritan Valley Line to Penn when you need the city. It's suburban in shape but not in car dependence.",
+    "tradeoffsForYou": [
+      "The train to Penn can take over an hour depending on express schedules.",
+      "Downtown is pleasant but reads conservative. You're not bumping into artists.",
+      "You're definitively out of the city. This is New Jersey commuter country.",
+      "Premium for the combo of calm and access has climbed in recent years."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:27.606Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "maplewood": {
+    "fitProse": "Maplewood gives you the calm you want without feeling removed from the world. The village is walkable, South Mountain Reservation offers real trails, and Midtown Direct gets you to Penn in thirty minutes when you need the city. Quiet residential blocks with actual yards, but the train station is the center of gravity.",
+    "tradeoffsForYou": [
+      "You will lean on NJ Transit. Miss the last train and you're taking a car service.",
+      "Family density is high. Strollers and school talk dominate the village.",
+      "Housing has gotten expensive. The creative-class influx drove prices up.",
+      "Less urban texture than Brooklyn. The calm is real but the streets are suburban."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:31.319Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chatham-nj": {
+    "fitProse": "Chatham is quiet, green, and built around single-family homes on streets where you'll hear birds, not sirens. The Midtown Direct puts Penn Station fifty minutes away, so NYC remains on tap without living in it. Great Swamp NWR anchors the southern edge for actual nature walks.",
+    "tradeoffsForYou": [
+      "Fifty-minute train ride each way if you commute regularly.",
+      "Premium pricing for the calm and schools. You're paying top dollar.",
+      "Very suburban. If you want any urban texture, you reverse-commute.",
+      "The village center is pleasant but small. Not a destination."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:32.116Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "scarsdale": {
+    "fitProse": "Scarsdale is almost too calm, even for the calm-seeking urbanist. The Metro-North Harlem Line gets you to Grand Central in 30 to 40 minutes, the tree-lined blocks are gorgeous, but the trade is full suburban quiet. No corner bodega, no walk-up energy, just houses and schools.",
+    "tradeoffsForYou": [
+      "You're leaving walkable urbanism behind. This is car-dependent suburbia.",
+      "Metro-North is excellent, but you'll use it mainly for the commute, not spontaneity.",
+      "Scarsdale is calm by design, which may feel isolating if you miss street life.",
+      "Premium pricing reflects school quality and prestige, not urbanist amenities."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:32.748Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "bronxville": {
+    "fitProse": "Bronxville is a village built around quiet, and the Metro-North Harlem Line gets you to Grand Central in 25 minutes. The one-square-mile footprint means you can walk to the green, the train, and Stop & Shop without drowning in density. It's prestige-coded, family-heavy, and calm by design.",
+    "tradeoffsForYou": [
+      "One square mile. Your optionality is real but geographically tiny.",
+      "Premium pricing for a very small footprint.",
+      "Heavily family-oriented. You'll feel the stroller energy.",
+      "Cultural life is Sarah Lawrence and not much else."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:35.414Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "larchmont": {
+    "fitProse": "Larchmont is the calm-seeking urbanist's Westchester ideal. The village feels walkable and human-scaled, the Metro-North New Haven Line puts you in Grand Central in thirty minutes, and the quiet residential blocks deliver the tree-lined hush you need at home. The harbor and Manor Park give you nature without leaving town.",
+    "tradeoffsForYou": [
+      "You're buying into classic affluence. Pricing reflects that.",
+      "Off-peak trains slow down. Count on 40+ minutes sometimes.",
+      "Cultural energy is low. Manhattan is the draw, not the village.",
+      "Family infrastructure is everywhere, which is calm but also very settled."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:37.122Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rye": {
+    "fitProse": "Rye is what you get when you prize calm without losing the city entirely. The blocks near the Sound are genuinely quiet, the Metro-North to Grand Central runs reliably in 45 minutes, and the town feels settled in the best way. You can walk to coffee and know the train is an option, not a necessity.",
+    "tradeoffsForYou": [
+      "45-minute commute is real time if you do it daily.",
+      "Among Westchester's most expensive; estate-scale calm costs estate-scale money.",
+      "Downtown is pleasant but small. NYC remains the main draw for variety.",
+      "Country-club aesthetic; reads conservative if that's not your shape."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:38.388Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "mamaroneck": {
+    "fitProse": "Mamaroneck has the quiet residential blocks and harbor-walk calm you're looking for, plus Metro-North to Grand Central in under 40 minutes. The Sound Shore parks feel real, not ornamental, and the streets away from the Post Road offer the kind of bird-and-breeze morning you want.",
+    "tradeoffsForYou": [
+      "Block-by-block variance means you'll need to scout carefully for your calm pockets.",
+      "The train is the only transit. Miss it and you're stuck for an hour.",
+      "Post Road corridor is strip-mall suburban, not the walkable urbanism you may picture.",
+      "Less subway-adjacent optionality than Brooklyn or Queens quiet zones."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:38.837Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "pelham": {
+    "fitProse": "Pelham is one of the best suburban fits for a calm-seeking urbanist who wants NYC close but not under their window. Metro-North gets you to Grand Central in thirty minutes, the downtown is walkable and low-key, and the residential blocks are Tudor-lined and genuinely quiet.",
+    "tradeoffsForYou": [
+      "You're in Westchester. The energy you left behind is a train ride away, not a walk.",
+      "Premium pricing for the proximity. You pay for that 30-minute commute.",
+      "Small footprint means fewer dining or nightlife options than New Rochelle or Bronxville.",
+      "Classic-affluent vibe. If you're looking for edge or creative grit, this isn't it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:41.458Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "hastings-on-hudson": {
+    "fitProse": "Hastings-on-Hudson is one of the few places in the metro that delivers both calm and optionality without forcing you to pretend you still live in the city. The Hudson Line puts you in Grand Central in 35 minutes, the hills are quiet, and the waterfront park is the kind of place you actually use.",
+    "tradeoffsForYou": [
+      "Hudson Line is slower than Harlem Line towns, and trains run less frequently.",
+      "Hilly streets mean some errands require a car.",
+      "Premium pricing for river-view blocks and walkable downtown proximity.",
+      "You'll share the train with families. Lots of strollers, especially weekend mornings."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:42.931Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "dobbs-ferry": {
+    "fitProse": "Dobbs Ferry delivers calm by the water with real access. The Hudson Line puts you in Grand Central in about 40 minutes, the river views are no joke, and the downtown is walkable without being loud. You can hear the train whistle instead of car horns at night.",
+    "tradeoffsForYou": [
+      "Hudson Line is slower than the Harlem trains to the east.",
+      "Dining thins out quickly beyond Main Street.",
+      "Small footprint means fewer options within walking distance.",
+      "You'll drive more than you would in Brooklyn, even with Metro-North."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:43.909Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "irvington-ny": {
+    "fitProse": "Irvington is nearly perfect for the calm-seeking urbanist who's ready to leave the borough. The Hudson Line drops you at Grand Central in 45 minutes, the river views are real, and the residential streets have the kind of quiet you actually notice. The village is walkable but low-key.",
+    "tradeoffsForYou": [
+      "The hills are real. Some blocks require a car to reach the train.",
+      "Dining and nightlife are thin. This is a place to come home to, not go out from.",
+      "Premium pricing reflects the views and schools, even if you don't have kids yet.",
+      "You'll be surrounded by families. The infrastructure reflects it."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:45.502Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "tarrytown": {
+    "fitProse": "Tarrytown offers the calm-seeking urbanist a rare combination: genuine downtown walkability, the Metro-North Hudson Line to Grand Central, and quiet residential blocks with river views. You can decompress at home, stroll to Tarrytown Music Hall when you want culture, and know that Manhattan is an hour away when you need it.",
+    "tradeoffsForYou": [
+      "The Metro-North Hudson Line is reliable but not as frequent as subway service.",
+      "Bridge traffic can dominate certain streets, especially on summer weekends.",
+      "Tourist load peaks in fall (Sleepy Hollow season) and summer.",
+      "You'll be surrounded by family-trajectory households, not other urbanists."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:46.886Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "white-plains": {
+    "fitProse": "White Plains is a rare thing: a Westchester town where you can live in an apartment, walk to groceries, and still wake up to quiet residential blocks. Metro-North gets you to Grand Central in 40 minutes, and the urban intensity is low enough to actually feel restful.",
+    "tradeoffsForYou": [
+      "Downtown is commercial-suburban, not tree-lined village calm.",
+      "You're trading Westchester prestige for walkability and value.",
+      "The Harlem Line runs less often than the Hudson Line towns.",
+      "Quiet blocks exist, but you'll need to choose your building carefully."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:49.607Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "yonkers-ny": {
+    "fitProse": "Yonkers offers something rare: real quiet residential blocks, Hudson views, and Metro-North to Grand Central, all at prices that let you actually breathe. The river side feels suburban in a good way, birdsong included, but you're 35 minutes from Midtown when you need to be.",
+    "tradeoffsForYou": [
+      "Block-by-block variance is real. Scout carefully before committing.",
+      "Metro-North is less frequent than subway. Evening trains thin out.",
+      "You'll explain to friends that Yonkers has changed, repeatedly.",
+      "Prestige-conscious peers will side-eye the Westchester address."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:50.254Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "chappaqua": {
+    "fitProse": "Chappaqua is calm made geography. Hilly, quiet, tree-canopied streets with estate lots and almost no density. Metro-North to Grand Central in 50 minutes, then you step off the train into rural-residential silence. The city is always available, but never intrusive.",
+    "tradeoffsForYou": [
+      "50-minute train commute. You'll feel every minute on late evenings.",
+      "Car-dependent for everything outside the small village center.",
+      "Premium pricing reflects school prestige you may not need.",
+      "Suburban quiet can feel isolating if you're not anchored by family life."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:51.029Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "great-neck": {
+    "fitProse": "Great Neck is calm by design, with quiet residential blocks, proximity to Steppingstone Park, and a 25-minute LIRR to Penn when you need the city. The town reads affluent and family-anchored, but the train makes it feel more connected than most suburbs this far out.",
+    "tradeoffsForYou": [
+      "LIRR slows off-peak. If you miss the express, you'll feel every stop.",
+      "Culturally specific (Persian-Jewish, Korean). Rich but not neutral.",
+      "Premium pricing across single-family and co-ops alike.",
+      "Middle Neck Road is walkable, but you're still in car country for most errands."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:52.986Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "manhasset": {
+    "fitProse": "Manhasset is one of the best matches for the calm-seeking urbanist who wants a real backyard and the train. The LIRR puts you in Penn in thirty minutes, the blocks are quiet and tree-lined, and you have the city as a resource without living in its noise.",
+    "tradeoffsForYou": [
+      "Premium pricing. This is North Shore estate-suburb territory.",
+      "Almost no walkable dining or spontaneous street life.",
+      "Social fabric reads as conservative-affluent, less cosmopolitan.",
+      "You'll drive to groceries and most errands."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:54.884Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "port-washington": {
+    "fitProse": "Port Washington is exactly what a calm-seeking urbanist dreams of on the North Shore. The peninsula gives you water views, quiet blocks, and a genuine main street, and the LIRR puts Penn Station 35 minutes away when you need it. You can walk to coffee, hear birds, and still reach Manhattan by tonight.",
+    "tradeoffsForYou": [
+      "The commute is real. Thirty-five minutes sounds fine until you're doing it daily.",
+      "Dining beyond Main Street is thin. You'll cook at home more than you think.",
+      "It's a family-density zone. Expect strollers, school talk, and early bedtimes.",
+      "The terminus station means you always get a seat, but the last train matters."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:56.640Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "roslyn": {
+    "fitProse": "Roslyn offers something rare: genuine calm plus proximity to the city. The historic downtown has walkable coffee shops and restaurants, Roslyn Pond Park is lovely for a weekend walk, and when you want Manhattan you can drive to the LIRR. But this is fundamentally suburban, and day-to-day life requires a car.",
+    "tradeoffsForYou": [
+      "You'll drive to the train station. LIRR Albertson/Roslyn is the closest, but it's not walkable.",
+      "Car-dependent for groceries, errands, and everything else outside the small downtown.",
+      "The schools are nationally ranked, but you'll pay a premium for that district.",
+      "Quiet by design, which is the point, but the energy is more estate-scale than urban."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:57.205Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "garden-city": {
+    "fitProse": "Garden City offers exactly what the calm-seeking urbanist wants: wide, tree-lined residential blocks where the loudest thing is a sprinkler, plus the LIRR to Penn in 40 minutes when you need Manhattan. The Cathedral anchors the town center, the streets are silent after dark, and the bones are classic suburb done right.",
+    "tradeoffsForYou": [
+      "You're fully car-dependent. No bodega runs, no walkable errands after work.",
+      "The LIRR is reliable but it's a 40-minute commute each way.",
+      "Zero urban texture. If you want a coffee shop with strangers, you'll drive to one.",
+      "Culturally homogeneous and affluent-conservative in feel."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:17:59.216Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "rockville-centre": {
+    "fitProse": "Rockville Centre is rare on Long Island: a commuter town with an actual walkable downtown and quiet residential blocks a few streets over. The LIRR Babylon Branch runs direct to Penn in forty minutes, and you get real decompression space without sacrificing optionality.",
+    "tradeoffsForYou": [
+      "The LIRR is the only line. Off-peak trains slow and infrequent.",
+      "Downtown energy exists but it's family-coded, not urban-scene.",
+      "You're firmly in suburb mode. Manhattan is a commute, not a walk.",
+      "Closer cultural options live in the city, not locally."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:18:00.508Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "long-beach-ny": {
+    "fitProse": "Long Beach offers a rare setup: a genuinely walkable beach town with the LIRR to Penn in 50 minutes. You get ocean air, the boardwalk, and quiet residential blocks that empty out after Labor Day. The tradeoff is the commute and knowing hurricanes are real here.",
+    "tradeoffsForYou": [
+      "50 minutes on the LIRR is long but predictable. You'll read a lot.",
+      "Summer weekends bring crowds and parking chaos from day-trippers.",
+      "Storm risk is real. Sandy reshaped streets here, and you'll think about flood insurance.",
+      "Winters are quiet in the best way, but some amenities close or cut hours."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:18:02.853Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "greenwich": {
+    "fitProse": "Greenwich offers the calm-seeking urbanist a strange bargain: true estate-scale quiet, real parks, and Metro-North to Grand Central in fifty minutes. But day-to-day life is car-dependent, and the shape is country-club classic, not walkable-neighborhood serenity.",
+    "tradeoffsForYou": [
+      "You'll need a car for groceries and errands. The train doesn't replace one.",
+      "Fifty-minute commute is real time. You'll feel it daily.",
+      "The quiet is genuine, but the vibe reads conservative and prestige-coded.",
+      "Greenwich Avenue is pleasant, but it's not the kind of street life you walk into by accident."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:18:02.997Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "stamford": {
+    "fitProse": "Stamford offers something rare: a real commute to Grand Central (55 minutes on Metro-North) paired with quiet residential blocks where you can actually hear the birds. The newer high-rises downtown give you walkable dinner options, but the surrounding neighborhoods feel suburban in the best sense.",
+    "tradeoffsForYou": [
+      "Downtown energy is real but limited. Most evenings feel quiet by 9 PM.",
+      "The 55-minute train ride is reliable but long enough to notice daily.",
+      "Block-by-block variance means scouting carefully. Some blocks read pure suburb.",
+      "You'll want a car for anything beyond the downtown grid."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:18:05.135Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "darien": {
+    "fitProse": "Darien is deeply calm, which is exactly what you're looking for. The quiet is real (mornings and weekends both), you're on two acres instead of two rooms, and Metro-North puts you in Grand Central in an hour when you want the city. That commute is the price.",
+    "tradeoffsForYou": [
+      "The 60-minute train ride gets long when you're doing it five days a week.",
+      "Car-dependent for everything. No bodega runs, no spontaneous walks to dinner.",
+      "The quiet can feel heavy if you're used to background city hum.",
+      "Prestige is real, but so is the cost. Among CT's priciest towns."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:18:06.503Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "new-canaan": {
+    "fitProse": "New Canaan is calm by design. The architecture is extraordinary (the Glass House, mid-century stock), the estate-scale homes deliver the space you want, and Waveny Park feels like private land. But the Metro-North branch line requires a Stamford transfer, and the 75-minute ride is not a daily commute most urbanists sustain.",
+    "tradeoffsForYou": [
+      "You'll need a car for everything. Walkable downtown is small.",
+      "Branch-line transfer at Stamford adds friction and time.",
+      "The calm is real, but so is the distance from the city's pull.",
+      "This is a family suburb first. If you're pre-kids, you may feel early."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:18:09.097Z",
+    "model": "claude-sonnet-4-5"
+  },
+  "westport": {
+    "fitProse": "Westport offers the calm you're looking for: quiet residential blocks, actual beaches on the Sound, and a downtown where you can walk for errands without the crush of the city. Metro-North to Grand Central is real (75 minutes), which keeps your options open, but you're far enough out that home feels like a true retreat.",
+    "tradeoffsForYou": [
+      "75-minute commute means spontaneous evening plans in the city are off the table.",
+      "Premium pricing. You're paying for space, schools, and the beach.",
+      "Cultural ecosystem is light. The arts scene is real but modest compared to Brooklyn or even Maplewood.",
+      "If you crave city energy regularly, you'll feel the distance."
+    ],
+    "reviewedAt": null,
+    "reviewedBy": null,
+    "generatedAt": "2026-05-07T15:18:09.337Z",
+    "model": "claude-sonnet-4-5"
+  }
+}
