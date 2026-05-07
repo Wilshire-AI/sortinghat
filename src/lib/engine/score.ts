@@ -13,7 +13,6 @@ export const MUST_HAVE_FILTERS: Record<string, MustHaveFn> = {
   'subway-redundancy': (n) => (n.scores['transit-psychology'] ?? 0) >= 0.4,
   'walking-distance-park': (n) => (n.scores['environmental-openness'] ?? 0) >= 0.5,
   'top-schools': (n) => (n.scores['school-quality'] ?? 0) >= 0.7,
-  'calm-blocks': (n) => (n.scores['friction-sensitivity'] ?? 0) >= 0.5,
   'no-car': (n) => !n.carDependent,
   'house-or-townhouse': (n) =>
     !!n.housingTypes && (n.housingTypes.includes('single-family') || n.housingTypes.includes('townhouse')),

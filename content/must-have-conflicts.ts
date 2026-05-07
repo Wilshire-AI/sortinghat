@@ -25,11 +25,6 @@ export const MUST_HAVE_CONFLICTS: readonly MustHaveConflict[] = [
       'Heads up. Luxury highrises concentrate in Manhattan and Jersey City core, where top public schools are rare. Tough to combine.',
   },
   {
-    pair: ['luxury-highrise', 'calm-blocks'],
-    message:
-      'Heads up. Luxury highrises tend to sit in active, commercial areas. Hard to combine with whole-neighborhood calm.',
-  },
-  {
     pair: ['luxury-highrise', 'quiet-blocks-available'],
     message:
       'Heads up. Luxury highrises sit in busy, active neighborhoods where notable quiet enclaves are uncommon.',

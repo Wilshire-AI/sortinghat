@@ -50,7 +50,7 @@ export const questions: readonly Question[] = [
     kind: 'forced_choice',
     prompt: 'How important is having culturally familiar food, community, or language access in your daily life?',
     choices: [
-      { label: 'Essential. I want to feel at home.', impacts: { 'cultural-ecosystem': 0.8 } },
+      { label: 'Essential. I want it in daily reach.', impacts: { 'cultural-ecosystem': 0.8 } },
       { label: 'Nice but not necessary', impacts: { 'cultural-ecosystem': 0.2 } },
       { label: 'Not really a factor', impacts: { 'cultural-ecosystem': -0.5 } },
     ],
@@ -82,7 +82,7 @@ export const questions: readonly Question[] = [
     choices: [
       { label: 'Immersed. I want to bump into people doing things.', impacts: { 'creative-energy': 0.8, 'urban-intensity-tolerance': 0.3 } },
       { label: 'Access without immersion', impacts: { 'creative-energy': 0.1 } },
-      { label: 'Calm distance. I want to rest, not perform.', impacts: { 'creative-energy': -0.6, 'friction-sensitivity': 0.4 } },
+      { label: 'Calm distance. I want to wind down at home.', impacts: { 'creative-energy': -0.6, 'friction-sensitivity': 0.4 } },
     ],
   },
   {
@@ -102,7 +102,7 @@ export const questions: readonly Question[] = [
     choices: [
       { label: 'It needs to be smooth. Friction here ruins everything else.', impacts: { 'transit-psychology': 0.6, 'friction-sensitivity': 0.5 } },
       { label: 'I tune it out. Fine as long as it\'s not crazy.', impacts: { 'transit-psychology': -0.2 } },
-      { label: 'I work from home, so it\'s rarely a factor', impacts: { 'transit-psychology': -0.3, 'space-sensitivity': 0.3 } },
+      { label: 'I work from home, so it\'s rarely a factor', impacts: { 'space-sensitivity': 0.3 } },
     ],
   },
   {
@@ -126,9 +126,9 @@ export const questions: readonly Question[] = [
   {
     id: 'friction-tolerance',
     kind: 'slider',
-    prompt: 'Chaotic, gritty, high-friction daily environments drain me over time.',
+    prompt: 'Loud, crowded, hectic streets wear me down over time.',
     lowLabel: 'They don\'t bother me',
-    highLabel: 'They drain me',
+    highLabel: 'They wear me down',
     dimensionId: 'friction-sensitivity',
   },
   {
@@ -199,8 +199,7 @@ export const questions: readonly Question[] = [
       { value: 'house-or-townhouse', label: 'Single-family homes or townhouses available' },
       { value: 'luxury-highrise', label: 'Newer luxury high-rise (doorman, gym, modern fixtures)' },
       { value: 'top-schools', label: 'Top-rated zoned public schools' },
-      { value: 'calm-blocks', label: 'Calm overall (whole neighborhood is low-friction)' },
-      { value: 'quiet-blocks-available', label: 'A quiet residential block available, even if the neighborhood is busy' },
+      { value: 'quiet-blocks-available', label: 'A quiet residential block, even if the neighborhood is busy' },
       { value: 'family-infrastructure', label: 'Strong family-life infrastructure (playgrounds, kid-friendly streets, other families nearby)' },
       { value: 'no-car', label: 'Don\'t need a car for daily life' },
       { value: 'cultural-match', label: 'Cultural-community match (uses your earlier picks)' },
