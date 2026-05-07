@@ -54,6 +54,21 @@ describe('scoreNeighborhood (asymmetric_need dimensions)', () => {
   });
 });
 
+describe('family-infrastructure must-have filter', () => {
+  const dim: Dimension[] = sym3;
+  const withFlag = { ...n('with', { a: 0, b: 0, c: 0 }), hasFamilyInfrastructure: true };
+  const without = n('without', { a: 0, b: 0, c: 0 });
+
+  it('keeps neighborhoods with hasFamilyInfrastructure=true', () => {
+    const out = rankNeighborhoods({ a: 0, b: 0, c: 0 }, [withFlag, without], dim, 5, [], ['family-infrastructure']);
+    expect(out.map((r) => r.neighborhood.id)).toEqual(['with']);
+  });
+  it('drops neighborhoods with hasFamilyInfrastructure undefined', () => {
+    const out = rankNeighborhoods({ a: 0, b: 0, c: 0 }, [without], dim, 5, [], ['family-infrastructure']);
+    expect(out).toHaveLength(0);
+  });
+});
+
 describe('quiet-blocks-available must-have filter', () => {
   const dim: Dimension[] = sym3;
   const withFlag = { ...n('with', { a: 0, b: 0, c: 0 }), hasQuietBlocks: true };

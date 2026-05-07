@@ -125,6 +125,13 @@ export type Neighborhood = {
   // from `friction-sensitivity` (whole-neighborhood calm) — this captures
   // block-level refuge, including in mixed-energy neighborhoods.
   hasQuietBlocks?: boolean;
+  // True when the neighborhood has notable family-life infrastructure that
+  // makes daily life with kids meaningfully easier: playground density within
+  // walking distance, pediatric care access, kid-friendly third places,
+  // visible family cohort, stroller-friendly streets. Distinct from
+  // `school-quality` (a separate dimension) — this is about *infrastructure*
+  // of daily kid-life, not school district fit.
+  hasFamilyInfrastructure?: boolean;
   basePassages: {
     whyItFits: string;
     whoThrivesHere: string;

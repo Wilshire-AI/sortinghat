@@ -192,6 +192,7 @@ export const questions: readonly Question[] = [
       { value: 'top-schools', label: 'Top-rated zoned public schools' },
       { value: 'calm-blocks', label: 'Calm overall — whole neighborhood is low-friction' },
       { value: 'quiet-blocks-available', label: 'A quiet residential block available, even if the neighborhood is busy' },
+      { value: 'family-infrastructure', label: 'Strong family-life infrastructure (playgrounds, kid-friendly streets, family cohort)' },
       { value: 'no-car', label: 'Don\'t need a car for daily life' },
       { value: 'cultural-match', label: 'Cultural-community match (uses your earlier picks)' },
     ],

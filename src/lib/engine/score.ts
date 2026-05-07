@@ -19,6 +19,7 @@ export const MUST_HAVE_FILTERS: Record<string, MustHaveFn> = {
     !!n.housingTypes && (n.housingTypes.includes('single-family') || n.housingTypes.includes('townhouse')),
   'luxury-highrise': (n) => !!n.housingTypes && n.housingTypes.includes('luxury-highrise'),
   'quiet-blocks-available': (n) => n.hasQuietBlocks === true,
+  'family-infrastructure': (n) => n.hasFamilyInfrastructure === true,
   'cultural-match': (n, selectedTags) => {
     if (selectedTags.length === 0) return true; // user picked no tags; filter is no-op
     if (!n.culturalTags || n.culturalTags.length === 0) return false;
