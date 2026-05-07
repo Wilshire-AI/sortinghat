@@ -1,0 +1,1122 @@
+{
+  "upper-west-side": {
+    "src": "/images/neighborhoods/photos/upper-west-side.jpg",
+    "sourceTitle": "Upper West Side",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Upper_West_Side",
+    "commonsFile": "Upper_West_Side_2007.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Upper_West_Side_2007.jpg",
+    "artist": "Nmattson10 at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "upper-east-side": {
+    "src": "/images/neighborhoods/photos/upper-east-side.jpg",
+    "sourceTitle": "Upper East Side",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Upper_East_Side",
+    "commonsFile": "East_69th_Street_001.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:East_69th_Street_001.JPG",
+    "artist": "Gryffindor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "west-village": {
+    "src": "/images/neighborhoods/photos/west-village.jpg",
+    "sourceTitle": "West Village",
+    "sourceUrl": "https://en.wikipedia.org/wiki/West_Village",
+    "commonsFile": "2_Horatio_Street_NYC_Summer_from_the_North.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:2_Horatio_Street_NYC_Summer_from_the_North.jpg",
+    "artist": "WindingRoad",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "east-village": {
+    "src": "/images/neighborhoods/photos/east-village.jpg",
+    "sourceTitle": "East Village, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/East_Village%2C_Manhattan",
+    "commonsFile": "East_Village_Second_Avenue.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:East_Village_Second_Avenue.jpg",
+    "artist": "Postdlf",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "tribeca": {
+    "src": "/images/neighborhoods/photos/tribeca.jpg",
+    "sourceTitle": "Tribeca",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tribeca",
+    "commonsFile": "Tribeca,_New_York_(51521771723).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Tribeca%2C_New_York_(51521771723).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "fidi": {
+    "src": "/images/neighborhoods/photos/fidi.jpg",
+    "sourceTitle": "Financial District, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Financial_District%2C_Manhattan",
+    "commonsFile": "NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD.jpg",
+    "artist": "Fred Hsu on en.wikipedia",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "chelsea": {
+    "src": "/images/neighborhoods/photos/chelsea.jpg",
+    "sourceTitle": "Chelsea, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chelsea%2C_Manhattan",
+    "commonsFile": "Chelsea1217.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Chelsea1217.JPG",
+    "artist": "GK tramrunner229",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "gramercy": {
+    "src": "/images/neighborhoods/photos/gramercy.jpg",
+    "sourceTitle": "Gramercy Park",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Gramercy_Park",
+    "commonsFile": "Gramercy-park-2007.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Gramercy-park-2007.jpg",
+    "artist": "Dmadeo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "hells-kitchen": {
+    "src": "/images/neighborhoods/photos/hells-kitchen.jpg",
+    "sourceTitle": "Hell's Kitchen, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hell's_Kitchen%2C_Manhattan",
+    "commonsFile": "Ninth-ave-at-49th-st-facing-south.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Ninth-ave-at-49th-st-facing-south.jpg",
+    "artist": null,
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/"
+  },
+  "central-harlem": {
+    "src": "/images/neighborhoods/photos/central-harlem.jpg",
+    "sourceTitle": "Harlem",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Harlem",
+    "commonsFile": "Harlem_04.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Harlem_04.jpg",
+    "artist": "Momos",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "williamsburg": {
+    "src": "/images/neighborhoods/photos/williamsburg.jpg",
+    "sourceTitle": "Williamsburg, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Williamsburg%2C_Brooklyn",
+    "commonsFile": "WilliamsburgBK.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:WilliamsburgBK.jpg",
+    "artist": "Justicex07",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "park-slope": {
+    "src": "/images/neighborhoods/photos/park-slope.jpg",
+    "sourceTitle": "Park Slope",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Park_Slope",
+    "commonsFile": "ParkSlope.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:ParkSlope.JPG",
+    "artist": "Mikeruggy",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "brooklyn-heights": {
+    "src": "/images/neighborhoods/photos/brooklyn-heights.jpg",
+    "sourceTitle": "Brooklyn Heights",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Brooklyn_Heights",
+    "commonsFile": "Brooklyn_Heights_Townhouses.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Brooklyn_Heights_Townhouses.jpg",
+    "artist": "Rickbern",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "bed-stuy": {
+    "src": "/images/neighborhoods/photos/bed-stuy.jpg",
+    "sourceTitle": "Bedford–Stuyvesant, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bedford%E2%80%93Stuyvesant%2C_Brooklyn",
+    "commonsFile": "Bedstuybrownstone1.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Bedstuybrownstone1.jpg",
+    "artist": "Newyork10r at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "dumbo": {
+    "src": "/images/neighborhoods/photos/dumbo.jpg",
+    "sourceTitle": "Dumbo, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Dumbo%2C_Brooklyn",
+    "commonsFile": "DUMBO_Brooklyn,_as_seen_from_the_viewing_gallery_of_One_World_Trade_Center.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:DUMBO_Brooklyn%2C_as_seen_from_the_viewing_gallery_of_One_World_Trade_Center.jpg",
+    "artist": "Benhodgson",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "cobble-hill": {
+    "src": "/images/neighborhoods/photos/cobble-hill.jpg",
+    "sourceTitle": "Cobble Hill, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cobble_Hill%2C_Brooklyn",
+    "commonsFile": "Cobble_Hill_Historic_District.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Cobble_Hill_Historic_District.JPG",
+    "artist": "Michelb101",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "bushwick": {
+    "src": "/images/neighborhoods/photos/bushwick.jpg",
+    "sourceTitle": "Bushwick, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bushwick%2C_Brooklyn",
+    "commonsFile": "Knickerbocker_south_of_park.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Knickerbocker_south_of_park.jpg",
+    "artist": "Noremacmada at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "brighton-beach": {
+    "src": "/images/neighborhoods/photos/brighton-beach.jpg",
+    "sourceTitle": "Brighton Beach",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Brighton_Beach",
+    "commonsFile": "Downtown_Brighton_Beach_IMG_1762.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Brighton_Beach_IMG_1762.JPG",
+    "artist": "Billy Hathorn ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "sheepshead-bay": {
+    "src": "/images/neighborhoods/photos/sheepshead-bay.jpg",
+    "sourceTitle": "Sheepshead Bay, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sheepshead_Bay%2C_Brooklyn",
+    "commonsFile": "Sheepshead_Bay_footbridge_North_jeh.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Sheepshead_Bay_footbridge_North_jeh.JPG",
+    "artist": "Jim.henderson",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "long-island-city": {
+    "src": "/images/neighborhoods/photos/long-island-city.jpg",
+    "sourceTitle": "Long Island City",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Long_Island_City",
+    "commonsFile": "40th_Street_Lowery_Street_Station_024.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:40th_Street_Lowery_Street_Station_024.jpg",
+    "artist": "Kidfly182",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "astoria": {
+    "src": "/images/neighborhoods/photos/astoria.jpg",
+    "sourceTitle": "Astoria, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Astoria%2C_Queens",
+    "commonsFile": "Astoriaqueens33rdand31st.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Astoriaqueens33rdand31st.jpg",
+    "artist": "Emilymc25",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "flushing": {
+    "src": "/images/neighborhoods/photos/flushing.jpg",
+    "sourceTitle": "Flushing, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Flushing%2C_Queens",
+    "commonsFile": "Flushing,_Queens,_NY,_USA_-_panoramio_(1).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Flushing%2C_Queens%2C_NY%2C_USA_-_panoramio_(1).jpg",
+    "artist": "Raman Patel",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "forest-hills": {
+    "src": "/images/neighborhoods/photos/forest-hills.jpg",
+    "sourceTitle": "Forest Hills, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Forest_Hills%2C_Queens",
+    "commonsFile": "Forest_Hills_(March_2018).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Forest_Hills_(March_2018).jpg",
+    "artist": "Newyork718",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "riverdale": {
+    "src": "/images/neighborhoods/photos/riverdale.jpg",
+    "sourceTitle": "Riverdale, Bronx",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Riverdale%2C_Bronx",
+    "commonsFile": "Riverdale_Bell_Tower_jeh.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Riverdale_Bell_Tower_jeh.JPG",
+    "artist": "MyName ( Jim.henderson ( talk ))",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "hoboken": {
+    "src": "/images/neighborhoods/photos/hoboken.jpg",
+    "sourceTitle": "Hoboken, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hoboken%2C_New_Jersey",
+    "commonsFile": "Hoboken_November_2021_010.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Hoboken_November_2021_010.jpg",
+    "artist": "King of Hearts",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "jersey-city": {
+    "src": "/images/neighborhoods/photos/jersey-city.jpg",
+    "sourceTitle": "Jersey City, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jersey_City%2C_New_Jersey",
+    "commonsFile": "Journal_Square_Jersey_City_November_2021_003.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Journal_Square_Jersey_City_November_2021_003.jpg",
+    "artist": "King of Hearts",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "fort-lee": {
+    "src": "/images/neighborhoods/photos/fort-lee.jpg",
+    "sourceTitle": "Fort Lee, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Fort_Lee%2C_New_Jersey",
+    "commonsFile": "Fort_Lee_Park_Be_Fort_Lee_Sign.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Fort_Lee_Park_Be_Fort_Lee_Sign.jpg",
+    "artist": "RyeCityRoller",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "edgewater": {
+    "src": "/images/neighborhoods/photos/edgewater.jpg",
+    "sourceTitle": "Edgewater, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Edgewater%2C_New_Jersey",
+    "commonsFile": "Edgewater_development.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Edgewater_development.JPG",
+    "artist": "Hisland7",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "palisades-park": {
+    "src": "/images/neighborhoods/photos/palisades-park.jpg",
+    "sourceTitle": "Palisades Park, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Palisades_Park%2C_New_Jersey",
+    "commonsFile": "2021-09-19_15_16_52_View_north_along_Bergen_County_Route_501_(Central_Avenue)_from_the_overpass_for_U.S._Route_1,_U.S._Route_9_and_U.S._Route_46_in_Palisades_Park,_Bergen_County,_New_Jersey.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:2021-09-19_15_16_52_View_north_along_Bergen_County_Route_501_(Central_Avenue)_from_the_overpass_for_U.S._Route_1%2C_U.S._Route_9_and_U.S._Route_46_in_Palisades_Park%2C_Bergen_County%2C_New_Jersey.jpg",
+    "artist": "Famartin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "lower-east-side": {
+    "src": "/images/neighborhoods/photos/lower-east-side.jpg",
+    "sourceTitle": "Lower East Side",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Lower_East_Side",
+    "commonsFile": "Orchard_St_looking_south_at_Rivington_St.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Orchard_St_looking_south_at_Rivington_St.jpg",
+    "artist": null,
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "east-harlem": {
+    "src": "/images/neighborhoods/photos/east-harlem.jpg",
+    "sourceTitle": "East Harlem",
+    "sourceUrl": "https://en.wikipedia.org/wiki/East_Harlem",
+    "commonsFile": "East_Harlem_Skyline_(48200097101).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:East_Harlem_Skyline_(48200097101).jpg",
+    "artist": "Ajay Suresh from New York, NY, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "hamilton-heights": {
+    "src": "/images/neighborhoods/photos/hamilton-heights.jpg",
+    "sourceTitle": "Hamilton Heights, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hamilton_Heights%2C_Manhattan",
+    "commonsFile": "Mt_Calvary_Meth_Edgecomb_146_jeh.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Mt_Calvary_Meth_Edgecomb_146_jeh.JPG",
+    "artist": "Jim.henderson",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "washington-heights": {
+    "src": "/images/neighborhoods/photos/washington-heights.jpg",
+    "sourceTitle": "Washington Heights, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Washington_Heights%2C_Manhattan",
+    "commonsFile": "George_Washington_Bridge,_HAER_NY-129-68.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:George_Washington_Bridge%2C_HAER_NY-129-68.jpg",
+    "artist": "Jet Lowe",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "inwood": {
+    "src": "/images/neighborhoods/photos/inwood.jpg",
+    "sourceTitle": "Inwood, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Inwood%2C_Manhattan",
+    "commonsFile": "2018_Fort_Tryon_Park_-_view_of_Inwood_and_the_Bronx.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:2018_Fort_Tryon_Park_-_view_of_Inwood_and_the_Bronx.jpg",
+    "artist": "Beyond My Ken",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "morningside-heights": {
+    "src": "/images/neighborhoods/photos/morningside-heights.jpg",
+    "sourceTitle": "Morningside Heights",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Morningside_Heights",
+    "commonsFile": "West_116th_Street_-_Morningside.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:West_116th_Street_-_Morningside.jpg",
+    "artist": "Petri Krohn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "lincoln-square": {
+    "src": "/images/neighborhoods/photos/lincoln-square.jpg",
+    "sourceTitle": "Lincoln Square, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Lincoln_Square%2C_Manhattan",
+    "commonsFile": "Lincoln_Square_Neighborhood_Center_jeh.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Square_Neighborhood_Center_jeh.JPG",
+    "artist": "Jim.henderson",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "manhattan-valley": {
+    "src": "/images/neighborhoods/photos/manhattan-valley.jpg",
+    "sourceTitle": "Manhattan Valley",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Manhattan_Valley",
+    "commonsFile": "New_York_Cancer_Hospital_Panoramic.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:New_York_Cancer_Hospital_Panoramic.JPG",
+    "artist": "Sarah Javier",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "yorkville": {
+    "src": "/images/neighborhoods/photos/yorkville.jpg",
+    "sourceTitle": "Yorkville, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Yorkville%2C_Manhattan",
+    "commonsFile": "Yorkville_NYC_from_87th_St.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Yorkville_NYC_from_87th_St.jpg",
+    "artist": "The original uploader was Leifern at English Wikipedia .",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "carnegie-hill": {
+    "src": "/images/neighborhoods/photos/carnegie-hill.jpg",
+    "sourceTitle": "Carnegie Hill",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Carnegie_Hill",
+    "commonsFile": "Cooper_Hewitt_(48059131921).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Cooper_Hewitt_(48059131921).jpg",
+    "artist": "Ajay Suresh from New York, NY, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "manhattanville": {
+    "src": "/images/neighborhoods/photos/manhattanville.jpg",
+    "sourceTitle": "Manhattanville, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Manhattanville%2C_Manhattan",
+    "commonsFile": "Subway_elevated2.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Subway_elevated2.jpg",
+    "artist": "Daniel Schwen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "midtown-east": {
+    "src": "/images/neighborhoods/photos/midtown-east.jpg",
+    "sourceTitle": "Midtown Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Midtown_Manhattan",
+    "commonsFile": "West_side_of_Manhattan_from_Hudson_Commons_(95103p).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:West_side_of_Manhattan_from_Hudson_Commons_(95103p).jpg",
+    "artist": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "stuyvesant-town": {
+    "src": "/images/neighborhoods/photos/stuyvesant-town.jpg",
+    "sourceTitle": "Stuyvesant Town–Peter Cooper Village",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Stuyvesant_Town%E2%80%93Peter_Cooper_Village",
+    "commonsFile": "StuyTown.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:StuyTown.jpg",
+    "artist": "David Shankbone",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+  },
+  "murray-hill": {
+    "src": "/images/neighborhoods/photos/murray-hill.jpg",
+    "sourceTitle": "Murray Hill, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Murray_Hill%2C_Manhattan",
+    "commonsFile": "Lexington_and_E_36th.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Lexington_and_E_36th.jpg",
+    "artist": "1103 NYC",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "greenwich-village": {
+    "src": "/images/neighborhoods/photos/greenwich-village.jpg",
+    "sourceTitle": "Greenwich Village",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Greenwich_Village",
+    "commonsFile": "Greenwich_Village_(27483343909).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Greenwich_Village_(27483343909).jpg",
+    "artist": "Felix Stahlberg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "soho": {
+    "src": "/images/neighborhoods/photos/soho.jpg",
+    "sourceTitle": "SoHo, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/SoHo%2C_Manhattan",
+    "commonsFile": "Cast_Iron_Grand_Crosby_jeh_crop.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Cast_Iron_Grand_Crosby_jeh_crop.jpg",
+    "artist": "Jim.henderson ; cropped by Beyond My Ken ( talk ) 05:00, 19 June 2011 (UTC)",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "chinatown": {
+    "src": "/images/neighborhoods/photos/chinatown.jpg",
+    "sourceTitle": "Chinatown, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chinatown%2C_Manhattan",
+    "commonsFile": "2024-05-20_13_32_04_View_west_along_East_Broadway_from_the_Manhattan_Bridge_in_Manhattan,_New_York_City,_New_York.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:2024-05-20_13_32_04_View_west_along_East_Broadway_from_the_Manhattan_Bridge_in_Manhattan%2C_New_York_City%2C_New_York.jpg",
+    "artist": "Famartin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "weehawken-port-imperial": {
+    "src": "/images/neighborhoods/photos/weehawken-port-imperial.jpg",
+    "sourceTitle": "Weehawken, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Weehawken%2C_New_Jersey",
+    "commonsFile": "Lincoln_Tunnel_Helix_Ventilation_Towers.png",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Tunnel_Helix_Ventilation_Towers.png",
+    "artist": "StSeanSpicer",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "greenpoint": {
+    "src": "/images/neighborhoods/photos/greenpoint.jpg",
+    "sourceTitle": "Greenpoint, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Greenpoint%2C_Brooklyn",
+    "commonsFile": "735_Manhattan_Av_Grnpt_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:735_Manhattan_Av_Grnpt_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "bay-ridge": {
+    "src": "/images/neighborhoods/photos/bay-ridge.jpg",
+    "sourceTitle": "Bay Ridge, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bay_Ridge%2C_Brooklyn",
+    "commonsFile": "Bay_Ridge_Parkway_Row_Houses.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Bay_Ridge_Parkway_Row_Houses.jpg",
+    "artist": "Prospect1997",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "crown-heights": {
+    "src": "/images/neighborhoods/photos/crown-heights.jpg",
+    "sourceTitle": "Crown Heights",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Crown_Heights",
+    "commonsFile": "SpringMorningFront.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:SpringMorningFront.jpg",
+    "artist": "http://www.cyntconnors.com/SterlingPlace/index.html uploaded on wikipedia by [1]",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "prospect-heights": {
+    "src": "/images/neighborhoods/photos/prospect-heights.jpg",
+    "sourceTitle": "Prospect Heights, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Prospect_Heights%2C_Brooklyn",
+    "commonsFile": "Prospect_Heights,_Brooklyn_(52301271752).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Prospect_Heights%2C_Brooklyn_(52301271752).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "fort-greene": {
+    "src": "/images/neighborhoods/photos/fort-greene.jpg",
+    "sourceTitle": "Fort Greene, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Fort_Greene%2C_Brooklyn",
+    "commonsFile": "144_South_Oxford_Street.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:144_South_Oxford_Street.jpg",
+    "artist": "Beyond My Ken",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "clinton-hill": {
+    "src": "/images/neighborhoods/photos/clinton-hill.jpg",
+    "sourceTitle": "Clinton Hill, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Clinton_Hill%2C_Brooklyn",
+    "commonsFile": "Underwood_Park_Brooklyn_1302.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Underwood_Park_Brooklyn_1302.JPG",
+    "artist": "Gryffindor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "east-williamsburg": {
+    "src": "/images/neighborhoods/photos/east-williamsburg.jpg",
+    "sourceTitle": "East Williamsburg, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/East_Williamsburg%2C_Brooklyn",
+    "commonsFile": "Knickerbocker_north.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Knickerbocker_north.jpg",
+    "artist": "Noremacmada at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "ditmas-park": {
+    "src": "/images/neighborhoods/photos/ditmas-park.jpg",
+    "sourceTitle": "Ditmas Park, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ditmas_Park%2C_Brooklyn",
+    "commonsFile": "Ditmas_Av_Rugby_Rd_house_sunny_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Ditmas_Av_Rugby_Rd_house_sunny_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "prospect-lefferts-gardens": {
+    "src": "/images/neighborhoods/photos/prospect-lefferts-gardens.jpg",
+    "sourceTitle": "Prospect Lefferts Gardens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Prospect_Lefferts_Gardens",
+    "commonsFile": "Prospect_Lefferts_Gardens_from_balcony.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Prospect_Lefferts_Gardens_from_balcony.jpg",
+    "artist": "Plognyc",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "windsor-terrace": {
+    "src": "/images/neighborhoods/photos/windsor-terrace.jpg",
+    "sourceTitle": "Windsor Terrace, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Windsor_Terrace%2C_Brooklyn",
+    "commonsFile": "Engine_Company_240_Battalion_48_Windsor_Terrace.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Engine_Company_240_Battalion_48_Windsor_Terrace.jpg",
+    "artist": "Beyond My Ken",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "sunnyside": {
+    "src": "/images/neighborhoods/photos/sunnyside.jpg",
+    "sourceTitle": "Sunnyside, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sunnyside%2C_Queens",
+    "commonsFile": "Sunnyside-46th-St.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Sunnyside-46th-St.jpg",
+    "artist": "Mpcoder",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "woodside": {
+    "src": "/images/neighborhoods/photos/woodside.jpg",
+    "sourceTitle": "Woodside, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Woodside%2C_Queens",
+    "commonsFile": "Childs_Woodside_5937_Queens_Blvd_03.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Childs_Woodside_5937_Queens_Blvd_03.JPG",
+    "artist": "Peter Greenberg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "ridgewood": {
+    "src": "/images/neighborhoods/photos/ridgewood.jpg",
+    "sourceTitle": "Ridgewood, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ridgewood%2C_Queens",
+    "commonsFile": "MyrtleAvenue.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:MyrtleAvenue.jpg",
+    "artist": "EddieSegoura at en.wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "rego-park": {
+    "src": "/images/neighborhoods/photos/rego-park.jpg",
+    "sourceTitle": "Rego Park",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Rego_Park",
+    "commonsFile": "Rego_Park_Jewish_Center_03.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Rego_Park_Jewish_Center_03.JPG",
+    "artist": "Peter Greenberg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "kew-gardens": {
+    "src": "/images/neighborhoods/photos/kew-gardens.jpg",
+    "sourceTitle": "Kew Gardens, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kew_Gardens%2C_Queens",
+    "commonsFile": "KewGardensLeffertsBlvd.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:KewGardensLeffertsBlvd.jpg",
+    "artist": "Newyorker1987",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "bayside": {
+    "src": "/images/neighborhoods/photos/bayside.jpg",
+    "sourceTitle": "Bayside, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bayside%2C_Queens",
+    "commonsFile": "Bell_Boulevard_at_Northern_Boulevard_in_Bayside.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Bell_Boulevard_at_Northern_Boulevard_in_Bayside.jpg",
+    "artist": "DoomDan515 at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "jackson-heights": {
+    "src": "/images/neighborhoods/photos/jackson-heights.jpg",
+    "sourceTitle": "Jackson Heights",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jackson_Heights",
+    "commonsFile": "74th_St_shopping_Jax_Hts_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:74th_St_shopping_Jax_Hts_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "elmhurst": {
+    "src": "/images/neighborhoods/photos/elmhurst.jpg",
+    "sourceTitle": "Elmhurst, Queens",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Elmhurst%2C_Queens",
+    "commonsFile": "Woodhaven_Bl_Qns_Bl_td_06_-_Queens_Center.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Woodhaven_Bl_Qns_Bl_td_06_-_Queens_Center.jpg",
+    "artist": "Tdorante10",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "battery-park-city": {
+    "src": "/images/neighborhoods/photos/battery-park-city.jpg",
+    "sourceTitle": "Battery Park City",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Battery_Park_City",
+    "commonsFile": "Battery_Park_City_2020.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Battery_Park_City_2020.jpg",
+    "artist": "Chris6d",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "hudson-yards": {
+    "src": "/images/neighborhoods/photos/hudson-yards.jpg",
+    "sourceTitle": "Hudson Yards, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hudson_Yards%2C_Manhattan",
+    "commonsFile": "Midtown_Manhattan_from_Weehawken_September_2021_HDR.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Midtown_Manhattan_from_Weehawken_September_2021_HDR.jpg",
+    "artist": "King of Hearts",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "roosevelt-island": {
+    "src": "/images/neighborhoods/photos/roosevelt-island.jpg",
+    "sourceTitle": "Roosevelt Island",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Roosevelt_Island",
+    "commonsFile": "20170721_Gotham_Shield_NYC_Aerials-221_medium.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:20170721_Gotham_Shield_NYC_Aerials-221_medium.jpg",
+    "artist": "FEMA/Kenneth Wilsey",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "nolita-little-italy": {
+    "src": "/images/neighborhoods/photos/nolita-little-italy.jpg",
+    "sourceTitle": "Little Italy, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Little_Italy%2C_Manhattan",
+    "commonsFile": "Little_Italy_-_Manhattan_(51624758690).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Little_Italy_-_Manhattan_(51624758690).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "flatiron-nomad": {
+    "src": "/images/neighborhoods/photos/flatiron-nomad.jpg",
+    "sourceTitle": "NoMad, Manhattan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/NoMad%2C_Manhattan",
+    "commonsFile": "Gilsey_House_Hotel_1200_Broadway.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Gilsey_House_Hotel_1200_Broadway.jpg",
+    "artist": "Beyond My Ken",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "boerum-hill": {
+    "src": "/images/neighborhoods/photos/boerum-hill.jpg",
+    "sourceTitle": "Boerum Hill",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Boerum_Hill",
+    "commonsFile": "Boerum_Hill_rowhouses.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Boerum_Hill_rowhouses.jpg",
+    "artist": "Zach",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "carroll-gardens": {
+    "src": "/images/neighborhoods/photos/carroll-gardens.jpg",
+    "sourceTitle": "Carroll Gardens, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Carroll_Gardens%2C_Brooklyn",
+    "commonsFile": "Carroll_Gardens_Clin4_gardens_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Carroll_Gardens_Clin4_gardens_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "gowanus": {
+    "src": "/images/neighborhoods/photos/gowanus.jpg",
+    "sourceTitle": "Gowanus, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Gowanus%2C_Brooklyn",
+    "commonsFile": "Gowanus,_Brooklyn.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Gowanus%2C_Brooklyn.jpg",
+    "artist": "JohnOwensCT",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "red-hook": {
+    "src": "/images/neighborhoods/photos/red-hook.jpg",
+    "sourceTitle": "Red Hook, Brooklyn",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Red_Hook%2C_Brooklyn",
+    "commonsFile": "RH_Houses_East_Lorraine_eve_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:RH_Houses_East_Lorraine_eve_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "tenafly": {
+    "src": "/images/neighborhoods/photos/tenafly.jpg",
+    "sourceTitle": "Tenafly, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tenafly%2C_New_Jersey",
+    "commonsFile": "THEODORE_ROOSEVELT_MONUMENT,_TENAFLY,_BERGEN_COUNTY.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:THEODORE_ROOSEVELT_MONUMENT%2C_TENAFLY%2C_BERGEN_COUNTY.jpg",
+    "artist": "JERRYE &amp; ROY KLOTZ, M.D.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "englewood": {
+    "src": "/images/neighborhoods/photos/englewood.jpg",
+    "sourceTitle": "Englewood, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Englewood%2C_New_Jersey",
+    "commonsFile": "Downtown_Englewood,_NJ.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Englewood%2C_NJ.jpg",
+    "artist": "Dinker022089",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "englewood-cliffs": {
+    "src": "/images/neighborhoods/photos/englewood-cliffs.jpg",
+    "sourceTitle": "Englewood Cliffs, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Englewood_Cliffs%2C_New_Jersey",
+    "commonsFile": "Rockefeller_Overlook,_Palisades_Interstate_Parkway,_Englewood_Cliffs,_New_Jersey_-_20200907_-_02.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Rockefeller_Overlook%2C_Palisades_Interstate_Parkway%2C_Englewood_Cliffs%2C_New_Jersey_-_20200907_-_02.jpg",
+    "artist": "Andre Carrotflower",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "cresskill": {
+    "src": "/images/neighborhoods/photos/cresskill.jpg",
+    "sourceTitle": "Cresskill, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cresskill%2C_New_Jersey",
+    "commonsFile": "Union_Avenue,_Cresskill,_New_Jersey.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Union_Avenue%2C_Cresskill%2C_New_Jersey.jpg",
+    "artist": "Superdoglogan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "ridgewood-nj": {
+    "src": "/images/neighborhoods/photos/ridgewood-nj.jpg",
+    "sourceTitle": "Ridgewood, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ridgewood%2C_New_Jersey",
+    "commonsFile": "VAN_DIEN_HOUSE,_RIDGEWOOD,_BERGEN_COUNTY.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:VAN_DIEN_HOUSE%2C_RIDGEWOOD%2C_BERGEN_COUNTY.jpg",
+    "artist": "J",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "paramus": {
+    "src": "/images/neighborhoods/photos/paramus.jpg",
+    "sourceTitle": "Paramus, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Paramus%2C_New_Jersey",
+    "commonsFile": "2021-07-31_10_36_18_View_south_along_New_Jersey_State_Route_17_from_the_overpass_for_the_ramp_to_New_Jersey_State_Route_4_(MacKay_Highway)_in_Paramus,_Bergen_County,_New_Jersey.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:2021-07-31_10_36_18_View_south_along_New_Jersey_State_Route_17_from_the_overpass_for_the_ramp_to_New_Jersey_State_Route_4_(MacKay_Highway)_in_Paramus%2C_Bergen_County%2C_New_Jersey.jpg",
+    "artist": "Famartin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "maplewood": {
+    "src": "/images/neighborhoods/photos/maplewood.jpg",
+    "sourceTitle": "Maplewood, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Maplewood%2C_New_Jersey",
+    "commonsFile": "Maplewood_Municipal_Bldg_jeh.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Maplewood_Municipal_Bldg_jeh.JPG",
+    "artist": "Jim.henderson",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "millburn-short-hills": {
+    "src": "/images/neighborhoods/photos/millburn-short-hills.jpg",
+    "sourceTitle": "Millburn, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Millburn%2C_New_Jersey",
+    "commonsFile": "Paper_Mill_Playhouse_entrance.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Paper_Mill_Playhouse_entrance.jpg",
+    "artist": "Goldfishbutt",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "montclair": {
+    "src": "/images/neighborhoods/photos/montclair.jpg",
+    "sourceTitle": "Montclair, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Montclair%2C_New_Jersey",
+    "commonsFile": "The_Anchorage,_Montclair,_New_Jersey.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:The_Anchorage%2C_Montclair%2C_New_Jersey.jpg",
+    "artist": "Jrogers123",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "south-orange": {
+    "src": "/images/neighborhoods/photos/south-orange.jpg",
+    "sourceTitle": "South Orange, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/South_Orange%2C_New_Jersey",
+    "commonsFile": "So_Orange_Av_tower_jeh.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:So_Orange_Av_tower_jeh.JPG",
+    "artist": "Jim.henderson",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "summit": {
+    "src": "/images/neighborhoods/photos/summit.jpg",
+    "sourceTitle": "Summit, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Summit%2C_New_Jersey",
+    "commonsFile": "SummitDowntownSep.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:SummitDowntownSep.jpg",
+    "artist": "AZacharyZ",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "westfield": {
+    "src": "/images/neighborhoods/photos/westfield.jpg",
+    "sourceTitle": "Westfield, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Westfield%2C_New_Jersey",
+    "commonsFile": "Downtown_Westfield_(January_2026).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Westfield_(January_2026).jpg",
+    "artist": "Freeholdman12",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "chatham-nj": {
+    "src": "/images/neighborhoods/photos/chatham-nj.jpg",
+    "sourceTitle": "Chatham, New Jersey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chatham%2C_New_Jersey",
+    "commonsFile": "ChathamBoro.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:ChathamBoro.jpg",
+    "artist": "NABFNJ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "scarsdale": {
+    "src": "/images/neighborhoods/photos/scarsdale.jpg",
+    "sourceTitle": "Scarsdale, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Scarsdale%2C_New_York",
+    "commonsFile": "Scarsdale,_NY_(54741801357).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Scarsdale%2C_NY_(54741801357).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "bronxville": {
+    "src": "/images/neighborhoods/photos/bronxville.jpg",
+    "sourceTitle": "Bronxville, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bronxville%2C_New_York",
+    "commonsFile": "Bronxville,_NY_(54548251293).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Bronxville%2C_NY_(54548251293).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "larchmont": {
+    "src": "/images/neighborhoods/photos/larchmont.jpg",
+    "sourceTitle": "Larchmont, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Larchmont%2C_New_York",
+    "commonsFile": "Larchmont_Yacht_Club.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Larchmont_Yacht_Club.jpg",
+    "artist": "Thunderbombman",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "rye": {
+    "src": "/images/neighborhoods/photos/rye.jpg",
+    "sourceTitle": "Rye, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Rye%2C_New_York",
+    "commonsFile": "The_Jay_Estate_in_Rye,_NY.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:The_Jay_Estate_in_Rye%2C_NY.jpg",
+    "artist": "JayHeritageCenter",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "mamaroneck": {
+    "src": "/images/neighborhoods/photos/mamaroneck.jpg",
+    "sourceTitle": "Mamaroneck, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mamaroneck%2C_New_York",
+    "commonsFile": "137-3779_IMG_(14938234).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:137-3779_IMG_(14938234).jpg",
+    "artist": "WalkingGeek from Westport, CT, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "pelham": {
+    "src": "/images/neighborhoods/photos/pelham.jpg",
+    "sourceTitle": "Pelham, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Pelham%2C_New_York",
+    "commonsFile": "Clock_tower_on_harmom.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Clock_tower_on_harmom.jpg",
+    "artist": "Cliffy from Pelham, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "hastings-on-hudson": {
+    "src": "/images/neighborhoods/photos/hastings-on-hudson.jpg",
+    "sourceTitle": "Hastings-on-Hudson, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hastings-on-Hudson%2C_New_York",
+    "commonsFile": "Hastings_Munic_Bldg_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Hastings_Munic_Bldg_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "dobbs-ferry": {
+    "src": "/images/neighborhoods/photos/dobbs-ferry.jpg",
+    "sourceTitle": "Dobbs Ferry, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Dobbs_Ferry%2C_New_York",
+    "commonsFile": "Dobbs_Ferry_welcome_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Dobbs_Ferry_welcome_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "irvington-ny": {
+    "src": "/images/neighborhoods/photos/irvington-ny.jpg",
+    "sourceTitle": "Irvington, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Irvington%2C_New_York",
+    "commonsFile": "Irvington_Town_Hall.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Irvington_Town_Hall.jpg",
+    "artist": "Daryl Samuel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "tarrytown": {
+    "src": "/images/neighborhoods/photos/tarrytown.jpg",
+    "sourceTitle": "Tarrytown, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tarrytown%2C_New_York",
+    "commonsFile": "Tarrytown_Main_Street.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Tarrytown_Main_Street.jpg",
+    "artist": "Irina S.B.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "white-plains": {
+    "src": "/images/neighborhoods/photos/white-plains.jpg",
+    "sourceTitle": "White Plains, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/White_Plains%2C_New_York",
+    "commonsFile": "City_of_White_Plains,_Jul_2012.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:City_of_White_Plains%2C_Jul_2012.jpg",
+    "artist": "Steve Carrea",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "yonkers-ny": {
+    "src": "/images/neighborhoods/photos/yonkers-ny.jpg",
+    "sourceTitle": "Yonkers, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Yonkers%2C_New_York",
+    "commonsFile": "Yonkers,_NY_(53566551424).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Yonkers%2C_NY_(53566551424).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "chappaqua": {
+    "src": "/images/neighborhoods/photos/chappaqua.jpg",
+    "sourceTitle": "Chappaqua, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chappaqua%2C_New_York",
+    "commonsFile": "Chappaqua_(53623120987).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Chappaqua_(53623120987).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "great-neck": {
+    "src": "/images/neighborhoods/photos/great-neck.jpg",
+    "sourceTitle": "Great Neck, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Great_Neck%2C_New_York",
+    "commonsFile": "Middle_Neck_Road,_Great_Neck,_New_York.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Middle_Neck_Road%2C_Great_Neck%2C_New_York.jpg",
+    "artist": "D. Benjamin Miller",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "manhasset": {
+    "src": "/images/neighborhoods/photos/manhasset.jpg",
+    "sourceTitle": "Manhasset, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Manhasset%2C_New_York",
+    "commonsFile": "Plandome_Road,_Manhasset,_NY_August_18,_2022_F.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Plandome_Road%2C_Manhasset%2C_NY_August_18%2C_2022_F.jpg",
+    "artist": "AITFFan1",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "port-washington": {
+    "src": "/images/neighborhoods/photos/port-washington.jpg",
+    "sourceTitle": "Port Washington, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Port_Washington%2C_New_York",
+    "commonsFile": "Main_Street,_Port_Washington,_NY_September_31,_2022_D.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Main_Street%2C_Port_Washington%2C_NY_September_31%2C_2022_D.jpg",
+    "artist": "AITFFan1",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "roslyn": {
+    "src": "/images/neighborhoods/photos/roslyn.jpg",
+    "sourceTitle": "Roslyn, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Roslyn%2C_New_York",
+    "commonsFile": "Downtown_Roslyn,_Long_Island,_New_York_October_17,_2020.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Roslyn%2C_Long_Island%2C_New_York_October_17%2C_2020.jpg",
+    "artist": "LINYperson615",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "garden-city": {
+    "src": "/images/neighborhoods/photos/garden-city.jpg",
+    "sourceTitle": "Garden City, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Garden_City%2C_New_York",
+    "commonsFile": "Franklin_Avenue,_Garden_City,_NY_May_3,_2026_C.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Franklin_Avenue%2C_Garden_City%2C_NY_May_3%2C_2026_C.jpg",
+    "artist": "Infrastorian",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "rockville-centre": {
+    "src": "/images/neighborhoods/photos/rockville-centre.jpg",
+    "sourceTitle": "Rockville Centre, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Rockville_Centre%2C_New_York",
+    "commonsFile": "Eugene_J._Murray_Village_Hall.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Eugene_J._Murray_Village_Hall.jpg",
+    "artist": "Farragutful",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "long-beach-ny": {
+    "src": "/images/neighborhoods/photos/long-beach-ny.jpg",
+    "sourceTitle": "Long Beach, New York",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Long_Beach%2C_New_York",
+    "commonsFile": "Aerial_photograph_of_Long_Beach,_NY_and_environs_from_the_WSW.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Long_Beach%2C_NY_and_environs_from_the_WSW.jpg",
+    "artist": "Christopher Michel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "greenwich": {
+    "src": "/images/neighborhoods/photos/greenwich.jpg",
+    "sourceTitle": "Greenwich, Connecticut",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Greenwich%2C_Connecticut",
+    "commonsFile": "Greenwich,_Connecticut_skyline.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Greenwich%2C_Connecticut_skyline.jpg",
+    "artist": "Quintin Soloviev",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "stamford": {
+    "src": "/images/neighborhoods/photos/stamford.jpg",
+    "sourceTitle": "Stamford, Connecticut",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Stamford%2C_Connecticut",
+    "commonsFile": "Stamford,_CT_(cropped).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Stamford%2C_CT_(cropped).jpg",
+    "artist": "Quintin Soloviev",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "darien": {
+    "src": "/images/neighborhoods/photos/darien.jpg",
+    "sourceTitle": "Darien, Connecticut",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Darien%2C_Connecticut",
+    "commonsFile": "BostonPostRoadDarienCT.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:BostonPostRoadDarienCT.jpg",
+    "artist": "Jerry Dougherty",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+  },
+  "new-canaan": {
+    "src": "/images/neighborhoods/photos/new-canaan.jpg",
+    "sourceTitle": "New Canaan, Connecticut",
+    "sourceUrl": "https://en.wikipedia.org/wiki/New_Canaan%2C_Connecticut",
+    "commonsFile": "New_Canaan,_CT_(54103871381).jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:New_Canaan%2C_CT_(54103871381).jpg",
+    "artist": "ajay_suresh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "westport": {
+    "src": "/images/neighborhoods/photos/westport.jpg",
+    "sourceTitle": "Westport, Connecticut",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Westport%2C_Connecticut",
+    "commonsFile": "Westport,_Connecticut_downtown.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Westport%2C_Connecticut_downtown.jpg",
+    "artist": "Quintin Soloviev",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  }
+}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Neighborhood } from '@content/types';
 import type { ResolvedCardProse } from '@/lib/engine/explain';
-import { BoroughHero } from './BoroughHero';
+import { NeighborhoodHero } from './NeighborhoodHero';
 
 type Props = {
   rank: number;
@@ -46,9 +46,10 @@ export function NeighborhoodCard({ rank, neighborhood, prose, score, matchedTags
     <article className="border-t border-[var(--color-line)] first:border-t-0 py-12 sm:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-[2fr_3fr] gap-8 sm:gap-12 items-start">
         <div className="aspect-[4/5] rounded-sm overflow-hidden relative shadow-md">
-          <BoroughHero
+          <NeighborhoodHero
+            neighborhoodId={neighborhood.id}
+            neighborhoodName={neighborhood.name}
             borough={neighborhood.borough}
-            variantSeed={neighborhood.id}
             className="absolute inset-0 w-full h-full"
           />
           <div className="absolute inset-0 flex flex-col justify-end p-6 text-[#f4ede2]">

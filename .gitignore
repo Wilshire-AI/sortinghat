@@ -42,3 +42,6 @@ next-env.d.ts
 
 # polaris MCP local state
 .polaris/
+
+# scratch outputs (raw downloads, intermediate artifacts)
+/tmp/

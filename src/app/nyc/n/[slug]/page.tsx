@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { neighborhoodBySlug, neighborhoods } from '@content/neighborhoods';
 import { dimensions } from '@content/dimensions';
-import { BoroughHero } from '@/components/results/BoroughHero';
+import { NeighborhoodHero, getPhotoCredit } from '@/components/results/NeighborhoodHero';
 import { NeighborhoodFitExplanation } from '@/components/results/NeighborhoodFitExplanation';
 import { NeighborhoodScoreTable } from '@/components/results/NeighborhoodScoreTable';
 import { Suspense } from 'react';
@@ -50,8 +50,25 @@ export default async function NeighborhoodPage({
       </h1>
 
       <div className="mt-12 aspect-[3/2] rounded-sm overflow-hidden shadow-md">
-        <BoroughHero borough={n.borough} variantSeed={n.id} className="w-full h-full block" />
+        <NeighborhoodHero
+          neighborhoodId={n.id}
+          neighborhoodName={n.name}
+          borough={n.borough}
+          className="w-full h-full block"
+        />
       </div>
+      {(() => {
+        const credit = getPhotoCredit(n.id);
+        if (!credit) return null;
+        const showLicenseLink = credit.licenseUrl && credit.license;
+        return (
+          <p className="mt-2 text-[11px] text-[var(--color-muted)] text-right">
+            Photo: {credit.artist ? <a href={credit.commonsUrl} className="underline hover:text-[var(--color-accent)]">{credit.artist}</a> : <a href={credit.commonsUrl} className="underline hover:text-[var(--color-accent)]">Wikimedia Commons</a>}
+            {credit.license ? ' · ' : null}
+            {showLicenseLink ? <a href={credit.licenseUrl!} className="underline hover:text-[var(--color-accent)]">{credit.license}</a> : credit.license}
+          </p>
+        );
+      })()}
 
       <Suspense fallback={null}>
         <NeighborhoodFitExplanation neighborhood={n} dimensions={dimensions} />
