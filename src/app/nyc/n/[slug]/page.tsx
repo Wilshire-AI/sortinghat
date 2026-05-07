@@ -5,6 +5,7 @@ import { dimensions } from '@content/dimensions';
 import { NeighborhoodHero, getPhotoCredit } from '@/components/results/NeighborhoodHero';
 import { NeighborhoodFitExplanation } from '@/components/results/NeighborhoodFitExplanation';
 import { NeighborhoodScoreTable } from '@/components/results/NeighborhoodScoreTable';
+import { BackLink } from '@/components/results/BackLink';
 import { Suspense } from 'react';
 
 export async function generateStaticParams() {
@@ -35,12 +36,9 @@ export default async function NeighborhoodPage({
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
-      <Link
-        href="/"
-        className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition"
-      >
-        ← Sorting Hat
-      </Link>
+      <Suspense fallback={null}>
+        <BackLink />
+      </Suspense>
 
       <p className="mt-12 text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
         {boroughLabel[n.borough]}
