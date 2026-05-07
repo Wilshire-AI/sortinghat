@@ -144,7 +144,7 @@ export const questions: readonly Question[] = [
   {
     id: 'daily-life-walkability-fit',
     kind: 'slider',
-    prompt: 'Walking distance to groceries, gyms, pharmacies, dry cleaners is essential to my daily life.',
+    prompt: 'I want much of my daily life to be possible on foot.',
     lowLabel: 'Not a daily concern',
     highLabel: 'Essential',
     dimensionId: 'daily-life-walkability',
