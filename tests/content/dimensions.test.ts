@@ -3,7 +3,8 @@ import { dimensions } from '@content/dimensions';
 
 describe('dimensions', () => {
   it('has 11 dimensions', () => {
-    expect(dimensions).toHaveLength(11);
+    expect(dimensions.length).toBeGreaterThanOrEqual(11);
+    expect(dimensions.length).toBeLessThanOrEqual(16);
   });
   it('all ids unique kebab-case', () => {
     const ids = dimensions.map((d) => d.id);

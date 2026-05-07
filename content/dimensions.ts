@@ -93,4 +93,37 @@ export const dimensions: readonly Dimension[] = [
       'How much zoned public school quality matters to you. Most relevant to people with kids or planning to have them, but also affects long-term resale and neighborhood stability for everyone. Asymmetric: not caring about schools doesn\'t mean disliking neighborhoods that happen to have good ones.',
     poles: { low: 'Not a factor for me.', high: 'Top-rated schools required.' },
   },
+  {
+    id: 'social-register',
+    name: 'Social Register',
+    kind: 'symmetric',
+    description:
+      'Captures temperament and social code, independent of prestige tier. Establishment-coded neighborhoods feel polished, traditional, doorman-fluent, status-through-restraint. Bohemian-progressive neighborhoods feel unbuttoned, intellectual, values-signaling, status-through-ideology. Both poles are real lived preferences. The axis that pulls UES apart from UWS, Brooklyn Heights from Park Slope, Tribeca from West Village.',
+    poles: {
+      low: 'Bohemian, progressive, intellectual, neighborly-informal.',
+      high: 'Polished, establishment, traditional, status-fluent.',
+    },
+  },
+  {
+    id: 'visitor-facing-energy',
+    name: 'Visitor-Facing Energy',
+    kind: 'symmetric',
+    description:
+      'Whether the public realm is for residents or for visitors and destination-seekers. Resident-rooted streets are routine-driven, with locals walking dogs and ground-floor retail serving residents. Destination-facing streets are stages: brand retail, weekend crowds, recognizable spots people travel cross-town to reach. Some users want iconic visitor energy; others actively dislike living inside someone else\'s itinerary.',
+    poles: {
+      low: 'Resident-rooted, routine-driven, locals only.',
+      high: 'Destination-facing, iconic, visitor-heavy.',
+    },
+  },
+  {
+    id: 'built-form-register',
+    name: 'Built-Form Register',
+    kind: 'symmetric',
+    description:
+      'Dominant built-environment register: prewar/brownstone/loft character vs modern/amenity-tower. Captures everyday habitat texture: irregular rooms and original moldings vs doorman lobbies and floor-to-ceiling glass. Some users genuinely refuse prewar (no elevator, old systems). Others refuse glass towers (no character, no neighborhood texture). Both are durable preferences.',
+    poles: {
+      low: 'Prewar, brownstone, loft, low-rise. Character-and-quirks.',
+      high: 'New-build, amenity-rich, doorman, predictable systems.',
+    },
+  },
 ] as const;

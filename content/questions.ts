@@ -116,6 +116,52 @@ export const questions: readonly Question[] = [
     ],
   },
   {
+    id: 'social-register-fit',
+    kind: 'forced_choice',
+    prompt: 'Which Saturday morning feels more like home?',
+    choices: [
+      {
+        label: 'Independent bookstore, NYT-crossword crowd at the café, farmers\' market with compost bins.',
+        impacts: { 'social-register': -0.7 },
+      },
+      {
+        label: 'The bagel shop that\'s been there since 1962, doormen who know your name, well-dressed couples walking labradors.',
+        impacts: { 'social-register': 0.7 },
+      },
+      {
+        label: 'Either, if the rest of the neighborhood fits.',
+        impacts: { 'social-register': 0 },
+      },
+    ],
+  },
+  {
+    id: 'visitor-facing-fit',
+    kind: 'slider',
+    prompt: 'I\'d like to live in a neighborhood that other people cross town to visit.',
+    lowLabel: 'I\'d rather it stay residential',
+    highLabel: 'I want the destination energy',
+    dimensionId: 'visitor-facing-energy',
+  },
+  {
+    id: 'built-form-fit',
+    kind: 'forced_choice',
+    prompt: 'Pick the home environment that sounds more like you.',
+    choices: [
+      {
+        label: 'Prewar character: brownstone or loft with original details, quirky layouts, history in the walls.',
+        impacts: { 'built-form-register': -0.7 },
+      },
+      {
+        label: 'Modern amenities: doorman lobby, in-building gym, full elevator access, floor-to-ceiling glass.',
+        impacts: { 'built-form-register': 0.7 },
+      },
+      {
+        label: 'Either is fine if the surrounding neighborhood fits.',
+        impacts: { 'built-form-register': 0 },
+      },
+    ],
+  },
+  {
     id: 'apartment-size-feel',
     kind: 'forced_choice',
     prompt: 'Smaller place in your dream area, or meaningfully more space 20 minutes farther out?',

@@ -18,6 +18,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': 0.7,
       'safety-need': 0.7,
       'school-quality': 0.5,
+      'social-register': 0.0,
+      'visitor-facing-energy': -0.5,
+      'built-form-register': 0.0,
     },
   },
   {
@@ -37,6 +40,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': 0.6,
       'safety-need': 0.85,
       'school-quality': 0.9,
+      'social-register': 0.2,
+      'visitor-facing-energy': -0.6,
+      'built-form-register': -0.2,
     },
   },
   {
@@ -56,6 +62,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': -0.4,
       'safety-need': 0.4,
       'school-quality': 0.0,
+      'social-register': -0.5,
+      'visitor-facing-energy': 0.3,
+      'built-form-register': -0.4,
     },
   },
   {
@@ -75,6 +84,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': 0.2,
       'safety-need': 0.7,
       'school-quality': 0.6,
+      'social-register': 0.7,
+      'visitor-facing-energy': 0.0,
+      'built-form-register': 0.3,
     },
   },
   {
@@ -94,6 +106,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': 0.0,
       'safety-need': 0.5,
       'school-quality': 0.4,
+      'social-register': -0.1,
+      'visitor-facing-energy': -0.5,
+      'built-form-register': -0.2,
     },
   },
   {
@@ -113,6 +128,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': 0.0,
       'safety-need': 0.5,
       'school-quality': 0.4,
+      'social-register': -0.2,
+      'visitor-facing-energy': 0.0,
+      'built-form-register': -0.2,
     },
   },
   {
@@ -132,6 +150,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': 0.5,
       'safety-need': 0.7,
       'school-quality': 0.5,
+      'social-register': 0.0,
+      'visitor-facing-energy': -0.4,
+      'built-form-register': 0.0,
     },
   },
   {
@@ -151,6 +172,9 @@ export const archetypes: readonly Archetype[] = [
       'friction-sensitivity': -0.6,
       'safety-need': 0.3,
       'school-quality': 0.0,
+      'social-register': -0.2,
+      'visitor-facing-energy': 0.6,
+      'built-form-register': 0.6,
     },
   },
 ] as const;
