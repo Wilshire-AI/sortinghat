@@ -118,45 +118,56 @@ export const questions: readonly Question[] = [
   {
     id: 'social-register-fit',
     kind: 'forced_choice',
-    prompt: 'Which Saturday morning feels more like home?',
+    prompt: 'Which neighborhood vibe pulls you more?',
     choices: [
       {
-        label: 'Independent bookstore, NYT-crossword crowd at the café, farmers\' market with compost bins.',
+        label: 'Casual, progressive, a little bohemian. Lived-in and unbuttoned.',
         impacts: { 'social-register': -0.7 },
       },
       {
-        label: 'The bagel shop that\'s been there since 1962, doormen who know your name, well-dressed couples walking labradors.',
+        label: 'Polished and traditional. Classic, put-together, well-mannered.',
         impacts: { 'social-register': 0.7 },
       },
       {
-        label: 'Either, if the rest of the neighborhood fits.',
+        label: 'No strong pull either way.',
         impacts: { 'social-register': 0 },
       },
     ],
   },
   {
     id: 'visitor-facing-fit',
-    kind: 'slider',
-    prompt: 'I\'d like to live in a neighborhood that other people cross town to visit.',
-    lowLabel: 'I\'d rather it stay residential',
-    highLabel: 'I want the destination energy',
-    dimensionId: 'visitor-facing-energy',
+    kind: 'forced_choice',
+    prompt: 'When you walk around your neighborhood, the people you pass are mostly:',
+    choices: [
+      {
+        label: 'Your neighbors. Locals doing their daily thing.',
+        impacts: { 'visitor-facing-energy': -0.7 },
+      },
+      {
+        label: 'Visitors and tourists. The neighborhood is somewhere people come to.',
+        impacts: { 'visitor-facing-energy': 0.7 },
+      },
+      {
+        label: 'A mix. Doesn\'t really matter to me.',
+        impacts: { 'visitor-facing-energy': 0 },
+      },
+    ],
   },
   {
     id: 'built-form-fit',
     kind: 'forced_choice',
-    prompt: 'Pick the home environment that sounds more like you.',
+    prompt: 'What kind of building do you picture yourself living in?',
     choices: [
       {
-        label: 'Prewar character: brownstone or loft with original details, quirky layouts, history in the walls.',
+        label: 'Older. Brownstone, prewar, or loft with original details and history.',
         impacts: { 'built-form-register': -0.7 },
       },
       {
-        label: 'Modern amenities: doorman lobby, in-building gym, full elevator access, floor-to-ceiling glass.',
+        label: 'Newer. Modern construction, full elevator access, in-building services.',
         impacts: { 'built-form-register': 0.7 },
       },
       {
-        label: 'Either is fine if the surrounding neighborhood fits.',
+        label: 'Either, depending on the neighborhood.',
         impacts: { 'built-form-register': 0 },
       },
     ],
