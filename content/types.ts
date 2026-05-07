@@ -88,6 +88,8 @@ export type MultiSelectQuestion = {
   // 'commute_targets': selections name office clusters the user commutes to
   // 'commute_tolerance': single-pick (by convention); value is max minutes
   purpose?: 'cultural_tags' | 'must_haves' | 'commute_targets' | 'commute_tolerance';
+  // Optional cap on how many options the user can select.
+  maxSelections?: number;
 };
 
 export type Question = ForcedChoiceQuestion | SliderQuestion | MultiSelectQuestion;

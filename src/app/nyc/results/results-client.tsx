@@ -122,62 +122,55 @@ export function ResultsClient() {
             Your non-negotiables don&apos;t coexist anywhere in the metro right now.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-[var(--color-muted)]">
-            This usually means one of your must-haves is in tension with another. Common
-            offenders: top-rated public schools + no-car (top schools are mostly in suburbs),
-            luxury high-rise + calm blocks (high-rises live in busier areas), or top schools
+            We&rsquo;re still showing every neighborhood ranked by how well the rest of your
+            profile matches, with the failing constraint called out on each. Common offenders:
+            top-rated public schools + no-car (top schools mostly live in suburbs),
+            luxury high-rise + calm blocks (high-rises sit in busy neighborhoods), or top schools
             + a specific cultural community (top districts are demographically narrow).
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-[var(--color-muted)]">
-            Try retaking the quiz with one fewer non-negotiable, or flex the one that&apos;s
-            costing you most.
           </p>
           <Link
             href="/nyc/quiz"
             onClick={clearStoredQuizAnswers}
             className="mt-8 inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
           >
-            Retake the quiz
+            Retake with fewer non-negotiables
           </Link>
         </section>
       )}
 
       {result.ranked.length > 0 && (
-      <section className="mx-auto max-w-3xl px-6 pt-12">
-        <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
-          Your top five matches
-        </p>
-        {result.ranked.map((r, i) => {
-          const passage = getPassage(result.archetype.id, r.neighborhood.id);
-          const prose = resolveCardProse(r.neighborhood, passage);
-          return (
-            <NeighborhoodCard
-              key={r.neighborhood.id}
-              rank={i + 1}
-              neighborhood={r.neighborhood}
-              prose={prose}
-              score={r.score}
-              matchedTags={(r.neighborhood.culturalTags ?? []).filter((t) =>
-                result.selectedTags.includes(t),
-              )}
-              fingerprint={f ?? undefined}
-            />
-          );
-        })}
-      </section>
+        <section className="mx-auto max-w-3xl px-6 pt-12">
+          <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+            {result.ranked.length === 1 ? 'Your top match' : `Your top ${result.ranked.length} match${result.ranked.length === 1 ? '' : 'es'}`}
+          </p>
+          {result.ranked.map((r, i) => {
+            const passage = getPassage(result.archetype.id, r.neighborhood.id);
+            const prose = resolveCardProse(r.neighborhood, passage);
+            return (
+              <NeighborhoodCard
+                key={r.neighborhood.id}
+                rank={i + 1}
+                neighborhood={r.neighborhood}
+                prose={prose}
+                score={r.score}
+                matchedTags={(r.neighborhood.culturalTags ?? []).filter((t) =>
+                  result.selectedTags.includes(t),
+                )}
+                fingerprint={f ?? undefined}
+              />
+            );
+          })}
+        </section>
       )}
 
-      {result.ranked.length > 0 && (
       <NeighborhoodMap ranked={[...result.ranked, ...result.rest, ...result.excluded]} />
-      )}
 
-      {result.ranked.length > 0 && (
-        <AllMatchesList
-          ranked={result.rest}
-          excluded={result.excluded}
-          startRank={6}
-          fingerprint={f ?? undefined}
-        />
-      )}
+      <AllMatchesList
+        ranked={result.rest}
+        excluded={result.excluded}
+        startRank={result.ranked.length + 1}
+        fingerprint={f ?? undefined}
+      />
 
       <DimensionFingerprint dimensions={dimensions} vector={result.vector} />
 

@@ -274,17 +274,23 @@ function MultiSelect({
   // Clicking a new option replaces rather than augments selection.
   const isSinglePick = question.purpose === 'commute_tolerance';
 
+  const max = question.maxSelections;
   const toggle = (val: string) => {
     setSelected((prev) => {
       if (isSinglePick) {
         return prev.has(val) ? new Set() : new Set([val]);
       }
       const next = new Set(prev);
-      if (next.has(val)) next.delete(val);
-      else next.add(val);
+      if (next.has(val)) {
+        next.delete(val);
+        return next;
+      }
+      if (max !== undefined && next.size >= max) return prev;
+      next.add(val);
       return next;
     });
   };
+  const atMax = max !== undefined && selected.size >= max;
 
   // Show editorial conflict warnings only on the must-haves question. Users
   // can ignore them and proceed; the goal is to inform, not block.
@@ -301,17 +307,22 @@ function MultiSelect({
       <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2">
         {question.options.map((opt) => {
           const isSelected = selected.has(opt.value);
+          const disabled = !isSelected && atMax;
           return (
             <li key={opt.value}>
               <button
                 type="button"
                 role="checkbox"
                 aria-checked={isSelected}
+                aria-disabled={disabled || undefined}
                 onClick={() => toggle(opt.value)}
+                disabled={disabled}
                 className={
                   'w-full text-left rounded-xl border px-4 py-3 text-sm leading-snug transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent)] ' +
                   (isSelected
                     ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 text-[var(--color-ink)]'
+                    : disabled
+                    ? 'border-[var(--color-line)] opacity-40 cursor-not-allowed'
                     : 'border-[var(--color-line)] hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)]/[0.04]')
                 }
               >
