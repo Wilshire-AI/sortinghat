@@ -143,6 +143,33 @@ export const questions: readonly Question[] = [
     dimensionId: 'visitor-facing-energy',
   },
   {
+    id: 'daily-life-walkability-fit',
+    kind: 'slider',
+    prompt: 'Walking distance to groceries, gyms, pharmacies, dry cleaners is essential to my daily life.',
+    lowLabel: 'Not a daily concern',
+    highLabel: 'Essential',
+    dimensionId: 'daily-life-walkability',
+  },
+  {
+    id: 'rootedness-vs-access-fit',
+    kind: 'forced_choice',
+    prompt: 'Two equally great neighborhoods. Pick the one that pulls you more.',
+    choices: [
+      {
+        label: 'The one where you\'d recognize half the regulars at your coffee shop within a year.',
+        impacts: { 'rootedness-vs-access': -0.7 },
+      },
+      {
+        label: 'The one where you can walk to a different world-class restaurant every night.',
+        impacts: { 'rootedness-vs-access': 0.7 },
+      },
+      {
+        label: 'Either, depending on the rest of the fit.',
+        impacts: { 'rootedness-vs-access': 0 },
+      },
+    ],
+  },
+  {
     id: 'built-form-fit',
     kind: 'forced_choice',
     prompt: 'What kind of building do you picture yourself living in?',

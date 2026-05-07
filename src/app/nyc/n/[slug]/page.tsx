@@ -15,7 +15,24 @@ const boroughLabel: Record<string, string> = {
   bronx: 'The Bronx',
   'staten-island': 'Staten Island',
   nj: 'New Jersey',
+  westchester: 'Westchester',
+  'long-island': 'Long Island',
+  ct: 'Connecticut',
 };
+
+// Translate a numeric score into plain-language about the neighborhood.
+// Reads from the dimension's pole text (low/high) and modulates by intensity.
+function interpretScore(value: number, low: string, high: string): string {
+  const abs = Math.abs(value);
+  if (abs < 0.15) return 'Neutral / mixed';
+  // Take the first sentence of the relevant pole text.
+  const poleText = (value > 0 ? high : low).split('.')[0].trim();
+  let prefix = '';
+  if (abs >= 0.75) prefix = 'Strong: ';
+  else if (abs >= 0.4) prefix = 'Leans: ';
+  else prefix = 'Slight: ';
+  return prefix + poleText;
+}
 
 export default async function NeighborhoodPage({
   params,
@@ -84,17 +101,28 @@ export default async function NeighborhoodPage({
       </section>
 
       <section className="mt-14 pt-10 border-t border-[var(--color-line)]">
-        <h2 className="font-serif text-2xl">Lifestyle scores</h2>
-        <ul className="mt-6 space-y-3 text-sm">
+        <h2 className="font-serif text-2xl">How {n.name} scores on each dimension</h2>
+        <p className="mt-3 text-sm text-[var(--color-muted)] max-w-xl leading-relaxed">
+          These are the engine&rsquo;s editorial ratings for this place across the
+          dimensions the quiz tests. Your fit comes from how closely your answers
+          align with these. Numbers are on a -1 to +1 scale.
+        </p>
+        <ul className="mt-6 space-y-4 text-sm">
           {dimensions.map((d) => {
             const v = n.scores[d.id] ?? 0;
+            const interpretation = interpretScore(v, d.poles.low, d.poles.high);
             return (
-              <li key={d.id} className="flex justify-between">
-                <span>{d.name}</span>
-                <span className="font-mono text-[var(--color-muted)]">
-                  {v >= 0 ? '+' : ''}
-                  {v.toFixed(2)}
-                </span>
+              <li key={d.id} className="border-b border-[var(--color-line)] last:border-b-0 pb-3 last:pb-0">
+                <div className="flex justify-between items-baseline">
+                  <span className="font-medium">{d.name}</span>
+                  <span className="font-mono text-[var(--color-muted)] text-xs tabular-nums">
+                    {v >= 0 ? '+' : ''}
+                    {v.toFixed(2)}
+                  </span>
+                </div>
+                <p className="mt-1 text-xs text-[var(--color-muted)] italic leading-relaxed">
+                  {interpretation}
+                </p>
               </li>
             );
           })}

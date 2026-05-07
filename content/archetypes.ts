@@ -21,6 +21,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': 0.0,
       'visitor-facing-energy': -0.5,
       'built-form-register': 0.0,
+      'rootedness-vs-access': -0.4,
+      'daily-life-walkability': 0.5,
     },
   },
   {
@@ -43,6 +45,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': 0.2,
       'visitor-facing-energy': -0.6,
       'built-form-register': -0.2,
+      'rootedness-vs-access': -0.6,
+      'daily-life-walkability': 0.7,
     },
   },
   {
@@ -65,6 +69,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': -0.5,
       'visitor-facing-energy': 0.3,
       'built-form-register': -0.4,
+      'rootedness-vs-access': 0.4,
+      'daily-life-walkability': 0.5,
     },
   },
   {
@@ -87,6 +93,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': 0.7,
       'visitor-facing-energy': 0.0,
       'built-form-register': 0.3,
+      'rootedness-vs-access': 0.5,
+      'daily-life-walkability': 0.5,
     },
   },
   {
@@ -109,6 +117,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': -0.1,
       'visitor-facing-energy': -0.5,
       'built-form-register': -0.2,
+      'rootedness-vs-access': -0.5,
+      'daily-life-walkability': 0.3,
     },
   },
   {
@@ -131,6 +141,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': -0.2,
       'visitor-facing-energy': 0.0,
       'built-form-register': -0.2,
+      'rootedness-vs-access': -0.4,
+      'daily-life-walkability': 0.6,
     },
   },
   {
@@ -153,6 +165,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': 0.0,
       'visitor-facing-energy': -0.4,
       'built-form-register': 0.0,
+      'rootedness-vs-access': -0.3,
+      'daily-life-walkability': 0.4,
     },
   },
   {
@@ -175,6 +189,8 @@ export const archetypes: readonly Archetype[] = [
       'social-register': -0.2,
       'visitor-facing-energy': 0.6,
       'built-form-register': 0.6,
+      'rootedness-vs-access': 0.7,
+      'daily-life-walkability': 0.6,
     },
   },
 ] as const;

@@ -126,4 +126,26 @@ export const dimensions: readonly Dimension[] = [
       high: 'New-build, amenity-rich, doorman, predictable systems.',
     },
   },
+  {
+    id: 'rootedness-vs-access',
+    name: 'Rootedness vs Access',
+    kind: 'symmetric',
+    description:
+      'Whether the neighborhood rewards being rooted in a local community (knowing your coffee shop owner, your block, neighbors who recognize you) or rewards having access to everything (walking distance to world-class restaurants, citywide cultural density, late-night anything). The closest psychographic proxy for borough identity: rootedness-leaning self-selects into Brooklyn brownstone belt, Queens enclaves, and suburbs; access-leaning self-selects into downtown Manhattan, Midtown, and UWS/UES corridors. Both poles real lived preferences.',
+    poles: {
+      low: 'Rooted. Local community, neighborhood character, knowing the regulars.',
+      high: 'Access. Everything-at-your-fingertips density, world-class options walking-distance.',
+    },
+  },
+  {
+    id: 'daily-life-walkability',
+    name: 'Daily-Life Walkability',
+    kind: 'asymmetric_need',
+    description:
+      'How easily a resident can walk to daily-life infrastructure: groceries, gyms and fitness studios, pharmacies, dry cleaners, cafés. Distinct from rootedness-vs-access (which is about destination/cultural density) — this is about whether daily errands and routine wellness happen on foot. Critical for suburb discrimination (Larchmont walkable downtown vs Cresskill car-only), and surfaces a real gap in some NYC core neighborhoods (Hudson Yards has limited groceries despite density). Asymmetric: not needing walkable amenities doesn\'t mean disliking neighborhoods that have them.',
+    poles: {
+      low: 'Not a daily concern. I\'ll drive or travel for these.',
+      high: 'Essential. I want groceries, gyms, errands within easy walking distance.',
+    },
+  },
 ] as const;
