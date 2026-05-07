@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { decodeFingerprint } from '@/lib/engine/vector';
-import { rankNeighborhoods } from '@/lib/engine/score';
+import { rankNeighborhoods, excludedByMustHaves } from '@/lib/engine/score';
 import { matchArchetype } from '@/lib/engine/archetype';
 import { resolveCardProse } from '@/lib/engine/explain';
 import { neighborhoods } from '@content/neighborhoods';
@@ -51,19 +51,27 @@ export function ResultsClient() {
       const decoded = decodeFingerprint(f);
       const dimIds = dimensions.map((d) => d.id);
       const archetype = matchArchetype(decoded.vector, archetypes, dimIds);
-      const allRanked = rankNeighborhoods(decoded.vector, neighborhoods, dimensions, {
+      // Score everyone (no must-have filter) so the user can see how they rank
+      // on every neighborhood, even ones their non-negotiables ruled out.
+      const allRankedUnfiltered = rankNeighborhoods(decoded.vector, neighborhoods, dimensions, {
         topN: neighborhoods.length,
         selectedTags: decoded.selectedTags,
-        mustHaves: decoded.mustHaves,
+        mustHaves: [],
         commuteTargets: decoded.commuteTargets,
         commuteToleranceMinutes: decoded.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
       });
+      const excludedIds = new Set(
+        excludedByMustHaves(neighborhoods, decoded.mustHaves, decoded.selectedTags),
+      );
+      const passing = allRankedUnfiltered.filter((r) => !excludedIds.has(r.neighborhood.id));
+      const excluded = allRankedUnfiltered.filter((r) => excludedIds.has(r.neighborhood.id));
       return {
         vector: decoded.vector,
         archetype,
-        ranked: allRanked.slice(0, 5),
-        rest: allRanked.slice(5),
+        ranked: passing.slice(0, 5),
+        rest: passing.slice(5),
+        excluded,
         selectedTags: decoded.selectedTags,
         mustHaves: decoded.mustHaves,
       };
@@ -153,7 +161,13 @@ export function ResultsClient() {
       <NeighborhoodMap ranked={[...result.ranked, ...result.rest]} />
       )}
 
-      {result.ranked.length > 0 && <AllMatchesList ranked={result.rest} startRank={6} />}
+      {result.ranked.length > 0 && (
+        <AllMatchesList
+          ranked={result.rest}
+          excluded={result.excluded}
+          startRank={6}
+        />
+      )}
 
       <DimensionFingerprint dimensions={dimensions} vector={result.vector} />
 
