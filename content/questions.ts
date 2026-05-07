@@ -3,11 +3,22 @@ import type { Question } from './types';
 export const questions: readonly Question[] = [
   {
     id: 'transit-redundancy',
-    kind: 'slider',
-    prompt: 'Living somewhere with only one main transit option (one subway line, one ferry, or one rail line) would frustrate me over time.',
-    lowLabel: 'Wouldn\'t bother me',
-    highLabel: 'Would frustrate me',
-    dimensionId: 'transit-psychology',
+    kind: 'forced_choice',
+    prompt: 'How do you mostly want to get around?',
+    choices: [
+      {
+        label: 'I\'d drive. Car-dependent is fine.',
+        impacts: { 'transit-psychology': -0.7, 'urban-intensity-tolerance': -0.3 },
+      },
+      {
+        label: 'I\'d take transit. One reliable line is enough.',
+        impacts: { 'transit-psychology': -0.3 },
+      },
+      {
+        label: 'I\'d take transit. I want multiple options.',
+        impacts: { 'transit-psychology': 0.7 },
+      },
+    ],
   },
   {
     id: 'prestige-vs-space',
