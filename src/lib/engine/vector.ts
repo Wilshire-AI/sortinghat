@@ -19,6 +19,8 @@ type EncodedPayload = {
   cv: string;
   t?: string[]; // selected cultural tags (optional, omitted when empty)
   m?: string[]; // must-have filter keys (optional, omitted when empty)
+  ct?: string[]; // commute targets (office cluster ids) (optional)
+  ctm?: number; // commute tolerance in minutes (optional)
 };
 
 function toBase64Url(input: string): string {
@@ -42,22 +44,52 @@ export type Fingerprint = {
   contentVersion: string;
   selectedTags: string[];
   mustHaves: string[];
+  commuteTargets: string[];
+  commuteToleranceMinutes: number;
 };
 
+export type FingerprintInput = {
+  vector: UserVector;
+  contentVersion: string;
+  selectedTags?: string[];
+  mustHaves?: string[];
+  commuteTargets?: string[];
+  commuteToleranceMinutes?: number;
+};
+
+export function encodeFingerprint(input: FingerprintInput): string;
+// Legacy positional signature retained for backwards compatibility with
+// existing callers that pass (vector, contentVersion, tags, mustHaves).
 export function encodeFingerprint(
   vector: UserVector,
   contentVersion: string,
+  selectedTags?: string[],
+  mustHaves?: string[],
+): string;
+export function encodeFingerprint(
+  arg1: UserVector | FingerprintInput,
+  contentVersion?: string,
   selectedTags: string[] = [],
   mustHaves: string[] = [],
 ): string {
+  const isInput = (a: UserVector | FingerprintInput): a is FingerprintInput =>
+    typeof (a as FingerprintInput).contentVersion === 'string' &&
+    typeof (a as FingerprintInput).vector === 'object';
+  const opts: FingerprintInput = isInput(arg1)
+    ? arg1
+    : { vector: arg1, contentVersion: contentVersion!, selectedTags, mustHaves };
   const payload: EncodedPayload = {
     v: Object.fromEntries(
-      Object.entries(vector).map(([k, val]) => [k, Math.round(val * 1000) / 1000]),
+      Object.entries(opts.vector).map(([k, val]) => [k, Math.round(val * 1000) / 1000]),
     ),
-    cv: contentVersion,
+    cv: opts.contentVersion,
   };
-  if (selectedTags.length > 0) payload.t = selectedTags;
-  if (mustHaves.length > 0) payload.m = mustHaves;
+  if (opts.selectedTags && opts.selectedTags.length > 0) payload.t = opts.selectedTags;
+  if (opts.mustHaves && opts.mustHaves.length > 0) payload.m = opts.mustHaves;
+  if (opts.commuteTargets && opts.commuteTargets.length > 0) payload.ct = opts.commuteTargets;
+  if (opts.commuteToleranceMinutes && opts.commuteToleranceMinutes > 0) {
+    payload.ctm = opts.commuteToleranceMinutes;
+  }
   return toBase64Url(JSON.stringify(payload));
 }
 
@@ -83,7 +115,14 @@ export function decodeFingerprint(encoded: string): Fingerprint {
   ) {
     throw new Error('Malformed fingerprint payload');
   }
-  const obj = parsed as { v: Record<string, unknown>; cv: string; t?: unknown; m?: unknown };
+  const obj = parsed as {
+    v: Record<string, unknown>;
+    cv: string;
+    t?: unknown;
+    m?: unknown;
+    ct?: unknown;
+    ctm?: unknown;
+  };
   const vector: UserVector = {};
   for (const [k, val] of Object.entries(obj.v)) {
     if (typeof val !== 'number' || !Number.isFinite(val)) {
@@ -97,5 +136,17 @@ export function decodeFingerprint(encoded: string): Fingerprint {
   const mustHaves: string[] = Array.isArray(obj.m)
     ? obj.m.filter((x): x is string => typeof x === 'string')
     : [];
-  return { vector, contentVersion: obj.cv, selectedTags, mustHaves };
+  const commuteTargets: string[] = Array.isArray(obj.ct)
+    ? obj.ct.filter((x): x is string => typeof x === 'string')
+    : [];
+  const commuteToleranceMinutes: number =
+    typeof obj.ctm === 'number' && Number.isFinite(obj.ctm) && obj.ctm > 0 ? obj.ctm : 0;
+  return {
+    vector,
+    contentVersion: obj.cv,
+    selectedTags,
+    mustHaves,
+    commuteTargets,
+    commuteToleranceMinutes,
+  };
 }

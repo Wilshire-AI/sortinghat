@@ -2,27 +2,45 @@ import type { Question } from './types';
 
 export const questions: readonly Question[] = [
   {
-    id: 'home-feel',
-    kind: 'forced_choice',
-    prompt: 'When you picture coming home at the end of a long day, what do you most want?',
-    choices: [
-      {
-        label: 'A quiet block where you can decompress',
-        impacts: { 'urban-intensity-tolerance': -0.7, 'friction-sensitivity': 0.5, 'environmental-openness': 0.3 },
-      },
-      {
-        label: 'Energy and movement so the city pulls you back out',
-        impacts: { 'urban-intensity-tolerance': 0.7, 'friction-sensitivity': -0.4, 'creative-energy': 0.3 },
-      },
+    id: 'commute-target',
+    kind: 'multi_select',
+    purpose: 'commute_targets',
+    prompt: 'Where will you actually need to be? Pick all that apply, including a partner\'s office if you\'re a couple.',
+    helperText: 'We\'ll weight neighborhoods by realistic door-to-door commute, not just generic transit. Pick "Mostly remote" if commute isn\'t a constraint.',
+    options: [
+      { value: 'midtown', label: 'Midtown Manhattan (Grand Central / Penn / Bryant Park)' },
+      { value: 'fidi', label: 'Financial District / Lower Manhattan' },
+      { value: 'hudson-yards', label: 'Hudson Yards / Chelsea West' },
+      { value: 'lic', label: 'Long Island City / Court Square' },
+      { value: 'downtown-brooklyn', label: 'Downtown Brooklyn / DUMBO' },
+      { value: 'newport-jc', label: 'Jersey City (Newport / Exchange Place)' },
+      { value: 'stamford', label: 'Stamford CT' },
+      { value: 'greenwich', label: 'Greenwich CT' },
+      { value: 'westport', label: 'Westport CT' },
+      { value: 'remote', label: 'Mostly remote — occasional touchdown is fine' },
+      { value: 'other', label: 'Somewhere else (we\'ll skip commute scoring)' },
+    ],
+  },
+  {
+    id: 'commute-tolerance',
+    kind: 'multi_select',
+    purpose: 'commute_tolerance',
+    prompt: 'How much door-to-door commute can you live with on a typical day?',
+    helperText: 'Pick one. We\'ll use it to weight neighborhoods against your office cluster(s).',
+    options: [
+      { value: '30', label: 'Under 30 min — anything more drains me' },
+      { value: '45', label: '30-45 min — pretty standard NYC commute' },
+      { value: '60', label: '45-60 min — fine if the neighborhood is right' },
+      { value: '90', label: '60+ min — willing to trade for what I want' },
     ],
   },
   {
     id: 'transit-redundancy',
     kind: 'forced_choice',
-    prompt: 'Would relying on a single subway line for daily life frustrate you over time?',
+    prompt: 'Two neighborhoods, all else equal. One has a single transit option — one subway line, OR one ferry, OR one rail line. The other has multiple. Which fits you?',
     choices: [
-      { label: 'Yes, I need options', impacts: { 'transit-psychology': 0.7 } },
-      { label: 'Not really, one good line is enough', impacts: { 'transit-psychology': -0.5 } },
+      { label: 'Multiple options. I\'d take the redundancy.', impacts: { 'transit-psychology': 0.7 } },
+      { label: 'Single option. Simpler is better.', impacts: { 'transit-psychology': -0.5 } },
     ],
   },
   {
@@ -43,11 +61,11 @@ export const questions: readonly Question[] = [
   {
     id: 'family-horizon',
     kind: 'forced_choice',
-    prompt: 'Are you optimizing for the life you have today, or the one you might have in five years?',
+    prompt: 'Are kids in the picture — already raising them, or in a 5-year horizon?',
     choices: [
-      { label: 'Today. Five years is a long time.', impacts: { 'family-trajectory': -0.7, 'creative-energy': 0.3 } },
-      { label: 'Five years. I want to put down roots.', impacts: { 'family-trajectory': 0.8, 'space-sensitivity': 0.4 } },
-      { label: 'A bit of both. I\'m thinking about the next 2 to 3 years.', impacts: { 'family-trajectory': 0.2 } },
+      { label: 'Yes. Kids are part of the plan.', impacts: { 'family-trajectory': 0.8, 'space-sensitivity': 0.4 } },
+      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': -0.7 } },
+      { label: 'Considering it.', impacts: { 'family-trajectory': 0.2 } },
     ],
   },
   {
@@ -79,16 +97,6 @@ export const questions: readonly Question[] = [
       { value: 'lgbtq', label: 'LGBTQ+ community' },
     ],
     dimensionImpactPerSelection: { 'cultural-ecosystem': 0.15 },
-  },
-  {
-    id: 'park-need',
-    kind: 'forced_choice',
-    prompt: 'Do parks and waterfronts materially affect your mood?',
-    choices: [
-      { label: 'Yes. I notice when I haven\'t had nature in a while.', impacts: { 'environmental-openness': 0.8 } },
-      { label: 'I like them but don\'t need them daily', impacts: { 'environmental-openness': 0.0 } },
-      { label: 'Honestly, not much', impacts: { 'environmental-openness': -0.6 } },
-    ],
   },
   {
     id: 'creative-immersion',
@@ -128,15 +136,6 @@ export const questions: readonly Question[] = [
       { label: 'Walking the neighborhood, slow morning at home', impacts: { 'urban-intensity-tolerance': -0.3, 'friction-sensitivity': 0.3 } },
       { label: 'In the city. Restaurants, shows, plans with friends.', impacts: { 'urban-intensity-tolerance': 0.4, 'creative-energy': 0.3 } },
       { label: 'Out of the city. Parks, hikes, the beach.', impacts: { 'environmental-openness': 0.5 } },
-    ],
-  },
-  {
-    id: 'aspirational-vs-grounded',
-    kind: 'forced_choice',
-    prompt: 'When you talk about where you live, do you feel proud of the name, or proud of the place itself?',
-    choices: [
-      { label: 'The name. It\'s part of how I think about myself.', impacts: { 'prestige-orientation': 0.7 } },
-      { label: 'The place. I\'d rather under-promise and over-deliver.', impacts: { 'prestige-orientation': -0.6 } },
     ],
   },
   {
@@ -191,8 +190,8 @@ export const questions: readonly Question[] = [
       { value: 'house-or-townhouse', label: 'Single-family homes or townhouses available' },
       { value: 'luxury-highrise', label: 'Newer luxury high-rise (doorman, gym, modern fixtures)' },
       { value: 'top-schools', label: 'Top-rated zoned public schools' },
-      { value: 'calm-blocks', label: 'Calm, low-friction blocks' },
-      { value: 'quiet-blocks-available', label: 'Notable quiet residential enclaves (refuge from busy streets)' },
+      { value: 'calm-blocks', label: 'Calm overall — whole neighborhood is low-friction' },
+      { value: 'quiet-blocks-available', label: 'A quiet residential block available, even if the neighborhood is busy' },
       { value: 'no-car', label: 'Don\'t need a car for daily life' },
       { value: 'cultural-match', label: 'Cultural-community match (uses your earlier picks)' },
     ],

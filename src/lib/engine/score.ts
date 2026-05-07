@@ -1,6 +1,8 @@
-import type { Dimension, Neighborhood, UserVector } from '@content/types';
+import type { CommuteMinutes, Dimension, Neighborhood, NeighborhoodId, UserVector } from '@content/types';
 
 const CULTURAL_TAG_BOOST = 0.08;
+const COMMUTE_PENALTY_FLOOR = 0.3; // never multiply score below this
+const COMMUTE_PENALTY_SLOPE = 0.5; // penalty per (excess / tolerance) unit
 
 // ---- Must-have filters ----
 // Each known must-have key maps to a predicate that a neighborhood must
@@ -74,31 +76,106 @@ export function scoreNeighborhood(
   return baseScore;
 }
 
+// Multiplicative score adjustment in [COMMUTE_PENALTY_FLOOR, 1] reflecting
+// how well the neighborhood's commute fits the user's targets and tolerance.
+//
+// Targets containing only 'remote' or 'other' (or empty) → no adjustment (1.0).
+// Each real target: penalty = max(0, (actual - tolerance) / tolerance) * SLOPE.
+// Multiple targets are averaged. Missing route data treated as infeasible (worst case).
+export function scoreCommute(
+  commuteMinutes: CommuteMinutes | undefined,
+  targets: readonly string[],
+  toleranceMinutes: number,
+): number {
+  const realTargets = targets.filter((t) => t !== 'remote' && t !== 'other');
+  if (realTargets.length === 0 || toleranceMinutes <= 0) return 1.0;
+
+  let sumMult = 0;
+  for (const target of realTargets) {
+    const actual = commuteMinutes?.[target as keyof CommuteMinutes];
+    let excessRatio: number;
+    if (actual === undefined) {
+      excessRatio = 2.0; // infeasible — treat as 2x tolerance
+    } else if (actual <= toleranceMinutes) {
+      excessRatio = 0;
+    } else {
+      excessRatio = (actual - toleranceMinutes) / toleranceMinutes;
+    }
+    const mult = Math.max(COMMUTE_PENALTY_FLOOR, 1 - COMMUTE_PENALTY_SLOPE * excessRatio);
+    sumMult += mult;
+  }
+  return sumMult / realTargets.length;
+}
+
 export type RankedNeighborhood = {
   neighborhood: Neighborhood;
   score: number;
+};
+
+export type RankOptions = {
+  topN?: number;
+  selectedTags?: readonly string[];
+  mustHaves?: readonly string[];
+  commuteTargets?: readonly string[];
+  commuteToleranceMinutes?: number;
+  commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
 };
 
 export function rankNeighborhoods(
   user: UserVector,
   neighborhoods: readonly Neighborhood[],
   dimensions: readonly Dimension[],
-  topN: number = 5,
+  topNOrOptions: number | RankOptions = 5,
   selectedTags: readonly string[] = [],
   mustHaves: readonly string[] = [],
 ): RankedNeighborhood[] {
-  const filtered = mustHaves.length > 0
-    ? neighborhoods.filter((n) => passesMustHaves(n, mustHaves, selectedTags))
+  // Backwards-compatible signature: legacy callers pass topN (number) +
+  // selectedTags + mustHaves. New callers pass an options object as 4th arg.
+  const opts: Required<Omit<RankOptions, 'commuteMinutesByNeighborhood'>> & Pick<RankOptions, 'commuteMinutesByNeighborhood'> =
+    typeof topNOrOptions === 'object'
+      ? {
+          topN: topNOrOptions.topN ?? 5,
+          selectedTags: topNOrOptions.selectedTags ?? [],
+          mustHaves: topNOrOptions.mustHaves ?? [],
+          commuteTargets: topNOrOptions.commuteTargets ?? [],
+          commuteToleranceMinutes: topNOrOptions.commuteToleranceMinutes ?? 0,
+          commuteMinutesByNeighborhood: topNOrOptions.commuteMinutesByNeighborhood,
+        }
+      : {
+          topN: topNOrOptions,
+          selectedTags,
+          mustHaves,
+          commuteTargets: [],
+          commuteToleranceMinutes: 0,
+          commuteMinutesByNeighborhood: undefined,
+        };
+
+  const filtered = opts.mustHaves.length > 0
+    ? neighborhoods.filter((n) => passesMustHaves(n, opts.mustHaves, opts.selectedTags))
     : neighborhoods;
-  const scored = filtered.map((neighborhood) => ({
-    neighborhood,
-    score: scoreNeighborhood(user, neighborhood, dimensions, selectedTags),
-  }));
+
+  const applyCommute =
+    opts.commuteTargets.length > 0 &&
+    opts.commuteToleranceMinutes > 0 &&
+    !!opts.commuteMinutesByNeighborhood;
+
+  const scored = filtered.map((neighborhood) => {
+    const baseScore = scoreNeighborhood(user, neighborhood, dimensions, opts.selectedTags);
+    const commuteMult = applyCommute
+      ? scoreCommute(
+          opts.commuteMinutesByNeighborhood![neighborhood.id],
+          opts.commuteTargets,
+          opts.commuteToleranceMinutes,
+        )
+      : 1.0;
+    return { neighborhood, score: baseScore * commuteMult };
+  });
+
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
     return a.neighborhood.id.localeCompare(b.neighborhood.id);
   });
-  return scored.slice(0, topN);
+  return scored.slice(0, opts.topN);
 }
 
 // Returns IDs of neighborhoods excluded by the must-haves filter, for UI display.

@@ -15,6 +15,8 @@ export type DerivedState = {
   vector: UserVector;
   selectedTags: string[];
   mustHaves: string[];
+  commuteTargets: string[];
+  commuteToleranceMinutes: number;
 };
 
 // Pure function: derive full quiz state from a set of answers. Used by
@@ -29,6 +31,8 @@ export function deriveState(
   const vector = zeroVector(dimensions);
   const selectedTags = new Set<string>();
   const mustHaves = new Set<string>();
+  const commuteTargets = new Set<string>();
+  let commuteToleranceMinutes = 0;
 
   for (const q of questions) {
     const a = answers[q.id];
@@ -44,8 +48,20 @@ export function deriveState(
     } else if (q.kind === 'slider' && a.kind === 'slider') {
       vector[q.dimensionId] = a.value;
     } else if (q.kind === 'multi_select' && a.kind === 'multi_select') {
-      const target = q.purpose === 'must_haves' ? mustHaves : selectedTags;
-      for (const v of a.selectedValues) target.add(v);
+      if (q.purpose === 'must_haves') {
+        for (const v of a.selectedValues) mustHaves.add(v);
+      } else if (q.purpose === 'commute_targets') {
+        for (const v of a.selectedValues) commuteTargets.add(v);
+      } else if (q.purpose === 'commute_tolerance') {
+        // Single-pick by convention; first selection wins.
+        const picked = a.selectedValues[0];
+        if (picked) {
+          const parsed = parseInt(picked, 10);
+          if (!Number.isNaN(parsed)) commuteToleranceMinutes = parsed;
+        }
+      } else {
+        for (const v of a.selectedValues) selectedTags.add(v);
+      }
       if (q.dimensionImpactPerSelection) {
         for (const [dim, impact] of Object.entries(q.dimensionImpactPerSelection)) {
           vector[dim] = (vector[dim] ?? 0) + (impact as number) * a.selectedValues.length;
@@ -58,6 +74,8 @@ export function deriveState(
     vector,
     selectedTags: Array.from(selectedTags),
     mustHaves: Array.from(mustHaves),
+    commuteTargets: Array.from(commuteTargets),
+    commuteToleranceMinutes,
   };
 }
 

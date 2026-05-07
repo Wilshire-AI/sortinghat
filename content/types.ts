@@ -14,6 +14,25 @@ export type Borough =
   | 'long-island'
   | 'ct';
 
+// Office clusters used for commute-target scoring. Anchored to canonical
+// transit hubs at the center of each NYC-metro office concentration.
+// 'remote' and 'other' are quiz-only sentinels — they don't appear here.
+export type CommuteCluster =
+  | 'midtown'
+  | 'fidi'
+  | 'hudson-yards'
+  | 'lic'
+  | 'downtown-brooklyn'
+  | 'newport-jc'
+  | 'stamford'
+  | 'greenwich'
+  | 'westport';
+
+// Door-to-door transit minutes from a neighborhood centroid to each cluster's
+// transit anchor, computed via Google Routes API for a weekday morning rush
+// departure. Missing keys = the route is infeasible (>2.5h) or no route found.
+export type CommuteMinutes = Partial<Record<CommuteCluster, number>>;
+
 // Dimension scoring kind:
 // - 'symmetric': both poles are real lived preferences. Mismatch in either
 //   direction hurts. Example: urban intensity (some want calm, some want
@@ -66,7 +85,9 @@ export type MultiSelectQuestion = {
   dimensionImpactPerSelection?: Partial<Record<DimensionId, number>>;
   // 'cultural_tags' (default): selections feed the soft cultural-tag boost
   // 'must_haves': selections become hard filters (excluded if not satisfied)
-  purpose?: 'cultural_tags' | 'must_haves';
+  // 'commute_targets': selections name office clusters the user commutes to
+  // 'commute_tolerance': single-pick (by convention); value is max minutes
+  purpose?: 'cultural_tags' | 'must_haves' | 'commute_targets' | 'commute_tolerance';
 };
 
 export type Question = ForcedChoiceQuestion | SliderQuestion | MultiSelectQuestion;

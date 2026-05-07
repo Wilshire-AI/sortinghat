@@ -5,9 +5,9 @@ import { dimensions } from '@content/dimensions';
 const validDimIds = new Set(dimensions.map((d) => d.id));
 
 describe('questions', () => {
-  it('has 12-18 questions', () => {
+  it('has 12-22 questions', () => {
     expect(questions.length).toBeGreaterThanOrEqual(12);
-    expect(questions.length).toBeLessThanOrEqual(18);
+    expect(questions.length).toBeLessThanOrEqual(22);
   });
   it('all ids unique', () => {
     const ids = questions.map((q) => q.id);

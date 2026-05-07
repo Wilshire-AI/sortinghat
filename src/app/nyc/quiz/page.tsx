@@ -38,12 +38,14 @@ export default function QuizPage() {
     } else {
       const finalDerived = deriveState(dimensions, questions, nextAnswers);
       const finalVec = finalizeVector(finalDerived);
-      const encoded = encodeFingerprint(
-        finalVec,
-        CONTENT_VERSION,
-        finalDerived.selectedTags,
-        finalDerived.mustHaves,
-      );
+      const encoded = encodeFingerprint({
+        vector: finalVec,
+        contentVersion: CONTENT_VERSION,
+        selectedTags: finalDerived.selectedTags,
+        mustHaves: finalDerived.mustHaves,
+        commuteTargets: finalDerived.commuteTargets,
+        commuteToleranceMinutes: finalDerived.commuteToleranceMinutes,
+      });
       router.push(`/nyc/results?f=${encoded}`);
     }
   };

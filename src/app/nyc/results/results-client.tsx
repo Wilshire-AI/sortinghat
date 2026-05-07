@@ -10,6 +10,7 @@ import { resolveCardProse } from '@/lib/engine/explain';
 import { neighborhoods } from '@content/neighborhoods';
 import { archetypes } from '@content/archetypes';
 import { dimensions } from '@content/dimensions';
+import { commuteMinutesByNeighborhood } from '@content/commute-minutes';
 import { ArchetypeBanner } from '@/components/results/ArchetypeBanner';
 import { NeighborhoodCard } from '@/components/results/NeighborhoodCard';
 import { DimensionFingerprint } from '@/components/results/DimensionFingerprint';
@@ -49,14 +50,14 @@ export function ResultsClient() {
       const decoded = decodeFingerprint(f);
       const dimIds = dimensions.map((d) => d.id);
       const archetype = matchArchetype(decoded.vector, archetypes, dimIds);
-      const allRanked = rankNeighborhoods(
-        decoded.vector,
-        neighborhoods,
-        dimensions,
-        neighborhoods.length,
-        decoded.selectedTags,
-        decoded.mustHaves,
-      );
+      const allRanked = rankNeighborhoods(decoded.vector, neighborhoods, dimensions, {
+        topN: neighborhoods.length,
+        selectedTags: decoded.selectedTags,
+        mustHaves: decoded.mustHaves,
+        commuteTargets: decoded.commuteTargets,
+        commuteToleranceMinutes: decoded.commuteToleranceMinutes,
+        commuteMinutesByNeighborhood,
+      });
       return {
         vector: decoded.vector,
         archetype,
@@ -96,6 +97,34 @@ export function ResultsClient() {
         </Link>
       </div>
 
+      {result.ranked.length === 0 && (
+        <section className="mx-auto max-w-3xl px-6 pt-12">
+          <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+            No perfect matches
+          </p>
+          <h2 className="mt-3 font-serif text-3xl sm:text-4xl leading-[1.1] tracking-[-0.01em] font-medium">
+            Your non-negotiables don&apos;t coexist anywhere in the metro right now.
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-[var(--color-muted)]">
+            This usually means one of your must-haves is in tension with another. Common
+            offenders: top-rated public schools + no-car (top schools are mostly in suburbs),
+            luxury high-rise + calm blocks (high-rises live in busier areas), or top schools
+            + a specific cultural community (top districts are demographically homogenous).
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-[var(--color-muted)]">
+            Try retaking the quiz with one fewer non-negotiable, or flex the one that&apos;s
+            costing you most.
+          </p>
+          <Link
+            href="/nyc/quiz"
+            className="mt-8 inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+          >
+            Retake the quiz
+          </Link>
+        </section>
+      )}
+
+      {result.ranked.length > 0 && (
       <section className="mx-auto max-w-3xl px-6 pt-12">
         <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
           Your top five matches
@@ -116,10 +145,13 @@ export function ResultsClient() {
           );
         })}
       </section>
+      )}
 
+      {result.ranked.length > 0 && (
       <NeighborhoodMap ranked={[...result.ranked, ...result.rest]} />
+      )}
 
-      <AllMatchesList ranked={result.rest} startRank={6} />
+      {result.ranked.length > 0 && <AllMatchesList ranked={result.rest} startRank={6} />}
 
       <DimensionFingerprint dimensions={dimensions} vector={result.vector} />
 

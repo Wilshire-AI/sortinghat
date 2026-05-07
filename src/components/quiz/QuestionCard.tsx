@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import type { Question } from '@content/types';
 import type { Answer } from './useQuizState';
+import { findActiveConflicts } from '@content/must-have-conflicts';
 
 type Props = {
   question: Question;
@@ -278,6 +279,13 @@ function MultiSelect({
     });
   };
 
+  // Show editorial conflict warnings only on the must-haves question. Users
+  // can ignore them and proceed; the goal is to inform, not block.
+  const isMustHaves = question.purpose === 'must_haves';
+  const activeConflicts = isMustHaves
+    ? findActiveConflicts(Array.from(selected))
+    : [];
+
   return (
     <div className="mt-10">
       {question.helperText && (
@@ -317,6 +325,18 @@ function MultiSelect({
           );
         })}
       </ul>
+      {activeConflicts.length > 0 && (
+        <div className="mt-6 space-y-3" role="status" aria-live="polite">
+          {activeConflicts.map((c, i) => (
+            <p
+              key={i}
+              className="text-sm leading-relaxed text-[var(--color-muted)] border-l-2 border-[var(--color-accent)] pl-4 py-1"
+            >
+              {c.message}
+            </p>
+          ))}
+        </div>
+      )}
       <div className="mt-10 flex items-center gap-4">
         <button
           type="button"
