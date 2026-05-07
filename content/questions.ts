@@ -3,12 +3,11 @@ import type { Question } from './types';
 export const questions: readonly Question[] = [
   {
     id: 'transit-redundancy',
-    kind: 'forced_choice',
-    prompt: 'Two neighborhoods, all else equal. One has a single transit option (one subway line, or one ferry, or one rail line). The other has multiple. Which fits you?',
-    choices: [
-      { label: 'Multiple options. I want the backup.', impacts: { 'transit-psychology': 0.7 } },
-      { label: 'One reliable option. Simpler is better.', impacts: { 'transit-psychology': -0.5 } },
-    ],
+    kind: 'slider',
+    prompt: 'Living somewhere with only one main transit option (one subway line, one ferry, or one rail line) would frustrate me over time.',
+    lowLabel: 'Wouldn\'t bother me',
+    highLabel: 'Would frustrate me',
+    dimensionId: 'transit-psychology',
   },
   {
     id: 'prestige-vs-space',
