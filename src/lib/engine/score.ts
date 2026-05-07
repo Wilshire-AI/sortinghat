@@ -189,3 +189,19 @@ export function excludedByMustHaves(
     .filter((n) => !passesMustHaves(n, mustHaves, selectedTags))
     .map((n) => n.id);
 }
+
+// Returns which must-have keys this neighborhood failed, for inline UI explanation.
+// Empty array means the neighborhood passes all the user's must-haves.
+export function failedMustHaves(
+  neighborhood: Neighborhood,
+  mustHaves: readonly string[],
+  selectedTags: readonly string[],
+): string[] {
+  const failed: string[] = [];
+  for (const mh of mustHaves) {
+    const filter = MUST_HAVE_FILTERS[mh];
+    if (!filter) continue;
+    if (!filter(neighborhood, selectedTags)) failed.push(mh);
+  }
+  return failed;
+}

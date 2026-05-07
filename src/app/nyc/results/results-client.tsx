@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { decodeFingerprint } from '@/lib/engine/vector';
-import { rankNeighborhoods, excludedByMustHaves } from '@/lib/engine/score';
+import { rankNeighborhoods, excludedByMustHaves, failedMustHaves } from '@/lib/engine/score';
 import { matchArchetype } from '@/lib/engine/archetype';
 import { resolveCardProse } from '@/lib/engine/explain';
 import { neighborhoods } from '@content/neighborhoods';
@@ -65,7 +65,12 @@ export function ResultsClient() {
         excludedByMustHaves(neighborhoods, decoded.mustHaves, decoded.selectedTags),
       );
       const passing = allRankedUnfiltered.filter((r) => !excludedIds.has(r.neighborhood.id));
-      const excluded = allRankedUnfiltered.filter((r) => excludedIds.has(r.neighborhood.id));
+      const excluded = allRankedUnfiltered
+        .filter((r) => excludedIds.has(r.neighborhood.id))
+        .map((r) => ({
+          ...r,
+          failedMustHaves: failedMustHaves(r.neighborhood, decoded.mustHaves, decoded.selectedTags),
+        }));
       return {
         vector: decoded.vector,
         archetype,
