@@ -17,13 +17,15 @@ import { encodeFingerprint } from '@/lib/engine/vector';
 
 export default function QuizPage() {
   const router = useRouter();
-  const { answers, hydrated, setAnswer } = useQuizState(dimensions, questions);
+  const { answers, hydrated, setAnswer, reset } = useQuizState(dimensions, questions);
   const [idx, setIdx] = useState(0);
   const inFlightRef = useRef(false);
   const initializedRef = useRef(false);
 
   // After hydration, jump to the first unanswered question so a returning
-  // user picks up where they left off.
+  // user picks up where they left off. If every question is already answered
+  // (user completed the quiz before and is back at /nyc/quiz), treat it as
+  // a fresh start — clear stored answers and begin at Q1.
   useEffect(() => {
     if (!hydrated || initializedRef.current) return;
     initializedRef.current = true;
@@ -32,8 +34,13 @@ export default function QuizPage() {
       if (!answers[questions[i].id]) break;
       firstUnanswered = i + 1;
     }
-    setIdx(Math.min(firstUnanswered, questions.length - 1));
-  }, [hydrated, answers]);
+    if (firstUnanswered >= questions.length) {
+      reset();
+      setIdx(0);
+      return;
+    }
+    setIdx(firstUnanswered);
+  }, [hydrated, answers, reset]);
 
   const current = questions[idx];
 
