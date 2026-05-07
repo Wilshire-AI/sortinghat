@@ -9,6 +9,7 @@ type Props = {
   prose: ResolvedCardProse;
   score: number;
   matchedTags?: string[];
+  fingerprint?: string;
 };
 
 const boroughLabel: Record<string, string> = {
@@ -37,7 +38,10 @@ const tagLabel: Record<string, string> = {
   lgbtq: 'LGBTQ+',
 };
 
-export function NeighborhoodCard({ rank, neighborhood, prose, score, matchedTags = [] }: Props) {
+export function NeighborhoodCard({ rank, neighborhood, prose, score, matchedTags = [], fingerprint }: Props) {
+  const detailHref = fingerprint
+    ? `/nyc/n/${neighborhood.slug}?f=${fingerprint}`
+    : `/nyc/n/${neighborhood.slug}`;
   return (
     <article className="border-t border-[var(--color-line)] first:border-t-0 py-12 sm:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-[2fr_3fr] gap-8 sm:gap-12 items-start">
@@ -72,7 +76,7 @@ export function NeighborhoodCard({ rank, neighborhood, prose, score, matchedTags
             )}
           </p>
           <h2 className="mt-2 font-serif text-3xl sm:text-4xl leading-[1.05]">
-            <Link href={`/nyc/n/${neighborhood.slug}`} className="hover:text-[var(--color-accent)] transition">
+            <Link href={detailHref} className="hover:text-[var(--color-accent)] transition">
               {neighborhood.name}
             </Link>
           </h2>

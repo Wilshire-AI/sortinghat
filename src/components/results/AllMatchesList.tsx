@@ -43,6 +43,7 @@ type Props = {
   ranked: RankedEntry[];
   excluded?: ExcludedEntry[];
   startRank?: number;
+  fingerprint?: string;
 };
 
 function Row({
@@ -50,16 +51,21 @@ function Row({
   rank,
   dimmed,
   reason,
+  fingerprint,
 }: {
   entry: RankedEntry;
   rank: number;
   dimmed?: boolean;
   reason?: string;
+  fingerprint?: string;
 }) {
+  const href = fingerprint
+    ? `/nyc/n/${entry.neighborhood.slug}?f=${fingerprint}`
+    : `/nyc/n/${entry.neighborhood.slug}`;
   return (
     <li className="border-b border-[var(--color-line)] last:border-b-0">
       <Link
-        href={`/nyc/n/${entry.neighborhood.slug}`}
+        href={href}
         className={
           'block py-3 sm:py-4 hover:bg-[var(--color-ink)]/[0.03] transition px-2 -mx-2 rounded-sm ' +
           (dimmed ? 'opacity-60' : '')
@@ -102,7 +108,7 @@ function Row({
   );
 }
 
-export function AllMatchesList({ ranked, excluded = [], startRank = 6 }: Props) {
+export function AllMatchesList({ ranked, excluded = [], startRank = 6, fingerprint }: Props) {
   if (ranked.length === 0 && excluded.length === 0) return null;
   return (
     <section className="mx-auto max-w-3xl px-6 py-16 border-t border-[var(--color-line)]">
@@ -120,7 +126,7 @@ export function AllMatchesList({ ranked, excluded = [], startRank = 6 }: Props) 
       {ranked.length > 0 && (
         <ol className="mt-10">
           {ranked.map((r, i) => (
-            <Row key={r.neighborhood.id} entry={r} rank={startRank + i} />
+            <Row key={r.neighborhood.id} entry={r} rank={startRank + i} fingerprint={fingerprint} />
           ))}
         </ol>
       )}
@@ -143,6 +149,7 @@ export function AllMatchesList({ ranked, excluded = [], startRank = 6 }: Props) 
                 rank={ranked.length + startRank + i}
                 dimmed
                 reason={describeFailures(r.failedMustHaves)}
+                fingerprint={fingerprint}
               />
             ))}
           </ol>

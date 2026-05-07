@@ -156,6 +156,7 @@ export function ResultsClient() {
               matchedTags={(r.neighborhood.culturalTags ?? []).filter((t) =>
                 result.selectedTags.includes(t),
               )}
+              fingerprint={f ?? undefined}
             />
           );
         })}
@@ -171,6 +172,7 @@ export function ResultsClient() {
           ranked={result.rest}
           excluded={result.excluded}
           startRank={6}
+          fingerprint={f ?? undefined}
         />
       )}
 

@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { neighborhoodBySlug, neighborhoods } from '@content/neighborhoods';
 import { dimensions } from '@content/dimensions';
 import { BoroughHero } from '@/components/results/BoroughHero';
+import { NeighborhoodFitExplanation } from '@/components/results/NeighborhoodFitExplanation';
+import { Suspense } from 'react';
 
 export async function generateStaticParams() {
   return neighborhoods.map((n) => ({ slug: n.slug }));
@@ -62,6 +64,10 @@ export default async function NeighborhoodPage({
       <div className="mt-12 aspect-[3/2] rounded-sm overflow-hidden shadow-md">
         <BoroughHero borough={n.borough} variantSeed={n.id} className="w-full h-full block" />
       </div>
+
+      <Suspense fallback={null}>
+        <NeighborhoodFitExplanation neighborhood={n} dimensions={dimensions} />
+      </Suspense>
 
       <section className="mt-14">
         <h2 className="font-serif text-2xl">Why people live here</h2>
