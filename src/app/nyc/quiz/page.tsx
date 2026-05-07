@@ -10,10 +10,36 @@ import {
   deriveState,
   finalizeVector,
   type Answer,
+  type Answers,
 } from '@/components/quiz/useQuizState';
 import { QuestionCard } from '@/components/quiz/QuestionCard';
 import { ProgressBar } from '@/components/quiz/ProgressBar';
 import { encodeFingerprint } from '@/lib/engine/vector';
+
+// Conditional skips: when prior answers make a question meaningless, skip it.
+// `commute-tolerance` is meaningless when the user has no real commute target
+// (only "remote" / "other" selected on `commute-target`).
+function shouldSkip(questionId: string, answers: Answers): boolean {
+  if (questionId === 'commute-tolerance') {
+    const a = answers['commute-target'];
+    if (!a || a.kind !== 'multi_select') return false;
+    const real = a.selectedValues.filter((v) => v !== 'remote' && v !== 'other');
+    return real.length === 0;
+  }
+  return false;
+}
+
+function nextVisibleIdx(from: number, answers: Answers): number {
+  let i = from;
+  while (i < questions.length && shouldSkip(questions[i].id, answers)) i++;
+  return i;
+}
+
+function prevVisibleIdx(from: number, answers: Answers): number {
+  let i = from;
+  while (i >= 0 && shouldSkip(questions[i].id, answers)) i--;
+  return i;
+}
 
 export default function QuizPage() {
   const router = useRouter();
@@ -22,19 +48,22 @@ export default function QuizPage() {
   const inFlightRef = useRef(false);
   const initializedRef = useRef(false);
 
-  // After hydration, jump to the first unanswered question so a returning
-  // user picks up where they left off. If every question is already answered
-  // (user completed the quiz before and is back at /nyc/quiz), treat it as
-  // a fresh start — clear stored answers and begin at Q1.
+  // After hydration, jump to the first unanswered (and visible) question so a
+  // returning user picks up where they left off. If every visible question is
+  // already answered (user completed the quiz before and is back at /nyc/quiz),
+  // treat it as a fresh start — clear stored answers and begin at Q1.
   useEffect(() => {
     if (!hydrated || initializedRef.current) return;
     initializedRef.current = true;
-    let firstUnanswered = 0;
+    let firstUnanswered = -1;
     for (let i = 0; i < questions.length; i++) {
-      if (!answers[questions[i].id]) break;
-      firstUnanswered = i + 1;
+      if (shouldSkip(questions[i].id, answers)) continue;
+      if (!answers[questions[i].id]) {
+        firstUnanswered = i;
+        break;
+      }
     }
-    if (firstUnanswered >= questions.length) {
+    if (firstUnanswered < 0) {
       reset();
       setIdx(0);
       return;
@@ -53,8 +82,9 @@ export default function QuizPage() {
     const nextAnswers = { ...answers, [current.id]: a };
     setAnswer(current.id, a);
 
-    if (idx + 1 < questions.length) {
-      setIdx(idx + 1);
+    const next = nextVisibleIdx(idx + 1, nextAnswers);
+    if (next < questions.length) {
+      setIdx(next);
       setTimeout(() => { inFlightRef.current = false; }, 200);
     } else {
       const finalDerived = deriveState(dimensions, questions, nextAnswers);
@@ -72,7 +102,9 @@ export default function QuizPage() {
   };
 
   const handleBack = () => {
-    if (idx > 0) setIdx(idx - 1);
+    if (idx <= 0) return;
+    const prev = prevVisibleIdx(idx - 1, answers);
+    if (prev >= 0) setIdx(prev);
   };
 
   // Avoid flashing Q1 before localStorage hydration potentially jumps us forward.
