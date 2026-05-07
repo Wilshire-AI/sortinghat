@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { questions } from '@content/questions';
 import { dimensions } from '@content/dimensions';
@@ -17,9 +17,23 @@ import { encodeFingerprint } from '@/lib/engine/vector';
 
 export default function QuizPage() {
   const router = useRouter();
-  const { answers, setAnswer } = useQuizState(dimensions, questions);
+  const { answers, hydrated, setAnswer } = useQuizState(dimensions, questions);
   const [idx, setIdx] = useState(0);
   const inFlightRef = useRef(false);
+  const initializedRef = useRef(false);
+
+  // After hydration, jump to the first unanswered question so a returning
+  // user picks up where they left off.
+  useEffect(() => {
+    if (!hydrated || initializedRef.current) return;
+    initializedRef.current = true;
+    let firstUnanswered = 0;
+    for (let i = 0; i < questions.length; i++) {
+      if (!answers[questions[i].id]) break;
+      firstUnanswered = i + 1;
+    }
+    setIdx(Math.min(firstUnanswered, questions.length - 1));
+  }, [hydrated, answers]);
 
   const current = questions[idx];
 
@@ -53,6 +67,15 @@ export default function QuizPage() {
   const handleBack = () => {
     if (idx > 0) setIdx(idx - 1);
   };
+
+  // Avoid flashing Q1 before localStorage hydration potentially jumps us forward.
+  if (!hydrated) {
+    return (
+      <main className="min-h-screen flex items-center justify-center px-6">
+        <p className="text-sm text-[var(--color-muted)]">Loading…</p>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen flex flex-col">
