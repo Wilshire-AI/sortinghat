@@ -270,8 +270,15 @@ function MultiSelect({
     () => new Set(currentAnswer?.selectedValues ?? []),
   );
 
+  // Some multi-select purposes (commute_tolerance) are single-pick by intent.
+  // Clicking a new option replaces rather than augments selection.
+  const isSinglePick = question.purpose === 'commute_tolerance';
+
   const toggle = (val: string) => {
     setSelected((prev) => {
+      if (isSinglePick) {
+        return prev.has(val) ? new Set() : new Set([val]);
+      }
       const next = new Set(prev);
       if (next.has(val)) next.delete(val);
       else next.add(val);

@@ -12,32 +12,32 @@ export const MUST_HAVE_CONFLICTS: readonly MustHaveConflict[] = [
   {
     pair: ['no-car', 'top-schools'],
     message:
-      'Heads up — top public schools mostly live in suburbs that need a car. These two together rarely match anywhere in the metro.',
+      'Heads up. Top public schools mostly live in suburbs that need a car, so these two together rarely match anywhere in the metro.',
   },
   {
     pair: ['no-car', 'house-or-townhouse'],
     message:
-      'Heads up — single-family homes and townhouses mostly sit in suburbs (which need cars) or in pricey brownstone Brooklyn. The overlap is narrow.',
+      'Heads up. Single-family homes and townhouses mostly sit in suburbs (which need cars) or in pricey brownstone Brooklyn. The overlap is narrow.',
   },
   {
     pair: ['luxury-highrise', 'top-schools'],
     message:
-      'Heads up — luxury highrises concentrate in Manhattan and Jersey City core, where top public schools are rare. Tough to combine.',
+      'Heads up. Luxury highrises concentrate in Manhattan and Jersey City core, where top public schools are rare. Tough to combine.',
   },
   {
     pair: ['luxury-highrise', 'calm-blocks'],
     message:
-      'Heads up — luxury highrises tend to sit in active, commercial areas. Hard to combine with whole-neighborhood calm.',
+      'Heads up. Luxury highrises tend to sit in active, commercial areas. Hard to combine with whole-neighborhood calm.',
   },
   {
     pair: ['luxury-highrise', 'quiet-blocks-available'],
     message:
-      'Heads up — luxury highrises sit in busy, active neighborhoods where notable quiet enclaves are uncommon.',
+      'Heads up. Luxury highrises sit in busy, active neighborhoods where notable quiet enclaves are uncommon.',
   },
   {
     pair: ['top-schools', 'cultural-match'],
     message:
-      'Heads up — most top-rated school districts are demographically homogenous. Combining with a specific cultural-community match narrows results sharply.',
+      'Heads up. Most top-rated school districts are demographically narrow, so combining with a specific cultural-community match narrows results sharply.',
   },
 ];
 

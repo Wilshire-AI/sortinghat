@@ -109,7 +109,7 @@ export function ResultsClient() {
             This usually means one of your must-haves is in tension with another. Common
             offenders: top-rated public schools + no-car (top schools are mostly in suburbs),
             luxury high-rise + calm blocks (high-rises live in busier areas), or top schools
-            + a specific cultural community (top districts are demographically homogenous).
+            + a specific cultural community (top districts are demographically narrow).
           </p>
           <p className="mt-4 text-base leading-relaxed text-[var(--color-muted)]">
             Try retaking the quiz with one fewer non-negotiable, or flex the one that&apos;s
