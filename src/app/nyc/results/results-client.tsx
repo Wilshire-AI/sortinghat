@@ -158,7 +158,7 @@ export function ResultsClient() {
       )}
 
       {result.ranked.length > 0 && (
-      <NeighborhoodMap ranked={[...result.ranked, ...result.rest]} />
+      <NeighborhoodMap ranked={[...result.ranked, ...result.rest, ...result.excluded]} />
       )}
 
       {result.ranked.length > 0 && (
