@@ -58,8 +58,8 @@ export const questions: readonly Question[] = [
   {
     id: 'cultural-communities',
     kind: 'multi_select',
-    prompt: 'Which cultural communities, if any, do you want to live near?',
-    helperText: 'Pick none, one, or several. Each pick gives matching neighborhoods a stronger boost. (You can skip this if it doesn\'t apply.)',
+    prompt: 'Which communities, if any, do you want close to home?',
+    helperText: 'Mix of ethnic, identity, and religious. Pick none, one, or several. Each pick boosts matching neighborhoods. (Skip if it doesn\'t apply.)',
     options: [
       { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
       { value: 'south-asian', label: 'South Asian (Indian, Pakistani, Bangladeshi, Sri Lankan)' },
@@ -117,11 +117,12 @@ export const questions: readonly Question[] = [
   },
   {
     id: 'apartment-size-feel',
-    kind: 'slider',
-    prompt: 'Apartment size strongly affects how I feel about my life.',
-    lowLabel: 'I\'m happy in small spaces',
-    highLabel: 'I need real space',
-    dimensionId: 'space-sensitivity',
+    kind: 'forced_choice',
+    prompt: 'Smaller place in your dream area, or meaningfully more space 20 minutes farther out?',
+    choices: [
+      { label: 'Smaller place. I\'d rather be in the right area.', impacts: { 'space-sensitivity': -0.5 } },
+      { label: 'More space. It changes how I live day-to-day.', impacts: { 'space-sensitivity': 0.7 } },
+    ],
   },
   {
     id: 'friction-tolerance',
@@ -133,11 +134,13 @@ export const questions: readonly Question[] = [
   },
   {
     id: 'green-need',
-    kind: 'slider',
-    prompt: 'Regular access to parks, water, or nature is essential to my wellbeing.',
-    lowLabel: 'Don\'t really need it',
-    highLabel: 'Essential',
-    dimensionId: 'environmental-openness',
+    kind: 'forced_choice',
+    prompt: 'Five-minute walk to a real park, or five-minute walk to restaurants and bars. Same building quality. Which weighs more?',
+    choices: [
+      { label: 'The park. Green close by isn\'t optional.', impacts: { 'environmental-openness': 0.7 } },
+      { label: 'Restaurants and bars. Nature can be a 20-minute trip.', impacts: { 'environmental-openness': -0.5 } },
+      { label: 'Both matter. I\'d want them close.', impacts: { 'environmental-openness': 0.2 } },
+    ],
   },
   {
     id: 'safety-need',
