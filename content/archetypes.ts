@@ -23,7 +23,7 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': 0.0,
       'rootedness-vs-access': -0.4,
       'daily-life-walkability': 0.5,
-     'streetscape-quality': 0.5, },
+     'streetscape-quality': 0.5,  'community-fabric': 0.2, },
   },
   {
     id: 'family-trajectory-pragmatist',
@@ -47,7 +47,7 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': -0.2,
       'rootedness-vs-access': -0.6,
       'daily-life-walkability': 0.7,
-     'streetscape-quality': 0.65, },
+     'streetscape-quality': 0.65,  'community-fabric': 0.65, },
   },
   {
     id: 'creative-immersionist',
@@ -71,7 +71,7 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': -0.4,
       'rootedness-vs-access': 0.4,
       'daily-life-walkability': 0.5,
-     'streetscape-quality': 0.28, },
+     'streetscape-quality': 0.28,  'community-fabric': 0.2, },
   },
   {
     id: 'prestige-anchored-cosmopolitan',
@@ -95,7 +95,7 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': 0.3,
       'rootedness-vs-access': 0.5,
       'daily-life-walkability': 0.5,
-     'streetscape-quality': 0.62, },
+     'streetscape-quality': 0.62,  'community-fabric': -0.3, },
   },
   {
     id: 'value-seeking-rooter',
@@ -119,7 +119,7 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': -0.2,
       'rootedness-vs-access': -0.5,
       'daily-life-walkability': 0.3,
-     'streetscape-quality': 0.28, },
+     'streetscape-quality': 0.28,  'community-fabric': 0.55, },
   },
   {
     id: 'cultural-anchor-seeker',
@@ -143,7 +143,7 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': -0.2,
       'rootedness-vs-access': -0.4,
       'daily-life-walkability': 0.6,
-     'streetscape-quality': 0.17, },
+     'streetscape-quality': 0.17,  'community-fabric': 0.35, },
   },
   {
     id: 'nature-hungry-urbanist',
@@ -167,7 +167,7 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': 0.0,
       'rootedness-vs-access': -0.3,
       'daily-life-walkability': 0.4,
-     'streetscape-quality': 0.65, },
+     'streetscape-quality': 0.65,  'community-fabric': 0.25, },
   },
   {
     id: 'energy-driven-maximalist',
@@ -191,6 +191,6 @@ export const archetypes: readonly Archetype[] = [
       'built-form-register': 0.6,
       'rootedness-vs-access': 0.7,
       'daily-life-walkability': 0.6,
-     'streetscape-quality': 0, },
+     'streetscape-quality': 0,  'community-fabric': 0, },
   },
 ] as const;

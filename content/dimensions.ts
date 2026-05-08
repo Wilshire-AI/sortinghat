@@ -149,6 +149,17 @@ export const dimensions: readonly Dimension[] = [
     },
   },
   {
+    id: 'community-fabric',
+    name: 'Community Fabric',
+    kind: 'symmetric',
+    description:
+      'Whether community life is organized around public village overlap or private estate seclusion. Civic-village neighborhoods stitch families together through public schools as the social hub, town events, libraries, walkable downtowns, and broad civic engagement, so residents keep bumping into each other. Estate-and-club neighborhoods stitch life together through country clubs, private schools, larger lots, and curated by-invitation circles, with less daily mixing on shared public ground. Both are durable lived preferences. The axis that splits Maplewood and Larchmont from Scarsdale and Greenwich, even when prestige tier and school quality match.',
+    poles: {
+      low: 'Estate, club, private-school, by-invitation social circles.',
+      high: 'Public-civic, walkable downtown, public-school as community hub.',
+    },
+  },
+  {
     id: 'streetscape-quality',
     name: 'Streetscape Quality',
     kind: 'asymmetric_need',

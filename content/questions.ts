@@ -70,6 +70,25 @@ export const questions: readonly Question[] = [
     ],
   },
   {
+    id: 'community-fabric-mode',
+    kind: 'forced_choice',
+    prompt: 'Which suburban social world feels more like home?',
+    choices: [
+      {
+        label: 'Walkable village, public-school circles, neighbors you see around town.',
+        impacts: { 'community-fabric': 0.75 },
+      },
+      {
+        label: 'Private estate, club-oriented, more space and fewer casual run-ins.',
+        impacts: { 'community-fabric': -0.75 },
+      },
+      {
+        label: 'Either, if the house and commute work.',
+        impacts: { 'community-fabric': 0 },
+      },
+    ],
+  },
+  {
     id: 'cultural-anchor',
     kind: 'forced_choice',
     prompt: 'How important is culturally familiar food, community, or language nearby?',

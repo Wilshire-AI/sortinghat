@@ -18,6 +18,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -114,6 +118,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -208,6 +216,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -306,6 +318,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -400,6 +416,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -496,6 +516,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -588,6 +612,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -679,6 +707,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -775,6 +807,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -866,6 +902,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -962,6 +1002,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -1056,6 +1100,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -1154,6 +1202,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -1250,6 +1302,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -1345,6 +1401,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -1443,6 +1503,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -1539,6 +1603,10 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -1629,6 +1697,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 2
       },
@@ -1726,6 +1798,10 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -1820,6 +1896,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -1912,6 +1992,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -2009,6 +2093,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -2101,6 +2189,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -2196,6 +2288,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -2290,6 +2386,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 2
       },
@@ -2389,6 +2489,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -2484,6 +2588,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -2576,6 +2684,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -2672,6 +2784,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -2767,6 +2883,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -2860,6 +2980,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -2957,6 +3081,10 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -3049,6 +3177,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -3147,6 +3279,10 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -3238,6 +3374,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 2
       },
@@ -3337,6 +3477,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -3431,6 +3575,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -3522,6 +3670,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -3620,6 +3772,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -3715,6 +3871,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -3807,6 +3967,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -3903,6 +4067,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -3996,6 +4164,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -4086,6 +4258,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -4179,6 +4355,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -4276,6 +4456,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -4371,6 +4555,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -4468,6 +4656,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -4563,6 +4755,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -4660,6 +4856,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -4753,6 +4953,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -4848,6 +5052,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -4945,6 +5153,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -5039,6 +5251,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -5135,6 +5351,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -5227,6 +5447,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -5323,6 +5547,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -5417,6 +5645,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -5513,6 +5745,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -5608,6 +5844,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -5699,6 +5939,10 @@
         "choiceIndex": 2
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 2
       },
@@ -5797,6 +6041,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -5892,6 +6140,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -5985,6 +6237,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -6081,6 +6337,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -6174,6 +6434,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 2
       },
@@ -6272,6 +6536,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -6368,6 +6636,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -6458,6 +6730,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -6554,6 +6830,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -6652,6 +6932,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -6744,6 +7028,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -6840,6 +7128,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -6935,6 +7227,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -7026,6 +7322,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -7120,6 +7420,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 1
       },
@@ -7219,6 +7523,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -7314,6 +7622,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -7407,6 +7719,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -7497,6 +7813,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -7597,6 +7917,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -7685,6 +8009,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -7783,6 +8111,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -7876,6 +8208,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -7976,6 +8312,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -8068,6 +8408,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -8166,6 +8510,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -8258,6 +8606,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -8356,6 +8708,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -8453,6 +8809,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -8546,6 +8906,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -8646,6 +9010,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -8740,6 +9108,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -8837,6 +9209,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -8930,6 +9306,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -9026,6 +9406,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -9118,6 +9502,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -9218,6 +9606,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -9314,6 +9706,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -9408,6 +9804,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -9500,6 +9900,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -9596,6 +10000,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -9691,6 +10099,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -9783,6 +10195,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -9882,6 +10298,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -9976,6 +10396,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -10072,6 +10496,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -10165,6 +10593,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -10263,6 +10695,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -10358,6 +10794,10 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -10450,6 +10890,10 @@
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -10547,6 +10991,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -10640,6 +11088,10 @@
         "choiceIndex": 0
       },
       "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
