@@ -1,91 +1,128 @@
 # Sorting Hat — handoff notes
 
-Last updated: end of session 2026-05-07. Production: `https://sortinghat.wilshireai.com/`. Latest commit on `origin/main`: `a2a0c8c`.
+Last updated: end of session 2026-05-08. Production: `https://sortinghat.wilshireai.com/`. Latest commit on `origin/main`: `48c9536`.
 
-This is a handoff for whoever picks up next (you-future, or another agent). Read AGENTS.md for the architectural baseline; this doc captures what changed in the recent push and what's queued.
-
----
-
-## What's shipped (the big picture)
-
-**Engine grew from 11 → 16 dimensions, survey from 17 → 22 questions.** All 113 neighborhoods scored on all 16 dimensions via Polaris dual-model passes (Codex + Claude xhigh, independent + averaged + disagreements documented under `.polaris/`).
-
-**Five new dimensions added during the recent session:**
-
-| Dimension | Kind | What it tests |
-|---|---|---|
-| `social-register` | symmetric | Bohemian/progressive ↔ establishment/polished. Splits UES from UWS, Brooklyn Heights from Park Slope. |
-| `visitor-facing-energy` | symmetric | Resident-rooted ↔ destination-facing. Splits BPC from Hudson Yards, Carroll Gardens from SoHo. |
-| `built-form-register` | symmetric | Prewar/brownstone ↔ modern/amenity-tower. Splits West Village from Hudson Yards. |
-| `rootedness-vs-access` | symmetric | Local community ↔ everything-at-fingertips. Closest psychographic proxy for borough identity. |
-| `daily-life-walkability` | asymmetric_need | Walking distance to groceries, gyms, fitness studios, daily errands. Discriminates suburb-with-downtown (Larchmont) from car-only (Cresskill). |
-
-**Other shipped this session:**
-- Per-neighborhood "How [name] fits you" explanation when arriving from quiz (top 3 alignments + top 3 gaps + overall %)
-- Quiz answers persist in localStorage — refresh / browser-close / nav-away all preserve progress
-- Excluded neighborhoods now explain *why* they were ruled out ("Ruled out: requires a car for daily life.")
-- All neighborhoods (passing + excluded) shown on the map and in the "Where else you might fit" list
-- Per-nbhd score table collapsed behind a "Show ↓" toggle
-- 904 archetype-specific passages (8 archetypes × 113 neighborhoods) generated via Anthropic Messages API
-- Commute-target geography: 9 office clusters (NYC + NJ + 3 CT) with door-to-door minutes via Google Routes API
-- Brand icons (favicon, apple-icon, OG image) — programmatic via Next.js metadata routes
-- School-quality scores refreshed via Polaris dual-model
-- Must-have conflict warnings (inline during quiz when known-impossible pairs are picked)
-- Question rewrites: transit-redundancy now 3-way (drive / one transit / multiple), social-register/visitor-facing/built-form questions in plain language, etc.
+This is a handoff for whoever picks up next (you-future, or another agent). Read AGENTS.md for the architectural baseline; this doc captures what changed in the recent sessions and what's queued.
 
 ---
 
-## Open punch list (what's next)
+## What's shipped (the big picture, current state)
+
+**Engine: 17 lifestyle dimensions, 21 questions, 113 neighborhoods.** All scored via Polaris dual-model passes (Codex + Claude xhigh, parallel + averaged + disagreements documented under `.polaris/`). Live at `https://sortinghat.wilshireai.com/`.
+
+**The 2026-05-07 → 2026-05-08 session was a big engine + UX cleanup pass.** It started with a Wikipedia-photo wiring task, then a full Polaris cross-model audit of the quiz turned up multiple structural issues, and we worked through them.
+
+### Major changes this session (2026-05-08)
+
+**Engine math fixes (the load-bearing ones):**
+- **Asymmetric-need + symmetric "user=0 → no penalty"** unified. Previously a default-zero user value (skipped question or "either" middle option) silently penalized neighborhoods scored away from zero on symmetric dimensions, and on asymmetric dims it penalized those scored below zero. Both kinds now treat `user === 0` as "no preference, no penalty." The right semantic; eliminates a class of "weird Q1 ranking" bugs.
+- **Slider/forced-choice overwrite bug fixed.** The `friction-tolerance` slider SET friction-sensitivity, wiping the +0.7 ADD from `noise-tolerance` (Q7). Q7's friction signal was effectively dead code. Resolved by dropping the slider and keeping Q7 as the single source.
+
+**Question structural changes:**
+- **Q1 (transit-redundancy):** "multiple options" now hits `urban-intensity-tolerance: +0.4` (logical entailment — multi-transit only exists in dense urban areas in NYC metro). "I'd drive" now uses `softPrefs: ['car-friendly']` instead of the old hidden urban-intensity penalty.
+- **Q2 (was prestige-vs-space, now access-vs-space):** reframed away from prestige toward urban-intensity + space tradeoff (more universal axis).
+- **Q3 (family-trajectory):** changed `kind` from `symmetric` to `asymmetric_need`. Picking "no kids" no longer penalizes family-coded nbhds.
+- **Q4 (NEW — income-tier-fit):** resurrects `prestige-orientation` (previously inert). Asks income/polish tier rather than fame; rescued ~12 voiceless nbhds.
+- **Q6 (creative-immersion):** rewritten as a slider on creative-energy (was forced_choice). Concise Likert: "I want art galleries and indie music venues on my own block."
+- **Q7 (was noise-tolerance-fit, kept the same dim):** vignette structure preserved.
+- **Q8 (commute-personality)** dropped — redundant with Q1 (transit-psychology) + Q7 (friction-sensitivity).
+- **Q9 (weekend-life):** stripped two hidden side-effects (creative-energy on "in the city," friction on "slow morning").
+- **Q11 (green-need):** reframed as single-axis park importance (was a false dichotomy with restaurants/bars).
+- **Q14 (apartment-size-feel)** dropped — strict subset of Q2.
+- **Q15 (friction-tolerance slider)** dropped — overwrite bug, see above.
+- **Q21 (must-haves):** capped at 3 selections via `maxSelections`.
+- **`commute-tolerance`** marked `maxSelections: 1` (type-clarity; UI was already single-pick).
+- **Conditional skip:** if `commute-target` is only "remote" / "other," `commute-tolerance` is skipped automatically (works in forward-nav, back-nav, and resume effect).
+- **Concision pass:** all 21 prompts ≤ 12 words; helper texts ≤ 18.
+
+**New dimension: `streetscape-quality` (17th).** Asymmetric_need; captures stroll-worthy character (tree-lined blocks, brownstones, water-adjacent, café spillover). Distinct from `daily-life-walkability` (errand reach) and `environmental-openness` (parks). 113 nbhd scores + 8 archetype scores from Polaris dual-model. Hudson Yards now correctly ranks low on streetscape (functional walkability ≠ stroll pleasure); West Village / Park Slope / Brooklyn Heights / Greenwich Village / Carroll Gardens top the list.
+
+**New mechanism: `softPrefs` channel.** ForcedChoice options can include `softPrefs: ['car-friendly', ...]`. Threaded through DerivedState, fingerprint encoding, scoring (`+5%` boost). Currently used for Q1 "I'd drive" → boost car-dependent nbhds.
+
+**Engine UX:**
+- **Always render rankings.** Empty-state (when must-haves filter excludes everyone) used to hijack the whole page. Now renders a banner + the full ranked list (with `failedMustHaves` annotations on excluded entries) + the map.
+- **"Same fit tier" callout** per top match. Cards in headline top-N show 1-3 peers within 2% of their score (Polaris-reviewed UX choice). Surfaces the cluster reality (Park Slope / Cobble Hill / Carroll Gardens / Brooklyn Heights are equivalents for the same user) without paradigm shift.
+- **Live "what's moving" panel** below each quiz question. Collapsed by default, hidden until 5+ answers (signal-poor before that). Shows top-15 + recent-movement deltas with ↑N green / ↓N red arrows.
+- **Methodology page** at `/methodology` (auto-generated counts/dims from content modules) with link to interactive sandbox.
+- **Sandbox** at `/methodology/sandbox` — answer all 21 questions on one screen, live ranking + dimension vector + neighborhood-finder search box. Used to QA "why isn't X showing up" cases.
+- **Retake bug fixed:** completed-quiz returnees now land on Q1 instead of Q22 (resume logic detects "fully answered" and resets).
+- **Back link from per-nbhd page** now returns to results (with fingerprint preserved) when arriving from results.
+- **Must-haves capped at 3** with disabled state on remaining options.
+
+**Photos:** 112/113 nbhds with real Wikipedia lead images, sized to ~600KB JPG, attribution on each per-nbhd page (CC-BY / CC-BY-SA / public domain). Reproducible via `scripts/fetch-wikimedia-photos.mjs` + `scripts/build-photo-metadata.mjs`. Only `st-george` lacks an infobox image; falls back to BoroughHero.
+
+**Polaris cross-model audits run this session:**
+- Full quiz audit (`.polaris/quiz-audit.md`) — surfaced the slider-overwrite bug, asymmetric math edge case, several hidden couplings.
+- Streetscape-quality scoring (`.polaris/streetscape-quality-scores.json`) — 14 reconciled disagreements documented.
+- Cluster-UX review (`.polaris/cluster-ux-review.md`) — selected Option 1 ("Same fit tier" callout) over alternatives, refined to 0.02 threshold.
+
+### Reachability metrics (current state)
+
+With each neighborhood's perfect-match user as the test vector:
+- **#1: 82/113 (73%)**
+- **Top 3: 102/113 (90%)**
+- **Top 5: 110/113 (97%)**
+- **Top 10: 113/113 (100%)** — every neighborhood is reachable in some sense
+
+The 27% that don't reach #1 tie at perfect score (1.000) with cluster mates and lose the alphabetical tie-break. The "Same fit tier" callout makes this transparent in the UI.
+
+With greedy answer paths (the practical user experience):
+- Top-1: 22%, Top-3: 54%, Top-5: 59%, Top-10: 76%.
+- 27 voiceless (don't reach top 10 via greedy).
+
+---
+
+## Open punch list
 
 Roughly priority-ordered:
 
 ### Tier 1 — Pre-launch blockers
-1. **Trademark / rename decision.** "Sorting Hat" is a Warner Bros / J.K. Rowling registered mark. Rename candidates from AGENTS.md §10: The Sorter, Roost, Bearings, Hearth, Habitat. Decide before any public marketing push.
-2. **Real photography.** Currently SVG borough heroes (programmatic in `src/components/results/BoroughHero.tsx`). Real photos for top ~30 nbhds + fallback to SVG would meaningfully improve editorial register. Unsplash API was set up but never executed (account approval pending? — confirm via SSM `/wilshireai/prod/unsplash`).
-3. **A11y audit.** Forms need keyboard nav + screen reader pass. Quick audit with axe DevTools, fix what surfaces.
+1. **Trademark / rename decision.** "Sorting Hat" is a Warner Bros / J.K. Rowling registered mark. Rename candidates from earlier session: The Sorter, Roost, Bearings, Hearth, Habitat. Decide before any public marketing push.
+2. **A11y audit.** Forms need keyboard nav + screen reader pass. Quick audit with axe DevTools, fix what surfaces.
 
 ### Tier 2 — Real product gaps
-4. **Methodology / about page.** Explains the 16 dims, scoring math, data sources (NY State DOE + Niche-as-reference for schools, Google Routes for commute, Polaris dual-model for editorial dims). Useful for journalists, partners, skeptics. Not yet built.
-5. **LGBTQ split out of `cultural-communities`.** Currently bundled with ethnic communities (category error both reviewers flagged). Either pull into separate "identity communities" question or rebrand the parent question. Deferred this session.
-6. **Conditional follow-ups.** When user picks `top-schools`, ask grade-band (K-5 / middle / high) — Westchester/LI district fit varies dramatically by band. Audit punch list.
-7. **Save/share flow with DB.** Vercel Postgres + Auth.js magic-link per the v1 spec at `/Users/matt/wilshireai/docs/superpowers/specs/2026-05-06-sortinghat-v1-design.md`.
+3. **Q19 commute target list expansion.** Polaris flagged this in the audit. Missing: UWS medical / universities, White Plains, Newark, Hoboken (commute target), Williamsburg, Flushing, JFK / LGA, New Haven. Expansion needs a commute-minutes recompute via `scripts/compute-commutes.mjs` against Google Routes API ($, but cheap).
+4. **Tie-break determinism.** Currently alphabetical-by-id, so Park Slope always wins the tie over Cobble Hill regardless of user. Polaris suggested a stable hash of user fingerprint to break ties differently across users. Cosmetic but real fairness improvement.
+5. **Suburb cluster substitution-set UI.** Polaris noted the Scarsdale / Roslyn / Manhasset / Great Neck cluster is a *substitution set*, not a lifestyle distinction — they're the same neighborhood in different counties. Could surface as a single "tier 1 NY/NJ family suburb" pseudo-card.
+6. **Save/share flow with DB.** Vercel Postgres + Auth.js magic-link per the v1 spec at `/Users/matt/wilshireai/docs/superpowers/specs/2026-05-06-sortinghat-v1-design.md`.
 
 ### Tier 3 — Operational / longer-term
-8. OpenTripPlanner migration (replace Google Routes API with self-hosted GTFS-based routing for better NYC accuracy + zero ongoing cost; ~1-2 days)
-9. Bronx / Staten Island expansion (Mott Haven, Stapleton, etc. — currently only Riverdale + St. George)
-10. Cultural tag granularity (split East Asian → Korean / Chinese / Japanese / Taiwanese, etc. — audit punch list)
-11. Editing answers — the quiz is linear; jumping to "edit Q3 from results" requires clicking back through all questions. UI for "jump to question N" would help.
-12. Commute weighting verification — Polaris flagged this once (false alarm; we DO have it via `scoreCommute` in `score.ts`).
+7. OpenTripPlanner migration (replace Google Routes API with self-hosted GTFS-based routing for better NYC accuracy + zero ongoing cost; ~1-2 days)
+8. Bronx / Staten Island expansion (Mott Haven, Stapleton, etc.)
+9. Cultural tag granularity (split East Asian → Korean / Chinese / Japanese / Taiwanese, etc.)
+10. `prestige-orientation` cleanup if you want to drop it entirely (now queryable; could be removed if it doesn't pull weight long-term).
 
 ---
 
 ## Architectural decisions made this session
 
-- **Engine: 16 dimensions, all symmetric or asymmetric_need per `Dimension['kind']`.** Per-neighborhood scoring stays in `content/neighborhoods.ts` literal data; commute minutes side-loaded from `content/commute-minutes.json` (machine-generated, refreshable via `scripts/compute-commutes.mjs`).
-- **Per-archetype prose lives in `content/passages/<archetype-id>.json`.** 904 entries. Generated by `scripts/generate-passages.ts` against Anthropic Messages API. Each entry has `reviewedAt: null` to indicate auto-generated; mark reviewed over time as desired.
-- **Score-explanation flow:** results page passes user fingerprint to per-nbhd links via `?f=<fingerprint>`. Per-nbhd page reads with `useSearchParams` (client component) and renders `<NeighborhoodFitExplanation>` if present. Direct visitors with no fingerprint see only the static profile.
-- **Quiz persistence:** `useQuizState` syncs answers to `localStorage` key `sortinghat:quiz-answers` on every change. Hydrates on mount via useEffect (not useState initializer) to avoid SSR hydration mismatch. Quiz starts at first unanswered question after hydration.
-- **Polaris dual-model pattern is now the standard for editorial scoring.** Used for: hasQuietBlocks list, hasFamilyInfrastructure list, school-quality refresh, 3 new dim scoring, rootedness scoring, walkability scoring, and dimension-brainstorm. Pattern: spawn parallel Codex + Claude at xhigh, average within 0.2 disagreement bound, document gaps. Saved outputs under `.polaris/` (gitignored).
+- **`softPrefs` channel.** Generic mechanism for forced-choice options to flag soft preferences (currently 'car-friendly') that the engine boosts (+5%) on matching neighborhoods. Threaded through fingerprint, derive, score. Future expansion: add 'water-proximity' for coastal nbhds, 'walks-pleasure' for stroll-seekers, etc.
+- **Symmetric vs asymmetric_need both treat user=0 as no-penalty now.** This was the deepest fix of the session — it unifies the "no opinion expressed" semantic across both kinds. See `dimensionContribution` in `src/lib/engine/score.ts`.
+- **Slider questions are still SET-not-ADD.** The Q15 overwrite bug was resolved by removing the redundant slider, not by changing the SET semantic. If you add a new slider that overlaps a forced_choice's dim, expect the same overwrite — design around it.
+- **"Same fit tier" peers are sourced from `result.ranked + result.rest`** (passing-only), not from excluded. Cluster mates that fail the user's must-haves don't show as same-tier — correct, because they're not actually achievable matches.
+- **Live ranking panel hides until 5+ answers.** The signal-poor first few answers anchor users into wrong expectations. Threshold is conservative; could be lowered if user-testing shows that's too late.
 
 ---
 
 ## Gotchas
 
-- **Suburb scores in `content/neighborhoods.ts` use a hybrid format:** the original `scores: { ... }` line is single-line, but every dim added since uses multi-line append. Scripts that modify `scores` need to handle both formats. See `/tmp/apply_*.mjs` history for working patterns.
+- **Suburb scores in `content/neighborhoods.ts` use a hybrid format:** original `scores: { ... }` line is single-line, but every dim added since uses multi-line append. Scripts that modify `scores` need to handle both formats. The new streetscape-quality script (saved at `/tmp/apply-streetscape.mjs` during this session) handles both via brace-counting.
 - **Persona-fit test vectors must be updated when adding a new dimension.** Otherwise the persona's vector lacks the new dim → defaults to 0 → may produce false-positive cross-borough matches. Same goes for archetype vectors (8 of them).
 - **Polaris ephemeral state:** worker outputs aren't retained across session reaps. ALWAYS instruct Polaris to save synthesized scores to a file under `.polaris/` AND inline them in the response. Don't rely on the agent's memory.
 - **Vercel auto-deploys on push to `origin/main`.** No manual step. Watch deploy ID change as proof of new build serving.
-- **Custom remote URL banner:** the repo moved to `Wilshire-AI/sortinghat`; local remote points to `maplelemondragon/sortinghat` and gets a redirect warning on every push. Run `git remote set-url origin https://github.com/Wilshire-AI/sortinghat.git` when convenient.
+- **`prestige-orientation` is no longer "intentionally inert"** as of this session — Q4 (income-tier-fit) hits it. AGENTS.md §4 has been updated.
+- **Conditional skip logic** for `commute-tolerance` is currently inline in `src/app/nyc/quiz/page.tsx`. If you add a second conditional rule, refactor to a declarative `Question.skipWhen?: (answers) => boolean` pattern at that point.
 
 ---
 
 ## Useful files / scripts
 
-- `scripts/compute-commutes.mjs` — pulls Google Maps API key from AWS SSM `/wilshireai/prod/google-maps`, computes 113 × 9 commute matrix. Re-run quarterly for fresh data.
-- `scripts/generate-passages.ts` — uses Anthropic API key from `/wilshireai/prod/anthropic`, generates 904 archetype-specific passages. Re-run if archetypes change or to regenerate stale passages.
-- `content/commute-minutes-overrides.json` — editorial overrides for cases Google routes poorly (SI Ferry data gap, Metro-North New Canaan Branch). Persists across recomputes.
-- `tests/engine/persona-fit.test.ts` — 7 archetypal personas; loose assertion (top 5 contains expected borough). Doesn't test survey→vector mapping, only engine→ranking.
-- `.polaris/` — synthesized outputs from dual-model passes. Gitignored. Worth peeking at when curious about specific scoring decisions.
+- `scripts/compute-commutes.mjs` — pulls Google Maps API key from AWS SSM `/wilshireai/prod/google-maps`, computes 113 × 9 commute matrix. Re-run quarterly for fresh data; needed for Q19 expansion.
+- `scripts/generate-passages.ts` — uses Anthropic API key from `/wilshireai/prod/anthropic`, generates 904 archetype-specific passages. Re-run if archetypes change.
+- `scripts/fetch-wikimedia-photos.mjs` + `scripts/build-photo-metadata.mjs` — photo pipeline.
+- `content/commute-minutes-overrides.json` — editorial overrides for cases Google routes poorly (SI Ferry data gap, Metro-North New Canaan Branch).
+- `tests/engine/persona-fit.test.ts` — 7 archetypal personas; loose assertion (top 5 contains expected borough).
+- `.polaris/` — synthesized outputs from dual-model passes. Gitignored. Worth peeking at for `quiz-audit.md`, `streetscape-quality-scores.json`, `cluster-ux-review.md`, `answer-paths.md` (per-nbhd answer recipes), `question-impact.md` (per-option neighborhood pull), `voiceless.md` (nbhds that don't reach top 10 via greedy paths).
 
 ---
 
@@ -94,8 +131,9 @@ Roughly priority-ordered:
 1. Pull latest from `origin/main`
 2. `npm install` if anything changed in `package.json`
 3. `npm test` to verify clean baseline (should be 74/74)
-4. Read the most recent commits to understand what's freshest
-5. Check this doc for what's queued
-6. Either pick from the punch list or address whatever surfaced from real users since last session
+4. `npm run lint` (0 errors, 2 stylistic warnings)
+5. Read the most recent commits to understand what's freshest (`git log --oneline -25`)
+6. Check this doc for what's queued
+7. Either pick from the punch list or address whatever surfaced from real users since last session
 
 End.
