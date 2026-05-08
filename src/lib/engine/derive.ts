@@ -3,7 +3,7 @@
 // (e.g., the methodology/paths page) can import them without pulling
 // in the React-hook layer.
 
-import type { Dimension, Question, UserVector } from '@content/types';
+import type { Dimension, DimensionId, Question, UserVector } from '@content/types';
 import { clampVector, zeroVector } from './vector';
 
 export type Answer =
@@ -20,6 +20,16 @@ export type DerivedState = {
   commuteTargets: string[];
   commuteToleranceMinutes: number;
   softPrefs: string[];
+  // Dimensions where the user expressed any signal (including explicit
+  // neutrality like a slider at 0 or a forced-choice option whose impacts
+  // include this dim with value 0). A dim that was never queried — because
+  // the user skipped the question, or because no chosen option references
+  // it — is NOT in this set.
+  //
+  // Used by the Bayesian engine to skip untouched dims in the likelihood
+  // (no info → no contribution). The Euclidean engine ignores this field;
+  // it's pure bookkeeping until the Bayesian path lands.
+  touchedDims: Set<DimensionId>;
 };
 
 // Pure function: derive full quiz state from a set of answers.
@@ -35,6 +45,7 @@ export function deriveState(
   const mustHaves = new Set<string>();
   const commuteTargets = new Set<string>();
   const softPrefs = new Set<string>();
+  const touchedDims = new Set<DimensionId>();
   let commuteToleranceMinutes = 0;
 
   for (const q of questions) {
@@ -46,6 +57,7 @@ export function deriveState(
       if (choice) {
         for (const [dim, impact] of Object.entries(choice.impacts)) {
           vector[dim] = (vector[dim] ?? 0) + (impact as number);
+          touchedDims.add(dim);
         }
         if (choice.softPrefs) {
           for (const sp of choice.softPrefs) softPrefs.add(sp);
@@ -53,6 +65,7 @@ export function deriveState(
       }
     } else if (q.kind === 'slider' && a.kind === 'slider') {
       vector[q.dimensionId] = a.value;
+      touchedDims.add(q.dimensionId);
     } else if (q.kind === 'multi_select' && a.kind === 'multi_select') {
       if (q.purpose === 'must_haves') {
         for (const v of a.selectedValues) mustHaves.add(v);
@@ -70,15 +83,17 @@ export function deriveState(
           if (opt?.impacts) {
             for (const [dim, impact] of Object.entries(opt.impacts)) {
               vector[dim] = (vector[dim] ?? 0) + (impact as number);
+              touchedDims.add(dim);
             }
           }
         }
       } else {
         for (const v of a.selectedValues) selectedTags.add(v);
       }
-      if (q.dimensionImpactPerSelection) {
+      if (q.dimensionImpactPerSelection && a.selectedValues.length > 0) {
         for (const [dim, impact] of Object.entries(q.dimensionImpactPerSelection)) {
           vector[dim] = (vector[dim] ?? 0) + (impact as number) * a.selectedValues.length;
+          touchedDims.add(dim);
         }
       }
     }
@@ -91,6 +106,7 @@ export function deriveState(
     commuteTargets: Array.from(commuteTargets),
     commuteToleranceMinutes,
     softPrefs: Array.from(softPrefs),
+    touchedDims,
   };
 }
 
