@@ -1,4 +1,4 @@
-import type { CommuteMinutes, Dimension, Neighborhood, NeighborhoodId, UserVector } from '@content/types';
+import type { CommuteMinutes, Dimension, DimensionId, Neighborhood, NeighborhoodId, UserVector } from '@content/types';
 
 const CULTURAL_TAG_BOOST = 0.08;
 const COMMUTE_PENALTY_FLOOR = 0.3; // never multiply score below this
@@ -151,6 +151,17 @@ export type RankOptions = {
   softPrefs?: readonly string[];
   populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
   populationPriorWeight?: number;
+  // Bayesian engine: uses populationsByNeighborhood (required) + touchedDims
+  // to compute Gaussian likelihood × population prior. Default 'euclidean'
+  // preserves existing behavior; flip per-call to opt in.
+  engine?: 'euclidean' | 'bayesian';
+  // Dims where the user expressed any signal. Required by Bayesian engine
+  // (untouched dims are excluded from the likelihood). For pre-Bayesian
+  // shared fingerprints with no recorded touched-dim info, the engine falls
+  // back to "any dim with non-zero user value is touched" — which is a
+  // heuristic, accurate for fresh quizzes but potentially imprecise for
+  // edge cases where impacts canceled to exactly 0.
+  touchedDims?: ReadonlySet<DimensionId>;
 };
 
 const SOFT_PREF_BOOST = 0.05;
@@ -164,6 +175,101 @@ function softPrefBoost(neighborhood: Neighborhood, softPrefs: readonly string[])
     boost += SOFT_PREF_BOOST;
   }
   return boost;
+}
+
+// ---- Bayesian engine primitives ----
+// Cross-model design at .polaris/bayesian-engine-design.md.
+//
+// Each neighborhood is a Gaussian-shaped basin of attraction in the dim space.
+// σ scales with population: larger nbhds genuinely accept more user-types.
+// Score = unnormalized RBF likelihood × population prior, with orthogonal
+// modifiers (cultural tags, commute, softPrefs) multiplied in. Final display
+// is per-user max-normalized.
+//
+// We deliberately drop the strict Gaussian density's 1/σ^d normalizer. In
+// 18 dims that term scales as σ^-18 and would invert the population effect,
+// punishing big nbhds for being permissive. The Bayesian frame is a useful
+// mental model; the math is similarity-based, not strict probabilistic
+// inference. See .polaris/bayesian-engine-design.md "Likelihood function"
+// for the derivation.
+
+const POP_REF = 30_000;
+const SIGMA_BASE = 0.40;
+const SIGMA_ALPHA = 0.35;
+const SIGMA_MIN = 0.22;
+const SIGMA_MAX = 0.90;
+const PRIOR_BETA = 0.5;
+const CULTURAL_TAG_MAX_MATCHES = 3;
+const SOFT_PREF_MULT_PER_MATCH = 1.05;
+const SOFT_PREF_MULT_CAP = 1.15;
+
+export function sigmaForPopulation(population: number): number {
+  if (population <= 0) return SIGMA_MIN;
+  const raw = SIGMA_BASE * Math.pow(population / POP_REF, SIGMA_ALPHA);
+  return Math.max(SIGMA_MIN, Math.min(SIGMA_MAX, raw));
+}
+
+export function logPriorForPopulation(population: number): number {
+  if (population <= 0) return PRIOR_BETA * Math.log(1 / POP_REF);
+  return PRIOR_BETA * Math.log(population / POP_REF);
+}
+
+export function dimensionDelta(
+  userValue: number,
+  neighborhoodValue: number,
+  kind: Dimension['kind'],
+): number {
+  if (kind === 'asymmetric_need') {
+    if (userValue <= 0) return 0;
+    return Math.max(0, userValue - neighborhoodValue);
+  }
+  return userValue - neighborhoodValue;
+}
+
+export function logLikelihoodBayesian(
+  user: UserVector,
+  neighborhood: Neighborhood,
+  dimensions: readonly Dimension[],
+  touchedDims: ReadonlySet<string>,
+  sigma: number,
+): number {
+  let sumSquaredDelta = 0;
+  for (const d of dimensions) {
+    if (!touchedDims.has(d.id)) continue;
+    const delta = dimensionDelta(user[d.id] ?? 0, neighborhood.scores[d.id] ?? 0, d.kind);
+    sumSquaredDelta += delta * delta;
+  }
+  return -0.5 * sumSquaredDelta / (sigma * sigma);
+}
+
+function culturalMultiplier(neighborhood: Neighborhood, selectedTags: readonly string[]): number {
+  if (selectedTags.length === 0 || !neighborhood.culturalTags) return 1;
+  const matched = neighborhood.culturalTags.filter((t) => selectedTags.includes(t)).length;
+  return 1 + CULTURAL_TAG_BOOST * Math.min(matched, CULTURAL_TAG_MAX_MATCHES);
+}
+
+function softPrefMultiplier(neighborhood: Neighborhood, softPrefs: readonly string[]): number {
+  if (softPrefs.length === 0) return 1;
+  let mult = 1;
+  if (softPrefs.includes('car-friendly') && (neighborhood.scores['daily-life-walkability'] ?? 0) < 0.5) {
+    mult *= SOFT_PREF_MULT_PER_MATCH;
+  }
+  return Math.min(SOFT_PREF_MULT_CAP, mult);
+}
+
+// Heuristic fallback for callers that don't provide touchedDims (pre-Bayesian
+// fingerprints, etc.): every dim with a non-zero user value is "touched."
+// Imprecise for edge cases where impacts canceled to exactly 0, but reasonable
+// for most flows.
+function touchedDimsFromUserVector(
+  user: UserVector,
+  dimensions: readonly Dimension[],
+): Set<string> {
+  const touched = new Set<string>();
+  for (const d of dimensions) {
+    if ((user[d.id] ?? 0) !== 0) touched.add(d.id);
+  }
+  return touched;
 }
 
 export function rankNeighborhoods(
@@ -188,6 +294,8 @@ export function rankNeighborhoods(
           softPrefs: topNOrOptions.softPrefs ?? [],
           populationsByNeighborhood: topNOrOptions.populationsByNeighborhood,
           populationPriorWeight: topNOrOptions.populationPriorWeight ?? POPULATION_W_DEFAULT,
+          engine: topNOrOptions.engine ?? 'euclidean',
+          touchedDims: topNOrOptions.touchedDims,
         }
       : {
           topN: topNOrOptions,
@@ -199,11 +307,17 @@ export function rankNeighborhoods(
           softPrefs: [] as readonly string[],
           populationsByNeighborhood: undefined as Readonly<Record<NeighborhoodId, number>> | undefined,
           populationPriorWeight: POPULATION_W_DEFAULT,
+          engine: 'euclidean' as const,
+          touchedDims: undefined as ReadonlySet<DimensionId> | undefined,
         };
 
   const filtered = opts.mustHaves.length > 0
     ? neighborhoods.filter((n) => passesMustHaves(n, opts.mustHaves, opts.selectedTags))
     : neighborhoods;
+
+  if (opts.engine === 'bayesian') {
+    return rankBayesian(user, filtered, dimensions, opts);
+  }
 
   const applyCommute =
     opts.commuteTargets.length > 0 &&
@@ -232,6 +346,71 @@ export function rankNeighborhoods(
     return { neighborhood, score: Math.min(1, baseScore * commuteMult * popMult + boost) };
   });
 
+  scored.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return a.neighborhood.id.localeCompare(b.neighborhood.id);
+  });
+  return scored.slice(0, opts.topN);
+}
+
+// Bayesian ranking path. Caller has already filtered by must-haves.
+function rankBayesian(
+  user: UserVector,
+  candidates: readonly Neighborhood[],
+  dimensions: readonly Dimension[],
+  opts: {
+    topN: number;
+    selectedTags: readonly string[];
+    commuteTargets: readonly string[];
+    commuteToleranceMinutes: number;
+    commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
+    softPrefs: readonly string[];
+    populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
+    touchedDims?: ReadonlySet<DimensionId>;
+  },
+): RankedNeighborhood[] {
+  const touchedDims = opts.touchedDims ?? touchedDimsFromUserVector(user, dimensions);
+  const applyCommute =
+    opts.commuteTargets.length > 0 &&
+    opts.commuteToleranceMinutes > 0 &&
+    !!opts.commuteMinutesByNeighborhood;
+
+  // Compute log-posterior for every candidate. We work in log space so the
+  // unnormalized RBF likelihood and log-prior sum cleanly with the log of
+  // each multiplicative modifier.
+  const logScored = candidates.map((neighborhood) => {
+    const pop = opts.populationsByNeighborhood?.[neighborhood.id] ?? POP_REF;
+    const sigma = sigmaForPopulation(pop);
+    const logLik = logLikelihoodBayesian(user, neighborhood, dimensions, touchedDims, sigma);
+    const logPrior = logPriorForPopulation(pop);
+
+    const culMult = culturalMultiplier(neighborhood, opts.selectedTags);
+    const commuteMult = applyCommute
+      ? scoreCommute(
+          opts.commuteMinutesByNeighborhood![neighborhood.id],
+          opts.commuteTargets,
+          opts.commuteToleranceMinutes,
+        )
+      : 1;
+    const softMult = softPrefMultiplier(neighborhood, opts.softPrefs);
+
+    const logScore =
+      logLik +
+      logPrior +
+      Math.log(culMult) +
+      Math.log(Math.max(commuteMult, 1e-9)) +
+      Math.log(softMult);
+    return { neighborhood, logScore };
+  });
+
+  // Per-user max-normalize for display: top match is exactly 1.0; others
+  // are scaled relative. The rank order is preserved exactly because
+  // x → exp(x - maxLog) is monotonic.
+  const maxLog = logScored.reduce((m, s) => (s.logScore > m ? s.logScore : m), -Infinity);
+  const scored = logScored.map((s) => ({
+    neighborhood: s.neighborhood,
+    score: maxLog === -Infinity ? 0 : Math.exp(s.logScore - maxLog),
+  }));
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
     return a.neighborhood.id.localeCompare(b.neighborhood.id);
