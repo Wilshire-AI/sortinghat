@@ -81,7 +81,7 @@ export const questions: readonly Question[] = [
   {
     id: 'creative-immersion',
     kind: 'forced_choice',
-    prompt: 'How close do you want to live to the creative scene — art, indie music, makers, the kind of culture you stumble into walking around?',
+    prompt: 'How close do you want to live to the creative scene: art, indie music, makers, the kind of culture you stumble into walking around?',
     choices: [
       { label: 'In it. I want to be surrounded.', impacts: { 'creative-energy': 0.8 } },
       { label: 'Near it. Visit when I want, retreat when I don\'t.', impacts: { 'creative-energy': 0.2 } },
@@ -103,9 +103,10 @@ export const questions: readonly Question[] = [
     kind: 'forced_choice',
     prompt: 'On a typical Saturday, where are you?',
     choices: [
-      { label: 'Walking the neighborhood, slow morning at home', impacts: { 'urban-intensity-tolerance': -0.3, 'friction-sensitivity': 0.3 } },
-      { label: 'In the city. Restaurants, shows, plans with friends.', impacts: { 'urban-intensity-tolerance': 0.4, 'creative-energy': 0.3 } },
+      { label: 'Walking the neighborhood, slow morning at home', impacts: { 'urban-intensity-tolerance': -0.3 } },
+      { label: 'In the city. Restaurants, shows, plans with friends.', impacts: { 'urban-intensity-tolerance': 0.4 } },
       { label: 'Out of the city. Parks, hikes, the beach.', impacts: { 'environmental-openness': 0.5 } },
+      { label: 'Mix of all three depending on the week.', impacts: {} },
     ],
   },
   {
@@ -195,14 +196,6 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'friction-tolerance',
-    kind: 'slider',
-    prompt: 'Loud, crowded, hectic streets wear me down over time.',
-    lowLabel: 'They don\'t bother me',
-    highLabel: 'They wear me down',
-    dimensionId: 'friction-sensitivity',
-  },
-  {
     id: 'green-need',
     kind: 'forced_choice',
     prompt: 'Five-minute walk to a real park, or five-minute walk to restaurants and bars. Same building quality. Which weighs more?',
@@ -252,11 +245,12 @@ export const questions: readonly Question[] = [
     id: 'commute-tolerance',
     kind: 'multi_select',
     purpose: 'commute_tolerance',
+    maxSelections: 1,
     prompt: 'How much door-to-door commute can you live with on a typical day?',
     options: [
       { value: '30', label: 'Under 30 min. Anything more drains me.' },
-      { value: '45', label: '30–45 min. Pretty standard NYC commute.' },
-      { value: '60', label: '45–60 min. Fine if the neighborhood is right.' },
+      { value: '45', label: '30 to 45 min. Pretty standard NYC commute.' },
+      { value: '60', label: '45 to 60 min. Fine if the neighborhood is right.' },
       { value: '90', label: '60+ min. Willing to trade for what I want.' },
     ],
   },

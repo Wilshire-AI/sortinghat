@@ -46,6 +46,10 @@ function dimensionContribution(
   kind: Dimension['kind'],
 ): number {
   if (kind === 'asymmetric_need') {
+    // No expressed need (zero or negative user value) → no penalty regardless
+    // of neighborhood value. Otherwise the default-zero from a skipped
+    // question silently penalizes neighborhoods scored below 0.
+    if (userValue <= 0) return 0;
     const shortfall = Math.max(0, userValue - neighborhoodValue);
     return shortfall * shortfall;
   }
