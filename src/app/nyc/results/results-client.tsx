@@ -147,6 +147,21 @@ export function ResultsClient() {
           {result.ranked.map((r, i) => {
             const passage = getPassage(result.archetype.id, r.neighborhood.id);
             const prose = resolveCardProse(r.neighborhood, passage);
+            // "Same fit tier" peers: passing nbhds within 2% of this card's
+            // score, excluding the card itself. Show top 3 with overflow count.
+            // Peers also in headline top-N are shown without %, peers from
+            // the rest list show their %.
+            const headlineIds = new Set(result.ranked.map((x) => x.neighborhood.id));
+            const allPeers = [...result.ranked, ...result.rest]
+              .filter((x) => x.neighborhood.id !== r.neighborhood.id)
+              .filter((x) => Math.abs(x.score - r.score) <= 0.02)
+              .sort((a, b) => b.score - a.score);
+            const samePeers = allPeers.slice(0, 3).map((x) => ({
+              slug: x.neighborhood.slug,
+              name: x.neighborhood.name,
+              showScore: headlineIds.has(x.neighborhood.id) ? undefined : x.score,
+            }));
+            const samePeersOverflow = Math.max(0, allPeers.length - samePeers.length);
             return (
               <NeighborhoodCard
                 key={r.neighborhood.id}
@@ -158,6 +173,8 @@ export function ResultsClient() {
                   result.selectedTags.includes(t),
                 )}
                 fingerprint={f ?? undefined}
+                samePeers={samePeers}
+                samePeersOverflow={samePeersOverflow}
               />
             );
           })}

@@ -3,6 +3,13 @@ import type { Neighborhood } from '@content/types';
 import type { ResolvedCardProse } from '@/lib/engine/explain';
 import { NeighborhoodHero } from './NeighborhoodHero';
 
+type SamePeer = {
+  slug: string;
+  name: string;
+  /** Optional %. Shown only when the peer isn't itself in the headline top-N. */
+  showScore?: number;
+};
+
 type Props = {
   rank: number;
   neighborhood: Neighborhood;
@@ -10,6 +17,8 @@ type Props = {
   score: number;
   matchedTags?: string[];
   fingerprint?: string;
+  samePeers?: SamePeer[];
+  samePeersOverflow?: number;
 };
 
 const boroughLabel: Record<string, string> = {
@@ -38,10 +47,21 @@ const tagLabel: Record<string, string> = {
   lgbtq: 'LGBTQ+',
 };
 
-export function NeighborhoodCard({ rank, neighborhood, prose, score, matchedTags = [], fingerprint }: Props) {
+export function NeighborhoodCard({
+  rank,
+  neighborhood,
+  prose,
+  score,
+  matchedTags = [],
+  fingerprint,
+  samePeers = [],
+  samePeersOverflow = 0,
+}: Props) {
   const detailHref = fingerprint
     ? `/nyc/n/${neighborhood.slug}?f=${fingerprint}`
     : `/nyc/n/${neighborhood.slug}`;
+  const peerHref = (slug: string) =>
+    fingerprint ? `/nyc/n/${slug}?f=${fingerprint}` : `/nyc/n/${slug}`;
   return (
     <article className="border-t border-[var(--color-line)] first:border-t-0 py-12 sm:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-[2fr_3fr] gap-8 sm:gap-12 items-start">
@@ -76,6 +96,30 @@ export function NeighborhoodCard({ rank, neighborhood, prose, score, matchedTags
               </>
             )}
           </p>
+          {samePeers.length > 0 && (
+            <p className="mt-1.5 text-xs leading-relaxed text-[var(--color-muted)]">
+              Same fit tier:{' '}
+              <span>
+                {samePeers.map((p, i) => (
+                  <span key={p.slug}>
+                    {i > 0 && ', '}
+                    <Link
+                      href={peerHref(p.slug)}
+                      className="hover:text-[var(--color-accent)] underline decoration-[var(--color-line)] underline-offset-2 transition"
+                    >
+                      {p.name}
+                    </Link>
+                    {p.showScore !== undefined && (
+                      <span className="text-[var(--color-muted)]/70"> ({Math.round(p.showScore * 100)}%)</span>
+                    )}
+                  </span>
+                ))}
+                {samePeersOverflow > 0 && (
+                  <span>{`, +${samePeersOverflow} more`}</span>
+                )}
+              </span>
+            </p>
+          )}
           <h2 className="mt-2 font-serif text-3xl sm:text-4xl leading-[1.05]">
             <Link href={detailHref} className="hover:text-[var(--color-accent)] transition">
               {neighborhood.name}
