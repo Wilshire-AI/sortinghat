@@ -51,6 +51,25 @@ export const questions: readonly Question[] = [
     ],
   },
   {
+    id: 'income-tier-fit',
+    kind: 'forced_choice',
+    prompt: 'Some neighborhoods are high-income and established: professional neighbors, top-tier schools, polished feel. Others are middle or working-income: more value-priced, lived-in, less polish. Which fits you better?',
+    choices: [
+      {
+        label: 'High-income, established. Professional neighbors, top schools, polish.',
+        impacts: { 'prestige-orientation': 0.7 },
+      },
+      {
+        label: 'Either, depending on the actual fit.',
+        impacts: { 'prestige-orientation': 0 },
+      },
+      {
+        label: 'Middle or working-income. Value-priced, lived-in, less polish.',
+        impacts: { 'prestige-orientation': -0.7 },
+      },
+    ],
+  },
+  {
     id: 'cultural-anchor',
     kind: 'forced_choice',
     prompt: 'How important is having culturally familiar food, community, or language access in your daily life?',

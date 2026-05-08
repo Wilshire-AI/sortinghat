@@ -38,7 +38,7 @@ describe('questions', () => {
     // scores remain in the data model but contribute zero to ranking because
     // every user vector is 0 on these. Listed here so the test still catches
     // accidentally-orphaned dimensions.
-    const intentionallyInert = new Set<string>(['prestige-orientation']);
+    const intentionallyInert = new Set<string>([]);
     const touched = new Set<string>();
     for (const q of questions) {
       if (q.kind === 'forced_choice') {

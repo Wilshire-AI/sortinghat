@@ -129,8 +129,8 @@ rather than reading globals. This keeps the engine pure and testable.
 - **`symmetric`**: both poles are real lived preferences. Mismatch in either
   direction hurts. Example: `urban-intensity-tolerance` (some want calm, some
   want density; ending up wrong is a real friction). Symmetric dims:
-  `urban-intensity-tolerance`, `prestige-orientation` (intentionally inert
-  — no question hits it), `space-sensitivity`, `creative-energy`,
+  `urban-intensity-tolerance`, `prestige-orientation` (high-income polished
+  vs middle/working-income value), `space-sensitivity`, `creative-energy`,
   `friction-sensitivity`, `social-register`, `visitor-facing-energy`,
   `built-form-register`, `rootedness-vs-access`.
 
