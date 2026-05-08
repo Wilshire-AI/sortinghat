@@ -12,6 +12,7 @@ type Props = {
   currentAnswer?: Answer;
   onAnswer: (answer: Answer) => void;
   onBack?: () => void;
+  onStartOver?: () => void;
 };
 
 export function QuestionCard({
@@ -21,6 +22,7 @@ export function QuestionCard({
   currentAnswer,
   onAnswer,
   onBack,
+  onStartOver,
 }: Props) {
   return (
     <div className="mx-auto max-w-2xl px-6 py-12">
@@ -28,15 +30,26 @@ export function QuestionCard({
         <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
           Question {questionNumber} of {totalQuestions}
         </p>
-        {onBack && (
-          <button
-            type="button"
-            onClick={onBack}
-            className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
-          >
-            ← Back
-          </button>
-        )}
+        <div className="flex items-center gap-5">
+          {onStartOver && (
+            <button
+              type="button"
+              onClick={onStartOver}
+              className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+            >
+              Start over
+            </button>
+          )}
+          {onBack && (
+            <button
+              type="button"
+              onClick={onBack}
+              className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+            >
+              ← Back
+            </button>
+          )}
+        </div>
       </div>
       <h2 className="mt-4 font-serif text-3xl sm:text-[2.5rem] leading-[1.15] tracking-[-0.01em] font-medium">
         {question.prompt}

@@ -109,6 +109,11 @@ export default function QuizPage() {
     if (prev >= 0) setIdx(prev);
   };
 
+  const handleStartOver = () => {
+    reset();
+    setIdx(0);
+  };
+
   // Avoid flashing Q1 before localStorage hydration potentially jumps us forward.
   if (!hydrated) {
     return (
@@ -129,6 +134,7 @@ export default function QuizPage() {
         currentAnswer={answers[current.id]}
         onAnswer={handleAnswer}
         onBack={idx > 0 ? handleBack : undefined}
+        onStartOver={idx > 0 || Object.keys(answers).length > 0 ? handleStartOver : undefined}
       />
       <LiveRanking answers={answers} />
     </main>
