@@ -63,6 +63,7 @@ export const questions: readonly Question[] = [
   {
     id: 'cultural-communities',
     kind: 'multi_select',
+    purpose: 'cultural_tags',
     prompt: 'Which communities, if any, do you want close to home?',
     helperText: 'Ethnic and religious communities. Pick none, one, or several. Each pick boosts matching neighborhoods. (Skip if it doesn\'t apply.)',
     options: [
@@ -119,7 +120,7 @@ export const questions: readonly Question[] = [
         impacts: { 'social-register': -0.7 },
       },
       {
-        label: 'Polished and traditional. Classic, put-together, well-mannered.',
+        label: 'Polished and traditional. Classic, put-together, doorman-fluent.',
         impacts: { 'social-register': 0.7 },
       },
       {
@@ -131,8 +132,8 @@ export const questions: readonly Question[] = [
   {
     id: 'visitor-facing-fit',
     kind: 'slider',
-    prompt: 'Living somewhere busy and visited, with weekend tourists and out-of-town crowds, would actually be part of the appeal.',
-    lowLabel: 'No, it would drain me',
+    prompt: 'Tourist crowds and weekend visitors are part of what makes a neighborhood feel alive.',
+    lowLabel: 'No, they drain me',
     highLabel: 'Yes, the energy is the point',
     dimensionId: 'visitor-facing-energy',
   },
@@ -251,7 +252,7 @@ export const questions: readonly Question[] = [
     purpose: 'must_haves',
     maxSelections: 3,
     prompt: 'Last one. Anything you truly will not compromise on?',
-    helperText: 'Hard filters. Pick up to three things that are genuinely non-negotiable. Anything you don\'t pick is treated as a soft preference. (Skip if nothing applies.)',
+    helperText: 'Hard filters. Pick up to three things that are genuinely non-negotiable. Failing any one excludes a neighborhood from your matches entirely. (Skip if nothing applies.)',
     options: [
       { value: 'subway-redundancy', label: 'Multiple transit options (any mix of subway, PATH, ferry, rail, express bus)' },
       { value: 'walking-distance-park', label: 'Walking distance to a major park or waterfront' },

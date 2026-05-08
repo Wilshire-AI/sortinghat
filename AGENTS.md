@@ -129,14 +129,19 @@ rather than reading globals. This keeps the engine pure and testable.
 - **`symmetric`**: both poles are real lived preferences. Mismatch in either
   direction hurts. Example: `urban-intensity-tolerance` (some want calm, some
   want density; ending up wrong is a real friction). Symmetric dims:
-  `urban-intensity-tolerance`, `prestige-orientation`, `space-sensitivity`,
-  `family-trajectory`, `creative-energy`, `friction-sensitivity`.
+  `urban-intensity-tolerance`, `prestige-orientation` (intentionally inert
+  — no question hits it), `space-sensitivity`, `creative-energy`,
+  `friction-sensitivity`, `social-register`, `visitor-facing-energy`,
+  `built-form-register`, `rootedness-vs-access`.
 
 - **`asymmetric_need`**: only the high pole is a real preference. Low values
   mean "this isn't a driver for me," not "I dislike it." Penalty applies only
-  when neighborhood under-delivers vs user's desire. Asymmetric dims:
+  when neighborhood under-delivers vs user's desire. The scoring math also
+  zeros out the contribution when the user's value is `<= 0`, so a skipped
+  question or a 0-impact "no need" answer carries no penalty. Asymmetric dims:
   `transit-psychology`, `cultural-ecosystem`, `environmental-openness`,
-  `safety-need`, `school-quality`.
+  `safety-need`, `school-quality`, `family-trajectory`,
+  `daily-life-walkability`.
 
 The kind affects scoring math (see §5). Pick correctly when adding a new dim:
 **ask whether picking the low end of the question is an active preference or
@@ -256,9 +261,16 @@ Current filters:
 - `house-or-townhouse`: `housingTypes` includes `single-family` or `townhouse`
 - `luxury-highrise`: `housingTypes` includes `luxury-highrise`
 - `top-schools`: `school-quality >= 0.7`
-- `calm-blocks`: `friction-sensitivity >= 0.5`
+- `quiet-blocks-available`: `hasQuietBlocks === true` (boolean flag on neighborhood)
+- `family-infrastructure`: `hasFamilyInfrastructure === true` (boolean flag)
 - `no-car`: `!carDependent`
 - `cultural-match`: neighborhood's `culturalTags` overlaps with user's selected tags
+
+Note: `quiet-blocks-available`, `family-infrastructure`, `house-or-townhouse`,
+and `luxury-highrise` are pure boolean filters with no soft-preference fallback
+— if the user doesn't pick them, the engine doesn't softly weight toward
+nbhds that have them. Other filters (subway-redundancy, walking-distance-park,
+top-schools) operate over dimensions that are also softly scored.
 
 ### Color stretching (in `NeighborhoodMap.tsx`)
 
