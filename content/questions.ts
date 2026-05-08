@@ -12,11 +12,11 @@ export const questions: readonly Question[] = [
       },
       {
         label: 'I\'d take transit. One reliable line is enough.',
-        impacts: { 'transit-psychology': -0.3 },
+        impacts: { 'transit-psychology': 0 },
       },
       {
         label: 'I\'d drive. Car-dependent is fine.',
-        impacts: { 'transit-psychology': -0.7 },
+        impacts: { 'transit-psychology': 0 },
         softPrefs: ['car-friendly'],
       },
     ],
@@ -47,7 +47,7 @@ export const questions: readonly Question[] = [
     choices: [
       { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
       { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
-      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': -0.7 } },
+      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': 0 } },
     ],
   },
   {
@@ -187,21 +187,12 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'apartment-size-feel',
-    kind: 'forced_choice',
-    prompt: 'Smaller place in your dream area, or meaningfully more space 20 minutes farther out?',
-    choices: [
-      { label: 'Smaller place. I\'d rather be in the right area.', impacts: { 'space-sensitivity': -0.5 } },
-      { label: 'More space. It changes how I live day-to-day.', impacts: { 'space-sensitivity': 0.7 } },
-    ],
-  },
-  {
     id: 'green-need',
     kind: 'forced_choice',
     prompt: 'Five-minute walk to a real park, or five-minute walk to restaurants and bars. Same building quality. Which weighs more?',
     choices: [
       { label: 'The park. Green close by isn\'t optional.', impacts: { 'environmental-openness': 0.7 } },
-      { label: 'Restaurants and bars. Nature can be a 20-minute trip.', impacts: { 'environmental-openness': -0.5 } },
+      { label: 'Restaurants and bars. Nature can be a 20-minute trip.', impacts: { 'environmental-openness': 0 } },
       { label: 'Both matter. I\'d want them close.', impacts: { 'environmental-openness': 0.2 } },
     ],
   },
