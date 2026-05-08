@@ -168,6 +168,11 @@ export const questions: readonly Question[] = [
         impacts: { 'daily-life-walkability': 0.5 },
       },
       {
+        value: 'gym',
+        label: 'Gym or fitness studio',
+        impacts: { 'daily-life-walkability': 0.3 },
+      },
+      {
         value: 'cafes',
         label: 'Cafés',
         impacts: { 'daily-life-walkability': 0.25, 'rootedness-vs-access': -0.2 },
