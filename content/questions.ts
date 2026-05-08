@@ -136,17 +136,6 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'weekend-life',
-    kind: 'forced_choice',
-    prompt: 'On a typical Saturday, where are you?',
-    choices: [
-      { label: 'Walking the neighborhood, slow morning at home', impacts: { 'urban-intensity-tolerance': -0.3 } },
-      { label: 'In the city. Restaurants, shows, plans with friends.', impacts: { 'urban-intensity-tolerance': 0.4 } },
-      { label: 'Out of the city. Parks, hikes, the beach.', impacts: { 'environmental-openness': 0.5 } },
-      { label: 'Mix of all three depending on the week.', impacts: {} },
-    ],
-  },
-  {
     id: 'social-register-fit',
     kind: 'forced_choice',
     prompt: 'Which neighborhood vibe pulls you more?',
@@ -164,14 +153,6 @@ export const questions: readonly Question[] = [
         impacts: { 'social-register': 0 },
       },
     ],
-  },
-  {
-    id: 'visitor-facing-fit',
-    kind: 'slider',
-    prompt: 'Tourist crowds and weekend visitors make a neighborhood feel alive.',
-    lowLabel: 'No, they drain me',
-    highLabel: 'Yes, the energy is the point',
-    dimensionId: 'visitor-facing-energy',
   },
   {
     id: 'walking-distance-amenities',
