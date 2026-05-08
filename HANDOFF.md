@@ -1,6 +1,8 @@
 # Sorting Hat — handoff notes
 
-Last updated: end of long session 2026-05-08. Production: `https://sortinghat.wilshireai.com/`. Latest commit on `origin/main`: `1ca6b01`.
+Last updated: end of extended session 2026-05-08, after a strategic re-think. Production: `https://sortinghat.wilshireai.com/`. Latest commit on `origin/main`: `b46adc7`.
+
+**Top of mind for next session:** a fully cross-model-reviewed plan to restructure the quiz around a place-tier Q1 — *not yet implemented*. See "## STRATEGIC PLAN — pending implementation" below. Polaris artifact at `.polaris/strategic-quiz-architecture.md` has the full review; this doc captures the priorities + landmines.
 
 This is a handoff for whoever picks up next (you-future, or another agent). Read AGENTS.md for the architectural baseline; this doc captures what changed in the recent sessions and what's queued.
 
@@ -104,6 +106,104 @@ The 27% that don't reach #1 tie at perfect score (1.000) with cluster mates and 
 With greedy answer paths (the practical user experience):
 - Top-1: 22%, Top-3: 54%, Top-5: 59%, Top-10: 76%.
 - 27 voiceless (don't reach top 10 via greedy).
+
+---
+
+## STRATEGIC PLAN — pending implementation
+
+This is the highest-priority work item for the next session. Three Polaris dual-model reviews fed into a synthesized plan that has not yet been applied. Full review at `.polaris/strategic-quiz-architecture.md`. The earlier supporting reviews are in `.polaris/question-flow-review.md` and `.polaris/population-prior-review.md`.
+
+### The thesis (one sentence)
+
+The current quiz infers density preference indirectly via 4-5 abstract questions, which over-recommends Manhattan by ~7x relative to metro population (Monte Carlo: 56% Manhattan #1 placements vs 8% population share). Asking density tier *directly* as Q1 — with calibrated impacts — addresses this at the source, makes the engine more honest, and lets us cut other questions that become redundant.
+
+### What to apply (Polaris-validated, in priority order)
+
+**1. Add place-tier as Q1** with calibrated impacts (~30-40% lower than my initial draft).
+
+```ts
+{
+  id: 'place-tier',
+  kind: 'forced_choice',
+  prompt: 'Where do you picture your weekday morning?',  // Reframed experientially per review
+  choices: [
+    { label: 'Dense city core. Manhattan core, dense Brooklyn / Queens, Jersey City.',
+      impacts: { 'urban-intensity-tolerance': 0.55, 'rootedness-vs-access': 0.40, 'daily-life-walkability': 0.55 } },
+    { label: 'Mid-density urban. UWS, Park Slope, Astoria, Forest Hills, Hoboken.',
+      impacts: { 'urban-intensity-tolerance': 0, 'rootedness-vs-access': -0.20, 'daily-life-walkability': 0.50 } },
+    { label: 'Walkable suburb / village. Larchmont, Maplewood, Brooklyn Heights, Bronxville.',
+      impacts: { 'urban-intensity-tolerance': -0.40, 'rootedness-vs-access': -0.55, 'daily-life-walkability': 0.60, 'community-fabric': 0.50 } },
+    { label: 'Established suburb. Scarsdale, Tenafly, Manhasset, Greenwich, Westport.',
+      impacts: { 'urban-intensity-tolerance': -0.55, 'rootedness-vs-access': -0.65, 'daily-life-walkability': 0.05, 'community-fabric': -0.40 } },
+    { label: 'Quiet / low-density. Cresskill, Chappaqua, Darien, New Canaan.',
+      impacts: { 'urban-intensity-tolerance': -0.70, 'rootedness-vs-access': -0.70, 'daily-life-walkability': -0.30, 'environmental-openness': 0.30 } },
+    { label: "I'm not sure yet.", impacts: {} },  // Critical — straddlers shouldn't be forced
+  ],
+}
+```
+
+**Key calibration callouts (these were wrong in the first draft, both Polaris models flagged):**
+- Hoboken belongs mid-density (not big-city) — it scores urban-intensity 0.0
+- Brooklyn Heights belongs walkable-suburb tier (not mid-density urban) — brownstone-village feel, urban-intensity -0.4
+- Bronxville is walkable-suburb (not established) — has a real downtown
+- Greenwich CT and Westport are established-suburb (not quiet) — they're prestige-coded estates
+- Cresskill / Chappaqua / Darien / New Canaan are correctly the quiet/low-density tier
+
+**2. Apply the question reorder** (Polaris flow review):
+- Phase 1: place-tier → family-horizon → access-vs-space → transit-redundancy → rootedness-vs-access-fit → income-tier-fit
+- Phase 2: social-register → built-form → cultural-anchor → cultural-communities (skip if anchor=not-a-factor) → creative-immersion → noise-tolerance → walking-distance-amenities → walk-scenery → safety-need
+- Phase 3: school-need (skip if no-kids) → community-fabric-mode (skip if `urban>0.4 AND family≤0`)
+- Phase 4: commute-target + commute-tolerance (consider merging into one screen) → must-haves (with render-time option filtering — hide top-schools/family-infra when no kids; hide cultural-match when no tags)
+
+**3. Cut these questions** (post-place-tier they become redundant):
+- `weekend-life` (Q9 currently) — partially absorbed by walking-distance + walk-scenery; both reviewers agreed
+- `visitor-facing-fit` (Q11 slider) — narrow signal, both reviewers agreed
+
+**4. Critical bug fix: stale-vector clearing.** When an earlier answer changes such that a later question becomes newly skipped, the user vector still contains that question's stored answer impacts. **Fix:** in `setAnswer` / answer-change handlers, recompute which questions are skipped and clear stored answers for newly-skipped ones. Both reviewers flagged this as P0 — it would silently produce wrong rankings even if everything else is correct.
+
+**5. Result-page tier-correction control.** After results render, show three small buttons ("more dense city / more walkable suburb / more quiet") that re-run scoring with adjusted place-tier impacts. Codex argued this is high-value because users only realize a Q1 mismatch after seeing results. Claude initially resisted as over-engineering; the synthesis adopts Codex.
+
+**6. Dynamic progress bar.** Shows "Q5 of 18" where 18 is the projected non-skipped count, computed via shouldSkip-forecast over remaining questions.
+
+**7. Monte Carlo regression** before merge: 5,000-vector sample, verify Manhattan #1 share drops 5-8 points, no neighborhood loses #1 share by more than 30% relative to today.
+
+### What to skip (per Polaris)
+
+- **Population prior in scoring math** (`.polaris/population-prior-review.md`). Both reviewers said yes-with-conditions but ranked it BELOW dimension calibration in priority. With place-tier as Q1, the population-blind-vector-geometry artifact (Manhattan over-rep) is addressed at the source. Defer the prior; if Monte Carlo after place-tier still shows over-rep, revisit at w=0.05.
+
+### Estimated effort
+
+~3.5 hours of careful work, broken roughly:
+- Place-tier Q1 + impacts + exemplars + "unsure" option: 20 min
+- Cut weekend-life + visitor-facing-fit: 10 min
+- Stale-vector bug fix + test: 30 min
+- Tighten community-fabric-mode skip (AND not OR): 10 min
+- Merge commute screens: 30 min
+- Result-page tier correction control: 1 hr
+- Dynamic progress bar: 20 min
+- Monte Carlo regression: 30 min
+
+### Order to execute (lowest risk first)
+
+1. Stale-vector fix (no behavioral change, removes a latent bug)
+2. Cut weekend-life + visitor-facing-fit (smaller question count, lighter user load)
+3. Place-tier Q1 with reordered Phase 1 (the big content change)
+4. Conditional skips (`school-need`, `community-fabric-mode`, `cultural-communities`)
+5. Dynamic progress bar
+6. Merge commute screens
+7. Result-page tier correction
+8. Monte Carlo regression check
+
+After each step, run `npm test` (84/84 baseline). Persona regen via `tests/engine/_regen.test.ts` (one-off pattern documented in `tests/engine/per-neighborhood-personas.test.ts`) when content changes.
+
+### Specific files that will need touching
+
+- `content/questions.ts` — reorder + add place-tier + cut 2 questions
+- `src/app/nyc/quiz/page.tsx` — `shouldSkip` rules + stale-vector fix in setAnswer/handleAnswer
+- `src/components/quiz/ProgressBar.tsx` — dynamic total
+- `src/components/quiz/useQuizState.ts` — stale-answer clearing in setAnswer
+- `src/app/nyc/results/results-client.tsx` — result-page tier correction control
+- `tests/engine/per-neighborhood-personas.test.ts` — re-run regen pattern after question changes
 
 ---
 
