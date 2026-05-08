@@ -144,7 +144,9 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "world-class-restaurants"
+          "world-class-restaurants",
+          "parks-water",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -237,7 +239,8 @@
         "selectedValues": [
           "world-class-restaurants",
           "errands",
-          "museums-concerts"
+          "museums-concerts",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -605,7 +608,9 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "world-class-restaurants"
+          "world-class-restaurants",
+          "museums-concerts",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -697,7 +702,8 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "world-class-restaurants"
+          "world-class-restaurants",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -789,7 +795,9 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "museums-concerts"
+          "museums-concerts",
+          "world-class-restaurants",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -973,7 +981,8 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "museums-concerts"
+          "museums-concerts",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -1436,7 +1445,8 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "cafes"
+          "cafes",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -1802,7 +1812,9 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands"
+          "errands",
+          "parks-water",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -1894,7 +1906,8 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "cafes"
+          "cafes",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -1987,7 +2000,8 @@
         "selectedValues": [
           "errands",
           "cafes",
-          "community"
+          "community",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -2356,7 +2370,8 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands"
+          "errands",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -2447,7 +2462,9 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands"
+          "errands",
+          "family-infra",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -3372,7 +3389,9 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "world-class-restaurants"
+          "world-class-restaurants",
+          "museums-concerts",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -3463,7 +3482,9 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands"
+          "errands",
+          "parks-water",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -3554,7 +3575,9 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands"
+          "errands",
+          "family-infra",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -3835,7 +3858,8 @@
         "selectedValues": [
           "world-class-restaurants",
           "errands",
-          "museums-concerts"
+          "museums-concerts",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -3926,7 +3950,10 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands"
+          "errands",
+          "family-infra",
+          "parks-water",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -4019,8 +4046,7 @@
         "selectedValues": [
           "errands",
           "world-class-restaurants",
-          "museums-concerts",
-          "cafes"
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -4113,7 +4139,8 @@
         "selectedValues": [
           "world-class-restaurants",
           "errands",
-          "museums-concerts"
+          "museums-concerts",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -4206,7 +4233,8 @@
         "selectedValues": [
           "world-class-restaurants",
           "museums-concerts",
-          "errands"
+          "errands",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -4297,7 +4325,10 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands"
+          "errands",
+          "bars-nightlife",
+          "gym",
+          "community"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -4482,7 +4513,8 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "cafes"
+          "cafes",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -5588,6 +5620,7 @@
         "selectedValues": [
           "errands",
           "cafes",
+          "gym",
           "bars-nightlife"
         ]
       },
@@ -5958,6 +5991,7 @@
         "selectedValues": [
           "errands",
           "cafes",
+          "gym",
           "community"
         ]
       },
@@ -6051,7 +6085,8 @@
         "selectedValues": [
           "errands",
           "cafes",
-          "community"
+          "community",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -6143,7 +6178,9 @@
         "kind": "multi_select",
         "selectedValues": [
           "parks-water",
-          "errands"
+          "errands",
+          "family-infra",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -6420,7 +6457,8 @@
         "selectedValues": [
           "world-class-restaurants",
           "museums-concerts",
-          "errands"
+          "errands",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -6513,7 +6551,8 @@
         "selectedValues": [
           "world-class-restaurants",
           "museums-concerts",
-          "errands"
+          "errands",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -6697,7 +6736,9 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "cafes"
+          "cafes",
+          "family-infra",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
@@ -9953,7 +9994,8 @@
         "selectedValues": [
           "errands",
           "parks-water",
-          "cafes"
+          "cafes",
+          "gym"
         ]
       },
       "streetscape-pleasure-fit": {
