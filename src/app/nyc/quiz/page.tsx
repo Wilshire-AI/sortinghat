@@ -16,19 +16,7 @@ import { QuestionCard } from '@/components/quiz/QuestionCard';
 import { ProgressBar } from '@/components/quiz/ProgressBar';
 import { LiveRanking } from '@/components/quiz/LiveRanking';
 import { encodeFingerprint } from '@/lib/engine/vector';
-
-// Conditional skips: when prior answers make a question meaningless, skip it.
-// `commute-tolerance` is meaningless when the user has no real commute target
-// (only "remote" / "other" selected on `commute-target`).
-function shouldSkip(questionId: string, answers: Answers): boolean {
-  if (questionId === 'commute-tolerance') {
-    const a = answers['commute-target'];
-    if (!a || a.kind !== 'multi_select') return false;
-    const real = a.selectedValues.filter((v) => v !== 'remote' && v !== 'other');
-    return real.length === 0;
-  }
-  return false;
-}
+import { shouldSkip } from '@/lib/engine/skip-rules';
 
 function nextVisibleIdx(from: number, answers: Answers): number {
   let i = from;
@@ -78,10 +66,10 @@ export default function QuizPage() {
     if (inFlightRef.current) return;
     inFlightRef.current = true;
 
-    // Build the next-answers map synchronously so we can compute the final
-    // state without waiting for setState to flush.
-    const nextAnswers = { ...answers, [current.id]: a };
-    setAnswer(current.id, a);
+    // setAnswer returns the pruned next-answers map so we can compute the
+    // final state synchronously without waiting for setState to flush, and
+    // any newly-skipped questions' stale answers are already dropped.
+    const nextAnswers = setAnswer(current.id, a);
 
     const next = nextVisibleIdx(idx + 1, nextAnswers);
     if (next < questions.length) {

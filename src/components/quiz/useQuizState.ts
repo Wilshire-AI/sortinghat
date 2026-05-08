@@ -9,6 +9,7 @@ export type { Answer, Answers, DerivedState } from '@/lib/engine/derive';
 export { deriveState, finalizeVector } from '@/lib/engine/derive';
 import type { Answer, Answers } from '@/lib/engine/derive';
 import { deriveState as _deriveState } from '@/lib/engine/derive';
+import { pruneSkippedAnswers } from '@/lib/engine/skip-rules';
 
 // localStorage key for in-progress quiz answers. Lets a user refresh the
 // page, navigate away, or come back later without losing partial progress.
@@ -38,10 +39,16 @@ export function useQuizState(dimensions: readonly Dimension[], questions: readon
   // generic lint rule against it doesn't apply here.
   useEffect(() => {
     const stored = loadStoredAnswers();
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (Object.keys(stored).length > 0) setAnswers(stored);
-    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (Object.keys(stored).length > 0) {
+      // Prune any orphaned answers from a prior session (e.g., commute-tolerance
+      // stored under a now-skipped condition) before they re-enter the vector.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setAnswers(pruneSkippedAnswers(questions, stored));
+    }
     setHydrated(true);
+    // questions is module-scope-stable; intentionally not in deps to keep
+    // hydration as a once-on-mount effect.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Sync answers to localStorage whenever they change (post-hydration).
@@ -65,8 +72,12 @@ export function useQuizState(dimensions: readonly Dimension[], questions: readon
     answers,
     hydrated,
     state: { ...derived, answers },
-    setAnswer: (questionId: string, answer: Answer) =>
-      setAnswers((prev) => ({ ...prev, [questionId]: answer })),
+    setAnswer: (questionId: string, answer: Answer): Answers => {
+      const merged = { ...answers, [questionId]: answer };
+      const pruned = pruneSkippedAnswers(questions, merged);
+      setAnswers(pruned);
+      return pruned;
+    },
     reset: () => {
       setAnswers({});
       if (typeof window !== 'undefined') {
