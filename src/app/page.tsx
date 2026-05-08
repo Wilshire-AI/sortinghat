@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BeginButton } from "@/components/quiz/BeginButton";
 
 export default function HomePage() {
   return (
@@ -21,12 +22,7 @@ export default function HomePage() {
         </p>
 
         <div className="mt-14">
-          <Link
-            href="/nyc/quiz"
-            className="inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-10 py-4 font-sans text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
-          >
-            Begin →
-          </Link>
+          <BeginButton />
           <p className="mt-4 text-sm text-[var(--color-muted)]">
             About 4 minutes. No signup required.
           </p>
