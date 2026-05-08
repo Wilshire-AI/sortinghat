@@ -24,7 +24,7 @@ export const questions: readonly Question[] = [
   {
     id: 'access-vs-space',
     kind: 'forced_choice',
-    prompt: 'Smaller apartment in the middle of everything, or materially more space further from the action?',
+    prompt: 'Smaller in the middle of everything, or more space further out?',
     choices: [
       {
         label: 'In the middle of everything. Trade space for being where it\'s all happening.',
@@ -53,7 +53,7 @@ export const questions: readonly Question[] = [
   {
     id: 'income-tier-fit',
     kind: 'forced_choice',
-    prompt: 'Some neighborhoods are high-income and established: professional neighbors, top-tier schools, polished feel. Others are middle or working-income: more value-priced, lived-in, less polish. Which fits you better?',
+    prompt: 'Higher-income polished, or middle-income value-priced. Which fits?',
     choices: [
       {
         label: 'High-income, established. Professional neighbors, top schools, polish.',
@@ -72,7 +72,7 @@ export const questions: readonly Question[] = [
   {
     id: 'cultural-anchor',
     kind: 'forced_choice',
-    prompt: 'How important is having culturally familiar food, community, or language access in your daily life?',
+    prompt: 'How important is culturally familiar food, community, or language nearby?',
     choices: [
       { label: 'Essential. I want it in daily reach.', impacts: { 'cultural-ecosystem': 0.8 } },
       { label: 'Nice but not necessary.', impacts: { 'cultural-ecosystem': 0.2 } },
@@ -84,7 +84,7 @@ export const questions: readonly Question[] = [
     kind: 'multi_select',
     purpose: 'cultural_tags',
     prompt: 'Which communities, if any, do you want close to home?',
-    helperText: 'Ethnic and religious communities. Pick none, one, or several. Each pick boosts matching neighborhoods. (Skip if it doesn\'t apply.)',
+    helperText: 'Ethnic or religious. Each pick boosts matching neighborhoods. Skip if not applicable.',
     options: [
       { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
       { value: 'south-asian', label: 'South Asian (Indian, Pakistani, Bangladeshi, Sri Lankan)' },
@@ -109,7 +109,7 @@ export const questions: readonly Question[] = [
   {
     id: 'noise-tolerance',
     kind: 'forced_choice',
-    prompt: 'Two apartments, same price, same size. One is on a quiet block. One is above a busy street. Which?',
+    prompt: 'Same price, same size: quiet block, or above a busy street?',
     choices: [
       { label: 'The quiet one, no contest', impacts: { 'friction-sensitivity': 0.7 } },
       { label: 'The busy one. I like the energy.', impacts: { 'friction-sensitivity': -0.6 } },
@@ -149,7 +149,7 @@ export const questions: readonly Question[] = [
   {
     id: 'visitor-facing-fit',
     kind: 'slider',
-    prompt: 'Tourist crowds and weekend visitors are part of what makes a neighborhood feel alive.',
+    prompt: 'Tourist crowds and weekend visitors make a neighborhood feel alive.',
     lowLabel: 'No, they drain me',
     highLabel: 'Yes, the energy is the point',
     dimensionId: 'visitor-facing-energy',
@@ -165,7 +165,7 @@ export const questions: readonly Question[] = [
   {
     id: 'streetscape-pleasure-fit',
     kind: 'forced_choice',
-    prompt: 'How much does the daily streetscape matter: tree-lined blocks, pleasant sidewalks, walks just to enjoy where you live?',
+    prompt: 'Tree-lined blocks and pleasant sidewalks. How much do they matter?',
     choices: [
       { label: 'Essential. I want streets I\'d take a walk on for no reason.', impacts: { 'streetscape-quality': 0.7 } },
       { label: 'Adds to quality of life, not the deciding factor.', impacts: { 'streetscape-quality': 0.3 } },
@@ -245,7 +245,7 @@ export const questions: readonly Question[] = [
     kind: 'multi_select',
     purpose: 'commute_targets',
     prompt: 'Where will you actually need to be? Pick all that apply, including a partner\'s office if you\'re a couple.',
-    helperText: 'We\'ll weight neighborhoods by realistic door-to-door commute, not by generic transit access. Pick "Mostly remote" if commute isn\'t a constraint.',
+    helperText: 'We weight neighborhoods by door-to-door commute. Pick "Mostly remote" if commute isn\'t a constraint.',
     options: [
       { value: 'midtown', label: 'Midtown Manhattan (Grand Central / Penn / Bryant Park)' },
       { value: 'fidi', label: 'Financial District / Lower Manhattan' },
@@ -279,7 +279,7 @@ export const questions: readonly Question[] = [
     purpose: 'must_haves',
     maxSelections: 3,
     prompt: 'Last one. Anything you truly will not compromise on?',
-    helperText: 'Hard filters. Pick up to three things that are genuinely non-negotiable. Failing any one excludes a neighborhood from your matches entirely. (Skip if nothing applies.)',
+    helperText: 'Hard filters. Pick up to three. Failing any one excludes a neighborhood entirely. Skip if nothing applies.',
     options: [
       { value: 'subway-redundancy', label: 'Multiple transit options (any mix of subway, PATH, ferry, rail, express bus)' },
       { value: 'walking-distance-park', label: 'Walking distance to a major park or waterfront' },
