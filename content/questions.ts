@@ -56,23 +56,13 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'transit-redundancy',
+    id: 'family-horizon',
     kind: 'forced_choice',
-    prompt: 'How do you mostly want to get around?',
+    prompt: 'Are kids in the picture, either already or within a 5-year horizon?',
     choices: [
-      {
-        label: 'I\'d take transit. I want multiple options.',
-        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
-      },
-      {
-        label: 'I\'d take transit. One reliable line is enough.',
-        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
-      },
-      {
-        label: 'I\'d drive. Car-dependent is fine.',
-        impacts: { 'transit-psychology': 0 },
-        softPrefs: ['car-friendly'],
-      },
+      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
+      { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
+      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': 0 } },
     ],
   },
   {
@@ -95,13 +85,42 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'family-horizon',
+    id: 'transit-redundancy',
     kind: 'forced_choice',
-    prompt: 'Are kids in the picture, either already or within a 5-year horizon?',
+    prompt: 'How do you mostly want to get around?',
     choices: [
-      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
-      { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
-      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': 0 } },
+      {
+        label: 'I\'d take transit. I want multiple options.',
+        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
+      },
+      {
+        label: 'I\'d take transit. One reliable line is enough.',
+        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
+      },
+      {
+        label: 'I\'d drive. Car-dependent is fine.',
+        impacts: { 'transit-psychology': 0 },
+        softPrefs: ['car-friendly'],
+      },
+    ],
+  },
+  {
+    id: 'rootedness-vs-access-fit',
+    kind: 'forced_choice',
+    prompt: 'Two equally great neighborhoods. Pick the one that pulls you more.',
+    choices: [
+      {
+        label: 'The one where you\'d recognize half the regulars at your coffee shop within a year.',
+        impacts: { 'rootedness-vs-access': -0.7 },
+      },
+      {
+        label: 'The one where you can walk to a different world-class restaurant every night.',
+        impacts: { 'rootedness-vs-access': 0.7 },
+      },
+      {
+        label: 'Either, depending on the rest of the fit.',
+        impacts: { 'rootedness-vs-access': 0 },
+      },
     ],
   },
   {
@@ -124,21 +143,44 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'community-fabric-mode',
+    id: 'social-register-fit',
     kind: 'forced_choice',
-    prompt: 'Which suburban social world feels more like home?',
+    prompt: 'Which neighborhood vibe pulls you more?',
     choices: [
       {
-        label: 'Walkable village, public-school circles, neighbors you see around town.',
-        impacts: { 'community-fabric': 0.75 },
+        label: 'Casual, progressive, a little bohemian. Lived-in and unbuttoned.',
+        impacts: { 'social-register': -0.7 },
       },
       {
-        label: 'Private estate, club-oriented, more space and fewer casual run-ins.',
-        impacts: { 'community-fabric': -0.75 },
+        label: 'Polished and traditional. Classic, put-together, doorman-fluent.',
+        impacts: { 'social-register': 0.7 },
       },
       {
-        label: 'Either, if the house and commute work.',
-        impacts: { 'community-fabric': 0 },
+        label: 'No strong pull either way.',
+        impacts: { 'social-register': 0 },
+      },
+    ],
+  },
+  {
+    id: 'built-form-fit',
+    kind: 'forced_choice',
+    prompt: 'What kind of building do you picture yourself living in?',
+    choices: [
+      {
+        label: 'Older with original character. Brownstone, prewar, or loft, quirks and all.',
+        impacts: { 'built-form-register': -0.7 },
+      },
+      {
+        label: 'Older if renovated. I want character and original details, but modern systems matter.',
+        impacts: { 'built-form-register': -0.3 },
+      },
+      {
+        label: 'Newer. Modern construction, doorman, full elevator access, in-building services.',
+        impacts: { 'built-form-register': 0.7 },
+      },
+      {
+        label: 'Either, depending on the neighborhood.',
+        impacts: { 'built-form-register': 0 },
       },
     ],
   },
@@ -187,25 +229,6 @@ export const questions: readonly Question[] = [
       { label: 'The quiet one, no contest', impacts: { 'friction-sensitivity': 0.7 } },
       { label: 'The busy one. I like the energy.', impacts: { 'friction-sensitivity': -0.6 } },
       { label: 'Depends on the day', impacts: { 'friction-sensitivity': 0.0 } },
-    ],
-  },
-  {
-    id: 'social-register-fit',
-    kind: 'forced_choice',
-    prompt: 'Which neighborhood vibe pulls you more?',
-    choices: [
-      {
-        label: 'Casual, progressive, a little bohemian. Lived-in and unbuttoned.',
-        impacts: { 'social-register': -0.7 },
-      },
-      {
-        label: 'Polished and traditional. Classic, put-together, doorman-fluent.',
-        impacts: { 'social-register': 0.7 },
-      },
-      {
-        label: 'No strong pull either way.',
-        impacts: { 'social-register': 0 },
-      },
     ],
   },
   {
@@ -314,48 +337,6 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'rootedness-vs-access-fit',
-    kind: 'forced_choice',
-    prompt: 'Two equally great neighborhoods. Pick the one that pulls you more.',
-    choices: [
-      {
-        label: 'The one where you\'d recognize half the regulars at your coffee shop within a year.',
-        impacts: { 'rootedness-vs-access': -0.7 },
-      },
-      {
-        label: 'The one where you can walk to a different world-class restaurant every night.',
-        impacts: { 'rootedness-vs-access': 0.7 },
-      },
-      {
-        label: 'Either, depending on the rest of the fit.',
-        impacts: { 'rootedness-vs-access': 0 },
-      },
-    ],
-  },
-  {
-    id: 'built-form-fit',
-    kind: 'forced_choice',
-    prompt: 'What kind of building do you picture yourself living in?',
-    choices: [
-      {
-        label: 'Older with original character. Brownstone, prewar, or loft, quirks and all.',
-        impacts: { 'built-form-register': -0.7 },
-      },
-      {
-        label: 'Older if renovated. I want character and original details, but modern systems matter.',
-        impacts: { 'built-form-register': -0.3 },
-      },
-      {
-        label: 'Newer. Modern construction, doorman, full elevator access, in-building services.',
-        impacts: { 'built-form-register': 0.7 },
-      },
-      {
-        label: 'Either, depending on the neighborhood.',
-        impacts: { 'built-form-register': 0 },
-      },
-    ],
-  },
-  {
     id: 'safety-need',
     kind: 'slider',
     prompt: 'I need to feel safe walking home alone late at night.',
@@ -370,6 +351,25 @@ export const questions: readonly Question[] = [
     lowLabel: 'Not a factor',
     highLabel: 'Required',
     dimensionId: 'school-quality',
+  },
+  {
+    id: 'community-fabric-mode',
+    kind: 'forced_choice',
+    prompt: 'Which suburban social world feels more like home?',
+    choices: [
+      {
+        label: 'Walkable village, public-school circles, neighbors you see around town.',
+        impacts: { 'community-fabric': 0.75 },
+      },
+      {
+        label: 'Private estate, club-oriented, more space and fewer casual run-ins.',
+        impacts: { 'community-fabric': -0.75 },
+      },
+      {
+        label: 'Either, if the house and commute work.',
+        impacts: { 'community-fabric': 0 },
+      },
+    ],
   },
   {
     id: 'commute-target',
