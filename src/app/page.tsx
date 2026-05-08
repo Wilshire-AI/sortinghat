@@ -44,6 +44,10 @@ export default function HomePage() {
         project · Manhattan, Brooklyn, Queens, Bronx, Staten Island & near-NJ ·{" "}
         <Link href="/methodology" className="hover:text-[var(--color-accent)] transition">
           Methodology
+        </Link>{" "}
+        ·{" "}
+        <Link href="/privacy" className="hover:text-[var(--color-accent)] transition">
+          Privacy
         </Link>
       </footer>
     </main>
