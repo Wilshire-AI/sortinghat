@@ -14,6 +14,7 @@ import {
 } from '@/components/quiz/useQuizState';
 import { QuestionCard } from '@/components/quiz/QuestionCard';
 import { ProgressBar } from '@/components/quiz/ProgressBar';
+import { LiveRanking } from '@/components/quiz/LiveRanking';
 import { encodeFingerprint } from '@/lib/engine/vector';
 
 // Conditional skips: when prior answers make a question meaningless, skip it.
@@ -129,6 +130,7 @@ export default function QuizPage() {
         onAnswer={handleAnswer}
         onBack={idx > 0 ? handleBack : undefined}
       />
+      <LiveRanking answers={answers} />
     </main>
   );
 }
