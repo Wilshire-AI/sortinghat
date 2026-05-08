@@ -60,6 +60,55 @@ export type MonteCarloResult = {
   averageDistinctBoroughsTop5: number;
 };
 
+// Reachability: for each neighborhood, count how many of N samples placed it
+// in the top-K results, for each K in topK. Useful for "what fraction of quiz
+// answer combinations land this neighborhood in the user's top 3?" — a
+// methodology / admin question, not a regression-gate question.
+export type MonteCarloReachability = {
+  samples: number;
+  seed: number;
+  topK: readonly number[];
+  // perNeighborhood[id][k] = number of samples where the nbhd was in top-k.
+  perNeighborhood: Record<string, Record<number, number>>;
+};
+
+export function runMonteCarloReachability(opts: {
+  samples: number;
+  seed: number;
+  topK: readonly number[];
+  questions: readonly Question[];
+  dimensions: readonly Dimension[];
+  neighborhoods: readonly Neighborhood[];
+}): MonteCarloReachability {
+  const { samples, seed, topK, questions, dimensions, neighborhoods } = opts;
+  const rand = mulberry32(seed);
+  const maxK = Math.max(...topK);
+  const perNeighborhood: Record<string, Record<number, number>> = {};
+  for (const n of neighborhoods) {
+    perNeighborhood[n.id] = {};
+    for (const k of topK) perNeighborhood[n.id][k] = 0;
+  }
+
+  for (let i = 0; i < samples; i++) {
+    const answers = generateRandomAnswers(rand, questions);
+    const derived = deriveState(dimensions, questions, answers);
+    const vec = finalizeVector(derived);
+    const top = rankNeighborhoods(vec, neighborhoods, dimensions, {
+      topN: maxK,
+      selectedTags: derived.selectedTags,
+      softPrefs: derived.softPrefs,
+    });
+    for (let pos = 0; pos < top.length; pos++) {
+      const id = top[pos].neighborhood.id;
+      for (const k of topK) {
+        if (pos < k) perNeighborhood[id][k]++;
+      }
+    }
+  }
+
+  return { samples, seed, topK: [...topK], perNeighborhood };
+}
+
 export function runMonteCarlo(opts: {
   samples: number;
   seed: number;

@@ -210,7 +210,11 @@ export default function MethodologyPage() {
         per-question{' '}
         <Link href="/methodology/paths" className="underline hover:text-[var(--color-accent)] transition">
           paths report
-        </Link>{' '}showing which neighborhoods each answer pulls toward.
+        </Link>{' '}showing which neighborhoods each answer pulls toward. For the inverse view —
+        what fraction of quiz combinations land each neighborhood in the user&rsquo;s top results —{' '}
+        <Link href="/methodology/reachability" className="underline hover:text-[var(--color-accent)] transition">
+          path reachability
+        </Link>.
       </p>
 
       <footer className="mt-24 pt-8 border-t border-[var(--color-line)] text-xs text-[var(--color-muted)]">
