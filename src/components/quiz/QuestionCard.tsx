@@ -1,9 +1,21 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Question } from '@content/types';
 import type { Answer } from './useQuizState';
 import { findActiveConflicts } from '@content/must-have-conflicts';
+
+// Render mode for QuestionCard:
+// - 'standalone' (default): full screen with header, back/start-over, and the
+//   normal advance flow (forced_choice auto-advances on click; slider /
+//   multi_select advance on a Continue button).
+// - 'grouped-primary': top half of a grouped screen. Renders header + back /
+//   start-over but DOES NOT advance on its own. Calls `onAnswer` on every
+//   selection change so the wrapper can buffer state. The wrapper owns the
+//   Continue button.
+// - 'grouped-secondary': bottom half of a grouped screen. No header, no
+//   back, smaller heading. Calls `onAnswer` on every change. Wrapper-controlled.
+export type QuestionCardMode = 'standalone' | 'grouped-primary' | 'grouped-secondary';
 
 type Props = {
   question: Question;
@@ -13,6 +25,7 @@ type Props = {
   onAnswer: (answer: Answer) => void;
   onBack?: () => void;
   onStartOver?: () => void;
+  mode?: QuestionCardMode;
 };
 
 export function QuestionCard({
@@ -23,35 +36,52 @@ export function QuestionCard({
   onAnswer,
   onBack,
   onStartOver,
+  mode = 'standalone',
 }: Props) {
+  const isSecondary = mode === 'grouped-secondary';
+  const showHeaderRow = mode !== 'grouped-secondary';
+  const grouped = mode !== 'standalone';
+
+  // In grouped modes the outer wrapper (max-w / padding) is supplied by
+  // GroupedQuestionsScreen, so we render only the question's own block.
+  const outerClass = grouped ? '' : 'mx-auto max-w-2xl px-6 py-12';
+
   return (
-    <div className="mx-auto max-w-2xl px-6 py-12">
-      <div className="flex items-center justify-between">
-        <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
-          Question {questionNumber} of {totalQuestions}
-        </p>
-        <div className="flex items-center gap-5">
-          {onStartOver && (
-            <button
-              type="button"
-              onClick={onStartOver}
-              className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
-            >
-              Start over
-            </button>
-          )}
-          {onBack && (
-            <button
-              type="button"
-              onClick={onBack}
-              className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
-            >
-              ← Back
-            </button>
-          )}
+    <div className={outerClass}>
+      {showHeaderRow && (
+        <div className="flex items-center justify-between">
+          <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+            Question {questionNumber} of {totalQuestions}
+          </p>
+          <div className="flex items-center gap-5">
+            {onStartOver && (
+              <button
+                type="button"
+                onClick={onStartOver}
+                className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+              >
+                Start over
+              </button>
+            )}
+            {onBack && (
+              <button
+                type="button"
+                onClick={onBack}
+                className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+              >
+                ← Back
+              </button>
+            )}
+          </div>
         </div>
-      </div>
-      <h2 className="mt-4 font-serif text-3xl sm:text-[2.5rem] leading-[1.15] tracking-[-0.01em] font-medium">
+      )}
+      <h2
+        className={
+          isSecondary
+            ? 'font-serif text-2xl sm:text-3xl leading-snug tracking-[-0.005em] font-medium'
+            : 'mt-4 font-serif text-3xl sm:text-[2.5rem] leading-[1.15] tracking-[-0.01em] font-medium'
+        }
+      >
         {question.prompt}
       </h2>
       {question.kind === 'forced_choice' ? (
@@ -59,6 +89,7 @@ export function QuestionCard({
           question={question}
           currentAnswer={currentAnswer?.kind === 'forced_choice' ? currentAnswer : undefined}
           onAnswer={onAnswer}
+          grouped={grouped}
         />
       ) : question.kind === 'slider' ? (
         <Slider
@@ -66,6 +97,7 @@ export function QuestionCard({
           question={question}
           currentAnswer={currentAnswer?.kind === 'slider' ? currentAnswer : undefined}
           onAnswer={onAnswer}
+          grouped={grouped}
         />
       ) : (
         <MultiSelect
@@ -73,6 +105,7 @@ export function QuestionCard({
           question={question}
           currentAnswer={currentAnswer?.kind === 'multi_select' ? currentAnswer : undefined}
           onAnswer={onAnswer}
+          grouped={grouped}
         />
       )}
     </div>
@@ -83,14 +116,16 @@ function ForcedChoice({
   question,
   currentAnswer,
   onAnswer,
+  grouped,
 }: {
   question: Extract<Question, { kind: 'forced_choice' }>;
   currentAnswer?: Extract<Answer, { kind: 'forced_choice' }>;
   onAnswer: (a: Answer) => void;
+  grouped: boolean;
 }) {
   const selectedIdx = currentAnswer?.choiceIndex;
   return (
-    <div className="mt-10 space-y-4" role="radiogroup" aria-label={question.prompt}>
+    <div className={(grouped ? 'mt-6' : 'mt-10') + ' space-y-4'} role="radiogroup" aria-label={question.prompt}>
       {question.choices.map((choice, i) => {
         const isSelected = selectedIdx === i;
         return (
@@ -128,10 +163,12 @@ function Slider({
   question,
   currentAnswer,
   onAnswer,
+  grouped,
 }: {
   question: Extract<Question, { kind: 'slider' }>;
   currentAnswer?: Extract<Answer, { kind: 'slider' }>;
   onAnswer: (a: Answer) => void;
+  grouped: boolean;
 }) {
   // If revisiting, restore the previously-selected position
   const initialPos: number | null = (() => {
@@ -148,6 +185,18 @@ function Slider({
   const [isDragging, setIsDragging] = useState(false);
   const trackRef = useRef<HTMLDivElement | null>(null);
   const lastPct = pos !== null ? (pos / (LIKERT_POSITIONS.length - 1)) * 100 : 0;
+
+  // In grouped mode, propagate the slider value upward whenever it changes.
+  // The wrapper Continue button is what performs navigation; we just report
+  // the current value so it gets stored.
+  useEffect(() => {
+    if (!grouped) return;
+    if (pos === null) return;
+    onAnswer({ kind: 'slider', value: LIKERT_POSITIONS[pos] });
+    // onAnswer identity may change per render; we only want to report when
+    // pos actually changes. eslint disable for that intent.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pos, grouped]);
 
   const computeSnapped = (clientX: number): number | null => {
     const track = trackRef.current;
@@ -195,7 +244,7 @@ function Slider({
   };
 
   return (
-    <div className="mt-10">
+    <div className={grouped ? 'mt-6' : 'mt-10'}>
       <div
         className="px-2 sm:px-4 py-10 select-none cursor-pointer touch-none"
         role="slider"
@@ -255,14 +304,16 @@ function Slider({
         {pos === null ? 'Drag or click anywhere on the track' : LIKERT_LABELS[pos]}
       </p>
 
-      <button
-        type="button"
-        disabled={pos === null}
-        onClick={() => pos !== null && onAnswer({ kind: 'slider', value: LIKERT_POSITIONS[pos] })}
-        className="mt-6 inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)] disabled:opacity-30 disabled:cursor-not-allowed"
-      >
-        Continue
-      </button>
+      {!grouped && (
+        <button
+          type="button"
+          disabled={pos === null}
+          onClick={() => pos !== null && onAnswer({ kind: 'slider', value: LIKERT_POSITIONS[pos] })}
+          className="mt-6 inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)] disabled:opacity-30 disabled:cursor-not-allowed"
+        >
+          Continue
+        </button>
+      )}
     </div>
   );
 }
@@ -271,10 +322,12 @@ function MultiSelect({
   question,
   currentAnswer,
   onAnswer,
+  grouped,
 }: {
   question: Extract<Question, { kind: 'multi_select' }>;
   currentAnswer?: Extract<Answer, { kind: 'multi_select' }>;
   onAnswer: (a: Answer) => void;
+  grouped: boolean;
 }) {
   // The parent uses `key={question.id}` so this component remounts when the
   // question changes (including via back-nav). useState's initializer reads
@@ -290,16 +343,23 @@ function MultiSelect({
   const max = question.maxSelections;
   const toggle = (val: string) => {
     setSelected((prev) => {
+      let next: Set<string>;
       if (isSinglePick) {
-        return prev.has(val) ? new Set() : new Set([val]);
-      }
-      const next = new Set(prev);
-      if (next.has(val)) {
+        next = prev.has(val) ? new Set() : new Set([val]);
+      } else if (prev.has(val)) {
+        next = new Set(prev);
         next.delete(val);
-        return next;
+      } else if (max !== undefined && prev.size >= max) {
+        return prev;
+      } else {
+        next = new Set(prev);
+        next.add(val);
       }
-      if (max !== undefined && next.size >= max) return prev;
-      next.add(val);
+      // In grouped mode, propagate every change upward immediately so the
+      // wrapper buffer stays current and Continue can act on real state.
+      if (grouped) {
+        onAnswer({ kind: 'multi_select', selectedValues: Array.from(next) });
+      }
       return next;
     });
   };
@@ -313,7 +373,7 @@ function MultiSelect({
     : [];
 
   return (
-    <div className="mt-10">
+    <div className={grouped ? 'mt-6' : 'mt-10'}>
       {question.helperText && (
         <p className="text-sm text-[var(--color-muted)] leading-relaxed">{question.helperText}</p>
       )}
@@ -368,15 +428,17 @@ function MultiSelect({
           ))}
         </div>
       )}
-      <div className="mt-10 flex items-center gap-4">
-        <button
-          type="button"
-          onClick={() => onAnswer({ kind: 'multi_select', selectedValues: Array.from(selected) })}
-          className="inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
-        >
-          {selected.size === 0 ? 'Skip' : `Continue with ${selected.size} selected`}
-        </button>
-      </div>
+      {!grouped && (
+        <div className="mt-10 flex items-center gap-4">
+          <button
+            type="button"
+            onClick={() => onAnswer({ kind: 'multi_select', selectedValues: Array.from(selected) })}
+            className="inline-block rounded-full bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-3 text-sm tracking-wide hover:opacity-90 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+          >
+            {selected.size === 0 ? 'Skip' : `Continue with ${selected.size} selected`}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

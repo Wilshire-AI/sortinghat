@@ -66,6 +66,11 @@ export type ForcedChoiceQuestion = {
     // (e.g., 'car-friendly' boosts neighborhoods where carDependent === true).
     softPrefs?: readonly string[];
   }[];
+  // When true, the next visible question is rendered on the same screen as
+  // this one (a "screen group"). Used to merge tightly-coupled question
+  // pairs (e.g., commute-target + commute-tolerance) into a single page.
+  // Only the FIRST question of a pair carries this flag.
+  groupNext?: boolean;
 };
 
 export type SliderQuestion = {
@@ -75,6 +80,7 @@ export type SliderQuestion = {
   lowLabel: string;
   highLabel: string;
   dimensionId: DimensionId;
+  groupNext?: boolean;
 };
 
 export type MultiSelectQuestion = {
@@ -82,6 +88,7 @@ export type MultiSelectQuestion = {
   kind: 'multi_select';
   prompt: string;
   helperText?: string;
+  groupNext?: boolean;
   // selecting any of these adds the value(s) to either selectedTags or
   // mustHaves depending on `purpose` (default: cultural_tags).
   options: {

@@ -76,6 +76,12 @@ export function pruneSkippedAnswers(
 // the current answer state. The progress bar reads "Q5 of 16" not "Q5 of 20"
 // — the denominator forecasts non-skipped questions, so the user sees an
 // honest pace as their answers cause cascade skips.
+//
+// A question with `groupNext: true` shares a screen with the question at
+// idx+1 (see GroupedQuestionsScreen). When idx+1 is visible, the pair
+// collapses to a single step. When idx+1 is skipped, the primary becomes
+// a standalone screen and the group is broken — we do NOT scan forward to
+// find a different partner.
 export function progressFor(
   rawIdx: number,
   questions: readonly Question[],
@@ -84,10 +90,31 @@ export function progressFor(
 ): { current: number; total: number } {
   let total = 0;
   let current = 0;
+  let collapseNext = false;
   for (let i = 0; i < questions.length; i++) {
-    if (predicate(questions[i].id, answers)) continue;
+    if (predicate(questions[i].id, answers)) {
+      // A skipped question can't be a partner anymore; don't carry over.
+      collapseNext = false;
+      continue;
+    }
+    if (collapseNext) {
+      // This is the partner half of a grouped pair already counted on the
+      // primary's iteration. Don't double-count.
+      collapseNext = false;
+      continue;
+    }
     total++;
     if (i <= rawIdx) current++;
+    // Only collapse the *immediately-next* question, and only if visible.
+    if (questions[i].groupNext) {
+      const partnerIdx = i + 1;
+      if (
+        partnerIdx < questions.length &&
+        !predicate(questions[partnerIdx].id, answers)
+      ) {
+        collapseNext = true;
+      }
+    }
   }
   return { current: Math.max(1, current), total: Math.max(1, total) };
 }

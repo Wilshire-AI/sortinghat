@@ -375,6 +375,7 @@ export const questions: readonly Question[] = [
     id: 'commute-target',
     kind: 'multi_select',
     purpose: 'commute_targets',
+    groupNext: true,
     prompt: 'Where will you actually need to be? Pick all that apply, including a partner\'s office if you\'re a couple.',
     helperText: 'We weight neighborhoods by door-to-door commute. Pick "Mostly remote" if commute isn\'t a constraint.',
     options: [

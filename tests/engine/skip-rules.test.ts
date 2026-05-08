@@ -166,9 +166,12 @@ describe('pruneSkippedAnswers', () => {
 });
 
 describe('progressFor', () => {
-  it('reports total = full question count when nothing is skipped', () => {
+  it('reports total = full visible count, collapsing grouped pairs to one step', () => {
     const { total } = progressFor(0, questions, {});
-    expect(total).toBe(questions.length);
+    // Each `groupNext: true` question shares a screen with its next visible
+    // neighbor, so the pair counts as a single step.
+    const groupCount = questions.filter((q) => q.groupNext).length;
+    expect(total).toBe(questions.length - groupCount);
   });
 
   it('reduces total as cascade skips fire (no-kids drops school-need)', () => {
@@ -205,5 +208,55 @@ describe('progressFor', () => {
     const empty = progressFor(0, [], {});
     expect(empty.current).toBeGreaterThanOrEqual(1);
     expect(empty.total).toBeGreaterThanOrEqual(1);
+  });
+
+  it('treats commute-target+commute-tolerance as one screen step', () => {
+    const targetIdx = questions.findIndex((q) => q.id === 'commute-target');
+    const toleranceIdx = questions.findIndex((q) => q.id === 'commute-tolerance');
+    expect(targetIdx).toBeGreaterThan(-1);
+    expect(toleranceIdx).toBe(targetIdx + 1);
+    // commute-target is groupNext-flagged; it pairs with the next visible
+    // question (commute-tolerance). Position on either index should yield
+    // the same `current` value (the collapsed screen counter).
+    const onPrimary = progressFor(targetIdx, questions, {});
+    const onPartner = progressFor(toleranceIdx, questions, {});
+    expect(onPrimary.current).toBe(onPartner.current);
+    expect(onPrimary.total).toBe(onPartner.total);
+  });
+
+  it('counts commute-target+commute-tolerance pair only once even when partner is skipped', () => {
+    // When commute-tolerance is skipped (remote-only target), the pair
+    // collapses to just commute-target, but groupNext still tries to swallow
+    // the next visible question. Verify the collapse logic doesn't accidentally
+    // eat a non-grouped neighbor.
+    const baseTotal = progressFor(0, questions, {}).total;
+    const remoteOnly = progressFor(0, questions, {
+      'commute-target': { kind: 'multi_select', selectedValues: ['remote'] },
+    }).total;
+    // commute-tolerance is now skipped (-1 visible question), but it was
+    // already collapsed into the commute-target screen, so total stays the
+    // same: removing one half of an already-collapsed pair doesn't change
+    // the screen count.
+    expect(remoteOnly).toBe(baseTotal);
+  });
+});
+
+describe('groupNext content invariants', () => {
+  it('commute-target has groupNext: true and immediately precedes commute-tolerance', () => {
+    const targetIdx = questions.findIndex((q) => q.id === 'commute-target');
+    expect(targetIdx).toBeGreaterThan(-1);
+    expect(questions[targetIdx].groupNext).toBe(true);
+    expect(questions[targetIdx + 1]?.id).toBe('commute-tolerance');
+  });
+
+  it('groupNext questions are not themselves skipped by current rules', () => {
+    // A skipped primary would orphan its partner; if we ever add such a rule
+    // we need new logic. For now, confirm none of our group primaries are
+    // skipped under empty answers (a baseline state).
+    for (const q of questions) {
+      if (q.groupNext) {
+        expect(shouldSkip(q.id, {})).toBe(false);
+      }
+    }
   });
 });
