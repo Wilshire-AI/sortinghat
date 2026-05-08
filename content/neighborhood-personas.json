@@ -50,22 +50,24 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "parks-water",
-          "family-infra",
-          "world-class-restaurants"
+          "parks-water"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "waterfront",
+          "real-park"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 2
+        "choiceIndex": 1
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -144,14 +146,15 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "world-class-restaurants",
-          "parks-water",
-          "gym"
+          "world-class-restaurants"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -239,13 +242,16 @@
         "selectedValues": [
           "world-class-restaurants",
           "errands",
-          "museums-concerts",
-          "gym"
+          "museums-concerts"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "waterfront",
+          "industrial-loft"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -318,7 +324,7 @@
       },
       "weekend-life": {
         "kind": "forced_choice",
-        "choiceIndex": 3
+        "choiceIndex": 2
       },
       "social-register-fit": {
         "kind": "forced_choice",
@@ -335,9 +341,12 @@
           "museums-concerts"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "industrial-loft",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -345,7 +354,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -427,9 +436,12 @@
           "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -437,7 +449,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -519,9 +531,9 @@
           "world-class-restaurants"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -608,14 +620,12 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "world-class-restaurants",
-          "museums-concerts",
-          "gym"
+          "world-class-restaurants"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -706,9 +716,11 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -716,7 +728,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -795,14 +807,12 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "museums-concerts",
-          "world-class-restaurants",
-          "gym"
+          "museums-concerts"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -892,9 +902,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -902,7 +915,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -985,9 +998,11 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "lively-retail"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1075,13 +1090,16 @@
         "selectedValues": [
           "errands",
           "cafes",
-          "family-infra",
-          "parks-water"
+          "family-infra"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1171,13 +1189,17 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential",
+          "suburban-streets"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -1263,17 +1285,21 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential",
+          "industrial-loft"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -1356,9 +1382,13 @@
           "world-class-restaurants"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "real-park",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1449,9 +1479,12 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1540,9 +1573,11 @@
           "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "industrial-loft"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1550,7 +1585,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -1632,9 +1667,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1724,9 +1761,11 @@
           "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1817,9 +1856,9 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -1910,13 +1949,16 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -2000,13 +2042,12 @@
         "selectedValues": [
           "errands",
           "cafes",
-          "community",
-          "gym"
+          "community"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -2096,13 +2137,15 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -2189,9 +2232,13 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "suburban-streets",
+          "small-downtown",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -2282,13 +2329,16 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -2374,9 +2424,12 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -2467,9 +2520,9 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -2560,13 +2613,15 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -2650,17 +2705,18 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "errands",
-          "cafes"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 2
+        "choiceIndex": 0
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -2746,9 +2802,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -2793,7 +2851,7 @@
       },
       "access-vs-space": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "family-horizon": {
         "kind": "forced_choice",
@@ -2821,7 +2879,7 @@
       },
       "weekend-life": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "social-register-fit": {
         "kind": "forced_choice",
@@ -2838,9 +2896,13 @@
           "museums-concerts"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "industrial-loft",
+          "lively-retail",
+          "arts-scene"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -2848,7 +2910,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -2931,9 +2993,9 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -3024,17 +3086,21 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "industrial-loft",
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -3116,13 +3182,15 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -3209,13 +3277,16 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -3300,9 +3371,12 @@
           "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -3310,7 +3384,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -3389,14 +3463,12 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "world-class-restaurants",
-          "museums-concerts",
-          "gym"
+          "world-class-restaurants"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -3487,9 +3559,13 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "real-park",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -3497,7 +3573,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -3580,9 +3656,11 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -3668,23 +3746,22 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands",
-          "family-infra",
-          "parks-water",
-          "world-class-restaurants"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 2
+        "choiceIndex": 1
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -3764,13 +3841,14 @@
         "selectedValues": [
           "parks-water",
           "errands",
-          "cafes",
-          "family-infra"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -3858,13 +3936,12 @@
         "selectedValues": [
           "world-class-restaurants",
           "errands",
-          "museums-concerts",
-          "gym"
+          "museums-concerts"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -3950,15 +4027,12 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands",
-          "family-infra",
-          "parks-water",
-          "gym"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4049,9 +4123,9 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4139,13 +4213,15 @@
         "selectedValues": [
           "world-class-restaurants",
           "errands",
-          "museums-concerts",
-          "gym"
+          "museums-concerts"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "industrial-loft"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4153,7 +4229,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -4218,7 +4294,7 @@
       },
       "weekend-life": {
         "kind": "forced_choice",
-        "choiceIndex": 1
+        "choiceIndex": 2
       },
       "social-register-fit": {
         "kind": "forced_choice",
@@ -4233,13 +4309,15 @@
         "selectedValues": [
           "world-class-restaurants",
           "museums-concerts",
-          "errands",
-          "gym"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "lively-retail"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4312,7 +4390,7 @@
       },
       "weekend-life": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "social-register-fit": {
         "kind": "forced_choice",
@@ -4327,13 +4405,15 @@
         "selectedValues": [
           "errands",
           "bars-nightlife",
-          "gym",
-          "community"
+          "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "industrial-loft",
+          "lively-retail"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4341,7 +4421,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -4424,9 +4504,12 @@
           "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "real-park"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4517,9 +4600,12 @@
           "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4527,7 +4613,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -4609,13 +4695,15 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -4701,9 +4789,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4711,7 +4802,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -4794,9 +4885,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4886,9 +4980,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -4978,13 +5075,16 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -5069,9 +5169,11 @@
           "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "industrial-loft"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5079,7 +5181,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -5161,9 +5263,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5253,17 +5358,20 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -5346,9 +5454,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5438,9 +5548,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5448,7 +5561,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -5530,9 +5643,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5619,22 +5734,23 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "cafes",
-          "gym",
-          "bars-nightlife"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "industrial-loft",
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -5716,13 +5832,16 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -5808,9 +5927,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5901,9 +6022,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5991,13 +6114,15 @@
         "selectedValues": [
           "errands",
           "cafes",
-          "gym",
-          "community"
+          "gym"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "industrial-loft"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6005,7 +6130,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -6085,17 +6210,18 @@
         "selectedValues": [
           "errands",
           "cafes",
-          "community",
-          "gym"
+          "community"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -6178,14 +6304,16 @@
         "kind": "multi_select",
         "selectedValues": [
           "parks-water",
-          "errands",
-          "family-infra",
-          "gym"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "suburban-streets",
+          "real-park"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6274,9 +6402,9 @@
           "world-class-restaurants"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6367,9 +6495,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "suburban-streets",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6457,13 +6588,16 @@
         "selectedValues": [
           "world-class-restaurants",
           "museums-concerts",
-          "errands",
-          "gym"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "leafy-residential",
+          "lively-retail",
+          "industrial-loft"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6471,7 +6605,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -6551,13 +6685,12 @@
         "selectedValues": [
           "world-class-restaurants",
           "museums-concerts",
-          "errands",
-          "gym"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6647,13 +6780,16 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -6736,14 +6872,15 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "cafes",
-          "family-infra",
-          "gym"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6833,9 +6970,9 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -6925,13 +7062,17 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "waterfront",
+          "small-downtown",
+          "real-park"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -7018,9 +7159,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "suburban-streets",
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7111,9 +7255,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7204,9 +7350,9 @@
           "community"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7294,13 +7440,12 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "community",
-          "cafes"
+          "community"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7391,9 +7536,13 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "suburban-streets",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7401,7 +7550,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -7480,9 +7629,9 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7573,9 +7722,13 @@
           "family-infra"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "suburban-streets",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7666,9 +7819,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "suburban-streets"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7759,17 +7915,21 @@
           "parks-water"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -7848,14 +8008,15 @@
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "cafes",
-          "family-infra",
-          "parks-water"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -7943,13 +8104,14 @@
         "selectedValues": [
           "family-infra",
           "errands",
-          "parks-water",
-          "cafes"
+          "parks-water"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8040,9 +8202,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8130,13 +8294,14 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "cafes",
-          "errands"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8227,9 +8392,13 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "suburban-streets",
+          "small-downtown",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8319,9 +8488,13 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "suburban-streets",
+          "leafy-residential"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8329,7 +8502,7 @@
       },
       "built-form-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
@@ -8409,13 +8582,16 @@
         "selectedValues": [
           "errands",
           "cafes",
-          "parks-water",
-          "family-infra"
+          "parks-water"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "suburban-streets",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8506,9 +8682,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8595,14 +8773,16 @@
         "kind": "multi_select",
         "selectedValues": [
           "parks-water",
-          "errands",
-          "family-infra",
-          "cafes"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront",
+          "real-park"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8692,9 +8872,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8782,13 +8964,14 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "cafes",
-          "errands"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8876,13 +9059,14 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "cafes",
-          "errands"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -8973,9 +9157,13 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "suburban-streets",
+          "small-downtown",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9062,14 +9250,16 @@
         "kind": "multi_select",
         "selectedValues": [
           "parks-water",
-          "errands",
-          "family-infra",
-          "cafes"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront",
+          "real-park"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9159,9 +9349,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9252,9 +9444,9 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9345,9 +9537,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "suburban-streets"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9435,13 +9629,14 @@
         "selectedValues": [
           "family-infra",
           "parks-water",
-          "errands",
-          "cafes"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9532,9 +9727,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9622,13 +9819,15 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "errands",
-          "cafes"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9719,9 +9918,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9812,9 +10013,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9904,9 +10107,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -9994,17 +10199,20 @@
         "selectedValues": [
           "errands",
           "parks-water",
-          "cafes",
-          "gym"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "waterfront",
+          "real-park"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "built-form-fit": {
         "kind": "forced_choice",
@@ -10088,13 +10296,14 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "errands",
-          "cafes"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -10180,15 +10389,14 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "errands",
-          "parks-water",
-          "family-infra",
-          "cafes"
+          "errands"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -10279,9 +10487,12 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "suburban-streets"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -10369,13 +10580,15 @@
         "selectedValues": [
           "parks-water",
           "family-infra",
-          "cafes",
-          "errands"
+          "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown",
+          "suburban-streets"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -10466,9 +10679,11 @@
           "cafes"
         ]
       },
-      "streetscape-pleasure-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "small-downtown"
+        ]
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",

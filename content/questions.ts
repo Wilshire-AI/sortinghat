@@ -158,7 +158,7 @@ export const questions: readonly Question[] = [
     id: 'walking-distance-amenities',
     kind: 'multi_select',
     purpose: 'walkable_amenities',
-    maxSelections: 4,
+    maxSelections: 3,
     prompt: 'Within walking distance from home, I want:',
     helperText: 'Select up to four. Skip if no strong preferences.',
     options: [
@@ -210,13 +210,53 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'streetscape-pleasure-fit',
-    kind: 'forced_choice',
-    prompt: 'Tree-lined blocks and pleasant sidewalks. How much do they matter?',
-    choices: [
-      { label: 'Essential. I want streets I\'d take a walk on for no reason.', impacts: { 'streetscape-quality': 0.7 } },
-      { label: 'Adds to quality of life, not the deciding factor.', impacts: { 'streetscape-quality': 0.3 } },
-      { label: 'Functional is enough.', impacts: { 'streetscape-quality': 0 } },
+    id: 'walk-scenery',
+    kind: 'multi_select',
+    purpose: 'walkable_amenities',
+    maxSelections: 3,
+    prompt: 'On a walk for pleasure, what do you want to see?',
+    helperText: 'Pick up to three. The things that genuinely make you want to walk somewhere.',
+    options: [
+      {
+        value: 'leafy-residential',
+        label: 'Leafy residential blocks, stoops, brownstones, prewar facades',
+        impacts: { 'streetscape-quality': 0.45, 'built-form-register': -0.25 },
+      },
+      {
+        value: 'lively-retail',
+        label: 'Cafés, shops, people, lively retail streets',
+        impacts: { 'streetscape-quality': 0.20, 'urban-intensity-tolerance': 0.35, 'visitor-facing-energy': 0.15 },
+      },
+      {
+        value: 'real-park',
+        label: 'A real park to wander in (Central, Prospect, Hudson River)',
+        impacts: { 'environmental-openness': 0.40, 'streetscape-quality': 0.15 },
+      },
+      {
+        value: 'waterfront',
+        label: 'Waterfront paths, river or harbor views',
+        impacts: { 'environmental-openness': 0.45, 'streetscape-quality': 0.20 },
+      },
+      {
+        value: 'arts-scene',
+        label: 'Galleries, studios, mural walls',
+        impacts: { 'creative-energy': 0.45, 'streetscape-quality': 0.10 },
+      },
+      {
+        value: 'industrial-loft',
+        label: 'Industrial, warehouse, loft texture',
+        impacts: { 'built-form-register': -0.35, 'creative-energy': 0.25, 'friction-sensitivity': -0.10 },
+      },
+      {
+        value: 'small-downtown',
+        label: 'A charming small downtown / main street',
+        impacts: { 'rootedness-vs-access': -0.35, 'daily-life-walkability': 0.25, 'urban-intensity-tolerance': -0.15, 'streetscape-quality': 0.20 },
+      },
+      {
+        value: 'suburban-streets',
+        label: 'Quiet suburban streets, lawns, mature trees',
+        impacts: { 'urban-intensity-tolerance': -0.45, 'friction-sensitivity': 0.20, 'streetscape-quality': 0.25 },
+      },
     ],
   },
   {

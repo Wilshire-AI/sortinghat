@@ -153,7 +153,7 @@ export const dimensions: readonly Dimension[] = [
     name: 'Streetscape Quality',
     kind: 'asymmetric_need',
     description:
-      'Whether the daily streetscape is pleasant to walk in for its own sake: tree-lined blocks, pedestrian-friendly sidewalks, brownstones, water-adjacent paths, café spillover, the kind of streets you walk just to enjoy where you live. Distinct from daily-life-walkability (errand reach) and environmental-openness (parks). High on this dimension means active preference for stroll-worthy character. Low means absence of preference, not active dislike.',
+      'Block-to-block walking pleasure — tree-lined sidewalks, prewar facades, stoops and storefronts, the visual-and-pedestrian texture of the neighborhood itself. Distinct from daily-life-walkability (errand reach), environmental-openness (parks/waterfront/visual openness), and rootedness-vs-access (cultural density). This dim is *only* about whether the streets themselves are pleasant to walk on. Low means absence of preference, not active dislike.',
     poles: {
       low: 'Functional streets are enough.',
       high: 'Wants streets that are pleasant to walk for their own sake.',

@@ -58,7 +58,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.9,
       'space-sensitivity': -0.3, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.2,
-      'environmental-openness': 0.4, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
+      'environmental-openness': 0.65, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
       'safety-need': 0.75, 'school-quality': 0.6,
     'social-register': 0.45,
     'visitor-facing-energy': 0.85,
@@ -82,7 +82,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': 0.7, 'transit-psychology': 0.0, 'prestige-orientation': 0.0,
       'space-sensitivity': -0.4, 'family-trajectory': -0.4, 'cultural-ecosystem': 0.5,
-      'environmental-openness': 0.0, 'creative-energy': 0.7, 'friction-sensitivity': -0.4,
+      'environmental-openness': 0.4, 'creative-energy': 0.7, 'friction-sensitivity': -0.4,
       'safety-need': 0.55, 'school-quality': 0.25,
     'social-register': -0.7,
     'visitor-facing-energy': 0.5,
@@ -103,7 +103,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.6, 'prestige-orientation': 0.95,
       'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.0,
-      'environmental-openness': 0.4, 'creative-energy': 0.3, 'friction-sensitivity': 0.7,
+      'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.7,
       'safety-need': 0.85, 'school-quality': 0.7,
     'social-register': 0.75,
     'visitor-facing-energy': 0.35,
@@ -704,7 +704,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.4, 'prestige-orientation': 0.1,
       'space-sensitivity': -0.3, 'family-trajectory': -0.2, 'cultural-ecosystem': 0.6,
-      'environmental-openness': 0.0, 'creative-energy': 0.7, 'friction-sensitivity': -0.3,
+      'environmental-openness': 0.45, 'creative-energy': 0.7, 'friction-sensitivity': -0.3,
       'safety-need': 0.55, 'school-quality': 0.2,
     'social-register': -0.65,
     'visitor-facing-energy': 0.7,
@@ -1041,7 +1041,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.6, 'prestige-orientation': 0.85,
       'space-sensitivity': 0.4, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.2,
-      'environmental-openness': 0.2, 'creative-energy': 0.4, 'friction-sensitivity': 0.3,
+      'environmental-openness': 0.4, 'creative-energy': 0.4, 'friction-sensitivity': 0.3,
       'safety-need': 0.8, 'school-quality': 0.5,
     'social-register': 0.35,
     'visitor-facing-energy': 1,
@@ -1062,7 +1062,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': 0.7, 'transit-psychology': 0.7, 'prestige-orientation': -0.3,
       'space-sensitivity': -0.4, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.95,
-      'environmental-openness': 0.0, 'creative-energy': 0.3, 'friction-sensitivity': -0.5,
+      'environmental-openness': 0.3, 'creative-energy': 0.3, 'friction-sensitivity': -0.5,
       'safety-need': 0.65, 'school-quality': 0.35,
     'social-register': -0.3,
     'visitor-facing-energy': 0.7,

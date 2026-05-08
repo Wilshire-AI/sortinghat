@@ -84,6 +84,9 @@ export function ResultsClient() {
         }));
       // Cluster-first grouping. Find which clusters the user's passing
       // matches concentrate in, then surface them as primary / secondary.
+      // Primary requires >=4 of top 10 in the cluster — otherwise the user's
+      // signal is too mixed and we fall back to a flat top-5 list rather
+      // than over-committing to a single cluster framing.
       const top10 = passing.slice(0, 10);
       const clusterCounts: Record<string, number> = {};
       for (const r of top10) {
@@ -91,9 +94,12 @@ export function ResultsClient() {
         if (cid) clusterCounts[cid] = (clusterCounts[cid] ?? 0) + 1;
       }
       const sortedClusters = Object.entries(clusterCounts).sort((a, b) => b[1] - a[1]);
-      const primaryClusterId = sortedClusters[0]?.[0];
+      const primaryClusterId =
+        sortedClusters[0] && sortedClusters[0][1] >= 4 ? sortedClusters[0][0] : null;
       const secondaryClusterId =
-        sortedClusters[1] && sortedClusters[1][1] >= 2 ? sortedClusters[1][0] : null;
+        primaryClusterId && sortedClusters[1] && sortedClusters[1][1] >= 2
+          ? sortedClusters[1][0]
+          : null;
 
       // Build the cards-by-cluster map: each cluster gets its top members
       // from the user's passing list.
@@ -180,6 +186,34 @@ export function ResultsClient() {
         </section>
       )}
 
+      {!result.primaryCluster && result.ranked.length > 0 && (
+        <section className="mx-auto max-w-3xl px-6 pt-12">
+          <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+            Your top {result.ranked.length} match{result.ranked.length === 1 ? '' : 'es'}
+          </p>
+          <p className="mt-2 text-sm text-[var(--color-muted)] italic">
+            Your answers span multiple psychographic clusters; showing flat ranking instead of grouping.
+          </p>
+          {result.ranked.map((r, i) => {
+            const passage = getPassage(result.archetype.id, r.neighborhood.id);
+            const prose = resolveCardProse(r.neighborhood, passage);
+            return (
+              <NeighborhoodCard
+                key={r.neighborhood.id}
+                rank={i + 1}
+                neighborhood={r.neighborhood}
+                prose={prose}
+                score={r.score}
+                matchedTags={(r.neighborhood.culturalTags ?? []).filter((t) =>
+                  result.selectedTags.includes(t),
+                )}
+                fingerprint={f ?? undefined}
+              />
+            );
+          })}
+        </section>
+      )}
+
       {result.primaryCluster && result.primaryMembers.length > 0 && (
         <section className="mx-auto max-w-3xl px-6 pt-12">
           <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
@@ -245,9 +279,13 @@ export function ResultsClient() {
       <NeighborhoodMap ranked={[...result.ranked, ...result.rest, ...result.excluded]} />
 
       <AllMatchesList
-        ranked={result.restAfterClusters}
+        ranked={result.primaryCluster ? result.restAfterClusters : result.rest}
         excluded={result.excluded}
-        startRank={result.primaryMembers.length + result.secondaryMembers.length + 1}
+        startRank={
+          result.primaryCluster
+            ? result.primaryMembers.length + result.secondaryMembers.length + 1
+            : result.ranked.length + 1
+        }
         fingerprint={f ?? undefined}
       />
 
