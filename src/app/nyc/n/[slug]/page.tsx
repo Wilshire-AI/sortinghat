@@ -7,9 +7,26 @@ import { NeighborhoodFitExplanation } from '@/components/results/NeighborhoodFit
 import { NeighborhoodScoreTable } from '@/components/results/NeighborhoodScoreTable';
 import { BackLink } from '@/components/results/BackLink';
 import personasJson from '@content/neighborhood-personas.json';
+import clustersJson from '@content/neighborhood-clusters.json';
 import { Suspense } from 'react';
 
+type ClusterEntry = { name: string; description: string; members: string[] };
 const personas = personasJson as Record<string, { description: string | null }>;
+const clusters = (clustersJson as { clusters: Record<string, ClusterEntry> }).clusters;
+
+// Build a reverse lookup: nbhd-id → cluster entry
+const clusterByNbhd: Record<string, ClusterEntry> = {};
+for (const c of Object.values(clusters)) {
+  for (const id of c.members) clusterByNbhd[id] = c;
+}
+
+function personaForNbhd(id: string): { source: 'override' | 'cluster'; name?: string; description: string } | null {
+  const override = personas[id]?.description;
+  if (override) return { source: 'override', description: override };
+  const cluster = clusterByNbhd[id];
+  if (cluster) return { source: 'cluster', name: cluster.name, description: cluster.description };
+  return null;
+}
 
 export async function generateStaticParams() {
   return neighborhoods.map((n) => ({ slug: n.slug }));
@@ -85,14 +102,23 @@ export default async function NeighborhoodPage({
         <p className="mt-4 leading-relaxed text-[var(--color-ink)]/85">{n.basePassages.whoThrivesHere}</p>
       </section>
 
-      {personas[n.id]?.description && (
-        <section className="mt-14">
-          <h2 className="font-serif text-2xl">A user who fits</h2>
-          <p className="mt-4 leading-relaxed text-[var(--color-ink)]/85 italic">
-            {personas[n.id].description}
-          </p>
-        </section>
-      )}
+      {(() => {
+        const persona = personaForNbhd(n.id);
+        if (!persona) return null;
+        return (
+          <section className="mt-14">
+            <h2 className="font-serif text-2xl">A user who fits</h2>
+            {persona.source === 'cluster' && persona.name && (
+              <p className="mt-2 text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+                Cluster: {persona.name}
+              </p>
+            )}
+            <p className="mt-4 leading-relaxed text-[var(--color-ink)]/85 italic">
+              {persona.description}
+            </p>
+          </section>
+        );
+      })()}
 
       <section className="mt-14">
         <h2 className="font-serif text-2xl">The tradeoffs</h2>

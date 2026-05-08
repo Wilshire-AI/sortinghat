@@ -1,0 +1,64 @@
+{
+  "clusters": {
+    "calm-seeking-urbanist": {
+      "name": "Calm-Seeking Urbanist",
+      "description": "Mid-30s couple, both work, no kids in the immediate plan but maybe in five years. Wants the city's optionality with a quiet block at home: brunch in Manhattan, decompress in a leafy walk-up. Tolerates a one-train commute. Picks LIC over Hudson Yards because the energy doesn't follow you home.",
+      "members": ["long-island-city", "fort-lee", "morningside-heights", "prospect-heights", "fort-greene", "clinton-hill", "white-plains"]
+    },
+    "creative-immersionist": {
+      "name": "Creative Immersionist",
+      "description": "Late-20s, partner, no kids. Graphic designer, photographer, freelance writer. Loft floor-share, exposed pipes, big windows. Friday gallery openings, late-night Roberta's, Saturday brunch at Ops. Wants the scene at the doorstep, not as a destination. Trades polish for texture, doesn't notice (or care about) friction.",
+      "members": ["east-village", "bushwick", "lower-east-side", "chinatown", "east-williamsburg", "nolita-little-italy"]
+    },
+    "prestige-anchored-cosmopolitan": {
+      "name": "Prestige-Anchored Cosmopolitan",
+      "description": "Late-30s to mid-40s, professional, partner, kids optional. Two-bedroom prewar with original moldings. Wants the village texture (cobblestones, jazz, the right cafés) and walks to a different world-class restaurant on Friday nights. Pays for it. Reads NYT and the New Yorker, occasional gallery, charity dinner once a quarter.",
+      "members": ["upper-east-side", "west-village", "tribeca", "fidi", "chelsea", "gramercy", "dumbo", "lincoln-square", "midtown-east", "murray-hill", "greenwich-village", "soho", "hudson-yards", "flatiron-nomad"]
+    },
+    "value-seeking-rooter": {
+      "name": "Value-Seeking Rooter",
+      "description": "Mid-30s, working family, often multi-generational household. Wants the neighborhood they grew up in or one that feels like it. Trains to wherever they need, but the local block is the priority. Bodega owner knows the kids' names. Suspicious of new construction. Picks Yonkers or Inwood specifically because the rent isn't a stretch.",
+      "members": ["sheepshead-bay", "hamilton-heights", "washington-heights", "inwood", "prospect-lefferts-gardens", "woodside", "yonkers-ny"]
+    },
+    "cultural-anchor-seeker": {
+      "name": "Cultural Anchor Seeker",
+      "description": "First-generation or grew up nearby, partner, often kids. Wants the food (Korean BBQ on the corner, Caribbean groceries, Senegalese lamb dinner, Bengali sweets), the community, the language. Picks Astoria over Williamsburg specifically for the Greek-Egyptian-Brazilian-Bengali block density. Knows the right place for everything.",
+      "members": ["central-harlem", "bed-stuy", "brighton-beach", "astoria", "flushing", "palisades-park", "east-harlem", "greenpoint", "crown-heights", "ridgewood", "jackson-heights", "elmhurst", "gowanus"]
+    },
+    "nature-hungry-urbanist": {
+      "name": "Nature-Hungry Urbanist",
+      "description": "30s couple, dog or thinking about one, no kids yet. Wants the density of urban access and the river or park five minutes away. Picks Hoboken over Williamsburg for the waterfront. Picks UWS over UES for Riverside Park. Lives for the morning run before work, the weekend hike, the dog who needs serious off-leash time.",
+      "members": ["upper-west-side", "st-george", "hoboken", "jersey-city", "edgewater", "manhattan-valley", "manhattanville", "weehawken-port-imperial", "roosevelt-island", "red-hook", "paramus", "long-beach-ny", "stamford"]
+    },
+    "energy-driven-maximalist": {
+      "name": "Energy-Driven Maximalist",
+      "description": "Late-20s, single or partner-shared 2BR, finance or tech adjacent. Wants the city at its loudest: Hell's Kitchen rooftop bars, Williamsburg DJ sets, Friday drinks at 2am. Tolerates noise as the price. Doesn't plan to stay forever — it's a few years of the maximum-contact lifestyle.",
+      "members": ["hells-kitchen", "williamsburg"]
+    },
+    "in-city-family-infrastructure": {
+      "name": "In-City Family Infrastructure",
+      "description": "Mid-30s couple, one kid in pre-K, dual-income. Walks to the playground, walks to the food coop. Wants brownstone block plus good public schools plus family infrastructure: other parents on the block, kid-friendly streets, the after-school routine. Reads NYT, drives a Subaru on weekends. Trades trendy for emotional sustainability.",
+      "members": ["park-slope", "brooklyn-heights", "cobble-hill", "carroll-gardens", "boerum-hill", "carnegie-hill", "yorkville", "stuyvesant-town", "battery-park-city"]
+    },
+    "city-edge-family-pragmatist": {
+      "name": "City-Edge Family Pragmatist",
+      "description": "Family with one or two kids, dual-income, parents maybe nearby. Wants more space than Manhattan affords plus family-friendly streets, but doesn't want to leave the city or its food culture. Tolerates a longer subway commute. Picks Forest Hills over Scarsdale because they want neighbors who still take the subway to work.",
+      "members": ["forest-hills", "riverdale", "bay-ridge", "ditmas-park", "windsor-terrace", "sunnyside", "rego-park", "kew-gardens", "bayside"]
+    },
+    "progressive-village-suburb": {
+      "name": "Progressive Village Suburb",
+      "description": "Mid-30s to early-40s couple, kids in elementary school, dual-income (one in arts, nonprofit, or progressive professional). Wants Maplewood-Montclair feel: walkable downtown, train to Manhattan, neighbors who organize school-board races. Politically engaged, kid-school-active, dog-walker-friendly. Picks here over Scarsdale specifically.",
+      "members": ["maplewood", "montclair", "south-orange", "hastings-on-hudson", "dobbs-ferry", "irvington-ny", "tarrytown"]
+    },
+    "classic-walkable-commuter-suburb": {
+      "name": "Classic Walkable Commuter Suburb",
+      "description": "Mid-30s to mid-40s, couple, two kids. Train to Manhattan three-to-five days a week. Wants the walkable downtown plus good schools plus tree-lined blocks. Picks Larchmont or Bronxville specifically over car-only suburbs for the walkable village. Drives but doesn't live in the car. Sunday-morning bagel place is on foot.",
+      "members": ["larchmont", "bronxville", "pelham", "rye", "mamaroneck", "ridgewood-nj", "rockville-centre", "garden-city", "summit", "westfield", "chatham-nj"]
+    },
+    "estate-school-suburb": {
+      "name": "Estate / Car-Anchored School Suburb",
+      "description": "Mid-40s family, two kids in private or top public school. Drives everywhere. Wants top-tier schools and the established suburb: country club, lacrosse league, manicured lots, real privacy. Trains to Manhattan when work calls but most days don't require it. Picks Scarsdale or Greenwich over Larchmont because the walkability doesn't matter — the privacy does.",
+      "members": ["scarsdale", "manhasset", "roslyn", "great-neck", "port-washington", "tenafly", "englewood", "englewood-cliffs", "cresskill", "chappaqua", "greenwich", "darien", "new-canaan", "westport", "millburn-short-hills"]
+    }
+  }
+}
