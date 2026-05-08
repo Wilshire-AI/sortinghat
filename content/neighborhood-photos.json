@@ -239,6 +239,86 @@
     "license": "Public domain",
     "licenseUrl": null
   },
+  "mott-haven": {
+    "src": "/images/neighborhoods/photos/mott-haven.jpg",
+    "sourceTitle": "Mott Haven, Bronx",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mott_Haven%2C_Bronx",
+    "commonsFile": "East_139.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:East_139.jpg",
+    "artist": "Amolina196",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "belmont": {
+    "src": "/images/neighborhoods/photos/belmont.jpg",
+    "sourceTitle": "Belmont, Bronx",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Belmont%2C_Bronx",
+    "commonsFile": "Arthur_Avenue_between_184th_and_186th_Street_in_the_Bronx,_New_York_City_001_crop.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Arthur_Avenue_between_184th_and_186th_Street_in_the_Bronx%2C_New_York_City_001_crop.jpg",
+    "artist": "Leonard J. DeFrancisci",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "pelham-bay": {
+    "src": "/images/neighborhoods/photos/pelham-bay.jpg",
+    "sourceTitle": "Pelham Bay (neighborhood), Bronx",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Pelham_Bay_(neighborhood)%2C_Bronx",
+    "commonsFile": "PelhamBaySt.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:PelhamBaySt.JPG",
+    "artist": "EJ220 at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "fordham": {
+    "src": "/images/neighborhoods/photos/fordham.jpg",
+    "sourceTitle": "Fordham, Bronx",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Fordham%2C_Bronx",
+    "commonsFile": "Monroe_Coll_Walton_Fordham_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Monroe_Coll_Walton_Fordham_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "norwood": {
+    "src": "/images/neighborhoods/photos/norwood.jpg",
+    "sourceTitle": "Norwood, Bronx",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Norwood%2C_Bronx",
+    "commonsFile": "Valentine-varian-house.JPG",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Valentine-varian-house.JPG",
+    "artist": "Dmadeo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "stapleton": {
+    "src": "/images/neighborhoods/photos/stapleton.jpg",
+    "sourceTitle": "Stapleton, Staten Island",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Stapleton%2C_Staten_Island",
+    "commonsFile": "Edgewater_Village_Hall_SI_jeh.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Edgewater_Village_Hall_SI_jeh.jpg",
+    "artist": "Jim.henderson",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "tompkinsville": {
+    "src": "/images/neighborhoods/photos/tompkinsville.jpg",
+    "sourceTitle": "Tompkinsville, Staten Island",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tompkinsville%2C_Staten_Island",
+    "commonsFile": "Tompkinsville.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Tompkinsville.jpg",
+    "artist": "TGoodman at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": null
+  },
+  "great-kills": {
+    "src": "/images/neighborhoods/photos/great-kills.jpg",
+    "sourceTitle": "Great Kills, Staten Island",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Great_Kills%2C_Staten_Island",
+    "commonsFile": "Welcome_to_Great_Kills_Sign.jpg",
+    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Welcome_to_Great_Kills_Sign.jpg",
+    "artist": "Mhayes3",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
   "hoboken": {
     "src": "/images/neighborhoods/photos/hoboken.jpg",
     "sourceTitle": "Hoboken, New Jersey",
