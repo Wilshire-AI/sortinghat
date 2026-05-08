@@ -174,11 +174,15 @@ export const questions: readonly Question[] = [
     prompt: 'What kind of building do you picture yourself living in?',
     choices: [
       {
-        label: 'Older. Brownstone, prewar, or loft with original details and history.',
+        label: 'Older with original character. Brownstone, prewar, or loft, quirks and all.',
         impacts: { 'built-form-register': -0.7 },
       },
       {
-        label: 'Newer. Modern construction, full elevator access, in-building services.',
+        label: 'Older if renovated. I want character and original details, but modern systems matter.',
+        impacts: { 'built-form-register': -0.3 },
+      },
+      {
+        label: 'Newer. Modern construction, doorman, full elevator access, in-building services.',
         impacts: { 'built-form-register': 0.7 },
       },
       {

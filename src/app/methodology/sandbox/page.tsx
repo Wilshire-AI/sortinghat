@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { questions } from '@content/questions';
 import { dimensions } from '@content/dimensions';
 import { neighborhoods } from '@content/neighborhoods';
@@ -185,6 +185,37 @@ export default function SandboxPage() {
     [allRanked, excludedIds, derived.mustHaves, derived.selectedTags],
   );
 
+  const prevRanksRef = useRef<Record<string, number>>({});
+  const [deltas, setDeltas] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    const newRanks: Record<string, number> = {};
+    ranked.forEach((r, i) => {
+      newRanks[r.neighborhood.id] = i + 1;
+    });
+    const newDeltas: Record<string, number> = {};
+    const prev = prevRanksRef.current;
+    if (Object.keys(prev).length > 0) {
+      for (const id in newRanks) {
+        if (prev[id] !== undefined && prev[id] !== newRanks[id]) {
+          newDeltas[id] = prev[id] - newRanks[id];
+        }
+      }
+    }
+    setDeltas(newDeltas);
+    prevRanksRef.current = newRanks;
+  }, [ranked]);
+
+  const movers = useMemo(() => {
+    return Object.entries(deltas)
+      .map(([id, delta]) => {
+        const n = neighborhoods.find((x) => x.id === id);
+        return { id, delta, name: n?.name ?? id };
+      })
+      .sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))
+      .slice(0, 6);
+  }, [deltas]);
+
   const searchLower = search.trim().toLowerCase();
   const matchedEntry = searchLower
     ? ranked.find((r) =>
@@ -289,28 +320,66 @@ export default function SandboxPage() {
             )}
           </div>
 
+          {movers.length > 0 && (
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--color-muted)]">
+                Recent movement
+              </p>
+              <ul className="mt-2 space-y-0.5 text-[11px]">
+                {movers.map((m) => (
+                  <li key={m.id} className="flex items-baseline gap-2">
+                    <span
+                      className={
+                        'font-mono w-10 shrink-0 ' +
+                        (m.delta > 0 ? 'text-emerald-700' : 'text-rose-700')
+                      }
+                    >
+                      {m.delta > 0 ? '↑' : '↓'}
+                      {Math.abs(m.delta)}
+                    </span>
+                    <span className="flex-1 truncate">{m.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           <div>
             <p className="text-[10px] uppercase tracking-[0.22em] text-[var(--color-muted)]">
               Top 15
             </p>
             <ol className="mt-2 space-y-0.5 text-xs">
-              {ranked.slice(0, 15).map((r, i) => (
-                <li
-                  key={r.neighborhood.id}
-                  className={
-                    'flex items-baseline gap-2 ' +
-                    (r.excluded ? 'opacity-50 line-through' : '')
-                  }
-                >
-                  <span className="text-[var(--color-muted)] font-mono w-6 shrink-0">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <span className="flex-1 truncate">{r.neighborhood.name}</span>
-                  <span className="text-[var(--color-muted)] tabular-nums">
-                    {(r.score * 100).toFixed(0)}%
-                  </span>
-                </li>
-              ))}
+              {ranked.slice(0, 15).map((r, i) => {
+                const delta = deltas[r.neighborhood.id];
+                return (
+                  <li
+                    key={r.neighborhood.id}
+                    className={
+                      'flex items-baseline gap-2 ' +
+                      (r.excluded ? 'opacity-50 line-through' : '')
+                    }
+                  >
+                    <span className="text-[var(--color-muted)] font-mono w-6 shrink-0">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span className="flex-1 truncate">{r.neighborhood.name}</span>
+                    {delta !== undefined && (
+                      <span
+                        className={
+                          'font-mono text-[10px] tabular-nums ' +
+                          (delta > 0 ? 'text-emerald-700' : 'text-rose-700')
+                        }
+                      >
+                        {delta > 0 ? '↑' : '↓'}
+                        {Math.abs(delta)}
+                      </span>
+                    )}
+                    <span className="text-[var(--color-muted)] tabular-nums">
+                      {(r.score * 100).toFixed(0)}%
+                    </span>
+                  </li>
+                );
+              })}
             </ol>
           </div>
 
