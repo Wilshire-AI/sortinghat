@@ -87,6 +87,24 @@ export function scoreNeighborhood(
   return baseScore;
 }
 
+// Multiplicative population prior. Combats the engine's geometric bias toward
+// near-centroid neighborhoods (middling scores on every dimension) winning
+// disproportionately on uniform-vector samples. Real users live in real places;
+// a neighborhood that sits 5,000 people deep almost certainly shouldn't outrank
+// a 200,000-person neighborhood that's a small score-distance worse.
+//
+// Form: log-normalized to a fixed P_max so re-scaling the corpus doesn't
+// silently re-rank. Multiplier in [(1-w), 1] — never increases score, only
+// decreases it for smaller places, scaled by w.
+const POPULATION_P_MAX = 500_000;
+const POPULATION_W_DEFAULT = 0.10;
+
+export function populationMultiplier(population: number, w: number = POPULATION_W_DEFAULT): number {
+  if (w <= 0 || population <= 1) return 1;
+  const f = Math.log10(population) / Math.log10(POPULATION_P_MAX);
+  return (1 - w) + w * Math.max(0, Math.min(1, f));
+}
+
 // Multiplicative score adjustment in [COMMUTE_PENALTY_FLOOR, 1] reflecting
 // how well the neighborhood's commute fits the user's targets and tolerance.
 //
@@ -131,6 +149,8 @@ export type RankOptions = {
   commuteToleranceMinutes?: number;
   commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
   softPrefs?: readonly string[];
+  populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
+  populationPriorWeight?: number;
 };
 
 const SOFT_PREF_BOOST = 0.05;
@@ -156,7 +176,7 @@ export function rankNeighborhoods(
 ): RankedNeighborhood[] {
   // Backwards-compatible signature: legacy callers pass topN (number) +
   // selectedTags + mustHaves. New callers pass an options object as 4th arg.
-  const opts: Required<Omit<RankOptions, 'commuteMinutesByNeighborhood'>> & Pick<RankOptions, 'commuteMinutesByNeighborhood'> =
+  const opts =
     typeof topNOrOptions === 'object'
       ? {
           topN: topNOrOptions.topN ?? 5,
@@ -166,15 +186,19 @@ export function rankNeighborhoods(
           commuteToleranceMinutes: topNOrOptions.commuteToleranceMinutes ?? 0,
           commuteMinutesByNeighborhood: topNOrOptions.commuteMinutesByNeighborhood,
           softPrefs: topNOrOptions.softPrefs ?? [],
+          populationsByNeighborhood: topNOrOptions.populationsByNeighborhood,
+          populationPriorWeight: topNOrOptions.populationPriorWeight ?? POPULATION_W_DEFAULT,
         }
       : {
           topN: topNOrOptions,
           selectedTags,
           mustHaves,
-          commuteTargets: [],
+          commuteTargets: [] as readonly string[],
           commuteToleranceMinutes: 0,
           commuteMinutesByNeighborhood: undefined,
-          softPrefs: [],
+          softPrefs: [] as readonly string[],
+          populationsByNeighborhood: undefined as Readonly<Record<NeighborhoodId, number>> | undefined,
+          populationPriorWeight: POPULATION_W_DEFAULT,
         };
 
   const filtered = opts.mustHaves.length > 0
@@ -186,6 +210,9 @@ export function rankNeighborhoods(
     opts.commuteToleranceMinutes > 0 &&
     !!opts.commuteMinutesByNeighborhood;
 
+  const applyPopulationPrior =
+    !!opts.populationsByNeighborhood && opts.populationPriorWeight > 0;
+
   const scored = filtered.map((neighborhood) => {
     const baseScore = scoreNeighborhood(user, neighborhood, dimensions, opts.selectedTags);
     const commuteMult = applyCommute
@@ -195,8 +222,14 @@ export function rankNeighborhoods(
           opts.commuteToleranceMinutes,
         )
       : 1.0;
+    const popMult = applyPopulationPrior
+      ? populationMultiplier(
+          opts.populationsByNeighborhood![neighborhood.id] ?? 0,
+          opts.populationPriorWeight,
+        )
+      : 1.0;
     const boost = softPrefBoost(neighborhood, opts.softPrefs);
-    return { neighborhood, score: Math.min(1, baseScore * commuteMult + boost) };
+    return { neighborhood, score: Math.min(1, baseScore * commuteMult * popMult + boost) };
   });
 
   scored.sort((a, b) => {

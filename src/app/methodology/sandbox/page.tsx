@@ -6,6 +6,7 @@ import { questions } from '@content/questions';
 import { dimensions } from '@content/dimensions';
 import { neighborhoods } from '@content/neighborhoods';
 import { commuteMinutesByNeighborhood } from '@content/commute-minutes';
+import { neighborhoodPopulations } from '@content/neighborhood-populations';
 import { rankNeighborhoods, excludedByMustHaves, failedMustHaves } from '@/lib/engine/score';
 import { deriveState, finalizeVector, type Answer, type Answers } from '@/components/quiz/useQuizState';
 import type { Question } from '@content/types';
@@ -160,6 +161,7 @@ export default function SandboxPage() {
         commuteToleranceMinutes: derived.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
         softPrefs: derived.softPrefs,
+        populationsByNeighborhood: neighborhoodPopulations,
       }),
     [vector, derived],
   );

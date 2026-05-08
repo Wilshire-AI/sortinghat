@@ -5,6 +5,7 @@ import { questions } from '@content/questions';
 import { dimensions } from '@content/dimensions';
 import { neighborhoods } from '@content/neighborhoods';
 import { commuteMinutesByNeighborhood } from '@content/commute-minutes';
+import { neighborhoodPopulations } from '@content/neighborhood-populations';
 import { rankNeighborhoods, excludedByMustHaves } from '@/lib/engine/score';
 import { deriveState, finalizeVector, type Answers } from './useQuizState';
 
@@ -30,6 +31,7 @@ export function LiveRanking({ answers }: Props) {
         commuteToleranceMinutes: derived.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
         softPrefs: derived.softPrefs,
+        populationsByNeighborhood: neighborhoodPopulations,
       }),
     [vector, derived],
   );

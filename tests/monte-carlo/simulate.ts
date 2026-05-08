@@ -1,7 +1,7 @@
 import type { Answer, Answers } from '@/lib/engine/derive';
 import { deriveState, finalizeVector } from '@/lib/engine/derive';
 import { rankNeighborhoods } from '@/lib/engine/score';
-import type { Dimension, Neighborhood, Question } from '@content/types';
+import type { Dimension, Neighborhood, NeighborhoodId, Question } from '@content/types';
 
 // Deterministic PRNG (Mulberry32). Same seed → same MC distribution.
 export function mulberry32(seed: number): () => number {
@@ -79,8 +79,10 @@ export function runMonteCarloReachability(opts: {
   questions: readonly Question[];
   dimensions: readonly Dimension[];
   neighborhoods: readonly Neighborhood[];
+  populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
+  populationPriorWeight?: number;
 }): MonteCarloReachability {
-  const { samples, seed, topK, questions, dimensions, neighborhoods } = opts;
+  const { samples, seed, topK, questions, dimensions, neighborhoods, populationsByNeighborhood, populationPriorWeight } = opts;
   const rand = mulberry32(seed);
   const maxK = Math.max(...topK);
   const perNeighborhood: Record<string, Record<number, number>> = {};
@@ -97,6 +99,8 @@ export function runMonteCarloReachability(opts: {
       topN: maxK,
       selectedTags: derived.selectedTags,
       softPrefs: derived.softPrefs,
+      populationsByNeighborhood,
+      populationPriorWeight,
     });
     for (let pos = 0; pos < top.length; pos++) {
       const id = top[pos].neighborhood.id;

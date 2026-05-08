@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { questions } from '@content/questions';
 import { dimensions } from '@content/dimensions';
 import { neighborhoods } from '@content/neighborhoods';
+import { neighborhoodPopulations } from '@content/neighborhood-populations';
 import { runMonteCarloReachability } from '../../../../tests/monte-carlo/simulate';
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function ReachabilityPage() {
     questions,
     dimensions,
     neighborhoods,
+    populationsByNeighborhood: neighborhoodPopulations,
   });
 
   type Row = {

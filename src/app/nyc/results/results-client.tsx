@@ -12,6 +12,7 @@ import { neighborhoods } from '@content/neighborhoods';
 import { archetypes } from '@content/archetypes';
 import { dimensions } from '@content/dimensions';
 import { commuteMinutesByNeighborhood } from '@content/commute-minutes';
+import { neighborhoodPopulations } from '@content/neighborhood-populations';
 import { getPassage } from '@content/passages';
 import { clearStoredQuizAnswers } from '@/components/quiz/useQuizState';
 import { ArchetypeBanner } from '@/components/results/ArchetypeBanner';
@@ -78,6 +79,7 @@ export function ResultsClient() {
         commuteToleranceMinutes: decoded.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
         softPrefs: decoded.softPrefs,
+        populationsByNeighborhood: neighborhoodPopulations,
       });
       const excludedIds = new Set(
         excludedByMustHaves(neighborhoods, decoded.mustHaves, decoded.selectedTags),
