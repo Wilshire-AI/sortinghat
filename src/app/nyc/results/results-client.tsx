@@ -18,7 +18,16 @@ import { NeighborhoodCard } from '@/components/results/NeighborhoodCard';
 import { DimensionFingerprint } from '@/components/results/DimensionFingerprint';
 import { ShareButton } from '@/components/results/ShareButton';
 import { AllMatchesList } from '@/components/results/AllMatchesList';
+import clustersJson from '@content/neighborhood-clusters.json';
 import dynamic from 'next/dynamic';
+
+type ClusterEntry = { name: string; description: string; members: string[] };
+const CLUSTERS = (clustersJson as { clusters: Record<string, ClusterEntry> }).clusters;
+// Reverse lookup: nbhd-id → cluster id
+const CLUSTER_OF: Record<string, string> = {};
+for (const [cid, c] of Object.entries(CLUSTERS)) {
+  for (const id of c.members) CLUSTER_OF[id] = cid;
+}
 
 // MapLibre is ~250KB and only renders on the client. Lazy-load it so the
 // initial results render isn't blocked by map JS + tile fetches.
@@ -73,14 +82,46 @@ export function ResultsClient() {
           ...r,
           failedMustHaves: failedMustHaves(r.neighborhood, decoded.mustHaves, decoded.selectedTags),
         }));
+      // Cluster-first grouping. Find which clusters the user's passing
+      // matches concentrate in, then surface them as primary / secondary.
+      const top10 = passing.slice(0, 10);
+      const clusterCounts: Record<string, number> = {};
+      for (const r of top10) {
+        const cid = CLUSTER_OF[r.neighborhood.id];
+        if (cid) clusterCounts[cid] = (clusterCounts[cid] ?? 0) + 1;
+      }
+      const sortedClusters = Object.entries(clusterCounts).sort((a, b) => b[1] - a[1]);
+      const primaryClusterId = sortedClusters[0]?.[0];
+      const secondaryClusterId =
+        sortedClusters[1] && sortedClusters[1][1] >= 2 ? sortedClusters[1][0] : null;
+
+      // Build the cards-by-cluster map: each cluster gets its top members
+      // from the user's passing list.
+      const buildClusterMembers = (cid: string, max: number) =>
+        passing.filter((r) => CLUSTER_OF[r.neighborhood.id] === cid).slice(0, max);
+
+      const primaryMembers = primaryClusterId ? buildClusterMembers(primaryClusterId, 5) : [];
+      const secondaryMembers = secondaryClusterId ? buildClusterMembers(secondaryClusterId, 3) : [];
+      const featuredIds = new Set([
+        ...primaryMembers.map((r) => r.neighborhood.id),
+        ...secondaryMembers.map((r) => r.neighborhood.id),
+      ]);
+      const restAfterClusters = passing.filter((r) => !featuredIds.has(r.neighborhood.id));
+
       return {
         vector: decoded.vector,
         archetype,
-        ranked: passing.slice(0, 5),
+        ranked: passing.slice(0, 5), // legacy field still used by map
         rest: passing.slice(5),
         excluded,
         selectedTags: decoded.selectedTags,
         mustHaves: decoded.mustHaves,
+        // New cluster-first structure
+        primaryCluster: primaryClusterId ? CLUSTERS[primaryClusterId] : null,
+        primaryMembers,
+        secondaryCluster: secondaryClusterId ? CLUSTERS[secondaryClusterId] : null,
+        secondaryMembers,
+        restAfterClusters,
       };
     } catch {
       return null;
@@ -139,29 +180,20 @@ export function ResultsClient() {
         </section>
       )}
 
-      {result.ranked.length > 0 && (
+      {result.primaryCluster && result.primaryMembers.length > 0 && (
         <section className="mx-auto max-w-3xl px-6 pt-12">
           <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
-            {result.ranked.length === 1 ? 'Your top match' : `Your top ${result.ranked.length} match${result.ranked.length === 1 ? '' : 'es'}`}
+            Your primary fit
           </p>
-          {result.ranked.map((r, i) => {
+          <h2 className="mt-3 font-serif text-3xl sm:text-4xl leading-[1.05] tracking-tight">
+            The {result.primaryCluster.name} cluster
+          </h2>
+          <p className="mt-5 text-base leading-relaxed text-[var(--color-ink)]/85 italic">
+            {result.primaryCluster.description}
+          </p>
+          {result.primaryMembers.map((r, i) => {
             const passage = getPassage(result.archetype.id, r.neighborhood.id);
             const prose = resolveCardProse(r.neighborhood, passage);
-            // "Same fit tier" peers: passing nbhds within 2% of this card's
-            // score, excluding the card itself. Show top 3 with overflow count.
-            // Peers also in headline top-N are shown without %, peers from
-            // the rest list show their %.
-            const headlineIds = new Set(result.ranked.map((x) => x.neighborhood.id));
-            const allPeers = [...result.ranked, ...result.rest]
-              .filter((x) => x.neighborhood.id !== r.neighborhood.id)
-              .filter((x) => Math.abs(x.score - r.score) <= 0.02)
-              .sort((a, b) => b.score - a.score);
-            const samePeers = allPeers.slice(0, 3).map((x) => ({
-              slug: x.neighborhood.slug,
-              name: x.neighborhood.name,
-              showScore: headlineIds.has(x.neighborhood.id) ? undefined : x.score,
-            }));
-            const samePeersOverflow = Math.max(0, allPeers.length - samePeers.length);
             return (
               <NeighborhoodCard
                 key={r.neighborhood.id}
@@ -173,8 +205,37 @@ export function ResultsClient() {
                   result.selectedTags.includes(t),
                 )}
                 fingerprint={f ?? undefined}
-                samePeers={samePeers}
-                samePeersOverflow={samePeersOverflow}
+              />
+            );
+          })}
+        </section>
+      )}
+
+      {result.secondaryCluster && result.secondaryMembers.length > 0 && (
+        <section className="mx-auto max-w-3xl px-6 pt-16 border-t border-[var(--color-line)]">
+          <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
+            Also worth considering
+          </p>
+          <h2 className="mt-3 font-serif text-3xl sm:text-4xl leading-[1.05] tracking-tight">
+            The {result.secondaryCluster.name} cluster
+          </h2>
+          <p className="mt-5 text-base leading-relaxed text-[var(--color-ink)]/85 italic">
+            {result.secondaryCluster.description}
+          </p>
+          {result.secondaryMembers.map((r, i) => {
+            const passage = getPassage(result.archetype.id, r.neighborhood.id);
+            const prose = resolveCardProse(r.neighborhood, passage);
+            return (
+              <NeighborhoodCard
+                key={r.neighborhood.id}
+                rank={result.primaryMembers.length + i + 1}
+                neighborhood={r.neighborhood}
+                prose={prose}
+                score={r.score}
+                matchedTags={(r.neighborhood.culturalTags ?? []).filter((t) =>
+                  result.selectedTags.includes(t),
+                )}
+                fingerprint={f ?? undefined}
               />
             );
           })}
@@ -184,9 +245,9 @@ export function ResultsClient() {
       <NeighborhoodMap ranked={[...result.ranked, ...result.rest, ...result.excluded]} />
 
       <AllMatchesList
-        ranked={result.rest}
+        ranked={result.restAfterClusters}
         excluded={result.excluded}
-        startRank={result.ranked.length + 1}
+        startRank={result.primaryMembers.length + result.secondaryMembers.length + 1}
         fingerprint={f ?? undefined}
       />
 
