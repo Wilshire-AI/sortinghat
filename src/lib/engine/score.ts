@@ -13,7 +13,7 @@ export const MUST_HAVE_FILTERS: Record<string, MustHaveFn> = {
   'subway-redundancy': (n) => (n.scores['transit-psychology'] ?? 0) >= 0.4,
   'walking-distance-park': (n) => (n.scores['environmental-openness'] ?? 0) >= 0.5,
   'top-schools': (n) => (n.scores['school-quality'] ?? 0) >= 0.7,
-  'no-car': (n) => !n.carDependent,
+  'no-car': (n) => (n.scores['daily-life-walkability'] ?? 0) >= 0.5,
   'house-or-townhouse': (n) =>
     !!n.housingTypes && (n.housingTypes.includes('single-family') || n.housingTypes.includes('townhouse')),
   'luxury-highrise': (n) => !!n.housingTypes && n.housingTypes.includes('luxury-highrise'),
@@ -138,7 +138,9 @@ const SOFT_PREF_BOOST = 0.05;
 function softPrefBoost(neighborhood: Neighborhood, softPrefs: readonly string[]): number {
   if (softPrefs.length === 0) return 0;
   let boost = 0;
-  if (softPrefs.includes('car-friendly') && neighborhood.carDependent === true) {
+  // 'car-friendly' boosts neighborhoods where the user genuinely needs a car
+  // for daily life (matches the inverse of the no-car must-have filter).
+  if (softPrefs.includes('car-friendly') && (neighborhood.scores['daily-life-walkability'] ?? 0) < 0.5) {
     boost += SOFT_PREF_BOOST;
   }
   return boost;

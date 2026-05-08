@@ -263,7 +263,7 @@ Current filters:
 - `top-schools`: `school-quality >= 0.7`
 - `quiet-blocks-available`: `hasQuietBlocks === true` (boolean flag on neighborhood)
 - `family-infrastructure`: `hasFamilyInfrastructure === true` (boolean flag)
-- `no-car`: `!carDependent`
+- `no-car`: `daily-life-walkability >= 0.5` (was `!carDependent` boolean — replaced by walkability threshold for consistency; the boolean flag is now unused but left in `Neighborhood` type for backward compat)
 - `cultural-match`: neighborhood's `culturalTags` overlaps with user's selected tags
 
 Note: `quiet-blocks-available`, `family-infrastructure`, `house-or-townhouse`,
