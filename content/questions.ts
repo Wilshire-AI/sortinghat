@@ -56,8 +56,8 @@ export const questions: readonly Question[] = [
     prompt: 'How important is having culturally familiar food, community, or language access in your daily life?',
     choices: [
       { label: 'Essential. I want it in daily reach.', impacts: { 'cultural-ecosystem': 0.8 } },
-      { label: 'Nice but not necessary', impacts: { 'cultural-ecosystem': 0.2 } },
-      { label: 'Not really a factor', impacts: { 'cultural-ecosystem': -0.5 } },
+      { label: 'Nice but not necessary.', impacts: { 'cultural-ecosystem': 0.2 } },
+      { label: 'Not really a factor.', impacts: { 'cultural-ecosystem': 0 } },
     ],
   },
   {
@@ -77,16 +77,15 @@ export const questions: readonly Question[] = [
       { value: 'african-american', label: 'African American' },
       { value: 'west-african', label: 'West African (Senegalese, Nigerian)' },
     ],
-    dimensionImpactPerSelection: { 'cultural-ecosystem': 0.15 },
   },
   {
     id: 'creative-immersion',
     kind: 'forced_choice',
-    prompt: 'Do you want to live immersed in ambitious or creative scenes, or have access to them without being surrounded?',
+    prompt: 'How close do you want to live to the creative scene — art, indie music, makers, the kind of culture you stumble into walking around?',
     choices: [
-      { label: 'Immersed. I want to bump into people doing things.', impacts: { 'creative-energy': 0.8, 'urban-intensity-tolerance': 0.3 } },
-      { label: 'Access without immersion', impacts: { 'creative-energy': 0.1 } },
-      { label: 'Calm distance. I want to wind down at home.', impacts: { 'creative-energy': -0.6, 'friction-sensitivity': 0.4 } },
+      { label: 'In it. I want to be surrounded.', impacts: { 'creative-energy': 0.8 } },
+      { label: 'Near it. Visit when I want, retreat when I don\'t.', impacts: { 'creative-energy': 0.2 } },
+      { label: 'Distance. Not what I need at home.', impacts: { 'creative-energy': -0.6 } },
     ],
   },
   {

@@ -63,11 +63,11 @@ export const dimensions: readonly Dimension[] = [
   },
   {
     id: 'creative-energy',
-    name: 'Creative Energy Preference',
+    name: 'Creative Scene Density',
     kind: 'symmetric',
     description:
-      'Both poles are real lived preferences. Some people genuinely want calm distance from creative scenes. Others want immersion. Mismatching either way is a real friction.',
-    poles: { low: 'Prefers calm distance from creative scenes.', high: 'Wants to live immersed in ambition.' },
+      'How much active art, indie music, and maker culture lives in the neighborhood — galleries, music venues, studios spilling onto sidewalks, the kind of culture you stumble into walking around. Both poles are real lived preferences. Some people genuinely want this density at home. Others want calm distance from it.',
+    poles: { low: 'Prefers calm distance from the creative scene.', high: 'Wants the creative scene at the doorstep.' },
   },
   {
     id: 'friction-sensitivity',
