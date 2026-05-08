@@ -100,13 +100,11 @@ export const questions: readonly Question[] = [
   },
   {
     id: 'creative-immersion',
-    kind: 'forced_choice',
-    prompt: 'How close do you want to live to the creative scene: art, indie music, makers, the kind of culture you stumble into walking around?',
-    choices: [
-      { label: 'In it. I want to be surrounded.', impacts: { 'creative-energy': 0.8 } },
-      { label: 'Near it. Visit when I want, retreat when I don\'t.', impacts: { 'creative-energy': 0.2 } },
-      { label: 'Distance. Not what I need at home.', impacts: { 'creative-energy': -0.6 } },
-    ],
+    kind: 'slider',
+    prompt: 'I want art galleries and indie music venues on my own block.',
+    lowLabel: 'Rather not',
+    highLabel: 'Yes please',
+    dimensionId: 'creative-energy',
   },
   {
     id: 'noise-tolerance',
