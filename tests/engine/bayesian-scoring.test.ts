@@ -25,36 +25,15 @@ function n(id: string, scores: Record<string, number>): Neighborhood {
 }
 
 describe('sigmaForPopulation', () => {
-  it('floors at 0.22 for very small pops', () => {
-    expect(sigmaForPopulation(1500)).toBeCloseTo(0.22, 3);
-    expect(sigmaForPopulation(100)).toBeCloseTo(0.22, 3);
-    expect(sigmaForPopulation(0)).toBeCloseTo(0.22, 3);
-  });
-
-  it('caps at 0.40 for pops at or above the corpus median', () => {
-    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.40, 2);
-  });
-
-  it('returns 0.40 at the corpus median (30k)', () => {
+  // SIGMA_MIN === SIGMA_MAX === SIGMA_BASE === 0.40 → flat σ across the entire
+  // corpus. Empirical sweep showed σ scaling produced worse population fidelity
+  // than flat σ + moderate prior. The Gaussian basins are uniform width;
+  // population enters scoring only via the multiplicative prior.
+  it('returns 0.40 for every population (flat σ design)', () => {
+    expect(sigmaForPopulation(1_000)).toBeCloseTo(0.40, 3);
     expect(sigmaForPopulation(30_000)).toBeCloseTo(0.40, 3);
-  });
-
-  it('locked values for canonical neighborhoods', () => {
-    expect(sigmaForPopulation(6_300)).toBeCloseTo(0.232, 2); // bronxville
-    // All nbhds at or above the median (30k) hit the 0.40 cap.
-    expect(sigmaForPopulation(120_000)).toBeCloseTo(0.40, 2); // williamsburg (capped)
-    expect(sigmaForPopulation(145_000)).toBeCloseTo(0.40, 2); // crown-heights (capped)
-    expect(sigmaForPopulation(210_000)).toBeCloseTo(0.40, 2); // upper-west-side (capped)
-    expect(sigmaForPopulation(292_449)).toBeCloseTo(0.40, 2); // jersey-city (capped)
-  });
-
-  it('median-pop σ is ~1.7x Bronxville σ (small pops have meaningfully tighter basins)', () => {
-    // Cap at 0.40 means scaling kicks in only below the median. Bronxville's
-    // σ floor of 0.232 vs the 0.40 cap is the practical spread that
-    // distinguishes tight-niche from population-average nbhds.
-    const ratio = sigmaForPopulation(30_000) / sigmaForPopulation(6_300);
-    expect(ratio).toBeGreaterThan(1.6);
-    expect(ratio).toBeLessThan(1.9);
+    expect(sigmaForPopulation(150_000)).toBeCloseTo(0.40, 3);
+    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.40, 3);
   });
 });
 
