@@ -45,6 +45,13 @@ describe('questions', () => {
         for (const c of q.choices) for (const k of Object.keys(c.impacts)) touched.add(k);
       } else if (q.kind === 'slider') {
         touched.add(q.dimensionId);
+      } else if (q.kind === 'multi_select') {
+        for (const o of q.options) {
+          if (o.impacts) for (const k of Object.keys(o.impacts)) touched.add(k);
+        }
+        if (q.dimensionImpactPerSelection) {
+          for (const k of Object.keys(q.dimensionImpactPerSelection)) touched.add(k);
+        }
       }
     }
     for (const d of dimensions) {

@@ -155,12 +155,54 @@ export const questions: readonly Question[] = [
     dimensionId: 'visitor-facing-energy',
   },
   {
-    id: 'daily-life-walkability-fit',
-    kind: 'slider',
-    prompt: 'I want much of my daily life to be possible on foot.',
-    lowLabel: 'Not a daily concern',
-    highLabel: 'Essential',
-    dimensionId: 'daily-life-walkability',
+    id: 'walking-distance-amenities',
+    kind: 'multi_select',
+    purpose: 'walkable_amenities',
+    maxSelections: 4,
+    prompt: 'Within walking distance from home, I want:',
+    helperText: 'Select up to four. Skip if no strong preferences.',
+    options: [
+      {
+        value: 'errands',
+        label: 'Grocery store and pharmacy',
+        impacts: { 'daily-life-walkability': 0.5 },
+      },
+      {
+        value: 'cafes',
+        label: 'Cafés',
+        impacts: { 'daily-life-walkability': 0.25, 'rootedness-vs-access': -0.2 },
+      },
+      {
+        value: 'world-class-restaurants',
+        label: 'World-class restaurants',
+        impacts: { 'rootedness-vs-access': 0.4, 'prestige-orientation': 0.2, 'urban-intensity-tolerance': 0.2 },
+      },
+      {
+        value: 'bars-nightlife',
+        label: 'Bars and nightlife',
+        impacts: { 'urban-intensity-tolerance': 0.4, 'friction-sensitivity': -0.2 },
+      },
+      {
+        value: 'museums-concerts',
+        label: 'Museums and live music venues',
+        impacts: { 'rootedness-vs-access': 0.4, 'creative-energy': 0.3 },
+      },
+      {
+        value: 'parks-water',
+        label: 'Real park or waterfront',
+        impacts: { 'environmental-openness': 0.45 },
+      },
+      {
+        value: 'family-infra',
+        label: 'Playgrounds, elementary schools, childcare',
+        impacts: { 'family-trajectory': 0.4 },
+      },
+      {
+        value: 'community',
+        label: 'Community institution or place of worship',
+        impacts: { 'cultural-ecosystem': 0.3 },
+      },
+    ],
   },
   {
     id: 'streetscape-pleasure-fit',
@@ -212,16 +254,6 @@ export const questions: readonly Question[] = [
         label: 'Either, depending on the neighborhood.',
         impacts: { 'built-form-register': 0 },
       },
-    ],
-  },
-  {
-    id: 'green-need',
-    kind: 'forced_choice',
-    prompt: 'How important is walking distance to a real park or waterfront?',
-    choices: [
-      { label: 'Essential. Daily green is non-negotiable.', impacts: { 'environmental-openness': 0.7 } },
-      { label: 'Nice but not the deciding factor.', impacts: { 'environmental-openness': 0.3 } },
-      { label: 'Not really a factor.', impacts: { 'environmental-openness': 0 } },
     ],
   },
   {

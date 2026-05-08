@@ -84,14 +84,29 @@ export type MultiSelectQuestion = {
   helperText?: string;
   // selecting any of these adds the value(s) to either selectedTags or
   // mustHaves depending on `purpose` (default: cultural_tags).
-  options: { value: string; label: string }[];
-  // optionally, picking ANY option also nudges a dimension
+  options: {
+    value: string;
+    label: string;
+    // Optional per-option dimension impacts. ADD semantics with clamp to
+    // [-1, 1] in deriveState (see useQuizState.ts). Used by the
+    // walking-distance-amenities question where each pick maps to a
+    // different dim contribution.
+    impacts?: Partial<Record<DimensionId, number>>;
+  }[];
+  // optionally, picking ANY option also nudges a dimension (legacy; prefer
+  // per-option `impacts` above for new questions).
   dimensionImpactPerSelection?: Partial<Record<DimensionId, number>>;
   // 'cultural_tags' (default): selections feed the soft cultural-tag boost
   // 'must_haves': selections become hard filters (excluded if not satisfied)
   // 'commute_targets': selections name office clusters the user commutes to
   // 'commute_tolerance': single-pick (by convention); value is max minutes
-  purpose?: 'cultural_tags' | 'must_haves' | 'commute_targets' | 'commute_tolerance';
+  // 'walkable_amenities': selections add per-option dim impacts
+  purpose?:
+    | 'cultural_tags'
+    | 'must_haves'
+    | 'commute_targets'
+    | 'commute_tolerance'
+    | 'walkable_amenities';
   // Optional cap on how many options the user can select.
   maxSelections?: number;
 };

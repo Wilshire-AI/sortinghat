@@ -68,6 +68,17 @@ export function deriveState(
           const parsed = parseInt(picked, 10);
           if (!Number.isNaN(parsed)) commuteToleranceMinutes = parsed;
         }
+      } else if (q.purpose === 'walkable_amenities') {
+        // Per-option impacts: each picked option adds its own dim impacts to
+        // the user vector. Clamped to [-1, 1] at the end via finalizeVector.
+        for (const v of a.selectedValues) {
+          const opt = q.options.find((o) => o.value === v);
+          if (opt?.impacts) {
+            for (const [dim, impact] of Object.entries(opt.impacts)) {
+              vector[dim] = (vector[dim] ?? 0) + (impact as number);
+            }
+          }
+        }
       } else {
         for (const v of a.selectedValues) selectedTags.add(v);
       }
