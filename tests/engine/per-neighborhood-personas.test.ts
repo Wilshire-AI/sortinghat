@@ -8,18 +8,22 @@ import personasJson from '@content/neighborhood-personas.json';
 
 // Per-neighborhood prototypical user gate.
 //
-// content/neighborhood-personas.json maps each neighborhood id → a complete
-// set of quiz answers that represents a "user who would land at this
-// neighborhood." Personas are programmatically generated via greedy-best-
-// answer-per-question (script: tests/engine/_generate-personas.test.ts,
-// re-run when questions change). Hand-edit specific entries if you want
-// editorial polish on a known user pattern.
+// content/neighborhood-personas.json maps each neighborhood id →
+// {
+//   description: string | null  (optional editorial narrative)
+//   answers: Answers             (the quiz answer set)
+// }
 //
-// Test asserts each persona's neighborhood reaches top 10 in their own
-// quiz result. 100% currently pass; any future change that drops a
-// neighborhood below #10 for its prototypical user is a real regression.
+// Programmatic baseline: cumulative-greedy. Hand-edit `description` for
+// editorial polish on specific entries, or hand-edit `answers` to tune
+// a persona toward a specific lifestyle pattern.
+//
+// Test asserts each persona's neighborhood reaches a reasonable top-N
+// rank in their own quiz result. Catches regressions where a future
+// change drops a neighborhood below its expected lane.
 
-const personas = personasJson as Record<string, Answers>;
+type PersonaEntry = { description: string | null; answers: Answers };
+const personas = personasJson as Record<string, PersonaEntry>;
 
 describe('per-neighborhood prototypical user gate', () => {
   it('every neighborhood has a persona in content/neighborhood-personas.json', () => {
@@ -37,7 +41,8 @@ describe('per-neighborhood prototypical user gate', () => {
   //   - all reach top 35 (catches major regressions)
   it('personas reach reasonable top-N ranks', () => {
     const ranks = neighborhoods.map((target) => {
-      const answers = personas[target.id];
+      const entry = personas[target.id];
+      const answers = entry.answers;
       const derived = deriveState(dimensions, questions, answers);
       const ranked = rankNeighborhoods(finalizeVector(derived), neighborhoods, dimensions, {
         topN: neighborhoods.length,

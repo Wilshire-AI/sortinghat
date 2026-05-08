@@ -6,7 +6,10 @@ import { NeighborhoodHero, getPhotoCredit } from '@/components/results/Neighborh
 import { NeighborhoodFitExplanation } from '@/components/results/NeighborhoodFitExplanation';
 import { NeighborhoodScoreTable } from '@/components/results/NeighborhoodScoreTable';
 import { BackLink } from '@/components/results/BackLink';
+import personasJson from '@content/neighborhood-personas.json';
 import { Suspense } from 'react';
+
+const personas = personasJson as Record<string, { description: string | null }>;
 
 export async function generateStaticParams() {
   return neighborhoods.map((n) => ({ slug: n.slug }));
@@ -81,6 +84,15 @@ export default async function NeighborhoodPage({
         <h2 className="font-serif text-2xl">Who thrives here</h2>
         <p className="mt-4 leading-relaxed text-[var(--color-ink)]/85">{n.basePassages.whoThrivesHere}</p>
       </section>
+
+      {personas[n.id]?.description && (
+        <section className="mt-14">
+          <h2 className="font-serif text-2xl">A user who fits</h2>
+          <p className="mt-4 leading-relaxed text-[var(--color-ink)]/85 italic">
+            {personas[n.id].description}
+          </p>
+        </section>
+      )}
 
       <section className="mt-14">
         <h2 className="font-serif text-2xl">The tradeoffs</h2>
