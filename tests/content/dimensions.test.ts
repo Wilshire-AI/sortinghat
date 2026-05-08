@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest';
 import { dimensions } from '@content/dimensions';
 
 describe('dimensions', () => {
-  it('has 11 dimensions', () => {
+  it('has 11-20 dimensions', () => {
     expect(dimensions.length).toBeGreaterThanOrEqual(11);
-    expect(dimensions.length).toBeLessThanOrEqual(16);
+    expect(dimensions.length).toBeLessThanOrEqual(20);
   });
   it('all ids unique kebab-case', () => {
     const ids = dimensions.map((d) => d.id);

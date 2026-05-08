@@ -146,6 +146,16 @@ export const questions: readonly Question[] = [
     dimensionId: 'daily-life-walkability',
   },
   {
+    id: 'streetscape-pleasure-fit',
+    kind: 'forced_choice',
+    prompt: 'How much does the daily streetscape matter: tree-lined blocks, pleasant sidewalks, walks just to enjoy where you live?',
+    choices: [
+      { label: 'Essential. I want streets I\'d take a walk on for no reason.', impacts: { 'streetscape-quality': 0.7 } },
+      { label: 'Adds to quality of life, not the deciding factor.', impacts: { 'streetscape-quality': 0.3 } },
+      { label: 'Functional is enough.', impacts: { 'streetscape-quality': 0 } },
+    ],
+  },
+  {
     id: 'rootedness-vs-access-fit',
     kind: 'forced_choice',
     prompt: 'Two equally great neighborhoods. Pick the one that pulls you more.',
