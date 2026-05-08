@@ -40,10 +40,10 @@ export const dimensions: readonly Dimension[] = [
   {
     id: 'family-trajectory',
     name: 'Future Family Orientation',
-    kind: 'symmetric',
+    kind: 'asymmetric_need',
     description:
-      'How much you optimize for a future family scenario versus the life you have today. Both poles are real preferences. "Today, five years is a long time" is a directional choice, not just a non-preference for family-friendliness.',
-    poles: { low: 'Optimizes for current life, not future.', high: 'Plans for future family.' },
+      'Whether kids are part of your household or near-term plan. People high on this dimension want family-life infrastructure (schools, playgrounds, kid-friendly streets, other families). People low on it just don\'t need that — it does not mean they actively dislike family-coded neighborhoods. The penalty applies only when you want family infrastructure and the neighborhood lacks it.',
+    poles: { low: 'Not a factor in this window.', high: 'Plans for or has kids in the household.' },
   },
   {
     id: 'cultural-ecosystem',

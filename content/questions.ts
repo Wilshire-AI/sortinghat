@@ -45,7 +45,7 @@ export const questions: readonly Question[] = [
     kind: 'forced_choice',
     prompt: 'Are kids in the picture, either already or within a 5-year horizon?',
     choices: [
-      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8, 'space-sensitivity': 0.4 } },
+      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
       { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
       { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': -0.7 } },
     ],
