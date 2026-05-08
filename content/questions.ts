@@ -189,11 +189,11 @@ export const questions: readonly Question[] = [
   {
     id: 'green-need',
     kind: 'forced_choice',
-    prompt: 'Five-minute walk to a real park, or five-minute walk to restaurants and bars. Same building quality. Which weighs more?',
+    prompt: 'How important is walking distance to a real park or waterfront?',
     choices: [
-      { label: 'The park. Green close by isn\'t optional.', impacts: { 'environmental-openness': 0.7 } },
-      { label: 'Restaurants and bars. Nature can be a 20-minute trip.', impacts: { 'environmental-openness': 0 } },
-      { label: 'Both matter. I\'d want them close.', impacts: { 'environmental-openness': 0.2 } },
+      { label: 'Essential. Daily green is non-negotiable.', impacts: { 'environmental-openness': 0.7 } },
+      { label: 'Nice but not the deciding factor.', impacts: { 'environmental-openness': 0.3 } },
+      { label: 'Not really a factor.', impacts: { 'environmental-openness': 0 } },
     ],
   },
   {
