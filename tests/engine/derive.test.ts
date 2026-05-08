@@ -77,10 +77,10 @@ describe('deriveState — touchedDims tracking', () => {
     expect(out.touchedDims.size).toBe(0);
   });
 
-  it('forced_choice with explicit impact:0 still marks the dim as touched', () => {
+  it('forced_choice with explicit impact:0 does NOT touch the dim (signals neutrality, not middle preference)', () => {
     const answers: Answers = { 'q-fc': { kind: 'forced_choice', choiceIndex: 3 } };
     const out = deriveState(dims, [fcWithImpacts], answers);
-    expect(out.touchedDims.has('urban')).toBe(true);
+    expect(out.touchedDims.has('urban')).toBe(false);
   });
 
   it('slider answer marks the dim even at value=0', () => {

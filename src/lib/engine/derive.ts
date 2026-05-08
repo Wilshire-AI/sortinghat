@@ -56,8 +56,14 @@ export function deriveState(
       const choice = q.choices[a.choiceIndex];
       if (choice) {
         for (const [dim, impact] of Object.entries(choice.impacts)) {
-          vector[dim] = (vector[dim] ?? 0) + (impact as number);
-          touchedDims.add(dim);
+          const num = impact as number;
+          vector[dim] = (vector[dim] ?? 0) + num;
+          // Explicit-zero impacts ("either / no strong pull / depends")
+          // signal no preference, not "preference for the middle." Don't
+          // touch the dim — under Bayesian, an untouched dim contributes
+          // no penalty regardless of nbhd value, which is what neutrality
+          // means semantically.
+          if (num !== 0) touchedDims.add(dim);
         }
         if (choice.softPrefs) {
           for (const sp of choice.softPrefs) softPrefs.add(sp);
