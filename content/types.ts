@@ -61,6 +61,10 @@ export type ForcedChoiceQuestion = {
   choices: {
     label: string;
     impacts: Partial<Record<DimensionId, number>>;
+    // Optional soft-preference flags. Each flag is a string key the engine
+    // can interpret as a small score boost on neighborhoods that match it
+    // (e.g., 'car-friendly' boosts neighborhoods where carDependent === true).
+    softPrefs?: readonly string[];
   }[];
 };
 

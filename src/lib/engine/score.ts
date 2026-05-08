@@ -119,7 +119,19 @@ export type RankOptions = {
   commuteTargets?: readonly string[];
   commuteToleranceMinutes?: number;
   commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
+  softPrefs?: readonly string[];
 };
+
+const SOFT_PREF_BOOST = 0.05;
+
+function softPrefBoost(neighborhood: Neighborhood, softPrefs: readonly string[]): number {
+  if (softPrefs.length === 0) return 0;
+  let boost = 0;
+  if (softPrefs.includes('car-friendly') && neighborhood.carDependent === true) {
+    boost += SOFT_PREF_BOOST;
+  }
+  return boost;
+}
 
 export function rankNeighborhoods(
   user: UserVector,
@@ -140,6 +152,7 @@ export function rankNeighborhoods(
           commuteTargets: topNOrOptions.commuteTargets ?? [],
           commuteToleranceMinutes: topNOrOptions.commuteToleranceMinutes ?? 0,
           commuteMinutesByNeighborhood: topNOrOptions.commuteMinutesByNeighborhood,
+          softPrefs: topNOrOptions.softPrefs ?? [],
         }
       : {
           topN: topNOrOptions,
@@ -148,6 +161,7 @@ export function rankNeighborhoods(
           commuteTargets: [],
           commuteToleranceMinutes: 0,
           commuteMinutesByNeighborhood: undefined,
+          softPrefs: [],
         };
 
   const filtered = opts.mustHaves.length > 0
@@ -168,7 +182,8 @@ export function rankNeighborhoods(
           opts.commuteToleranceMinutes,
         )
       : 1.0;
-    return { neighborhood, score: baseScore * commuteMult };
+    const boost = softPrefBoost(neighborhood, opts.softPrefs);
+    return { neighborhood, score: Math.min(1, baseScore * commuteMult + boost) };
   });
 
   scored.sort((a, b) => {

@@ -61,6 +61,7 @@ export function ResultsClient() {
         commuteTargets: decoded.commuteTargets,
         commuteToleranceMinutes: decoded.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
+        softPrefs: decoded.softPrefs,
       });
       const excludedIds = new Set(
         excludedByMustHaves(neighborhoods, decoded.mustHaves, decoded.selectedTags),

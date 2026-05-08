@@ -16,7 +16,8 @@ export const questions: readonly Question[] = [
       },
       {
         label: 'I\'d drive. Car-dependent is fine.',
-        impacts: { 'transit-psychology': -0.7, 'urban-intensity-tolerance': -0.3 },
+        impacts: { 'transit-psychology': -0.7 },
+        softPrefs: ['car-friendly'],
       },
     ],
   },

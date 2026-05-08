@@ -21,6 +21,7 @@ export type DerivedState = {
   mustHaves: string[];
   commuteTargets: string[];
   commuteToleranceMinutes: number;
+  softPrefs: string[];
 };
 
 // Pure function: derive full quiz state from a set of answers. Used by
@@ -36,6 +37,7 @@ export function deriveState(
   const selectedTags = new Set<string>();
   const mustHaves = new Set<string>();
   const commuteTargets = new Set<string>();
+  const softPrefs = new Set<string>();
   let commuteToleranceMinutes = 0;
 
   for (const q of questions) {
@@ -47,6 +49,9 @@ export function deriveState(
       if (choice) {
         for (const [dim, impact] of Object.entries(choice.impacts)) {
           vector[dim] = (vector[dim] ?? 0) + (impact as number);
+        }
+        if (choice.softPrefs) {
+          for (const sp of choice.softPrefs) softPrefs.add(sp);
         }
       }
     } else if (q.kind === 'slider' && a.kind === 'slider') {
@@ -80,6 +85,7 @@ export function deriveState(
     mustHaves: Array.from(mustHaves),
     commuteTargets: Array.from(commuteTargets),
     commuteToleranceMinutes,
+    softPrefs: Array.from(softPrefs),
   };
 }
 
