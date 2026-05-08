@@ -2,6 +2,60 @@ import type { Question } from './types';
 
 export const questions: readonly Question[] = [
   {
+    id: 'place-tier',
+    kind: 'forced_choice',
+    prompt: 'Where do you picture your weekday morning?',
+    choices: [
+      {
+        label: 'Dense city core. Manhattan core, dense Brooklyn/Queens (Williamsburg, LIC).',
+        impacts: {
+          'urban-intensity-tolerance': 0.55,
+          'rootedness-vs-access': 0.40,
+          'daily-life-walkability': 0.55,
+        },
+      },
+      {
+        label: 'Mid-density urban neighborhood. UWS, Park Slope, Astoria, Forest Hills, Hoboken.',
+        impacts: {
+          'urban-intensity-tolerance': 0.0,
+          'daily-life-walkability': 0.50,
+          'rootedness-vs-access': -0.20,
+        },
+      },
+      {
+        label: 'Walkable suburb or village. Larchmont, Maplewood, Bronxville, Hastings.',
+        impacts: {
+          'urban-intensity-tolerance': -0.40,
+          'rootedness-vs-access': -0.55,
+          'daily-life-walkability': 0.60,
+          'community-fabric': 0.50,
+        },
+      },
+      {
+        label: 'Established commuter suburb. Scarsdale, Tenafly, Manhasset, Greenwich, Westport.',
+        impacts: {
+          'urban-intensity-tolerance': -0.55,
+          'rootedness-vs-access': -0.65,
+          'daily-life-walkability': 0.05,
+          'community-fabric': -0.40,
+        },
+      },
+      {
+        label: 'Quiet, low-density. Cresskill, Chappaqua, Darien, New Canaan.',
+        impacts: {
+          'urban-intensity-tolerance': -0.70,
+          'rootedness-vs-access': -0.70,
+          'daily-life-walkability': -0.30,
+          'environmental-openness': 0.30,
+        },
+      },
+      {
+        label: "I'm not sure yet, or I'm open to several of these.",
+        impacts: {},
+      },
+    ],
+  },
+  {
     id: 'transit-redundancy',
     kind: 'forced_choice',
     prompt: 'How do you mostly want to get around?',

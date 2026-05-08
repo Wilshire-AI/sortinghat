@@ -33,6 +33,18 @@ describe('questions', () => {
       }
     }
   });
+  it('place-tier is questions[0]', () => {
+    expect(questions[0].id).toBe('place-tier');
+  });
+
+  it('place-tier has 6 choices including a zero-impact unsure option', () => {
+    const q = questions[0];
+    if (q.kind !== 'forced_choice') throw new Error('place-tier must be forced_choice');
+    expect(q.choices).toHaveLength(6);
+    const last = q.choices[q.choices.length - 1];
+    expect(Object.keys(last.impacts)).toHaveLength(0);
+  });
+
   it('every dimension touched by at least 1 question (or explicitly inert)', () => {
     // Dimensions intentionally not queried by any question. The neighborhood
     // scores remain in the data model but contribute zero to ranking because
