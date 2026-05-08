@@ -6,12 +6,7 @@ import { questions } from '@content/questions';
 import { dimensions } from '@content/dimensions';
 import { neighborhoods } from '@content/neighborhoods';
 import { commuteMinutesByNeighborhood } from '@content/commute-minutes';
-import {
-  rankNeighborhoods,
-  excludedByMustHaves,
-  failedMustHaves,
-  scoreNeighborhood,
-} from '@/lib/engine/score';
+import { rankNeighborhoods, excludedByMustHaves, failedMustHaves } from '@/lib/engine/score';
 import { deriveState, finalizeVector, type Answer, type Answers } from '@/components/quiz/useQuizState';
 import type { Question } from '@content/types';
 
@@ -186,6 +181,9 @@ export default function SandboxPage() {
     [allRanked, excludedIds, derived.mustHaves, derived.selectedTags],
   );
 
+  // Track previous ranks via a ref + setState-in-effect. The cascading-
+  // render lint rule fires here, but the cascade is bounded: setting deltas
+  // doesn't re-trigger this effect (deps are [ranked], not [deltas]).
   const prevRanksRef = useRef<Record<string, number>>({});
   const [deltas, setDeltas] = useState<Record<string, number>>({});
 
@@ -203,6 +201,7 @@ export default function SandboxPage() {
         }
       }
     }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDeltas(newDeltas);
     prevRanksRef.current = newRanks;
   }, [ranked]);

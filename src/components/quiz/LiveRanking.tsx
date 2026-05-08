@@ -51,6 +51,11 @@ export function LiveRanking({ answers }: Props) {
     [allRanked, excludedIds],
   );
 
+  // Track previous ranks via a ref + setState-in-effect. The cascading-
+  // render lint rule fires here, but the cascade is bounded: setting deltas
+  // doesn't re-trigger this effect (deps are [ranked], not [deltas]). The
+  // ref-mutation can't move into render or useMemo because react-hooks/refs
+  // forbids that. This is the canonical "compute-on-change" pattern.
   const prevRanksRef = useRef<Record<string, number>>({});
   const [deltas, setDeltas] = useState<Record<string, number>>({});
 
@@ -68,6 +73,7 @@ export function LiveRanking({ answers }: Props) {
         }
       }
     }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDeltas(newDeltas);
     prevRanksRef.current = newRanks;
   }, [ranked]);
