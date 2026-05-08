@@ -99,16 +99,6 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'commute-personality',
-    kind: 'forced_choice',
-    prompt: 'How does your commute affect your day?',
-    choices: [
-      { label: 'It needs to be smooth. Friction here ruins everything else.', impacts: { 'transit-psychology': 0.6, 'friction-sensitivity': 0.5 } },
-      { label: 'I tune it out. Fine as long as it\'s not crazy.', impacts: { 'transit-psychology': -0.2 } },
-      { label: 'I work from home, so it\'s rarely a factor', impacts: { 'space-sensitivity': 0.3 } },
-    ],
-  },
-  {
     id: 'weekend-life',
     kind: 'forced_choice',
     prompt: 'On a typical Saturday, where are you?',
