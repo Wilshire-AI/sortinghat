@@ -1,6 +1,6 @@
 # Sorting Hat — handoff notes
 
-Last updated: end of session 2026-05-08. Production: `https://sortinghat.wilshireai.com/`. Latest commit on `origin/main`: `48c9536`.
+Last updated: end of long session 2026-05-08. Production: `https://sortinghat.wilshireai.com/`. Latest commit on `origin/main`: `1ca6b01`.
 
 This is a handoff for whoever picks up next (you-future, or another agent). Read AGENTS.md for the architectural baseline; this doc captures what changed in the recent sessions and what's queued.
 
@@ -12,7 +12,42 @@ This is a handoff for whoever picks up next (you-future, or another agent). Read
 
 **The 2026-05-07 → 2026-05-08 session was a big engine + UX cleanup pass.** It started with a Wikipedia-photo wiring task, then a full Polaris cross-model audit of the quiz turned up multiple structural issues, and we worked through them.
 
-### Major changes this session (2026-05-08)
+### Late-session 2026-05-08 additions (after the original 48c9536 push)
+
+**Cluster-first results structure (the big UX shift):**
+- 12-cluster persona system at `content/neighborhood-clusters.json`. 7 clusters from existing archetypes + 5 sub-clusters of the previously-lumpy Family-Trajectory cluster (per Polaris dual-model review). Each cluster has a `name`, third-person `description` ("Mid-30s couple, walks to the food coop..."), and `members: string[]`.
+- Results page restructured: archetype banner → "Your primary fit: The X cluster" with member cards → "Also worth considering: The Y cluster" with member cards → map → AllMatchesList. Primary = most members in top 10; secondary = second-most if ≥2.
+- Per-nbhd page falls back: hand-curated `description` override → cluster persona → none. 6 nbhds have hero overrides (Park Slope, Bushwick, UES, West Village, Larchmont, Astoria); rest get cluster-level prose.
+- The "Same fit tier" callout per card (added earlier in session) was *removed* — cluster headers do that work more clearly now.
+
+**Walking-distance amenities multi-select** (replaced Q12 + Q15):
+- New question: "Within walking distance from home, I want:" with 8 options (groceries, cafés, world-class restaurants, bars/nightlife, museums/concerts, parks/water, family infra, community institution).
+- Each option has per-option dim impacts (extended `MultiSelectQuestion.options[].impacts` type).
+- `maxSelections: 4` cap. Q14 (rootedness-vs-access-fit) was kept after Polaris review showed 49/113 nbhds anchor the rooted pole.
+
+**Engine + filter improvements:**
+- `no-car` must-have now derives from `daily-life-walkability >= 0.5` (was a boolean `carDependent` flag, inconsistently applied — Scarsdale and Manhasset were marked false despite needing a car for daily errands).
+- `car-friendly` soft-pref similarly switched to walkability-based.
+- Q1 multi-transit option now hits urban-intensity (logical entailment) — fixes the "Murray Hill came up after just answering Q1" complaint.
+- Engine math fix: `userValue === 0` → no penalty on symmetric dims too (was already true for asymmetric_need). Means skipped questions and "either" middle picks correctly contribute zero distance regardless of nbhd value.
+- Live ranking panel during quiz hides until 5+ answers (signal-poor before that).
+
+**Test gates added:**
+- `tests/engine/rooted-pole-reachability.test.ts` — 8 rooted-pole canaries (Park Slope, Cobble Hill, Carroll Gardens, Forest Hills, Astoria, Bed-Stuy, Sunnyside, Ditmas Park) must reach top 3 with their optimal user. Catches future regressions that strip the rooted lane.
+- `tests/engine/per-neighborhood-personas.test.ts` — every nbhd has a persona; 95%+ reach top 15, 100% reach top 35. Catches structural regressions.
+
+**`content/neighborhood-personas.json`:**
+- Auto-generated cumulative-greedy answer paths for all 113 nbhds.
+- Schema: `{ description: string | null; answers: Answers }`.
+- 6 hand-curated `description` entries; 107 are null (use cluster persona).
+- Hand-edit any entry's `description` for an editorial override; hand-edit `answers` to tune the persona toward a specific lifestyle.
+
+**UX fixes:**
+- "Start over" button now visible on every quiz question past Q1.
+- Home-page Begin button clears stored answers (matches Retake behavior).
+- "Same fit tier" callout (later removed) was added then removed when cluster sections superseded it.
+
+### Major changes earlier this session (2026-05-08)
 
 **Engine math fixes (the load-bearing ones):**
 - **Asymmetric-need + symmetric "user=0 → no penalty"** unified. Previously a default-zero user value (skipped question or "either" middle option) silently penalized neighborhoods scored away from zero on symmetric dimensions, and on asymmetric dims it penalized those scored below zero. Both kinds now treat `user === 0` as "no preference, no penalty." The right semantic; eliminates a class of "weird Q1 ranking" bugs.
@@ -130,7 +165,7 @@ Roughly priority-ordered:
 
 1. Pull latest from `origin/main`
 2. `npm install` if anything changed in `package.json`
-3. `npm test` to verify clean baseline (should be 74/74)
+3. `npm test` to verify clean baseline (should be 84/84)
 4. `npm run lint` (0 errors, 2 stylistic warnings)
 5. Read the most recent commits to understand what's freshest (`git log --oneline -25`)
 6. Check this doc for what's queued
