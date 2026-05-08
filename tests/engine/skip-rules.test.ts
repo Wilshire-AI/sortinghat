@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { questions } from '@content/questions';
-import { shouldSkip, pruneSkippedAnswers } from '@/lib/engine/skip-rules';
+import { shouldSkip, pruneSkippedAnswers, progressFor } from '@/lib/engine/skip-rules';
 import type { Answers } from '@/lib/engine/derive';
 
 describe('shouldSkip', () => {
@@ -162,5 +162,48 @@ describe('pruneSkippedAnswers', () => {
 
   it('handles empty answers', () => {
     expect(pruneSkippedAnswers(questions, {})).toEqual({});
+  });
+});
+
+describe('progressFor', () => {
+  it('reports total = full question count when nothing is skipped', () => {
+    const { total } = progressFor(0, questions, {});
+    expect(total).toBe(questions.length);
+  });
+
+  it('reduces total as cascade skips fire (no-kids drops school-need)', () => {
+    const { total: baseTotal } = progressFor(0, questions, {});
+    const { total: noKidsTotal } = progressFor(0, questions, {
+      'family-horizon': { kind: 'forced_choice', choiceIndex: 2 },
+    });
+    expect(noKidsTotal).toBe(baseTotal - 1);
+  });
+
+  it('reduces total when cultural-anchor is not-a-factor', () => {
+    const { total: baseTotal } = progressFor(0, questions, {});
+    const { total: noCultureTotal } = progressFor(0, questions, {
+      'cultural-anchor': { kind: 'forced_choice', choiceIndex: 2 },
+    });
+    expect(noCultureTotal).toBe(baseTotal - 1);
+  });
+
+  it('current counts visible (non-skipped) positions only', () => {
+    const noKidsAnswers: Answers = {
+      'family-horizon': { kind: 'forced_choice', choiceIndex: 2 },
+    };
+    // family-horizon is index 1 (after place-tier). User just answered Q2.
+    const { current } = progressFor(1, questions, noKidsAnswers);
+    expect(current).toBe(2);
+  });
+
+  it('current never exceeds total', () => {
+    const { current, total } = progressFor(questions.length - 1, questions, {});
+    expect(current).toBeLessThanOrEqual(total);
+  });
+
+  it('returns at least 1 for both fields even with empty input', () => {
+    const empty = progressFor(0, [], {});
+    expect(empty.current).toBeGreaterThanOrEqual(1);
+    expect(empty.total).toBeGreaterThanOrEqual(1);
   });
 });

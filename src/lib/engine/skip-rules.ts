@@ -71,3 +71,23 @@ export function pruneSkippedAnswers(
   }
   return next;
 }
+
+// Compute current visible position and projected total visible count given
+// the current answer state. The progress bar reads "Q5 of 16" not "Q5 of 20"
+// — the denominator forecasts non-skipped questions, so the user sees an
+// honest pace as their answers cause cascade skips.
+export function progressFor(
+  rawIdx: number,
+  questions: readonly Question[],
+  answers: Answers,
+  predicate: ShouldSkip = shouldSkip,
+): { current: number; total: number } {
+  let total = 0;
+  let current = 0;
+  for (let i = 0; i < questions.length; i++) {
+    if (predicate(questions[i].id, answers)) continue;
+    total++;
+    if (i <= rawIdx) current++;
+  }
+  return { current: Math.max(1, current), total: Math.max(1, total) };
+}

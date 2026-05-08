@@ -16,7 +16,7 @@ import { QuestionCard } from '@/components/quiz/QuestionCard';
 import { ProgressBar } from '@/components/quiz/ProgressBar';
 import { LiveRanking } from '@/components/quiz/LiveRanking';
 import { encodeFingerprint } from '@/lib/engine/vector';
-import { shouldSkip } from '@/lib/engine/skip-rules';
+import { shouldSkip, progressFor } from '@/lib/engine/skip-rules';
 
 function nextVisibleIdx(from: number, answers: Answers): number {
   let i = from;
@@ -111,14 +111,16 @@ export default function QuizPage() {
     );
   }
 
+  const { current: progressCurrent, total: progressTotal } = progressFor(idx, questions, answers);
+
   return (
     <main className="min-h-screen flex flex-col">
-      <ProgressBar current={idx + 1} total={questions.length} />
+      <ProgressBar current={progressCurrent} total={progressTotal} />
       <QuestionCard
         key={current.id}
         question={current}
-        questionNumber={idx + 1}
-        totalQuestions={questions.length}
+        questionNumber={progressCurrent}
+        totalQuestions={progressTotal}
         currentAnswer={answers[current.id]}
         onAnswer={handleAnswer}
         onBack={idx > 0 ? handleBack : undefined}
