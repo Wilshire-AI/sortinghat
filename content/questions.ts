@@ -4,10 +4,10 @@ export const questions: readonly Question[] = [
   {
     id: 'place-tier',
     kind: 'forced_choice',
-    prompt: 'Where do you picture your weekday morning?',
+    prompt: 'Which sounds most like the life you want?',
     choices: [
       {
-        label: 'Dense city core. Manhattan core, dense Brooklyn/Queens (Williamsburg, LIC).',
+        label: "I take a different walk every weekend. The train comes every four minutes. There's always one more place I haven't tried.",
         impacts: {
           'urban-intensity-tolerance': 0.55,
           'rootedness-vs-access': 0.40,
@@ -15,7 +15,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: 'Mid-density urban neighborhood. UWS, Park Slope, Astoria, Forest Hills, Hoboken.',
+        label: "I walk to the same coffee shop most mornings. There's a park I know by name, and a corner where I run into people I know.",
         impacts: {
           'urban-intensity-tolerance': 0.0,
           'daily-life-walkability': 0.50,
@@ -23,7 +23,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: 'Walkable suburb or village. Larchmont, Maplewood, Bronxville, Hastings.',
+        label: 'Saturday morning is the farmers market. There\'s a small downtown I walk to. I see the same people at coffee, the post office, the train.',
         impacts: {
           'urban-intensity-tolerance': -0.40,
           'rootedness-vs-access': -0.55,
@@ -32,7 +32,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: 'Established commuter suburb. Scarsdale, Tenafly, Manhasset, Greenwich, Westport.',
+        label: 'We host. A yard, a long driveway, a dining table for ten. Day-to-day means the car.',
         impacts: {
           'urban-intensity-tolerance': -0.55,
           'rootedness-vs-access': -0.65,
@@ -41,7 +41,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: 'Quiet, low-density. Cresskill, Chappaqua, Darien, New Canaan.',
+        label: "Woods out back. Coffee on the deck. Anywhere I want to go is a drive, and that's fine. It's quiet here.",
         impacts: {
           'urban-intensity-tolerance': -0.70,
           'rootedness-vs-access': -0.70,
@@ -50,7 +50,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: "I'm not sure yet, or I'm open to several of these.",
+        label: "I'm still figuring out the shape of my life. Show me a mix.",
         impacts: {},
       },
     ],
