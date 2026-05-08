@@ -31,8 +31,8 @@ describe('sigmaForPopulation', () => {
     expect(sigmaForPopulation(0)).toBeCloseTo(0.22, 3);
   });
 
-  it('caps at 0.60 for very large pops', () => {
-    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.60, 2);
+  it('caps at 0.40 for pops at or above the corpus median', () => {
+    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.40, 2);
   });
 
   it('returns 0.40 at the corpus median (30k)', () => {
@@ -41,19 +41,20 @@ describe('sigmaForPopulation', () => {
 
   it('locked values for canonical neighborhoods', () => {
     expect(sigmaForPopulation(6_300)).toBeCloseTo(0.232, 2); // bronxville
-    // Williamsburg, Crown Heights, UWS, Jersey City all hit the 0.60 cap.
-    expect(sigmaForPopulation(120_000)).toBeCloseTo(0.60, 2); // williamsburg (capped)
-    expect(sigmaForPopulation(145_000)).toBeCloseTo(0.60, 2); // crown-heights (capped)
-    expect(sigmaForPopulation(210_000)).toBeCloseTo(0.60, 2); // upper-west-side (capped)
-    expect(sigmaForPopulation(292_449)).toBeCloseTo(0.60, 2); // jersey-city (capped)
+    // All nbhds at or above the median (30k) hit the 0.40 cap.
+    expect(sigmaForPopulation(120_000)).toBeCloseTo(0.40, 2); // williamsburg (capped)
+    expect(sigmaForPopulation(145_000)).toBeCloseTo(0.40, 2); // crown-heights (capped)
+    expect(sigmaForPopulation(210_000)).toBeCloseTo(0.40, 2); // upper-west-side (capped)
+    expect(sigmaForPopulation(292_449)).toBeCloseTo(0.40, 2); // jersey-city (capped)
   });
 
-  it('Williamsburg σ is 2-3x Bronxville σ', () => {
-    // With the cap at 0.60, Williamsburg sits at 0.60 and Bronxville at 0.232,
-    // so the ratio is ~2.59x — still within the 2-3x design intent.
-    const ratio = sigmaForPopulation(120_000) / sigmaForPopulation(6_300);
-    expect(ratio).toBeGreaterThan(2.3);
-    expect(ratio).toBeLessThan(3.0);
+  it('median-pop σ is ~1.7x Bronxville σ (small pops have meaningfully tighter basins)', () => {
+    // Cap at 0.40 means scaling kicks in only below the median. Bronxville's
+    // σ floor of 0.232 vs the 0.40 cap is the practical spread that
+    // distinguishes tight-niche from population-average nbhds.
+    const ratio = sigmaForPopulation(30_000) / sigmaForPopulation(6_300);
+    expect(ratio).toBeGreaterThan(1.6);
+    expect(ratio).toBeLessThan(1.9);
   });
 });
 
