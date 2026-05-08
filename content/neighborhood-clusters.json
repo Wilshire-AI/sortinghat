@@ -23,7 +23,8 @@
         "chinatown",
         "east-williamsburg",
         "nolita-little-italy",
-        "gowanus"
+        "gowanus",
+        "mott-haven"
       ]
     },
     "prestige-anchored-cosmopolitan": {
@@ -56,7 +57,10 @@
         "inwood",
         "prospect-lefferts-gardens",
         "woodside",
-        "yonkers-ny"
+        "yonkers-ny",
+        "fordham",
+        "norwood",
+        "stapleton"
       ]
     },
     "cultural-anchor-seeker": {
@@ -74,7 +78,9 @@
         "crown-heights",
         "ridgewood",
         "jackson-heights",
-        "elmhurst"
+        "elmhurst",
+        "belmont",
+        "tompkinsville"
       ]
     },
     "nature-hungry-urbanist": {
@@ -131,7 +137,9 @@
         "sunnyside",
         "rego-park",
         "kew-gardens",
-        "bayside"
+        "bayside",
+        "pelham-bay",
+        "great-kills"
       ]
     },
     "progressive-village-suburb": {
