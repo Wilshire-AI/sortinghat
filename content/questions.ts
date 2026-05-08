@@ -22,17 +22,21 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'prestige-vs-space',
+    id: 'access-vs-space',
     kind: 'forced_choice',
-    prompt: 'Smaller apartment in a famous neighborhood, or materially more space in a less-known one?',
+    prompt: 'Smaller apartment in the middle of everything, or materially more space further from the action?',
     choices: [
       {
-        label: 'The famous neighborhood. The address matters.',
-        impacts: { 'prestige-orientation': 0.8, 'space-sensitivity': -0.5 },
+        label: 'In the middle of everything. Trade space for being where it\'s all happening.',
+        impacts: { 'urban-intensity-tolerance': 0.5, 'space-sensitivity': -0.5 },
       },
       {
-        label: 'The space. I\'ll let the address grow on me.',
-        impacts: { 'prestige-orientation': -0.7, 'space-sensitivity': 0.6 },
+        label: 'More space. I\'ll travel for the action when I want it.',
+        impacts: { 'urban-intensity-tolerance': -0.4, 'space-sensitivity': 0.6 },
+      },
+      {
+        label: 'Either, depending on the actual tradeoff.',
+        impacts: {},
       },
     ],
   },

@@ -33,15 +33,23 @@ describe('questions', () => {
       }
     }
   });
-  it('every dimension touched by at least 1 question', () => {
+  it('every dimension touched by at least 1 question (or explicitly inert)', () => {
+    // Dimensions intentionally not queried by any question. The neighborhood
+    // scores remain in the data model but contribute zero to ranking because
+    // every user vector is 0 on these. Listed here so the test still catches
+    // accidentally-orphaned dimensions.
+    const intentionallyInert = new Set<string>(['prestige-orientation']);
     const touched = new Set<string>();
     for (const q of questions) {
       if (q.kind === 'forced_choice') {
         for (const c of q.choices) for (const k of Object.keys(c.impacts)) touched.add(k);
-      } else {
+      } else if (q.kind === 'slider') {
         touched.add(q.dimensionId);
       }
     }
-    for (const d of dimensions) expect(touched.has(d.id), `dim ${d.id} not touched`).toBe(true);
+    for (const d of dimensions) {
+      if (intentionallyInert.has(d.id)) continue;
+      expect(touched.has(d.id), `dim ${d.id} not touched`).toBe(true);
+    }
   });
 });
