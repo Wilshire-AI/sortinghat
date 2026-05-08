@@ -53,6 +53,13 @@ function dimensionContribution(
     const shortfall = Math.max(0, userValue - neighborhoodValue);
     return shortfall * shortfall;
   }
+  // Symmetric: user value of exactly 0 means "no preference expressed" —
+  // either the question was skipped, or the user picked an explicit
+  // 'either' middle option. Either way, no distance penalty regardless of
+  // neighborhood value. This prevents partial-quiz rankings from being
+  // pulled toward neighborhoods that happen to score near 0 on every dim
+  // the user hasn't yet answered.
+  if (userValue === 0) return 0;
   const diff = userValue - neighborhoodValue;
   return diff * diff;
 }

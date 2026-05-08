@@ -28,8 +28,12 @@ describe('scoreNeighborhood (symmetric dimensions)', () => {
   it('returns 0.0 when user and neighborhood are opposite poles', () => {
     expect(scoreNeighborhood({ a: 1, b: 1, c: 1 }, n('x', { a: -1, b: -1, c: -1 }), sym3)).toBeCloseTo(0.0, 6);
   });
-  it('returns 0.5 for a neutral user against a fully-positive neighborhood', () => {
-    expect(scoreNeighborhood({ a: 0, b: 0, c: 0 }, n('x', { a: 1, b: 1, c: 1 }), sym3)).toBeCloseTo(0.5, 6);
+  it('returns 1.0 for a neutral user against any neighborhood (no preference expressed)', () => {
+    // user value of 0 on a symmetric dim means "no preference" — same semantic as
+    // the asymmetric_need fix. Skipping a question or picking 'either' middle
+    // option contributes no penalty, so the user fully matches every neighborhood
+    // on that dim. With every dim at user=0, all neighborhoods tie at 1.0.
+    expect(scoreNeighborhood({ a: 0, b: 0, c: 0 }, n('x', { a: 1, b: 1, c: 1 }), sym3)).toBeCloseTo(1.0, 6);
   });
   it('does not divide by zero on a neutral pair', () => {
     expect(scoreNeighborhood({ a: 0, b: 0, c: 0 }, n('x', { a: 0, b: 0, c: 0 }), sym3)).toBe(1.0);
