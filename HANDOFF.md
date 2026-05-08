@@ -1,8 +1,10 @@
 # Sorting Hat — handoff notes
 
-Last updated: end of extended session 2026-05-08, after a strategic re-think. Production: `https://sortinghat.wilshireai.com/`. Latest commit on `origin/main`: `b46adc7`.
+Last updated: end of extended session 2026-05-08, after the Bayesian engine rebuild. Production: `https://sortinghat.wilshireai.com/`.
 
-**Top of mind for next session:** a fully cross-model-reviewed plan to restructure the quiz around a place-tier Q1 — *not yet implemented*. See "## STRATEGIC PLAN — pending implementation" below. Polaris artifact at `.polaris/strategic-quiz-architecture.md` has the full review; this doc captures the priorities + landmines.
+**This session shipped:** (a) the strategic quiz restructure (place-tier Q1 + reorder + skip rules + tier-correction control + commute merge + persona regen + Q1 vignette rewrite), and (b) a full Bayesian rebuild of the scoring engine (each neighborhood is now a Gaussian with σ scaled by population, posterior = log-likelihood + log-prior, max-normalized for display). Both shipped to `origin/main`.
+
+**Top of mind for next session:** the Bayesian engine is tuned at `PRIOR_BETA=0.25, SIGMA_MAX=0.60` and produces a population-shaped reachability distribution (Flushing/Astoria/Williamsburg/Crown Heights ~5-10% top-1 each; UWS at 6.2%; Crown Heights' centroid attractor went from 19.5% → 5.5%). Tuning is the most likely place for follow-up — see `.polaris/bayesian-engine-design.md` "Open questions / risks" for known calibration knobs. Tiny-pop suburbs (Bronxville/Larchmont/Chappaqua) are reachable but only via specific commute / must-have signals, not via psychographic alignment alone.
 
 This is a handoff for whoever picks up next (you-future, or another agent). Read AGENTS.md for the architectural baseline; this doc captures what changed in the recent sessions and what's queued.
 

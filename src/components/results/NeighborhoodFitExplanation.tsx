@@ -4,7 +4,9 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import type { Dimension, Neighborhood, UserVector } from '@content/types';
 import { decodeFingerprint } from '@/lib/engine/vector';
-import { scoreNeighborhood } from '@/lib/engine/score';
+import { rankNeighborhoods } from '@/lib/engine/score';
+import { neighborhoods as allNeighborhoods } from '@content/neighborhoods';
+import { neighborhoodPopulations } from '@content/neighborhood-populations';
 
 type Props = {
   neighborhood: Neighborhood;
@@ -58,7 +60,16 @@ export function NeighborhoodFitExplanation({ neighborhood, dimensions }: Props) 
     if (!f) return null;
     try {
       const decoded = decodeFingerprint(f);
-      const overallScore = scoreNeighborhood(decoded.vector, neighborhood, dimensions, decoded.selectedTags);
+      // Per-user max-normalized Bayesian score: pull this nbhd's relative
+      // ranking against the full corpus. Matches the percentages the user
+      // sees elsewhere (results page, neighborhood cards).
+      const ranked = rankNeighborhoods(decoded.vector, allNeighborhoods, dimensions, {
+        topN: allNeighborhoods.length,
+        selectedTags: decoded.selectedTags,
+        softPrefs: decoded.softPrefs,
+        populationsByNeighborhood: neighborhoodPopulations,
+      });
+      const overallScore = ranked.find((r) => r.neighborhood.id === neighborhood.id)?.score ?? 0;
       const fits = computeDimensionalFit(decoded.vector, neighborhood, dimensions);
       const alignments = [...fits].sort((a, b) => a.contribution - b.contribution).slice(0, 3);
       const gaps = [...fits].sort((a, b) => b.contribution - a.contribution).slice(0, 3);

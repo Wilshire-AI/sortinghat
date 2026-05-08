@@ -80,9 +80,8 @@ export function runMonteCarloReachability(opts: {
   dimensions: readonly Dimension[];
   neighborhoods: readonly Neighborhood[];
   populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
-  populationPriorWeight?: number;
 }): MonteCarloReachability {
-  const { samples, seed, topK, questions, dimensions, neighborhoods, populationsByNeighborhood, populationPriorWeight } = opts;
+  const { samples, seed, topK, questions, dimensions, neighborhoods, populationsByNeighborhood } = opts;
   const rand = mulberry32(seed);
   const maxK = Math.max(...topK);
   const perNeighborhood: Record<string, Record<number, number>> = {};
@@ -100,7 +99,6 @@ export function runMonteCarloReachability(opts: {
       selectedTags: derived.selectedTags,
       softPrefs: derived.softPrefs,
       populationsByNeighborhood,
-      populationPriorWeight,
       touchedDims: derived.touchedDims,
     });
     for (let pos = 0; pos < top.length; pos++) {

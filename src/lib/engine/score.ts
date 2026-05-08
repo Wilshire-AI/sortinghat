@@ -39,72 +39,6 @@ export function passesMustHaves(
   return true;
 }
 
-// ---- Scoring ----
-function dimensionContribution(
-  userValue: number,
-  neighborhoodValue: number,
-  kind: Dimension['kind'],
-): number {
-  if (kind === 'asymmetric_need') {
-    // No expressed need (zero or negative user value) → no penalty regardless
-    // of neighborhood value. Otherwise the default-zero from a skipped
-    // question silently penalizes neighborhoods scored below 0.
-    if (userValue <= 0) return 0;
-    const shortfall = Math.max(0, userValue - neighborhoodValue);
-    return shortfall * shortfall;
-  }
-  // Symmetric: user value of exactly 0 means "no preference expressed" —
-  // either the question was skipped, or the user picked an explicit
-  // 'either' middle option. Either way, no distance penalty regardless of
-  // neighborhood value. This prevents partial-quiz rankings from being
-  // pulled toward neighborhoods that happen to score near 0 on every dim
-  // the user hasn't yet answered.
-  if (userValue === 0) return 0;
-  const diff = userValue - neighborhoodValue;
-  return diff * diff;
-}
-
-export function scoreNeighborhood(
-  user: UserVector,
-  neighborhood: Neighborhood,
-  dimensions: readonly Dimension[],
-  selectedTags: readonly string[] = [],
-): number {
-  let sumSq = 0;
-  for (const d of dimensions) {
-    const u = user[d.id] ?? 0;
-    const n = neighborhood.scores[d.id] ?? 0;
-    sumSq += dimensionContribution(u, n, d.kind);
-  }
-  const distance = Math.sqrt(sumSq);
-  const maxDistance = Math.sqrt(dimensions.length * 4);
-  const baseScore = maxDistance === 0 ? 1 : 1 - distance / maxDistance;
-
-  if (selectedTags.length > 0 && neighborhood.culturalTags) {
-    const matched = neighborhood.culturalTags.filter((t) => selectedTags.includes(t)).length;
-    return Math.min(1, baseScore + matched * CULTURAL_TAG_BOOST);
-  }
-  return baseScore;
-}
-
-// Multiplicative population prior. Combats the engine's geometric bias toward
-// near-centroid neighborhoods (middling scores on every dimension) winning
-// disproportionately on uniform-vector samples. Real users live in real places;
-// a neighborhood that sits 5,000 people deep almost certainly shouldn't outrank
-// a 200,000-person neighborhood that's a small score-distance worse.
-//
-// Form: log-normalized to a fixed P_max so re-scaling the corpus doesn't
-// silently re-rank. Multiplier in [(1-w), 1] — never increases score, only
-// decreases it for smaller places, scaled by w.
-const POPULATION_P_MAX = 500_000;
-const POPULATION_W_DEFAULT = 0.10;
-
-export function populationMultiplier(population: number, w: number = POPULATION_W_DEFAULT): number {
-  if (w <= 0 || population <= 1) return 1;
-  const f = Math.log10(population) / Math.log10(POPULATION_P_MAX);
-  return (1 - w) + w * Math.max(0, Math.min(1, f));
-}
-
 // Multiplicative score adjustment in [COMMUTE_PENALTY_FLOOR, 1] reflecting
 // how well the neighborhood's commute fits the user's targets and tolerance.
 //
@@ -149,33 +83,17 @@ export type RankOptions = {
   commuteToleranceMinutes?: number;
   commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
   softPrefs?: readonly string[];
+  // Population data — when supplied, the engine multiplies in the population
+  // prior and uses pop-scaled σ for the Gaussian likelihood. When omitted,
+  // every nbhd is scored at the median-pop default.
   populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
-  populationPriorWeight?: number;
-  // Bayesian engine: uses populationsByNeighborhood (required) + touchedDims
-  // to compute Gaussian likelihood × population prior. Default 'euclidean'
-  // preserves existing behavior; flip per-call to opt in.
-  engine?: 'euclidean' | 'bayesian';
-  // Dims where the user expressed any signal. Required by Bayesian engine
-  // (untouched dims are excluded from the likelihood). For pre-Bayesian
-  // shared fingerprints with no recorded touched-dim info, the engine falls
-  // back to "any dim with non-zero user value is touched" — which is a
-  // heuristic, accurate for fresh quizzes but potentially imprecise for
-  // edge cases where impacts canceled to exactly 0.
+  // Dims where the user expressed any signal. Untouched dims contribute no
+  // likelihood penalty regardless of nbhd value. When omitted, the engine
+  // falls back to "any dim with non-zero user value is touched" — accurate
+  // for fresh quizzes, imprecise for pre-Bayesian fingerprints where impacts
+  // happened to cancel to exactly 0.
   touchedDims?: ReadonlySet<DimensionId>;
 };
-
-const SOFT_PREF_BOOST = 0.05;
-
-function softPrefBoost(neighborhood: Neighborhood, softPrefs: readonly string[]): number {
-  if (softPrefs.length === 0) return 0;
-  let boost = 0;
-  // 'car-friendly' boosts neighborhoods where the user genuinely needs a car
-  // for daily life (matches the inverse of the no-car must-have filter).
-  if (softPrefs.includes('car-friendly') && (neighborhood.scores['daily-life-walkability'] ?? 0) < 0.5) {
-    boost += SOFT_PREF_BOOST;
-  }
-  return boost;
-}
 
 // ---- Bayesian engine primitives ----
 // Cross-model design at .polaris/bayesian-engine-design.md.
@@ -293,8 +211,6 @@ export function rankNeighborhoods(
           commuteMinutesByNeighborhood: topNOrOptions.commuteMinutesByNeighborhood,
           softPrefs: topNOrOptions.softPrefs ?? [],
           populationsByNeighborhood: topNOrOptions.populationsByNeighborhood,
-          populationPriorWeight: topNOrOptions.populationPriorWeight ?? POPULATION_W_DEFAULT,
-          engine: topNOrOptions.engine ?? 'bayesian',
           touchedDims: topNOrOptions.touchedDims,
         }
       : {
@@ -306,8 +222,6 @@ export function rankNeighborhoods(
           commuteMinutesByNeighborhood: undefined,
           softPrefs: [] as readonly string[],
           populationsByNeighborhood: undefined as Readonly<Record<NeighborhoodId, number>> | undefined,
-          populationPriorWeight: POPULATION_W_DEFAULT,
-          engine: 'bayesian' as const,
           touchedDims: undefined as ReadonlySet<DimensionId> | undefined,
         };
 
@@ -315,42 +229,7 @@ export function rankNeighborhoods(
     ? neighborhoods.filter((n) => passesMustHaves(n, opts.mustHaves, opts.selectedTags))
     : neighborhoods;
 
-  if (opts.engine === 'bayesian') {
-    return rankBayesian(user, filtered, dimensions, opts);
-  }
-
-  const applyCommute =
-    opts.commuteTargets.length > 0 &&
-    opts.commuteToleranceMinutes > 0 &&
-    !!opts.commuteMinutesByNeighborhood;
-
-  const applyPopulationPrior =
-    !!opts.populationsByNeighborhood && opts.populationPriorWeight > 0;
-
-  const scored = filtered.map((neighborhood) => {
-    const baseScore = scoreNeighborhood(user, neighborhood, dimensions, opts.selectedTags);
-    const commuteMult = applyCommute
-      ? scoreCommute(
-          opts.commuteMinutesByNeighborhood![neighborhood.id],
-          opts.commuteTargets,
-          opts.commuteToleranceMinutes,
-        )
-      : 1.0;
-    const popMult = applyPopulationPrior
-      ? populationMultiplier(
-          opts.populationsByNeighborhood![neighborhood.id] ?? 0,
-          opts.populationPriorWeight,
-        )
-      : 1.0;
-    const boost = softPrefBoost(neighborhood, opts.softPrefs);
-    return { neighborhood, score: Math.min(1, baseScore * commuteMult * popMult + boost) };
-  });
-
-  scored.sort((a, b) => {
-    if (b.score !== a.score) return b.score - a.score;
-    return a.neighborhood.id.localeCompare(b.neighborhood.id);
-  });
-  return scored.slice(0, opts.topN);
+  return rankBayesian(user, filtered, dimensions, opts);
 }
 
 // Bayesian ranking path. Caller has already filtered by must-haves.

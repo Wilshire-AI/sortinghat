@@ -139,25 +139,24 @@ describe('logLikelihoodBayesian — touched-dim masking', () => {
   });
 });
 
-describe('rankNeighborhoods — Bayesian engine flag', () => {
+describe('rankNeighborhoods — Bayesian behavior', () => {
   const small = n('small', { urban: 0.5 });
   const medium = n('medium', { urban: 0.5 });
   const large = n('large', { urban: 0.5 });
   const populations = { small: 5_000, medium: 30_000, large: 200_000 };
 
-  it('with engine=euclidean (default): ranking unchanged from before', () => {
+  it('without populations: same-fit nbhds tie; alphabetical breaks the tie', () => {
     const user = { urban: 0.5 };
     const ranked = rankNeighborhoods(user, [small, medium, large], dims, { topN: 3 });
     expect(ranked.length).toBe(3);
-    // All score equally (perfect match); alphabetical tiebreak: large < medium < small
+    // All have zero log-likelihood (perfect match); no prior; alphabetical: large < medium < small
     expect(ranked[0].neighborhood.id).toBe('large');
   });
 
-  it('with engine=bayesian + populations: same-fit nbhds, larger pop wins', () => {
+  it('with populations: same-fit nbhds, larger pop wins via prior', () => {
     const user = { urban: 0.5 };
     const ranked = rankNeighborhoods(user, [small, medium, large], dims, {
       topN: 3,
-      engine: 'bayesian',
       populationsByNeighborhood: populations,
       touchedDims: new Set(['urban']),
     });
@@ -171,7 +170,6 @@ describe('rankNeighborhoods — Bayesian engine flag', () => {
     const user = { urban: 0.5 };
     const ranked = rankNeighborhoods(user, [small, medium, large], dims, {
       topN: 3,
-      engine: 'bayesian',
       populationsByNeighborhood: populations,
       touchedDims: new Set(['urban']),
     });
@@ -192,7 +190,6 @@ describe('rankNeighborhoods — Bayesian engine flag', () => {
     const user = { urban: -0.7, rooted: -0.7 };
     const ranked = rankNeighborhoods(user, [niche, generic], dims, {
       topN: 2,
-      engine: 'bayesian',
       populationsByNeighborhood: pops,
       touchedDims: new Set(['urban', 'rooted']),
     });
@@ -207,7 +204,6 @@ describe('rankNeighborhoods — Bayesian engine flag', () => {
     const pops = { specific: 30_000, generic: 30_000 }; // same pop → prior tie
     const ranked = rankNeighborhoods(userOnlyUrban, [specific, generic], dims, {
       topN: 2,
-      engine: 'bayesian',
       populationsByNeighborhood: pops,
       touchedDims: touched,
     });
@@ -222,7 +218,6 @@ describe('rankNeighborhoods — Bayesian engine flag', () => {
     const offurban = n('off', { urban: -0.5, rooted: 0 });
     const ranked = rankNeighborhoods(user, [matching, offurban], dims, {
       topN: 2,
-      engine: 'bayesian',
       populationsByNeighborhood: { match: 30_000, off: 30_000 },
       // no touchedDims — should default to {urban} (rooted is 0)
     });
@@ -235,7 +230,6 @@ describe('rankNeighborhoods — Bayesian engine flag', () => {
     const user = { urban: 0.5 };
     const ranked = rankNeighborhoods(user, [passes, fails], dims, {
       topN: 5,
-      engine: 'bayesian',
       mustHaves: ['top-schools'],
       populationsByNeighborhood: { passes: 30_000, fails: 30_000 },
       touchedDims: new Set(['urban']),
