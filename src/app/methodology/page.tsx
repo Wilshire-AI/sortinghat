@@ -206,7 +206,11 @@ export default function MethodologyPage() {
         <Link href="/methodology/sandbox" className="underline hover:text-[var(--color-accent)] transition">
           Open the sandbox
         </Link>
-        {' '}— same engine as the real quiz, with a live ranking panel.
+        {' '}— same engine as the real quiz, with a live ranking panel. Or browse a static
+        per-question{' '}
+        <Link href="/methodology/paths" className="underline hover:text-[var(--color-accent)] transition">
+          paths report
+        </Link>{' '}showing which neighborhoods each answer pulls toward.
       </p>
 
       <footer className="mt-24 pt-8 border-t border-[var(--color-line)] text-xs text-[var(--color-muted)]">
