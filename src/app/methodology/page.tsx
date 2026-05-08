@@ -201,6 +201,14 @@ export default function MethodologyPage() {
         </ul>
       </section>
 
+      <p className="mt-16 text-sm text-[var(--color-muted)]">
+        Want to see how individual answers move neighborhoods up or down in the ranking?{' '}
+        <Link href="/methodology/sandbox" className="underline hover:text-[var(--color-accent)] transition">
+          Open the sandbox
+        </Link>
+        {' '}— same engine as the real quiz, with a live ranking panel.
+      </p>
+
       <footer className="mt-24 pt-8 border-t border-[var(--color-line)] text-xs text-[var(--color-muted)]">
         A{' '}
         <a href="https://wilshireai.com" className="hover:text-[var(--color-accent)] transition">
