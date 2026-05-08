@@ -8,11 +8,11 @@ export const questions: readonly Question[] = [
     choices: [
       {
         label: 'I\'d take transit. I want multiple options.',
-        impacts: { 'transit-psychology': 0.7 },
+        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
       },
       {
         label: 'I\'d take transit. One reliable line is enough.',
-        impacts: { 'transit-psychology': 0 },
+        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
       },
       {
         label: 'I\'d drive. Car-dependent is fine.',

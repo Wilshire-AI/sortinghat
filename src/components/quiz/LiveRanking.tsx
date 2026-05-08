@@ -84,7 +84,7 @@ export function LiveRanking({ answers }: Props) {
     [deltas],
   );
 
-  if (answeredCount === 0) return null;
+  if (answeredCount < 5) return null;
 
   return (
     <div className="mx-auto max-w-3xl px-6 pb-12 -mt-4">
