@@ -5,6 +5,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { decodeFingerprint } from '@/lib/engine/vector';
 import { rankNeighborhoods, excludedByMustHaves, failedMustHaves } from '@/lib/engine/score';
+import { applyPlaceTierCorrection, isValidTierCorrection, type TierCorrection } from '@/lib/engine/place-tier-correction';
 import { matchArchetype } from '@/lib/engine/archetype';
 import { resolveCardProse } from '@/lib/engine/explain';
 import { neighborhoods } from '@content/neighborhoods';
@@ -54,16 +55,22 @@ export function ResultsClient() {
   const router = useRouter();
   const sp = useSearchParams();
   const f = sp.get('f');
+  const tierParam = sp.get('tier');
+  const activeTier: TierCorrection | null = isValidTierCorrection(tierParam) ? tierParam : null;
 
   const result = useMemo(() => {
     if (!f) return null;
     try {
       const decoded = decodeFingerprint(f);
+      // Apply optional tier correction before any downstream consumer reads
+      // the vector. Archetype banner, ranking, map, and dim fingerprint all
+      // get the corrected view so a clicked correction button feels coherent.
+      const vector = applyPlaceTierCorrection(decoded.vector, activeTier);
       const dimIds = dimensions.map((d) => d.id);
-      const archetype = matchArchetype(decoded.vector, archetypes, dimIds);
+      const archetype = matchArchetype(vector, archetypes, dimIds);
       // Score everyone (no must-have filter) so the user can see how they rank
       // on every neighborhood, even ones their non-negotiables ruled out.
-      const allRankedUnfiltered = rankNeighborhoods(decoded.vector, neighborhoods, dimensions, {
+      const allRankedUnfiltered = rankNeighborhoods(vector, neighborhoods, dimensions, {
         topN: neighborhoods.length,
         selectedTags: decoded.selectedTags,
         mustHaves: [],
@@ -115,7 +122,7 @@ export function ResultsClient() {
       const restAfterClusters = passing.filter((r) => !featuredIds.has(r.neighborhood.id));
 
       return {
-        vector: decoded.vector,
+        vector,
         archetype,
         ranked: passing.slice(0, 5), // legacy field still used by map
         rest: passing.slice(5),
@@ -132,7 +139,7 @@ export function ResultsClient() {
     } catch {
       return null;
     }
-  }, [f]);
+  }, [f, activeTier]);
 
   useEffect(() => {
     if (!f || !result) router.replace('/nyc/quiz');
@@ -159,6 +166,44 @@ export function ResultsClient() {
         >
           Retake the quiz
         </Link>
+      </div>
+
+      <div className="mx-auto max-w-3xl px-6 pb-6 pt-4">
+        <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)] mb-3">
+          Adjust your matches
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {(
+            [
+              { value: 'dense', label: 'More dense city' },
+              { value: 'walkable', label: 'More walkable suburb' },
+              { value: 'quiet', label: 'More quiet / open' },
+            ] as const
+          ).map((opt) => {
+            const isActive = activeTier === opt.value;
+            const targetTier = isActive ? null : opt.value;
+            const params = new URLSearchParams();
+            if (f) params.set('f', f);
+            if (targetTier) params.set('tier', targetTier);
+            const href = `/nyc/results?${params.toString()}`;
+            return (
+              <Link
+                key={opt.value}
+                href={href}
+                scroll={false}
+                className={
+                  'rounded-full border px-4 py-1.5 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)] ' +
+                  (isActive
+                    ? 'bg-[var(--color-ink)] text-[var(--color-bg)] border-[var(--color-ink)]'
+                    : 'border-[var(--color-line)] text-[var(--color-ink)] hover:border-[var(--color-accent)]')
+                }
+                aria-pressed={isActive}
+              >
+                {opt.label}
+              </Link>
+            );
+          })}
+        </div>
       </div>
 
       {result.ranked.length === 0 && (
