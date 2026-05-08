@@ -4,6 +4,7 @@ import { dimensions } from '@content/dimensions';
 import { neighborhoods } from '@content/neighborhoods';
 import { rankNeighborhoods } from '@/lib/engine/score';
 import { deriveState, finalizeVector, type Answer, type Answers } from '@/lib/engine/derive';
+import { neighborhoodPopulations } from '@content/neighborhood-populations';
 
 export const metadata = {
   title: 'Question paths · Sorting Hat',
@@ -16,7 +17,13 @@ const baselineRanked = rankNeighborhoods(
   finalizeVector(deriveState(dimensions, questions, {} as Answers)),
   neighborhoods,
   dimensions,
-  { topN: neighborhoods.length, selectedTags: [], mustHaves: [] },
+  {
+    topN: neighborhoods.length,
+    selectedTags: [],
+    mustHaves: [],
+    populationsByNeighborhood: neighborhoodPopulations,
+    touchedDims: deriveState(dimensions, questions, {} as Answers).touchedDims,
+  },
 );
 const baselineRanks: Record<string, number> = {};
 baselineRanked.forEach((r, i) => {
@@ -39,6 +46,8 @@ function rankWithSingleAnswer(qId: string, answer: Answer): typeof baselineRanke
     commuteTargets: derived.commuteTargets,
     commuteToleranceMinutes: derived.commuteToleranceMinutes,
     softPrefs: derived.softPrefs,
+    populationsByNeighborhood: neighborhoodPopulations,
+    touchedDims: derived.touchedDims,
   });
 }
 

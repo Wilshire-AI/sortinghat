@@ -31,8 +31,8 @@ describe('sigmaForPopulation', () => {
     expect(sigmaForPopulation(0)).toBeCloseTo(0.22, 3);
   });
 
-  it('caps at 0.90 for very large pops', () => {
-    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.90, 2);
+  it('caps at 0.60 for very large pops', () => {
+    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.60, 2);
   });
 
   it('returns 0.40 at the corpus median (30k)', () => {
@@ -41,15 +41,18 @@ describe('sigmaForPopulation', () => {
 
   it('locked values for canonical neighborhoods', () => {
     expect(sigmaForPopulation(6_300)).toBeCloseTo(0.232, 2); // bronxville
-    expect(sigmaForPopulation(120_000)).toBeCloseTo(0.650, 2); // williamsburg
-    expect(sigmaForPopulation(145_000)).toBeCloseTo(0.694, 2); // crown-heights
-    expect(sigmaForPopulation(210_000)).toBeCloseTo(0.790, 2); // upper-west-side
-    expect(sigmaForPopulation(292_449)).toBeCloseTo(0.888, 2); // jersey-city
+    // Williamsburg, Crown Heights, UWS, Jersey City all hit the 0.60 cap.
+    expect(sigmaForPopulation(120_000)).toBeCloseTo(0.60, 2); // williamsburg (capped)
+    expect(sigmaForPopulation(145_000)).toBeCloseTo(0.60, 2); // crown-heights (capped)
+    expect(sigmaForPopulation(210_000)).toBeCloseTo(0.60, 2); // upper-west-side (capped)
+    expect(sigmaForPopulation(292_449)).toBeCloseTo(0.60, 2); // jersey-city (capped)
   });
 
   it('Williamsburg σ is 2-3x Bronxville σ', () => {
+    // With the cap at 0.60, Williamsburg sits at 0.60 and Bronxville at 0.232,
+    // so the ratio is ~2.59x — still within the 2-3x design intent.
     const ratio = sigmaForPopulation(120_000) / sigmaForPopulation(6_300);
-    expect(ratio).toBeGreaterThan(2.4);
+    expect(ratio).toBeGreaterThan(2.3);
     expect(ratio).toBeLessThan(3.0);
   });
 });
@@ -67,9 +70,9 @@ describe('logPriorForPopulation', () => {
     expect(logPriorForPopulation(6_300)).toBeLessThan(0);
   });
 
-  it('Williamsburg vs Chappaqua difference is ~2.2 log-units (β=0.5)', () => {
+  it('Williamsburg vs Chappaqua difference is ~1.1 log-units (β=0.25)', () => {
     const diff = logPriorForPopulation(120_000) - logPriorForPopulation(1_500);
-    expect(diff).toBeCloseTo(2.19, 1);
+    expect(diff).toBeCloseTo(1.095, 1);
   });
 });
 

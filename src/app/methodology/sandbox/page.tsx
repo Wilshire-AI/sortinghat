@@ -162,6 +162,7 @@ export default function SandboxPage() {
         commuteMinutesByNeighborhood,
         softPrefs: derived.softPrefs,
         populationsByNeighborhood: neighborhoodPopulations,
+        touchedDims: derived.touchedDims,
       }),
     [vector, derived],
   );

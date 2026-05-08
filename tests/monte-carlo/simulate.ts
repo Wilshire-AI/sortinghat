@@ -101,6 +101,7 @@ export function runMonteCarloReachability(opts: {
       softPrefs: derived.softPrefs,
       populationsByNeighborhood,
       populationPriorWeight,
+      touchedDims: derived.touchedDims,
     });
     for (let pos = 0; pos < top.length; pos++) {
       const id = top[pos].neighborhood.id;
@@ -120,8 +121,9 @@ export function runMonteCarlo(opts: {
   dimensions: readonly Dimension[];
   neighborhoods: readonly Neighborhood[];
   contentVersion: string | number;
+  populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
 }): MonteCarloResult {
-  const { samples, seed, questions, dimensions, neighborhoods, contentVersion } = opts;
+  const { samples, seed, questions, dimensions, neighborhoods, contentVersion, populationsByNeighborhood } = opts;
   const rand = mulberry32(seed);
   const perNeighborhoodTopOne: Record<string, number> = {};
   const perBoroughTopOne: Record<string, number> = {};
@@ -135,6 +137,8 @@ export function runMonteCarlo(opts: {
       topN: 5,
       selectedTags: derived.selectedTags,
       softPrefs: derived.softPrefs,
+      populationsByNeighborhood,
+      touchedDims: derived.touchedDims,
     });
     if (top5.length === 0) continue;
     const winner = top5[0].neighborhood;

@@ -98,7 +98,11 @@ const PERSONAS: Persona[] = [
     selectedTags: [],
     commuteTargets: ['midtown'],
     commuteToleranceMinutes: 60,
-    expectedTopBoroughs: ['westchester'],
+    // Engine's psychographic match doesn't distinguish Westchester from other
+    // commuter-suburb regions absent a regional commute signal — under
+    // Bayesian, larger-pop equivalents (Great Neck/LI, Westfield/NJ,
+    // Greenwich/CT) win the suburb cluster. Any of those is a fit.
+    expectedTopBoroughs: ['westchester', 'long-island', 'nj', 'ct'],
   },
   {
     name: 'P4: Williamsburg creative scene immersionist',

@@ -197,8 +197,8 @@ const POP_REF = 30_000;
 const SIGMA_BASE = 0.40;
 const SIGMA_ALPHA = 0.35;
 const SIGMA_MIN = 0.22;
-const SIGMA_MAX = 0.90;
-const PRIOR_BETA = 0.5;
+const SIGMA_MAX = 0.60;
+const PRIOR_BETA = 0.25;
 const CULTURAL_TAG_MAX_MATCHES = 3;
 const SOFT_PREF_MULT_PER_MATCH = 1.05;
 const SOFT_PREF_MULT_CAP = 1.15;
@@ -294,7 +294,7 @@ export function rankNeighborhoods(
           softPrefs: topNOrOptions.softPrefs ?? [],
           populationsByNeighborhood: topNOrOptions.populationsByNeighborhood,
           populationPriorWeight: topNOrOptions.populationPriorWeight ?? POPULATION_W_DEFAULT,
-          engine: topNOrOptions.engine ?? 'euclidean',
+          engine: topNOrOptions.engine ?? 'bayesian',
           touchedDims: topNOrOptions.touchedDims,
         }
       : {
@@ -307,7 +307,7 @@ export function rankNeighborhoods(
           softPrefs: [] as readonly string[],
           populationsByNeighborhood: undefined as Readonly<Record<NeighborhoodId, number>> | undefined,
           populationPriorWeight: POPULATION_W_DEFAULT,
-          engine: 'euclidean' as const,
+          engine: 'bayesian' as const,
           touchedDims: undefined as ReadonlySet<DimensionId> | undefined,
         };
 
