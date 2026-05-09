@@ -103,7 +103,9 @@ export function deriveState(
         for (const v of a.selectedValues) commuteTargets.add(v);
       } else if (q.purpose === 'housing_acceptance') {
         for (const v of a.selectedValues) housingAcceptance.add(v);
-      } else if (q.purpose === 'walkable_amenities') {
+      } else if (q.purpose === 'walkable_amenities' || q.purpose === 'place_archetype') {
+        // Both purposes have the same shape: per-option impacts ADD to the
+        // user vector (vs. cultural_tags where selections feed the tag set).
         for (const v of a.selectedValues) {
           const opt = q.options.find((o) => o.value === v);
           if (opt?.impacts) {

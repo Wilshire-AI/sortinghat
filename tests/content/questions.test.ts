@@ -47,28 +47,22 @@ describe('questions', () => {
       }
     }
   });
-  it('place-archetype-primary is questions[0] (single archetype Q replaces transit/access/place-tier triple)', () => {
-    expect(questions[0].id).toBe('place-archetype-primary');
-  });
-
-  it('place-archetype-primary has 6 archetypes with no Either/mix escape', () => {
+  it('place-archetype is questions[0] (multi-select up to 3, replaces the old triple-Q archetype)', () => {
+    expect(questions[0].id).toBe('place-archetype');
     const q = questions[0];
-    if (q.kind !== 'forced_choice') throw new Error('primary must be forced_choice');
-    expect(q.choices).toHaveLength(6);
-    // Every archetype must contribute real signal — no zero-impact escape.
-    for (const c of q.choices) {
-      expect(Object.keys(c.impacts).length, `archetype "${c.label}" must have impacts`).toBeGreaterThan(0);
-    }
+    if (q.kind !== 'multi_select') throw new Error('place-archetype must be multi_select');
+    expect(q.purpose).toBe('place_archetype');
+    expect(q.maxSelections).toBe(3);
   });
 
-  it('place-archetype-secondary is questions[1] with 7 options (6 archetypes + no-second-choice)', () => {
-    expect(questions[1].id).toBe('place-archetype-secondary');
-    const q = questions[1];
-    if (q.kind !== 'forced_choice') throw new Error('secondary must be forced_choice');
-    expect(q.choices).toHaveLength(7);
-    // The last option is the explicit "no real second choice" escape.
-    const last = q.choices[q.choices.length - 1];
-    expect(Object.keys(last.impacts)).toHaveLength(0);
+  it('place-archetype has 6 archetypes, each with non-empty impacts', () => {
+    const q = questions[0];
+    if (q.kind !== 'multi_select') throw new Error('must be multi_select');
+    expect(q.options).toHaveLength(6);
+    for (const o of q.options) {
+      expect(o.impacts, `archetype "${o.label}" must have impacts`).toBeDefined();
+      expect(Object.keys(o.impacts!).length).toBeGreaterThan(0);
+    }
   });
 
   it('every dimension touched by at least 1 question (or explicitly inert)', () => {

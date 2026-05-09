@@ -70,13 +70,13 @@ describe('shouldSkip — community-fabric-mode (AND-not-OR)', () => {
   // Choice 3 is "Walkable suburb" → urban-intensity -0.45.
   it('skips for dense-urban no-kids user', () => {
     const answers: Answers = {
-      // Transit hub primary + walking-distance "world-class restaurants"
-      // pushes urban-intensity above 0.4. (Archetype gives +0.40; the +0.20
-      // amenity nudge makes 0.60, comfortably over threshold.)
-      'place-archetype-primary': { kind: 'forced_choice', choiceIndex: 0 },
+      // place-archetype 'transit-hub' is urban +0.20; combined with two
+      // urbanist amenity picks (world-class restaurants +0.20, bars/nightlife
+      // +0.40) drives derived urban-intensity to ~0.80, well over threshold.
+      'place-archetype': { kind: 'multi_select', selectedValues: ['transit-hub'] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['world-class-restaurants'],
+        selectedValues: ['world-class-restaurants', 'bars-nightlife'],
       },
       'family-horizon': { kind: 'forced_choice', choiceIndex: 2 },
     };
@@ -85,10 +85,10 @@ describe('shouldSkip — community-fabric-mode (AND-not-OR)', () => {
 
   it('does NOT skip for dense-urban yes-kids user (regression test for OR variant)', () => {
     const answers: Answers = {
-      'place-archetype-primary': { kind: 'forced_choice', choiceIndex: 0 },
+      'place-archetype': { kind: 'multi_select', selectedValues: ['transit-hub'] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['world-class-restaurants'],
+        selectedValues: ['world-class-restaurants', 'bars-nightlife'],
       },
       'family-horizon': { kind: 'forced_choice', choiceIndex: 0 },
     };
@@ -97,7 +97,7 @@ describe('shouldSkip — community-fabric-mode (AND-not-OR)', () => {
 
   it('does not skip for suburb-leaning no-kids user', () => {
     const answers: Answers = {
-      'place-archetype-primary': { kind: 'forced_choice', choiceIndex: 3 },
+      'place-archetype': { kind: 'multi_select', selectedValues: ['walkable-suburb'] },
       'family-horizon': { kind: 'forced_choice', choiceIndex: 2 },
     };
     expect(shouldSkip('community-fabric-mode', answers)).toBe(false);
@@ -108,18 +108,6 @@ describe('shouldSkip — community-fabric-mode (AND-not-OR)', () => {
   });
 });
 
-describe('shouldSkip — place-archetype-secondary', () => {
-  it('skips when primary is unanswered', () => {
-    expect(shouldSkip('place-archetype-secondary', {})).toBe(true);
-  });
-
-  it('does not skip when primary is answered', () => {
-    const answers: Answers = {
-      'place-archetype-primary': { kind: 'forced_choice', choiceIndex: 0 },
-    };
-    expect(shouldSkip('place-archetype-secondary', answers)).toBe(false);
-  });
-});
 
 describe('pruneSkippedAnswers', () => {
   it('drops commute-tolerance when commute-target is remote-only', () => {
@@ -179,12 +167,10 @@ describe('progressFor', () => {
   it('reports total = full visible count, collapsing grouped pairs to one step', () => {
     // Provide an answer set that triggers NO skips so the total reflects
     // pure visibility minus group collapse:
-    //   - place-archetype-primary answered → secondary doesn't skip
     //   - commute-target picks a real cluster → tolerance doesn't skip
     //   - family-horizon yes-kids → school-need + community-fabric-mode
     //     don't skip
     const fullAnswers: Answers = {
-      'place-archetype-primary': { kind: 'forced_choice', choiceIndex: 0 },
       'commute-target': { kind: 'multi_select', selectedValues: ['midtown'] },
       'family-horizon': { kind: 'forced_choice', choiceIndex: 0 },
     };

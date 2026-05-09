@@ -14,15 +14,6 @@ const FAMILY_HORIZON_NO_KIDS_INDEX = 2;
 // Conditional skips: when prior answers make a question meaningless, skip it.
 // Each rule documents WHY it skips, since these are easy to misjudge.
 export function shouldSkip(questionId: string, answers: Answers): boolean {
-  // place-archetype-secondary: meaningless when the user hasn't picked a
-  // primary archetype yet — there's no "first choice" to soften with a second.
-  // (When the user does pick primary, secondary is shown with a "no real
-  // second choice" escape option, so it's still skippable from the user side.)
-  if (questionId === 'place-archetype-secondary') {
-    const a = answers['place-archetype-primary'];
-    return !a || a.kind !== 'forced_choice';
-  }
-
   // commute-tolerance: meaningless when the user has no real commute target
   // (only "remote" / "other" selected on commute-target).
   if (questionId === 'commute-tolerance') {
