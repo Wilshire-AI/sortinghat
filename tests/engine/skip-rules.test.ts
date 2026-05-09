@@ -61,26 +61,6 @@ describe('shouldSkip — school-need', () => {
   });
 });
 
-describe('shouldSkip — cultural-communities', () => {
-  it('skips cultural-communities when cultural-anchor is not-a-factor', () => {
-    const answers: Answers = {
-      'cultural-anchor': { kind: 'forced_choice', choiceIndex: 2 },
-    };
-    expect(shouldSkip('cultural-communities', answers)).toBe(true);
-  });
-
-  it('does not skip cultural-communities when cultural-anchor is essential', () => {
-    const answers: Answers = {
-      'cultural-anchor': { kind: 'forced_choice', choiceIndex: 0 },
-    };
-    expect(shouldSkip('cultural-communities', answers)).toBe(false);
-  });
-
-  it('does not skip cultural-communities when cultural-anchor unanswered', () => {
-    expect(shouldSkip('cultural-communities', {})).toBe(false);
-  });
-});
-
 describe('shouldSkip — community-fabric-mode (AND-not-OR)', () => {
   it('skips for dense-urban no-kids user', () => {
     const answers: Answers = {
@@ -182,21 +162,14 @@ describe('progressFor', () => {
     expect(noKidsTotal).toBe(baseTotal - 1);
   });
 
-  it('reduces total when cultural-anchor is not-a-factor', () => {
-    const { total: baseTotal } = progressFor(0, questions, {});
-    const { total: noCultureTotal } = progressFor(0, questions, {
-      'cultural-anchor': { kind: 'forced_choice', choiceIndex: 2 },
-    });
-    expect(noCultureTotal).toBe(baseTotal - 1);
-  });
-
   it('current counts visible (non-skipped) positions only', () => {
     const noKidsAnswers: Answers = {
       'family-horizon': { kind: 'forced_choice', choiceIndex: 2 },
     };
-    // family-horizon is index 1 (after place-tier). User just answered Q2.
-    const { current } = progressFor(1, questions, noKidsAnswers);
-    expect(current).toBe(2);
+    // family-horizon is questions[0] under the easy-first ordering. User
+    // just answered Q1.
+    const { current } = progressFor(0, questions, noKidsAnswers);
+    expect(current).toBe(1);
   });
 
   it('current never exceeds total', () => {

@@ -1,6 +1,18 @@
 import type { Question } from './types';
 
+// Ordering principle: easy → hard. The user starts with concrete factual
+// questions (kids? where do you work? how long can you commute?), moves
+// through low-commitment multi-selects, then sliders, then concrete
+// tradeoffs, and ends with the heaviest reflection (vibe/identity/place-tier).
+// must-haves is the final commitment ritual.
+//
+// Skip-rule constraints respected:
+// - school-need depends on family-horizon → must come after family-horizon
+// - commute-tolerance depends on commute-target → must come immediately after
+//   (groupNext: true on commute-target keeps them on the same screen)
+
 export const questions: readonly Question[] = [
+  // PHASE 1 — WARM-UP (concrete facts)
   {
     id: 'family-horizon',
     kind: 'forced_choice',
@@ -12,155 +24,39 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'place-tier',
-    kind: 'forced_choice',
-    prompt: 'Which sounds most like the life you want?',
-    choices: [
-      {
-        label: 'A different walk every weekend. The train comes every four minutes.',
-        impacts: {
-          'urban-intensity-tolerance': 0.55,
-          'rootedness-vs-access': 0.40,
-          'daily-life-walkability': 0.55,
-        },
-      },
-      {
-        label: 'Same coffee shop most mornings. The corner where I run into people I know.',
-        impacts: {
-          'urban-intensity-tolerance': 0.0,
-          'daily-life-walkability': 0.50,
-          'rootedness-vs-access': -0.20,
-        },
-      },
-      {
-        label: 'Saturday is the farmers market. A small downtown I walk to.',
-        impacts: {
-          'urban-intensity-tolerance': -0.40,
-          'rootedness-vs-access': -0.55,
-          'daily-life-walkability': 0.60,
-          'community-fabric': 0.50,
-        },
-      },
-      {
-        label: 'We host. A yard, a driveway, a dining table for ten. Day-to-day means the car.',
-        impacts: {
-          'urban-intensity-tolerance': -0.55,
-          'rootedness-vs-access': -0.65,
-          'daily-life-walkability': 0.05,
-          'community-fabric': -0.40,
-        },
-      },
-      {
-        label: 'Woods out back. The car is part of the deal.',
-        impacts: {
-          'urban-intensity-tolerance': -0.70,
-          'rootedness-vs-access': -0.70,
-          'daily-life-walkability': -0.30,
-          'environmental-openness': 0.30,
-        },
-      },
-      {
-        label: 'Still figuring it out. Show me a mix.',
-        impacts: {},
-      },
+    id: 'commute-target',
+    kind: 'multi_select',
+    purpose: 'commute_targets',
+    groupNext: true,
+    prompt: 'Where will you actually need to be? Pick all that apply, including a partner\'s office if you\'re a couple.',
+    helperText: 'We weight neighborhoods by door-to-door commute. Pick "Mostly remote" if commute isn\'t a constraint.',
+    options: [
+      { value: 'midtown', label: 'Midtown Manhattan (Grand Central / Penn / Bryant Park)' },
+      { value: 'fidi', label: 'Financial District / Lower Manhattan' },
+      { value: 'hudson-yards', label: 'Hudson Yards / West Chelsea' },
+      { value: 'lic', label: 'Long Island City / Court Square' },
+      { value: 'downtown-brooklyn', label: 'Downtown Brooklyn / DUMBO' },
+      { value: 'newport-jc', label: 'Jersey City (Newport / Exchange Place)' },
+      { value: 'stamford', label: 'Stamford CT' },
+      { value: 'greenwich', label: 'Greenwich CT' },
+      { value: 'westport', label: 'Westport CT' },
+      { value: 'remote', label: 'Mostly remote. Occasional touchdown is fine.' },
+      { value: 'other', label: 'Somewhere else (we\'ll skip commute scoring)' },
     ],
   },
   {
-    id: 'access-vs-space',
+    id: 'commute-tolerance',
     kind: 'forced_choice',
-    prompt: 'Smaller in the middle of everything, or more space further out?',
+    prompt: 'How much door-to-door commute can you live with on a typical day?',
     choices: [
-      {
-        label: 'In the middle of everything. Trade space for being where it\'s all happening.',
-        impacts: { 'urban-intensity-tolerance': 0.5, 'space-sensitivity': -0.5 },
-      },
-      {
-        label: 'More space. I\'ll travel for the action when I want it.',
-        impacts: { 'urban-intensity-tolerance': -0.4, 'space-sensitivity': 0.6 },
-      },
-      {
-        label: 'Either, depending on the actual tradeoff.',
-        impacts: {},
-      },
+      { label: 'Under 30 min. Anything more drains me.', impacts: {}, commuteToleranceMinutes: 30 },
+      { label: '30 to 45 min. Pretty standard NYC commute.', impacts: {}, commuteToleranceMinutes: 45 },
+      { label: '45 to 60 min. Fine if the neighborhood is right.', impacts: {}, commuteToleranceMinutes: 60 },
+      { label: '60+ min. Willing to trade for what I want.', impacts: {}, commuteToleranceMinutes: 90 },
     ],
   },
-  {
-    id: 'transit-redundancy',
-    kind: 'forced_choice',
-    prompt: 'How do you mostly want to get around?',
-    choices: [
-      {
-        label: 'I\'d take transit. I want multiple options.',
-        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
-      },
-      {
-        label: 'I\'d take transit. One reliable line is enough.',
-        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
-      },
-      {
-        label: 'I\'d drive. Car-dependent is fine.',
-        impacts: { 'transit-psychology': 0 },
-        softPrefs: ['car-friendly'],
-      },
-    ],
-  },
-  {
-    id: 'rootedness-vs-access-fit',
-    kind: 'forced_choice',
-    prompt: 'Two equally great neighborhoods. Pick the one that pulls you more.',
-    choices: [
-      {
-        label: 'The one where you\'d recognize half the regulars at your coffee shop within a year.',
-        impacts: { 'rootedness-vs-access': -0.7 },
-      },
-      {
-        label: 'The one where you can walk to a different world-class restaurant every night.',
-        impacts: { 'rootedness-vs-access': 0.7 },
-      },
-      {
-        label: 'Either, depending on the rest of the fit.',
-        impacts: { 'rootedness-vs-access': 0 },
-      },
-    ],
-  },
-  {
-    id: 'income-tier-fit',
-    kind: 'forced_choice',
-    prompt: 'Higher-income polished, or middle-income value-priced. Which fits?',
-    choices: [
-      {
-        label: 'High-income, established. Professional neighbors, top schools, polish.',
-        impacts: { 'prestige-orientation': 0.7 },
-      },
-      {
-        label: 'Either, depending on the actual fit.',
-        impacts: { 'prestige-orientation': 0 },
-      },
-      {
-        label: 'Middle or working-income. Value-priced, lived-in, less polish.',
-        impacts: { 'prestige-orientation': -0.7 },
-      },
-    ],
-  },
-  {
-    id: 'social-register-fit',
-    kind: 'forced_choice',
-    prompt: 'Which neighborhood vibe pulls you more?',
-    choices: [
-      {
-        label: 'Casual, progressive, a little bohemian. Lived-in and unbuttoned.',
-        impacts: { 'social-register': -0.7 },
-      },
-      {
-        label: 'Polished and traditional. Classic, put-together, doorman-fluent.',
-        impacts: { 'social-register': 0.7 },
-      },
-      {
-        label: 'No strong pull either way.',
-        impacts: { 'social-register': 0 },
-      },
-    ],
-  },
+
+  // PHASE 2 — BROWSE WITHOUT COMMITTING (multi-selects)
   {
     id: 'housing-acceptance',
     kind: 'multi_select',
@@ -188,44 +84,6 @@ export const questions: readonly Question[] = [
         value: 'house-townhouse',
         label: 'Townhouse or single-family with your own front door.',
       },
-    ],
-  },
-  {
-    id: 'cultural-communities',
-    kind: 'multi_select',
-    purpose: 'cultural_tags',
-    prompt: 'Which communities, if any, do you want close to home?',
-    helperText: 'Ethnic or religious. Each pick boosts matching neighborhoods. Skip if not applicable.',
-    dimensionImpactPerSelection: { 'cultural-ecosystem': 0.4 },
-    options: [
-      { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
-      { value: 'south-asian', label: 'South Asian (Indian, Pakistani, Bangladeshi, Sri Lankan)' },
-      { value: 'latin-american', label: 'Latin American (Mexican, Dominican, Puerto Rican, Colombian, Ecuadorian)' },
-      { value: 'caribbean', label: 'Caribbean (Jamaican, Haitian, Trinidadian)' },
-      { value: 'middle-eastern', label: 'Middle Eastern (Arab, Persian, Turkish, Israeli)' },
-      { value: 'mediterranean', label: 'Mediterranean (Greek, Italian)' },
-      { value: 'eastern-european', label: 'Eastern European (Russian, Polish, Ukrainian)' },
-      { value: 'jewish', label: 'Jewish community (Orthodox, Reform)' },
-      { value: 'african-american', label: 'African American' },
-      { value: 'west-african', label: 'West African (Senegalese, Nigerian)' },
-    ],
-  },
-  {
-    id: 'creative-immersion',
-    kind: 'slider',
-    prompt: 'I want art galleries and indie music venues on my own block.',
-    lowLabel: 'Rather not',
-    highLabel: 'Yes please',
-    dimensionId: 'creative-energy',
-  },
-  {
-    id: 'noise-tolerance',
-    kind: 'forced_choice',
-    prompt: 'Same price, same size: quiet block, or above a busy street?',
-    choices: [
-      { label: 'The quiet one, no contest', impacts: { 'friction-sensitivity': 0.7 } },
-      { label: 'The busy one. I like the energy.', impacts: { 'friction-sensitivity': -0.6 } },
-      { label: 'Depends on the day', impacts: { 'friction-sensitivity': 0.0 } },
     ],
   },
   {
@@ -334,6 +192,28 @@ export const questions: readonly Question[] = [
     ],
   },
   {
+    id: 'cultural-communities',
+    kind: 'multi_select',
+    purpose: 'cultural_tags',
+    prompt: 'Which communities, if any, do you want close to home?',
+    helperText: 'Ethnic or religious. Each pick boosts matching neighborhoods. Skip if not applicable.',
+    dimensionImpactPerSelection: { 'cultural-ecosystem': 0.4 },
+    options: [
+      { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
+      { value: 'south-asian', label: 'South Asian (Indian, Pakistani, Bangladeshi, Sri Lankan)' },
+      { value: 'latin-american', label: 'Latin American (Mexican, Dominican, Puerto Rican, Colombian, Ecuadorian)' },
+      { value: 'caribbean', label: 'Caribbean (Jamaican, Haitian, Trinidadian)' },
+      { value: 'middle-eastern', label: 'Middle Eastern (Arab, Persian, Turkish, Israeli)' },
+      { value: 'mediterranean', label: 'Mediterranean (Greek, Italian)' },
+      { value: 'eastern-european', label: 'Eastern European (Russian, Polish, Ukrainian)' },
+      { value: 'jewish', label: 'Jewish community (Orthodox, Reform)' },
+      { value: 'african-american', label: 'African American' },
+      { value: 'west-african', label: 'West African (Senegalese, Nigerian)' },
+    ],
+  },
+
+  // PHASE 3 — SINGLE-AXIS PREFERENCES (sliders)
+  {
     id: 'safety-need',
     kind: 'slider',
     prompt: 'I need to feel safe walking home alone late at night.',
@@ -349,6 +229,180 @@ export const questions: readonly Question[] = [
     highLabel: 'Required',
     dimensionId: 'school-quality',
   },
+  {
+    id: 'creative-immersion',
+    kind: 'slider',
+    prompt: 'I want art galleries and indie music venues on my own block.',
+    lowLabel: 'Rather not',
+    highLabel: 'Yes please',
+    dimensionId: 'creative-energy',
+  },
+
+  // PHASE 4 — CONCRETE TRADEOFFS (forced-choice)
+  {
+    id: 'transit-redundancy',
+    kind: 'forced_choice',
+    prompt: 'How do you mostly want to get around?',
+    choices: [
+      {
+        label: 'I\'d take transit. I want multiple options.',
+        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
+      },
+      {
+        label: 'I\'d take transit. One reliable line is enough.',
+        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
+      },
+      {
+        label: 'I\'d drive. Car-dependent is fine.',
+        impacts: { 'transit-psychology': 0 },
+        softPrefs: ['car-friendly'],
+      },
+    ],
+  },
+  {
+    id: 'noise-tolerance',
+    kind: 'forced_choice',
+    prompt: 'Same price, same size: quiet block, or above a busy street?',
+    choices: [
+      { label: 'The quiet one, no contest', impacts: { 'friction-sensitivity': 0.7 } },
+      { label: 'The busy one. I like the energy.', impacts: { 'friction-sensitivity': -0.6 } },
+      { label: 'Depends on the day', impacts: { 'friction-sensitivity': 0.0 } },
+    ],
+  },
+  {
+    id: 'access-vs-space',
+    kind: 'forced_choice',
+    prompt: 'Smaller in the middle of everything, or more space further out?',
+    choices: [
+      {
+        label: 'In the middle of everything. Trade space for being where it\'s all happening.',
+        impacts: { 'urban-intensity-tolerance': 0.5, 'space-sensitivity': -0.5 },
+      },
+      {
+        label: 'More space. I\'ll travel for the action when I want it.',
+        impacts: { 'urban-intensity-tolerance': -0.4, 'space-sensitivity': 0.6 },
+      },
+      {
+        label: 'Either, depending on the actual tradeoff.',
+        impacts: {},
+      },
+    ],
+  },
+
+  // PHASE 5 — REFLECTION / IDENTITY (heavier forced-choice)
+  {
+    id: 'social-register-fit',
+    kind: 'forced_choice',
+    prompt: 'Which neighborhood vibe pulls you more?',
+    choices: [
+      {
+        label: 'Casual, progressive, a little bohemian. Lived-in and unbuttoned.',
+        impacts: { 'social-register': -0.7 },
+      },
+      {
+        label: 'Polished and traditional. Classic, put-together, doorman-fluent.',
+        impacts: { 'social-register': 0.7 },
+      },
+      {
+        label: 'No strong pull either way.',
+        impacts: { 'social-register': 0 },
+      },
+    ],
+  },
+  {
+    id: 'income-tier-fit',
+    kind: 'forced_choice',
+    prompt: 'Higher-income polished, or middle-income value-priced. Which fits?',
+    choices: [
+      {
+        label: 'High-income, established. Professional neighbors, top schools, polish.',
+        impacts: { 'prestige-orientation': 0.7 },
+      },
+      {
+        label: 'Either, depending on the actual fit.',
+        impacts: { 'prestige-orientation': 0 },
+      },
+      {
+        label: 'Middle or working-income. Value-priced, lived-in, less polish.',
+        impacts: { 'prestige-orientation': -0.7 },
+      },
+    ],
+  },
+  {
+    id: 'rootedness-vs-access-fit',
+    kind: 'forced_choice',
+    prompt: 'Two equally great neighborhoods. Pick the one that pulls you more.',
+    choices: [
+      {
+        label: 'The one where you\'d recognize half the regulars at your coffee shop within a year.',
+        impacts: { 'rootedness-vs-access': -0.7 },
+      },
+      {
+        label: 'The one where you can walk to a different world-class restaurant every night.',
+        impacts: { 'rootedness-vs-access': 0.7 },
+      },
+      {
+        label: 'Either, depending on the rest of the fit.',
+        impacts: { 'rootedness-vs-access': 0 },
+      },
+    ],
+  },
+  {
+    id: 'place-tier',
+    kind: 'forced_choice',
+    prompt: 'Which sounds most like the life you want?',
+    choices: [
+      {
+        label: 'A different walk every weekend. The train comes every four minutes.',
+        impacts: {
+          'urban-intensity-tolerance': 0.55,
+          'rootedness-vs-access': 0.40,
+          'daily-life-walkability': 0.55,
+        },
+      },
+      {
+        label: 'Same coffee shop most mornings. The corner where I run into people I know.',
+        impacts: {
+          'urban-intensity-tolerance': 0.0,
+          'daily-life-walkability': 0.50,
+          'rootedness-vs-access': -0.20,
+        },
+      },
+      {
+        label: 'Saturday is the farmers market. A small downtown I walk to.',
+        impacts: {
+          'urban-intensity-tolerance': -0.40,
+          'rootedness-vs-access': -0.55,
+          'daily-life-walkability': 0.60,
+          'community-fabric': 0.50,
+        },
+      },
+      {
+        label: 'We host. A yard, a driveway, a dining table for ten. Day-to-day means the car.',
+        impacts: {
+          'urban-intensity-tolerance': -0.55,
+          'rootedness-vs-access': -0.65,
+          'daily-life-walkability': 0.05,
+          'community-fabric': -0.40,
+        },
+      },
+      {
+        label: 'Woods out back. The car is part of the deal.',
+        impacts: {
+          'urban-intensity-tolerance': -0.70,
+          'rootedness-vs-access': -0.70,
+          'daily-life-walkability': -0.30,
+          'environmental-openness': 0.30,
+        },
+      },
+      {
+        label: 'Still figuring it out. Show me a mix.',
+        impacts: {},
+      },
+    ],
+  },
+
+  // PHASE 6 — GATED + COMMIT
   {
     id: 'community-fabric-mode',
     kind: 'forced_choice',
@@ -366,38 +420,6 @@ export const questions: readonly Question[] = [
         label: 'Either, if the house and commute work.',
         impacts: { 'community-fabric': 0 },
       },
-    ],
-  },
-  {
-    id: 'commute-target',
-    kind: 'multi_select',
-    purpose: 'commute_targets',
-    groupNext: true,
-    prompt: 'Where will you actually need to be? Pick all that apply, including a partner\'s office if you\'re a couple.',
-    helperText: 'We weight neighborhoods by door-to-door commute. Pick "Mostly remote" if commute isn\'t a constraint.',
-    options: [
-      { value: 'midtown', label: 'Midtown Manhattan (Grand Central / Penn / Bryant Park)' },
-      { value: 'fidi', label: 'Financial District / Lower Manhattan' },
-      { value: 'hudson-yards', label: 'Hudson Yards / West Chelsea' },
-      { value: 'lic', label: 'Long Island City / Court Square' },
-      { value: 'downtown-brooklyn', label: 'Downtown Brooklyn / DUMBO' },
-      { value: 'newport-jc', label: 'Jersey City (Newport / Exchange Place)' },
-      { value: 'stamford', label: 'Stamford CT' },
-      { value: 'greenwich', label: 'Greenwich CT' },
-      { value: 'westport', label: 'Westport CT' },
-      { value: 'remote', label: 'Mostly remote. Occasional touchdown is fine.' },
-      { value: 'other', label: 'Somewhere else (we\'ll skip commute scoring)' },
-    ],
-  },
-  {
-    id: 'commute-tolerance',
-    kind: 'forced_choice',
-    prompt: 'How much door-to-door commute can you live with on a typical day?',
-    choices: [
-      { label: 'Under 30 min. Anything more drains me.', impacts: {}, commuteToleranceMinutes: 30 },
-      { label: '30 to 45 min. Pretty standard NYC commute.', impacts: {}, commuteToleranceMinutes: 45 },
-      { label: '45 to 60 min. Fine if the neighborhood is right.', impacts: {}, commuteToleranceMinutes: 60 },
-      { label: '60+ min. Willing to trade for what I want.', impacts: {}, commuteToleranceMinutes: 90 },
     ],
   },
   {
