@@ -12,48 +12,191 @@ import type { Question } from './types';
 //   (groupNext: true on commute-target keeps them on the same screen)
 
 export const questions: readonly Question[] = [
-  // PHASE 1 — WARM-UP (concrete behavior, no values judgment)
+  // PHASE 1 — PLACE ARCHETYPE (single primary + softer secondary, replacing
+  // the old transit-redundancy + access-vs-space + place-tier triple). The
+  // 6 archetypes are calibrated to real NYC-metro neighborhood clusters; the
+  // primary captures the user's strongest archetype pull, the secondary
+  // applies a softer (×0.5) nudge in case they'd also be happy elsewhere.
+  // See .polaris/place-archetype-consolidation-2026-05-09.md for the dim
+  // mapping derivation + persona-panel validation.
   {
-    id: 'transit-redundancy',
+    id: 'place-archetype-primary',
     kind: 'forced_choice',
-    prompt: 'How do you mostly want to get around?',
+    prompt: 'Which kind of place feels most like home?',
     choices: [
       {
-        label: 'I\'d take transit. I want multiple options.',
-        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
+        label: 'Transit hub. Multi-line transit, dense blocks, walk to almost everything.',
+        impacts: {
+          'urban-intensity-tolerance': 0.40,
+          'transit-psychology': 0.55,
+          'daily-life-walkability': 0.45,
+          'rootedness-vs-access': 0.30,
+          'visitor-facing-energy': 0.20,
+          'space-sensitivity': -0.20,
+          'streetscape-quality': 0.15,
+        },
       },
       {
-        label: 'I\'d take transit. One reliable line is enough.',
-        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
+        label: 'Walkable urban village. Real downtown, lower density, more elbow room.',
+        impacts: {
+          'urban-intensity-tolerance': -0.10,
+          'transit-psychology': 0.30,
+          'daily-life-walkability': 0.50,
+          'rootedness-vs-access': -0.45,
+          'community-fabric': 0.20,
+          'streetscape-quality': 0.35,
+          'friction-sensitivity': 0.20,
+          'visitor-facing-energy': -0.10,
+        },
       },
       {
-        label: 'I\'d drive. Car-dependent is fine.',
-        impacts: { 'transit-psychology': 0 },
-        softPrefs: ['car-friendly'],
+        label: 'Quiet residential city neighborhood. Mostly residential blocks, single-line transit.',
+        impacts: {
+          'urban-intensity-tolerance': -0.40,
+          'transit-psychology': 0.20,
+          'daily-life-walkability': 0.30,
+          'rootedness-vs-access': -0.50,
+          'friction-sensitivity': 0.45,
+          'space-sensitivity': 0.30,
+          'streetscape-quality': 0.30,
+          'visitor-facing-energy': -0.40,
+          'environmental-openness': 0.20,
+        },
+      },
+      {
+        label: 'Walkable suburb. Main Street, town center, neighbors you see around.',
+        impacts: {
+          'urban-intensity-tolerance': -0.45,
+          'transit-psychology': 0.25,
+          'daily-life-walkability': 0.45,
+          'rootedness-vs-access': -0.65,
+          'space-sensitivity': 0.55,
+          'community-fabric': 0.45,
+          'friction-sensitivity': 0.55,
+          'environmental-openness': 0.45,
+          'streetscape-quality': 0.30,
+          'family-trajectory': 0.20,
+          'visitor-facing-energy': -0.45,
+        },
+      },
+      {
+        label: 'Estate suburb. Lawns, larger lots, country club, more privacy.',
+        impacts: {
+          'urban-intensity-tolerance': -0.55,
+          'rootedness-vs-access': -0.65,
+          'space-sensitivity': 0.65,
+          'community-fabric': -0.40,
+          'friction-sensitivity': 0.65,
+          'environmental-openness': 0.55,
+          'prestige-orientation': 0.25,
+          'social-register': 0.25,
+          'family-trajectory': 0.20,
+          'visitor-facing-energy': -0.50,
+        },
+      },
+      {
+        label: 'Exurb or rural. Lots of land, woods or village feel, car for everything.',
+        impacts: {
+          'urban-intensity-tolerance': -0.65,
+          'rootedness-vs-access': -0.55,
+          'space-sensitivity': 0.65,
+          'friction-sensitivity': 0.60,
+          'environmental-openness': 0.55,
+          'community-fabric': -0.20,
+          'visitor-facing-energy': -0.55,
+        },
       },
     ],
   },
   {
-    id: 'access-vs-space',
+    id: 'place-archetype-secondary',
     kind: 'forced_choice',
-    prompt: 'Where on the density spectrum do you actually want to live?',
+    prompt: 'Any second choice you would also be happy in?',
+    helperText: 'Optional. Adds a softer pull toward this archetype. Pick "no real second choice" if your top pick is the only one that fits.',
     choices: [
       {
-        label: 'In the middle of everything. Trade space for being where it\'s all happening.',
-        impacts: { 'urban-intensity-tolerance': 0.55, 'space-sensitivity': -0.5 },
+        label: 'Transit hub.',
+        impacts: {
+          'urban-intensity-tolerance': 0.20,
+          'transit-psychology': 0.275,
+          'daily-life-walkability': 0.225,
+          'rootedness-vs-access': 0.15,
+          'visitor-facing-energy': 0.10,
+          'space-sensitivity': -0.10,
+          'streetscape-quality': 0.075,
+        },
       },
       {
-        label: 'A walkable neighborhood with elbow room. A real downtown, but not the densest part.',
-        impacts: { 'urban-intensity-tolerance': 0.0, 'space-sensitivity': 0.1, 'daily-life-walkability': 0.4, 'rootedness-vs-access': -0.2 },
+        label: 'Walkable urban village.',
+        impacts: {
+          'urban-intensity-tolerance': -0.05,
+          'transit-psychology': 0.15,
+          'daily-life-walkability': 0.25,
+          'rootedness-vs-access': -0.225,
+          'community-fabric': 0.10,
+          'streetscape-quality': 0.175,
+          'friction-sensitivity': 0.10,
+          'visitor-facing-energy': -0.05,
+        },
       },
       {
-        label: 'More space. I\'ll travel for the action when I want it.',
-        impacts: { 'urban-intensity-tolerance': -0.4, 'space-sensitivity': 0.6 },
+        label: 'Quiet residential city neighborhood.',
+        impacts: {
+          'urban-intensity-tolerance': -0.20,
+          'transit-psychology': 0.10,
+          'daily-life-walkability': 0.15,
+          'rootedness-vs-access': -0.25,
+          'friction-sensitivity': 0.225,
+          'space-sensitivity': 0.15,
+          'streetscape-quality': 0.15,
+          'visitor-facing-energy': -0.20,
+          'environmental-openness': 0.10,
+        },
       },
       {
-        label: 'Either, depending on the actual tradeoff.',
-        impacts: {},
+        label: 'Walkable suburb.',
+        impacts: {
+          'urban-intensity-tolerance': -0.225,
+          'transit-psychology': 0.125,
+          'daily-life-walkability': 0.225,
+          'rootedness-vs-access': -0.325,
+          'space-sensitivity': 0.275,
+          'community-fabric': 0.225,
+          'friction-sensitivity': 0.275,
+          'environmental-openness': 0.225,
+          'streetscape-quality': 0.15,
+          'family-trajectory': 0.10,
+          'visitor-facing-energy': -0.225,
+        },
       },
+      {
+        label: 'Estate suburb.',
+        impacts: {
+          'urban-intensity-tolerance': -0.275,
+          'rootedness-vs-access': -0.325,
+          'space-sensitivity': 0.325,
+          'community-fabric': -0.20,
+          'friction-sensitivity': 0.325,
+          'environmental-openness': 0.275,
+          'prestige-orientation': 0.125,
+          'social-register': 0.125,
+          'family-trajectory': 0.10,
+          'visitor-facing-energy': -0.25,
+        },
+      },
+      {
+        label: 'Exurb or rural.',
+        impacts: {
+          'urban-intensity-tolerance': -0.325,
+          'rootedness-vs-access': -0.275,
+          'space-sensitivity': 0.325,
+          'friction-sensitivity': 0.30,
+          'environmental-openness': 0.275,
+          'community-fabric': -0.10,
+          'visitor-facing-energy': -0.275,
+        },
+      },
+      { label: 'No real second choice.', impacts: {} },
     ],
   },
   {
@@ -339,74 +482,24 @@ export const questions: readonly Question[] = [
       },
     ],
   },
-  {
-    id: 'place-tier',
-    kind: 'forced_choice',
-    prompt: 'Which sounds most like the life you want?',
-    choices: [
-      {
-        label: 'A different walk every weekend. The train comes every four minutes.',
-        impacts: {
-          'urban-intensity-tolerance': 0.55,
-          'rootedness-vs-access': 0.40,
-          'daily-life-walkability': 0.55,
-        },
-      },
-      {
-        label: 'Same coffee shop most mornings. The corner where I run into people I know.',
-        impacts: {
-          'urban-intensity-tolerance': 0.0,
-          'daily-life-walkability': 0.50,
-          'rootedness-vs-access': -0.20,
-        },
-      },
-      {
-        label: 'Saturday is the farmers market. A small downtown I walk to.',
-        impacts: {
-          'urban-intensity-tolerance': -0.40,
-          'rootedness-vs-access': -0.55,
-          'daily-life-walkability': 0.60,
-          'community-fabric': 0.50,
-        },
-      },
-      {
-        label: 'We host. A yard, a driveway, a dining table for ten. Day-to-day means the car.',
-        impacts: {
-          'urban-intensity-tolerance': -0.55,
-          'rootedness-vs-access': -0.65,
-          'daily-life-walkability': 0.05,
-          'community-fabric': -0.40,
-        },
-      },
-      {
-        label: 'Woods out back. The car is part of the deal.',
-        impacts: {
-          'urban-intensity-tolerance': -0.70,
-          'rootedness-vs-access': -0.70,
-          'daily-life-walkability': -0.30,
-          'environmental-openness': 0.30,
-        },
-      },
-      {
-        label: 'Still figuring it out. Show me a mix.',
-        impacts: {},
-      },
-    ],
-  },
-
   // PHASE 6 — GATED + COMMIT
   {
+    // Magnitudes intentionally lower than they once were: with the new
+    // place-archetype-primary now disambiguating walkable-civic-suburb
+    // (community-fabric +0.45) from estate-club-suburb (community-fabric
+    // -0.40), this question is a finer correction lever, not the primary
+    // signal. Was ±0.75; now ±0.40.
     id: 'community-fabric-mode',
     kind: 'forced_choice',
     prompt: 'Which suburban social world feels more like home?',
     choices: [
       {
         label: 'Walkable village, public-school circles, neighbors you see around town.',
-        impacts: { 'community-fabric': 0.75 },
+        impacts: { 'community-fabric': 0.40 },
       },
       {
         label: 'Private estate, club-oriented, more space and fewer casual run-ins.',
-        impacts: { 'community-fabric': -0.75 },
+        impacts: { 'community-fabric': -0.40 },
       },
       {
         label: 'Either, if the house and commute work.',

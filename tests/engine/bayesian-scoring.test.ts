@@ -50,9 +50,10 @@ describe('logPriorForPopulation', () => {
     expect(logPriorForPopulation(6_300)).toBeLessThan(0);
   });
 
-  it('Williamsburg vs Chappaqua difference is ~2.19 log-units (β=0.50)', () => {
+  it('Williamsburg vs Chappaqua difference is ~1.31 log-units (β=0.30)', () => {
+    // ln(120000/1500) × 0.30 = ln(80) × 0.30 ≈ 1.315
     const diff = logPriorForPopulation(120_000) - logPriorForPopulation(1_500);
-    expect(diff).toBeCloseTo(2.19, 1);
+    expect(diff).toBeCloseTo(1.31, 1);
   });
 });
 

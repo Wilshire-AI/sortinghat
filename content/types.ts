@@ -58,6 +58,7 @@ export type ForcedChoiceQuestion = {
   id: string;
   kind: 'forced_choice';
   prompt: string;
+  helperText?: string;
   choices: {
     label: string;
     impacts: Partial<Record<DimensionId, number>>;

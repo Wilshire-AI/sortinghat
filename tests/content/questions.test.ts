@@ -47,15 +47,26 @@ describe('questions', () => {
       }
     }
   });
-  it('transit-redundancy is questions[0] (concrete behavior, instant opener)', () => {
-    expect(questions[0].id).toBe('transit-redundancy');
+  it('place-archetype-primary is questions[0] (single archetype Q replaces transit/access/place-tier triple)', () => {
+    expect(questions[0].id).toBe('place-archetype-primary');
   });
 
-  it('place-tier is reachable and has 6 choices including a zero-impact unsure option', () => {
-    const q = questions.find((x) => x.id === 'place-tier');
-    if (!q) throw new Error('place-tier missing from questions');
-    if (q.kind !== 'forced_choice') throw new Error('place-tier must be forced_choice');
+  it('place-archetype-primary has 6 archetypes with no Either/mix escape', () => {
+    const q = questions[0];
+    if (q.kind !== 'forced_choice') throw new Error('primary must be forced_choice');
     expect(q.choices).toHaveLength(6);
+    // Every archetype must contribute real signal — no zero-impact escape.
+    for (const c of q.choices) {
+      expect(Object.keys(c.impacts).length, `archetype "${c.label}" must have impacts`).toBeGreaterThan(0);
+    }
+  });
+
+  it('place-archetype-secondary is questions[1] with 7 options (6 archetypes + no-second-choice)', () => {
+    expect(questions[1].id).toBe('place-archetype-secondary');
+    const q = questions[1];
+    if (q.kind !== 'forced_choice') throw new Error('secondary must be forced_choice');
+    expect(q.choices).toHaveLength(7);
+    // The last option is the explicit "no real second choice" escape.
     const last = q.choices[q.choices.length - 1];
     expect(Object.keys(last.impacts)).toHaveLength(0);
   });
