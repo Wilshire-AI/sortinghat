@@ -315,12 +315,16 @@ function rankBayesian(
     return { neighborhood, logScore };
   });
 
-  // Per-user linear-in-log normalization for display: top match is 1.0,
-  // worst match is 0.0, others linearly interpolated in log-likelihood
-  // space. We deliberately don't show exp(logScore - maxLog) — that
-  // collapses exponentially and makes ~90% of the dataset display near
-  // zero, which paints the map all-red and reads as broken to users.
-  // Rank order is preserved (linear interpolation is monotonic).
+  // Per-user normalization for display. We deliberately don't show
+  // exp(logScore - maxLog) directly — that collapses exponentially and
+  // paints ~90% of the dataset near zero (whole map reads red).
+  // Pure linear-in-log goes the other way — median lands at 50% which
+  // renders as yellow-green, so most places look like decent fits even
+  // when they aren't. We squarethe linear-in-log score: top stays at
+  // 100%, worst stays at 0%, but the middle compresses toward red so
+  // mid-fit places read as honestly "meh" rather than misleadingly green.
+  // Rank order preserved (squaring a non-negative monotonic mapping is
+  // still monotonic).
   let maxLog = -Infinity;
   let minLog = Infinity;
   for (const s of logScored) {
@@ -328,15 +332,12 @@ function rankBayesian(
     if (s.logScore < minLog) minLog = s.logScore;
   }
   const range = maxLog - minLog;
-  const scored = logScored.map((s) => ({
-    neighborhood: s.neighborhood,
-    score:
-      maxLog === -Infinity
-        ? 0
-        : range > 0
-        ? (s.logScore - minLog) / range
-        : 1,
-  }));
+  const scored = logScored.map((s) => {
+    if (maxLog === -Infinity) return { neighborhood: s.neighborhood, score: 0 };
+    if (range <= 0) return { neighborhood: s.neighborhood, score: 1 };
+    const linear = (s.logScore - minLog) / range;
+    return { neighborhood: s.neighborhood, score: linear * linear };
+  });
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
     return a.neighborhood.id.localeCompare(b.neighborhood.id);
