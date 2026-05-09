@@ -320,10 +320,6 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": []
-      },
       "creative-immersion": {
         "kind": "slider",
         "value": 1
@@ -370,6 +366,12 @@
       "must-haves": {
         "kind": "multi_select",
         "selectedValues": []
+      },
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "east-asian"
+        ]
       }
     }
   },
@@ -1942,19 +1944,29 @@
   "flushing": {
     "description": null,
     "answers": {
+      "place-tier": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
+      "transit-redundancy": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "rootedness-vs-access-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
+      "income-tier-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
+      "social-register-fit": {
         "kind": "forced_choice",
         "choiceIndex": 2
       },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
-      },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "east-asian"
-        ]
       },
       "walk-scenery": {
         "kind": "multi_select",
@@ -1963,6 +1975,10 @@
       "safety-need": {
         "kind": "slider",
         "value": -1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "commute-target": {
         "kind": "multi_select",
@@ -1992,41 +2008,27 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "walking-distance-amenities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "bars-nightlife",
-          "museums-concerts",
-          "community"
-        ]
-      },
-      "place-tier": {
-        "kind": "forced_choice",
-        "choiceIndex": 5
-      },
-      "income-tier-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
-      },
-      "social-register-fit": {
+      "access-vs-space": {
         "kind": "forced_choice",
         "choiceIndex": 1
+      },
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "east-asian"
+        ]
       },
       "creative-immersion": {
         "kind": "slider",
         "value": -1
       },
-      "transit-redundancy": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
-      "community-fabric-mode": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
-      "access-vs-space": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "walking-distance-amenities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "errands",
+          "bars-nightlife",
+          "museums-concerts"
+        ]
       }
     }
   },
@@ -2292,26 +2294,26 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "lively-retail",
+          "arts-scene",
+          "suburban-streets"
+        ]
+      },
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
           "errands",
-          "museums-concerts",
-          "community"
+          "bars-nightlife",
+          "parks-water"
         ]
       },
       "cultural-communities": {
         "kind": "multi_select",
         "selectedValues": [
-          "latin-american",
-          "african-american"
-        ]
-      },
-      "walk-scenery": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "lively-retail",
-          "suburban-streets"
+          "latin-american"
         ]
       }
     }
@@ -3172,6 +3174,10 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
+      "cultural-anchor": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "cultural-communities": {
         "kind": "multi_select",
         "selectedValues": [
@@ -3233,10 +3239,6 @@
       "social-register-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
-      },
-      "cultural-anchor": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
       }
     }
   },
@@ -3255,7 +3257,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "transit-redundancy": {
+      "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
       },
@@ -3271,9 +3273,15 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "creative-immersion": {
-        "kind": "slider",
-        "value": 1
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "east-asian"
+        ]
+      },
+      "noise-tolerance": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "safety-need": {
         "kind": "slider",
@@ -3303,13 +3311,9 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "noise-tolerance": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
-      },
-      "income-tier-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+      "creative-immersion": {
+        "kind": "slider",
+        "value": 1
       },
       "walking-distance-amenities": {
         "kind": "multi_select",
@@ -3322,14 +3326,13 @@
       "walk-scenery": {
         "kind": "multi_select",
         "selectedValues": [
+          "small-downtown",
           "suburban-streets"
         ]
       },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "east-asian"
-        ]
+      "transit-redundancy": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       }
     }
   },
@@ -3431,6 +3434,10 @@
   "palisades-park": {
     "description": null,
     "answers": {
+      "place-tier": {
+        "kind": "forced_choice",
+        "choiceIndex": 3
+      },
       "access-vs-space": {
         "kind": "forced_choice",
         "choiceIndex": 0
@@ -3451,19 +3458,9 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "built-form-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 3
-      },
       "cultural-anchor": {
         "kind": "forced_choice",
         "choiceIndex": 0
-      },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "east-asian"
-        ]
       },
       "creative-immersion": {
         "kind": "slider",
@@ -3473,23 +3470,13 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "walking-distance-amenities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "world-class-restaurants",
-          "bars-nightlife",
-          "community"
-        ]
-      },
-      "walk-scenery": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "leafy-residential"
-        ]
-      },
       "safety-need": {
         "kind": "slider",
-        "value": -1
+        "value": 1
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
       },
       "commute-target": {
         "kind": "multi_select",
@@ -3503,19 +3490,36 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "place-tier": {
+      "built-form-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "family-horizon": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "walking-distance-amenities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "world-class-restaurants",
+          "bars-nightlife",
+          "community"
+        ]
       },
       "school-need": {
         "kind": "slider",
         "value": 1
       },
-      "community-fabric-mode": {
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "east-asian"
+        ]
+      },
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "lively-retail",
+          "small-downtown"
+        ]
+      },
+      "family-horizon": {
         "kind": "forced_choice",
         "choiceIndex": 0
       }
@@ -3559,10 +3563,6 @@
           "jewish"
         ]
       },
-      "noise-tolerance": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
-      },
       "safety-need": {
         "kind": "slider",
         "value": -1
@@ -3573,7 +3573,7 @@
       },
       "community-fabric-mode": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 2
       },
       "commute-target": {
         "kind": "multi_select",
@@ -3599,18 +3599,23 @@
         "kind": "slider",
         "value": 1
       },
+      "noise-tolerance": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
           "world-class-restaurants",
-          "bars-nightlife",
-          "family-infra"
+          "family-infra",
+          "community"
         ]
       },
       "walk-scenery": {
         "kind": "multi_select",
         "selectedValues": [
-          "arts-scene"
+          "arts-scene",
+          "suburban-streets"
         ]
       }
     }
@@ -3704,8 +3709,7 @@
       "cultural-communities": {
         "kind": "multi_select",
         "selectedValues": [
-          "latin-american",
-          "african-american"
+          "latin-american"
         ]
       }
     }
@@ -3904,10 +3908,6 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "rootedness-vs-access-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
-      },
       "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 2
@@ -3919,6 +3919,10 @@
       "built-form-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "cultural-anchor": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
       },
       "creative-immersion": {
         "kind": "slider",
@@ -3956,14 +3960,18 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "cultural-anchor": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
       "cultural-communities": {
         "kind": "multi_select",
         "selectedValues": [
           "latin-american"
+        ]
+      },
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "real-park",
+          "waterfront",
+          "industrial-loft"
         ]
       },
       "community-fabric-mode": {
@@ -3974,18 +3982,16 @@
         "kind": "forced_choice",
         "choiceIndex": 4
       },
+      "rootedness-vs-access-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "parks-water"
-        ]
-      },
-      "walk-scenery": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "real-park",
-          "industrial-loft",
-          "suburban-streets"
+          "cafes",
+          "family-infra",
+          "community"
         ]
       }
     }
@@ -4084,7 +4090,23 @@
   "lincoln-square": {
     "description": null,
     "answers": {
+      "place-tier": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "family-horizon": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "access-vs-space": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
       "rootedness-vs-access-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
+      "income-tier-fit": {
         "kind": "forced_choice",
         "choiceIndex": 1
       },
@@ -4098,17 +4120,21 @@
       },
       "cultural-anchor": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       },
       "cultural-communities": {
         "kind": "multi_select",
         "selectedValues": []
       },
-      "creative-immersion": {
-        "kind": "slider",
-        "value": -0.5
-      },
       "noise-tolerance": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "safety-need": {
+        "kind": "slider",
+        "value": -1
+      },
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -4124,53 +4150,33 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "place-tier": {
-        "kind": "forced_choice",
-        "choiceIndex": 5
-      },
-      "income-tier-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "creative-immersion": {
+        "kind": "slider",
+        "value": 1
       },
       "walk-scenery": {
         "kind": "multi_select",
         "selectedValues": [
           "leafy-residential",
-          "lively-retail",
-          "arts-scene"
+          "small-downtown",
+          "suburban-streets"
         ]
-      },
-      "safety-need": {
-        "kind": "slider",
-        "value": -1
-      },
-      "school-need": {
-        "kind": "slider",
-        "value": 1
-      },
-      "community-fabric-mode": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
-      "family-horizon": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
-      },
-      "access-vs-space": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
       },
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "world-class-restaurants",
+          "errands",
           "museums-concerts",
           "community"
         ]
       },
+      "school-need": {
+        "kind": "slider",
+        "value": 0.5
+      },
       "transit-redundancy": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       }
     }
   },
@@ -5026,6 +5032,10 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "cultural-anchor": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "noise-tolerance": {
         "kind": "forced_choice",
         "choiceIndex": 1
@@ -5037,10 +5047,6 @@
       "school-need": {
         "kind": "slider",
         "value": 1
-      },
-      "community-fabric-mode": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
       },
       "commute-target": {
         "kind": "multi_select",
@@ -5062,6 +5068,24 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "east-asian"
+        ]
+      },
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "lively-retail",
+          "industrial-loft",
+          "small-downtown"
+        ]
+      },
+      "community-fabric-mode": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "creative-immersion": {
         "kind": "slider",
         "value": 1
@@ -5069,27 +5093,9 @@
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
+          "errands",
           "bars-nightlife",
-          "museums-concerts",
-          "family-infra"
-        ]
-      },
-      "cultural-anchor": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
-      "walk-scenery": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "lively-retail",
-          "arts-scene",
-          "industrial-loft"
-        ]
-      },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "east-asian"
+          "museums-concerts"
         ]
       }
     }
@@ -5267,13 +5273,13 @@
           "arts-scene"
         ]
       },
-      "social-register-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
       "family-horizon": {
         "kind": "forced_choice",
         "choiceIndex": 2
+      },
+      "social-register-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
       }
     }
   },
@@ -5841,13 +5847,9 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "access-vs-space": {
+      "family-horizon": {
         "kind": "forced_choice",
-        "choiceIndex": 2
-      },
-      "transit-redundancy": {
-        "kind": "forced_choice",
-        "choiceIndex": 2
+        "choiceIndex": 0
       },
       "rootedness-vs-access-fit": {
         "kind": "forced_choice",
@@ -5860,6 +5862,10 @@
       "social-register-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
+      },
+      "built-form-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 3
       },
       "cultural-anchor": {
         "kind": "forced_choice",
@@ -5875,14 +5881,6 @@
       "creative-immersion": {
         "kind": "slider",
         "value": -0.5
-      },
-      "noise-tolerance": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
-      "safety-need": {
-        "kind": "slider",
-        "value": -1
       },
       "school-need": {
         "kind": "slider",
@@ -5904,7 +5902,7 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "built-form-fit": {
+      "noise-tolerance": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
@@ -5914,17 +5912,25 @@
           "community"
         ]
       },
+      "safety-need": {
+        "kind": "slider",
+        "value": -1
+      },
+      "access-vs-space": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
+      },
       "walk-scenery": {
         "kind": "multi_select",
         "selectedValues": [
-          "industrial-loft",
-          "small-downtown",
+          "waterfront",
+          "arts-scene",
           "suburban-streets"
         ]
       },
-      "family-horizon": {
+      "transit-redundancy": {
         "kind": "forced_choice",
-        "choiceIndex": 0
+        "choiceIndex": 1
       }
     }
   },
@@ -6152,32 +6158,17 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "cultural-anchor": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
-      },
       "creative-immersion": {
         "kind": "slider",
-        "value": -0.5
+        "value": 0
       },
       "noise-tolerance": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "walk-scenery": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "waterfront",
-          "small-downtown"
-        ]
-      },
       "safety-need": {
         "kind": "slider",
-        "value": -1
-      },
-      "school-need": {
-        "kind": "slider",
-        "value": -1
+        "value": 1
       },
       "community-fabric-mode": {
         "kind": "forced_choice",
@@ -6195,6 +6186,17 @@
         "kind": "multi_select",
         "selectedValues": []
       },
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "real-park",
+          "small-downtown"
+        ]
+      },
+      "cultural-anchor": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
       "cultural-communities": {
         "kind": "multi_select",
         "selectedValues": [
@@ -6202,12 +6204,16 @@
           "latin-american"
         ]
       },
+      "school-need": {
+        "kind": "slider",
+        "value": 1
+      },
       "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
           "cafes",
           "museums-concerts",
-          "family-infra"
+          "parks-water"
         ]
       }
     }
@@ -6239,15 +6245,17 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "cultural-anchor": {
+      "social-register-fit": {
+        "kind": "forced_choice",
+        "choiceIndex": 2
+      },
+      "built-form-fit": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "south-asian"
-        ]
+      "cultural-anchor": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
       },
       "creative-immersion": {
         "kind": "slider",
@@ -6256,14 +6264,6 @@
       "noise-tolerance": {
         "kind": "forced_choice",
         "choiceIndex": 0
-      },
-      "walking-distance-amenities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "museums-concerts",
-          "family-infra",
-          "community"
-        ]
       },
       "walk-scenery": {
         "kind": "multi_select",
@@ -6295,13 +6295,21 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "social-register-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "east-asian",
+          "south-asian",
+          "latin-american"
+        ]
       },
-      "built-form-fit": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "walking-distance-amenities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "museums-concerts",
+          "family-infra",
+          "community"
+        ]
       }
     }
   },
@@ -6709,7 +6717,7 @@
       },
       "creative-immersion": {
         "kind": "slider",
-        "value": 0
+        "value": 0.5
       },
       "noise-tolerance": {
         "kind": "forced_choice",
@@ -6719,7 +6727,7 @@
         "kind": "multi_select",
         "selectedValues": [
           "cafes",
-          "parks-water",
+          "bars-nightlife",
           "family-infra"
         ]
       },
@@ -6727,7 +6735,6 @@
         "kind": "multi_select",
         "selectedValues": [
           "lively-retail",
-          "industrial-loft",
           "small-downtown"
         ]
       },
@@ -6737,11 +6744,11 @@
       },
       "school-need": {
         "kind": "slider",
-        "value": 0.5
+        "value": 1
       },
       "community-fabric-mode": {
         "kind": "forced_choice",
-        "choiceIndex": 2
+        "choiceIndex": 0
       },
       "commute-target": {
         "kind": "multi_select",
@@ -6757,7 +6764,7 @@
       },
       "place-tier": {
         "kind": "forced_choice",
-        "choiceIndex": 1
+        "choiceIndex": 2
       },
       "family-horizon": {
         "kind": "forced_choice",
@@ -8551,6 +8558,12 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "african-american"
+        ]
+      },
       "creative-immersion": {
         "kind": "slider",
         "value": 0.5
@@ -8598,10 +8611,6 @@
       "transit-redundancy": {
         "kind": "forced_choice",
         "choiceIndex": 0
-      },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": []
       },
       "noise-tolerance": {
         "kind": "forced_choice",
@@ -9842,24 +9851,38 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "latin-american"
+        ]
+      },
+      "creative-immersion": {
+        "kind": "slider",
+        "value": 0.5
+      },
       "noise-tolerance": {
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "walk-scenery": {
+      "walking-distance-amenities": {
         "kind": "multi_select",
         "selectedValues": [
-          "lively-retail",
-          "suburban-streets"
+          "errands",
+          "cafes"
         ]
+      },
+      "walk-scenery": {
+        "kind": "multi_select",
+        "selectedValues": []
       },
       "safety-need": {
         "kind": "slider",
-        "value": 1
+        "value": -1
       },
       "school-need": {
         "kind": "slider",
-        "value": 0.5
+        "value": -1
       },
       "community-fabric-mode": {
         "kind": "forced_choice",
@@ -9876,24 +9899,6 @@
       "must-haves": {
         "kind": "multi_select",
         "selectedValues": []
-      },
-      "creative-immersion": {
-        "kind": "slider",
-        "value": -0.5
-      },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "latin-american"
-        ]
-      },
-      "walking-distance-amenities": {
-        "kind": "multi_select",
-        "selectedValues": [
-          "errands",
-          "bars-nightlife",
-          "family-infra"
-        ]
       }
     }
   },
@@ -10847,17 +10852,31 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
+      "cultural-anchor": {
+        "kind": "forced_choice",
+        "choiceIndex": 0
+      },
+      "cultural-communities": {
+        "kind": "multi_select",
+        "selectedValues": [
+          "latin-american"
+        ]
+      },
       "creative-immersion": {
         "kind": "slider",
         "value": 0.5
+      },
+      "noise-tolerance": {
+        "kind": "forced_choice",
+        "choiceIndex": 1
       },
       "safety-need": {
         "kind": "slider",
         "value": -1
       },
-      "community-fabric-mode": {
-        "kind": "forced_choice",
-        "choiceIndex": 1
+      "school-need": {
+        "kind": "slider",
+        "value": 0.5
       },
       "commute-target": {
         "kind": "multi_select",
@@ -10882,15 +10901,7 @@
           "suburban-streets"
         ]
       },
-      "school-need": {
-        "kind": "slider",
-        "value": 0.5
-      },
-      "cultural-anchor": {
-        "kind": "forced_choice",
-        "choiceIndex": 0
-      },
-      "noise-tolerance": {
+      "community-fabric-mode": {
         "kind": "forced_choice",
         "choiceIndex": 1
       },
@@ -10899,10 +10910,6 @@
         "selectedValues": [
           "cafes"
         ]
-      },
-      "cultural-communities": {
-        "kind": "multi_select",
-        "selectedValues": []
       }
     }
   },

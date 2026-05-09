@@ -89,6 +89,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'built-form-register': -0.85,
     'rootedness-vs-access': 0.6, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.49 , 'community-fabric': 0.05 },
+    culturalTags: ['east-asian'],
     housingTypes: ['co-op', 'rental'],
     basePassages: {
       whyItFits: 'Less polished than the West Village, more itself. Walk-up apartments, a dense lattice of bars and bookshops and small restaurants, the layered residue of every NYC subculture from the 60s onward. Energy is high. Orderliness is not the point.',
@@ -441,7 +442,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     id: 'long-island-city', slug: 'long-island-city', name: 'Long Island City', borough: 'queens',
     scores: {
       'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.2,
-      'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.4,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.62,
       'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.5,
       'safety-need': 0.75, 'school-quality': 0.35,
     'social-register': 0.1,
@@ -816,7 +817,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     id: 'fort-lee', slug: 'fort-lee', name: 'Fort Lee', borough: 'nj',
     scores: {
       'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.3, 'prestige-orientation': 0.1,
-      'space-sensitivity': 0.6, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.52,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.78,
       'environmental-openness': 0.52, 'creative-energy': -0.1, 'friction-sensitivity': 0.5,
       'safety-need': 0.7, 'school-quality': 0.55,
     'social-register': 0.3,
@@ -1250,7 +1251,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     id: 'chinatown', slug: 'chinatown', name: 'Chinatown', borough: 'manhattan',
     scores: {
       'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.55, 'prestige-orientation': -0.3,
-      'space-sensitivity': -0.4, 'family-trajectory': 0.2, 'cultural-ecosystem': 0.85,
+      'space-sensitivity': -0.4, 'family-trajectory': 0.2, 'cultural-ecosystem': 0.55,
       'environmental-openness': 0.3, 'creative-energy': 0.3, 'friction-sensitivity': -0.5,
       'safety-need': 0.5, 'school-quality': 0.35,
     'social-register': -0.3,
@@ -1529,7 +1530,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     id: 'sunnyside', slug: 'sunnyside', name: 'Sunnyside', borough: 'queens',
     scores: {
       'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.5, 'prestige-orientation': -0.2,
-      'space-sensitivity': 0.7, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.6,
+      'space-sensitivity': 0.7, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.75,
       'environmental-openness': 0.5, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
       'safety-need': 0.8, 'school-quality': 0.35,
     'social-register': -0.5,
@@ -1561,7 +1562,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'built-form-register': -0.5,
     'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.8
     , 'streetscape-quality': 0.05 , 'community-fabric': 0.15 },
-    culturalTags: ['latin-american', 'south-asian'],
+    culturalTags: ['east-asian', 'latin-american', 'south-asian'],
     housingTypes: ['co-op', 'single-family', 'rental'],
     basePassages: {
       whyItFits: 'NYC\'s most layered Filipino, Ecuadorian, Colombian, and Bangladeshi neighborhood, with the 7 elevated above Roosevelt Avenue as the spine. Houses and pre-war apartments at notably lower prices than the rest of close-in Queens. The food is the reason to live here.',
