@@ -65,6 +65,10 @@ export type ForcedChoiceQuestion = {
     // can interpret as a small score boost on neighborhoods that match it
     // (e.g., 'car-friendly' boosts neighborhoods where carDependent === true).
     softPrefs?: readonly string[];
+    // Optional commute-tolerance setter (door-to-door minutes). Used by the
+    // commute-tolerance question — picking a choice writes this value to
+    // DerivedState.commuteToleranceMinutes. No effect on dim impacts.
+    commuteToleranceMinutes?: number;
   }[];
   // When true, the next visible question is rendered on the same screen as
   // this one (a "screen group"). Used to merge tightly-coupled question
@@ -106,14 +110,16 @@ export type MultiSelectQuestion = {
   // 'cultural_tags' (default): selections feed the soft cultural-tag boost
   // 'must_haves': selections become hard filters (excluded if not satisfied)
   // 'commute_targets': selections name office clusters the user commutes to
-  // 'commute_tolerance': single-pick (by convention); value is max minutes
   // 'walkable_amenities': selections add per-option dim impacts
+  // 'housing_acceptance': selections name housing-stock types the user would
+  //   accept; engine multiplies score by housing-overlap multiplier (mirrors
+  //   cultural-tag boost). Picking nothing = no effect (passes everywhere).
   purpose?:
     | 'cultural_tags'
     | 'must_haves'
     | 'commute_targets'
-    | 'commute_tolerance'
-    | 'walkable_amenities';
+    | 'walkable_amenities'
+    | 'housing_acceptance';
   // Optional cap on how many options the user can select.
   maxSelections?: number;
 };
@@ -143,10 +149,33 @@ export type Neighborhood = {
   // must-have filter.
   carDependent?: boolean;
   // Housing-stock types meaningfully present (not exhaustive — only flagged
-  // when there's enough of the type to be a real residential option).
-  // Used by must-have filters. 'luxury-highrise' means newer (post-2000ish)
-  // high-rise stock with full amenities (doorman, gym, etc.).
-  housingTypes?: ('single-family' | 'townhouse' | 'condo' | 'co-op' | 'rental' | 'luxury-highrise')[];
+  // when there's enough of the type to be a real residential option). Used
+  // by must-have filters AND by the housing-acceptance soft multiplier.
+  //
+  // Form-factor types: 'single-family', 'townhouse'.
+  // Tenure types: 'condo', 'co-op', 'rental'. Mostly legacy — orthogonal
+  //   to character so they don't help discriminate building style; kept
+  //   for backward compatibility with any callers that still read them.
+  // Character types (used by housing-acceptance):
+  //   'prewar-character' = intact prewar/brownstone/loft, original details,
+  //     period systems. Walkups, no doorman, quirks.
+  //   'prewar-renovated' = prewar shell with modernized interior systems
+  //     (often co-ops with renovation budgets, or gut-renovated condos).
+  //   'newer-lowrise' = post-2000ish low/mid-rise construction, recent
+  //     condos, modern stacked townhouses.
+  //   'luxury-highrise' = newer high-rise with full amenities (doorman,
+  //     gym, concierge). Boolean must-have filter still uses this.
+  housingTypes?: (
+    | 'single-family'
+    | 'townhouse'
+    | 'condo'
+    | 'co-op'
+    | 'rental'
+    | 'luxury-highrise'
+    | 'prewar-character'
+    | 'prewar-renovated'
+    | 'newer-lowrise'
+  )[];
   // True when the neighborhood has notable, recognizable calm residential
   // enclaves (historic district, gated section, signature side streets) that
   // someone seeking a quiet block would specifically know to seek out. Distinct
@@ -186,4 +215,4 @@ export type UserVector = Record<DimensionId, number>;
 
 // Bumped per schema change. Older fingerprints still decode (vector +
 // optional tags) but won't have mustHaves; that's a no-op default.
-export const CONTENT_VERSION = '2026-05-06-poc-v3' as const;
+export const CONTENT_VERSION = '2026-05-09-poc-v4' as const;

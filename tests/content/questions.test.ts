@@ -33,12 +33,13 @@ describe('questions', () => {
       }
     }
   });
-  it('place-tier is questions[0]', () => {
-    expect(questions[0].id).toBe('place-tier');
+  it('family-horizon is questions[0] (concrete-easy first to build commitment)', () => {
+    expect(questions[0].id).toBe('family-horizon');
   });
 
-  it('place-tier has 6 choices including a zero-impact unsure option', () => {
-    const q = questions[0];
+  it('place-tier is reachable and has 6 choices including a zero-impact unsure option', () => {
+    const q = questions.find((x) => x.id === 'place-tier');
+    if (!q) throw new Error('place-tier missing from questions');
     if (q.kind !== 'forced_choice') throw new Error('place-tier must be forced_choice');
     expect(q.choices).toHaveLength(6);
     const last = q.choices[q.choices.length - 1];

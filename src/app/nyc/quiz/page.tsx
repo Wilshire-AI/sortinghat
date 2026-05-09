@@ -100,6 +100,7 @@ export default function QuizPage() {
         commuteTargets: finalDerived.commuteTargets,
         commuteToleranceMinutes: finalDerived.commuteToleranceMinutes,
         softPrefs: finalDerived.softPrefs,
+        housingAcceptance: finalDerived.housingAcceptance,
       });
       router.push(`/nyc/results?f=${encoded}`);
     }

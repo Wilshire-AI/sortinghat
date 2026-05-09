@@ -83,6 +83,7 @@ export type RankOptions = {
   commuteToleranceMinutes?: number;
   commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
   softPrefs?: readonly string[];
+  housingAcceptance?: readonly string[];
   // Population data — when supplied, the engine multiplies in the population
   // prior and uses pop-scaled σ for the Gaussian likelihood. When omitted,
   // every nbhd is scored at the median-pop default.
@@ -120,6 +121,21 @@ const PRIOR_BETA = 0.50;
 const CULTURAL_TAG_MAX_MATCHES = 3;
 const SOFT_PREF_MULT_PER_MATCH = 1.05;
 const SOFT_PREF_MULT_CAP = 1.15;
+const HOUSING_ACCEPTANCE_BOOST = 0.05;
+const HOUSING_ACCEPTANCE_MAX_MATCHES = 4;
+
+// User-facing housing-acceptance values map to one or more concrete
+// housingTypes on neighborhoods. The mapping is one-to-many for cases
+// where the user vocabulary collapses distinctions the data preserves
+// (e.g., townhouse and single-family are one user choice, two data
+// values).
+const HOUSING_ACCEPTANCE_MAP: Record<string, readonly string[]> = {
+  'prewar-character': ['prewar-character'],
+  'prewar-renovated': ['prewar-renovated'],
+  'newer-lowrise': ['newer-lowrise'],
+  'luxury-highrise': ['luxury-highrise'],
+  'house-townhouse': ['single-family', 'townhouse'],
+};
 
 export function sigmaForPopulation(population: number): number {
   if (population <= 0) return SIGMA_MIN;
@@ -175,6 +191,18 @@ function softPrefMultiplier(neighborhood: Neighborhood, softPrefs: readonly stri
   return Math.min(SOFT_PREF_MULT_CAP, mult);
 }
 
+function housingMultiplier(neighborhood: Neighborhood, housingAcceptance: readonly string[]): number {
+  if (housingAcceptance.length === 0 || !neighborhood.housingTypes) return 1;
+  const nbhdTypes = new Set(neighborhood.housingTypes);
+  let matches = 0;
+  for (const userValue of housingAcceptance) {
+    const acceptableNbhdTypes = HOUSING_ACCEPTANCE_MAP[userValue];
+    if (!acceptableNbhdTypes) continue;
+    if (acceptableNbhdTypes.some((t) => nbhdTypes.has(t))) matches += 1;
+  }
+  return 1 + HOUSING_ACCEPTANCE_BOOST * Math.min(matches, HOUSING_ACCEPTANCE_MAX_MATCHES);
+}
+
 // Heuristic fallback for callers that don't provide touchedDims (pre-Bayesian
 // fingerprints, etc.): every dim with a non-zero user value is "touched."
 // Imprecise for edge cases where impacts canceled to exactly 0, but reasonable
@@ -210,6 +238,7 @@ export function rankNeighborhoods(
           commuteToleranceMinutes: topNOrOptions.commuteToleranceMinutes ?? 0,
           commuteMinutesByNeighborhood: topNOrOptions.commuteMinutesByNeighborhood,
           softPrefs: topNOrOptions.softPrefs ?? [],
+          housingAcceptance: topNOrOptions.housingAcceptance ?? [],
           populationsByNeighborhood: topNOrOptions.populationsByNeighborhood,
           touchedDims: topNOrOptions.touchedDims,
         }
@@ -221,6 +250,7 @@ export function rankNeighborhoods(
           commuteToleranceMinutes: 0,
           commuteMinutesByNeighborhood: undefined,
           softPrefs: [] as readonly string[],
+          housingAcceptance: [] as readonly string[],
           populationsByNeighborhood: undefined as Readonly<Record<NeighborhoodId, number>> | undefined,
           touchedDims: undefined as ReadonlySet<DimensionId> | undefined,
         };
@@ -244,6 +274,7 @@ function rankBayesian(
     commuteToleranceMinutes: number;
     commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
     softPrefs: readonly string[];
+    housingAcceptance: readonly string[];
     populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
     touchedDims?: ReadonlySet<DimensionId>;
   },
@@ -272,13 +303,15 @@ function rankBayesian(
         )
       : 1;
     const softMult = softPrefMultiplier(neighborhood, opts.softPrefs);
+    const housingMult = housingMultiplier(neighborhood, opts.housingAcceptance);
 
     const logScore =
       logLik +
       logPrior +
       Math.log(culMult) +
       Math.log(Math.max(commuteMult, 1e-9)) +
-      Math.log(softMult);
+      Math.log(softMult) +
+      Math.log(housingMult);
     return { neighborhood, logScore };
   });
 

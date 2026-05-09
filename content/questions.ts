@@ -2,6 +2,16 @@ import type { Question } from './types';
 
 export const questions: readonly Question[] = [
   {
+    id: 'family-horizon',
+    kind: 'forced_choice',
+    prompt: 'Are kids in the picture, either already or within a 5-year horizon?',
+    choices: [
+      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
+      { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
+      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': 0 } },
+    ],
+  },
+  {
     id: 'place-tier',
     kind: 'forced_choice',
     prompt: 'Which sounds most like the life you want?',
@@ -53,16 +63,6 @@ export const questions: readonly Question[] = [
         label: 'Still figuring it out. Show me a mix.',
         impacts: {},
       },
-    ],
-  },
-  {
-    id: 'family-horizon',
-    kind: 'forced_choice',
-    prompt: 'Are kids in the picture, either already or within a 5-year horizon?',
-    choices: [
-      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
-      { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
-      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': 0 } },
     ],
   },
   {
@@ -162,36 +162,32 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'built-form-fit',
-    kind: 'forced_choice',
-    prompt: 'What kind of building do you picture yourself living in?',
-    choices: [
+    id: 'housing-acceptance',
+    kind: 'multi_select',
+    purpose: 'housing_acceptance',
+    prompt: 'Which would you happily live in? Pick all that work.',
+    helperText: 'Boosts neighborhoods with housing stock you\'d actually take. Skip if no strong opinion.',
+    options: [
       {
-        label: 'Older with original character. Brownstone, prewar, or loft, quirks and all.',
-        impacts: { 'built-form-register': -0.7 },
+        value: 'prewar-character',
+        label: 'Prewar or brownstone with original character. Walkups, original details, quirks and all.',
       },
       {
-        label: 'Older if renovated. I want character and original details, but modern systems matter.',
-        impacts: { 'built-form-register': -0.3 },
+        value: 'prewar-renovated',
+        label: 'Prewar building, modernized interior. Character outside, updated systems inside.',
       },
       {
-        label: 'Newer. Modern construction, doorman, full elevator access, in-building services.',
-        impacts: { 'built-form-register': 0.7 },
+        value: 'newer-lowrise',
+        label: 'Newer low-rise. Recent construction, smaller buildings, no skyline tower.',
       },
       {
-        label: 'Either, depending on the neighborhood.',
-        impacts: { 'built-form-register': 0 },
+        value: 'luxury-highrise',
+        label: 'Highrise with doorman, gym, views, full amenities.',
       },
-    ],
-  },
-  {
-    id: 'cultural-anchor',
-    kind: 'forced_choice',
-    prompt: 'How important is culturally familiar food, community, or language nearby?',
-    choices: [
-      { label: 'Essential. I want it in daily reach.', impacts: { 'cultural-ecosystem': 0.8 } },
-      { label: 'Nice but not necessary.', impacts: { 'cultural-ecosystem': 0.2 } },
-      { label: 'Not really a factor.', impacts: { 'cultural-ecosystem': 0 } },
+      {
+        value: 'house-townhouse',
+        label: 'Townhouse or single-family with your own front door.',
+      },
     ],
   },
   {
@@ -200,6 +196,7 @@ export const questions: readonly Question[] = [
     purpose: 'cultural_tags',
     prompt: 'Which communities, if any, do you want close to home?',
     helperText: 'Ethnic or religious. Each pick boosts matching neighborhoods. Skip if not applicable.',
+    dimensionImpactPerSelection: { 'cultural-ecosystem': 0.4 },
     options: [
       { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
       { value: 'south-asian', label: 'South Asian (Indian, Pakistani, Bangladeshi, Sri Lankan)' },
@@ -297,7 +294,7 @@ export const questions: readonly Question[] = [
       {
         value: 'leafy-residential',
         label: 'Leafy residential blocks, stoops, brownstones, prewar facades',
-        impacts: { 'streetscape-quality': 0.45, 'built-form-register': -0.25 },
+        impacts: { 'streetscape-quality': 0.45 },
       },
       {
         value: 'lively-retail',
@@ -322,7 +319,7 @@ export const questions: readonly Question[] = [
       {
         value: 'industrial-loft',
         label: 'Industrial, warehouse, loft texture',
-        impacts: { 'built-form-register': -0.35, 'creative-energy': 0.25, 'friction-sensitivity': -0.10 },
+        impacts: { 'creative-energy': 0.25, 'friction-sensitivity': -0.10 },
       },
       {
         value: 'small-downtown',
@@ -394,15 +391,13 @@ export const questions: readonly Question[] = [
   },
   {
     id: 'commute-tolerance',
-    kind: 'multi_select',
-    purpose: 'commute_tolerance',
-    maxSelections: 1,
+    kind: 'forced_choice',
     prompt: 'How much door-to-door commute can you live with on a typical day?',
-    options: [
-      { value: '30', label: 'Under 30 min. Anything more drains me.' },
-      { value: '45', label: '30 to 45 min. Pretty standard NYC commute.' },
-      { value: '60', label: '45 to 60 min. Fine if the neighborhood is right.' },
-      { value: '90', label: '60+ min. Willing to trade for what I want.' },
+    choices: [
+      { label: 'Under 30 min. Anything more drains me.', impacts: {}, commuteToleranceMinutes: 30 },
+      { label: '30 to 45 min. Pretty standard NYC commute.', impacts: {}, commuteToleranceMinutes: 45 },
+      { label: '45 to 60 min. Fine if the neighborhood is right.', impacts: {}, commuteToleranceMinutes: 60 },
+      { label: '60+ min. Willing to trade for what I want.', impacts: {}, commuteToleranceMinutes: 90 },
     ],
   },
   {

@@ -20,6 +20,9 @@ export type DerivedState = {
   commuteTargets: string[];
   commuteToleranceMinutes: number;
   softPrefs: string[];
+  // Housing-stock types the user would accept. Selections multiply the
+  // posterior by 1 + 0.05 × matches (cap 1.20). Empty = no effect.
+  housingAcceptance: string[];
   // Dimensions where the user expressed any signal (including explicit
   // neutrality like a slider at 0 or a forced-choice option whose impacts
   // include this dim with value 0). A dim that was never queried — because
@@ -45,6 +48,7 @@ export function deriveState(
   const mustHaves = new Set<string>();
   const commuteTargets = new Set<string>();
   const softPrefs = new Set<string>();
+  const housingAcceptance = new Set<string>();
   const touchedDims = new Set<DimensionId>();
   let commuteToleranceMinutes = 0;
 
@@ -68,6 +72,9 @@ export function deriveState(
         if (choice.softPrefs) {
           for (const sp of choice.softPrefs) softPrefs.add(sp);
         }
+        if (typeof choice.commuteToleranceMinutes === 'number') {
+          commuteToleranceMinutes = choice.commuteToleranceMinutes;
+        }
       }
     } else if (q.kind === 'slider' && a.kind === 'slider') {
       vector[q.dimensionId] = a.value;
@@ -78,11 +85,16 @@ export function deriveState(
       } else if (q.purpose === 'commute_targets') {
         for (const v of a.selectedValues) commuteTargets.add(v);
       } else if (q.purpose === 'commute_tolerance') {
+        // Legacy path — commute-tolerance is now forced_choice. Kept to
+        // gracefully decode any in-flight quiz answers from clients that
+        // had the old multi-select shape stored.
         const picked = a.selectedValues[0];
         if (picked) {
           const parsed = parseInt(picked, 10);
           if (!Number.isNaN(parsed)) commuteToleranceMinutes = parsed;
         }
+      } else if (q.purpose === 'housing_acceptance') {
+        for (const v of a.selectedValues) housingAcceptance.add(v);
       } else if (q.purpose === 'walkable_amenities') {
         for (const v of a.selectedValues) {
           const opt = q.options.find((o) => o.value === v);
@@ -112,6 +124,7 @@ export function deriveState(
     commuteTargets: Array.from(commuteTargets),
     commuteToleranceMinutes,
     softPrefs: Array.from(softPrefs),
+    housingAcceptance: Array.from(housingAcceptance),
     touchedDims,
   };
 }

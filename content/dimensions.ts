@@ -116,17 +116,6 @@ export const dimensions: readonly Dimension[] = [
     },
   },
   {
-    id: 'built-form-register',
-    name: 'Built-Form Register',
-    kind: 'symmetric',
-    description:
-      'Dominant built-environment register: prewar/brownstone/loft character vs modern/amenity-tower. Captures everyday habitat texture: irregular rooms and original moldings vs doorman lobbies and floor-to-ceiling glass. Some users genuinely refuse prewar (no elevator, old systems). Others refuse glass towers (no character, no neighborhood texture). Both are durable preferences.',
-    poles: {
-      low: 'Prewar, brownstone, loft, low-rise. Character-and-quirks.',
-      high: 'New-build, amenity-rich, doorman, predictable systems.',
-    },
-  },
-  {
     id: 'rootedness-vs-access',
     name: 'Rootedness vs Access',
     kind: 'symmetric',

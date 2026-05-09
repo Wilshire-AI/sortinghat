@@ -22,6 +22,7 @@ type EncodedPayload = {
   ct?: string[]; // commute targets (office cluster ids) (optional)
   ctm?: number; // commute tolerance in minutes (optional)
   sp?: string[]; // soft preferences (e.g., 'car-friendly') (optional)
+  ha?: string[]; // housing-acceptance values (optional, omitted when empty)
 };
 
 function toBase64Url(input: string): string {
@@ -48,6 +49,7 @@ export type Fingerprint = {
   commuteTargets: string[];
   commuteToleranceMinutes: number;
   softPrefs: string[];
+  housingAcceptance: string[];
 };
 
 export type FingerprintInput = {
@@ -58,6 +60,7 @@ export type FingerprintInput = {
   commuteTargets?: string[];
   commuteToleranceMinutes?: number;
   softPrefs?: string[];
+  housingAcceptance?: string[];
 };
 
 export function encodeFingerprint(input: FingerprintInput): string;
@@ -94,6 +97,9 @@ export function encodeFingerprint(
     payload.ctm = opts.commuteToleranceMinutes;
   }
   if (opts.softPrefs && opts.softPrefs.length > 0) payload.sp = opts.softPrefs;
+  if (opts.housingAcceptance && opts.housingAcceptance.length > 0) {
+    payload.ha = opts.housingAcceptance;
+  }
   return toBase64Url(JSON.stringify(payload));
 }
 
@@ -127,6 +133,7 @@ export function decodeFingerprint(encoded: string): Fingerprint {
     ct?: unknown;
     ctm?: unknown;
     sp?: unknown;
+    ha?: unknown;
   };
   const vector: UserVector = {};
   for (const [k, val] of Object.entries(obj.v)) {
@@ -149,6 +156,9 @@ export function decodeFingerprint(encoded: string): Fingerprint {
   const softPrefs: string[] = Array.isArray(obj.sp)
     ? obj.sp.filter((x): x is string => typeof x === 'string')
     : [];
+  const housingAcceptance: string[] = Array.isArray(obj.ha)
+    ? obj.ha.filter((x): x is string => typeof x === 'string')
+    : [];
   return {
     vector,
     contentVersion: obj.cv,
@@ -157,5 +167,6 @@ export function decodeFingerprint(encoded: string): Fingerprint {
     commuteTargets,
     commuteToleranceMinutes,
     softPrefs,
+    housingAcceptance,
   };
 }

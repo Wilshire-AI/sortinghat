@@ -67,6 +67,7 @@ export function NeighborhoodFitExplanation({ neighborhood, dimensions }: Props) 
         topN: allNeighborhoods.length,
         selectedTags: decoded.selectedTags,
         softPrefs: decoded.softPrefs,
+        housingAcceptance: decoded.housingAcceptance,
         populationsByNeighborhood: neighborhoodPopulations,
       });
       const overallScore = ranked.find((r) => r.neighborhood.id === neighborhood.id)?.score ?? 0;

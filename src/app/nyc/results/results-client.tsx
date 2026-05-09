@@ -79,6 +79,7 @@ export function ResultsClient() {
         commuteToleranceMinutes: decoded.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
         softPrefs: decoded.softPrefs,
+        housingAcceptance: decoded.housingAcceptance,
         populationsByNeighborhood: neighborhoodPopulations,
       });
       const excludedIds = new Set(
