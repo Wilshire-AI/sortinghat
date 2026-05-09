@@ -12,15 +12,24 @@ import type { Question } from './types';
 //   (groupNext: true on commute-target keeps them on the same screen)
 
 export const questions: readonly Question[] = [
-  // PHASE 1 — WARM-UP (concrete facts)
+  // PHASE 1 — WARM-UP (high-signal, easy, non-personal)
   {
-    id: 'family-horizon',
+    id: 'access-vs-space',
     kind: 'forced_choice',
-    prompt: 'Are kids in the picture, either already or within a 5-year horizon?',
+    prompt: 'Smaller in the middle of everything, or more space further out?',
     choices: [
-      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
-      { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
-      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': 0 } },
+      {
+        label: 'In the middle of everything. Trade space for being where it\'s all happening.',
+        impacts: { 'urban-intensity-tolerance': 0.5, 'space-sensitivity': -0.5 },
+      },
+      {
+        label: 'More space. I\'ll travel for the action when I want it.',
+        impacts: { 'urban-intensity-tolerance': -0.4, 'space-sensitivity': 0.6 },
+      },
+      {
+        label: 'Either, depending on the actual tradeoff.',
+        impacts: {},
+      },
     ],
   },
   {
@@ -53,6 +62,16 @@ export const questions: readonly Question[] = [
       { label: '30 to 45 min. Pretty standard NYC commute.', impacts: {}, commuteToleranceMinutes: 45 },
       { label: '45 to 60 min. Fine if the neighborhood is right.', impacts: {}, commuteToleranceMinutes: 60 },
       { label: '60+ min. Willing to trade for what I want.', impacts: {}, commuteToleranceMinutes: 90 },
+    ],
+  },
+  {
+    id: 'family-horizon',
+    kind: 'forced_choice',
+    prompt: 'Are kids in the picture, either already or within a 5-year horizon?',
+    choices: [
+      { label: 'Yes. Kids are part of the household or plan.', impacts: { 'family-trajectory': 0.8 } },
+      { label: 'Maybe. Keeping that option open.', impacts: { 'family-trajectory': 0.2 } },
+      { label: 'Probably not, or not in this window.', impacts: { 'family-trajectory': 0 } },
     ],
   },
 
@@ -267,25 +286,6 @@ export const questions: readonly Question[] = [
       { label: 'The quiet one, no contest', impacts: { 'friction-sensitivity': 0.7 } },
       { label: 'The busy one. I like the energy.', impacts: { 'friction-sensitivity': -0.6 } },
       { label: 'Depends on the day', impacts: { 'friction-sensitivity': 0.0 } },
-    ],
-  },
-  {
-    id: 'access-vs-space',
-    kind: 'forced_choice',
-    prompt: 'Smaller in the middle of everything, or more space further out?',
-    choices: [
-      {
-        label: 'In the middle of everything. Trade space for being where it\'s all happening.',
-        impacts: { 'urban-intensity-tolerance': 0.5, 'space-sensitivity': -0.5 },
-      },
-      {
-        label: 'More space. I\'ll travel for the action when I want it.',
-        impacts: { 'urban-intensity-tolerance': -0.4, 'space-sensitivity': 0.6 },
-      },
-      {
-        label: 'Either, depending on the actual tradeoff.',
-        impacts: {},
-      },
     ],
   },
 

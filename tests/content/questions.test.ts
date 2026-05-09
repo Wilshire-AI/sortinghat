@@ -33,8 +33,8 @@ describe('questions', () => {
       }
     }
   });
-  it('family-horizon is questions[0] (concrete-easy first to build commitment)', () => {
-    expect(questions[0].id).toBe('family-horizon');
+  it('access-vs-space is questions[0] (high-signal, easy, non-personal opener)', () => {
+    expect(questions[0].id).toBe('access-vs-space');
   });
 
   it('place-tier is reachable and has 6 choices including a zero-impact unsure option', () => {
