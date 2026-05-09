@@ -29,11 +29,11 @@ describe('sigmaForPopulation', () => {
   // corpus. Empirical sweep showed σ scaling produced worse population fidelity
   // than flat σ + moderate prior. The Gaussian basins are uniform width;
   // population enters scoring only via the multiplicative prior.
-  it('returns 0.40 for every population (flat σ design)', () => {
-    expect(sigmaForPopulation(1_000)).toBeCloseTo(0.40, 3);
-    expect(sigmaForPopulation(30_000)).toBeCloseTo(0.40, 3);
-    expect(sigmaForPopulation(150_000)).toBeCloseTo(0.40, 3);
-    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.40, 3);
+  it('returns 0.45 for every population (flat σ design)', () => {
+    expect(sigmaForPopulation(1_000)).toBeCloseTo(0.45, 3);
+    expect(sigmaForPopulation(30_000)).toBeCloseTo(0.45, 3);
+    expect(sigmaForPopulation(150_000)).toBeCloseTo(0.45, 3);
+    expect(sigmaForPopulation(10_000_000)).toBeCloseTo(0.45, 3);
   });
 });
 
@@ -50,9 +50,9 @@ describe('logPriorForPopulation', () => {
     expect(logPriorForPopulation(6_300)).toBeLessThan(0);
   });
 
-  it('Williamsburg vs Chappaqua difference is ~1.75 log-units (β=0.40)', () => {
+  it('Williamsburg vs Chappaqua difference is ~2.19 log-units (β=0.50)', () => {
     const diff = logPriorForPopulation(120_000) - logPriorForPopulation(1_500);
-    expect(diff).toBeCloseTo(1.752, 1);
+    expect(diff).toBeCloseTo(2.19, 1);
   });
 });
 
