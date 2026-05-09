@@ -7,7 +7,7 @@ export const questions: readonly Question[] = [
     prompt: 'Which sounds most like the life you want?',
     choices: [
       {
-        label: "I take a different walk every weekend. The train comes every four minutes. There's always one more place I haven't tried.",
+        label: 'A different walk every weekend. The train comes every four minutes.',
         impacts: {
           'urban-intensity-tolerance': 0.55,
           'rootedness-vs-access': 0.40,
@@ -15,7 +15,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: "I walk to the same coffee shop most mornings. There's a park I know by name, and a corner where I run into people I know.",
+        label: 'Same coffee shop most mornings. The corner where I run into people I know.',
         impacts: {
           'urban-intensity-tolerance': 0.0,
           'daily-life-walkability': 0.50,
@@ -23,7 +23,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: 'Saturday morning is the farmers market. There\'s a small downtown I walk to. I see the same people at coffee, the post office, the train.',
+        label: 'Saturday is the farmers market. A small downtown I walk to.',
         impacts: {
           'urban-intensity-tolerance': -0.40,
           'rootedness-vs-access': -0.55,
@@ -32,7 +32,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: 'We host. A yard, a long driveway, a dining table for ten. Day-to-day means the car.',
+        label: 'We host. A yard, a driveway, a dining table for ten. Day-to-day means the car.',
         impacts: {
           'urban-intensity-tolerance': -0.55,
           'rootedness-vs-access': -0.65,
@@ -41,7 +41,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: "Woods out back. Coffee on the deck. Anywhere I want to go is a drive, and that's fine. It's quiet here.",
+        label: 'Woods out back. The car is part of the deal.',
         impacts: {
           'urban-intensity-tolerance': -0.70,
           'rootedness-vs-access': -0.70,
@@ -50,7 +50,7 @@ export const questions: readonly Question[] = [
         },
       },
       {
-        label: "I'm still figuring out the shape of my life. Show me a mix.",
+        label: 'Still figuring it out. Show me a mix.',
         impacts: {},
       },
     ],
