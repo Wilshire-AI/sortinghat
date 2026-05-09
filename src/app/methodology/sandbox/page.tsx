@@ -92,7 +92,6 @@ function MultiSelectControl({
   const selected = new Set(
     answer?.kind === 'multi_select' ? answer.selectedValues : [],
   );
-  const isSinglePick = q.purpose === 'commute_tolerance';
   const max = q.maxSelections;
   const atMax = max !== undefined && selected.size >= max;
   return (
@@ -107,13 +106,6 @@ function MultiSelectControl({
             disabled={disabled}
             onClick={() => {
               const next = new Set(selected);
-              if (isSinglePick) {
-                onChange({
-                  kind: 'multi_select',
-                  selectedValues: isSelected ? [] : [opt.value],
-                });
-                return;
-              }
               if (isSelected) next.delete(opt.value);
               else next.add(opt.value);
               onChange({

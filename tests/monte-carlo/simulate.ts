@@ -36,7 +36,7 @@ export function generateRandomAnswers(
       const a: Answer = { kind: 'slider', value };
       answers[q.id] = a;
     } else if (q.kind === 'multi_select') {
-      if (q.purpose === 'must_haves' || q.purpose === 'commute_targets' || q.purpose === 'commute_tolerance') {
+      if (q.purpose === 'must_haves' || q.purpose === 'commute_targets') {
         continue;
       }
       const cap = Math.min(q.options.length, q.maxSelections ?? q.options.length);

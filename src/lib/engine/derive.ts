@@ -84,15 +84,6 @@ export function deriveState(
         for (const v of a.selectedValues) mustHaves.add(v);
       } else if (q.purpose === 'commute_targets') {
         for (const v of a.selectedValues) commuteTargets.add(v);
-      } else if (q.purpose === 'commute_tolerance') {
-        // Legacy path — commute-tolerance is now forced_choice. Kept to
-        // gracefully decode any in-flight quiz answers from clients that
-        // had the old multi-select shape stored.
-        const picked = a.selectedValues[0];
-        if (picked) {
-          const parsed = parseInt(picked, 10);
-          if (!Number.isNaN(parsed)) commuteToleranceMinutes = parsed;
-        }
       } else if (q.purpose === 'housing_acceptance') {
         for (const v of a.selectedValues) housingAcceptance.add(v);
       } else if (q.purpose === 'walkable_amenities') {

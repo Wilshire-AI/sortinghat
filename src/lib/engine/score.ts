@@ -193,7 +193,7 @@ function softPrefMultiplier(neighborhood: Neighborhood, softPrefs: readonly stri
 
 function housingMultiplier(neighborhood: Neighborhood, housingAcceptance: readonly string[]): number {
   if (housingAcceptance.length === 0 || !neighborhood.housingTypes) return 1;
-  const nbhdTypes = new Set(neighborhood.housingTypes);
+  const nbhdTypes = new Set<string>(neighborhood.housingTypes);
   let matches = 0;
   for (const userValue of housingAcceptance) {
     const acceptableNbhdTypes = HOUSING_ACCEPTANCE_MAP[userValue];
