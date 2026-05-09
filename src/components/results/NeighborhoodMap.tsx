@@ -9,6 +9,7 @@ import polygonData from '@content/neighborhood-polygons.json';
 
 type Props = {
   ranked: { neighborhood: Neighborhood; score: number }[];
+  fingerprint?: string;
 };
 
 type GeoFeature = {
@@ -62,7 +63,7 @@ function makeNormalizer(scores: number[]): (s: number) => number {
   return (s) => (s - min) / (max - min);
 }
 
-export function NeighborhoodMap({ ranked }: Props) {
+export function NeighborhoodMap({ ranked, fingerprint }: Props) {
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<MaplibreMap | null>(null);
@@ -228,12 +229,17 @@ export function NeighborhoodMap({ ranked }: Props) {
     const onClick = (e: maplibregl.MapLayerMouseEvent) => {
       if (!e.features?.length) return;
       const props = e.features[0].properties as { slug: string };
-      if (props.slug) router.push(`/nyc/n/${props.slug}`);
+      if (props.slug) {
+        const href = fingerprint
+          ? `/nyc/n/${props.slug}?f=${fingerprint}`
+          : `/nyc/n/${props.slug}`;
+        router.push(href);
+      }
     };
     map.on('mousemove', fillLayerId, onMove);
     map.on('mouseleave', fillLayerId, onLeave);
     map.on('click', fillLayerId, onClick);
-  }, [ready, ranked, router]);
+  }, [ready, ranked, router, fingerprint]);
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 border-t border-[var(--color-line)]">

@@ -323,7 +323,10 @@ export function ResultsClient() {
         </section>
       )}
 
-      <NeighborhoodMap ranked={[...result.ranked, ...result.rest, ...result.excluded]} />
+      <NeighborhoodMap
+        ranked={[...result.ranked, ...result.rest, ...result.excluded]}
+        fingerprint={f ?? undefined}
+      />
 
       <AllMatchesList
         ranked={result.primaryCluster ? result.restAfterClusters : result.rest}
