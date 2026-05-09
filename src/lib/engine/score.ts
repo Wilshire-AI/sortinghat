@@ -282,13 +282,27 @@ function rankBayesian(
     return { neighborhood, logScore };
   });
 
-  // Per-user max-normalize for display: top match is exactly 1.0; others
-  // are scaled relative. The rank order is preserved exactly because
-  // x → exp(x - maxLog) is monotonic.
-  const maxLog = logScored.reduce((m, s) => (s.logScore > m ? s.logScore : m), -Infinity);
+  // Per-user linear-in-log normalization for display: top match is 1.0,
+  // worst match is 0.0, others linearly interpolated in log-likelihood
+  // space. We deliberately don't show exp(logScore - maxLog) — that
+  // collapses exponentially and makes ~90% of the dataset display near
+  // zero, which paints the map all-red and reads as broken to users.
+  // Rank order is preserved (linear interpolation is monotonic).
+  let maxLog = -Infinity;
+  let minLog = Infinity;
+  for (const s of logScored) {
+    if (s.logScore > maxLog) maxLog = s.logScore;
+    if (s.logScore < minLog) minLog = s.logScore;
+  }
+  const range = maxLog - minLog;
   const scored = logScored.map((s) => ({
     neighborhood: s.neighborhood,
-    score: maxLog === -Infinity ? 0 : Math.exp(s.logScore - maxLog),
+    score:
+      maxLog === -Infinity
+        ? 0
+        : range > 0
+        ? (s.logScore - minLog) / range
+        : 1,
   }));
   scored.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
