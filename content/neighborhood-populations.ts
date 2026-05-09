@@ -61,7 +61,7 @@ export const neighborhoodPopulations: Record<NeighborhoodId, number> = {
   'brooklyn-heights': 23000,
   'bed-stuy': 150000,
   'dumbo': 6000,
-  'cobble-hill': 12000,
+  'cobble-hill': 32000,
   'bushwick': 130000,
   'brighton-beach': 35000,
   'sheepshead-bay': 100000,
@@ -75,8 +75,6 @@ export const neighborhoodPopulations: Record<NeighborhoodId, number> = {
   'ditmas-park': 30000,
   'prospect-lefferts-gardens': 35000,
   'windsor-terrace': 18000,
-  'boerum-hill': 8000,
-  'carroll-gardens': 12000,
   'gowanus': 10000,
   'red-hook': 11000,
 
@@ -132,14 +130,10 @@ export const neighborhoodPopulations: Record<NeighborhoodId, number> = {
   // Westchester
   'scarsdale': 18253,
   'bronxville': 6300,
-  'larchmont': 6630,
   'rye': 16000,
-  'mamaroneck': 32000,
+  'mamaroneck': 38630,
   'pelham': 12000,
-  'hastings-on-hudson': 8590,
-  'dobbs-ferry': 11500,
-  'irvington-ny': 6500,
-  'tarrytown': 11900,
+  'hastings-on-hudson': 38490,
   'white-plains': 60000,
   'yonkers-ny': 211000,
   'chappaqua': 1500,
@@ -156,7 +150,6 @@ export const neighborhoodPopulations: Record<NeighborhoodId, number> = {
   // CT
   'greenwich': 63518,
   'stamford': 135470,
-  'darien': 22000,
-  'new-canaan': 20000,
+  'darien': 42000,
   'westport': 27000,
 };

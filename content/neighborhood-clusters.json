@@ -117,8 +117,6 @@
         "park-slope",
         "brooklyn-heights",
         "cobble-hill",
-        "carroll-gardens",
-        "boerum-hill",
         "carnegie-hill",
         "yorkville",
         "stuyvesant-town",
@@ -149,17 +147,13 @@
         "maplewood",
         "montclair",
         "south-orange",
-        "hastings-on-hudson",
-        "dobbs-ferry",
-        "irvington-ny",
-        "tarrytown"
+        "hastings-on-hudson"
       ]
     },
     "classic-walkable-commuter-suburb": {
       "name": "Classic Walkable Commuter Suburb",
       "description": "Mid-30s to mid-40s, couple, two kids. Train to Manhattan three-to-five days a week. Wants the walkable downtown plus good schools plus tree-lined blocks. Picks Larchmont or Bronxville specifically over car-only suburbs for the walkable village. Drives but doesn't live in the car. Sunday-morning bagel place is on foot.",
       "members": [
-        "larchmont",
         "bronxville",
         "pelham",
         "rye",
@@ -188,7 +182,6 @@
         "chappaqua",
         "greenwich",
         "darien",
-        "new-canaan",
         "westport",
         "millburn-short-hills"
       ]

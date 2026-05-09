@@ -779,26 +779,6 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
-  "boerum-hill": {
-    "src": "/images/neighborhoods/photos/boerum-hill.jpg",
-    "sourceTitle": "Boerum Hill",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Boerum_Hill",
-    "commonsFile": "Boerum_Hill_rowhouses.jpg",
-    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Boerum_Hill_rowhouses.jpg",
-    "artist": "Zach",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
-  },
-  "carroll-gardens": {
-    "src": "/images/neighborhoods/photos/carroll-gardens.jpg",
-    "sourceTitle": "Carroll Gardens, Brooklyn",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Carroll_Gardens%2C_Brooklyn",
-    "commonsFile": "Carroll_Gardens_Clin4_gardens_jeh.jpg",
-    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Carroll_Gardens_Clin4_gardens_jeh.jpg",
-    "artist": "Jim.henderson",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-  },
   "gowanus": {
     "src": "/images/neighborhoods/photos/gowanus.jpg",
     "sourceTitle": "Gowanus, Brooklyn",
@@ -969,16 +949,6 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
   },
-  "larchmont": {
-    "src": "/images/neighborhoods/photos/larchmont.jpg",
-    "sourceTitle": "Larchmont, New York",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Larchmont%2C_New_York",
-    "commonsFile": "Larchmont_Yacht_Club.jpg",
-    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Larchmont_Yacht_Club.jpg",
-    "artist": "Thunderbombman",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
-  },
   "rye": {
     "src": "/images/neighborhoods/photos/rye.jpg",
     "sourceTitle": "Rye, New York",
@@ -1018,36 +988,6 @@
     "artist": "Jim.henderson",
     "license": "CC0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-  },
-  "dobbs-ferry": {
-    "src": "/images/neighborhoods/photos/dobbs-ferry.jpg",
-    "sourceTitle": "Dobbs Ferry, New York",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Dobbs_Ferry%2C_New_York",
-    "commonsFile": "Dobbs_Ferry_welcome_jeh.jpg",
-    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Dobbs_Ferry_welcome_jeh.jpg",
-    "artist": "Jim.henderson",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-  },
-  "irvington-ny": {
-    "src": "/images/neighborhoods/photos/irvington-ny.jpg",
-    "sourceTitle": "Irvington, New York",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Irvington%2C_New_York",
-    "commonsFile": "Irvington_Town_Hall.jpg",
-    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Irvington_Town_Hall.jpg",
-    "artist": "Daryl Samuel",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
-  },
-  "tarrytown": {
-    "src": "/images/neighborhoods/photos/tarrytown.jpg",
-    "sourceTitle": "Tarrytown, New York",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Tarrytown%2C_New_York",
-    "commonsFile": "Tarrytown_Main_Street.jpg",
-    "commonsUrl": "https://commons.wikimedia.org/wiki/File:Tarrytown_Main_Street.jpg",
-    "artist": "Irina S.B.",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
   },
   "white-plains": {
     "src": "/images/neighborhoods/photos/white-plains.jpg",
@@ -1178,16 +1118,6 @@
     "artist": "Jerry Dougherty",
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
-  },
-  "new-canaan": {
-    "src": "/images/neighborhoods/photos/new-canaan.jpg",
-    "sourceTitle": "New Canaan, Connecticut",
-    "sourceUrl": "https://en.wikipedia.org/wiki/New_Canaan%2C_Connecticut",
-    "commonsFile": "New_Canaan,_CT_(54103871381).jpg",
-    "commonsUrl": "https://commons.wikimedia.org/wiki/File:New_Canaan%2C_CT_(54103871381).jpg",
-    "artist": "ajay_suresh",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
   },
   "westport": {
     "src": "/images/neighborhoods/photos/westport.jpg",

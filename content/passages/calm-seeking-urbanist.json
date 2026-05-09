@@ -888,18 +888,6 @@
     "generatedAt": "2026-05-07T15:17:02.330Z",
     "model": "claude-sonnet-4-5"
   },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill is one of the best-kept secrets for calm-seeking urbanists. The townhouse blocks between Smith and Court are genuinely quiet, the F/G at Bergen gives you plenty of reach, and Atlantic-Barclays' transit redundancy means you're never stranded. You get brownstone calm without Park Slope's crowds.",
-    "tradeoffsForYou": [
-      "Smaller footprint than Park Slope means fewer cafes and amenities within five blocks.",
-      "Smith Street weekend nights can get loud; the further east you live, the better.",
-      "Pricey for the size, especially the prettier blocks near Cobble Hill Park."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:17:02.607Z",
-    "model": "claude-sonnet-4-5"
-  },
   "nolita-little-italy": {
     "fitProse": "NoLita is compact, beautiful, and fully downtown, but it's not built for calm. The side streets have charm, but Mulberry and Bowery carry tourist crowds most hours. The 6 and B/D/F/M are excellent, but stepping outside means navigating intensity, not escaping it.",
     "tradeoffsForYou": [
@@ -924,19 +912,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:17:03.614Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens is a near-perfect match for the calm-seeking urbanist. The blocks between Court and Smith have actual front gardens (not a metaphor), the F/G puts you in Manhattan in fifteen minutes, and the Italian grocers and restaurants on Court give you daily texture without chaos.",
-    "tradeoffsForYou": [
-      "Expensive. Comparable to Park Slope, and you're paying partly for the family vibe.",
-      "Only two train lines. The F/G is reliable but there's no redundancy.",
-      "Stroller density is high. You're living among future-family households.",
-      "Weekend Smith Street can feel tourist-adjacent as Cobble Hill spills south."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:17:08.568Z",
     "model": "claude-sonnet-4-5"
   },
   "gowanus": {
@@ -1160,19 +1135,6 @@
     "generatedAt": "2026-05-07T15:17:35.414Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont is the calm-seeking urbanist's Westchester ideal. The village feels walkable and human-scaled, the Metro-North New Haven Line puts you in Grand Central in thirty minutes, and the quiet residential blocks deliver the tree-lined hush you need at home. The harbor and Manor Park give you nature without leaving town.",
-    "tradeoffsForYou": [
-      "You're buying into classic affluence. Pricing reflects that.",
-      "Off-peak trains slow down. Count on 40+ minutes sometimes.",
-      "Cultural energy is low. Manhattan is the draw, not the village.",
-      "Family infrastructure is everywhere, which is calm but also very settled."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:17:37.122Z",
-    "model": "claude-sonnet-4-5"
-  },
   "rye": {
     "fitProse": "Rye is what you get when you prize calm without losing the city entirely. The blocks near the Sound are genuinely quiet, the Metro-North to Grand Central runs reliably in 45 minutes, and the town feels settled in the best way. You can walk to coffee and know the train is an option, not a necessity.",
     "tradeoffsForYou": [
@@ -1223,45 +1185,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:17:42.931Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry delivers calm by the water with real access. The Hudson Line puts you in Grand Central in about 40 minutes, the river views are no joke, and the downtown is walkable without being loud. You can hear the train whistle instead of car horns at night.",
-    "tradeoffsForYou": [
-      "Hudson Line is slower than the Harlem trains to the east.",
-      "Dining thins out quickly beyond Main Street.",
-      "Small footprint means fewer options within walking distance.",
-      "You'll drive more than you would in Brooklyn, even with Metro-North."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:17:43.909Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is nearly perfect for the calm-seeking urbanist who's ready to leave the borough. The Hudson Line drops you at Grand Central in 45 minutes, the river views are real, and the residential streets have the kind of quiet you actually notice. The village is walkable but low-key.",
-    "tradeoffsForYou": [
-      "The hills are real. Some blocks require a car to reach the train.",
-      "Dining and nightlife are thin. This is a place to come home to, not go out from.",
-      "Premium pricing reflects the views and schools, even if you don't have kids yet.",
-      "You'll be surrounded by families. The infrastructure reflects it."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:17:45.502Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown offers the calm-seeking urbanist a rare combination: genuine downtown walkability, the Metro-North Hudson Line to Grand Central, and quiet residential blocks with river views. You can decompress at home, stroll to Tarrytown Music Hall when you want culture, and know that Manhattan is an hour away when you need it.",
-    "tradeoffsForYou": [
-      "The Metro-North Hudson Line is reliable but not as frequent as subway service.",
-      "Bridge traffic can dominate certain streets, especially on summer weekends.",
-      "Tourist load peaks in fall (Sleepy Hollow season) and summer.",
-      "You'll be surrounded by family-trajectory households, not other urbanists."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:17:46.886Z",
     "model": "claude-sonnet-4-5"
   },
   "white-plains": {
@@ -1431,19 +1354,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:18:06.503Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan is calm by design. The architecture is extraordinary (the Glass House, mid-century stock), the estate-scale homes deliver the space you want, and Waveny Park feels like private land. But the Metro-North branch line requires a Stamford transfer, and the 75-minute ride is not a daily commute most urbanists sustain.",
-    "tradeoffsForYou": [
-      "You'll need a car for everything. Walkable downtown is small.",
-      "Branch-line transfer at Stamford adds friction and time.",
-      "The calm is real, but so is the distance from the city's pull.",
-      "This is a family suburb first. If you're pre-kids, you may feel early."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:18:09.097Z",
     "model": "claude-sonnet-4-5"
   },
   "westport": {

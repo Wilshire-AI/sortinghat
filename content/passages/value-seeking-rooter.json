@@ -893,19 +893,6 @@
     "generatedAt": "2026-05-07T15:34:42.288Z",
     "model": "claude-sonnet-4-5"
   },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill offers the space and quiet you want at a price below Park Slope, with Atlantic-Barclays giving you eleven subway lines in one transfer. Brownstones here are real, the blocks are calm, and you're betting on a neighborhood that's already proven itself but still trades at a small discount.",
-    "tradeoffsForYou": [
-      "Still expensive. You're saving versus Park Slope, not versus Astoria.",
-      "Smaller footprint means fewer amenities within the neighborhood itself.",
-      "Smith Street weekend noise if you're on the wrong block.",
-      "The discount is narrowing. You're not early, just earlier than some."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:34:46.251Z",
-    "model": "claude-sonnet-4-5"
-  },
   "nolita-little-italy": {
     "fitProse": "NoLita walk-ups give you real space at a discount to SoHo or West Village, and the neighborhood has quietly gotten safer and better connected (6, B/D/F/M, J/Z all within blocks). The early-mover bet is that prestige follows design shops and espresso bars, and you're already seeing it.",
     "tradeoffsForYou": [
@@ -930,19 +917,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:34:46.666Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens gives you the brownstone dream without the Park Slope premium, at least for now. The F/G is solid, the blocks are genuinely quiet, and the Italian-American anchors (D'Amico, Caputo's) give the place a rooted feel that newer enclaves lack. You're betting on long-term staying power, and the gardens are real.",
-    "tradeoffsForYou": [
-      "Still expensive. You're saving versus the Slope, not versus Queens.",
-      "F/G is your only line. No redundancy if the tunnel floods.",
-      "Smith and Court are pleasant but predictable. Not much discovery left.",
-      "The neighborhood already knows it's desirable. You're not early."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:34:48.697Z",
     "model": "claude-sonnet-4-5"
   },
   "gowanus": {
@@ -1179,19 +1153,6 @@
     "generatedAt": "2026-05-07T15:35:17.384Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont is built for families who can pay, but the square footage and school ratings give a value-seeker pause. You're paying Westchester prestige pricing for real train access and top schools, but you're competing with generational wealth for homes that go fast.",
-    "tradeoffsForYou": [
-      "Premium pricing without the up-and-coming discount you usually hunt for.",
-      "The neighborhood is already established. No hidden gem upside left.",
-      "If you want space-per-dollar arbitrage, look further north or east.",
-      "Metro-North to Grand Central in 30 min is real, but off-peak can crawl."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:35:17.823Z",
-    "model": "claude-sonnet-4-5"
-  },
   "mamaroneck": {
     "fitProse": "Mamaroneck gives you the Sound Shore commute and school district without the Larchmont price premium. You get more square footage, a working harbor instead of a postcard, and a Latin American community that makes the town feel less precious. The Metro-North lifeline is the same.",
     "tradeoffsForYou": [
@@ -1231,32 +1192,6 @@
     "generatedAt": "2026-05-07T15:35:22.760Z",
     "model": "claude-sonnet-4-5"
   },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry is exactly what you're betting on: real space, Hudson River views, walkable downtown, and Metro-North to Grand Central, all for meaningfully less than Hastings or Irvington next door. If you trust the trajectory over the nameplate, this is the value play.",
-    "tradeoffsForYou": [
-      "Hudson Line is slower than Harlem Line towns (Scarsdale, Bronxville).",
-      "Dining options thin out quickly beyond Main Street.",
-      "Small footprint. You'll know every block within a month.",
-      "It's not Irvington yet, but the gap is narrowing fast."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:35:23.152Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is one of those Westchester river towns where the space-to-price equation still makes sense if you're playing the long game. You get estate-scale homes, Metro-North to Grand Central, top schools, and Hudson views, all before the market fully catches up to what Tarrytown already charges.",
-    "tradeoffsForYou": [
-      "You're banking on appreciation, but the premium is real today.",
-      "Not all blocks are walkable to the train. Hills matter.",
-      "Dining scene ends at the village center. You'll drive for variety.",
-      "Schools are elite, but you're paying property taxes for that."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:35:26.902Z",
-    "model": "claude-sonnet-4-5"
-  },
   "white-plains": {
     "fitProse": "White Plains gives you real apartment square footage at prices that feel like a different era, plus Metro-North to Grand Central in under 40 minutes. You're not chasing prestige, you're chasing value and space, and this is the most urban-feeling option in Westchester without the surcharge.",
     "tradeoffsForYou": [
@@ -1268,19 +1203,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:35:28.031Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown is one of the rare river towns that gives you actual space for less than the branded zip codes closer to the city. The walkable downtown is real, the Metro-North Hudson Line gets you to Grand Central, and the housing stock tilts toward bigger units families have outgrown in Brooklyn.",
-    "tradeoffsForYou": [
-      "Hudson Line trains are less frequent than Harlem or New Haven lines, especially reverse-peak.",
-      "Bridge traffic through town is a known pain point on weekends.",
-      "Still Westchester prices, but you're buying space and school district over cachet.",
-      "Tourist crowds in summer (Sleepy Hollow draw) can clog the downtown you moved here for."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:35:29.169Z",
     "model": "claude-sonnet-4-5"
   },
   "yonkers-ny": {
@@ -1437,19 +1359,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:35:48.573Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan is not the value play. It's the Glass House, estate-scale lots, and some of the highest-rated schools in the state, which means pricing is premium from the start. If you're hoping to time a market inefficiency and get more space for less, this is not the town.",
-    "tradeoffsForYou": [
-      "The long game here is measured in decades, not years. Appreciation is steady but not explosive.",
-      "Branch line to Grand Central via Stamford is 75 minutes. That's a lot of train time.",
-      "You're buying prestige and schools, not undiscovered value. Everyone knows what New Canaan is.",
-      "Car-dependent for everything. Walter Stewart's run, school drop-off, all of it."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:35:48.794Z",
     "model": "claude-sonnet-4-5"
   },
   "westport": {

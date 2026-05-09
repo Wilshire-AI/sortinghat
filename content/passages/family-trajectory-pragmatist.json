@@ -922,32 +922,6 @@
     "generatedAt": "2026-05-07T15:25:39.695Z",
     "model": "claude-sonnet-4-5"
   },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill is the brownstone Brooklyn you can actually stay in. The blocks are quiet, the schools are strong, and the transit redundancy at Atlantic-Barclays (nine lines) lets both parents commute. Smith Street delivers the dinners, and the footprint is small enough that you know the pharmacist.",
-    "tradeoffsForYou": [
-      "Smaller than Park Slope or Cobble Hill. You'll outgrow the stroller routes fast.",
-      "Pricey for the square footage, especially townhouses.",
-      "Smith Street weekend noise if you're on the wrong block.",
-      "Limited public-school catchment options compared to Park Slope."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:25:40.693Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens is the archetype of the five-year horizon neighborhood. Deep front gardens, blocks you can picture a kid riding a scooter down, schools people actually stay for, and the F/G getting you to Manhattan in under thirty minutes. It's expensive, but so is moving twice.",
-    "tradeoffsForYou": [
-      "One train line (F/G). Redundancy matters more when you have a daycare drop-off window.",
-      "Price per square foot rivals Park Slope. You're paying for stability and infrastructure.",
-      "Restaurant scene is good but not electric. This is a place to nest, not to party.",
-      "The Italian delis and Union Market are charming, but big grocery runs often mean a Trader Joe's drive."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:25:42.728Z",
-    "model": "claude-sonnet-4-5"
-  },
   "gowanus": {
     "fitProse": "Gowanus delivers space and proximity at a price family-trajectory households can stomach, but you're betting on a neighborhood still mid-transformation. The F/G/R put you near brownstone Brooklyn anchors (Park Slope, Carroll Gardens), and newer condos offer room to grow. Schools are improving but uneven, and the canal cleanup timeline is a decade-long wildcard.",
     "tradeoffsForYou": [
@@ -1169,19 +1143,6 @@
     "generatedAt": "2026-05-07T15:26:07.985Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont is basically the five-year horizon realized. Top-rated Mamaroneck schools, a walkable village with real sidewalks, the Metro-North to Grand Central in thirty minutes, and single-family homes you can actually stay in. The family infrastructure is already here.",
-    "tradeoffsForYou": [
-      "Premium pricing across the board. Homes, taxes, and village coffee all reflect it.",
-      "Off-peak trains can be slow. Plan around rush-hour schedules or drive locally.",
-      "The Sound Shore vibe is classically affluent. If that's not your cultural fit, you'll feel it.",
-      "You're trading current urban energy for long-term rootedness. That's the deal."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:26:08.357Z",
-    "model": "claude-sonnet-4-5"
-  },
   "rye": {
     "fitProse": "Rye is the family-trajectory pragmatist's endgame. The schools are among the best in Westchester, the Metro-North puts you in Grand Central in 45 minutes, and the single-family homes are built for staying power. You're buying a decade of stability, not a year of excitement.",
     "tradeoffsForYou": [
@@ -1232,45 +1193,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:26:13.981Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry is built for the five-year horizon. The school quality is real, the Hudson Line gets you to Grand Central in under an hour, and the river-town walkability means you can still have coffee and errands on foot. It's slightly more affordable than Hastings or Irvington, which matters when you're thinking two kids and a yard.",
-    "tradeoffsForYou": [
-      "The Hudson Line is slower than the Harlem Line. Add 15 minutes each way.",
-      "Small footprint means fewer backup options for schools, pediatricians, activities.",
-      "Dining scene lives on Main Street. You'll exhaust it within a year.",
-      "If one of you works in Midtown and the other in FiDi, the commute asymmetry is real."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:26:17.196Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is built for the five-year horizon. Top-rated schools, single-family homes with yard geometry that works for toddlers and teens, and Metro-North to Grand Central in 40 minutes. The village is walkable enough for weekend errands, and the river views remind you why you left Brooklyn.",
-    "tradeoffsForYou": [
-      "Premium pricing. This is one of the most expensive river towns.",
-      "Hills mean not every block works for stroller years or aging parents.",
-      "Dining and weekend life are limited. You'll drive to Tarrytown or Dobbs.",
-      "Your social life will be other families. The village is quiet by design."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:26:19.147Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown is built for the family-trajectory pragmatist. The schools score high, the Metro-North Hudson Line gets you to Grand Central in under an hour, and the downtown is walkable enough that you can imagine a decade here without cabin fever.",
-    "tradeoffsForYou": [
-      "The Hudson Line runs express peak hours only. Off-peak can stretch 70 minutes.",
-      "Bridge traffic (Cuomo/Tappan Zee) shapes weekend logistics.",
-      "Tourist load around Sleepy Hollow in summer and fall.",
-      "Trader Joe's and better dining require a car or careful trip planning."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:26:19.151Z",
     "model": "claude-sonnet-4-5"
   },
   "white-plains": {
@@ -1453,19 +1375,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:26:43.481Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan offers the ceiling of what the family-trajectory pragmatist usually considers: top-tier public schools, estate-scale yards, Waveny Park, and a town you won't outgrow. The Metro-North branch line (75 min to Grand Central via Stamford) and car dependence are the obvious tradeoffs for staying power.",
-    "tradeoffsForYou": [
-      "Branch-line commute means ~75 min each way, transfer at Stamford required.",
-      "Zero walkable errands. You will drive everywhere except downtown.",
-      "Premium pricing reflects the school quality and space you're paying for.",
-      "Cultural and creative energy live elsewhere. This is a raising-kids place."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:26:48.384Z",
     "model": "claude-sonnet-4-5"
   }
 }

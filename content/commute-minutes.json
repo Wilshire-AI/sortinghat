@@ -767,17 +767,6 @@
     "greenwich": 97,
     "westport": 106
   },
-  "carroll-gardens": {
-    "midtown": 37,
-    "fidi": 33,
-    "hudson-yards": 39,
-    "lic": 32,
-    "downtown-brooklyn": 17,
-    "newport-jc": 47,
-    "stamford": 97,
-    "greenwich": 115,
-    "westport": 120
-  },
   "red-hook": {
     "midtown": 50,
     "fidi": 45,
@@ -799,17 +788,6 @@
     "stamford": 98,
     "greenwich": 116,
     "westport": 121
-  },
-  "boerum-hill": {
-    "midtown": 36,
-    "fidi": 26,
-    "hudson-yards": 38,
-    "lic": 31,
-    "downtown-brooklyn": 16,
-    "newport-jc": 46,
-    "stamford": 92,
-    "greenwich": 114,
-    "westport": 115
   },
   "flatiron-nomad": {
     "midtown": 15,
@@ -951,17 +929,6 @@
     "newport-jc": 107,
     "stamford": 137
   },
-  "larchmont": {
-    "midtown": 65,
-    "fidi": 107,
-    "hudson-yards": 105,
-    "lic": 84,
-    "downtown-brooklyn": 113,
-    "newport-jc": 130,
-    "stamford": 88,
-    "greenwich": 56,
-    "westport": 136
-  },
   "bronxville": {
     "midtown": 53,
     "fidi": 78,
@@ -1005,39 +972,6 @@
     "stamford": 90,
     "greenwich": 135,
     "westport": 138
-  },
-  "dobbs-ferry": {
-    "midtown": 69,
-    "fidi": 92,
-    "hudson-yards": 109,
-    "lic": 115,
-    "downtown-brooklyn": 123,
-    "newport-jc": 132,
-    "stamford": 79,
-    "greenwich": 101,
-    "westport": 127
-  },
-  "irvington-ny": {
-    "midtown": 94,
-    "fidi": 118,
-    "hudson-yards": 131,
-    "lic": 118,
-    "downtown-brooklyn": 123,
-    "newport-jc": 132,
-    "stamford": 87,
-    "greenwich": 132,
-    "westport": 135
-  },
-  "tarrytown": {
-    "midtown": 63,
-    "fidi": 90,
-    "hudson-yards": 86,
-    "lic": 85,
-    "downtown-brooklyn": 95,
-    "newport-jc": 108,
-    "stamford": 75,
-    "greenwich": 102,
-    "westport": 123
   },
   "chappaqua": {
     "midtown": 87,
@@ -1133,17 +1067,6 @@
     "stamford": 45,
     "greenwich": 19,
     "westport": 73
-  },
-  "new-canaan": {
-    "midtown": 85,
-    "fidi": 95,
-    "hudson-yards": 90,
-    "lic": 100,
-    "downtown-brooklyn": 110,
-    "newport-jc": 115,
-    "stamford": 25,
-    "greenwich": 50,
-    "westport": 45
   },
   "darien": {
     "midtown": 85,

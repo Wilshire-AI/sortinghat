@@ -908,19 +908,6 @@
     "generatedAt": "2026-05-07T15:31:47.753Z",
     "model": "claude-sonnet-4-5"
   },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill is a smart prestige play for someone who wants brownstone credibility without the Park Slope crowds. Smith Street gives you real restaurants, Atlantic-Barclays puts eight trains at your disposal, and the blocks between Court and 4th have the architectural story you're after.",
-    "tradeoffsForYou": [
-      "The footprint is smaller than you think. You'll know every block in six months.",
-      "Prestige score is real but not flashy. Cobble Hill and Park Slope have louder brands.",
-      "Smith Street weekend nights can be rowdy. The quiet blocks are two streets over.",
-      "Pricey for what you get, especially compared to deeper Brooklyn."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:31:48.144Z",
-    "model": "claude-sonnet-4-5"
-  },
   "flatiron-nomad": {
     "fitProse": "Flatiron and NoMad deliver the right kind of nameplate for someone who wants to say they live in Manhattan proper. Six subway lines through 23rd and 28th, Madison Square Park on your block, and the kind of culinary infrastructure (Eleven Madison, Gramercy Tavern, the Nomad Hotel layer) that signals where you are.",
     "tradeoffsForYou": [
@@ -932,19 +919,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:31:49.454Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens is a legible address with real Brooklyn pedigree. The brownstones are genuine, the Italian-American history is visible, and Smith Street delivers the kind of restaurant density you name-check when describing your neighborhood to people who don't live here.",
-    "tradeoffsForYou": [
-      "The F/G is solid but you're locked into one line for most trips",
-      "Family-trajectory vibe is strong. Strollers outnumber nightlife.",
-      "Prices rival Park Slope without quite the same name recognition",
-      "Smith and Court have good restaurants, but the scene is local, not destination"
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:31:51.443Z",
     "model": "claude-sonnet-4-5"
   },
   "gowanus": {
@@ -1168,19 +1142,6 @@
     "generatedAt": "2026-05-07T15:32:17.751Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont has the prestige you want and the train you need. Metro-North to Grand Central in thirty minutes, a walkable village that actually functions, and an address that signals exactly what you think it should. The sailboats in the harbor are part of the picture.",
-    "tradeoffsForYou": [
-      "You're leaving the city. The cultural calendar is smaller and you'll commute for it.",
-      "Off-peak trains can drag. The 30-minute ride becomes 40 or 50.",
-      "Premium pricing for the name, and everyone knows it.",
-      "The village is charming but the dining and nightlife ceiling is suburban."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:32:19.165Z",
-    "model": "claude-sonnet-4-5"
-  },
   "rye": {
     "fitProse": "Rye is the Sound Shore address that needs no explanation. Metro-North to Grand Central in 45 minutes, estate-scale homes, the beach club, and a downtown that quietly signals you've arrived. It's the prestige-coded suburban blueprint, and everyone knows it.",
     "tradeoffsForYou": [
@@ -1220,19 +1181,6 @@
     "generatedAt": "2026-05-07T15:32:23.857Z",
     "model": "claude-sonnet-4-5"
   },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry has river views and Metro-North, but the prestige math doesn't quite add up. It's positioned as the more affordable option between Hastings and Irvington, which is exactly the story you're trying not to tell about where you live.",
-    "tradeoffsForYou": [
-      "Hudson Line to Grand Central is slower and less frequent than the Harlem Line.",
-      "The name doesn't carry weight outside Westchester real estate circles.",
-      "Dining and cultural infrastructure stop at the Main Street strip.",
-      "You'll explain your address more than you'd like to."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:32:25.148Z",
-    "model": "claude-sonnet-4-5"
-  },
   "hastings-on-hudson": {
     "fitProse": "Hastings-on-Hudson is the rare Westchester address that signals cultural discernment without hedge-fund energy. It's a name that works in conversation (river views, Metro-North to Grand Central in 35 minutes, a walkable downtown), and you'll meet editors and architects at school pickup, not just finance.",
     "tradeoffsForYou": [
@@ -1244,32 +1192,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:32:25.747Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is a prestige address with the goods to back it up: estate-scale homes with Hudson views, Metro-North to Grand Central, and a quietly moneyed vibe that doesn't announce itself. It's a name that signals arrival, but you're trading the cultural and culinary depth of Manhattan for a river-town calendar.",
-    "tradeoffsForYou": [
-      "Dining and nightlife stop at the village center. You'll still go to the city for that.",
-      "Hilly streets mean not every beautiful home is walkable to the train.",
-      "It's a family town first. If you're pre-kids, you may feel early.",
-      "Premium pricing even by Westchester standards."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:32:28.848Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown has a name that travels, the kind of address that reads well on a card or a Zoom background. The Mario Cuomo Bridge views, the Music Hall, the Metro-North ride to Grand Central all signal a certain arrival. But the prestige here is suburban, not cosmopolitan.",
-    "tradeoffsForYou": [
-      "You'll explain where it is. The name is known, but not in the same breath as Bronxville or Rye.",
-      "The walkable downtown is one strip. The cultural and dining density is river-town scale.",
-      "Metro-North Hudson Line is slower and less frequent than the Harlem or New Haven lines.",
-      "The story you're telling is about space and schools, not about the address itself."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:32:29.991Z",
     "model": "claude-sonnet-4-5"
   },
   "white-plains": {
@@ -1437,19 +1359,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:32:49.813Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan has the name recognition and architectural pedigree (the Glass House, a midcentury landmark) that signals taste and arrival. The schools are top-tier, the downtown is handsome, and the address carries weight in the right circles.",
-    "tradeoffsForYou": [
-      "Branch line means 75 min to Grand Central via Stamford transfer. You'll feel it.",
-      "Zero walkable urbanism. You'll drive everywhere, including to dinner.",
-      "Prestige here reads suburban-distinguished, not cosmopolitan-electric.",
-      "The cultural life is quiet. Museums and restaurants live in the city."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:32:51.198Z",
     "model": "claude-sonnet-4-5"
   },
   "westport": {

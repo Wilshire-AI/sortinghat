@@ -920,32 +920,6 @@
     "generatedAt": "2026-05-07T15:28:45.696Z",
     "model": "claude-sonnet-4-5"
   },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens is beautiful, quiet, and family-shaped. The creative energy score is zero, and you'll feel it. Smith Street has restaurants, not studios. Court has cafes, not collaborators. If you want scene, you're taking the F north to Manhattan or east to Gowanus.",
-    "tradeoffsForYou": [
-      "The neighborhood is built for strollers, not late-night hangs.",
-      "Smith and Court are pleasant but suburban in tempo.",
-      "Closest creative density is Gowanus or Red Hook, both a walk.",
-      "You'll spend more time commuting to scene than living in it."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:28:47.318Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill once had a real creative scene, but it's aged into brownstone calm. The bones are good (Smith Street's restaurants, Atlantic-Barclays' redundancy, real townhouses), but the long-running creative-class community is now mostly couples with strollers. You'll feel the quiet more than the spark.",
-    "tradeoffsForYou": [
-      "Smith Street restaurants are solid, but the scene lives in Bed-Stuy or Bushwick now.",
-      "Smaller footprint means fewer serendipitous collisions than Park Slope or Cobble Hill.",
-      "The calm is intentional. If you want late-night energy, you'll commute to it.",
-      "Strong transit (F/G, Atlantic hub) makes it easy to find your scene elsewhere."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:28:47.880Z",
-    "model": "claude-sonnet-4-5"
-  },
   "gowanus": {
     "fitProse": "Gowanus is exactly the kind of place Creative Immersionists move for. The canal blocks host working studios, galleries that open unannounced, and the brewery-bar-DIY venue circuit that turns into your social graph. You're close enough to Park Slope coffee but far enough that rent buys real square footage.",
     "tradeoffsForYou": [
@@ -1167,19 +1141,6 @@
     "generatedAt": "2026-05-07T15:29:16.715Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont is a family-first bedroom community with sailboats and top schools, not a place where creative energy lives. The Metro-North gets you to Grand Central, but the village closes early and the only collaborators you'll meet are neighbors planning the next school fundraiser.",
-    "tradeoffsForYou": [
-      "The creative scene is nonexistent. Your peers are in Manhattan or Brooklyn.",
-      "You'll spend 30+ minutes each way on Metro-North to reach where things happen.",
-      "The village is pleasant but sleepy. No studios, no galleries, no late-night anything.",
-      "Beautiful waterfront and parks, but that's not the oxygen you're looking for."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:29:19.132Z",
-    "model": "claude-sonnet-4-5"
-  },
   "mamaroneck": {
     "fitProse": "Mamaroneck is a family-first suburb with a harbor and Metro-North. Creative energy scores zero here. There's no studio scene, no gallery walk, no bar where you'll meet your next collaborator. It's pleasant and practical, but the oxygen you need lives elsewhere.",
     "tradeoffsForYou": [
@@ -1229,45 +1190,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:29:24.835Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is a river town built for family households, not creative collaborators. The creative-energy score is zero, the cultural ecosystem is zero, and the nearest scene is back in Manhattan on the Metro-North. Beautiful, quiet, expensive, wrong for you.",
-    "tradeoffsForYou": [
-      "No studios, galleries, or late-night spots. This is estate-scale suburbia.",
-      "The train to Grand Central is good, but you're commuting to find your people.",
-      "Dining and nightlife end at the village center, which closes early.",
-      "If you need creative oxygen daily, you'll suffocate here."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:29:26.218Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry is built for families who want river views and yard space, not for creative immersionists. The downtown is charming in a Main Street way, but there's no gallery, no late-night studio culture, and Mercy College doesn't generate a scene you'll notice. If you crave creative oxygen, you'll be commuting south for it.",
-    "tradeoffsForYou": [
-      "The Metro-North Hudson Line is slower than the Harlem. Plan 50+ minutes to Grand Central.",
-      "Cultural life is nearly zero. The creative energy you need lives in the city.",
-      "Dining and nightlife end early. This is a place people retreat to, not gather in.",
-      "You'll spend more time on trains than at openings or collaborations."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:29:26.346Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown is a family-trajectory river town, not a creative scene. The Music Hall hosts touring acts, but you won't find studio opens or collaborative collisions. If you crave proximity to ambitious creatives, you'll commute to the city for that oxygen.",
-    "tradeoffsForYou": [
-      "Metro-North Hudson Line is your lifeline. The scene lives in Manhattan, not here.",
-      "Downtown is walkable and pleasant, but quiet after dinner.",
-      "Tourist weekends and bridge traffic feel suburban, not immersive.",
-      "You'll need to build your creative network elsewhere and travel for it."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:29:27.698Z",
     "model": "claude-sonnet-4-5"
   },
   "white-plains": {
@@ -1437,19 +1359,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:29:48.299Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan is a mis-match. The Glass House is stunning, but the creative energy stopped in 1949. It's car-dependent estate living, family-school capital, and the closest thing to a scene is a well-appointed coffee shop.",
-    "tradeoffsForYou": [
-      "75-minute Metro-North (branch line) means you're not dropping into the city spontaneously.",
-      "Creative professionals live elsewhere. This is family money and architecture history.",
-      "You'll spend more time driving to Whole Foods than walking past galleries.",
-      "The cultural ecosystem score is zero for a reason. Beautiful, quiet, isolated."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:29:49.699Z",
     "model": "claude-sonnet-4-5"
   },
   "westport": {

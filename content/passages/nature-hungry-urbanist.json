@@ -920,32 +920,6 @@
     "generatedAt": "2026-05-07T15:40:44.012Z",
     "model": "claude-sonnet-4-5"
   },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill gives you brownstone blocks and proximity to two serious parks (Prospect is a twenty-minute walk, Cobble Hill Park is closer), but it's not as green-drenched as you might hope. The residential streets are quiet and tree-lined, yet the footprint is small enough that you're always near urban hum, not immersed in leaves.",
-    "tradeoffsForYou": [
-      "The park access is good, but you're never deep in trees the way Park Slope delivers.",
-      "Smith Street brings noise and energy when you'd rather just have the brownstones.",
-      "Strong transit redundancy, which helps weekend escapes to bigger nature.",
-      "You'll be walking to Prospect Park more than stepping out your door into green."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:40:46.541Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens delivers tree canopy on residential blocks that live up to the name. The deep front gardens and street trees make every walk feel deliberate, and Carroll Park gives you a real neighborhood square. Brooklyn Bridge Park is a fifteen-minute walk when you need the water.",
-    "tradeoffsForYou": [
-      "Carroll Park is lovely but small. Not Prospect Park scale.",
-      "The F/G gets you to Manhattan, but you're one transfer from most trailheads.",
-      "Smith and Court are commercial, not leafy. You'll walk the side streets.",
-      "Waterfront access requires a committed walk or bike to Brooklyn Bridge Park."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:40:47.910Z",
-    "model": "claude-sonnet-4-5"
-  },
   "gowanus": {
     "fitProse": "Gowanus offers space and F/G access, but the nature piece is tricky. Thomas Greene is a pocket park, and the canal cleanup means construction fencing more than waterfront serenity. You're minutes from Prospect Park, which matters, but stepping out your door won't give you sky.",
     "tradeoffsForYou": [
@@ -1167,19 +1141,6 @@
     "generatedAt": "2026-05-07T15:41:16.816Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont delivers everything the nature-hungry urbanist craves: Manor Park and Flint Park wrap around the village, Long Island Sound is a three-minute walk from Palmer Avenue, and the tree canopy on residential blocks is dense enough to feel borrowed from a different century. Metro-North puts you in Grand Central in thirty minutes.",
-    "tradeoffsForYou": [
-      "You're choosing harbor walks over hiking trails. Real wilderness is a drive.",
-      "Off-peak trains can be slow. Weekend reverse-commutes take planning.",
-      "Premium pricing reflects the waterfront and school district.",
-      "The village is lovely but small. Cultural energy lives in the city."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:41:17.222Z",
-    "model": "claude-sonnet-4-5"
-  },
   "mamaroneck": {
     "fitProse": "Harbor Island Park delivers exactly what you need: open sky, working waterfront, and the Long Island Sound to reset your nervous system. The Metro-North runs fast to Grand Central, and the blocks near Columbus Park trade Larchmont polish for more green space per dollar.",
     "tradeoffsForYou": [
@@ -1231,31 +1192,6 @@
     "generatedAt": "2026-05-07T15:41:23.835Z",
     "model": "claude-sonnet-4-5"
   },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry is a gift to the nature-hungry urbanist. Waterfront Park and the Old Croton Aqueduct trail put you on the river or in the woods daily, and Metro-North means you keep the optionality that matters without the concrete that doesn't.",
-    "tradeoffsForYou": [
-      "The Hudson Line is slower than the Harlem Line (add 10 to 15 minutes each way).",
-      "Small footprint means fewer trails, fewer cafes, fewer chances to vary the routine.",
-      "River views are real, but you're sharing them with stroller crowds on weekends."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:41:25.057Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is practically built for you. The Hudson Line gives you Grand Central in forty minutes, but the real gift is sky: river views from hillside streets, Scenic Hudson Park at the water, Irvington Woods for weekends. Quiet, green, and built at a human scale.",
-    "tradeoffsForYou": [
-      "The hills are beautiful but real. Walking to the train means committing to elevation.",
-      "Dining and village life thin out fast beyond Main Street.",
-      "Premium pricing for river views and the combination of green + rail.",
-      "You'll drive more than you think, even with Metro-North nearby."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:41:27.114Z",
-    "model": "claude-sonnet-4-5"
-  },
   "white-plains": {
     "fitProse": "White Plains is the most urban-feeling Westchester option, but nature-hungry urbanists will want to look carefully. Saxon Woods and Tibbits Park are real, but you'll be driving to them. The downtown high-rises offer density and Metro-North, but you're trading the kind of daily green you'd get in Bronxville or Scarsdale for mall-adjacent convenience.",
     "tradeoffsForYou": [
@@ -1280,19 +1216,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:41:31.177Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown delivers exactly what a nature-hungry urbanist craves: river views from the Mario Cuomo Bridge, waterfront parks like Pierson and Patriots, and Sleepy Hollow Cemetery's tree-canopy walks. The Metro-North ride to Grand Central is an hour, but you're trading that for mornings with sky and water.",
-    "tradeoffsForYou": [
-      "An hour commute each way on Metro-North, no express option.",
-      "Downtown is real but small. You'll need the car for variety.",
-      "Summer weekends bring tourist crowds near the waterfront.",
-      "Bridge traffic can bottle up the main roads during peak hours."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:41:31.487Z",
     "model": "claude-sonnet-4-5"
   },
   "chappaqua": {
@@ -1436,19 +1359,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:41:48.434Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan is heaven for nature-hungry urbanists ready to leave the city behind. Waveny Park's 300 acres, Irwin Park's trails, and estate-scale lots mean sky and trees are your default, not your reward. The Metro-North branch adds 75 minutes, but you trade the grind for morning light through old-growth canopy.",
-    "tradeoffsForYou": [
-      "Branch line to Grand Central via Stamford. 75 min each way, no express.",
-      "Car-dependent for everything outside walkable downtown.",
-      "You're choosing rural Connecticut, not urban optionality.",
-      "Premium pricing for the privilege of space and green."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:41:48.494Z",
     "model": "claude-sonnet-4-5"
   },
   "westport": {

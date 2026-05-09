@@ -1,8 +1,12 @@
 {
   "_comment": "Editorial overrides applied after Google Routes API computation. Per-cluster: any value here replaces the API result for that (neighborhood, cluster) pair. Use sparingly — only when we have higher confidence than Google's transit routing. Document the why in this file's git history.",
   "_overrides_by_reason": {
-    "google-missing-si-ferry-data": ["st-george"],
-    "google-missing-metro-north-new-canaan-branch": ["new-canaan"]
+    "google-missing-si-ferry-data": [
+      "st-george"
+    ],
+    "google-missing-metro-north-new-canaan-branch": [
+      "new-canaan"
+    ]
   },
   "st-george": {
     "midtown": 55,
@@ -14,16 +18,5 @@
     "stamford": 110,
     "greenwich": 95,
     "westport": 130
-  },
-  "new-canaan": {
-    "midtown": 85,
-    "fidi": 95,
-    "hudson-yards": 90,
-    "lic": 100,
-    "downtown-brooklyn": 110,
-    "newport-jc": 115,
-    "stamford": 25,
-    "greenwich": 50,
-    "westport": 45
   }
 }

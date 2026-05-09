@@ -14,10 +14,12 @@ import { rankNeighborhoods } from '@/lib/engine/score';
 // stop seeing them.
 //
 // Canary list curated from the 2026-05-08 Polaris dual-model audit.
+// `cobble-hill` represents the merged BoCoCa entry (Cobble Hill / Carroll
+// Gardens / Boerum Hill) — `carroll-gardens` and `boerum-hill` were folded
+// into it in the 2026-05-09 combinations pass.
 const ROOTED_CANARIES = [
   'park-slope',
   'cobble-hill',
-  'carroll-gardens',
   'forest-hills',
   'astoria',
   'bed-stuy',

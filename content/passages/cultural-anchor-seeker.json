@@ -919,32 +919,6 @@
     "generatedAt": "2026-05-07T15:37:46.014Z",
     "model": "claude-sonnet-4-5"
   },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill's cultural infrastructure is real but diffuse. Smith Street delivers Middle Eastern bakeries (Sahadi's is the anchor), Brooklyn Fare groceries, and Italian holdouts, but it's not a dense ethnic enclave. You'll find corner spots where you might become a regular, but the neighborhood codes more as quiet creative-class than as a cultural block.",
-    "tradeoffsForYou": [
-      "The cultural scene is present but not immersive. No single language dominates.",
-      "Smith Street has variety, but the energy is more boutique than neighborhood bazaar.",
-      "You'll find good food, but you're not walking into a real cultural enclave.",
-      "Sahadi's and Court Street markets are nearby, but they're destinations, not daily fabric."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:37:47.008Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens still carries its Italian-American backbone in the red-sauce joints, the bakeries on Court, and the older regulars at Caputo's. It's not ethnically immersive the way Bensonhurst or Astoria are today, but you can feel the anchoring if you care to become a regular on these blocks.",
-    "tradeoffsForYou": [
-      "The Italian-American community is real but aging and shrinking.",
-      "Most new neighbors are future-family types, not culture-seekers.",
-      "Smith Street tilts boutique; Court Street holds more old-guard texture.",
-      "You'll need to work to become part of what's left, not just live near it."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:37:50.440Z",
-    "model": "claude-sonnet-4-5"
-  },
   "gowanus": {
     "fitProse": "Gowanus is the wrong anchor for culture. It's a canvas for creative-class arrivals, but the neighborhood itself has no strong ethnic identity or long-standing cultural institutions. You'll find breweries and galleries, not the bakery where your language is spoken or the rhythm of home.",
     "tradeoffsForYou": [
@@ -1179,19 +1153,6 @@
     "generatedAt": "2026-05-07T15:38:17.315Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont is a tricky fit for the cultural anchor seeker. It's affluent, beautiful, and walkable, but the village reads overwhelmingly white and upper-middle-class. You'll find excellent bakeries and Italian delis, but not the multilingual rhythm or deep ethnic infrastructure of neighborhoods like Flushing or Jackson Heights.",
-    "tradeoffsForYou": [
-      "Cultural ecosystem scores 0.2. This is a homogeneous suburb, not a cultural crossroads.",
-      "The Metro-North line connects to Grand Central, but not to Queens or diverse Brooklyn hubs.",
-      "Village is lovely, but you won't become a regular at a place that feels like home unless home is WASP-y Westchester.",
-      "If you want community, it's here. If you want *your* community, look elsewhere."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:38:18.062Z",
-    "model": "claude-sonnet-4-5"
-  },
   "mamaroneck": {
     "fitProse": "Mamaroneck has something rare on the Sound Shore: a real Latin American community, with bodegas, panaderias, and Spanish heard as often as English on Mamaroneck Avenue. If you're looking for a place where cultural infrastructure isn't nostalgia but daily life, this is one of the only Westchester towns that delivers it.",
     "tradeoffsForYou": [
@@ -1217,19 +1178,6 @@
     "generatedAt": "2026-05-07T15:38:21.417Z",
     "model": "claude-sonnet-4-5"
   },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry isn't a cultural anchor neighborhood. It's a small river town with a Main Street strip and a Metro-North stop, designed for families more than for communities built around food or language. If your anchor is the Hudson views and quiet, it works. Otherwise, you'll be commuting to find yours.",
-    "tradeoffsForYou": [
-      "The dining and shops on Main Street are limited, not culturally specific.",
-      "Mercy College is the only cultural institution of note.",
-      "You'll likely be traveling to NYC or other Westchester towns for your community.",
-      "Hudson Line trains are slower than Harlem, so your anchor better be worth the trip."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:38:24.162Z",
-    "model": "claude-sonnet-4-5"
-  },
   "hastings-on-hudson": {
     "fitProse": "Hastings-on-Hudson has a creative-class, progressive identity, but its cultural ecosystem score is modest. This is a river town where you'll feel at home if your culture is liberal Westchester family life. If you're seeking a deeply rooted ethnic or linguistic anchor, you're mostly looking at Manhattan or closer-in Queens and Brooklyn.",
     "tradeoffsForYou": [
@@ -1241,32 +1189,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:38:24.757Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is quiet, prosperous, and almost entirely oriented toward families who look like each other. The cultural ecosystem score is zero. If you're seeking a bakery where you'll hear your home language or a street rhythm that feels like community, this river town won't deliver it.",
-    "tradeoffsForYou": [
-      "The village has Metro-North and schools, but no cultural anchor to speak of.",
-      "Demographic homogeneity is the defining feature here.",
-      "You'll drive to Tarrytown or White Plains for groceries and any dining beyond basics.",
-      "Estate-scale homes are beautiful, but the social fabric is thin and uniform."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:38:26.901Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown is shaped for family life, not for cultural anchoring. The downtown is real and walkable, but the restaurants and shops are more generic Hudson Valley than rooted immigrant or ethnic community. You'll find no bakery where the counter knows your order in another language.",
-    "tradeoffsForYou": [
-      "Metro-North to Grand Central is great for commuting, not for finding your people.",
-      "The cultural ecosystem here is suburban mainstream, not diaspora or arts scene.",
-      "Tourist crowds in summer are more Sleepy Hollow Legend than neighborhood regulars.",
-      "Beautiful river views, but the rhythm of daily life won't feel like home unless home was Westchester."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:38:27.725Z",
     "model": "claude-sonnet-4-5"
   },
   "white-plains": {
@@ -1436,19 +1358,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:38:49.104Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan is architecturally distinguished and wealthy, but its cultural ecosystem score is zero for a reason. This is Connecticut estate country, not a place where you'll find the language, food, or street life that anchors identity. Beautiful, quiet, and very white.",
-    "tradeoffsForYou": [
-      "The downtown has cafes and a market, but no cultural anchor beyond WASP New England.",
-      "You'll need to drive to Stamford or the city for the bakery, restaurant, or shop that feels like yours.",
-      "Branch-line Metro-North makes weekend trips to ethnic neighborhoods in the city a 90-minute trek.",
-      "If you want your kids in top schools and you can build culture at home, it works. Otherwise, no."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:38:50.282Z",
     "model": "claude-sonnet-4-5"
   },
   "westport": {

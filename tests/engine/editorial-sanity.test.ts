@@ -66,7 +66,7 @@ describe('Editorial sanity — landmark personas reach their targets', () => {
   it.each([
     ['scarsdale', 25],
     ['bronxville', 60],
-    ['larchmont', 35],
+    ['mamaroneck', 35], // 'larchmont' was merged into 'mamaroneck' (Larchmont/Mamaroneck combined)
     ['chappaqua', 60],
     ['battery-park-city', 35],
   ])('%s persona reaches top %i', (id, k) => {

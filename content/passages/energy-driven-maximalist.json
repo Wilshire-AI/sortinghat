@@ -919,19 +919,6 @@
     "generatedAt": "2026-05-07T15:43:40.863Z",
     "model": "claude-sonnet-4-5"
   },
-  "boerum-hill": {
-    "fitProse": "Boerum Hill is brownstone calm, not energy. Smith Street has a solid restaurant row, but the whole neighborhood tilts toward couples pushing strollers, not the late-night density you want. Atlantic-Barclays gives you train redundancy, but the blocks themselves are quiet by design.",
-    "tradeoffsForYou": [
-      "The action lives elsewhere. This is Park Slope's quieter cousin.",
-      "Smith Street weekend nights are fine, but it's not the full-volume scene you crave.",
-      "You'll spend a lot of time heading to Manhattan, Williamsburg, or Downtown Brooklyn for energy.",
-      "Beautiful blocks, strong transit, but the neighborhood hush will make you restless."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:43:45.300Z",
-    "model": "claude-sonnet-4-5"
-  },
   "gowanus": {
     "fitProse": "Gowanus is the wrong shape for an energy maximalist. The industrial blocks are quiet after dark, the canal still divides more than it connects, and the breweries close early. The F/G puts you in Manhattan fine, but the neighborhood itself feels like a construction site waiting for critical mass.",
     "tradeoffsForYou": [
@@ -943,19 +930,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:43:45.673Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "carroll-gardens": {
-    "fitProse": "Carroll Gardens is low-intensity by design. The blocks are gorgeous, the front gardens are real, but the energy maxes out at weekend brunch lines on Smith Street. This is brownstone calm, built for strollers and longtime residents, not friction or late-night density.",
-    "tradeoffsForYou": [
-      "Quiet after 10 p.m., even on weekends. The scene is thin.",
-      "F/G only. If the train stalls, you wait.",
-      "Restaurant energy clusters on two strips. The rest is residential hush.",
-      "Pricey for what is fundamentally a sleepy, family-first neighborhood."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:43:45.710Z",
     "model": "claude-sonnet-4-5"
   },
   "red-hook": {
@@ -1166,19 +1140,6 @@
     "generatedAt": "2026-05-07T15:44:09.827Z",
     "model": "claude-sonnet-4-5"
   },
-  "larchmont": {
-    "fitProse": "Larchmont is a full-volume mismatch. It's a commuter village with sailboats, top schools, and tree-lined blocks designed for calm family life. The energy you crave is thirty minutes away on Metro-North, and the village shuts down by 9 p.m.",
-    "tradeoffsForYou": [
-      "You will be the only person awake after 10 p.m.",
-      "Metro-North to Grand Central takes 30 min, but off-peak it crawls.",
-      "The walkable village is one coffee shop and a hardware store.",
-      "If nightlife or density is the point, this is the wrong map entirely."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:44:10.608Z",
-    "model": "claude-sonnet-4-5"
-  },
   "rye": {
     "fitProse": "Rye is the wrong kind of fullness for an energy-driven maximalist. It's prestige-quiet, country-club calm, and estate-scale suburban. The Metro-North gets you to Grand Central in 45 minutes, but you're commuting to the energy, not living in it.",
     "tradeoffsForYou": [
@@ -1231,32 +1192,6 @@
     "generatedAt": "2026-05-07T15:44:16.237Z",
     "model": "claude-sonnet-4-5"
   },
-  "dobbs-ferry": {
-    "fitProse": "Dobbs Ferry is built for families seeking river-town calm, not maximalists chasing energy. The downtown strip is pleasant but short, nightlife is virtually absent, and the Hudson Line gets you to Grand Central in 50 minutes, not 30. If you want everything happening at once, you'll feel stranded.",
-    "tradeoffsForYou": [
-      "The Metro-North Hudson Line is slower than the Harlem. You'll notice.",
-      "Dining and nightlife end at Main Street. After that, it's residential quiet.",
-      "This is a place people move to escape intensity, not find it.",
-      "Weekend energy peaks at brunch and the farmers market, then dissolves."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:44:20.998Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "irvington-ny": {
-    "fitProse": "Irvington is the wrong intensity for someone who wants NYC at full volume. It's a river-town suburb with estate homes, top schools, and quiet blocks. The Metro-North gets you to Grand Central, but the village shuts down early and the streets empty by 9 p.m.",
-    "tradeoffsForYou": [
-      "The energy you crave lives in Manhattan, not here.",
-      "Dining and nightlife end at the village center, which is tiny.",
-      "You'll spend more time commuting than you will being near anything happening.",
-      "Beautiful views, zero friction. For you, that's a problem."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:44:21.182Z",
-    "model": "claude-sonnet-4-5"
-  },
   "white-plains": {
     "fitProse": "White Plains is the wrong shape for the energy-driven maximalist. It's Westchester's most urban option, but that means mall parking lots and office towers, not the friction and nightlife you're chasing. Metro-North to Grand Central is good, but you'll spend most nights heading south.",
     "tradeoffsForYou": [
@@ -1268,19 +1203,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:44:21.999Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "tarrytown": {
-    "fitProse": "Tarrytown is a river town, not a high-energy city block. The Metro-North gets you to Grand Central in 45 minutes, but once you're home the action is a walkable downtown with a few restaurants and the Music Hall, not nightlife or density. This is where maximalists move when they're trading volume for space.",
-    "tradeoffsForYou": [
-      "You're commuting 45+ minutes if you want the city's pulse.",
-      "Downtown closes early. Nightlife means heading back to Manhattan.",
-      "Bridge traffic and tourist weekends slow the pace further.",
-      "The whole point here is calm and space, not friction and crowds."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:44:22.355Z",
     "model": "claude-sonnet-4-5"
   },
   "chappaqua": {
@@ -1437,19 +1359,6 @@
     "reviewedAt": null,
     "reviewedBy": null,
     "generatedAt": "2026-05-07T15:44:39.737Z",
-    "model": "claude-sonnet-4-5"
-  },
-  "new-canaan": {
-    "fitProse": "New Canaan is the opposite of what you want. It's a low-density estate suburb with a 75-minute Metro-North branch line, no nightlife, no street life, no restaurants open late. Beautiful houses, excellent schools, total quiet.",
-    "tradeoffsForYou": [
-      "You'll need a car for everything. There is no walking to energy.",
-      "The train commute eats nearly three hours of your day, round-trip.",
-      "Zero nightlife, minimal restaurant scene, nowhere to feel the city's pulse.",
-      "If you crave density and friction, this is the wrong borough entirely."
-    ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "generatedAt": "2026-05-07T15:44:43.239Z",
     "model": "claude-sonnet-4-5"
   },
   "westport": {
