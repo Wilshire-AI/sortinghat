@@ -12,15 +12,39 @@ import type { Question } from './types';
 //   (groupNext: true on commute-target keeps them on the same screen)
 
 export const questions: readonly Question[] = [
-  // PHASE 1 — WARM-UP (high-signal, easy, non-personal)
+  // PHASE 1 — WARM-UP (concrete behavior, no values judgment)
+  {
+    id: 'transit-redundancy',
+    kind: 'forced_choice',
+    prompt: 'How do you mostly want to get around?',
+    choices: [
+      {
+        label: 'I\'d take transit. I want multiple options.',
+        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
+      },
+      {
+        label: 'I\'d take transit. One reliable line is enough.',
+        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
+      },
+      {
+        label: 'I\'d drive. Car-dependent is fine.',
+        impacts: { 'transit-psychology': 0 },
+        softPrefs: ['car-friendly'],
+      },
+    ],
+  },
   {
     id: 'access-vs-space',
     kind: 'forced_choice',
-    prompt: 'Smaller in the middle of everything, or more space further out?',
+    prompt: 'Where on the density spectrum do you actually want to live?',
     choices: [
       {
         label: 'In the middle of everything. Trade space for being where it\'s all happening.',
-        impacts: { 'urban-intensity-tolerance': 0.5, 'space-sensitivity': -0.5 },
+        impacts: { 'urban-intensity-tolerance': 0.55, 'space-sensitivity': -0.5 },
+      },
+      {
+        label: 'A walkable neighborhood with elbow room. A real downtown, but not the densest part.',
+        impacts: { 'urban-intensity-tolerance': 0.0, 'space-sensitivity': 0.1, 'daily-life-walkability': 0.4, 'rootedness-vs-access': -0.2 },
       },
       {
         label: 'More space. I\'ll travel for the action when I want it.',
@@ -259,26 +283,6 @@ export const questions: readonly Question[] = [
 
   // PHASE 4 — CONCRETE TRADEOFFS (forced-choice)
   {
-    id: 'transit-redundancy',
-    kind: 'forced_choice',
-    prompt: 'How do you mostly want to get around?',
-    choices: [
-      {
-        label: 'I\'d take transit. I want multiple options.',
-        impacts: { 'transit-psychology': 0.7, 'urban-intensity-tolerance': 0.4 },
-      },
-      {
-        label: 'I\'d take transit. One reliable line is enough.',
-        impacts: { 'transit-psychology': 0, 'urban-intensity-tolerance': 0.2 },
-      },
-      {
-        label: 'I\'d drive. Car-dependent is fine.',
-        impacts: { 'transit-psychology': 0 },
-        softPrefs: ['car-friendly'],
-      },
-    ],
-  },
-  {
     id: 'noise-tolerance',
     kind: 'forced_choice',
     prompt: 'Same price, same size: quiet block, or above a busy street?',
@@ -293,15 +297,15 @@ export const questions: readonly Question[] = [
   {
     id: 'social-register-fit',
     kind: 'forced_choice',
-    prompt: 'Which neighborhood vibe pulls you more?',
+    prompt: 'Polished and traditional, or casual and creative? Which feels more like home?',
     choices: [
       {
-        label: 'Casual, progressive, a little bohemian. Lived-in and unbuttoned.',
-        impacts: { 'social-register': -0.7 },
+        label: 'Polished and traditional. Manicured streets, classic, put-together.',
+        impacts: { 'social-register': 0.7 },
       },
       {
-        label: 'Polished and traditional. Classic, put-together, doorman-fluent.',
-        impacts: { 'social-register': 0.7 },
+        label: 'Casual and creative. Lived-in, mom-and-pops, less formal.',
+        impacts: { 'social-register': -0.7 },
       },
       {
         label: 'No strong pull either way.',
@@ -310,12 +314,12 @@ export const questions: readonly Question[] = [
     ],
   },
   {
-    id: 'income-tier-fit',
+    id: 'price-tier-fit',
     kind: 'forced_choice',
-    prompt: 'Higher-income polished, or middle-income value-priced. Which fits?',
+    prompt: 'Premium-priced housing market, or value-priced. Which feels more right?',
     choices: [
       {
-        label: 'High-income, established. Professional neighbors, top schools, polish.',
+        label: 'Premium. Top of market, expensive-feeling, established.',
         impacts: { 'prestige-orientation': 0.7 },
       },
       {
@@ -323,7 +327,7 @@ export const questions: readonly Question[] = [
         impacts: { 'prestige-orientation': 0 },
       },
       {
-        label: 'Middle or working-income. Value-priced, lived-in, less polish.',
+        label: 'Value-priced. More accessible market, mixed-income.',
         impacts: { 'prestige-orientation': -0.7 },
       },
     ],

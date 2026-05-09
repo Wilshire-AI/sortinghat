@@ -33,8 +33,8 @@ describe('questions', () => {
       }
     }
   });
-  it('access-vs-space is questions[0] (high-signal, easy, non-personal opener)', () => {
-    expect(questions[0].id).toBe('access-vs-space');
+  it('transit-redundancy is questions[0] (concrete behavior, instant opener)', () => {
+    expect(questions[0].id).toBe('transit-redundancy');
   });
 
   it('place-tier is reachable and has 6 choices including a zero-impact unsure option', () => {
