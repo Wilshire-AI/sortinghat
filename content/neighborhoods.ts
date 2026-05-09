@@ -128,7 +128,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': 0.5,
     'rootedness-vs-access': 0.55, 'daily-life-walkability': 0.8
     , 'streetscape-quality': -0.38 , 'community-fabric': -0.05 },
-    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise', 'newer-lowrise'],
+    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise', 'newer-lowrise', 'prewar-renovated'],
     basePassages: {
       whyItFits: 'NYC\'s most transit-redundant residential zone. A dozen subway lines and the PATH inside a square mile, plus ferry. Newer apartment stock is generous on space relative to price. The waterfront promenade does most of what Riverside Park does, with bigger views.',
       whoThrivesHere: 'Transit-optimizers and value-conscious professionals willing to trade neighborhood texture for square footage.',
@@ -192,7 +192,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': 0.55, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.06 , 'community-fabric': 0 },
     culturalTags: ['lgbtq'],
-    housingTypes: ['co-op', 'rental', 'prewar-character'],
+    housingTypes: ['co-op', 'rental', 'prewar-character', 'luxury-highrise', 'newer-lowrise'],
     basePassages: {
       whyItFits: 'NYC\'s most diverse restaurant row, walking distance to anywhere in midtown, and the most transit-redundant west-side residential zone. Loud, dense, and unpretentious. The un-glamorous engine room of central Manhattan life.',
       whoThrivesHere: 'High-energy professionals and theater-adjacent creative workers who want central without precious.',
@@ -235,7 +235,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': 0.85,
     'rootedness-vs-access': 0.25, 'daily-life-walkability': 1
     , 'streetscape-quality': 0.5 , 'community-fabric': 0 },
-    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise', 'prewar-character', 'newer-lowrise'],
+    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
     basePassages: {
       whyItFits: 'NYC\'s most successful gentrification arc, complete. The L holds the neighborhood hostage, but newer residential buildings are large and waterfront-adjacent, the restaurants are excellent, and the energy peaks higher than anywhere in Brooklyn except maybe Bushwick on a Saturday night.',
       whoThrivesHere: 'Creative-class people in their late 20s and 30s who want energy without committing to Manhattan prices.',
@@ -322,7 +322,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': 0.9,
     'rootedness-vs-access': 0.25, 'daily-life-walkability': 0.6
     , 'streetscape-quality': 0.78 , 'community-fabric': -0.05 },
-    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise', 'prewar-character', 'newer-lowrise'],
+    housingTypes: ['condo', 'co-op', 'rental', 'luxury-highrise', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
     basePassages: {
       whyItFits: 'Cobbled streets between two bridges, cast-iron warehouses converted to lofts, and direct access to one of the city\'s most spectacular waterfront parks. A small neighborhood with outsize cinematic identity.',
       whoThrivesHere: 'Design-and-tech professionals who want the waterfront as their daily backdrop.',
@@ -408,7 +408,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.6
     , 'streetscape-quality': 0.29 , 'community-fabric': 0.05 },
     culturalTags: ['eastern-european', 'east-asian'],
-    housingTypes: ['single-family', 'co-op', 'condo', 'rental', 'prewar-character'],
+    housingTypes: ['single-family', 'co-op', 'condo', 'rental', 'newer-lowrise'],
     hasQuietBlocks: true,
     basePassages: {
       whyItFits: 'A genuine waterfront community, less famous than Brighton but materially better-served by transit (B and Q). Apartment stock includes real two-bedrooms at prices Brooklyn proper has forgotten. A working mix of Russian, Chinese, Italian, and Caribbean communities.',
@@ -452,7 +452,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.6, 'daily-life-walkability': 1
     , 'streetscape-quality': 0.5 , 'community-fabric': 0.15 },
     culturalTags: ['mediterranean', 'middle-eastern'],
-    housingTypes: ['townhouse', 'co-op', 'condo', 'rental', 'prewar-character'],
+    housingTypes: ['townhouse', 'co-op', 'condo', 'rental', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
     basePassages: {
       whyItFits: 'NYC\'s deepest Greek neighborhood and one of its most successfully diverse, with apartments materially larger than equivalent prices in Brooklyn. The N/W gives you direct midtown access. Daily life is anchored by restaurants from a dozen cuisines within walking distance.',
       whoThrivesHere: 'Cultural-anchor seekers and value-seeking professionals.',
@@ -473,7 +473,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.3, 'daily-life-walkability': 0.9
     , 'streetscape-quality': -0.2 , 'community-fabric': 0.15 },
     culturalTags: ['east-asian'],
-    housingTypes: ['single-family', 'co-op', 'condo', 'rental', 'prewar-character', 'newer-lowrise'],
+    housingTypes: ['single-family', 'co-op', 'condo', 'rental', 'prewar-character', 'newer-lowrise', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'NYC\'s densest pan-Asian neighborhood and one of the country\'s great food cities in its own right. Apartments are larger and cheaper than anywhere comparable. The 7 train is your direct line to midtown.',
       whoThrivesHere: 'Cultural-anchor seekers, particularly those for whom East Asian community access is daily life.',
@@ -494,7 +494,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.7, 'daily-life-walkability': 0.95
     , 'streetscape-quality': 0.65 , 'community-fabric': 0.35 },
     culturalTags: ['jewish', 'eastern-european'],
-    housingTypes: ['single-family', 'co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated'],
+    housingTypes: ['single-family', 'co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated', 'newer-lowrise'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1120,7 +1120,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': -0.85,
     'rootedness-vs-access': 0.1, 'daily-life-walkability': 0.8
     , 'streetscape-quality': 0.35 , 'community-fabric': 0.1 },
-    housingTypes: ['rental', 'prewar-character'],
+    housingTypes: ['rental'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1143,7 +1143,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': 0.5, 'daily-life-walkability': 0.9
     , 'streetscape-quality': -0.1 , 'community-fabric': -0.05 },
     culturalTags: ['south-asian'],
-    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated'],
+    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated', 'luxury-highrise', 'newer-lowrise'],
     basePassages: {
       whyItFits: 'Manhattan\'s post-collegiate residential workhorse. Murray Hill proper is full of 20-somethings in shared three-bedrooms; Kips Bay is calmer with bigger buildings. Curry Hill on Lexington gives the area a real South Asian food anchor. Grand Central and Penn are walking-distance.',
       whoThrivesHere: 'Recent grads, first-job professionals, and people who want central-Manhattan ease without committing to a polished neighborhood.',
@@ -1472,7 +1472,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.48 , 'community-fabric': 0.2 },
     culturalTags: ['latin-american', 'east-asian'],
-    housingTypes: ['co-op', 'rental', 'townhouse', 'prewar-character'],
+    housingTypes: ['co-op', 'rental', 'townhouse', 'prewar-character', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1537,7 +1537,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.75, 'daily-life-walkability': 0.8
     , 'streetscape-quality': 0.05 , 'community-fabric': 0.05 },
     culturalTags: ['eastern-european', 'jewish'],
-    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character'],
+    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1583,7 +1583,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.5
     , 'streetscape-quality': 0.2 , 'community-fabric': 0.05 },
     culturalTags: ['east-asian'],
-    housingTypes: ['single-family', 'co-op', 'rental', 'prewar-character'],
+    housingTypes: ['single-family', 'co-op', 'rental'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1606,7 +1606,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.95
     , 'streetscape-quality': 0.3 , 'community-fabric': 0.2 },
     culturalTags: ['south-asian', 'latin-american'],
-    housingTypes: ['co-op', 'rental', 'prewar-character'],
+    housingTypes: ['co-op', 'rental', 'prewar-character', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1736,7 +1736,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': 0.6,
     'rootedness-vs-access': 0.75, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.34 , 'community-fabric': -0.05 },
-    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated'],
+    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'The Flatiron Building anchor + the new luxury-hotel NoMad layer to its north. Office buildings by day, post-office residential by night, with Madison Square Park as the green core. Six subway lines through 23rd and 28th streets make this one of the most transit-redundant residential pockets in midtown.',
       whoThrivesHere: 'Career-anchored professionals who want walking-distance access to all of midtown without committing to Murray Hill.',
@@ -1775,7 +1775,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': 0.2,
     'rootedness-vs-access': -0.7, 'daily-life-walkability': 0.3
     , 'streetscape-quality': 0.55 , 'community-fabric': 0.05 },
-    housingTypes: ['townhouse', 'rental', 'condo', 'prewar-character', 'newer-lowrise'],
+    housingTypes: ['townhouse', 'rental', 'condo', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
     hasQuietBlocks: true,
     basePassages: {
       whyItFits: 'Brooklyn\'s most isolated waterfront peninsula. Cobblestone streets, warehouse-converted lofts, the IKEA ferry as one of your transit options, and the most spectacular Statue of Liberty views in NYC. Limited subway is the cost of the calm.',
@@ -2040,7 +2040,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   'social-register': 0.2,
   'visitor-facing-energy': -0.1,
   'rootedness-vs-access': -0.45, 'daily-life-walkability': 0.8,  'streetscape-quality': 0.15,  'community-fabric': 0.15, },
-    culturalTags: ['latin-american'], carDependent: false, housingTypes: ['condo', 'rental', 'single-family', 'newer-lowrise'],
+    culturalTags: ['latin-american'], carDependent: false, housingTypes: ['condo', 'rental', 'single-family', 'newer-lowrise', 'luxury-highrise'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: { whyItFits: 'Westchester\'s commercial center and county seat. Mix of single-family residential and downtown high-rise apartments, Metro-North to Grand Central, the Galleria Mall, and a meaningful diversity of communities. The most urban-feeling Westchester option.', whoThrivesHere: 'Value-aware professionals who want suburban Westchester + apartment-living option.', tradeoffs: ['Reads as commercial-suburban', 'Less prestige-coded than nearby towns', 'School quality varies by zone'] },
