@@ -8,11 +8,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'upper-west-side', slug: 'upper-west-side', name: 'Upper West Side', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.5,
+      'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.65,
       'space-sensitivity': 0.5, 'family-trajectory': 0.8, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.8, 'creative-energy': 0.0, 'friction-sensitivity': 0.6,
       'safety-need': 0.8, 'school-quality': 0.6,
-    'social-register': -0.75,
+    'social-register': 0,
     'visitor-facing-energy': -0.65,
     'rootedness-vs-access': 0.55, 'daily-life-walkability': 1
     , 'streetscape-quality': 0.88 , 'community-fabric': 0.05 },
@@ -54,11 +54,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'west-village', slug: 'west-village', name: 'West Village', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.9,
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': 0.93,
       'space-sensitivity': -0.3, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.65, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
       'safety-need': 0.75, 'school-quality': 0.6,
-    'social-register': 0.45,
+    'social-register': 0,
     'visitor-facing-energy': 0.85,
     'rootedness-vs-access': 0.75, 'daily-life-walkability': 1
     , 'streetscape-quality': 0.95 , 'community-fabric': 0 },
@@ -77,7 +77,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'east-village', slug: 'east-village', name: 'East Village', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.75, 'transit-psychology': 0.0, 'prestige-orientation': 0.0,
+      'urban-intensity-tolerance': 0.75, 'transit-psychology': 0.0, 'prestige-orientation': 0.3,
       'space-sensitivity': -0.4, 'family-trajectory': -0.4, 'cultural-ecosystem': 0.5,
       'environmental-openness': 0.4, 'creative-energy': 0.85, 'friction-sensitivity': -0.4,
       'safety-need': 0.55, 'school-quality': 0.25,
@@ -102,7 +102,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.7,
       'safety-need': 0.85, 'school-quality': 0.7,
-    'social-register': 0.75,
+    'social-register': 0.15,
     'visitor-facing-energy': 0.35,
     'rootedness-vs-access': 0.7, 'daily-life-walkability': 0.8
     , 'streetscape-quality': 0.81 , 'community-fabric': -0.1 },
@@ -227,11 +227,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'williamsburg', slug: 'williamsburg', name: 'Williamsburg', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.0, 'prestige-orientation': 0.4,
+      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.0, 'prestige-orientation': 0.58,
       'space-sensitivity': 0.0, 'family-trajectory': 0.0, 'cultural-ecosystem': 0.3,
       'environmental-openness': 0.4, 'creative-energy': 0.7, 'friction-sensitivity': -0.2,
       'safety-need': 0.7, 'school-quality': 0.25,
-    'social-register': -0.3,
+    'social-register': -0.5,
     'visitor-facing-energy': 0.85,
     'rootedness-vs-access': 0.25, 'daily-life-walkability': 1
     , 'streetscape-quality': 0.5 , 'community-fabric': 0 },
@@ -247,11 +247,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'park-slope', slug: 'park-slope', name: 'Park Slope', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.5,
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.6,
       'space-sensitivity': 0.5, 'family-trajectory': 0.9, 'cultural-ecosystem': 0.1,
       'environmental-openness': 0.75, 'creative-energy': 0.0, 'friction-sensitivity': 0.7,
       'safety-need': 0.85, 'school-quality': 0.7,
-    'social-register': -0.8,
+    'social-register': -0.05,
     'visitor-facing-energy': -0.4,
     'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.92
     , 'streetscape-quality': 0.85 , 'community-fabric': 0.3 },
@@ -274,7 +274,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.7, 'creative-energy': -0.1, 'friction-sensitivity': 0.8,
       'safety-need': 0.85, 'school-quality': 0.65,
-    'social-register': 0.7,
+    'social-register': 0.35,
     'visitor-facing-energy': 0.1,
     'rootedness-vs-access': -0.6, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.95 , 'community-fabric': 0.05 },
@@ -314,11 +314,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'dumbo', slug: 'dumbo', name: 'DUMBO', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.5, 'prestige-orientation': 0.7,
+      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.5, 'prestige-orientation': 0.73,
       'space-sensitivity': 0.4, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
       'safety-need': 0.8, 'school-quality': 0.55,
-    'social-register': 0.4,
+    'social-register': -0.05,
     'visitor-facing-energy': 0.9,
     'rootedness-vs-access': 0.25, 'daily-life-walkability': 0.6
     , 'streetscape-quality': 0.78 , 'community-fabric': -0.05 },
@@ -334,11 +334,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'cobble-hill', slug: 'cobble-hill', name: 'Cobble Hill / Carroll Gardens', shortName: 'BoCoCa', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.4,
+      'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.62,
       'space-sensitivity': 0.5, 'family-trajectory': 0.85, 'cultural-ecosystem': 0.4,
       'environmental-openness': 0.5, 'creative-energy': 0.3, 'friction-sensitivity': 0.8,
       'safety-need': 0.85, 'school-quality': 0.6,
-    'social-register': -0.6,
+    'social-register': -0.08,
     'visitor-facing-energy': -0.6,
     'rootedness-vs-access': -0.85, 'daily-life-walkability': 1
     , 'streetscape-quality': 0.92 , 'community-fabric': 0.2 },
@@ -422,11 +422,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'long-island-city', slug: 'long-island-city', name: 'Long Island City', borough: 'queens',
     scores: {
-      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.2,
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.52,
       'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.62,
       'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.5,
       'safety-need': 0.75, 'school-quality': 0.35,
-    'social-register': 0.1,
+    'social-register': 0.07,
     'visitor-facing-energy': 0,
     'rootedness-vs-access': 0.3, 'daily-life-walkability': 0.8
     , 'streetscape-quality': -0.08 , 'community-fabric': -0.05 },
@@ -736,11 +736,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'hoboken', slug: 'hoboken', name: 'Hoboken', borough: 'nj',
     scores: {
-      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.6, 'prestige-orientation': 0.2,
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.6, 'prestige-orientation': 0.5,
       'space-sensitivity': 0.5, 'family-trajectory': 0.8, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.6, 'creative-energy': 0.0, 'friction-sensitivity': 0.5,
       'safety-need': 0.85, 'school-quality': 0.4,
-    'social-register': 0.2,
+    'social-register': -0.08,
     'visitor-facing-energy': 0.2,
     'rootedness-vs-access': 0.05, 'daily-life-walkability': 1
     , 'streetscape-quality': 0.65 , 'community-fabric': 0.2 },
@@ -758,11 +758,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'jersey-city', slug: 'jersey-city', name: 'Jersey City', borough: 'nj',
     scores: {
-      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.1,
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.38,
       'space-sensitivity': 0.7, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.4,
       'environmental-openness': 0.5, 'creative-energy': 0.2, 'friction-sensitivity': 0.4,
       'safety-need': 0.7, 'school-quality': 0.15,
-    'social-register': 0.05,
+    'social-register': -0.03,
     'visitor-facing-energy': 0.05,
     'rootedness-vs-access': 0.05, 'daily-life-walkability': 0.85
     , 'streetscape-quality': 0.38 , 'community-fabric': 0.1 },
@@ -854,7 +854,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'lower-east-side', slug: 'lower-east-side', name: 'Lower East Side', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.4, 'prestige-orientation': 0.1,
+      'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.4, 'prestige-orientation': 0.32,
       'space-sensitivity': -0.3, 'family-trajectory': -0.2, 'cultural-ecosystem': 0.6,
       'environmental-openness': 0.45, 'creative-energy': 0.7, 'friction-sensitivity': -0.3,
       'safety-need': 0.55, 'school-quality': 0.2,
@@ -962,11 +962,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'morningside-heights', slug: 'morningside-heights', name: 'Morningside Heights', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.4,
+      'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.32,
       'space-sensitivity': 0.5, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.3,
       'environmental-openness': 0.6, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
       'safety-need': 0.6, 'school-quality': 0.4,
-    'social-register': -0.6,
+    'social-register': -0.15,
     'visitor-facing-energy': -0.35,
     'rootedness-vs-access': -0.2, 'daily-life-walkability': 0.75
     , 'streetscape-quality': 0.6 , 'community-fabric': 0.1 },
@@ -1180,7 +1180,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'space-sensitivity': 0.4, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.4, 'creative-energy': 0.4, 'friction-sensitivity': 0.3,
       'safety-need': 0.8, 'school-quality': 0.5,
-    'social-register': 0.35,
+    'social-register': -0.03,
     'visitor-facing-energy': 1,
     'rootedness-vs-access': 0.85, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.75 , 'community-fabric': -0.1 },
@@ -1240,7 +1240,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'greenpoint', slug: 'greenpoint', name: 'Greenpoint', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.0, 'prestige-orientation': 0.2,
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.0, 'prestige-orientation': 0.5,
       'space-sensitivity': 0.3, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.5,
       'environmental-openness': 0.45, 'creative-energy': 0.4, 'friction-sensitivity': 0.4,
       'safety-need': 0.6, 'school-quality': 0.35,
@@ -1265,7 +1265,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'space-sensitivity': 0.7, 'family-trajectory': 0.82, 'cultural-ecosystem': 0.6,
       'environmental-openness': 0.75, 'creative-energy': -0.3, 'friction-sensitivity': 0.7,
       'safety-need': 0.8, 'school-quality': 0.4,
-    'social-register': 0.15,
+    'social-register': 0.4,
     'visitor-facing-energy': -0.6,
     'rootedness-vs-access': -0.75, 'daily-life-walkability': 0.8
     , 'streetscape-quality': 0.45 , 'community-fabric': 0.4 },
@@ -1305,11 +1305,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'prospect-heights', slug: 'prospect-heights', name: 'Prospect Heights', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.7, 'prestige-orientation': 0.5,
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.7, 'prestige-orientation': 0.52,
       'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.3,
       'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.6,
       'safety-need': 0.8, 'school-quality': 0.4,
-    'social-register': -0.7,
+    'social-register': -0.2,
     'visitor-facing-energy': -0.05,
     'rootedness-vs-access': -0.4, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.75 , 'community-fabric': 0.2 },
@@ -1327,11 +1327,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'fort-greene', slug: 'fort-greene', name: 'Fort Greene', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.7, 'prestige-orientation': 0.4,
+      'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.7, 'prestige-orientation': 0.55,
       'space-sensitivity': 0.5, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.6,
       'environmental-openness': 0.6, 'creative-energy': 0.5, 'friction-sensitivity': 0.5,
       'safety-need': 0.75, 'school-quality': 0.3,
-    'social-register': -0.65,
+    'social-register': -0.22,
     'visitor-facing-energy': 0,
     'rootedness-vs-access': -0.35, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.79 , 'community-fabric': 0.2 },
@@ -1350,11 +1350,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'clinton-hill', slug: 'clinton-hill', name: 'Clinton Hill', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.2,
+      'urban-intensity-tolerance': -0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.42,
       'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.5,
       'environmental-openness': 0.5, 'creative-energy': 0.4, 'friction-sensitivity': 0.6,
       'safety-need': 0.7, 'school-quality': 0.3,
-    'social-register': -0.6,
+    'social-register': -0.22,
     'visitor-facing-energy': -0.4,
     'rootedness-vs-access': -0.55, 'daily-life-walkability': 0.8
     , 'streetscape-quality': 0.77 , 'community-fabric': 0.2 },
@@ -1574,11 +1574,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'bayside', slug: 'bayside', name: 'Bayside', borough: 'queens',
     scores: {
-      'urban-intensity-tolerance': -0.6, 'transit-psychology': -0.1, 'prestige-orientation': 0.0,
+      'urban-intensity-tolerance': -0.6, 'transit-psychology': -0.1, 'prestige-orientation': -0.1,
       'space-sensitivity': 0.85, 'family-trajectory': 0.85, 'cultural-ecosystem': 0.7,
       'environmental-openness': 0.7, 'creative-energy': -0.5, 'friction-sensitivity': 0.85,
       'safety-need': 0.85, 'school-quality': 0.65,
-    'social-register': 0.25,
+    'social-register': 0.45,
     'visitor-facing-energy': -0.75,
     'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.5
     , 'streetscape-quality': 0.2 , 'community-fabric': 0.05 },
@@ -1707,11 +1707,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'nolita-little-italy', slug: 'nolita-little-italy', name: 'NoLita / Little Italy', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.6, 'prestige-orientation': 0.6,
+      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.6, 'prestige-orientation': 0.78,
       'space-sensitivity': -0.4, 'family-trajectory': 0.0, 'cultural-ecosystem': 0.5,
       'environmental-openness': 0.0, 'creative-energy': 0.6, 'friction-sensitivity': 0.0,
       'safety-need': 0.75, 'school-quality': 0.4,
-    'social-register': 0.15,
+    'social-register': -0.03,
     'visitor-facing-energy': 0.9,
     'rootedness-vs-access': 0.7, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.71 , 'community-fabric': 0 },
@@ -1728,11 +1728,11 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'flatiron-nomad', slug: 'flatiron-nomad', name: 'Flatiron / NoMad', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.7,
+      'urban-intensity-tolerance': 0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.78,
       'space-sensitivity': 0.0, 'family-trajectory': 0.2, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.4, 'creative-energy': 0.5, 'friction-sensitivity': 0.4,
       'safety-need': 0.8, 'school-quality': 0.5,
-    'social-register': 0.4,
+    'social-register': 0.3,
     'visitor-facing-energy': 0.6,
     'rootedness-vs-access': 0.75, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.34 , 'community-fabric': -0.05 },
@@ -1747,7 +1747,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   },  {
     id: 'gowanus', slug: 'gowanus', name: 'Gowanus', borough: 'brooklyn',
     scores: {
-      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.4, 'prestige-orientation': 0.0,
+      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.4, 'prestige-orientation': 0.32,
       'space-sensitivity': 0.5, 'family-trajectory': 0.3, 'cultural-ecosystem': 0.0,
       'environmental-openness': 0.2, 'creative-energy': 0.6, 'friction-sensitivity': 0.0,
       'safety-need': 0.7, 'school-quality': 0.45,
@@ -1789,7 +1789,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   // NJ suburbs along Midtown Direct + Bergen waterfront
   {
     id: 'tenafly', slug: 'tenafly', name: 'Tenafly', borough: 'nj',
-    scores: { 'urban-intensity-tolerance': -0.7, 'transit-psychology': -0.3, 'prestige-orientation': 0.3, 'space-sensitivity': 0.95, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.5, 'environmental-openness': 0.85, 'creative-energy': -0.5, 'friction-sensitivity': 0.95, 'safety-need': 0.9, 'school-quality': 0.85,
+    scores: { 'urban-intensity-tolerance': -0.7, 'transit-psychology': -0.3, 'prestige-orientation': 0.6, 'space-sensitivity': 0.95, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.5, 'environmental-openness': 0.85, 'creative-energy': -0.5, 'friction-sensitivity': 0.95, 'safety-need': 0.9, 'school-quality': 0.85,
   'social-register': 0.6,
   'visitor-facing-energy': -0.8,
   'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.1,  'streetscape-quality': 0.3,  'community-fabric': -0.4, },
@@ -1868,8 +1868,8 @@ export const neighborhoods: readonly Neighborhood[] = [
   // NJ Essex / Union — Midtown Direct
   {
     id: 'maplewood', slug: 'maplewood', name: 'Maplewood', borough: 'nj',
-    scores: { 'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.4, 'prestige-orientation': 0.3, 'space-sensitivity': 0.85, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.4, 'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.85, 'safety-need': 0.85, 'school-quality': 0.6,
-  'social-register': -0.7,
+    scores: { 'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.4, 'prestige-orientation': 0.45, 'space-sensitivity': 0.85, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.4, 'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.85, 'safety-need': 0.85, 'school-quality': 0.6,
+  'social-register': -0.27,
   'visitor-facing-energy': -0.55,
   'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.95,  'streetscape-quality': 0.72,  'community-fabric': 0.92, },
     culturalTags: ['lgbtq', 'african-american'], carDependent: false, housingTypes: ['single-family', 'townhouse', 'prewar-character', 'prewar-renovated'],
@@ -1894,8 +1894,8 @@ export const neighborhoods: readonly Neighborhood[] = [
   },
   {
     id: 'montclair', slug: 'montclair', name: 'Montclair', borough: 'nj',
-    scores: { 'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.4, 'space-sensitivity': 0.8, 'family-trajectory': 0.78, 'cultural-ecosystem': 0.42, 'environmental-openness': 0.72, 'creative-energy': 0.25, 'friction-sensitivity': 0.7, 'safety-need': 0.75, 'school-quality': 0.65,
-  'social-register': -0.8,
+    scores: { 'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.42, 'space-sensitivity': 0.8, 'family-trajectory': 0.78, 'cultural-ecosystem': 0.42, 'environmental-openness': 0.72, 'creative-energy': 0.25, 'friction-sensitivity': 0.7, 'safety-need': 0.75, 'school-quality': 0.65,
+  'social-register': -0.35,
   'visitor-facing-energy': -0.2,
   'rootedness-vs-access': -0.7, 'daily-life-walkability': 0.75,  'streetscape-quality': 0.68,  'community-fabric': 0.78, },
     culturalTags: ['lgbtq', 'african-american'], carDependent: false, housingTypes: ['single-family', 'townhouse', 'condo', 'prewar-character', 'prewar-renovated'],
@@ -1998,7 +1998,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   },
   {
     id: 'mamaroneck', slug: 'mamaroneck', name: 'Larchmont / Mamaroneck', shortName: 'Larchmont', borough: 'westchester',
-    scores: { 'urban-intensity-tolerance': -0.33, 'transit-psychology': 0.42, 'prestige-orientation': 0.39, 'space-sensitivity': 0.73, 'family-trajectory': 0.87, 'cultural-ecosystem': 0.37, 'environmental-openness': 0.85, 'creative-energy': -0.05, 'friction-sensitivity': 0.73, 'safety-need': 0.82, 'school-quality': 0.73,
+    scores: { 'urban-intensity-tolerance': -0.33, 'transit-psychology': 0.42, 'prestige-orientation': 0.58, 'space-sensitivity': 0.73, 'family-trajectory': 0.87, 'cultural-ecosystem': 0.37, 'environmental-openness': 0.85, 'creative-energy': -0.05, 'friction-sensitivity': 0.73, 'safety-need': 0.82, 'school-quality': 0.73,
   'social-register': 0.28,
   'visitor-facing-energy': -0.52,
   'rootedness-vs-access': -0.81, 'daily-life-walkability': 0.73,  'streetscape-quality': 0.57,  'community-fabric': 0.64, },
@@ -2207,7 +2207,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   },  {
     id: 'westport', slug: 'westport', name: 'Westport', borough: 'ct',
     scores: { 'urban-intensity-tolerance': -0.5, 'transit-psychology': 0.3, 'prestige-orientation': 0.7, 'space-sensitivity': 0.9, 'family-trajectory': 0.9, 'cultural-ecosystem': 0.2, 'environmental-openness': 0.95, 'creative-energy': 0.2, 'friction-sensitivity': 0.9, 'safety-need': 0.9, 'school-quality': 0.95,
-  'social-register': 0.5,
+  'social-register': 0.08,
   'visitor-facing-energy': -0.15,
   'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.8,  'streetscape-quality': 0.65,  'community-fabric': 0.55, },
     carDependent: false, housingTypes: ['single-family', 'condo', 'prewar-character'],
