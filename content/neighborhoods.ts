@@ -387,7 +387,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.8
     , 'streetscape-quality': 0.3 , 'community-fabric': 0.3 },
     culturalTags: ['eastern-european'],
-    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character'],
+    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'The deepest Russian and Ukrainian community in the country, on a literal beach, with a boardwalk that gets you out of the city without leaving it. The Q is a long ride to Manhattan but a quiet one. Apartments cost a fraction of prime Brooklyn.',
       whoThrivesHere: 'Cultural-anchor seekers, especially those for whom post-Soviet community is daily life.',
@@ -863,7 +863,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': 0.5, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.29 , 'community-fabric': 0.05 },
     culturalTags: ['jewish', 'east-asian'],
-    housingTypes: ['co-op', 'rental', 'condo', 'prewar-character'],
+    housingTypes: ['co-op', 'rental', 'condo', 'prewar-character', 'luxury-highrise', 'newer-lowrise'],
     basePassages: {
       whyItFits: 'NYC\'s most layered neighborhood, with Jewish, Chinese, Puerto Rican, and Bangladeshi histories overlapping in the same blocks. Tenement walk-ups, gallery basements, music venues that have been there for decades. Loud, dense, and unapologetically itself.',
       whoThrivesHere: 'Creative-class people who want texture, history, and proximity to scene.',
@@ -1034,7 +1034,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': -0.6,
     'rootedness-vs-access': 0.3, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.6 , 'community-fabric': -0.05 },
-    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated'],
+    housingTypes: ['co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated', 'newer-lowrise'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1099,7 +1099,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'visitor-facing-energy': 0.65,
     'rootedness-vs-access': 0.55, 'daily-life-walkability': 0.65
     , 'streetscape-quality': -0.1 , 'community-fabric': -0.1 },
-    housingTypes: ['co-op', 'condo', 'rental', 'luxury-highrise', 'prewar-renovated', 'newer-lowrise'],
+    housingTypes: ['co-op', 'condo', 'rental', 'luxury-highrise', 'prewar-renovated', 'newer-lowrise', 'prewar-character'],
     hasQuietBlocks: true,
     basePassages: {
       whyItFits: 'Turtle Bay, Sutton Place, the East 50s. Office towers by day, residential calm by night, with the UN, Grand Central, and the East River as anchors. Transit is the strength: 4/5/6, E/M, S, plus express buses everywhere.',
@@ -1249,7 +1249,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.4, 'daily-life-walkability': 0.75
     , 'streetscape-quality': 0.45 , 'community-fabric': 0.15 },
     culturalTags: ['eastern-european'],
-    housingTypes: ['condo', 'co-op', 'rental', 'townhouse', 'luxury-highrise', 'prewar-character', 'newer-lowrise'],
+    housingTypes: ['condo', 'co-op', 'rental', 'townhouse', 'luxury-highrise', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
     basePassages: {
       whyItFits: 'Brooklyn\'s deepest Polish-American community on a peninsula at the borough\'s northern tip. Calmer than Williamsburg, with newer waterfront development, a real working bakery culture, and the G as your spine plus the ferry as your alternative. Manhattan reads as close enough.',
       whoThrivesHere: 'Cultural-anchor seekers and creative-class people who want Williamsburg energy at lower volume.',
@@ -1382,7 +1382,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.1, 'daily-life-walkability': 0.7
     , 'streetscape-quality': -0.02 , 'community-fabric': 0.05 },
     culturalTags: ['latin-american'],
-    housingTypes: ['condo', 'rental', 'townhouse', 'prewar-character', 'newer-lowrise'],
+    housingTypes: ['condo', 'rental', 'townhouse', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
     basePassages: {
       whyItFits: 'Williamsburg\'s industrial-loft hinterland, between the L and Bushwick. Lower-rise than waterfront Williamsburg, more industrial-flavored, with a meaningful Puerto Rican and Dominican community plus a creative-class layer. Apartments are bigger than prime Williamsburg at meaningfully lower prices.',
       whoThrivesHere: 'Creative-class people who want Williamsburg energy at less than Williamsburg cost.',
@@ -1560,7 +1560,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.7
     , 'streetscape-quality': 0.3 , 'community-fabric': 0.05 },
     culturalTags: ['jewish', 'south-asian'],
-    housingTypes: ['single-family', 'co-op', 'townhouse', 'prewar-character'],
+    housingTypes: ['single-family', 'co-op', 'townhouse', 'prewar-character', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: {
@@ -1629,7 +1629,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     'rootedness-vs-access': -0.65, 'daily-life-walkability': 0.9
     , 'streetscape-quality': -0.03 , 'community-fabric': 0.1 },
     culturalTags: ['east-asian', 'latin-american', 'south-asian'],
-    housingTypes: ['co-op', 'rental', 'condo', 'prewar-character'],
+    housingTypes: ['co-op', 'rental', 'condo', 'prewar-character', 'newer-lowrise'],
     basePassages: {
       whyItFits: 'A pan-Asian (Chinese, Filipino, Indonesian, Thai) and Latin American center, with the 7/E/F/M/R serving the area. Apartments are notably bigger and cheaper than Manhattan; the food culture rivals Flushing in depth, with shorter commute times to midtown.',
       whoThrivesHere: 'Cultural-anchor seekers who want the food and community without committing to Flushing.',
@@ -1872,7 +1872,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   'social-register': -0.7,
   'visitor-facing-energy': -0.55,
   'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.95,  'streetscape-quality': 0.72,  'community-fabric': 0.92, },
-    culturalTags: ['lgbtq', 'african-american'], carDependent: false, housingTypes: ['single-family', 'townhouse', 'prewar-character'],
+    culturalTags: ['lgbtq', 'african-american'], carDependent: false, housingTypes: ['single-family', 'townhouse', 'prewar-character', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: { whyItFits: 'Essex County\'s most NYC-creative-class-aligned suburb. Direct Midtown Direct train (~30 min to Penn), one of the most diverse and progressive school districts in the metro, walkable village with restaurants, and detached homes from craftsman to colonial. Strong LGBTQ+ and Black professional communities.', whoThrivesHere: 'Creative-class families who want diversity + walkability + train and won\'t pay Brooklyn prices for it.', tradeoffs: ['Less prestige-coded than Westchester equivalents', 'Train commute is the lifeline', 'House prices have risen sharply'] },
@@ -1885,7 +1885,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   'social-register': 0.8,
   'visitor-facing-energy': -0.2,
   'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.5,  'streetscape-quality': 0.53,  'community-fabric': -0.35, },
-    culturalTags: ['east-asian', 'jewish'], carDependent: false, housingTypes: ['single-family', 'prewar-character'],
+    culturalTags: ['east-asian', 'jewish'], carDependent: false, housingTypes: ['single-family', 'prewar-character', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: { whyItFits: 'Short Hills is among the wealthiest zip codes in the country; Millburn is its more diverse southern neighbor. Top-tier schools, Midtown Direct to Penn (~35 min), Maplewood Mall as the local commercial anchor, and large estate-scale homes on tree-lined blocks.', whoThrivesHere: 'High-income family-anchored households who want top schools + premium suburban scale + the train.', tradeoffs: ['Among the priciest suburbs in the metro', 'Reads as conservative even in a diverse area', 'Calm to the point of subdued'] },
@@ -1964,7 +1964,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   'social-register': 0.9,
   'visitor-facing-energy': -0.7,
   'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.3,  'streetscape-quality': 0.6,  'community-fabric': -0.75, },
-    culturalTags: ['east-asian', 'jewish'], carDependent: false, housingTypes: ['single-family', 'prewar-character'],
+    culturalTags: ['east-asian', 'jewish'], carDependent: false, housingTypes: ['single-family', 'prewar-character', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: { whyItFits: 'The defining Westchester commuter town. Top-tier schools, Metro-North to Grand Central in 30-40 min, large single-family homes on hilly tree-lined blocks. Strong East Asian and Jewish communities anchor cultural life.', whoThrivesHere: 'High-income family-anchored households who want top schools + Metro-North + suburban scale.', tradeoffs: ['Premium pricing', 'Reads as classically affluent-suburban', 'Calm to the point of subdued'] },
@@ -2053,7 +2053,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   'social-register': -0.1,
   'visitor-facing-energy': -0.3,
   'rootedness-vs-access': -0.55, 'daily-life-walkability': 0.55,  'streetscape-quality': 0.4,  'community-fabric': 0.45, },
-    culturalTags: ['latin-american', 'african-american'], carDependent: false, housingTypes: ['rental', 'co-op', 'single-family', 'prewar-character', 'newer-lowrise'],
+    culturalTags: ['latin-american', 'african-american'], carDependent: false, housingTypes: ['rental', 'co-op', 'single-family', 'prewar-character', 'newer-lowrise', 'luxury-highrise'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: { whyItFits: 'NY State\'s third-largest city, immediately north of the Bronx. Real urban density along Riverdale Ave, Hudson views from the river side, Metro-North to Grand Central, and dramatically lower prices than Westchester proper. Renaissance happening in the downtown waterfront.', whoThrivesHere: 'Value-aware households who want Westchester proximity at NYC prices.', tradeoffs: ['Block-by-block character variance is significant', 'School quality varies', 'Reads as outside the prestigious Westchester bubble'] },
@@ -2158,7 +2158,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   'social-register': -0.1,
   'visitor-facing-energy': 0.2,
   'rootedness-vs-access': -0.7, 'daily-life-walkability': 0.9,  'streetscape-quality': 0.65,  'community-fabric': 0.6, },
-    carDependent: false, housingTypes: ['rental', 'condo', 'single-family', 'prewar-character'],
+    carDependent: false, housingTypes: ['rental', 'condo', 'single-family', 'prewar-character', 'luxury-highrise'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: { whyItFits: 'A barrier-island beach city with a 2-mile boardwalk and the LIRR to Penn (~50 min). Mix of year-round rentals, condos, and old beach bungalows. Lively summer scene; quieter rest of the year. Genuinely walkable in a way few LI commuter towns are.', whoThrivesHere: 'Younger professionals and beach-anchored households who want LIRR + boardwalk life.', tradeoffs: ['Storm + flood risk (Sandy did real damage)', 'Long LIRR commute', 'Tourist + summer-renter influx'] },
@@ -2185,7 +2185,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   'social-register': 0.2,
   'visitor-facing-energy': -0.1,
   'rootedness-vs-access': -0.45, 'daily-life-walkability': 0.55,  'streetscape-quality': 0.2,  'community-fabric': 0.1, },
-    culturalTags: ['latin-american'], carDependent: false, housingTypes: ['rental', 'condo', 'single-family', 'newer-lowrise'],
+    culturalTags: ['latin-american'], carDependent: false, housingTypes: ['rental', 'condo', 'single-family', 'newer-lowrise', 'luxury-highrise'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
     basePassages: { whyItFits: 'CT\'s second-largest city with a real downtown (offices, apartments, restaurants), Metro-North to Grand Central in 55 min, and a meaningful diversity of communities. Newer high-rise apartment buildings have shifted the residential mix toward city-feel. The most urban CT commuter option.', whoThrivesHere: 'Value-aware professionals who want suburban CT + apartment + downtown energy.', tradeoffs: ['Reads as commercial-suburban hybrid', 'Block-by-block character variance', 'School quality varies by zone'] },
