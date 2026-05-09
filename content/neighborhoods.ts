@@ -440,15 +440,16 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'long-island-city', slug: 'long-island-city', name: 'Long Island City', borough: 'queens',
     scores: {
-      'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.7, 'prestige-orientation': 0.2,
-      'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.2,
-      'environmental-openness': 0.7, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
+      'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.7, 'prestige-orientation': 0.2,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.4,
+      'environmental-openness': 0.7, 'creative-energy': 0.5, 'friction-sensitivity': 0.5,
       'safety-need': 0.75, 'school-quality': 0.35,
     'social-register': 0.1,
     'visitor-facing-energy': 0,
-    'built-form-register': 0.9,
+    'built-form-register': 0.6,
     'rootedness-vs-access': 0.3, 'daily-life-walkability': 0.8
     , 'streetscape-quality': -0.08 , 'community-fabric': -0.05 },
+    culturalTags: ['east-asian'],
     housingTypes: ['condo', 'rental', 'luxury-highrise'],
     basePassages: {
       whyItFits: 'A new high-rise riverfront with one of NYC\'s best skyline views from your living room. Newer apartment stock means real space. Transit redundancy is genuinely strong (7, E, M, G, F, plus ferry). Waterfront parks anchor the daily walk.',
