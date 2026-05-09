@@ -293,44 +293,32 @@ export const questions: readonly Question[] = [
     ],
   },
 
-  // PHASE 5 — REFLECTION / IDENTITY (heavier forced-choice)
+  // PHASE 5 — REFLECTION / IDENTITY (semantic-differential sliders)
+  // Spectrum sliders with vibe-pair endpoints. Each pole sounds equally
+  // legitimate; no option is "better." Multi-dim impacts add to the user
+  // vector (slider value × impact) — see content/types.ts SliderQuestion.
   {
-    id: 'social-register-fit',
-    kind: 'forced_choice',
-    prompt: 'Polished and traditional, or casual and creative? Which feels more like home?',
-    choices: [
-      {
-        label: 'Polished and traditional. Manicured streets, classic, put-together.',
-        impacts: { 'social-register': 0.7 },
-      },
-      {
-        label: 'Casual and creative. Lived-in, mom-and-pops, less formal.',
-        impacts: { 'social-register': -0.7 },
-      },
-      {
-        label: 'No strong pull either way.',
-        impacts: { 'social-register': 0 },
-      },
-    ],
+    id: 'aesthetic-register-fit',
+    kind: 'slider',
+    prompt: 'Where on this spectrum does your ideal neighborhood feel sit?',
+    lowLabel: 'Trendsetting',
+    highLabel: 'Traditional',
+    impacts: {
+      'social-register': 0.65,
+      'creative-energy': -0.20,
+    },
   },
   {
-    id: 'price-tier-fit',
-    kind: 'forced_choice',
-    prompt: 'Premium-priced housing market, or value-priced. Which feels more right?',
-    choices: [
-      {
-        label: 'Premium. Top of market, expensive-feeling, established.',
-        impacts: { 'prestige-orientation': 0.7 },
-      },
-      {
-        label: 'Either, depending on the actual fit.',
-        impacts: { 'prestige-orientation': 0 },
-      },
-      {
-        label: 'Value-priced. More accessible market, mixed-income.',
-        impacts: { 'prestige-orientation': -0.7 },
-      },
-    ],
+    id: 'lifecycle-stage-fit',
+    kind: 'slider',
+    prompt: 'And the lifecycle of the neighborhood?',
+    lowLabel: 'Up-and-coming',
+    highLabel: 'Established',
+    impacts: {
+      'prestige-orientation': 0.65,
+      'creative-energy': -0.15,
+      'friction-sensitivity': 0.15,
+    },
   },
   {
     id: 'rootedness-vs-access-fit',

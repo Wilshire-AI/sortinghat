@@ -83,7 +83,16 @@ export type SliderQuestion = {
   prompt: string;
   lowLabel: string;
   highLabel: string;
-  dimensionId: DimensionId;
+  // Single-dim slider (legacy). Slider value SETS this dim's user vector
+  // value (in [-1, +1]). Use for agree/disagree-style questions where the
+  // slider position IS the user's value on a single axis (e.g., safety-need).
+  dimensionId?: DimensionId;
+  // Multi-dim slider (semantic-differential / spectrum endpoint pairs like
+  // "Trendsetting ↔ Traditional"). Each impact's value is multiplied by the
+  // slider position s ∈ {-1, -0.5, 0, +0.5, +1} and ADDED to the user vector.
+  // Use when the slider's two poles correlate with multiple dims at once.
+  // Exactly one of `dimensionId` or `impacts` must be present.
+  impacts?: Partial<Record<DimensionId, number>>;
   groupNext?: boolean;
 };
 

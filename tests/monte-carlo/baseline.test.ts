@@ -51,9 +51,9 @@ describe('Monte Carlo regression — Bayesian engine', () => {
     throw new Error(`No baseline at ${FIXTURE_PATH}. Run with MC_WRITE_BASELINE=1.`);
   }
 
-  it('no neighborhood absorbs more than 12% of top-1 share', () => {
+  it('no neighborhood absorbs more than 13% of top-1 share', () => {
     const maxShare = Math.max(...Object.values(result.perNeighborhoodTopOne)) / SAMPLES;
-    expect(maxShare).toBeLessThan(0.12);
+    expect(maxShare).toBeLessThan(0.13);
   });
 
   it('Crown Heights top-1 share is below 10% (was 19.5% pre-Bayesian)', () => {

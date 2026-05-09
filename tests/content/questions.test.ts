@@ -29,7 +29,21 @@ describe('questions', () => {
   it('slider questions reference valid dimensions', () => {
     for (const q of questions) {
       if (q.kind === 'slider') {
-        expect(validDimIds.has(q.dimensionId)).toBe(true);
+        // Sliders are EITHER single-dim (legacy `dimensionId`) OR multi-dim
+        // (new `impacts` map for semantic-differential spectrums). Exactly
+        // one must be present; both must reference valid dim ids.
+        const hasSingle = q.dimensionId !== undefined;
+        const hasMulti = q.impacts !== undefined;
+        expect(hasSingle || hasMulti, `slider ${q.id} must have dimensionId or impacts`).toBe(true);
+        expect(hasSingle && hasMulti, `slider ${q.id} cannot have both`).toBe(false);
+        if (q.dimensionId) expect(validDimIds.has(q.dimensionId)).toBe(true);
+        if (q.impacts) {
+          for (const [dimId, val] of Object.entries(q.impacts)) {
+            expect(validDimIds.has(dimId)).toBe(true);
+            expect(val).toBeGreaterThanOrEqual(-1);
+            expect(val).toBeLessThanOrEqual(1);
+          }
+        }
       }
     }
   });
@@ -57,7 +71,8 @@ describe('questions', () => {
       if (q.kind === 'forced_choice') {
         for (const c of q.choices) for (const k of Object.keys(c.impacts)) touched.add(k);
       } else if (q.kind === 'slider') {
-        touched.add(q.dimensionId);
+        if (q.dimensionId) touched.add(q.dimensionId);
+        if (q.impacts) for (const k of Object.keys(q.impacts)) touched.add(k);
       } else if (q.kind === 'multi_select') {
         for (const o of q.options) {
           if (o.impacts) for (const k of Object.keys(o.impacts)) touched.add(k);

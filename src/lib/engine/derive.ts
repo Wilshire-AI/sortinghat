@@ -77,8 +77,25 @@ export function deriveState(
         }
       }
     } else if (q.kind === 'slider' && a.kind === 'slider') {
-      vector[q.dimensionId] = a.value;
-      touchedDims.add(q.dimensionId);
+      // Two slider shapes:
+      //  - Single-dim: SET dim to slider value (legacy, for agree/disagree
+      //    questions like safety-need where the slider IS the user's value).
+      //  - Multi-dim impacts: ADD impact * slider value to each dim (for
+      //    semantic-differential questions like Trendsetting ↔ Traditional
+      //    where one slider position correlates with multiple dims).
+      if (q.impacts) {
+        for (const [dim, impact] of Object.entries(q.impacts)) {
+          const num = (impact as number) * a.value;
+          vector[dim] = (vector[dim] ?? 0) + num;
+          // Touch only when the user expressed a non-neutral position. A
+          // slider parked at 0 contributes nothing — same neutrality
+          // semantics as forced_choice with explicit-zero impacts.
+          if (a.value !== 0) touchedDims.add(dim);
+        }
+      } else if (q.dimensionId) {
+        vector[q.dimensionId] = a.value;
+        touchedDims.add(q.dimensionId);
+      }
     } else if (q.kind === 'multi_select' && a.kind === 'multi_select') {
       if (q.purpose === 'must_haves') {
         for (const v of a.selectedValues) mustHaves.add(v);
