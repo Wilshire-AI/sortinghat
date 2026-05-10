@@ -23,11 +23,11 @@ export const dimensions: readonly Dimension[] = [
   },
   {
     id: 'prestige-orientation',
-    name: 'Prestige vs Practicality Orientation',
+    name: 'Resident Wealth / Market Tier',
     kind: 'symmetric',
     description:
-      'How much neighborhood prestige and aspirational identity matter to you. Both poles are real preferences. Picking "the place over the name" or "value over stretch" is an active preference for non-prestigious neighborhoods, not neutrality. In real estate, prestige correlates with cost, so value-seekers genuinely prefer the lower-prestige side.',
-    poles: { low: 'Practicality, value, and space first.', high: 'Prestige and aspirational identity first.' },
+      'How much you weight neighborhood resident-wealth tier and aspirational market positioning. Both poles are real preferences. The high pole is established-wealth, high-market-tier, status-address territory (UES, Greenwich, Tribeca). The low pole is working/middle-income, value-coded territory (Bushwick, Sunset Park, Inwood). Picking value-over-stretch is an active preference, not neutrality. Distinct from social-register (polish/aesthetic) and amenity-function (real-quality substance). A neighborhood can be wealth-tier-high but amenity-function-mid (UWS), or wealth-tier-low but amenity-function-high (Flushing).',
+    poles: { low: 'Working/middle-income, value-coded.', high: 'Established wealth, high market tier.' },
   },
   {
     id: 'space-sensitivity',
@@ -157,6 +157,17 @@ export const dimensions: readonly Dimension[] = [
     poles: {
       low: 'Functional streets are enough.',
       high: 'Wants streets that are pleasant to walk for their own sake.',
+    },
+  },
+  {
+    id: 'amenity-function',
+    name: 'Amenity Function',
+    kind: 'asymmetric_need',
+    description:
+      'Real walkable-distance access to substance-over-presentation amenities: food, groceries, cafes, retail that genuinely deliver real quality and value. Distinct from streetscape-quality (the look of streets), social-register (polish/aesthetic), and prestige-orientation (resident wealth tier). High score means real quality regardless of polish. Flushing-tier real-deal grocery counts; Hudson Yards mall does not. Asymmetric: not needing high-function amenity doesn\'t mean disliking neighborhoods that have it. Penalty applies only when user wants substance and neighborhood is thin.',
+    poles: {
+      low: 'Basic amenities are enough.',
+      high: 'Needs food, groceries, cafes, retail that genuinely deliver real quality and value.',
     },
   },
 ] as const;
