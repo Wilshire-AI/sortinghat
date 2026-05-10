@@ -2010,10 +2010,10 @@ export const neighborhoods: readonly Neighborhood[] = [
   },
   {
     id: 'mamaroneck', slug: 'mamaroneck', name: 'Larchmont / Mamaroneck', shortName: 'Larchmont', borough: 'westchester',
-    scores: { 'urban-intensity-tolerance': -0.33, 'transit-psychology': 0.42, 'prestige-orientation': 0.58, 'space-sensitivity': 0.73, 'family-trajectory': 0.87, 'cultural-ecosystem': 0.37, 'environmental-openness': 0.85, 'creative-energy': -0.05, 'friction-sensitivity': 0.73, 'safety-need': 0.82, 'school-quality': 0.73,
+    scores: { 'urban-intensity-tolerance': -0.33, 'transit-psychology': 0.42, 'prestige-orientation': 0.58, 'space-sensitivity': 0.73, 'family-trajectory': 0.87, 'cultural-ecosystem': 0.37, 'environmental-openness': 0.85, 'creative-energy': -0.05, 'friction-sensitivity': 0.73, 'safety-need': 0.82, 'school-quality': 0.62,
   'social-register': 0.28,
   'visitor-facing-energy': -0.52,
-  'rootedness-vs-access': -0.81, 'daily-life-walkability': 0.73,  'streetscape-quality': 0.57,  'community-fabric': 0.64,  'amenity-function': 0.5 },
+  'rootedness-vs-access': -0.81, 'daily-life-walkability': 0.64,  'streetscape-quality': 0.57,  'community-fabric': 0.64,  'amenity-function': 0.5 },
     culturalTags: ['latin-american'], housingTypes: ['single-family', 'condo', 'rental', 'townhouse', 'prewar-character'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
