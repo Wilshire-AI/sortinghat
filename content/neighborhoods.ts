@@ -1924,10 +1924,10 @@ export const neighborhoods: readonly Neighborhood[] = [
   },
   {
     id: 'south-orange', slug: 'south-orange', name: 'South Orange', borough: 'nj',
-    scores: { 'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.3, 'space-sensitivity': 0.85, 'family-trajectory': 0.9, 'cultural-ecosystem': 0.5, 'environmental-openness': 0.75, 'creative-energy': 0.3, 'friction-sensitivity': 0.8, 'safety-need': 0.8, 'school-quality': 0.6,
+    scores: { 'urban-intensity-tolerance': -0.3, 'transit-psychology': 0.4, 'prestige-orientation': 0.3, 'space-sensitivity': 0.85, 'family-trajectory': 0.9, 'cultural-ecosystem': 0.4, 'environmental-openness': 0.75, 'creative-energy': 0.2, 'friction-sensitivity': 0.8, 'safety-need': 0.8, 'school-quality': 0.45,
   'social-register': -0.2,
   'visitor-facing-energy': -0.6,
-  'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.8,  'streetscape-quality': 0.57,  'community-fabric': 0.78,  'amenity-function': 0.5 },
+  'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.65,  'streetscape-quality': 0.57,  'community-fabric': 0.78,  'amenity-function': 0.5 },
     culturalTags: ['african-american', 'lgbtq'], housingTypes: ['single-family', 'townhouse', 'prewar-character'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
