@@ -49,7 +49,7 @@ describe('amenity-function persona panel', () => {
       'school-need': { kind: 'slider', value: -1 },
       'street-energy': {
         kind: 'multi_select',
-        selectedValues: ['creative-scene', 'commercial'],
+        selectedValues: ['commercial'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 2 },
       'lifecycle-stage-fit': { kind: 'slider', value: 0 },
@@ -157,7 +157,7 @@ describe('amenity-function persona panel', () => {
       'school-need': { kind: 'slider', value: 0.5 },
       'street-energy': {
         kind: 'multi_select',
-        selectedValues: ['polished-family-village', 'quiet', 'family'],
+        selectedValues: ['family', 'quiet'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 0 },
       'lifecycle-stage-fit': { kind: 'slider', value: 0.5 },
@@ -193,7 +193,7 @@ describe('amenity-function persona panel', () => {
       'school-need': { kind: 'slider', value: 1 },
       'street-energy': {
         kind: 'multi_select',
-        selectedValues: ['established-traditional', 'family', 'quiet'],
+        selectedValues: ['established-traditional', 'refined-contemporary'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 0 },
       'lifecycle-stage-fit': { kind: 'slider', value: 1 },

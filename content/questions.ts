@@ -234,7 +234,7 @@ export const questions: readonly Question[] = [
       {
         value: 'errands',
         label: 'Grocery store and pharmacy',
-        impacts: { 'daily-life-walkability': 0.5 },
+        impacts: { 'daily-life-walkability': 0.5, 'amenity-function': 0.10 },
       },
       {
         value: 'gym',
@@ -244,7 +244,7 @@ export const questions: readonly Question[] = [
       {
         value: 'cafes',
         label: 'Cafés',
-        impacts: { 'daily-life-walkability': 0.25, 'rootedness-vs-access': -0.2 },
+        impacts: { 'daily-life-walkability': 0.25, 'rootedness-vs-access': -0.2, 'amenity-function': 0.10 },
       },
       {
         value: 'bars-nightlife',
@@ -332,8 +332,9 @@ export const questions: readonly Question[] = [
     id: 'cultural-communities',
     kind: 'multi_select',
     purpose: 'cultural_tags',
+    maxSelections: 3,
     prompt: 'Which communities, if any, do you want close to home?',
-    helperText: 'Ethnic or religious. Skip if not applicable.',
+    helperText: 'Ethnic or religious. Select up to three. Skip if not applicable.',
     dimensionImpactPerSelection: { 'cultural-ecosystem': 0.4 },
     options: [
       { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
@@ -388,6 +389,7 @@ export const questions: readonly Question[] = [
           'visitor-facing-energy': 0.05,
           'friction-sensitivity': -0.10,
           'social-register': -0.20,
+          'prestige-orientation': -0.20,
         },
       },
       {
@@ -412,6 +414,7 @@ export const questions: readonly Question[] = [
           'rootedness-vs-access': -0.20,
           'community-fabric': 0.10,
           'urban-intensity-tolerance': 0.05,
+          'prestige-orientation': -0.15,
         },
       },
       {
@@ -441,14 +444,14 @@ export const questions: readonly Question[] = [
       },
       {
         value: 'family',
-        label: 'Family / stroller — playgrounds, school crowds, kid-friendly',
-        image: { src: '/images/quiz/street-energy-family.jpg', alt: 'Ditmas Park leafy block with stroller-density and prewar family homes' },
+        label: 'Family and polished village, playgrounds, school crowds, kid-friendly blocks',
+        image: { src: '/images/quiz/street-energy-polished-family.jpg', alt: 'Bay Ridge tree-lined family block with traditional polish' },
         impacts: {
           'family-trajectory': 0.30,
-          'community-fabric': 0.20,
-          'friction-sensitivity': 0.15,
-          'visitor-facing-energy': -0.10,
-          'streetscape-quality': 0.10,
+          'community-fabric': 0.30,
+          'friction-sensitivity': 0.30,
+          'social-register': 0.20,
+          'streetscape-quality': 0.15,
         },
       },
       {
@@ -484,18 +487,6 @@ export const questions: readonly Question[] = [
           'prestige-orientation': 0.20,
           'streetscape-quality': 0.20,
           'amenity-function': 0.15,
-        },
-      },
-      {
-        value: 'polished-family-village',
-        label: 'Polished family-village — manicured, traditional middle-class, kid-centric',
-        image: { src: '/images/quiz/street-energy-polished-family.jpg', alt: 'Bay Ridge tree-lined family block with traditional polish' },
-        impacts: {
-          'social-register': 0.30,
-          'family-trajectory': 0.15,
-          'friction-sensitivity': 0.20,
-          'streetscape-quality': 0.20,
-          'community-fabric': 0.15,
         },
       },
     ],
