@@ -2046,7 +2046,7 @@ export const neighborhoods: readonly Neighborhood[] = [
     heroImage: '/images/neighborhoods/hastings-on-hudson.svg',
   },  {
     id: 'white-plains', slug: 'white-plains', name: 'White Plains', borough: 'westchester',
-    scores: { 'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.5, 'prestige-orientation': 0.3, 'space-sensitivity': 0.6, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.4, 'environmental-openness': 0.5, 'creative-energy': 0.0, 'friction-sensitivity': 0.5, 'safety-need': 0.75, 'school-quality': 0.5,
+    scores: { 'urban-intensity-tolerance': 0.25, 'transit-psychology': 0.5, 'prestige-orientation': 0.3, 'space-sensitivity': 0.6, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.4, 'environmental-openness': 0.5, 'creative-energy': -0.25, 'friction-sensitivity': 0.5, 'safety-need': 0.75, 'school-quality': 0.3,
   'social-register': 0.2,
   'visitor-facing-energy': -0.1,
   'rootedness-vs-access': -0.45, 'daily-life-walkability': 0.8,  'streetscape-quality': 0.15,  'community-fabric': 0.15,  'amenity-function': 0.6 },
