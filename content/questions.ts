@@ -223,27 +223,6 @@ export const questions: readonly Question[] = [
         impacts: { 'daily-life-walkability': 0.25, 'rootedness-vs-access': -0.2 },
       },
       {
-        value: 'high-value-food-retail',
-        label: 'High-value authentic food and markets nearby',
-        impacts: {
-          'amenity-function': 0.55,
-          'daily-life-walkability': 0.20,
-          'cultural-ecosystem': 0.15,
-          'social-register': -0.15,
-          'prestige-orientation': -0.10,
-        },
-      },
-      {
-        value: 'premium-polished-restaurants',
-        label: 'Polished, upscale dining and curated retail nearby',
-        impacts: {
-          'amenity-function': 0.25,
-          'social-register': 0.20,
-          'prestige-orientation': 0.10,
-          'visitor-facing-energy': 0.10,
-        },
-      },
-      {
         value: 'bars-nightlife',
         label: 'Bars and nightlife',
         impacts: { 'urban-intensity-tolerance': 0.4, 'friction-sensitivity': -0.2 },
