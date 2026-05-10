@@ -245,4 +245,4 @@ export type UserVector = Record<DimensionId, number>;
 
 // Bumped per schema change. Older fingerprints still decode (vector +
 // optional tags) but won't have mustHaves; that's a no-op default.
-export const CONTENT_VERSION = '2026-05-10-poc-v18' as const;
+export const CONTENT_VERSION = '2026-05-10-poc-v19' as const;

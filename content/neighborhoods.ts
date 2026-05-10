@@ -1004,12 +1004,12 @@ export const neighborhoods: readonly Neighborhood[] = [
     id: 'lincoln-square', slug: 'lincoln-square', name: 'Lincoln Square', borough: 'manhattan',
     scores: {
       'urban-intensity-tolerance': 0.2, 'transit-psychology': 0.55, 'prestige-orientation': 0.75,
-      'space-sensitivity': 0.4, 'family-trajectory': 0.45, 'cultural-ecosystem': 0.4,
+      'space-sensitivity': 0.4, 'family-trajectory': 0.45, 'cultural-ecosystem': 0.2,
       'environmental-openness': 0.55, 'creative-energy': 0.4, 'friction-sensitivity': 0.5,
       'safety-need': 0.7, 'school-quality': 0.5,
     'social-register': 0.3,
-    'visitor-facing-energy': 0.4,
-    'rootedness-vs-access': 0.65, 'daily-life-walkability': 0.85
+    'visitor-facing-energy': 0.6,
+    'rootedness-vs-access': 0.65, 'daily-life-walkability': 0.78
     , 'streetscape-quality': 0.33 , 'community-fabric': 0 , 'amenity-function': 0.5 },
     housingTypes: ['co-op', 'condo', 'rental', 'luxury-highrise', 'prewar-renovated', 'newer-lowrise'],
     hasFamilyInfrastructure: true,
