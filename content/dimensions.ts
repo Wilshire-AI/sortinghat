@@ -98,10 +98,10 @@ export const dimensions: readonly Dimension[] = [
     name: 'Social Register',
     kind: 'symmetric',
     description:
-      'Captures temperament and social code, independent of prestige tier. Establishment-coded neighborhoods feel polished, traditional, doorman-fluent, status-through-restraint. Bohemian-progressive neighborhoods feel unbuttoned, intellectual, values-signaling, status-through-ideology. Both poles are real lived preferences. The axis that pulls UES apart from UWS, Brooklyn Heights from Park Slope, Tribeca from West Village.',
+      'Cultural code — how formal-traditional vs. progressive-casual the dominant social register is. NOT visual polish (handled by streetscape-quality), NOT resident wealth (prestige-orientation), NOT substance/quality (amenity-function). Formal-traditional means doorman-fluent, status-through-restraint, traditional dress codes — UES, Greenwich CT, Carnegie Hill. Progressive-casual means neighborly-informal, intellectual, values-signaling — Park Slope, Williamsburg, parts of UWS. Park Slope can be wealthy AND have polished streetscape AND have real substance AND still register as progressive-casual on this axis. Both poles are real lived preferences.',
     poles: {
-      low: 'Bohemian, progressive, intellectual, neighborly-informal.',
-      high: 'Polished, establishment, traditional, status-fluent.',
+      low: 'Progressive, casual, intellectual, neighborly-informal.',
+      high: 'Formal, traditional, doorman-fluent, status-through-restraint.',
     },
   },
   {

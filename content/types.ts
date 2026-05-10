@@ -86,6 +86,7 @@ export type SliderQuestion = {
   id: string;
   kind: 'slider';
   prompt: string;
+  helperText?: string;
   lowLabel: string;
   highLabel: string;
   // Single-dim slider (legacy). Slider value SETS this dim's user vector

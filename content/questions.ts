@@ -443,15 +443,18 @@ export const questions: readonly Question[] = [
   // legitimate; no option is "better." Multi-dim impacts add to the user
   // vector (slider value × impact) — see content/types.ts SliderQuestion.
   {
-    id: 'aesthetic-register-fit',
+    id: 'cultural-register-fit',
     kind: 'slider',
-    prompt: 'Casual or polished — which fits the streets you want to live on?',
-    lowLabel: 'Casual',
-    highLabel: 'Polished',
-    // Social-register is the primary signal for this slider. We previously
-    // also nudged creative-energy here, but the street-energy multi-select
-    // (creative-scene option +0.35) covers that axis cleanly, so keeping
-    // the secondary nudge here was double-counting. Single-dim now.
+    prompt: 'Which cultural register feels more like home?',
+    lowLabel: 'Progressive-casual',
+    highLabel: 'Formal-traditional',
+    helperText: 'Social code, not visual polish. Formal-traditional = UES / Greenwich CT (doorman-fluent, status-aware). Progressive-casual = Williamsburg / Park Slope (informal, neighborly).',
+    // Cultural-register slider, mapped to social-register dim. Visual polish
+    // is captured separately by streetscape-quality (already nudged by
+    // walk-scenery picks). Resident wealth is prestige-orientation. Substance
+    // is amenity-function. Keeping this slider strictly about cultural code
+    // makes Park Slope (progressive-casual culture, polished aesthetic, real
+    // wealth, real substance) cleanly expressible without conflation.
     impacts: {
       'social-register': 0.65,
     },

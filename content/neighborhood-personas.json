@@ -34,7 +34,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -122,7 +122,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -214,7 +214,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -270,7 +270,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -360,7 +360,7 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -435,7 +435,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -526,7 +526,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -587,7 +587,7 @@
         "kind": "slider",
         "value": -1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -680,7 +680,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -748,7 +748,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -827,7 +827,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -934,7 +934,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -987,7 +987,7 @@
         "kind": "slider",
         "value": -1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -1070,7 +1070,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -1167,7 +1167,7 @@
         "kind": "slider",
         "value": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -1211,7 +1211,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -1312,7 +1312,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -1394,7 +1394,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -1465,7 +1465,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -1552,7 +1552,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -1611,7 +1611,7 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -1704,7 +1704,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -1788,7 +1788,7 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -1856,7 +1856,7 @@
           "quiet"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -1952,7 +1952,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -2036,7 +2036,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -2100,7 +2100,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -2203,7 +2203,7 @@
           "small-downtown"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -2274,7 +2274,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -2352,7 +2352,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -2410,7 +2410,7 @@
         "kind": "slider",
         "value": -1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -2517,7 +2517,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -2597,7 +2597,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -2660,7 +2660,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -2744,7 +2744,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -2847,7 +2847,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -2898,7 +2898,7 @@
         "kind": "slider",
         "value": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -3015,7 +3015,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -3073,7 +3073,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -3165,7 +3165,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -3232,7 +3232,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -3308,7 +3308,7 @@
           "quiet"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -3427,7 +3427,7 @@
           "industrial-loft"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -3482,7 +3482,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -3567,7 +3567,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -3648,7 +3648,7 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -3726,7 +3726,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -3834,7 +3834,7 @@
           "leafy-residential"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -3912,7 +3912,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -3992,7 +3992,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -4051,7 +4051,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -4131,7 +4131,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -4221,7 +4221,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -4288,7 +4288,7 @@
         "kind": "slider",
         "value": -1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -4386,7 +4386,7 @@
           "real-park"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -4452,7 +4452,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -4531,7 +4531,7 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -4598,7 +4598,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -4678,7 +4678,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -4764,7 +4764,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -4879,7 +4879,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -4930,7 +4930,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -5023,7 +5023,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -5111,7 +5111,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -5197,7 +5197,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -5257,7 +5257,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -5344,7 +5344,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -5445,7 +5445,7 @@
           "quiet"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -5526,7 +5526,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -5603,7 +5603,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -5692,7 +5692,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -5767,7 +5767,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -5828,7 +5828,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -5922,7 +5922,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -5992,7 +5992,7 @@
           "diverse"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -6095,7 +6095,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -6166,7 +6166,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -6249,7 +6249,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -6301,7 +6301,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -6398,7 +6398,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -6486,7 +6486,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -6537,7 +6537,7 @@
         "kind": "slider",
         "value": -1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -6626,7 +6626,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -6716,7 +6716,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -6799,7 +6799,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -6867,7 +6867,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -6934,7 +6934,7 @@
         "kind": "multi_select",
         "selectedValues": []
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -7020,7 +7020,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -0.5
       },
@@ -7095,7 +7095,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -7177,7 +7177,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -7270,7 +7270,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -7336,7 +7336,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -7424,7 +7424,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -7506,7 +7506,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -7597,7 +7597,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -7672,7 +7672,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -7749,7 +7749,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -7840,7 +7840,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -7907,7 +7907,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -7987,7 +7987,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -8083,7 +8083,7 @@
           "family"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": -1
       },
@@ -8159,7 +8159,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -8230,7 +8230,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -8332,7 +8332,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -8388,7 +8388,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -8473,7 +8473,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -8556,7 +8556,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -8638,7 +8638,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -8734,7 +8734,7 @@
         "kind": "slider",
         "value": -1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 1
       },
@@ -8804,7 +8804,7 @@
         "kind": "forced_choice",
         "choiceIndex": 1
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -8917,7 +8917,7 @@
           "real-park"
         ]
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       }
@@ -8962,7 +8962,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -9031,7 +9031,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
@@ -9129,7 +9129,7 @@
         "kind": "forced_choice",
         "choiceIndex": 2
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0
       },
@@ -9193,7 +9193,7 @@
         "kind": "forced_choice",
         "choiceIndex": 0
       },
-      "aesthetic-register-fit": {
+      "cultural-register-fit": {
         "kind": "slider",
         "value": 0.5
       },
