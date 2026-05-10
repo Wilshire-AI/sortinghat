@@ -2185,10 +2185,10 @@ export const neighborhoods: readonly Neighborhood[] = [
   },
   {
     id: 'stamford', slug: 'stamford', name: 'Stamford', borough: 'ct',
-    scores: { 'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.2, 'space-sensitivity': 0.6, 'family-trajectory': 0.58, 'cultural-ecosystem': 0.4, 'environmental-openness': 0.58, 'creative-energy': 0.0, 'friction-sensitivity': 0.4, 'safety-need': 0.6, 'school-quality': 0.45,
+    scores: { 'urban-intensity-tolerance': 0.1, 'transit-psychology': 0.5, 'prestige-orientation': 0.2, 'space-sensitivity': 0.6, 'family-trajectory': 0.58, 'cultural-ecosystem': 0.4, 'environmental-openness': 0.58, 'creative-energy': 0.0, 'friction-sensitivity': 0.4, 'safety-need': 0.45, 'school-quality': 0.25,
   'social-register': 0.2,
   'visitor-facing-energy': -0.1,
-  'rootedness-vs-access': -0.45, 'daily-life-walkability': 0.55,  'streetscape-quality': 0.2,  'community-fabric': 0.1,  'amenity-function': 0.55 },
+  'rootedness-vs-access': -0.45, 'daily-life-walkability': 0.46,  'streetscape-quality': 0.2,  'community-fabric': 0.1,  'amenity-function': 0.55 },
     culturalTags: ['latin-american'], housingTypes: ['rental', 'condo', 'single-family', 'newer-lowrise', 'luxury-highrise'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
