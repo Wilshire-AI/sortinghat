@@ -206,11 +206,11 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': 0.3, 'transit-psychology': 0.5, 'prestige-orientation': -0.3,
       'space-sensitivity': 0.6, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.7,
-      'environmental-openness': 0.5, 'creative-energy': 0.4, 'friction-sensitivity': 0.0,
-      'safety-need': 0.55, 'school-quality': 0.1,
+      'environmental-openness': 0.5, 'creative-energy': 0.4, 'friction-sensitivity': -0.2,
+      'safety-need': 0.4, 'school-quality': 0.1,
     'social-register': -0.3,
     'visitor-facing-energy': 0.2,
-    'rootedness-vs-access': -0.4, 'daily-life-walkability': 0.75
+    'rootedness-vs-access': -0.4, 'daily-life-walkability': 0.65
     , 'streetscape-quality': 0.53 , 'community-fabric': 0.15 , 'amenity-function': 0.65 },
     culturalTags: ['african-american', 'west-african'],
     housingTypes: ['townhouse', 'co-op', 'condo', 'rental', 'prewar-character'],
@@ -1025,12 +1025,12 @@ export const neighborhoods: readonly Neighborhood[] = [
     id: 'manhattan-valley', slug: 'manhattan-valley', name: 'Manhattan Valley', borough: 'manhattan',
     scores: {
       'urban-intensity-tolerance': -0.25, 'transit-psychology': 0.4, 'prestige-orientation': -0.25,
-      'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.5,
+      'space-sensitivity': 0.5, 'family-trajectory': 0.4, 'cultural-ecosystem': 0.5,
       'environmental-openness': 0.55, 'creative-energy': 0.2, 'friction-sensitivity': 0.5,
-      'safety-need': 0.65, 'school-quality': 0.4,
+      'safety-need': 0.5, 'school-quality': 0.4,
     'social-register': -0.5,
     'visitor-facing-energy': -0.6,
-    'rootedness-vs-access': -0.25, 'daily-life-walkability': 0.8
+    'rootedness-vs-access': -0.25, 'daily-life-walkability': 0.65
     , 'streetscape-quality': 0.38 , 'community-fabric': 0.1 , 'amenity-function': 0.35 },
     culturalTags: ['latin-american'],
     housingTypes: ['co-op', 'rental', 'townhouse', 'prewar-character'],
