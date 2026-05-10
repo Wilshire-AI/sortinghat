@@ -183,12 +183,12 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'hells-kitchen', slug: 'hells-kitchen', name: 'Hell\'s Kitchen', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.7, 'prestige-orientation': 0.0,
+      'urban-intensity-tolerance': 0.5, 'transit-psychology': 0.7, 'prestige-orientation': -0.25,
       'space-sensitivity': -0.2, 'family-trajectory': -0.2, 'cultural-ecosystem': 0.4,
-      'environmental-openness': 0.2, 'creative-energy': 0.4, 'friction-sensitivity': -0.3,
+      'environmental-openness': 0.2, 'creative-energy': 0.4, 'friction-sensitivity': -0.55,
       'safety-need': 0.6, 'school-quality': 0.3,
-    'social-register': -0.2,
-    'visitor-facing-energy': 0.45,
+    'social-register': -0.45,
+    'visitor-facing-energy': 0.65,
     'rootedness-vs-access': 0.55, 'daily-life-walkability': 0.9
     , 'streetscape-quality': 0.06 , 'community-fabric': 0 , 'amenity-function': 0.65 },
     culturalTags: ['lgbtq'],
