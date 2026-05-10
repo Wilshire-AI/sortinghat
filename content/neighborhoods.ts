@@ -272,12 +272,12 @@ export const neighborhoods: readonly Neighborhood[] = [
     scores: {
       'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.7, 'prestige-orientation': 0.6,
       'space-sensitivity': 0.4, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.0,
-      'environmental-openness': 0.7, 'creative-energy': -0.1, 'friction-sensitivity': 0.8,
+      'environmental-openness': 0.62, 'creative-energy': -0.1, 'friction-sensitivity': 0.8,
       'safety-need': 0.85, 'school-quality': 0.65,
     'social-register': 0.35,
-    'visitor-facing-energy': 0.1,
+    'visitor-facing-energy': 0.25,
     'rootedness-vs-access': -0.6, 'daily-life-walkability': 0.9
-    , 'streetscape-quality': 0.95 , 'community-fabric': 0.05 , 'amenity-function': 0.7 },
+    , 'streetscape-quality': 0.95 , 'community-fabric': 0.05 , 'amenity-function': 0.58 },
     housingTypes: ['townhouse', 'co-op', 'condo', 'rental', 'prewar-character', 'prewar-renovated'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
