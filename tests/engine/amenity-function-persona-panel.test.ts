@@ -39,7 +39,7 @@ describe('amenity-function persona panel', () => {
       'housing-acceptance': { kind: 'multi_select', selectedValues: [] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['cafes', 'premium-polished-restaurants', 'parks-water'],
+        selectedValues: ['cafes', 'parks-water'],
       },
       'walk-scenery': {
         kind: 'multi_select',
@@ -53,7 +53,6 @@ describe('amenity-function persona panel', () => {
         selectedValues: ['creative-scene', 'commercial'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 2 },
-      'cultural-register-fit': { kind: 'slider', value: -0.5 },
       'lifecycle-stage-fit': { kind: 'slider', value: 0 },
       'rootedness-vs-access-fit': { kind: 'forced_choice', choiceIndex: 2 },
       'must-haves': { kind: 'multi_select', selectedValues: [] },
@@ -76,7 +75,7 @@ describe('amenity-function persona panel', () => {
       'housing-acceptance': { kind: 'multi_select', selectedValues: [] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['premium-polished-restaurants', 'errands', 'gym'],
+        selectedValues: ['errands', 'gym'],
       },
       'walk-scenery': {
         kind: 'multi_select',
@@ -87,10 +86,9 @@ describe('amenity-function persona panel', () => {
       'school-need': { kind: 'slider', value: 0.5 },
       'street-energy': {
         kind: 'multi_select',
-        selectedValues: ['commercial', 'quiet'],
+        selectedValues: ['established-traditional', 'commercial', 'quiet'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 0 },
-      'cultural-register-fit': { kind: 'slider', value: 1 },
       'lifecycle-stage-fit': { kind: 'slider', value: 1 },
       'rootedness-vs-access-fit': { kind: 'forced_choice', choiceIndex: 1 },
       'must-haves': { kind: 'multi_select', selectedValues: [] },
@@ -127,7 +125,6 @@ describe('amenity-function persona panel', () => {
         selectedValues: ['creative-scene', 'diverse'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 1 },
-      'cultural-register-fit': { kind: 'slider', value: -1 },
       'lifecycle-stage-fit': { kind: 'slider', value: -0.5 },
       'rootedness-vs-access-fit': { kind: 'forced_choice', choiceIndex: 2 },
       'must-haves': { kind: 'multi_select', selectedValues: [] },
@@ -150,7 +147,7 @@ describe('amenity-function persona panel', () => {
       'housing-acceptance': { kind: 'multi_select', selectedValues: [] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['errands', 'high-value-food-retail', 'family-infra'],
+        selectedValues: ['errands', 'family-infra'],
       },
       'walk-scenery': {
         kind: 'multi_select',
@@ -161,10 +158,9 @@ describe('amenity-function persona panel', () => {
       'school-need': { kind: 'slider', value: 0.5 },
       'street-energy': {
         kind: 'multi_select',
-        selectedValues: ['family', 'quiet'],
+        selectedValues: ['polished-family-village', 'quiet', 'family'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 0 },
-      'cultural-register-fit': { kind: 'slider', value: 0.5 },
       'lifecycle-stage-fit': { kind: 'slider', value: 0.5 },
       'rootedness-vs-access-fit': { kind: 'forced_choice', choiceIndex: 0 },
       'must-haves': { kind: 'multi_select', selectedValues: [] },
@@ -187,7 +183,7 @@ describe('amenity-function persona panel', () => {
       'housing-acceptance': { kind: 'multi_select', selectedValues: ['house-townhouse'] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['premium-polished-restaurants', 'family-infra'],
+        selectedValues: ['family-infra'],
       },
       'walk-scenery': {
         kind: 'multi_select',
@@ -198,10 +194,9 @@ describe('amenity-function persona panel', () => {
       'school-need': { kind: 'slider', value: 1 },
       'street-energy': {
         kind: 'multi_select',
-        selectedValues: ['family', 'quiet'],
+        selectedValues: ['established-traditional', 'family', 'quiet'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 0 },
-      'cultural-register-fit': { kind: 'slider', value: 1 },
       'lifecycle-stage-fit': { kind: 'slider', value: 1 },
       'rootedness-vs-access-fit': { kind: 'forced_choice', choiceIndex: 0 },
       'must-haves': { kind: 'multi_select', selectedValues: ['top-schools'] },
@@ -224,7 +219,7 @@ describe('amenity-function persona panel', () => {
       'housing-acceptance': { kind: 'multi_select', selectedValues: [] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['high-value-food-retail', 'premium-polished-restaurants', 'family-infra'],
+        selectedValues: ['family-infra'],
       },
       'walk-scenery': {
         kind: 'multi_select',
@@ -238,7 +233,6 @@ describe('amenity-function persona panel', () => {
         selectedValues: ['family', 'commercial'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 0 },
-      'cultural-register-fit': { kind: 'slider', value: 0 },
       'lifecycle-stage-fit': { kind: 'slider', value: 0.5 },
       'rootedness-vs-access-fit': { kind: 'forced_choice', choiceIndex: 0 },
       'must-haves': { kind: 'multi_select', selectedValues: [] },
@@ -261,7 +255,7 @@ describe('amenity-function persona panel', () => {
       'housing-acceptance': { kind: 'multi_select', selectedValues: [] },
       'walking-distance-amenities': {
         kind: 'multi_select',
-        selectedValues: ['high-value-food-retail', 'errands', 'cafes'],
+        selectedValues: ['errands', 'cafes'],
       },
       'walk-scenery': {
         kind: 'multi_select',
@@ -278,7 +272,6 @@ describe('amenity-function persona panel', () => {
         selectedValues: ['diverse', 'commercial'],
       },
       'noise-tolerance': { kind: 'forced_choice', choiceIndex: 2 },
-      'cultural-register-fit': { kind: 'slider', value: -1 },
       'lifecycle-stage-fit': { kind: 'slider', value: -0.5 },
       'rootedness-vs-access-fit': { kind: 'forced_choice', choiceIndex: 0 },
       'must-haves': { kind: 'multi_select', selectedValues: [] },

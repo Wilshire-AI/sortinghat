@@ -125,6 +125,11 @@ export type MultiSelectQuestion = {
     // walking-distance-amenities question where each pick maps to a
     // different dim contribution.
     impacts?: Partial<Record<DimensionId, number>>;
+    // Optional vibe-reference photo. Renders as a small thumbnail beside
+    // the option label. Used for high-cognitive-load multi-selects where
+    // a visual anchor materially helps users orient (place-archetype).
+    // Source from /public/images/quiz/.
+    image?: { src: string; alt: string };
   }[];
   // optionally, picking ANY option also nudges a dimension (legacy; prefer
   // per-option `impacts` above for new questions).

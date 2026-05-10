@@ -9,10 +9,28 @@ const REPO = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 mkdirSync(resolve(REPO, 'public/images/quiz'), { recursive: true });
 
 const PAIRS = [
-  ['park-slope', 'cultural-register-casual'],
-  ['upper-east-side', 'cultural-register-formal'],
+  // Slider pole references
   ['bushwick', 'lifecycle-changing'],
   ['brooklyn-heights', 'lifecycle-established'],
+  // Place-archetype option thumbnails
+  ['long-island-city', 'archetype-transit-hub'],
+  ['park-slope', 'archetype-walkable-city'],
+  ['forest-hills', 'archetype-quiet-city'],
+  ['maplewood', 'archetype-walkable-suburb'],
+  ['scarsdale', 'archetype-larger-lot-suburb'],
+  ['chappaqua', 'archetype-country-rural'],
+  // Street-energy option thumbnails (10 vibes including 3 polish flavors
+  // and corporate / business district)
+  ['bushwick', 'street-energy-creative'],
+  ['flushing', 'street-energy-commercial'],
+  ['jackson-heights', 'street-energy-diverse'],
+  ['hudson-yards', 'street-energy-visitor'],
+  ['midtown-east', 'street-energy-corporate'],
+  ['ditmas-park', 'street-energy-family'],
+  ['sunnyside', 'street-energy-quiet'],
+  ['upper-east-side', 'street-energy-established'],
+  ['upper-west-side', 'street-energy-refined'],
+  ['bay-ridge', 'street-energy-polished-family'],
 ];
 
 for (const [src, out] of PAIRS) {

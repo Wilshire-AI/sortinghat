@@ -457,18 +457,31 @@ function MultiSelect({
                     : 'border-[var(--color-line)] hover:border-[var(--color-ink)] hover:bg-[var(--color-ink)]/[0.04]')
                 }
               >
-                <span className="inline-flex items-center gap-2 font-serif text-base">
-                  <span
-                    aria-hidden
-                    className={
-                      'inline-block h-3.5 w-3.5 rounded-sm border shrink-0 ' +
-                      (isSelected
-                        ? 'bg-[var(--color-accent)] border-[var(--color-accent)]'
-                        : 'border-[var(--color-ink)]/40')
-                    }
-                  />
-                  {opt.label}
-                </span>
+                <div className="flex items-start gap-3">
+                  {opt.image && (
+                    <div className="relative w-20 sm:w-24 aspect-[16/9] overflow-hidden rounded-sm bg-[var(--color-line)] shrink-0">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={opt.image.src}
+                        alt={opt.image.alt}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
+                  <span className="inline-flex items-start gap-2 font-serif text-base flex-1">
+                    <span
+                      aria-hidden
+                      className={
+                        'inline-block h-3.5 w-3.5 mt-1.5 rounded-sm border shrink-0 ' +
+                        (isSelected
+                          ? 'bg-[var(--color-accent)] border-[var(--color-accent)]'
+                          : 'border-[var(--color-ink)]/40')
+                      }
+                    />
+                    <span>{opt.label}</span>
+                  </span>
+                </div>
               </button>
             </li>
           );

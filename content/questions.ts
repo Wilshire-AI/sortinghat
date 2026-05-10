@@ -31,6 +31,10 @@ export const questions: readonly Question[] = [
       {
         value: 'transit-hub',
         label: 'Transit hub — multi-line transit, dense blocks, walk to almost everything',
+        image: {
+          src: '/images/quiz/archetype-transit-hub.jpg',
+          alt: 'Long Island City skyline towers along East River with transit hub density',
+        },
         impacts: {
           'urban-intensity-tolerance': 0.20,
           'transit-psychology': 0.275,
@@ -45,6 +49,10 @@ export const questions: readonly Question[] = [
       {
         value: 'walkable-city',
         label: 'Walkable city neighborhood — real downtown, lower density, more elbow room',
+        image: {
+          src: '/images/quiz/archetype-walkable-city.jpg',
+          alt: 'Park Slope brownstone-belt block with stoops and tree-lined sidewalks',
+        },
         impacts: {
           'urban-intensity-tolerance': -0.05,
           'transit-psychology': 0.15,
@@ -60,6 +68,10 @@ export const questions: readonly Question[] = [
       {
         value: 'quiet-city',
         label: 'Quiet city neighborhood — mostly residential blocks, single-line transit',
+        image: {
+          src: '/images/quiz/archetype-quiet-city.jpg',
+          alt: 'Forest Hills residential village street with prewar Tudor homes',
+        },
         impacts: {
           'urban-intensity-tolerance': -0.20,
           'transit-psychology': 0.10,
@@ -75,6 +87,10 @@ export const questions: readonly Question[] = [
       {
         value: 'walkable-suburb',
         label: 'Walkable suburb — Main Street, town center, neighbors you see around',
+        image: {
+          src: '/images/quiz/archetype-walkable-suburb.jpg',
+          alt: 'Maplewood Main Street with leafy mid-century downtown and pedestrian foot traffic',
+        },
         impacts: {
           'urban-intensity-tolerance': -0.225,
           'transit-psychology': 0.125,
@@ -93,6 +109,10 @@ export const questions: readonly Question[] = [
       {
         value: 'larger-lot-suburb',
         label: 'Larger-lot suburb — lawns, more land, more privacy',
+        image: {
+          src: '/images/quiz/archetype-larger-lot-suburb.jpg',
+          alt: 'Scarsdale residential street with manicured lawns and detached single-family homes',
+        },
         impacts: {
           'urban-intensity-tolerance': -0.275,
           'rootedness-vs-access': -0.325,
@@ -109,6 +129,10 @@ export const questions: readonly Question[] = [
       {
         value: 'country-rural',
         label: 'Country / rural — lots of land, woods, car for everything',
+        image: {
+          src: '/images/quiz/archetype-country-rural.jpg',
+          alt: 'Chappaqua wooded country lane with deep setbacks and mature trees',
+        },
         impacts: {
           'urban-intensity-tolerance': -0.325,
           'rootedness-vs-access': -0.275,
@@ -357,6 +381,7 @@ export const questions: readonly Question[] = [
       {
         value: 'creative-scene',
         label: 'Creative scene — galleries, indie music, art-class vibe',
+        image: { src: '/images/quiz/street-energy-creative.jpg', alt: 'Bushwick mural-painted warehouse with creative-class street life' },
         impacts: {
           'creative-energy': 0.35,
           'urban-intensity-tolerance': 0.10,
@@ -368,6 +393,7 @@ export const questions: readonly Question[] = [
       {
         value: 'commercial',
         label: 'Commercial corridor — shopping streets, restaurants, retail',
+        image: { src: '/images/quiz/street-energy-commercial.jpg', alt: 'Flushing Main Street with shopping crowds and retail signage' },
         impacts: {
           'daily-life-walkability': 0.30,
           'urban-intensity-tolerance': 0.15,
@@ -379,6 +405,7 @@ export const questions: readonly Question[] = [
       {
         value: 'diverse',
         label: 'Diverse / immigrant-rich — polyglot, multicultural feel',
+        image: { src: '/images/quiz/street-energy-diverse.jpg', alt: 'Jackson Heights immigrant commercial corridor with multilingual signage' },
         impacts: {
           'cultural-ecosystem': 0.35,
           'daily-life-walkability': 0.10,
@@ -390,6 +417,7 @@ export const questions: readonly Question[] = [
       {
         value: 'visitor',
         label: 'Visitor / destination — tourist energy, foot traffic',
+        image: { src: '/images/quiz/street-energy-visitor.jpg', alt: 'Hudson Yards skyline with destination towers and visitor crowds' },
         impacts: {
           'visitor-facing-energy': 0.40,
           'rootedness-vs-access': 0.25,
@@ -399,8 +427,22 @@ export const questions: readonly Question[] = [
         },
       },
       {
+        value: 'corporate',
+        label: 'Corporate / business district — office towers, suit-and-tie energy',
+        image: { src: '/images/quiz/street-energy-corporate.jpg', alt: 'Midtown East office tower corridor with weekday business density' },
+        impacts: {
+          'urban-intensity-tolerance': 0.20,
+          'visitor-facing-energy': 0.20,
+          'rootedness-vs-access': 0.20,
+          'friction-sensitivity': -0.05,
+          'prestige-orientation': 0.10,
+          'community-fabric': -0.15,
+        },
+      },
+      {
         value: 'family',
         label: 'Family / stroller — playgrounds, school crowds, kid-friendly',
+        image: { src: '/images/quiz/street-energy-family.jpg', alt: 'Ditmas Park leafy block with stroller-density and prewar family homes' },
         impacts: {
           'family-trajectory': 0.30,
           'community-fabric': 0.20,
@@ -412,12 +454,48 @@ export const questions: readonly Question[] = [
       {
         value: 'quiet',
         label: 'Quiet residential — mostly residential blocks',
+        image: { src: '/images/quiz/street-energy-quiet.jpg', alt: 'Sunnyside calm residential block with low foot traffic' },
         impacts: {
           'friction-sensitivity': 0.35,
           'urban-intensity-tolerance': -0.30,
           'visitor-facing-energy': -0.30,
           'space-sensitivity': 0.15,
           'streetscape-quality': 0.15,
+        },
+      },
+      {
+        value: 'established-traditional',
+        label: 'Established and traditional — formal, classic, doorman-fluent',
+        image: { src: '/images/quiz/street-energy-established.jpg', alt: 'Upper East Side residential frontage with awning entrances' },
+        impacts: {
+          'social-register': 0.50,
+          'prestige-orientation': 0.20,
+          'streetscape-quality': 0.15,
+          'creative-energy': -0.15,
+          'visitor-facing-energy': 0.05,
+        },
+      },
+      {
+        value: 'refined-contemporary',
+        label: 'Refined and contemporary — polished but not formal, intellectual or creative-wealthy',
+        image: { src: '/images/quiz/street-energy-refined.jpg', alt: 'Upper West Side prewar facade with progressive-refined street life' },
+        impacts: {
+          'social-register': 0.15,
+          'prestige-orientation': 0.20,
+          'streetscape-quality': 0.20,
+          'amenity-function': 0.15,
+        },
+      },
+      {
+        value: 'polished-family-village',
+        label: 'Polished family-village — manicured, traditional middle-class, kid-centric',
+        image: { src: '/images/quiz/street-energy-polished-family.jpg', alt: 'Bay Ridge tree-lined family block with traditional polish' },
+        impacts: {
+          'social-register': 0.30,
+          'family-trajectory': 0.15,
+          'friction-sensitivity': 0.20,
+          'streetscape-quality': 0.20,
+          'community-fabric': 0.15,
         },
       },
     ],
@@ -442,33 +520,6 @@ export const questions: readonly Question[] = [
   // Spectrum sliders with vibe-pair endpoints. Each pole sounds equally
   // legitimate; no option is "better." Multi-dim impacts add to the user
   // vector (slider value × impact) — see content/types.ts SliderQuestion.
-  {
-    id: 'cultural-register-fit',
-    kind: 'slider',
-    prompt: 'Which cultural register feels more like home?',
-    lowLabel: 'Progressive-casual',
-    highLabel: 'Formal-traditional',
-    helperText: 'Social code, not visual polish.',
-    lowImage: {
-      src: '/images/quiz/cultural-register-casual.jpg',
-      alt: 'Park Slope brownstone block: weekend foot traffic, casual sidewalk life, stroller culture',
-      caption: 'Park Slope, Brooklyn',
-    },
-    highImage: {
-      src: '/images/quiz/cultural-register-formal.jpg',
-      alt: 'Upper East Side residential frontage with awning entrances and quiet pedestrian pavement',
-      caption: 'Upper East Side, Manhattan',
-    },
-    // Cultural-register slider, mapped to social-register dim. Visual polish
-    // is captured separately by streetscape-quality (already nudged by
-    // walk-scenery picks). Resident wealth is prestige-orientation. Substance
-    // is amenity-function. Keeping this slider strictly about cultural code
-    // makes Park Slope (progressive-casual culture, polished aesthetic, real
-    // wealth, real substance) cleanly expressible without conflation.
-    impacts: {
-      'social-register': 0.65,
-    },
-  },
   {
     id: 'lifecycle-stage-fit',
     kind: 'slider',
