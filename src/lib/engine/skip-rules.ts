@@ -1,8 +1,5 @@
 import type { Question } from '@content/types';
 import type { Answers } from './derive';
-import { dimensions } from '@content/dimensions';
-import { questions as allQuestions } from '@content/questions';
-import { deriveState } from './derive';
 
 export type ShouldSkip = (questionId: string, answers: Answers) => boolean;
 
@@ -29,18 +26,6 @@ export function shouldSkip(questionId: string, answers: Answers): boolean {
   if (questionId === 'school-need') {
     const a = answers['family-horizon'];
     return a?.kind === 'forced_choice' && a.choiceIndex === FAMILY_HORIZON_NO_KIDS_INDEX;
-  }
-
-  // community-fabric-mode: distinguishes walkable-village vs estate-club
-  // suburb. AND-not-OR is critical: an urbanist who also wants kids
-  // (urban high AND family high) IS suburb-curious for school years and
-  // must see this question. Skipping that user mis-types them as
-  // estate-fitting by default.
-  if (questionId === 'community-fabric-mode') {
-    const vector = deriveState(dimensions, allQuestions, answers).vector;
-    const urban = vector['urban-intensity-tolerance'] ?? 0;
-    const family = vector['family-trajectory'] ?? 0;
-    return urban > 0.4 && family <= 0;
   }
 
   return false;

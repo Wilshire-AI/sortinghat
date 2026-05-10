@@ -483,30 +483,6 @@ export const questions: readonly Question[] = [
   },
   // PHASE 6 — GATED + COMMIT
   {
-    // Magnitudes intentionally lower than they once were: with the new
-    // place-archetype-primary now disambiguating walkable-civic-suburb
-    // (community-fabric +0.45) from estate-club-suburb (community-fabric
-    // -0.40), this question is a finer correction lever, not the primary
-    // signal. Was ±0.75; now ±0.40.
-    id: 'community-fabric-mode',
-    kind: 'forced_choice',
-    prompt: 'Which suburban social world feels more like home?',
-    choices: [
-      {
-        label: 'Walkable village, public-school circles, neighbors you see around town.',
-        impacts: { 'community-fabric': 0.40 },
-      },
-      {
-        label: 'Private estate, club-oriented, more space and fewer casual run-ins.',
-        impacts: { 'community-fabric': -0.40 },
-      },
-      {
-        label: 'Either, if the house and commute work.',
-        impacts: { 'community-fabric': 0 },
-      },
-    ],
-  },
-  {
     id: 'must-haves',
     kind: 'multi_select',
     purpose: 'must_haves',
