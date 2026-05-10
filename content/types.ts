@@ -24,6 +24,10 @@ export type CommuteCluster =
   | 'lic'
   | 'downtown-brooklyn'
   | 'newport-jc'
+  | 'upper-manhattan'
+  | 'hoboken'
+  | 'newark'
+  | 'white-plains'
   | 'stamford'
   | 'greenwich'
   | 'westport';

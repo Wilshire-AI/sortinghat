@@ -33,6 +33,12 @@ const CLUSTERS = {
   lic: { lat: 40.7472, lng: -73.945, label: 'Court Square' },
   'downtown-brooklyn': { lat: 40.6929, lng: -73.9904, label: 'Borough Hall' },
   'newport-jc': { lat: 40.7264, lng: -74.0339, label: 'Newport PATH' },
+  // Upper Manhattan: anchored at Mt Sinai (96th & Madison) — covers the
+  // hospital corridor + Columbia + Lincoln Center academic/medical cluster.
+  'upper-manhattan': { lat: 40.7903, lng: -73.9532, label: 'Mt Sinai / Upper Manhattan' },
+  hoboken: { lat: 40.7356, lng: -74.0276, label: 'Hoboken Terminal' },
+  newark: { lat: 40.7345, lng: -74.1644, label: 'Newark Penn Station' },
+  'white-plains': { lat: 41.0339, lng: -73.7629, label: 'White Plains Metro-North' },
   stamford: { lat: 41.0467, lng: -73.5421, label: 'Stamford Station' },
   greenwich: { lat: 41.0262, lng: -73.6244, label: 'Greenwich Station' },
   westport: { lat: 41.1182, lng: -73.3677, label: 'Westport Station' },

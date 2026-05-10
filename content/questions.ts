@@ -129,9 +129,13 @@ export const questions: readonly Question[] = [
       { value: 'midtown', label: 'Midtown Manhattan (Grand Central / Penn / Bryant Park)' },
       { value: 'fidi', label: 'Financial District / Lower Manhattan' },
       { value: 'hudson-yards', label: 'Hudson Yards / West Chelsea' },
+      { value: 'upper-manhattan', label: 'Upper Manhattan (Columbia / Mt Sinai / hospital corridor)' },
       { value: 'lic', label: 'Long Island City / Court Square' },
       { value: 'downtown-brooklyn', label: 'Downtown Brooklyn / DUMBO' },
       { value: 'newport-jc', label: 'Jersey City (Newport / Exchange Place)' },
+      { value: 'hoboken', label: 'Hoboken (waterfront / Washington St)' },
+      { value: 'newark', label: 'Newark (Penn Station / downtown)' },
+      { value: 'white-plains', label: 'White Plains / Westchester corporate' },
       { value: 'stamford', label: 'Stamford CT' },
       { value: 'greenwich', label: 'Greenwich CT' },
       { value: 'westport', label: 'Westport CT' },
@@ -442,12 +446,15 @@ export const questions: readonly Question[] = [
   {
     id: 'aesthetic-register-fit',
     kind: 'slider',
-    prompt: 'Where on this spectrum does your ideal neighborhood feel sit?',
-    lowLabel: 'Trendsetting',
-    highLabel: 'Traditional',
+    prompt: 'Casual or polished — which fits the streets you want to live on?',
+    lowLabel: 'Casual',
+    highLabel: 'Polished',
+    // Social-register is the primary signal for this slider. We previously
+    // also nudged creative-energy here, but the street-energy multi-select
+    // (creative-scene option +0.35) covers that axis cleanly, so keeping
+    // the secondary nudge here was double-counting. Single-dim now.
     impacts: {
       'social-register': 0.65,
-      'creative-energy': -0.20,
     },
   },
   {
