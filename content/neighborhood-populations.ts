@@ -63,6 +63,7 @@ export const neighborhoodPopulations: Record<NeighborhoodId, number> = {
   'dumbo': 6000,
   'cobble-hill': 32000,
   'bushwick': 130000,
+  'sunset-park': 129000,
   'brighton-beach': 35000,
   'sheepshead-bay': 100000,
   'greenpoint': 35000,

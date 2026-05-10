@@ -39,6 +39,7 @@ export const questions: readonly Question[] = [
           'visitor-facing-energy': 0.10,
           'space-sensitivity': -0.10,
           'streetscape-quality': 0.075,
+          'amenity-function': 0.15,
         },
       },
       {
@@ -53,6 +54,7 @@ export const questions: readonly Question[] = [
           'streetscape-quality': 0.175,
           'friction-sensitivity': 0.10,
           'visitor-facing-energy': -0.05,
+          'amenity-function': 0.20,
         },
       },
       {
@@ -85,6 +87,7 @@ export const questions: readonly Question[] = [
           'streetscape-quality': 0.15,
           'family-trajectory': 0.10,
           'visitor-facing-energy': -0.225,
+          'amenity-function': 0.10,
         },
       },
       {
@@ -97,10 +100,10 @@ export const questions: readonly Question[] = [
           'community-fabric': -0.20,
           'friction-sensitivity': 0.325,
           'environmental-openness': 0.275,
-          'prestige-orientation': 0.125,
           'social-register': 0.125,
           'family-trajectory': 0.10,
           'visitor-facing-energy': -0.25,
+          'amenity-function': -0.20,
         },
       },
       {
@@ -114,6 +117,7 @@ export const questions: readonly Question[] = [
           'environmental-openness': 0.275,
           'community-fabric': -0.10,
           'visitor-facing-energy': -0.275,
+          'amenity-function': -0.25,
         },
       },
     ],
@@ -219,9 +223,25 @@ export const questions: readonly Question[] = [
         impacts: { 'daily-life-walkability': 0.25, 'rootedness-vs-access': -0.2 },
       },
       {
-        value: 'world-class-restaurants',
-        label: 'World-class restaurants',
-        impacts: { 'rootedness-vs-access': 0.4, 'prestige-orientation': 0.2, 'urban-intensity-tolerance': 0.2 },
+        value: 'high-value-food-retail',
+        label: 'High-value authentic food and markets nearby',
+        impacts: {
+          'amenity-function': 0.55,
+          'daily-life-walkability': 0.20,
+          'cultural-ecosystem': 0.15,
+          'social-register': -0.15,
+          'prestige-orientation': -0.10,
+        },
+      },
+      {
+        value: 'premium-polished-restaurants',
+        label: 'Polished, upscale dining and curated retail nearby',
+        impacts: {
+          'amenity-function': 0.25,
+          'social-register': 0.20,
+          'prestige-orientation': 0.10,
+          'visitor-facing-energy': 0.10,
+        },
       },
       {
         value: 'bars-nightlife',
@@ -464,7 +484,8 @@ export const questions: readonly Question[] = [
     lowLabel: 'Up-and-coming',
     highLabel: 'Established',
     impacts: {
-      'prestige-orientation': 0.65,
+      'prestige-orientation': 0.35,
+      'social-register': 0.15,
       'creative-energy': -0.15,
       'friction-sensitivity': 0.15,
     },
