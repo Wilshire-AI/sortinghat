@@ -1024,14 +1024,14 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'manhattan-valley', slug: 'manhattan-valley', name: 'Manhattan Valley', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.4, 'prestige-orientation': 0.0,
+      'urban-intensity-tolerance': -0.25, 'transit-psychology': 0.4, 'prestige-orientation': -0.25,
       'space-sensitivity': 0.5, 'family-trajectory': 0.6, 'cultural-ecosystem': 0.5,
-      'environmental-openness': 0.7, 'creative-energy': 0.2, 'friction-sensitivity': 0.5,
+      'environmental-openness': 0.55, 'creative-energy': 0.2, 'friction-sensitivity': 0.5,
       'safety-need': 0.65, 'school-quality': 0.4,
     'social-register': -0.5,
     'visitor-facing-energy': -0.6,
-    'rootedness-vs-access': 0.15, 'daily-life-walkability': 0.8
-    , 'streetscape-quality': 0.38 , 'community-fabric': 0.1 , 'amenity-function': 0.5 },
+    'rootedness-vs-access': -0.25, 'daily-life-walkability': 0.8
+    , 'streetscape-quality': 0.38 , 'community-fabric': 0.1 , 'amenity-function': 0.35 },
     culturalTags: ['latin-american'],
     housingTypes: ['co-op', 'rental', 'townhouse', 'prewar-character'],
     basePassages: {
