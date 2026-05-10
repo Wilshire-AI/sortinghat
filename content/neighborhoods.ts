@@ -803,10 +803,10 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'fort-lee', slug: 'fort-lee', name: 'Fort Lee', borough: 'nj',
     scores: {
-      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.3, 'prestige-orientation': 0.1,
-      'space-sensitivity': 0.6, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.78,
+      'urban-intensity-tolerance': 0.0, 'transit-psychology': 0.22, 'prestige-orientation': 0.1,
+      'space-sensitivity': 0.6, 'family-trajectory': 0.7, 'cultural-ecosystem': 0.68,
       'environmental-openness': 0.52, 'creative-energy': -0.1, 'friction-sensitivity': 0.5,
-      'safety-need': 0.7, 'school-quality': 0.55,
+      'safety-need': 0.7, 'school-quality': 0.4,
     'social-register': 0.3,
     'visitor-facing-energy': -0.5,
     'rootedness-vs-access': -0.6, 'daily-life-walkability': 0.45
