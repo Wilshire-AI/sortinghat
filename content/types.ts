@@ -89,6 +89,13 @@ export type SliderQuestion = {
   helperText?: string;
   lowLabel: string;
   highLabel: string;
+  // Optional pole reference photos. When present, the slider renders a small
+  // thumbnail at each end of the track. Used for spectrum questions where a
+  // visual reference clarifies the abstract axis (cultural-register, lifecycle).
+  // Both must be present together. Source from /public/images/quiz/. See
+  // .polaris/quiz-photos-research-2026-05-10.md for design rationale.
+  lowImage?: { src: string; alt: string; caption: string };
+  highImage?: { src: string; alt: string; caption: string };
   // Single-dim slider (legacy). Slider value SETS this dim's user vector
   // value (in [-1, +1]). Use for agree/disagree-style questions where the
   // slider position IS the user's value on a single axis (e.g., safety-need).

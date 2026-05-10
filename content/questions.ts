@@ -448,7 +448,17 @@ export const questions: readonly Question[] = [
     prompt: 'Which cultural register feels more like home?',
     lowLabel: 'Progressive-casual',
     highLabel: 'Formal-traditional',
-    helperText: 'Social code, not visual polish. Formal-traditional = UES / Greenwich CT (doorman-fluent, status-aware). Progressive-casual = Williamsburg / Park Slope (informal, neighborly).',
+    helperText: 'Social code, not visual polish.',
+    lowImage: {
+      src: '/images/quiz/cultural-register-casual.jpg',
+      alt: 'Park Slope brownstone block: weekend foot traffic, casual sidewalk life, stroller culture',
+      caption: 'Park Slope, Brooklyn',
+    },
+    highImage: {
+      src: '/images/quiz/cultural-register-formal.jpg',
+      alt: 'Upper East Side residential frontage with awning entrances and quiet pedestrian pavement',
+      caption: 'Upper East Side, Manhattan',
+    },
     // Cultural-register slider, mapped to social-register dim. Visual polish
     // is captured separately by streetscape-quality (already nudged by
     // walk-scenery picks). Resident wealth is prestige-orientation. Substance
@@ -462,9 +472,21 @@ export const questions: readonly Question[] = [
   {
     id: 'lifecycle-stage-fit',
     kind: 'slider',
-    prompt: 'And the lifecycle of the neighborhood?',
-    lowLabel: 'Up-and-coming',
+    prompt: 'And the lifecycle stage of the neighborhood?',
+    // "Still changing" replaces "Up-and-coming" — less broker-coded, more
+    // honest. Suggested by Codex in the photo-research synthesis.
+    lowLabel: 'Still changing',
     highLabel: 'Established',
+    lowImage: {
+      src: '/images/quiz/lifecycle-changing.jpg',
+      alt: 'Bushwick industrial street with murals and converted warehouse storefronts',
+      caption: 'Bushwick, Brooklyn',
+    },
+    highImage: {
+      src: '/images/quiz/lifecycle-established.jpg',
+      alt: 'Brooklyn Heights tree-lined block with prewar limestone and ornate ironwork',
+      caption: 'Brooklyn Heights, Brooklyn',
+    },
     impacts: {
       'prestige-orientation': 0.35,
       'social-register': 0.15,

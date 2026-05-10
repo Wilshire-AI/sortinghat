@@ -168,6 +168,16 @@ function spectrumLabels(low: string, high: string): readonly string[] {
   return [low, `Lean ${low.toLowerCase()}`, 'No strong pull', `Lean ${high.toLowerCase()}`, high] as const;
 }
 
+// Opacity rule for slider pole reference photos. When the user's slider
+// position pulls toward one pole, that pole's photo brightens to 100% and
+// the other dims to 55%. Untouched (no answer yet) and dead-center positions
+// hold both at 80%.
+function poleOpacity(pos: number | null, side: 'low' | 'high'): number {
+  if (pos === null || pos === 2) return 0.8;
+  const isLowActive = pos < 2;
+  return isLowActive === (side === 'low') ? 1.0 : 0.55;
+}
+
 function Slider({
   question,
   currentAnswer,
@@ -308,6 +318,47 @@ function Slider({
         <span className="max-w-[42%]">{question.lowLabel}</span>
         <span className="max-w-[42%] text-right">{question.highLabel}</span>
       </div>
+
+      {question.lowImage && question.highImage && (
+        <div className="mt-4 flex gap-2 sm:gap-4 px-2 sm:px-4">
+          <div className="flex-1 flex flex-col gap-1">
+            <div
+              className="relative w-full aspect-[16/9] overflow-hidden rounded-sm bg-[var(--color-line)] transition-opacity duration-200"
+              style={{ opacity: poleOpacity(pos, 'low') }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={question.lowImage.src}
+                alt={question.lowImage.alt}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <p className="text-[11px] text-[var(--color-muted)] italic">{question.lowImage.caption}</p>
+          </div>
+          <div className="flex-1 flex flex-col gap-1">
+            <div
+              className="relative w-full aspect-[16/9] overflow-hidden rounded-sm bg-[var(--color-line)] transition-opacity duration-200"
+              style={{ opacity: poleOpacity(pos, 'high') }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={question.highImage.src}
+                alt={question.highImage.alt}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <p className="text-[11px] text-[var(--color-muted)] italic text-right">{question.highImage.caption}</p>
+          </div>
+        </div>
+      )}
+
+      {question.helperText && (
+        <p className="mt-4 text-xs text-[var(--color-muted)] leading-relaxed px-2 sm:px-4">
+          {question.helperText}
+        </p>
+      )}
 
       <p className="mt-8 text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
         {pos === null
