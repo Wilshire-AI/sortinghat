@@ -981,13 +981,13 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'morningside-heights', slug: 'morningside-heights', name: 'Morningside Heights', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': -0.2, 'transit-psychology': 0.3, 'prestige-orientation': 0.32,
+      'urban-intensity-tolerance': -0.45, 'transit-psychology': 0.3, 'prestige-orientation': 0.32,
       'space-sensitivity': 0.5, 'family-trajectory': 0.5, 'cultural-ecosystem': 0.3,
-      'environmental-openness': 0.6, 'creative-energy': 0.3, 'friction-sensitivity': 0.5,
+      'environmental-openness': 0.6, 'creative-energy': 0.05, 'friction-sensitivity': 0.7,
       'safety-need': 0.6, 'school-quality': 0.4,
-    'social-register': -0.15,
+    'social-register': -0.4,
     'visitor-facing-energy': -0.35,
-    'rootedness-vs-access': -0.2, 'daily-life-walkability': 0.75
+    'rootedness-vs-access': -0.45, 'daily-life-walkability': 0.65
     , 'streetscape-quality': 0.6 , 'community-fabric': 0.1 , 'amenity-function': 0.45 },
     housingTypes: ['co-op', 'rental', 'prewar-character'],
     hasQuietBlocks: true,
