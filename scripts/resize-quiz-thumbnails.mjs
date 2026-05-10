@@ -22,14 +22,14 @@ const PAIRS = [
   // Street-energy option thumbnails (10 vibes including 3 polish flavors
   // and corporate / business district)
   ['bushwick', 'street-energy-creative'],
-  ['flushing', 'street-energy-commercial'],
+  ['brighton-beach', 'street-energy-commercial'],
   ['jackson-heights', 'street-energy-diverse'],
   ['hudson-yards', 'street-energy-visitor'],
   ['midtown-east', 'street-energy-corporate'],
   ['ditmas-park', 'street-energy-family'],
-  ['sunnyside', 'street-energy-quiet'],
+  ['brooklyn-heights', 'street-energy-quiet'],
   ['upper-east-side', 'street-energy-established'],
-  ['upper-west-side', 'street-energy-refined'],
+  ['tribeca', 'street-energy-refined'],
   ['bay-ridge', 'street-energy-polished-family'],
 ];
 

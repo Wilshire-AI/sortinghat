@@ -19,7 +19,6 @@ export type DerivedState = {
   mustHaves: string[];
   commuteTargets: string[];
   commuteToleranceMinutes: number;
-  softPrefs: string[];
   // Housing-stock types the user would accept. Selections multiply the
   // posterior by 1 + 0.05 × matches (cap 1.20). Empty = no effect.
   housingAcceptance: string[];
@@ -47,7 +46,6 @@ export function deriveState(
   const selectedTags = new Set<string>();
   const mustHaves = new Set<string>();
   const commuteTargets = new Set<string>();
-  const softPrefs = new Set<string>();
   const housingAcceptance = new Set<string>();
   const touchedDims = new Set<DimensionId>();
   let commuteToleranceMinutes = 0;
@@ -68,9 +66,6 @@ export function deriveState(
           // no penalty regardless of nbhd value, which is what neutrality
           // means semantically.
           if (num !== 0) touchedDims.add(dim);
-        }
-        if (choice.softPrefs) {
-          for (const sp of choice.softPrefs) softPrefs.add(sp);
         }
         if (typeof choice.commuteToleranceMinutes === 'number') {
           commuteToleranceMinutes = choice.commuteToleranceMinutes;
@@ -138,7 +133,6 @@ export function deriveState(
     mustHaves: Array.from(mustHaves),
     commuteTargets: Array.from(commuteTargets),
     commuteToleranceMinutes,
-    softPrefs: Array.from(softPrefs),
     housingAcceptance: Array.from(housingAcceptance),
     touchedDims,
   };

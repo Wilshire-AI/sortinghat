@@ -25,7 +25,7 @@ function n(id: string, scores: Record<string, number>): Neighborhood {
 }
 
 describe('sigmaForPopulation', () => {
-  // SIGMA_MIN === SIGMA_MAX === SIGMA_BASE === 0.40 → flat σ across the entire
+  // σ is flat at 0.45 across the entire
   // corpus. Empirical sweep showed σ scaling produced worse population fidelity
   // than flat σ + moderate prior. The Gaussian basins are uniform width;
   // population enters scoring only via the multiplicative prior.

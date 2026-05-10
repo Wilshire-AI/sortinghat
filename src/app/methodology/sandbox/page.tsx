@@ -152,7 +152,6 @@ export default function SandboxPage() {
         commuteTargets: derived.commuteTargets,
         commuteToleranceMinutes: derived.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
-        softPrefs: derived.softPrefs,
         populationsByNeighborhood: neighborhoodPopulations,
         touchedDims: derived.touchedDims,
       }),

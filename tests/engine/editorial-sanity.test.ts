@@ -25,7 +25,6 @@ function rankPersona(targetId: string) {
   const ranked = rankNeighborhoods(finalizeVector(derived), neighborhoods, dimensions, {
     topN: neighborhoods.length,
     selectedTags: derived.selectedTags,
-    softPrefs: derived.softPrefs,
     populationsByNeighborhood: neighborhoodPopulations,
     touchedDims: derived.touchedDims,
   });

@@ -393,7 +393,7 @@ export const questions: readonly Question[] = [
       {
         value: 'commercial',
         label: 'Commercial corridor — shopping streets, restaurants, retail',
-        image: { src: '/images/quiz/street-energy-commercial.jpg', alt: 'Flushing Main Street with shopping crowds and retail signage' },
+        image: { src: '/images/quiz/street-energy-commercial.jpg', alt: 'Brighton Beach commercial avenue with storefront signs and street traffic' },
         impacts: {
           'daily-life-walkability': 0.30,
           'urban-intensity-tolerance': 0.15,
@@ -454,7 +454,7 @@ export const questions: readonly Question[] = [
       {
         value: 'quiet',
         label: 'Quiet residential — mostly residential blocks',
-        image: { src: '/images/quiz/street-energy-quiet.jpg', alt: 'Sunnyside calm residential block with low foot traffic' },
+        image: { src: '/images/quiz/street-energy-quiet.jpg', alt: 'Brooklyn Heights quiet residential block with brownstone frontages' },
         impacts: {
           'friction-sensitivity': 0.35,
           'urban-intensity-tolerance': -0.30,
@@ -478,7 +478,7 @@ export const questions: readonly Question[] = [
       {
         value: 'refined-contemporary',
         label: 'Refined and contemporary — polished but not formal, intellectual or creative-wealthy',
-        image: { src: '/images/quiz/street-energy-refined.jpg', alt: 'Upper West Side prewar facade with progressive-refined street life' },
+        image: { src: '/images/quiz/street-energy-refined.jpg', alt: 'Tribeca historic loft facades with polished downtown residential character' },
         impacts: {
           'social-register': 0.15,
           'prestige-orientation': 0.20,
@@ -528,6 +528,7 @@ export const questions: readonly Question[] = [
     // honest. Suggested by Codex in the photo-research synthesis.
     lowLabel: 'Still changing',
     highLabel: 'Established',
+    positionLabels: ['Still changing', 'Mostly changing', 'No strong pull', 'Mostly established', 'Established'],
     lowImage: {
       src: '/images/quiz/lifecycle-changing.jpg',
       alt: 'Bushwick industrial street with murals and converted warehouse storefronts',
@@ -571,7 +572,7 @@ export const questions: readonly Question[] = [
     purpose: 'must_haves',
     maxSelections: 3,
     prompt: 'Last one. Anything you truly will not compromise on?',
-    helperText: 'Hard filters. Pick up to three. Failing one excludes a neighborhood entirely.',
+    helperText: 'Pick up to 3 things you really won\'t compromise on. Each one excludes neighborhoods that fail it.',
     options: [
       { value: 'subway-redundancy', label: 'Multiple transit options (any mix of subway, PATH, ferry, rail, express bus)' },
       { value: 'walking-distance-park', label: 'Walking distance to a major park or waterfront' },

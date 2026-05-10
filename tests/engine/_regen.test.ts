@@ -171,7 +171,6 @@ function scoreFor(
   const ranked = rankNeighborhoods(finalizeVector(derived), neighborhoods, dimensions, {
     topN: neighborhoods.length,
     selectedTags: derived.selectedTags,
-    softPrefs: derived.softPrefs,
   });
   const targetIdx = ranked.findIndex((x) => x.neighborhood.id === target.id);
   if (targetIdx < 0) return -Infinity;

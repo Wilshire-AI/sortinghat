@@ -19,7 +19,6 @@ function rankFor(answers: Answers) {
     mustHaves: derived.mustHaves,
     commuteTargets: derived.commuteTargets,
     commuteToleranceMinutes: derived.commuteToleranceMinutes,
-    softPrefs: derived.softPrefs,
     housingAcceptance: derived.housingAcceptance,
     touchedDims: derived.touchedDims,
   });

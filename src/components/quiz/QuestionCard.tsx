@@ -204,6 +204,9 @@ function Slider({
   const [isDragging, setIsDragging] = useState(false);
   const trackRef = useRef<HTMLDivElement | null>(null);
   const lastPct = pos !== null ? (pos / (LIKERT_POSITIONS.length - 1)) * 100 : 0;
+  const positionLabels = question.impacts
+    ? (question.positionLabels ?? spectrumLabels(question.lowLabel, question.highLabel))
+    : AGREE_DISAGREE_LABELS;
 
   // In grouped mode, propagate the slider value upward whenever it changes.
   // The wrapper Continue button is what performs navigation; we just report
@@ -363,9 +366,7 @@ function Slider({
       <p className="mt-8 text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
         {pos === null
           ? 'Drag or click anywhere on the track'
-          : (question.impacts
-              ? spectrumLabels(question.lowLabel, question.highLabel)[pos]
-              : AGREE_DISAGREE_LABELS[pos])}
+          : positionLabels[pos]}
       </p>
 
       {!grouped && (

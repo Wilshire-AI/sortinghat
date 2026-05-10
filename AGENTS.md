@@ -183,7 +183,6 @@ type Neighborhood = {
          | 'nj' | 'westchester' | 'long-island' | 'ct';
   scores: Record<DimensionId, number>;     // ALL 11 dims, each in [-1, 1]
   culturalTags?: string[];        // matches the multi-select cultural question
-  carDependent?: boolean;         // drives 'no-car' must-have filter
   housingTypes?: ('single-family' | 'townhouse' | 'condo' | 'co-op' | 'rental' | 'luxury-highrise')[];
   basePassages: {
     whyItFits: string;            // 1-2 paragraph editorial summary (≥80 chars)
@@ -263,7 +262,7 @@ Current filters:
 - `top-schools`: `school-quality >= 0.7`
 - `quiet-blocks-available`: `hasQuietBlocks === true` (boolean flag on neighborhood)
 - `family-infrastructure`: `hasFamilyInfrastructure === true` (boolean flag)
-- `no-car`: `daily-life-walkability >= 0.5` (was `!carDependent` boolean — replaced by walkability threshold for consistency; the boolean flag is now unused but left in `Neighborhood` type for backward compat)
+- `no-car`: `daily-life-walkability >= 0.5`
 - `cultural-match`: neighborhood's `culturalTags` overlaps with user's selected tags
 
 Note: `quiet-blocks-available`, `family-infrastructure`, `house-or-townhouse`,
@@ -333,7 +332,7 @@ User answers → answers: Record<questionId, Answer>
 2. Add a predicate to `MUST_HAVE_FILTERS` in `src/lib/engine/score.ts`
    that takes a neighborhood and returns true if it passes.
 3. Tag relevant neighborhoods if the filter requires data not already on
-   `Neighborhood` (e.g., `housingTypes`, `culturalTags`, `carDependent`).
+   `Neighborhood` (e.g., `housingTypes`, `culturalTags`).
 4. Run tests + smoke test.
 
 ### Add a new cultural tag

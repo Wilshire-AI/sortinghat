@@ -97,7 +97,6 @@ export function runMonteCarloReachability(opts: {
     const top = rankNeighborhoods(vec, neighborhoods, dimensions, {
       topN: maxK,
       selectedTags: derived.selectedTags,
-      softPrefs: derived.softPrefs,
       populationsByNeighborhood,
       touchedDims: derived.touchedDims,
     });
@@ -134,7 +133,6 @@ export function runMonteCarlo(opts: {
     const top5 = rankNeighborhoods(vec, neighborhoods, dimensions, {
       topN: 5,
       selectedTags: derived.selectedTags,
-      softPrefs: derived.softPrefs,
       populationsByNeighborhood,
       touchedDims: derived.touchedDims,
     });

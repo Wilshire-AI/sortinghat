@@ -30,8 +30,7 @@ This is a handoff for whoever picks up next (you-future, or another agent). Read
 - `maxSelections: 4` cap. Q14 (rootedness-vs-access-fit) was kept after Polaris review showed 49/113 nbhds anchor the rooted pole.
 
 **Engine + filter improvements:**
-- `no-car` must-have now derives from `daily-life-walkability >= 0.5` (was a boolean `carDependent` flag, inconsistently applied — Scarsdale and Manhasset were marked false despite needing a car for daily errands).
-- `car-friendly` soft-pref similarly switched to walkability-based.
+- `no-car` must-have now derives from `daily-life-walkability >= 0.5`.
 - Q1 multi-transit option now hits urban-intensity (logical entailment) — fixes the "Murray Hill came up after just answering Q1" complaint.
 - Engine math fix: `userValue === 0` → no penalty on symmetric dims too (was already true for asymmetric_need). Means skipped questions and "either" middle picks correctly contribute zero distance regardless of nbhd value.
 - Live ranking panel during quiz hides until 5+ answers (signal-poor before that).
@@ -58,7 +57,7 @@ This is a handoff for whoever picks up next (you-future, or another agent). Read
 - **Slider/forced-choice overwrite bug fixed.** The `friction-tolerance` slider SET friction-sensitivity, wiping the +0.7 ADD from `noise-tolerance` (Q7). Q7's friction signal was effectively dead code. Resolved by dropping the slider and keeping Q7 as the single source.
 
 **Question structural changes:**
-- **Q1 (transit-redundancy):** "multiple options" now hits `urban-intensity-tolerance: +0.4` (logical entailment — multi-transit only exists in dense urban areas in NYC metro). "I'd drive" now uses `softPrefs: ['car-friendly']` instead of the old hidden urban-intensity penalty.
+- **Q1 (transit-redundancy):** "multiple options" now hits `urban-intensity-tolerance: +0.4` (logical entailment — multi-transit only exists in dense urban areas in NYC metro).
 - **Q2 (was prestige-vs-space, now access-vs-space):** reframed away from prestige toward urban-intensity + space tradeoff (more universal axis).
 - **Q3 (family-trajectory):** changed `kind` from `symmetric` to `asymmetric_need`. Picking "no kids" no longer penalizes family-coded nbhds.
 - **Q4 (NEW — income-tier-fit):** resurrects `prestige-orientation` (previously inert). Asks income/polish tier rather than fame; rescued ~12 voiceless nbhds.
@@ -75,8 +74,6 @@ This is a handoff for whoever picks up next (you-future, or another agent). Read
 - **Concision pass:** all 21 prompts ≤ 12 words; helper texts ≤ 18.
 
 **New dimension: `streetscape-quality` (17th).** Asymmetric_need; captures stroll-worthy character (tree-lined blocks, brownstones, water-adjacent, café spillover). Distinct from `daily-life-walkability` (errand reach) and `environmental-openness` (parks). 113 nbhd scores + 8 archetype scores from Polaris dual-model. Hudson Yards now correctly ranks low on streetscape (functional walkability ≠ stroll pleasure); West Village / Park Slope / Brooklyn Heights / Greenwich Village / Carroll Gardens top the list.
-
-**New mechanism: `softPrefs` channel.** ForcedChoice options can include `softPrefs: ['car-friendly', ...]`. Threaded through DerivedState, fingerprint encoding, scoring (`+5%` boost). Currently used for Q1 "I'd drive" → boost car-dependent nbhds.
 
 **Engine UX:**
 - **Always render rankings.** Empty-state (when must-haves filter excludes everyone) used to hijack the whole page. Now renders a banner + the full ranked list (with `failedMustHaves` annotations on excluded entries) + the map.
@@ -233,7 +230,6 @@ Roughly priority-ordered:
 
 ## Architectural decisions made this session
 
-- **`softPrefs` channel.** Generic mechanism for forced-choice options to flag soft preferences (currently 'car-friendly') that the engine boosts (+5%) on matching neighborhoods. Threaded through fingerprint, derive, score. Future expansion: add 'water-proximity' for coastal nbhds, 'walks-pleasure' for stroll-seekers, etc.
 - **Symmetric vs asymmetric_need both treat user=0 as no-penalty now.** This was the deepest fix of the session — it unifies the "no opinion expressed" semantic across both kinds. See `dimensionContribution` in `src/lib/engine/score.ts`.
 - **Slider questions are still SET-not-ADD.** The Q15 overwrite bug was resolved by removing the redundant slider, not by changing the SET semantic. If you add a new slider that overlaps a forced_choice's dim, expect the same overwrite — design around it.
 - **"Same fit tier" peers are sourced from `result.ranked + result.rest`** (passing-only), not from excluded. Cluster mates that fail the user's must-haves don't show as same-tier — correct, because they're not actually achievable matches.

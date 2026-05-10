@@ -78,7 +78,6 @@ export function ResultsClient() {
         commuteTargets: decoded.commuteTargets,
         commuteToleranceMinutes: decoded.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
-        softPrefs: decoded.softPrefs,
         housingAcceptance: decoded.housingAcceptance,
         populationsByNeighborhood: neighborhoodPopulations,
       });

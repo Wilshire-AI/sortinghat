@@ -152,7 +152,6 @@ function describeNeighborhood(n: Neighborhood): string {
   }
   if (n.hasQuietBlocks) lines.push('Has notable quiet residential blocks.');
   if (n.hasFamilyInfrastructure) lines.push('Has notable family-life infrastructure.');
-  if (n.carDependent) lines.push('Day-to-day life is car-dependent.');
   lines.push('');
   lines.push('Dimension scores (each in [-1, 1]):');
   for (const [dim, score] of Object.entries(n.scores)) {

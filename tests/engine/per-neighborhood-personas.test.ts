@@ -50,7 +50,6 @@ describe('per-neighborhood prototypical user gate', () => {
         mustHaves: [],
         commuteTargets: derived.commuteTargets,
         commuteToleranceMinutes: derived.commuteToleranceMinutes,
-        softPrefs: derived.softPrefs,
       });
       return {
         id: target.id,

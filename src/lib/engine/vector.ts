@@ -21,7 +21,6 @@ type EncodedPayload = {
   m?: string[]; // must-have filter keys (optional, omitted when empty)
   ct?: string[]; // commute targets (office cluster ids) (optional)
   ctm?: number; // commute tolerance in minutes (optional)
-  sp?: string[]; // soft preferences (e.g., 'car-friendly') (optional)
   ha?: string[]; // housing-acceptance values (optional, omitted when empty)
 };
 
@@ -48,7 +47,6 @@ export type Fingerprint = {
   mustHaves: string[];
   commuteTargets: string[];
   commuteToleranceMinutes: number;
-  softPrefs: string[];
   housingAcceptance: string[];
 };
 
@@ -59,7 +57,6 @@ export type FingerprintInput = {
   mustHaves?: string[];
   commuteTargets?: string[];
   commuteToleranceMinutes?: number;
-  softPrefs?: string[];
   housingAcceptance?: string[];
 };
 
@@ -96,7 +93,6 @@ export function encodeFingerprint(
   if (opts.commuteToleranceMinutes && opts.commuteToleranceMinutes > 0) {
     payload.ctm = opts.commuteToleranceMinutes;
   }
-  if (opts.softPrefs && opts.softPrefs.length > 0) payload.sp = opts.softPrefs;
   if (opts.housingAcceptance && opts.housingAcceptance.length > 0) {
     payload.ha = opts.housingAcceptance;
   }
@@ -132,7 +128,6 @@ export function decodeFingerprint(encoded: string): Fingerprint {
     m?: unknown;
     ct?: unknown;
     ctm?: unknown;
-    sp?: unknown;
     ha?: unknown;
   };
   const vector: UserVector = {};
@@ -153,9 +148,6 @@ export function decodeFingerprint(encoded: string): Fingerprint {
     : [];
   const commuteToleranceMinutes: number =
     typeof obj.ctm === 'number' && Number.isFinite(obj.ctm) && obj.ctm > 0 ? obj.ctm : 0;
-  const softPrefs: string[] = Array.isArray(obj.sp)
-    ? obj.sp.filter((x): x is string => typeof x === 'string')
-    : [];
   const housingAcceptance: string[] = Array.isArray(obj.ha)
     ? obj.ha.filter((x): x is string => typeof x === 'string')
     : [];
@@ -166,7 +158,6 @@ export function decodeFingerprint(encoded: string): Fingerprint {
     mustHaves,
     commuteTargets,
     commuteToleranceMinutes,
-    softPrefs,
     housingAcceptance,
   };
 }

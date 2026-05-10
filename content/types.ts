@@ -66,10 +66,6 @@ export type ForcedChoiceQuestion = {
   choices: {
     label: string;
     impacts: Partial<Record<DimensionId, number>>;
-    // Optional soft-preference flags. Each flag is a string key the engine
-    // can interpret as a small score boost on neighborhoods that match it
-    // (e.g., 'car-friendly' boosts neighborhoods where carDependent === true).
-    softPrefs?: readonly string[];
     // Optional commute-tolerance setter (door-to-door minutes). Used by the
     // commute-tolerance question — picking a choice writes this value to
     // DerivedState.commuteToleranceMinutes. No effect on dim impacts.
@@ -89,6 +85,7 @@ export type SliderQuestion = {
   helperText?: string;
   lowLabel: string;
   highLabel: string;
+  positionLabels?: readonly [string, string, string, string, string];
   // Optional pole reference photos. When present, the slider renders a small
   // thumbnail at each end of the track. Used for spectrum questions where a
   // visual reference clarifies the abstract axis (cultural-register, lifecycle).
@@ -181,10 +178,6 @@ export type Neighborhood = {
   // the cultural-communities multi-select question, neighborhoods with matching
   // tags get a score boost.
   culturalTags?: string[];
-  // True for neighborhoods where day-to-day life is significantly better with
-  // a car (errands, off-NYC trips, etc.). Used by the 'no car required'
-  // must-have filter.
-  carDependent?: boolean;
   // Housing-stock types meaningfully present (not exhaustive — only flagged
   // when there's enough of the type to be a real residential option). Used
   // by must-have filters AND by the housing-acceptance soft multiplier.
@@ -252,4 +245,4 @@ export type UserVector = Record<DimensionId, number>;
 
 // Bumped per schema change. Older fingerprints still decode (vector +
 // optional tags) but won't have mustHaves; that's a no-op default.
-export const CONTENT_VERSION = '2026-05-09-poc-v4' as const;
+export const CONTENT_VERSION = '2026-05-10-poc-v5' as const;

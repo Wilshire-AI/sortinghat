@@ -45,7 +45,6 @@ function rankWithSingleAnswer(qId: string, answer: Answer): typeof baselineRanke
     mustHaves: [],
     commuteTargets: derived.commuteTargets,
     commuteToleranceMinutes: derived.commuteToleranceMinutes,
-    softPrefs: derived.softPrefs,
     populationsByNeighborhood: neighborhoodPopulations,
     touchedDims: derived.touchedDims,
   });

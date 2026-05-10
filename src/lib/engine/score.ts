@@ -82,11 +82,10 @@ export type RankOptions = {
   commuteTargets?: readonly string[];
   commuteToleranceMinutes?: number;
   commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
-  softPrefs?: readonly string[];
   housingAcceptance?: readonly string[];
-  // Population data — when supplied, the engine multiplies in the population
-  // prior and uses pop-scaled σ for the Gaussian likelihood. When omitted,
-  // every nbhd is scored at the median-pop default.
+  // Population data. When supplied, the engine multiplies in the population
+  // prior. The Gaussian likelihood uses a flat σ for every neighborhood.
+  // When omitted, every nbhd is scored at the median-pop default.
   populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
   // Dims where the user expressed any signal. Untouched dims contribute no
   // likelihood penalty regardless of nbhd value. When omitted, the engine
@@ -100,27 +99,22 @@ export type RankOptions = {
 // Cross-model design at .polaris/bayesian-engine-design.md.
 //
 // Each neighborhood is a Gaussian-shaped basin of attraction in the dim space.
-// σ scales with population: larger nbhds genuinely accept more user-types.
-// Score = unnormalized RBF likelihood × population prior, with orthogonal
-// modifiers (cultural tags, commute, softPrefs) multiplied in. Final display
-// is per-user max-normalized.
+// The current likelihood uses flat σ=0.45 for every neighborhood. Score =
+// unnormalized RBF likelihood × population prior, with orthogonal modifiers
+// (cultural tags, commute, housing acceptance) multiplied in. Final display is
+// per-user max-normalized.
 //
 // We deliberately drop the strict Gaussian density's 1/σ^d normalizer. In
-// 18 dims that term scales as σ^-18 and would invert the population effect,
-// punishing big nbhds for being permissive. The Bayesian frame is a useful
+// 18 dims that term scales as σ^-18 and would over-weight narrow basins.
+// The Bayesian frame is a useful
 // mental model; the math is similarity-based, not strict probabilistic
 // inference. See .polaris/bayesian-engine-design.md "Likelihood function"
 // for the derivation.
 
 const POP_REF = 30_000;
-const SIGMA_BASE = 0.40;
-const SIGMA_ALPHA = 0.35;
-const SIGMA_MIN = 0.45;
-const SIGMA_MAX = 0.45;
+const SIGMA = 0.45;
 const PRIOR_BETA = 0.30;
 const CULTURAL_TAG_MAX_MATCHES = 3;
-const SOFT_PREF_MULT_PER_MATCH = 1.05;
-const SOFT_PREF_MULT_CAP = 1.15;
 const HOUSING_ACCEPTANCE_BOOST = 0.05;
 const HOUSING_ACCEPTANCE_MAX_MATCHES = 4;
 
@@ -138,9 +132,8 @@ const HOUSING_ACCEPTANCE_MAP: Record<string, readonly string[]> = {
 };
 
 export function sigmaForPopulation(population: number): number {
-  if (population <= 0) return SIGMA_MIN;
-  const raw = SIGMA_BASE * Math.pow(population / POP_REF, SIGMA_ALPHA);
-  return Math.max(SIGMA_MIN, Math.min(SIGMA_MAX, raw));
+  if (!Number.isFinite(population)) return SIGMA;
+  return SIGMA;
 }
 
 export function logPriorForPopulation(population: number): number {
@@ -180,15 +173,6 @@ function culturalMultiplier(neighborhood: Neighborhood, selectedTags: readonly s
   if (selectedTags.length === 0 || !neighborhood.culturalTags) return 1;
   const matched = neighborhood.culturalTags.filter((t) => selectedTags.includes(t)).length;
   return 1 + CULTURAL_TAG_BOOST * Math.min(matched, CULTURAL_TAG_MAX_MATCHES);
-}
-
-function softPrefMultiplier(neighborhood: Neighborhood, softPrefs: readonly string[]): number {
-  if (softPrefs.length === 0) return 1;
-  let mult = 1;
-  if (softPrefs.includes('car-friendly') && (neighborhood.scores['daily-life-walkability'] ?? 0) < 0.5) {
-    mult *= SOFT_PREF_MULT_PER_MATCH;
-  }
-  return Math.min(SOFT_PREF_MULT_CAP, mult);
 }
 
 function housingMultiplier(neighborhood: Neighborhood, housingAcceptance: readonly string[]): number {
@@ -237,7 +221,6 @@ export function rankNeighborhoods(
           commuteTargets: topNOrOptions.commuteTargets ?? [],
           commuteToleranceMinutes: topNOrOptions.commuteToleranceMinutes ?? 0,
           commuteMinutesByNeighborhood: topNOrOptions.commuteMinutesByNeighborhood,
-          softPrefs: topNOrOptions.softPrefs ?? [],
           housingAcceptance: topNOrOptions.housingAcceptance ?? [],
           populationsByNeighborhood: topNOrOptions.populationsByNeighborhood,
           touchedDims: topNOrOptions.touchedDims,
@@ -249,7 +232,6 @@ export function rankNeighborhoods(
           commuteTargets: [] as readonly string[],
           commuteToleranceMinutes: 0,
           commuteMinutesByNeighborhood: undefined,
-          softPrefs: [] as readonly string[],
           housingAcceptance: [] as readonly string[],
           populationsByNeighborhood: undefined as Readonly<Record<NeighborhoodId, number>> | undefined,
           touchedDims: undefined as ReadonlySet<DimensionId> | undefined,
@@ -273,7 +255,6 @@ function rankBayesian(
     commuteTargets: readonly string[];
     commuteToleranceMinutes: number;
     commuteMinutesByNeighborhood?: Readonly<Record<NeighborhoodId, CommuteMinutes>>;
-    softPrefs: readonly string[];
     housingAcceptance: readonly string[];
     populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
     touchedDims?: ReadonlySet<DimensionId>;
@@ -302,7 +283,6 @@ function rankBayesian(
           opts.commuteToleranceMinutes,
         )
       : 1;
-    const softMult = softPrefMultiplier(neighborhood, opts.softPrefs);
     const housingMult = housingMultiplier(neighborhood, opts.housingAcceptance);
 
     const logScore =
@@ -310,7 +290,6 @@ function rankBayesian(
       logPrior +
       Math.log(culMult) +
       Math.log(Math.max(commuteMult, 1e-9)) +
-      Math.log(softMult) +
       Math.log(housingMult);
     return { neighborhood, logScore };
   });

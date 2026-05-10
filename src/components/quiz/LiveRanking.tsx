@@ -30,7 +30,6 @@ export function LiveRanking({ answers }: Props) {
         commuteTargets: derived.commuteTargets,
         commuteToleranceMinutes: derived.commuteToleranceMinutes,
         commuteMinutesByNeighborhood,
-        softPrefs: derived.softPrefs,
         populationsByNeighborhood: neighborhoodPopulations,
         touchedDims: derived.touchedDims,
       }),
