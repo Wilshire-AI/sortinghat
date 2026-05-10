@@ -2085,10 +2085,10 @@ export const neighborhoods: readonly Neighborhood[] = [
   // Long Island Nassau
   {
     id: 'great-neck', slug: 'great-neck', name: 'Great Neck', borough: 'long-island',
-    scores: { 'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.4, 'prestige-orientation': 0.6, 'space-sensitivity': 0.85, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.7, 'environmental-openness': 0.8, 'creative-energy': -0.4, 'friction-sensitivity': 0.85, 'safety-need': 0.9, 'school-quality': 0.9,
+    scores: { 'urban-intensity-tolerance': -0.4, 'transit-psychology': 0.4, 'prestige-orientation': 0.6, 'space-sensitivity': 0.85, 'family-trajectory': 0.82, 'cultural-ecosystem': 0.7, 'environmental-openness': 0.8, 'creative-energy': -0.4, 'friction-sensitivity': 0.85, 'safety-need': 0.9, 'school-quality': 0.9,
   'social-register': 0.45,
   'visitor-facing-energy': -0.6,
-  'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.7,  'streetscape-quality': 0.42,  'community-fabric': 0.1,  'amenity-function': 0.65 },
+  'rootedness-vs-access': -0.8, 'daily-life-walkability': 0.58,  'streetscape-quality': 0.42,  'community-fabric': 0.1,  'amenity-function': 0.65 },
     culturalTags: ['east-asian', 'jewish', 'middle-eastern'], housingTypes: ['single-family', 'co-op', 'condo', 'prewar-character'],
     hasQuietBlocks: true,
     hasFamilyInfrastructure: true,
@@ -2098,7 +2098,7 @@ export const neighborhoods: readonly Neighborhood[] = [
   },
   {
     id: 'manhasset', slug: 'manhasset', name: 'Manhasset', borough: 'long-island',
-    scores: { 'urban-intensity-tolerance': -0.6, 'transit-psychology': 0.3, 'prestige-orientation': 0.7, 'space-sensitivity': 0.95, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.0, 'environmental-openness': 0.8, 'creative-energy': -0.5, 'friction-sensitivity': 0.95, 'safety-need': 0.95, 'school-quality': 1,
+    scores: { 'urban-intensity-tolerance': -0.6, 'transit-psychology': 0.3, 'prestige-orientation': 0.7, 'space-sensitivity': 0.95, 'family-trajectory': 0.95, 'cultural-ecosystem': 0.0, 'environmental-openness': 0.8, 'creative-energy': -0.5, 'friction-sensitivity': 0.95, 'safety-need': 0.95, 'school-quality': 0.85,
   'social-register': 0.85,
   'visitor-facing-energy': -0.35,
   'rootedness-vs-access': -0.85, 'daily-life-walkability': 0.4,  'streetscape-quality': 0.3,  'community-fabric': -0.6,  'amenity-function': 0.45 }, housingTypes: ['single-family', 'prewar-character'],
