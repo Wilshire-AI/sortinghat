@@ -1215,13 +1215,13 @@ export const neighborhoods: readonly Neighborhood[] = [
   {
     id: 'chinatown', slug: 'chinatown', name: 'Chinatown', borough: 'manhattan',
     scores: {
-      'urban-intensity-tolerance': 0.6, 'transit-psychology': 0.55, 'prestige-orientation': -0.3,
-      'space-sensitivity': -0.4, 'family-trajectory': 0.2, 'cultural-ecosystem': 0.55,
-      'environmental-openness': 0.3, 'creative-energy': 0.3, 'friction-sensitivity': -0.5,
-      'safety-need': 0.5, 'school-quality': 0.35,
+      'urban-intensity-tolerance': 0.72, 'transit-psychology': 0.55, 'prestige-orientation': -0.3,
+      'space-sensitivity': -0.4, 'family-trajectory': -0.1, 'cultural-ecosystem': 0.55,
+      'environmental-openness': 0.1, 'creative-energy': 0.3, 'friction-sensitivity': -0.65,
+      'safety-need': 0.3, 'school-quality': 0.35,
     'social-register': -0.3,
     'visitor-facing-energy': 0.5,
-    'rootedness-vs-access': 0.25, 'daily-life-walkability': 0.85
+    'rootedness-vs-access': 0.25, 'daily-life-walkability': 0.78
     , 'streetscape-quality': 0.15 , 'community-fabric': 0.15 , 'amenity-function': 0.6 },
     culturalTags: ['east-asian'],
     housingTypes: ['rental', 'co-op', 'prewar-character'],
