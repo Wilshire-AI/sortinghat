@@ -125,6 +125,10 @@ export type MultiSelectQuestion = {
   //   in. Per-option impacts ADD to the user vector (same code path as
   //   walkable_amenities). Each option carries half-strength impacts so 1
   //   pick = moderate signal, 2 picks compound, 3 picks compound to clamp.
+  // 'street_energy': selections describe the kind of street energy the user
+  //   wants — creative scene, commercial corridor, diverse/multicultural,
+  //   visitor-facing, family, quiet residential. Per-option impacts ADD
+  //   (same code path as walkable_amenities + place_archetype).
   // 'housing_acceptance': selections name housing-stock types the user would
   //   accept; engine multiplies score by housing-overlap multiplier (mirrors
   //   cultural-tag boost). Picking nothing = no effect (passes everywhere).
@@ -134,6 +138,7 @@ export type MultiSelectQuestion = {
     | 'commute_targets'
     | 'walkable_amenities'
     | 'place_archetype'
+    | 'street_energy'
     | 'housing_acceptance';
   // Optional cap on how many options the user can select.
   maxSelections?: number;

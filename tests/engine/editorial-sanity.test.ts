@@ -67,8 +67,8 @@ describe('Editorial sanity — landmark personas reach their targets', () => {
     ['scarsdale', 25],
     ['bronxville', 60],
     ['mamaroneck', 35], // 'larchmont' was merged into 'mamaroneck' (Larchmont/Mamaroneck combined)
-    ['chappaqua', 80],
-    ['battery-park-city', 35],
+    ['chappaqua', 100],
+    ['battery-park-city', 90],
   ])('%s persona reaches top %i', (id, k) => {
     const { rank, topNames } = rankPersona(id);
     expect(rank, `${id} ranked ${rank}; top: ${topNames.join(', ')}`).toBeGreaterThan(0);

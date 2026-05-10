@@ -197,7 +197,7 @@ export const questions: readonly Question[] = [
     purpose: 'walkable_amenities',
     maxSelections: 3,
     prompt: 'Within walking distance from home, I want:',
-    helperText: 'Select up to four. Skip if no strong preferences.',
+    helperText: 'Select up to three. Skip if no strong preferences.',
     options: [
       {
         value: 'errands',
@@ -262,7 +262,10 @@ export const questions: readonly Question[] = [
       {
         value: 'lively-retail',
         label: 'Cafés, shops, people, lively retail streets',
-        impacts: { 'streetscape-quality': 0.20, 'urban-intensity-tolerance': 0.35, 'visitor-facing-energy': 0.15 },
+        // Urban-intensity + visitor-facing reduced to +0.20 each (was +0.35 /
+        // +0.15) so this option doesn't over-stack with street-energy's
+        // commercial + visitor options.
+        impacts: { 'streetscape-quality': 0.20, 'urban-intensity-tolerance': 0.20, 'visitor-facing-energy': 0.20 },
       },
       {
         value: 'real-park',
@@ -277,7 +280,9 @@ export const questions: readonly Question[] = [
       {
         value: 'arts-scene',
         label: 'Galleries, studios, mural walls',
-        impacts: { 'creative-energy': 0.45, 'streetscape-quality': 0.10 },
+        // creative-energy reduced from +0.45 to +0.20 to prevent over-
+        // steering when stacked with street-energy `creative-scene` option.
+        impacts: { 'creative-energy': 0.20, 'streetscape-quality': 0.10 },
       },
       {
         value: 'industrial-loft',
@@ -335,12 +340,84 @@ export const questions: readonly Question[] = [
     dimensionId: 'school-quality',
   },
   {
-    id: 'creative-immersion',
-    kind: 'slider',
-    prompt: 'I want art galleries and indie music venues on my own block.',
-    lowLabel: 'Rather not',
-    highLabel: 'Yes please',
-    dimensionId: 'creative-energy',
+    // Replaces creative-immersion. Captures multiple semi-orthogonal axes
+    // of street energy in one multi-select instead of a creative-vs-calm
+    // false binary. See .polaris/street-energy-question-2026-05-09.md for
+    // dim-impact derivation + saturation analysis.
+    id: 'street-energy',
+    kind: 'multi_select',
+    purpose: 'street_energy',
+    maxSelections: 3,
+    prompt: 'What kinds of street energy feel right? Pick up to three.',
+    helperText: 'These are not mutually exclusive — Bay Ridge has commercial-corridor energy, Cobble Hill has quiet+diverse, Williamsburg has creative+commercial. Pick whichever flavors of energy resonate.',
+    options: [
+      {
+        value: 'creative-scene',
+        label: 'Creative scene — galleries, indie music, art-class vibe',
+        impacts: {
+          'creative-energy': 0.35,
+          'urban-intensity-tolerance': 0.10,
+          'visitor-facing-energy': 0.05,
+          'friction-sensitivity': -0.10,
+          'social-register': -0.20,
+        },
+      },
+      {
+        value: 'commercial',
+        label: 'Commercial corridor — shopping streets, restaurants, retail',
+        impacts: {
+          'daily-life-walkability': 0.30,
+          'urban-intensity-tolerance': 0.15,
+          'visitor-facing-energy': 0.05,
+          'friction-sensitivity': -0.05,
+          'streetscape-quality': 0.10,
+        },
+      },
+      {
+        value: 'diverse',
+        label: 'Diverse / immigrant-rich — polyglot, multicultural feel',
+        impacts: {
+          'cultural-ecosystem': 0.35,
+          'daily-life-walkability': 0.10,
+          'rootedness-vs-access': -0.20,
+          'community-fabric': 0.10,
+          'urban-intensity-tolerance': 0.05,
+        },
+      },
+      {
+        value: 'visitor',
+        label: 'Visitor / destination — tourist energy, foot traffic',
+        impacts: {
+          'visitor-facing-energy': 0.40,
+          'rootedness-vs-access': 0.25,
+          'urban-intensity-tolerance': 0.15,
+          'friction-sensitivity': -0.10,
+          'prestige-orientation': 0.05,
+        },
+      },
+      {
+        value: 'family',
+        label: 'Family / stroller — playgrounds, school crowds, kid-friendly',
+        impacts: {
+          'family-trajectory': 0.30,
+          'community-fabric': 0.20,
+          'friction-sensitivity': 0.15,
+          'visitor-facing-energy': -0.10,
+          'streetscape-quality': 0.10,
+        },
+      },
+      {
+        value: 'quiet',
+        label: 'Quiet residential — mostly residential blocks',
+        impacts: {
+          'friction-sensitivity': 0.35,
+          'urban-intensity-tolerance': -0.30,
+          'visitor-facing-energy': -0.30,
+          'space-sensitivity': 0.15,
+          'streetscape-quality': 0.15,
+        },
+      },
+    ],
   },
 
   // PHASE 4 — CONCRETE TRADEOFFS (forced-choice)
@@ -349,8 +426,11 @@ export const questions: readonly Question[] = [
     kind: 'forced_choice',
     prompt: 'Same price, same size: quiet block, or above a busy street?',
     choices: [
-      { label: 'The quiet one, no contest', impacts: { 'friction-sensitivity': 0.7 } },
-      { label: 'The busy one. I like the energy.', impacts: { 'friction-sensitivity': -0.6 } },
+      // Magnitudes reduced to ±0.45 (was ±0.7 / ±0.6) to prevent saturation
+      // when stacked with the street-energy `quiet` option (also nudges
+      // friction-sensitivity by +0.35).
+      { label: 'The quiet one, no contest', impacts: { 'friction-sensitivity': 0.45 } },
+      { label: 'The busy one. I like the energy.', impacts: { 'friction-sensitivity': -0.45 } },
       { label: 'Depends on the day', impacts: { 'friction-sensitivity': 0.0 } },
     ],
   },
