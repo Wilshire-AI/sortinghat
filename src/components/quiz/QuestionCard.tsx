@@ -53,26 +53,15 @@ export function QuestionCard({
           <p className="text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
             Question {questionNumber} of {totalQuestions}
           </p>
-          <div className="flex items-center gap-5">
-            {onStartOver && (
-              <button
-                type="button"
-                onClick={onStartOver}
-                className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
-              >
-                Start over
-              </button>
-            )}
-            {onBack && (
-              <button
-                type="button"
-                onClick={onBack}
-                className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
-              >
-                ← Back
-              </button>
-            )}
-          </div>
+          {onStartOver && (
+            <button
+              type="button"
+              onClick={onStartOver}
+              className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+            >
+              Start over
+            </button>
+          )}
         </div>
       )}
       <h2
@@ -107,6 +96,17 @@ export function QuestionCard({
           onAnswer={onAnswer}
           grouped={grouped}
         />
+      )}
+      {onBack && !grouped && (
+        <div className="mt-12">
+          <button
+            type="button"
+            onClick={onBack}
+            className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+          >
+            ← Back
+          </button>
+        </div>
       )}
     </div>
   );
@@ -151,13 +151,22 @@ function ForcedChoice({
 }
 
 const LIKERT_POSITIONS = [-1, -0.5, 0, 0.5, 1] as const;
-const LIKERT_LABELS = [
+// Agree/disagree labels for legacy single-dim sliders whose prompts ARE
+// declarative statements (e.g., "I need to feel safe walking home...").
+const AGREE_DISAGREE_LABELS = [
   'Strongly disagree',
   'Disagree',
   'Neutral',
   'Agree',
   'Strongly agree',
 ] as const;
+
+// Spectrum-slider labels are derived from each question's lowLabel/highLabel
+// at render time (e.g., Trendsetting ↔ Traditional). Multi-dim sliders use
+// these; agree/disagree wording is wrong for them.
+function spectrumLabels(low: string, high: string): readonly string[] {
+  return [low, `Lean ${low.toLowerCase()}`, 'No strong pull', `Lean ${high.toLowerCase()}`, high] as const;
+}
 
 function Slider({
   question,
@@ -301,7 +310,11 @@ function Slider({
       </div>
 
       <p className="mt-8 text-xs uppercase tracking-[0.22em] text-[var(--color-muted)]">
-        {pos === null ? 'Drag or click anywhere on the track' : LIKERT_LABELS[pos]}
+        {pos === null
+          ? 'Drag or click anywhere on the track'
+          : (question.impacts
+              ? spectrumLabels(question.lowLabel, question.highLabel)[pos]
+              : AGREE_DISAGREE_LABELS[pos])}
       </p>
 
       {!grouped && (

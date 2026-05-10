@@ -44,14 +44,13 @@ export function GroupedQuestionsScreen({
 }: Props) {
   return (
     <div className="mx-auto max-w-2xl px-6 py-12 space-y-12">
-      {/* Primary card (header + back/start-over + question body, no Continue) */}
+      {/* Primary card (header + start-over + question body, no Continue) */}
       <QuestionCard
         question={primary}
         questionNumber={questionNumber}
         totalQuestions={totalQuestions}
         currentAnswer={primaryAnswer}
         onAnswer={onPrimaryChange}
-        onBack={onBack}
         onStartOver={onStartOver}
         mode="grouped-primary"
       />
@@ -65,7 +64,7 @@ export function GroupedQuestionsScreen({
           mode="grouped-secondary"
         />
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-6">
         <button
           type="button"
           onClick={onContinue}
@@ -73,6 +72,15 @@ export function GroupedQuestionsScreen({
         >
           Continue
         </button>
+        {onBack && (
+          <button
+            type="button"
+            onClick={onBack}
+            className="text-xs uppercase tracking-[0.18em] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]"
+          >
+            ← Back
+          </button>
+        )}
       </div>
     </div>
   );
