@@ -26,7 +26,7 @@ export const questions: readonly Question[] = [
     purpose: 'place_archetype',
     maxSelections: 3,
     prompt: 'Which kinds of places would you be happy in?',
-    helperText: 'Pick up to three. Picking one sends a moderate signal toward that kind of place; picking more compounds. The engine averages.',
+    helperText: 'Pick up to three.',
     options: [
       {
         value: 'transit-hub',
@@ -124,7 +124,7 @@ export const questions: readonly Question[] = [
     purpose: 'commute_targets',
     groupNext: true,
     prompt: 'Where will you actually need to be? Pick all that apply, including a partner\'s office if you\'re a couple.',
-    helperText: 'We weight neighborhoods by door-to-door commute. Pick "Mostly remote" if commute isn\'t a constraint.',
+    helperText: 'Pick "Mostly remote" if commute isn\'t a constraint.',
     options: [
       { value: 'midtown', label: 'Midtown Manhattan (Grand Central / Penn / Bryant Park)' },
       { value: 'fidi', label: 'Financial District / Lower Manhattan' },
@@ -167,7 +167,7 @@ export const questions: readonly Question[] = [
     kind: 'multi_select',
     purpose: 'housing_acceptance',
     prompt: 'Which would you happily live in? Pick all that work.',
-    helperText: 'Boosts neighborhoods with housing stock you\'d actually take. Skip if no strong opinion.',
+    helperText: 'Skip if no strong opinion.',
     options: [
       {
         value: 'prewar-character',
@@ -252,7 +252,7 @@ export const questions: readonly Question[] = [
     purpose: 'walkable_amenities',
     maxSelections: 3,
     prompt: 'On a walk for pleasure, what do you want to see?',
-    helperText: 'Pick up to three. The things that genuinely make you want to walk somewhere.',
+    helperText: 'Pick up to three.',
     options: [
       {
         value: 'leafy-residential',
@@ -306,7 +306,7 @@ export const questions: readonly Question[] = [
     kind: 'multi_select',
     purpose: 'cultural_tags',
     prompt: 'Which communities, if any, do you want close to home?',
-    helperText: 'Ethnic or religious. Each pick boosts matching neighborhoods. Skip if not applicable.',
+    helperText: 'Ethnic or religious. Skip if not applicable.',
     dimensionImpactPerSelection: { 'cultural-ecosystem': 0.4 },
     options: [
       { value: 'east-asian', label: 'East Asian (Chinese, Korean, Japanese, Taiwanese)' },
@@ -349,7 +349,7 @@ export const questions: readonly Question[] = [
     purpose: 'street_energy',
     maxSelections: 3,
     prompt: 'What kinds of street energy feel right? Pick up to three.',
-    helperText: 'These are not mutually exclusive — Bay Ridge has commercial-corridor energy, Cobble Hill has quiet+diverse, Williamsburg has creative+commercial. Pick whichever flavors of energy resonate.',
+    helperText: 'Not mutually exclusive — pick whichever resonate.',
     options: [
       {
         value: 'creative-scene',
@@ -488,7 +488,7 @@ export const questions: readonly Question[] = [
     purpose: 'must_haves',
     maxSelections: 3,
     prompt: 'Last one. Anything you truly will not compromise on?',
-    helperText: 'Hard filters. Pick up to three. Failing any one excludes a neighborhood entirely. Skip if nothing applies.',
+    helperText: 'Hard filters. Pick up to three. Failing one excludes a neighborhood entirely.',
     options: [
       { value: 'subway-redundancy', label: 'Multiple transit options (any mix of subway, PATH, ferry, rail, express bus)' },
       { value: 'walking-distance-park', label: 'Walking distance to a major park or waterfront' },

@@ -24,7 +24,7 @@ export default function HomePage() {
         <div className="mt-14">
           <BeginButton />
           <p className="mt-4 text-sm text-[var(--color-muted)]">
-            About 4 minutes. No signup required.
+            About 4 minutes.
           </p>
         </div>
       </section>
