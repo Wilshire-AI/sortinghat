@@ -474,7 +474,7 @@ export const neighborhoods: readonly Neighborhood[] = [
       'safety-need': 0.75, 'school-quality': 0.35,
     'social-register': -0.4,
     'visitor-facing-energy': -0.35,
-    'rootedness-vs-access': -0.6, 'daily-life-walkability': 1
+    'rootedness-vs-access': -0.6, 'daily-life-walkability': 0.88
     , 'streetscape-quality': 0.5 , 'community-fabric': 0.15 , 'amenity-function': 0.8 },
     culturalTags: ['mediterranean', 'middle-eastern'],
     housingTypes: ['townhouse', 'co-op', 'condo', 'rental', 'prewar-character', 'newer-lowrise', 'prewar-renovated'],
