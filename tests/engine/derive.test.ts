@@ -169,3 +169,40 @@ describe('deriveState — vector behavior unchanged', () => {
     expect(out.vector['culture']).toBeCloseTo(0.3);
   });
 });
+
+describe('deriveState — culturalImportance', () => {
+  const culturalImportanceQ: Question = {
+    id: 'cultural-importance',
+    kind: 'forced_choice',
+    prompt: 'how important',
+    choices: [
+      { label: 'Not a factor', impacts: {} },
+      { label: 'Nice to have', impacts: {} },
+      { label: 'Important', impacts: {} },
+      { label: 'Essential', impacts: {} },
+    ],
+  };
+
+  it('defaults to 2 (current behavior) when unanswered', () => {
+    const out = deriveState(dims, [culturalImportanceQ], {});
+    expect(out.culturalImportance).toBe(2);
+  });
+
+  it('captures choice 0 ("Not a factor") as 0', () => {
+    const answers: Answers = { 'cultural-importance': { kind: 'forced_choice', choiceIndex: 0 } };
+    const out = deriveState(dims, [culturalImportanceQ], answers);
+    expect(out.culturalImportance).toBe(0);
+  });
+
+  it('captures choice 3 ("Essential") as 3', () => {
+    const answers: Answers = { 'cultural-importance': { kind: 'forced_choice', choiceIndex: 3 } };
+    const out = deriveState(dims, [culturalImportanceQ], answers);
+    expect(out.culturalImportance).toBe(3);
+  });
+
+  it('does not pollute vector — empty impacts mean no dim is touched', () => {
+    const answers: Answers = { 'cultural-importance': { kind: 'forced_choice', choiceIndex: 3 } };
+    const out = deriveState(dims, [culturalImportanceQ], answers);
+    expect(out.touchedDims.size).toBe(0);
+  });
+});

@@ -80,6 +80,7 @@ export function ResultsClient() {
         commuteMinutesByNeighborhood,
         housingAcceptance: decoded.housingAcceptance,
         populationsByNeighborhood: neighborhoodPopulations,
+        culturalImportance: decoded.culturalImportance,
       });
       const excludedIds = new Set(
         excludedByMustHaves(neighborhoods, decoded.mustHaves, decoded.selectedTags),

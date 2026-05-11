@@ -49,4 +49,47 @@ describe('encodeFingerprint / decodeFingerprint', () => {
   it('rejects malformed input', () => {
     expect(() => decodeFingerprint('YWFh')).toThrow(); // valid base64, wrong shape
   });
+
+  it('round-trips culturalImportance when set', () => {
+    const encoded = encodeFingerprint({
+      vector: { a: 0.5 },
+      contentVersion: 'cv-test',
+      culturalImportance: 3,
+    });
+    const decoded = decodeFingerprint(encoded);
+    expect(decoded.culturalImportance).toBe(3);
+  });
+
+  it('omits ci field from payload when culturalImportance is the default (2)', () => {
+    const encoded = encodeFingerprint({
+      vector: { a: 0.5 },
+      contentVersion: 'cv-test',
+      culturalImportance: 2,
+    });
+    // Decode the payload to inspect its shape; absent `ci` keeps URLs short
+    // for the default-behavior case (which is most users pre-feature).
+    const payload = JSON.parse(
+      Buffer.from(encoded.replace(/-/g, '+').replace(/_/g, '/'), 'base64').toString('utf8'),
+    );
+    expect(payload.ci).toBeUndefined();
+  });
+
+  it('legacy fingerprint without ci decodes to culturalImportance = 2', () => {
+    // Pre-feature fingerprint: no ci field at all.
+    const encoded = encodeFingerprint({ vector: { a: 0.5 }, contentVersion: 'cv-test' });
+    const decoded = decodeFingerprint(encoded);
+    expect(decoded.culturalImportance).toBe(2);
+  });
+
+  it('clamps out-of-range ci values to the default', () => {
+    // Manually craft a malformed payload to confirm guard.
+    const payload = JSON.stringify({ v: { a: 0 }, cv: 'cv', ci: 99 });
+    const encoded = Buffer.from(payload, 'utf8')
+      .toString('base64')
+      .replace(/\+/g, '-')
+      .replace(/\//g, '_')
+      .replace(/=+$/, '');
+    const decoded = decodeFingerprint(encoded);
+    expect(decoded.culturalImportance).toBe(2);
+  });
 });

@@ -22,6 +22,12 @@ export type DerivedState = {
   // Housing-stock types the user would accept. Selections multiply the
   // posterior by 1 + 0.05 × matches (cap 1.20). Empty = no effect.
   housingAcceptance: string[];
+  // How much the user wants cultural-community match to factor into
+  // ranking. Indexed: 0 = Not a factor (no boost), 1 = Nice to have,
+  // 2 = Important (current default behavior), 3 = Essential. Captured
+  // from the cultural-importance forced-choice question; defaults to 2
+  // for fingerprints that predate the question.
+  culturalImportance: number;
   // Dimensions where the user expressed any signal (including explicit
   // neutrality like a slider at 0 or a forced-choice option whose impacts
   // include this dim with value 0). A dim that was never queried — because
@@ -49,6 +55,9 @@ export function deriveState(
   const housingAcceptance = new Set<string>();
   const touchedDims = new Set<DimensionId>();
   let commuteToleranceMinutes = 0;
+  // Default to 2 (Important = current behavior) so fingerprints without
+  // the cultural-importance question score identically to pre-feature.
+  let culturalImportance = 2;
 
   for (const q of questions) {
     const a = answers[q.id];
@@ -70,6 +79,9 @@ export function deriveState(
         if (typeof choice.commuteToleranceMinutes === 'number') {
           commuteToleranceMinutes = choice.commuteToleranceMinutes;
         }
+      }
+      if (q.id === 'cultural-importance') {
+        culturalImportance = a.choiceIndex;
       }
     } else if (q.kind === 'slider' && a.kind === 'slider') {
       // Two slider shapes:
@@ -134,6 +146,7 @@ export function deriveState(
     commuteTargets: Array.from(commuteTargets),
     commuteToleranceMinutes,
     housingAcceptance: Array.from(housingAcceptance),
+    culturalImportance,
     touchedDims,
   };
 }

@@ -22,6 +22,7 @@ type EncodedPayload = {
   ct?: string[]; // commute targets (office cluster ids) (optional)
   ctm?: number; // commute tolerance in minutes (optional)
   ha?: string[]; // housing-acceptance values (optional, omitted when empty)
+  ci?: number; // cultural-importance answer (0..3); omitted when 2 (default)
 };
 
 function toBase64Url(input: string): string {
@@ -48,6 +49,9 @@ export type Fingerprint = {
   commuteTargets: string[];
   commuteToleranceMinutes: number;
   housingAcceptance: string[];
+  // 0..3 from the cultural-importance forced choice. Defaults to 2
+  // (current-behavior) for fingerprints encoded before the field existed.
+  culturalImportance: number;
 };
 
 export type FingerprintInput = {
@@ -58,6 +62,7 @@ export type FingerprintInput = {
   commuteTargets?: string[];
   commuteToleranceMinutes?: number;
   housingAcceptance?: string[];
+  culturalImportance?: number;
 };
 
 export function encodeFingerprint(input: FingerprintInput): string;
@@ -96,6 +101,9 @@ export function encodeFingerprint(
   if (opts.housingAcceptance && opts.housingAcceptance.length > 0) {
     payload.ha = opts.housingAcceptance;
   }
+  if (typeof opts.culturalImportance === 'number' && opts.culturalImportance !== 2) {
+    payload.ci = opts.culturalImportance;
+  }
   return toBase64Url(JSON.stringify(payload));
 }
 
@@ -129,6 +137,7 @@ export function decodeFingerprint(encoded: string): Fingerprint {
     ct?: unknown;
     ctm?: unknown;
     ha?: unknown;
+    ci?: unknown;
   };
   const vector: UserVector = {};
   for (const [k, val] of Object.entries(obj.v)) {
@@ -151,6 +160,13 @@ export function decodeFingerprint(encoded: string): Fingerprint {
   const housingAcceptance: string[] = Array.isArray(obj.ha)
     ? obj.ha.filter((x): x is string => typeof x === 'string')
     : [];
+  // Legacy fingerprints predating the cultural-importance question carry no
+  // `ci` field. Defaulting to 2 (Important = current scoring weight) keeps
+  // their ranking stable across the upgrade.
+  const culturalImportance: number =
+    typeof obj.ci === 'number' && Number.isFinite(obj.ci) && obj.ci >= 0 && obj.ci <= 3
+      ? obj.ci
+      : 2;
   return {
     vector,
     contentVersion: obj.cv,
@@ -159,5 +175,6 @@ export function decodeFingerprint(encoded: string): Fingerprint {
     commuteTargets,
     commuteToleranceMinutes,
     housingAcceptance,
+    culturalImportance,
   };
 }

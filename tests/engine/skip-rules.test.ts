@@ -61,6 +61,40 @@ describe('shouldSkip — school-need', () => {
   });
 });
 
+describe('shouldSkip — cultural-communities', () => {
+  it('skips cultural-communities when cultural-importance is "Not a factor"', () => {
+    const answers: Answers = {
+      'cultural-importance': { kind: 'forced_choice', choiceIndex: 0 },
+    };
+    expect(shouldSkip('cultural-communities', answers)).toBe(true);
+  });
+
+  it('does not skip cultural-communities when cultural-importance is "Nice to have"', () => {
+    const answers: Answers = {
+      'cultural-importance': { kind: 'forced_choice', choiceIndex: 1 },
+    };
+    expect(shouldSkip('cultural-communities', answers)).toBe(false);
+  });
+
+  it('does not skip cultural-communities when cultural-importance is "Important"', () => {
+    const answers: Answers = {
+      'cultural-importance': { kind: 'forced_choice', choiceIndex: 2 },
+    };
+    expect(shouldSkip('cultural-communities', answers)).toBe(false);
+  });
+
+  it('does not skip cultural-communities when cultural-importance is "Essential"', () => {
+    const answers: Answers = {
+      'cultural-importance': { kind: 'forced_choice', choiceIndex: 3 },
+    };
+    expect(shouldSkip('cultural-communities', answers)).toBe(false);
+  });
+
+  it('does not skip cultural-communities when cultural-importance unanswered', () => {
+    expect(shouldSkip('cultural-communities', {})).toBe(false);
+  });
+});
+
 
 describe('pruneSkippedAnswers', () => {
   it('drops commute-tolerance when commute-target is remote-only', () => {

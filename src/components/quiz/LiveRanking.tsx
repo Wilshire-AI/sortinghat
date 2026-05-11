@@ -32,6 +32,7 @@ export function LiveRanking({ answers }: Props) {
         commuteMinutesByNeighborhood,
         populationsByNeighborhood: neighborhoodPopulations,
         touchedDims: derived.touchedDims,
+        culturalImportance: derived.culturalImportance,
       }),
     [vector, derived],
   );

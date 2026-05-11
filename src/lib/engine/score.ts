@@ -93,6 +93,11 @@ export type RankOptions = {
   // for fresh quizzes, imprecise for pre-Bayesian fingerprints where impacts
   // happened to cancel to exactly 0.
   touchedDims?: ReadonlySet<DimensionId>;
+  // How much cultural-tag matches should weight ranking. 0 = Not a factor
+  // (zero boost), 1 = Nice to have, 2 = Important (current default), 3 =
+  // Essential. Captured from the cultural-importance forced-choice. When
+  // omitted, defaults to 2 to preserve pre-feature behavior.
+  culturalImportance?: number;
 };
 
 // ---- Bayesian engine primitives ----
@@ -169,10 +174,26 @@ export function logLikelihoodBayesian(
   return -0.5 * sumSquaredDelta / (sigma * sigma);
 }
 
-function culturalMultiplier(neighborhood: Neighborhood, selectedTags: readonly string[]): number {
+// Importance-scaled cultural-tag boost. Indexed by the cultural-importance
+// answer (0..3). importance=2 returns scale 1 — the pre-feature default,
+// preserved for legacy fingerprints that lack the question. importance=3
+// ("Essential") gives an 8× boost: with CULTURAL_TAG_BOOST=0.08, that's
+// up to a 2.92× multiplier when all 3 tag slots match — strong enough to
+// lift a cultural-anchor nbhd over a meaningfully-better dim match for
+// users who pick the strongest weighting. importance=0 disables the
+// boost entirely. Indices outside 0..3 fall back to the default scale.
+const CULTURAL_IMPORTANCE_SCALE = [0, 0.5, 1, 8] as const;
+
+function culturalMultiplier(
+  neighborhood: Neighborhood,
+  selectedTags: readonly string[],
+  culturalImportance: number,
+): number {
   if (selectedTags.length === 0 || !neighborhood.culturalTags) return 1;
+  const scale = CULTURAL_IMPORTANCE_SCALE[culturalImportance] ?? 1;
+  if (scale === 0) return 1;
   const matched = neighborhood.culturalTags.filter((t) => selectedTags.includes(t)).length;
-  return 1 + CULTURAL_TAG_BOOST * Math.min(matched, CULTURAL_TAG_MAX_MATCHES);
+  return 1 + CULTURAL_TAG_BOOST * scale * Math.min(matched, CULTURAL_TAG_MAX_MATCHES);
 }
 
 function housingMultiplier(neighborhood: Neighborhood, housingAcceptance: readonly string[]): number {
@@ -224,6 +245,7 @@ export function rankNeighborhoods(
           housingAcceptance: topNOrOptions.housingAcceptance ?? [],
           populationsByNeighborhood: topNOrOptions.populationsByNeighborhood,
           touchedDims: topNOrOptions.touchedDims,
+          culturalImportance: topNOrOptions.culturalImportance ?? 2,
         }
       : {
           topN: topNOrOptions,
@@ -235,6 +257,7 @@ export function rankNeighborhoods(
           housingAcceptance: [] as readonly string[],
           populationsByNeighborhood: undefined as Readonly<Record<NeighborhoodId, number>> | undefined,
           touchedDims: undefined as ReadonlySet<DimensionId> | undefined,
+          culturalImportance: 2,
         };
 
   const filtered = opts.mustHaves.length > 0
@@ -258,6 +281,7 @@ function rankBayesian(
     housingAcceptance: readonly string[];
     populationsByNeighborhood?: Readonly<Record<NeighborhoodId, number>>;
     touchedDims?: ReadonlySet<DimensionId>;
+    culturalImportance: number;
   },
 ): RankedNeighborhood[] {
   const touchedDims = opts.touchedDims ?? touchedDimsFromUserVector(user, dimensions);
@@ -275,7 +299,7 @@ function rankBayesian(
     const logLik = logLikelihoodBayesian(user, neighborhood, dimensions, touchedDims, sigma);
     const logPrior = logPriorForPopulation(pop);
 
-    const culMult = culturalMultiplier(neighborhood, opts.selectedTags);
+    const culMult = culturalMultiplier(neighborhood, opts.selectedTags, opts.culturalImportance ?? 2);
     const commuteMult = applyCommute
       ? scoreCommute(
           opts.commuteMinutesByNeighborhood![neighborhood.id],

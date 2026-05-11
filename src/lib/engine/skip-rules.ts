@@ -7,6 +7,7 @@ export type ShouldSkip = (questionId: string, answers: Answers) => boolean;
 // questions for cascade skips. Symbolic so reordering choices in
 // content/questions.ts doesn't silently break a skip rule.
 const FAMILY_HORIZON_NO_KIDS_INDEX = 2;
+const CULTURAL_IMPORTANCE_NOT_FACTOR = 0;
 
 // Conditional skips: when prior answers make a question meaningless, skip it.
 // Each rule documents WHY it skips, since these are easy to misjudge.
@@ -26,6 +27,15 @@ export function shouldSkip(questionId: string, answers: Answers): boolean {
   if (questionId === 'school-need') {
     const a = answers['family-horizon'];
     return a?.kind === 'forced_choice' && a.choiceIndex === FAMILY_HORIZON_NO_KIDS_INDEX;
+  }
+
+  // cultural-communities: hidden when user said cultural-community match is
+  // "Not a factor" (cultural-importance choice 0). The downstream engine
+  // also treats importance=0 as zero boost regardless of any tag state, so
+  // this skip is for survey load.
+  if (questionId === 'cultural-communities') {
+    const a = answers['cultural-importance'];
+    return a?.kind === 'forced_choice' && a.choiceIndex === CULTURAL_IMPORTANCE_NOT_FACTOR;
   }
 
   return false;

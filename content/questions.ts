@@ -329,6 +329,18 @@ export const questions: readonly Question[] = [
     ],
   },
   {
+    id: 'cultural-importance',
+    kind: 'forced_choice',
+    prompt: 'How important is having a familiar cultural or ethnic community in your daily life?',
+    helperText: '"Not a factor" skips the community-selection question.',
+    choices: [
+      { label: 'Not a factor', impacts: {} },
+      { label: 'Nice to have', impacts: {} },
+      { label: 'Important', impacts: {} },
+      { label: 'Essential', impacts: {} },
+    ],
+  },
+  {
     id: 'cultural-communities',
     kind: 'multi_select',
     purpose: 'cultural_tags',
